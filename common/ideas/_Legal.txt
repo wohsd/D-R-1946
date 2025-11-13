@@ -1,0 +1,247 @@
+ideas = {
+
+	Legal = {
+		law = yes
+		use_list_view = yes
+
+		Syndicate_economy = {
+
+			available = {
+				hidden_trigger = { 
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				global_building_slots_factor=0.1
+				production_factory_start_efficiency_factor=0.1
+                production_factory_max_efficiency_factor=0.1				
+                production_factory_efficiency_gain_factor=0.1
+				line_change_production_efficiency_factor=0.1
+				gdp_growth_modifier=-0.1
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		Smallholder_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				conversion_cost_mil_to_civ_factor=-0.15
+				conversion_cost_civ_to_mil_factor=-0.15
+				production_factory_start_efficiency_factor=-0.05	
+                production_factory_max_efficiency_factor=-0.05				
+                production_factory_efficiency_gain_factor=-0.05
+				line_change_production_efficiency_factor=-0.05
+				people_cost_modifier=0.05
+				gdp_growth_modifier=-0.15
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		
+		Corporate_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+			modifier = {
+				conversion_cost_mil_to_civ_factor=-0.05
+				conversion_cost_civ_to_mil_factor=-0.15
+				production_factory_start_efficiency_factor=-0.1	
+                production_factory_max_efficiency_factor=0.15				
+                production_factory_efficiency_gain_factor=-0.05
+				line_change_production_efficiency_factor=0.05
+				people_cost_modifier=-0.05
+				gdp_growth_modifier=-0.03
+				new_nat_tre_modifier=0.1
+			}
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0
+				}
+   			}
+		}
+		Market_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+			modifier = {
+				conversion_cost_mil_to_civ_factor=-0.05
+				conversion_cost_civ_to_mil_factor=-0.05
+				production_factory_start_efficiency_factor=-0.02	
+                production_factory_max_efficiency_factor=0.15				
+                production_factory_efficiency_gain_factor=-0.05
+				line_change_production_efficiency_factor=0.05
+				people_cost_modifier=0.05
+				gdp_growth_modifier=0.02
+				new_nat_tre_modifier=0.05
+				min_export=0.05
+			}
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0
+				}
+   			}
+		}
+		Planned_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			modifier={
+				industrial_capacity_factory=0.02			
+                industrial_capacity_dockyard=0.02
+				conversion_cost_mil_to_civ_factor=-0.1
+				conversion_cost_civ_to_mil_factor=-0.1
+				production_factory_start_efficiency_factor=0.15	
+                production_factory_max_efficiency_factor=-0.1				
+                production_factory_efficiency_gain_factor=0.15
+				line_change_production_efficiency_factor=0.05
+				people_cost_modifier=0.05
+				gdp_growth_modifier=-0.05
+			}
+			
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0
+				}
+   			}
+			
+		}
+		Mixed_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+			modifier = {
+				conversion_cost_mil_to_civ_factor=-0.05
+				conversion_cost_civ_to_mil_factor=-0.05
+				industrial_capacity_factory=0.02			
+                industrial_capacity_dockyard=0.02
+				production_factory_start_efficiency_factor=0.05
+                production_factory_max_efficiency_factor=-0.15				
+                production_factory_efficiency_gain_factor=0.05
+				line_change_production_efficiency_factor=0.02
+				people_cost_modifier=0.03
+				gdp_growth_modifier=-0.03
+				
+			}
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+					
+				}
+   			}
+			
+			  
+		}
+	}
+}

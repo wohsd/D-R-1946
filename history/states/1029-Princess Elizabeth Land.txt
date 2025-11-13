@@ -1,0 +1,28 @@
+state = {
+	id = 1029
+	name = "PRINCESS_ELIZABETH_LAND"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = RUS
+		buildings = {
+			17786 = {
+				naval_base = 1
+			}
+			17808 = {
+				naval_base = 1
+			}
+			17814 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		446 16391 16414 16418 16438 17569 17577 17635 17681 17683 17718 17750 17757 17784 17786 17808 17814
+	}
+
+	local_supplies=0.0 
+}

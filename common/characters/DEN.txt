@@ -1,0 +1,17 @@
+characters = {
+	DEN_Knud_Kristensen = {
+		name = DEN_Knud_Kristensen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/DEN_Knud_Kristensen.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = DEN_Knud_Kristensen_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

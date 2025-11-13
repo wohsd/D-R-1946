@@ -1,0 +1,17 @@
+characters = {
+	ROM_Mihai_I = {
+		name = ROM_Mihai_I
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/ROM_Mihai_I.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = ROM_Mihai_I_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

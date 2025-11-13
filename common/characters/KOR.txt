@@ -1,0 +1,17 @@
+characters = {
+	KOR_I_Eun = {
+		name = KOR_I_Eun
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOR/KOR_I_Eun.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = KOR_I_Eun_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

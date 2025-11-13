@@ -1,0 +1,47 @@
+﻿
+units= {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "太平洋舰队"			
+		naval_base = 9998  # Wilhemshaven
+		task_force = {				
+			name = "太平洋舰队"
+			location = 9998  # Wilhemshaven
+			ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = JAP } } }
+			ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = JAP } } }	
+			ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = JAP } } }
+			ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = JAP } } }		
+			ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = JAP } } }
+			ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = JAP } } }		
+			ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = JAP } } }
+			ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = JAP } } }		
+			ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = JAP } } }
+
+			
+		}
+		task_force = {
+			name = "II. U-Boots-Ausbildungs-Gruppe"
+			location = 9998  # Wilhemshaven
+			# 2. Unterseebootsflottille
+			ship = { name = "Schleswig-Holstein" definition = carrier equipment = { carrier_1 = { amount = 1 owner = JAP } } }
+			ship = { name = "Schlesien" definition = carrier equipment = { carrier_1 = { amount = 1 owner = JAP } } }	
+			ship = { name = "Schleswig-Holstein" definition = carrier equipment = { carrier_1 = { amount = 1 owner = JAP } } }
+			ship = { name = "Schlesien" definition = carrier equipment = { carrier_1 = { amount = 1 owner = JAP } } }		
+			ship = { name = "Schleswig-Holstein" definition = carrier equipment = { carrier_1 = { amount = 1 owner = JAP } } }
+			ship = { name = "Schlesien" definition = carrier equipment = { carrier_1 = { amount = 1 owner = JAP } } }		
+			ship = { name = "Schleswig-Holstein" definition = carrier equipment = { carrier_1 = { amount = 1 owner = JAP } } }
+			ship = { name = "Schlesien" definition = carrier equipment = { carrier_1 = { amount = 1 owner = JAP } } }		
+			ship = { name = "Schleswig-Holstein" definition = carrier equipment = { carrier_1 = { amount = 1 owner = JAP } } }
+		}
+	}
+			
+
+}
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+#####################

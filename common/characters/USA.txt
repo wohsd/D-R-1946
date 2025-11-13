@@ -1,0 +1,17 @@
+characters = {
+	USA_Thomas_Dewey = {
+		name = USA_Thomas_Dewey
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USA_Thomas_Dewey.png"
+			}
+		}
+		country_leader = {
+			ideology = Classical_Liberalism
+			desc = USA_Thomas_Dewey_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

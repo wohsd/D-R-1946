@@ -1,0 +1,68 @@
+
+
+scripted_gui = {
+	world_gdp_paihang_view_window = {
+		#context_type = decision_category
+		window_name = "world_gdp_paihang_view_window"
+		visible = {
+			has_country_flag = open_economy_list
+		}
+		properties = {
+			econ_sphere_entry_flag = {
+				image = "[This.GetFlag]"
+			}
+			your_country_flag = {
+				image = "[ROOT.GetFlag]"
+			}
+		}
+		dynamic_lists = {
+			econ_sphere_top_10 = {
+				array = global.econ_countries
+				change_scope = yes
+				entry_container = econ_sphere_members_entry
+			}
+		}
+		effects = {
+			close_button_click = {
+				clr_country_flag = open_economy_list
+				clr_country_flag = open_economy_list2
+			}
+			eco_change_button_click = {
+				set_country_flag = open_economy_list2
+			}
+		} 
+	}
+	world_gdp_paihang_view_window1 = {
+		window_name = "world_gdp_paihang_view_window"
+		visible = {
+			has_country_flag = open_economy_list2
+		}
+		properties = {
+			econ_sphere_entry_flag = {
+				image = "[This.GetFlag]"
+			}
+			your_country_flag = {
+				image = "[ROOT.GetFlag]"
+			}
+		}
+		dynamic_lists = {
+			indu_sphere_top_20 = {
+				array = global.indu_countries
+				change_scope = yes
+				entry_container = indu_sphere_members_entry
+			}
+		}
+		effects = {
+			close_button_click = {
+				clr_country_flag = open_economy_list
+				clr_country_flag = open_economy_list2
+				
+			}
+			eco_average_button_click = {
+				set_country_flag = open_economy_list
+				clr_country_flag = open_economy_list2
+			}
+		}
+	}
+}
+

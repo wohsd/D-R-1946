@@ -1,0 +1,300 @@
+state_eco_setup = {
+	every_owned_state = {
+		if = {
+			limit = {
+				OR={
+					has_state_category = enclave
+					has_state_category = tiny_island
+					has_state_category = small_island
+					has_state_category = wasteland
+				}
+			}
+			add_to_variable = {state_eco=0.05}
+		}
+		add_to_variable = { PREV.state_eco = state_eco }
+	}
+	every_owned_state = {
+		if = {
+			limit = {
+				OR={
+					has_state_category = pastoral
+					has_state_category = rural
+					has_state_category = town
+				}
+			}
+			add_to_variable = {state_eco=0.15}
+		}
+		add_to_variable = { PREV.state_eco = state_eco }
+	}
+	every_owned_state = {
+		if = {
+			limit = {
+				OR={
+					has_state_category = large_town
+					has_state_category = city
+					has_state_category = large_city
+				}
+			}
+			add_to_variable = {state_eco=0.55}
+		}
+		add_to_variable = { PREV.state_eco = state_eco }
+	}
+	every_owned_state = {
+		if = {
+			limit = {
+				has_state_category = metropolis
+			}
+			add_to_variable = {state_eco=0.75}
+		}
+		add_to_variable = { PREV.state_eco = state_eco }
+	}
+	every_owned_state = {
+		if = {  
+			limit = {
+				has_state_category = megalopolis
+			}
+			add_to_variable = {state_eco=0.95}
+		}
+		add_to_variable = { PREV.state_eco = state_eco }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				PREV.state_eco > 1000
+			}
+		}
+		divide_variable = {PREV.state_eco = 10}
+	}
+	divide_variable = {
+		PREV.state_eco = 2
+	}
+}
+
+
+
+
+
+manpower_eco_setup = { 
+	
+	every_country = {
+		set_variable = { weighted_manpower = 0 }
+		every_owned_state = {
+			set_variable = { weighted_manpower = state_population_k } # Completely unrelated to the above variable due to being in a different scope
+			if = {
+				limit = {
+					NOT = { is_core_of = PREV } # Is core of the owner
+				}
+				divide_variable = { weighted_manpower  = 1.75 }  # Divides the state's equivalent
+			}
+			if = {
+				limit = {
+					is_core_of = PREV # Is core of the owner
+				}
+			}
+			divide_variable = {
+				weighted_manpower = 390.525
+			}
+			add_to_variable = { PREV.weighted_manpower = weighted_manpower }
+			 # Adds to the owner's counter
+		} 
+		if = {
+			limit = {
+				has_manpower > 1000000
+				num_of_factories < 100
+			}
+			divide_variable = {
+				weighted_manpower = 5
+			}
+		}
+		divide_variable = {
+			weighted_manpower = 2
+		}
+	}
+}
+
+
+
+company_eco_setup = {  
+	
+	every_country = {
+		set_variable = { army_company_eco = num_of_military_factories }
+		set_variable = { civi_company_eco = num_of_civilian_factories }
+		set_variable = { naval_company_eco = num_of_naval_factories }
+
+		multiply_variable  = { civi_company_eco = 1.05 }
+		multiply_variable  = { army_company_eco = 1.70 }
+		multiply_variable  = { naval_company_eco = 1.60 }
+
+		set_variable = { num_company_eco = 0 }
+		add_to_variable = {num_company_eco=civi_company_eco}
+		add_to_variable = {num_company_eco=army_company_eco}
+		add_to_variable = {num_company_eco=naval_company_eco}
+
+		divide_variable = {
+			num_company_eco = 2
+		}
+	}
+}
+
+income_eco_setup = {  
+	
+	every_country = {
+		set_variable = {income = 0}
+		add_to_variable = {income=num_company_eco}
+		add_to_variable = {income=weighted_manpower}
+		add_to_variable = {income=state_eco}
+
+		add_to_variable = { income = modifier@GDP_Growth }
+		
+	}
+}
+
+army_eco_setup = {  
+	every_country = { 
+		#步兵营
+		set_variable = {infantry_eco = 0}
+		add_to_variable = {infantry_eco=num_battalions_with_type@infantry}
+		#骑兵营
+		set_variable = { cavalry_eco = 0 } 
+		add_to_variable = { cavalry_eco = num_battalions_with_type@cavalry }
+		#坦克营
+		set_variable = { light_armor_eco = 0 }
+		add_to_variable = { light_armor_eco = num_battalions_with_type@light_armor }
+
+		set_variable = { medium_armor_eco = 0 }
+		add_to_variable = { medium_armor_eco = num_battalions_with_type@medium_armor }
+
+		set_variable = { heavy_armor_eco = 0 }
+		add_to_variable = { heavy_armor_eco = num_battalions_with_type@heavy_armor }
+ 
+		set_variable = { super_heavy_armor_eco = 0 }
+		add_to_variable = { super_heavy_armor_eco = num_battalions_with_type@super_heavy_armor }
+
+		set_variable = { modern_armor_eco = 0 }
+		add_to_variable = { modern_armor_eco = num_battalions_with_type@modern_armor }
+		
+		#步兵总计
+		set_variable = { all_infantry_eco = 0 }
+		add_to_variable = { all_infantry_eco = infantry_eco }
+		add_to_variable = { all_infantry_eco = cavalry_eco }
+		add_to_variable = { all_infantry_eco = light_armor_eco }
+		add_to_variable = { all_infantry_eco = medium_armor_eco }
+		add_to_variable = { all_infantry_eco = heavy_armor_eco }
+		add_to_variable = { all_infantry_eco = super_heavy_armor_eco }
+		add_to_variable = { all_infantry_eco = modern_armor_eco }
+
+		divide_variable  = { all_infantry_eco = 100 }
+
+
+		#海军
+		# 海军舰船统计
+		set_variable = { carrier_eco = 0 }
+		add_to_variable = { carrier_eco = num_ships_with_type@carrier }
+		multiply_variable = { carrier_eco = 0.18 }
+
+		set_variable = { destroyer_eco = 0 }
+		add_to_variable = { destroyer_eco = num_ships_with_type@destroyer }
+		multiply_variable = { destroyer_eco = 0.05 }
+
+		set_variable = { submarine_eco = 0 }
+		add_to_variable = { submarine_eco = num_ships_with_type@submarine }
+		multiply_variable = { submarine_eco = 0.02 }
+
+		set_variable = { light_cruiser_eco = 0 }
+		add_to_variable = { light_cruiser_eco = num_ships_with_type@light_cruiser }
+		multiply_variable = { light_cruiser_eco = 0.07 }
+
+		set_variable = { heavy_cruiser_eco = 0 }
+		add_to_variable = { heavy_cruiser_eco = num_ships_with_type@heavy_cruiser }
+		multiply_variable = { heavy_cruiser_eco = 0.09 }
+
+		set_variable = { battle_cruiser_eco = 0 }
+		add_to_variable = { battle_cruiser_eco = num_ships_with_type@battle_cruiser }
+		multiply_variable = { battle_cruiser_eco = 0.11 }
+
+		set_variable = { battleship_eco = 0 }
+		add_to_variable = { battleship_eco = num_ships_with_type@battleship }
+		multiply_variable = { battleship_eco = 0.14 }
+		
+		#海军总计
+		set_variable = { all_navy_eco = 0 }
+		add_to_variable = { all_navy_eco = carrier_eco }
+		add_to_variable = { all_navy_eco = destroyer_eco }
+		add_to_variable = { all_navy_eco = submarine_eco }
+		add_to_variable = { all_navy_eco = light_cruiser_eco }
+		add_to_variable = { all_navy_eco = heavy_cruiser_eco }
+		add_to_variable = { all_navy_eco = battle_cruiser_eco }
+		add_to_variable = { all_navy_eco = battleship_eco }
+
+		divide_variable  = { all_navy_eco = 1 }
+
+		
+		#空军总计
+		set_variable = { all_air_eco = 0 }
+		add_to_variable = { all_air_eco = num_deployed_planes }
+		divide_variable  = { all_air_eco = 1025 }
+
+	}
+}
+
+
+GDP_capita = {  
+	
+	every_country = {
+		set_variable = {GDP_capita_eco = manpower_k}
+		divide_variable = {
+			GDP_capita_eco = 10
+		}
+		set_variable = {GDP_temp_income = income} 
+		divide_variable = { 
+			GDP_temp_income = GDP_capita_eco
+		}
+		if = { 
+			limit = {
+				has_manpower > 1000000
+				num_of_factories < 100
+			}
+			divide_variable = {
+				GDP_capita_eco = 10
+			}
+		}
+		
+		add_to_variable = { GDP_capita_eco = modifier@GDP_avg_Growth }
+	}
+}
+
+
+GDP_resource_exported = {  
+	every_country = {
+		set_variable = { temp_resource_exported = 0}
+		add_to_variable = {temp_resource_exported = resource_exported@oil}
+		add_to_variable = {temp_resource_exported = resource_exported@steel}
+		add_to_variable = {temp_resource_exported = resource_exported@aluminium}
+		add_to_variable = {temp_resource_exported = resource_exported@tungsten}
+		add_to_variable = {temp_resource_exported = resource_exported@rubber}
+
+		multiply_variable = { temp_resource_exported = 0.1}
+
+		add_to_variable = { income = temp_resource_exported }
+
+		add_to_variable = { temp_resource_exported = modifier@GDP_resource_exported }
+	}
+}
+
+GDP_resource_imported = {  
+	every_country = {
+		set_variable = { temp_resource_imported = 0}
+		add_to_variable = {temp_resource_imported = resource_imported@oil}
+		add_to_variable = {temp_resource_imported = resource_imported@steel}
+		add_to_variable = {temp_resource_imported = resource_imported@aluminium}
+		add_to_variable = {temp_resource_imported = resource_imported@tungsten}
+		add_to_variable = {temp_resource_imported = resource_imported@rubber}
+
+		multiply_variable = { temp_resource_imported = 0.1}
+
+		subtract_from_variable = { income = temp_resource_imported}
+
+		add_to_variable = { temp_resource_imported = modifier@GDP_resource_imported }
+	}
+}
+ 

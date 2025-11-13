@@ -1,0 +1,17 @@
+characters = {
+	INS_Bung_Sukarno = {
+		name = INS_Bung_Sukarno
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/INS_Bung_Sukarno.png"
+			}
+		}
+		country_leader = {
+			ideology = Populist_Conservatism
+			desc = INS_Bung_Sukarno_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

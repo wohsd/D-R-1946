@@ -1,0 +1,17 @@
+characters = {
+	MON_Bashlugin_Zamslanzav = {
+		name = MON_Bashlugin_Zamslanzav
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/MON_Bashlugin_Zamslanzav.png"
+			}
+		}
+		country_leader = {
+			ideology = Religious_Conservatism
+			desc = MON_Bashlugin_Zamslanzav_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

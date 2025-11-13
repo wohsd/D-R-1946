@@ -1,0 +1,27 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_eco_newevent"
+		texturefile = "gfx/event/eco_newevent.png"
+	}
+	spriteType = {
+		name = "GFX_fra_newsevent"
+		texturefile = "gfx/event/fra_newsevent.png"
+	}
+	spriteType = {
+		name = "GFX_vin_newsevent"
+		texturefile = "gfx/event/vin_newsevent.png"
+	}
+	spriteType = {
+		name = "GFX_USA_newevent_1"
+		texturefile = "gfx/event/USA_newevent_1.png"
+	}
+	spriteType = {
+		name = "GFX_EGY_newevent_1"
+		texturefile = "gfx/event/EGY_newevent_1.png"
+	}
+	spriteType = {
+		name = "GFX_ISR_newevent_1"
+		texturefile = "gfx/event/ISR_newevent_1.png"
+	}
+} 

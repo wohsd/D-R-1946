@@ -1,0 +1,17 @@
+characters = {
+	UGA_Edward_Mutesa_II = {
+		name = UGA_Edward_Mutesa_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UGA/UGA_Edward_Mutesa_II.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = UGA_Edward_Mutesa_II_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

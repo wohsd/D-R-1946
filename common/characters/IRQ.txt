@@ -1,0 +1,17 @@
+characters = {
+	IRQ_Abd_al_Ilah = {
+		name = IRQ_Abd_al_Ilah
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRQ/IRQ_Abd_al_Ilah.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = IRQ_Abd_al_Ilah_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

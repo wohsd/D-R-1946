@@ -1,0 +1,19 @@
+state = {
+	id = 1030
+	name = "WEST_ANTARCTICA"
+	manpower = 10
+	impassable = yes
+	
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		#add_core_of = ZZZ
+	}
+
+	provinces={
+		16426 16439 17559 17563 17567 17579 17584 17597 17603 17608 17609 17615 17616 17617 17621 17623 17631 17633 17641 17645 17646 17648 17664 17682 17708 17716 17719 17726 17733 17747 17761 17762 17773 17780 
+	}
+
+	local_supplies=0.0 
+}

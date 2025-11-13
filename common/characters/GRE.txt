@@ -1,0 +1,31 @@
+characters = {
+	GRE_Alexandros_Papagos = {
+		name = GRE_Alexandros_Papagos
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GRE/GRE_Alexandros_Papagos.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = GRE_Alexandros_Papagos_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+	GRE_Roman_Romanov = {
+		name = GRE_Roman_Romanov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GRE/GRE_Roman_Romanov.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = GRE_Roman_Romanov_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

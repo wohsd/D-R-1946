@@ -1,0 +1,117 @@
+ideas = {
+
+	Labor = {
+		law = yes
+		use_list_view = yes
+
+		No_labor_laws = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.02
+				production_factory_efficiency_gain_factor = -0.2
+                production_factory_max_efficiency_factor = -0.2
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+				}
+   			}
+		}
+		
+		Trade_union_neutrality = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		
+		Local_trade_unions = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+				modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				}
+		}
+		State_trade_unions = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				}
+		}
+	}
+}

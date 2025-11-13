@@ -1,0 +1,102 @@
+scripted_map_modes = {
+	core_claim_map_mode = {
+	top = {
+		type = state
+		color = {
+				set_temp_variable = { red = 0.001 }
+				set_temp_variable = { blue = 0.001 }
+				set_temp_variable = { green = 0.001 }
+				set_temp_variable = { alpha = 0.001 }
+				if = {
+					limit = {
+						FROM = {
+							is_core_of = ROOT 
+							is_owned_by = ROOT 
+						}
+					}
+					set_temp_variable = { red = 0 }
+					set_temp_variable = { blue = 0.8 }
+					set_temp_variable = { green = 0 }
+					set_temp_variable = { alpha = 0.9 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							NOT = {
+								is_core_of = ROOT 
+							}
+                			is_claimed_by = ROOT
+							is_owned_by = ROOT 
+						}
+					}
+					set_temp_variable = { red = 0 }
+					set_temp_variable = { blue = 0 }
+					set_temp_variable = { green = 0.8 }
+					set_temp_variable = { alpha = 0.9 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_core_of = ROOT 
+							NOT = {
+								is_owned_by = ROOT 
+							}
+						}
+					}
+					set_temp_variable = { red = 1 }
+					set_temp_variable = { blue = 0 }
+					set_temp_variable = { green = 0 }
+					set_temp_variable = { alpha = 0.9 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							NOT = {
+								is_core_of = ROOT 
+							}
+                			is_claimed_by = ROOT
+							NOT = {
+								is_owned_by = ROOT 
+							}
+						}
+					}
+					set_temp_variable = { red = 0.7 }
+					set_temp_variable = { blue = 0 }
+					set_temp_variable = { green = 0.3 }
+					set_temp_variable = { alpha = 0.9 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							NOT = {
+								is_core_of = ROOT 
+							}
+							NOT = {
+                			is_claimed_by = ROOT
+							}
+							is_owned_by = ROOT 
+						}
+					}
+					set_temp_variable = { red = 0.7 }
+					set_temp_variable = { blue = 0 }
+					set_temp_variable = { green = 0.5 }
+					set_temp_variable = { alpha = 0.9 }
+				}
+		}
+		
+		
+		targets = {
+		}
+		
+		thickness = no
+ 	}
+ 	
+ 	bottom = {
+ 		type = none 
+ 	}
+ 	far_text = none
+ 	near_text = state
+	update_daily = yes
+
+    }
+}

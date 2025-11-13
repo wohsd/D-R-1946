@@ -1,0 +1,17 @@
+characters = {
+	BRA_Jose_Linhares = {
+		name = BRA_Jose_Linhares
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/BRA_Jose_Linhares.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = BRA_Jose_Linhares_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

@@ -1,0 +1,35 @@
+state={
+	id=605
+	name="STATE_605"
+	resources={
+		steel=14.000
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = {
+			4925 5 
+		}
+		victory_points = {
+			6999 20 
+		}
+		
+	}
+
+	provinces={
+		1367 1395 1893 2030 2091 4141 4431 4925 5048 6999 7240 7256 7948 8026 8705 8734 8744 8853 8937 10132 10144 11865 11972 12141 12274 12705 12767 12819 15194 19496 19513 19535 19536 19576 19629 19649 19672 19700 19718 19729 19774 19785 19800 19814 19819 19826 19834 19843 19865 19877 19878 19898 19901 19906 19910 19916 19922 19926 
+	}
+	manpower=52963300
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=0.0 
+}

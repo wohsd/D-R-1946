@@ -1,0 +1,17 @@
+characters = {
+	SWI_Ludwig_von_Moos = {
+		name = SWI_Ludwig_von_Moos
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWI/SWI_Ludwig_von_Moos.png"
+			}
+		}
+		country_leader = {
+			ideology = Progressive_Liberalism
+			desc = SWI_Ludwig_von_Moos_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

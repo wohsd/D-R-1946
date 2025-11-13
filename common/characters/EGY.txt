@@ -1,0 +1,17 @@
+characters = {
+	EGY_Abbas_II_Hilmi_Bey = {
+		name = EGY_Abbas_II_Hilmi_Bey
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/EGY_Abbas_II_Hilmi_Bey.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = EGY_Abbas_II_Hilmi_Bey_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

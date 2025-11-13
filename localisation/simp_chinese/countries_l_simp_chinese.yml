@@ -1,0 +1,457 @@
+﻿l_simp_chinese:
+
+ GER:0 "德意志合众国"
+ GER_DEF:0 "德意志合众国"
+ GER_ADJ:0 "德意志合众国"
+
+
+
+ RUS:0 "俄罗斯帝国"
+ RUS_DEF:0 "俄罗斯帝国"
+ RUS_ADJ:0 "俄罗斯帝国"
+
+ ISR:0 "大以色列国"
+ ISR_DEF:0 "大以色列国"
+ ISR_ADJ:0 "大以色列国"
+
+
+ ALG:0 "阿尔及利亚国"
+ ALG_DEF:0 "阿尔及利亚国"
+ ALG_ADJ:0 "阿尔及利亚国"
+
+ TUN:0 "突尼斯国"
+ TUN_DEF:0 "突尼斯国"
+ TUN_ADJ:0 "突尼斯国"
+
+ COG:0 "刚果总督府"
+ COG_DEF:0 "刚果总督府"
+ COG_ADJ:0 "刚果总督府"
+
+ ZIM:0 "罗德西亚"
+ ZIM_DEF:0 "罗德西亚"
+ ZIM_ADJ:0 "罗德西亚"
+
+ ZAM:0 "赞比亚"
+ ZAM_DEF:0 "赞比亚"
+ ZAM_ADJ:0 "赞比亚"
+
+ MAD:0 "马达加斯加"
+ MAD_DEF:0 "马达加斯加"
+ MAD_ADJ:0 "马达加斯加"
+
+ UGA:0 "乌干达"
+ UGA_DEF:0 "乌干达"
+ UGA_ADJ:0 "乌干达"
+
+ IRQ:0 "伊拉克王国"
+ IRQ_DEF:0 "伊拉克王国"
+ IRQ_ADJ:0 "伊拉克王国"
+
+ SYR:0 "叙利亚总督辖区"
+ SYR_DEF:0 "叙利亚总督辖区"
+ SYR_ADJ:0 "叙利亚总督辖区"
+
+ MAL:0 "马来西亚"
+ MAL_DEF:0 "马来西亚"
+ MAL_ADJ:0 "马来西亚"
+
+ OMA:0 "阿曼"
+ OMA_DEF:0 "阿曼"
+ OMA_ADJ:0 "阿曼"
+
+ LBA:0 "利比亚共和国"
+ LBA_DEF:0 "利比亚共和国"
+ LBA_ADJ:0 "利比亚共和国"
+
+ JOR:0 "外约旦王国"
+ JOR_DEF:0 "外约旦王国"
+ JOR_ADJ:0 "外约旦王国"
+
+ ASY:0 "亚述国"
+ ASY_DEF:0 "亚述国"
+ ASY_ADJ:0 "亚述国"
+
+ ARM:0 "亚美尼亚王国"
+ ARM_DEF:0 "亚美尼亚王国"
+ ARM_ADJ:0 "亚美尼亚王国"
+
+
+ CAN:0 "加拿大联邦"
+ CAN_DEF:0 "加拿大联邦"
+ CAN_ADJ:0 "加拿大联邦"
+
+ FRA:0 "法兰西第三共和国"
+ FRA_DEF:0 "法兰西第三共和国"
+ FRA_ADJ:0 "法兰西第三共和国"
+
+ ITA:0 "意大利王国"
+ ITA_DEF:0 "意大利王国"
+ ITA_ADJ:0 "意大利王国"
+
+ ENG:0 "联合王国"
+ ENG_DEF:0 "大不列颠及北爱尔兰联合王国"
+ ENG_ADJ:0 "大不列颠及北爱尔兰联合王国"
+
+ ROM:0 "达契亚王国"
+ ROM_DEF:0 "达契亚王国"
+ ROM_ADJ:0 "达契亚王国"
+
+ GRE:0 "罗马帝国"
+ GRE_DEF:0 "罗马帝国"
+ GRE_ADJ:0 "罗马帝国"
+
+ YUG:0 "塞尔维亚王国"
+ YUG_DEF:0 "塞尔维亚王国"
+ YUG_ADJ:0 "塞尔维亚王国"
+
+ HUN:0 "匈牙利民主共和国"
+ HUN_DEF:0 "匈牙利民主共和国"
+ HUN_ADJ:0 "匈牙利民主共和国"
+
+ CHI:0 "中华民国"
+ CHI_DEF:0 "中华民国"
+ CHI_ADJ:0 "中华民国"
+
+ IRE:0 "爱尔兰共和国"
+ IRE_DEF:0 "爱尔兰共和国"
+ IRE_ADJ:0 "爱尔兰共和国"
+
+
+ JAP:0 "日本帝国"
+ JAP_DEF:0 "日本帝国"
+ JAP_ADJ:0 "日本帝国"
+
+ DEN:0 "丹麦王国"
+ DEN_DEF:0 "丹麦王国"
+ DEN_ADJ:0 "丹麦王国"
+
+ HOL:0 "荷兰王国"
+ HOL_DEF:0 "荷兰王国"
+ HOL_ADJ:0 "荷兰王国"
+
+ BEL:0 "比利时王国"
+ BEL_DEF:0 "比利时王国"
+ BEL_ADJ:0 "比利时王国"
+
+ SPR:0 "西班牙王国"
+ SPR_DEF:0 "西班牙王国"
+ SPR_ADJ:0 "西班牙王国"
+
+ TTS:0 "两西西里王国"
+ TTS_DEF:0 "两西西里王国"
+ TTS_ADJ:0 "两西西里王国"
+
+ SWE:0 "瑞典王国"
+ SWE_DEF:0 "瑞典王国"
+ SWE_ADJ:0 "瑞典王国"
+
+ NOR:0 "挪威王国"
+ NOR_DEF:0 "挪威王国"
+ NOR_ADJ:0 "挪威王国"
+
+ SWI:0 "瑞士联邦"
+ SWI_DEF:0 "瑞士联邦"
+ SWI_ADJ:0 "瑞士联邦"
+
+ USA:0 "美利坚合众国"
+ USA_DEF:0 "美利坚合众国"
+ USA_ADJ:0 "美利坚合众国"
+
+ MAN:0 "安国军政府"
+ MAN_DEF:0 "安国军政府"
+ MAN_ADJ:0 "安国军政府"
+
+ SIK:0 "新疆边防督办"
+ SIK_DEF:0 "新疆边防督办
+ SIK_ADJ:0 "新疆边防督办"
+
+ XSM:0 "西北边防督办"
+ XSM_DEF:0 "西北边防督办
+ XSM_ADJ:0 "西北边防督办"
+
+ TIB:0 "西藏噶厦"
+ TIB_DEF:0 "西藏噶厦"
+ TIB_ADJ:0 "西藏噶厦"
+
+
+ VIN:0 "越南帝国"
+ VIN_DEF:0 "越南帝国"
+ VIN_ADJ:0 "越南帝国"
+
+ LAO:0 "琅勃拉邦王国"
+ LAO_DEF:0 "琅勃拉邦王国"
+ LAO_ADJ:0 "琅勃拉邦王国"
+
+ CAM:0 "柬埔寨王国"
+ CAM_DEF:0 "柬埔寨王国"
+ CAM_ADJ:0 "柬埔寨王国"
+
+ SIA:0 "暹罗帝国"
+ SIA_DEF:0 "暹罗帝国"
+ SIA_ADJ:0 "暹罗帝国"
+
+ EGY:0 "崇高阿拉维国"
+ EGY_DEF:0 "崇高阿拉维国"
+ EGY_ADJ:0 "崇高阿拉维国"
+
+ PER:0 "伊朗王国"
+ PER_DEF:0 "伊朗王国"
+ PER_ADJ:0 "伊朗王国"
+
+ AFG:0 "阿富汗王国"
+ AFG_DEF:0 "阿富汗王国"
+ AFG_ADJ:0 "阿富汗王国"
+
+ MON:0 "大蒙古国"
+ MON_DEF:0 "大蒙古国"
+ MON_ADJ:0 "大蒙古国"
+
+ SPR:0 "西班牙王国"
+ SPR_DEF:0 "西班牙王国"
+ SPR_ADJ:0 "西班牙王国"
+
+ FIN:0 "芬兰王国"
+ FIN_DEF:0 "芬兰王国"
+ FIN_ADJ:0 "芬兰王国"
+
+ MOR:0 "摩洛哥王国"
+ MOR_DEF:0 "摩洛哥王国"
+ MOR_ADJ:0 "摩洛哥王国"
+
+ SAU:0 "沙特阿拉伯王国"
+ SAU_DEF:0 "沙特阿拉伯王国"
+ SAU_ADJ:0 "沙特阿拉伯王国"
+
+ ETH:0 "埃塞俄比亚帝国"
+ ETH_DEF:0 "埃塞俄比亚帝国"
+ ETH_ADJ:0 "埃塞俄比亚帝国"
+
+ SAF:0 "南非联邦"
+ SAF_DEF:0 "南非联邦"
+ SAF_ADJ:0 "南非联邦"
+
+ RAJ:0 "印度共和国"
+ RAJ_DEF:0 "印度共和国"
+ RAJ_ADJ:0 "印度共和国"
+
+ PHI:0 "菲律宾共和国"
+ PHI_DEF:0 "菲律宾共和国"
+ PHI_ADJ:0 "菲律宾共和国"
+
+ INS:0 "印度尼西亚共和国"
+ INS_DEF:0 "印度尼西亚共和国"
+ INS_ADJ:0 "印度尼西亚共和国"
+
+ BRM:0 "缅甸国"
+ BRM_DEF:0 "缅甸国"
+ BRM_ADJ:0 "缅甸国"
+
+ AST:0 "澳大利亚联邦"
+ AST_DEF:0 "澳大利亚联邦"
+ AST_ADJ:0 "澳大利亚联邦"
+
+ NZL:0 "新西兰共和国"
+ NZL_DEF:0 "新西兰共和国"
+ NZL_ADJ:0 "新西兰共和国"
+
+ POR:0 "葡萄牙共和国"
+ POR_DEF:0 "葡萄牙共和国"
+ POR_ADJ:0 "葡萄牙共和国"
+
+ SKK:0 "锡金王国"
+ SKK_DEF:0 "锡金王国"
+ SKK_ADJ:0 "锡金王国"
+
+ BHU:0 "不丹王国"
+ BHU_DEF:0 "不丹王国"
+ BHU_ADJ:0 "不丹王国"
+
+ NEP:0 "尼泊尔王国"
+ NEP_DEF:0 "尼泊尔王国"
+ NEP_ADJ:0 "尼泊尔王国"
+
+ SOM:0 "索马里兰"
+ SOM_DEF:0 "索马里兰"
+ SOM_ADJ:0 "索马里兰"
+
+ SOM:0 "索马里兰"
+ SOM_DEF:0 "索马里兰"
+ SOM_ADJ:0 "索马里兰"
+
+ BOT: "博茨瓦纳"
+ BOT_DEF: "博茨瓦纳"
+ BOT_ADJ: "博茨瓦纳"
+
+ GAB: "加蓬"
+ GAB_DEF: "加蓬"
+ GAB_ADJ: "加蓬"
+
+ RCG: "刚果"
+ RCG_DEF: "刚果"
+ RCG_ADJ: "刚果"
+
+ CAR: "中非共和国"
+ CAR_DEF: "中非共和国"
+ CAR_ADJ: "中非"
+
+ CMR: "喀麦隆"
+ CMR_DEF: "喀麦隆"
+ CMR_ADJ: "喀麦隆"
+
+ CHA: "乍得"
+ CHA_DEF: "乍得"
+ CHA_ADJ: "乍得"
+
+ DAH: "贝宁"
+ DAH_DEF: "贝宁"
+ DAH_ADJ: "贝宁"
+
+ IVO: "科特迪瓦"
+ IVO_DEF: "科特迪瓦"
+ IVO_ADJ: "象牙海岸"
+
+ VOL: "上沃尔特"
+ VOL_DEF: "上沃尔特"
+ VOL_ADJ: "上沃尔特"
+
+ GNA: "几内亚"
+ GNA_DEF: "几内亚"
+ GNA_ADJ: "几内亚"
+
+ KEN: "肯尼亚"
+ KEN_DEF: "肯尼亚"
+ KEN_ADJ: "肯尼亚"
+
+ TZN: "坦桑尼亚"
+ TZN_DEF: "坦桑尼亚"
+ TZN_ADJ: "坦桑尼亚"
+
+ MEX: "墨西哥"
+ MEX_DEF: "墨西哥"
+ MEX_ADJ: "墨西哥"
+
+ BRA: "巴西"
+ BRA_DEF: "巴西"
+ BRA_ADJ: "巴西"
+
+ ARG: "阿根廷"
+ ARG_DEF: "阿根廷"
+ ARG_ADJ: "阿根廷"
+
+ CHL: "智利"
+ CHL_DEF: "智利"
+ CHL_ADJ: "智利"
+
+ BOL: "玻利维亚"
+ BOL_DEF: "玻利维亚"
+ BOL_ADJ: "玻利维亚"
+
+ PRU: "秘鲁"
+ PRU_DEF: "秘鲁"
+ PRU_ADJ: "秘鲁"
+
+ COL: "哥伦比亚"
+ COL_DEF: "哥伦比亚"
+ COL_ADJ: "哥伦比亚"
+
+ VEN: "委内瑞拉"
+ VEN_DEF: "委内瑞拉"
+ VEN_ADJ: "委内瑞拉"
+
+ ECU: "厄瓜多尔"
+ ECU_DEF: "厄瓜多尔"
+ ECU_ADJ: "厄瓜多尔"
+
+ PAR: "巴拉圭"
+ PAR_DEF: "巴拉圭"
+ PAR_ADJ: "巴拉圭"
+
+ URG: "乌拉圭"
+ URG_DEF: "乌拉圭"
+ URG_ADJ: "乌拉圭"
+
+ GUA: "危地马拉"
+ GUA_DEF: "危地马拉"
+ GUA_ADJ: "危地马拉"
+
+ HON: "洪都拉斯"
+ HON_DEF: "洪都拉斯"
+ HON_ADJ: "洪都拉斯"
+
+ ELS: "萨尔瓦多"
+ ELS_DEF: "萨尔瓦多"
+ ELS_ADJ: "萨尔瓦多"
+
+ NIC: "尼加拉瓜"
+ NIC_DEF: "尼加拉瓜"
+ NIC_ADJ: "尼加拉瓜"
+
+ COS: "哥斯达黎加"
+ COS_DEF: "哥斯达黎加"
+ COS_ADJ: "哥斯达黎加"
+
+ PAN: "巴拿马"
+ PAN_DEF: "巴拿马"
+ PAN_ADJ: "巴拿马"
+
+ DOM: "多米尼加"
+ DOM_DEF: "多米尼加"
+ DOM_ADJ: "多米尼加"
+
+ HAI: "海地"
+ HAI_DEF: "海地"
+ HAI_ADJ: "海地"
+
+ CUB: "古巴"
+ CUB_DEF: "古巴"
+ CUB_ADJ: "古巴"
+
+ MLW: "马拉维"
+ MLW_DEF: "马拉维"
+ MLW_ADJ: "马拉维"
+
+ LIB: "利比里亚"
+ LIB_DEF: "利比里亚"
+ LIB_ADJ: "利比里亚"
+
+ TOG: "多哥"
+ TOG_DEF: "多哥"
+ TOG_ADJ: "多哥"
+
+ NGA: "尼日利亚"
+ NGA_DEF: "尼日利亚"
+ NGA_ADJ: "尼日利亚"
+
+ NGR: "尼日尔"
+ NGR_DEF: "尼日尔"
+ NGR_ADJ: "尼日尔"
+
+ MLI: "马里"
+ MLI_DEF: "马里"
+ MLI_ADJ: "马里"
+
+ MRT: "毛里塔尼亚"
+ MRT_DEF: "毛里塔尼亚"
+ MRT_ADJ: "毛里塔尼亚"
+
+ SEN: "塞内加尔"
+ SEN_DEF: "塞内加尔"
+ SEN_ADJ: "塞内加尔"
+
+ KUW: "科威特"
+ KUW_DEF: "科威特"
+ KUW_ADJ: "科威特"
+
+ YEM: "也门"
+ YEM_DEF: "也门"
+ YEM_ADJ: "也门"
+
+
+ RKT: "东突厥斯坦共和国"
+ RKT_DEF: "东突厥斯坦共和国"
+ RKT_ADJ: "东突厥斯坦共和国"
+
+
+ KOR: "朝鲜王国"
+ KOR_DEF: "朝鲜王国"
+ KOR_ADJ: "朝鲜王国"

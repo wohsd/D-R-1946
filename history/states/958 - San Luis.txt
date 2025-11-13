@@ -1,0 +1,30 @@
+state = {
+	id = 958
+	name = "STATE_958"
+	manpower = 602403
+	
+	state_category = rural
+
+	history = {
+
+		owner = ARG
+		add_core_of = ARG
+
+		buildings = {
+			infrastructure = 2
+
+
+		}
+		
+		victory_points = {
+			12942 2 # Córdoba
+		}
+
+	}
+
+	provinces = {
+		2158 2199 8192 11005 12306 12321 12349 12946 12982 14900 14901 14902 14904 14905 14906 14907 14908 14910 14912 14914 14921 14922 14928 15005 15030 15036 15061 15064 15084 15090 15091 
+	}
+
+	local_supplies = 0.0 
+}

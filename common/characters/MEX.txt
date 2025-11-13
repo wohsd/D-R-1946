@@ -1,0 +1,17 @@
+characters = {
+	MEX_Manuel_Avila_Camacho = {
+		name = MEX_Manuel_Avila_Camacho
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/MEX_Manuel_Avila_Camacho.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = MEX_Manuel_Avila_Camacho_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

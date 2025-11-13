@@ -1,0 +1,25 @@
+state = {
+	id = 1022
+	name = "GEORGE_VI_SOUND"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		buildings = {
+			17702 = {
+				naval_base = 1
+			}
+			17658 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		17658 17702 17728 17797 18105 18106 
+	}
+
+	local_supplies=0.0 
+}

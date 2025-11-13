@@ -1,0 +1,50 @@
+scripted_map_modes = {
+	culture_map_mode = {
+	# the game will use name of the map mode for some strings:
+	# MAPMODE_TEST_MAP_MODE MAPMODE_TEST_MAP_MODE_NAME MAPMODE_TEST_MAP_MODE_DESCRIPTION as name & desc
+	# test_map_mode_tooltip & test_map_mode_tooltip_delayed for tooltips
+	# GFX_mapmode_buttons_deselected_small_test_map_mode GFX_mapmode_buttons_selected_small_test_map_mode for the icons
+
+ 	# there are two layers for a map mode. bottom & top
+ 	# both are same except during rendering they will be rendered in that order
+	# for each layer the game will figure out what borders to render and will ask script to pick a color for those
+	top = {
+		type = state
+		color = {
+            FROM = {
+				set_temp_variable = { PREV.red = global.culture_clr_R^state_culture }
+				set_temp_variable = { PREV.blue = global.culture_clr_B^state_culture }
+				set_temp_variable = { PREV.green = global.culture_clr_G^state_culture }
+				set_temp_variable = { PREV.alpha = global.culture_clr_alpha^state_culture }
+            }
+		}
+		
+		
+		targets = {
+		}
+		
+		thickness = no
+ 	}
+ 	
+ 	bottom = {
+ 		type = none 
+ 	}
+ 
+ 
+ 	# if we want to show texts on map this you can set far_text & near_text
+ 	# must be one of the:
+ 	#  none
+ 	#  country
+ 	#  state
+ 	#  faction
+ 	#  player
+ 	
+ 	far_text = none
+ 	near_text = state
+
+	# if yes, the game will update the map mode daily_update
+	# otherwise force_update_map_mode effect can be used
+	update_daily = yes
+
+    }
+}

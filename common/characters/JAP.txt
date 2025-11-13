@@ -1,0 +1,17 @@
+characters = {
+	JAP_Ichiro_Hatoyama = {
+		name = JAP_Ichiro_Hatoyama
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Ichiro_Hatoyama.png"
+			}
+		}
+		country_leader = {
+			ideology = Progressive_Liberalism
+			desc = JAP_Ichiro_Hatoyama_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

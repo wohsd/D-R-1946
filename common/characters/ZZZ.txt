@@ -1,0 +1,31 @@
+characters = {
+	ZZZ_no_authority = {
+		name = ZZZ_no_authority
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZZZ/Portrait_ZZZ_Antarctica.png"
+			}
+		}
+		country_leader = {
+			ideology = anarchism
+			expire = "2000.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "2000.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "2000.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

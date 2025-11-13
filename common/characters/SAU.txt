@@ -1,0 +1,17 @@
+characters = {
+	SAU_Ibn_Saud = {
+		name = SAU_Ibn_Saud
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/SAU_Ibn_Saud.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = SAU_Ibn_Saud_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

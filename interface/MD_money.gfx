@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_eco_icon"
+		texturefile = "gfx/interface/eco_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_economic_preview_bg"
+		texturefile = "gfx/interface/economic_preview_bg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_eco_list"
+		texturefile = "gfx/interface/eco_list.png"
+		legacy_lazy_load = no
+	}
+}

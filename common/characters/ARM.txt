@@ -1,0 +1,17 @@
+characters = {
+	ARM_Simon_Vratsian = {
+		name = ARM_Simon_Vratsian
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARM/ARM_Simon_Vratsian.png"
+			}
+		}
+		country_leader = {
+			ideology = Populist_Conservatism
+			desc = ARM_Simon_Vratsian_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

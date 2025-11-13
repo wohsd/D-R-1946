@@ -1,0 +1,316 @@
+@CUNKUAN_TEXT_X = 10
+@HOUSE_TEXT_X = 230
+@HEADERS_Y = 80
+@STATUS_Y = 65
+@FEIYONG_TEXT_X = 310
+@MAOYI_TEXT_X = -30
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "world_gdp_paihang_view_window"
+		position = { x = 677 y = 180 }
+		size = { width = 500 height = 700 }
+		moveable = no
+		# orientation = CENTER
+		# origo = center
+		hide_sound = menu_close_window
+		show_sound = menu_open_window
+
+
+		background = {
+			name = "logo"
+			spriteType = "GFX_tiled_plain_bg"
+		}
+
+		buttonType = {
+			name = "eco_change_button"
+			position = { x = 100 y = -685 }
+
+			quadTextureSprite ="GFX_button_148x34"
+			buttonFont = "dr_font_16"
+			Orientation = "LOWER_LEFT"
+			buttonText = "人均"
+			pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			shortcut = "RETURN"
+		}
+
+		buttonType = {
+			name = "eco_average_button"
+			position = { x = -10 y = -685 }
+
+			quadTextureSprite ="GFX_button_148x34"
+			buttonFont = "dr_font_16"
+			Orientation = "LOWER_LEFT"
+			buttonText = "总量"
+			pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			shortcut = "RETURN"
+		}
+
+		instantTextboxType = {
+			name = "world_gdp_paihang_view_window_tital"
+			position = { x = 250 y = 20 }
+			orientation = left_up
+			font = "dr_font_21"
+			text = "world_gdp_paihang_view_window_tital"
+			format = centre
+			maxWidth = 200
+			maxHeight = 25
+		}
+		instantTextboxType = {
+			name = "your_country"
+			position = { x = 100 y = 450 }
+			orientation = left_up
+			font = "dr_font_21"
+			text = "your_country_name"
+			format = left
+			maxWidth = 300
+			maxHeight = 25
+		}
+		instantTextboxType = {
+			name = "your_country_mingci"
+			position = { x = 20 y = 505 }
+			orientation = left_up
+			font = "hoi_20bs"
+			text = "your_country_number"
+			format = left
+			maxWidth = 300
+			maxHeight = 25
+		}
+		iconType = {
+			name = "your_country_flag"
+			quadTextureSprite ="GFX_flag_medium"
+			position = { x = 20 y = 438 }
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "gdp_number"
+			position = { x = 10 y = 80 }
+			orientation = left_up
+			font = "dr_font_21"
+			text = "gdp_number"
+			format = left
+			maxWidth = 50
+			maxHeight = 25
+		}
+		instantTextboxType = {
+			name = "gdp_country_name"
+			position = { x = 80 y = 80 }
+			orientation = left_up
+			font = "dr_font_21"
+			text = "gdp_country_name"
+			format = centre
+			maxWidth = 200
+			maxHeight = 25
+		}
+		instantTextboxType = {
+			name = "mounthly_income"
+			position = { x = 330 y = 80 }
+			orientation = left_up
+			font = "dr_font_21"
+			text = "mounthly_income"
+			format = centre
+			maxWidth = 150
+			maxHeight = 25
+		}
+		buttonType = {#关闭
+			name = "close_button"
+			position = { x = -40 y = 8 }
+			quadTextureSprite = "GFX_profile_button_close"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+		}
+		containerWindowType = {
+			name = "econ_sphere_top_10_container"
+			size = { width = 498 height = 320 }
+			position = { x = 0 y = 100 }
+			clipping = yes
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 10 left = 0 bottom = 5 right = 0 }
+			
+			background = {
+				name = "econ_sphere_top_10_container_bg"
+				quadTextureSprite = "GFX_tiled_plain_bg"
+				alwaystransparent = yes
+			}
+			
+			gridboxtype = {
+				name = "econ_sphere_top_10"
+				position = { x = 0 y = 0 }
+				size = { width = 300 height = 300 }
+				slotsize = { width = 287 height = 28 }
+				max_slots_horizontal = 1
+				max_slots_vertical = 200
+				add_horizontal = no
+			}
+			
+		}
+		
+		
+		
+		instantTextboxType = {
+			name = "indu_your_country_mingci"
+			position = { x = 20 y = 485 }
+			orientation = left_up
+			font = "hoi_20bs"
+			text = "indu_your_country_number"
+			format = left
+			maxWidth = 300
+			maxHeight = 25
+		}
+
+		instantTextboxType = {
+			name = "Total_number_factories"
+			position = { x = 20 y = 525 }
+			orientation = left_up 
+			font = "hoi_20bs"
+			text = "Total_number_factories_num"
+			format = left
+			maxWidth = 300
+			maxHeight = 25
+		}
+		instantTextboxType = {
+			name = "Total_number_state"
+			position = { x = 20 y = 545 }
+			orientation = left_up 
+			font = "hoi_20bs"
+			text = "Total_number_state_num"
+			format = left
+			maxWidth = 300
+			maxHeight = 25
+		}
+		
+
+		containerWindowType = {
+			name = "indu_sphere_top_10_container"
+			size = { width = 498 height = 310 }
+			position = { x = 0 y = 110 }
+			clipping = yes
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 0 left = 0 bottom = 5 right = 0 }
+			
+			background = {
+				name = "indu_sphere_top_10_container_bg"
+				#quadTextureSprite = "GFX_tiled_plain_bg"
+				alwaystransparent = yes
+			}
+			###人均
+			gridboxtype = {
+				name = "indu_sphere_top_20"
+				position = { x = 0 y = 0 }
+				size = { width = 300 height = 300 }
+				slotsize = { width = 287 height = 28 }
+				max_slots_horizontal = 1
+				max_slots_vertical = 200
+				add_horizontal = no
+			}
+		
+		}
+
+	}
+	containerWindowType = {
+		name = "econ_sphere_members_entry"
+		size = { width = 498 height = 24 }
+		position = { x = 0 y = 0 }
+		
+		
+		instantTextboxType = {
+			name = "gdp_number_this_country"
+			position = { x = 10 y = 0 }
+			orientation = left_up
+			font = "hoi_20bs"
+			text = "[?THIS.econ_ranking]"
+			format = left
+			maxWidth = 50
+			maxHeight = 25
+		}
+		
+		instantTextboxType = {
+			name = "mounthly_income_this_country"
+			position = { x = 330 y = 0 }
+			orientation = left_up
+			font = "hoi_20bs"
+			text = "[?income|2] B"
+			format = centre
+			maxWidth = 150
+			maxHeight = 25
+		}
+		iconType = {
+			name = "econ_sphere_entry_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x = 50 y = 0 }
+			alwaystransparent = yes
+		}
+		# iconType = {
+		# 	name = "econ_sphere_entry_flag_overlay"
+		# 	quadTextureSprite = "GFX_endgame_flag_overlay"
+		# 	position = { x = 3 y = 3 }
+		# 	alwaystransparent = yes
+		# }
+		
+		instantTextboxType = {
+			name = "econ_sphere_member_name"
+			position = { x = 85 y = 0 }
+			font = "hoi_20bs"
+			text = "[?THIS.GetName]"
+			maxWidth = 340
+			maxHeight = 24
+			fixedsize = yes
+			format = left
+		}
+	}
+	containerWindowType = {
+		name = "indu_sphere_members_entry"
+		size = { width = 498 height = 24 }
+		position = { x = 0 y = 0 }
+		
+		
+		instantTextboxType = {
+			name = "gdp_number_this_country"
+			position = { x = 10 y = 0 }
+			orientation = left_up
+			font = "hoi_20bs"
+			text = "[?THIS.indu_ranking]"
+			format = left
+			maxWidth = 50
+			maxHeight = 25
+		}
+		
+		instantTextboxType = {
+			name = "mounthly_income_this_country"
+			position = { x = 330 y = 0 }
+			orientation = left_up
+			font = "hoi_20bs"
+			text = "[?GDP_capita_eco]"
+			format = centre
+			maxWidth = 150
+			maxHeight = 25
+		}
+		iconType = {
+			name = "econ_sphere_entry_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x = 50 y = 0 }
+			alwaystransparent = yes
+		}
+		# iconType = {
+		# 	name = "econ_sphere_entry_flag_overlay"
+		# 	quadTextureSprite = "GFX_endgame_flag_overlay"
+		# 	position = { x = 3 y = 3 }
+		# 	alwaystransparent = yes
+		# }
+		
+		instantTextboxType = {
+			name = "econ_sphere_member_name"
+			position = { x = 85 y = 0 }
+			font = "hoi_20bs"
+			text = "[?THIS.GetName]"
+			maxWidth = 340
+			maxHeight = 24
+			fixedsize = yes
+			format = left
+		}
+	}
+}

@@ -1,0 +1,28 @@
+state = {
+	id = 1027
+	name = "QUEEN_MAUD_LAND"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		buildings = {
+			17804 = {
+				naval_base = 1
+			}
+			17799 = {
+				naval_base = 1
+			}
+			17742 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16402 16403 16415 16423 16431 17636 17657 17661 17669 17693 17695 17713 17731 17742 17748 17785 17799 17804 17806 
+	}
+
+	local_supplies=0.0 
+}

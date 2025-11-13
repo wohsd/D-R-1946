@@ -1,0 +1,17 @@
+characters = {
+	ITA_Pietro_Badoglio = {
+		name = ITA_Pietro_Badoglio
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/ITA_Pietro_Badoglio.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = ITA_Pietro_Badoglio_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

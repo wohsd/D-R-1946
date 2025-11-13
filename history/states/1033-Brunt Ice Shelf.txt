@@ -1,0 +1,22 @@
+state = {
+	id = 1033
+	name = "BRUNT_ICE_SHELF"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		buildings = {
+			16392 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16392 17807 17581
+	}
+
+	local_supplies=0.0 
+}

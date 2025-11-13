@@ -1,0 +1,16 @@
+characters = {
+	HOL_Willem_Schermerhorn = {
+		name = HOL_Willem_Schermerhorn
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HOL/HOL_Willem_Schermerhorn.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = HOL_Willem_Schermerhorn_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}

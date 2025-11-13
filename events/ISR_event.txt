@@ -1,0 +1,13 @@
+﻿
+add_namespace = ISR_newevent
+news_event = {
+	id = ISR_newevent.1
+	title = ISR_newevent.1.t
+	desc = ISR_newevent.1.d
+	picture = GFX_ISR_newevent_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ISR_newevent.1.a
+	}
+}

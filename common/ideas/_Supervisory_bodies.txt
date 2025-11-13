@@ -1,0 +1,95 @@
+ideas = {
+
+	Supervisory_bodies = {
+		law = yes
+		use_list_view = yes
+		Autonomous_police = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.01
+			}
+
+			cancel_if_invalid = no
+
+		}
+		Local_police = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.01
+			}
+
+			cancel_if_invalid = no
+
+		}
+		Special_police = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+			modifier = {
+				encryption_factor = 0.15
+				enemy_operative_detection_chance_factor = 0.15
+				drift_defence_factor = -0.15
+                foreign_subversive_activites = 0.15
+				}
+   		
+		}
+		State_control = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+				modifier = {
+					encryption_factor = 0.3
+					enemy_operative_detection_chance_factor = 0.25
+					enemy_operative_detection_chance_factor = 0.15
+					drift_defence_factor = 0.25
+					foreign_subversive_activites = 0.25
+				}
+   			
+		}
+	}
+}

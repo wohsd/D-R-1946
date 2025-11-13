@@ -1,0 +1,17 @@
+characters = {
+	TIB_Dalai_Lama = {
+		name = TIB_Dalai_Lama
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TIB/TIB_Dalai_Lama.png"
+			}
+		}
+		country_leader = {
+			ideology = Religious_Conservatism
+			desc = TIB_Dalai_Lama_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

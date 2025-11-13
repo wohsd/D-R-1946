@@ -1,0 +1,17 @@
+characters = {
+	NZL_Peter_Fraser = {
+		name = NZL_Peter_Fraser
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NZL/NZL_Peter_Fraser.png"
+			}
+		}
+		country_leader = {
+			ideology = Progressive_Liberalism
+			desc = NZL_Peter_Fraser_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

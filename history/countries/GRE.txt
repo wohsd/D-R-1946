@@ -1,0 +1,36 @@
+﻿capital = 219
+
+#oob = "AOX_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = GRE_Alexandros_Papagos
+recruit_character = GRE_Roman_Romanov
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	Dictatorship = 13
+	Liberalism = 5
+	Conservatism = 50
+	Nationalism = 19
+	Reformism = 13
+}
+
+add_ideas = {
+	#law
+	Market_economy
+	Freedom_belief
+	Traditional_conservatism
+	No_labor_laws
+	Media_control
+	Underlying_investment
+	low_industrialization
+	Local_police
+}

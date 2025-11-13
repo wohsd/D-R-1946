@@ -1,0 +1,30 @@
+#############################
+# Economic custom modifiers #
+#############################
+
+# Adds Weekly Stability when < 50%
+GDP_Growth = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+GDP_avg_Growth = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+GDP_resource_exported = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+GDP_resource_imported= {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}

@@ -1,0 +1,19 @@
+state={
+	id=758
+	name="STATE_758"
+	provinces={
+		1961 4994 8029 10802 10918 12801 16981 17039 19662 19668 19704 16157 19708 5042 16158
+	}
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TIB
+		add_core_of = CHI
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

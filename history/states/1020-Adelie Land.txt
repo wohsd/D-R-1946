@@ -1,0 +1,22 @@
+state = {
+	id = 1020
+	name = "ADELIE_LAND"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		buildings = {
+			17612 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		17576 17668 17612 17765
+	}
+
+	local_supplies=0.0 
+}

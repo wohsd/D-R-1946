@@ -1,0 +1,225 @@
+﻿division_template = {
+	name = "日本帝国步兵师"
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "日本帝国装甲师"
+
+	division_names_group = GER_Arm_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		medium_armor = { x = 2 y = 0 }
+        medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+        medium_armor = { x = 2 y = 3 }
+	}
+	support = {
+        engineer = { x = 0 y = 1 }
+        logistics_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "海军陆战队" 			# Used to be SS division -> New system for SS. Also messed up the civil war by refusing to move to the fascists, and immersion-breaking to have them around as royalists
+
+	division_names_group = GER_MOT_02
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+	    marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	##### Oberkommando des Heeres #####
+
+	### 1. Armee (Wehrmacht-Gruppenkommando) ###
+	# II. Armeekorps
+		division = {	
+		name = "陆军第一师团"
+		location = 4100
+		division_template = "日本帝国步兵师"
+		start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第二师团"
+			location = 10512
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第三师团"
+			location = 1191
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第四师团"
+			location = 1117
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第五师团"
+			location = 9901
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第六师团"
+			location = 10055
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第七师团"
+			location = 1025
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第八师团"
+			location = 7169
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第九师团"
+			location = 12068
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第十师团"
+			location = 9790
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第十一师团"
+			location = 4153
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第十二师团"
+			location = 7214
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第十三师团"
+			location = 10052
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第十四师团"
+			location = 12240
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第十五师团"
+			location = 7125
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "陆军第十六师团"
+			location = 12931
+			division_template = "日本帝国步兵师"
+			start_experience_factor = 0.5
+		}
+
+		division = {	
+			name = "装甲一师"
+			location = 15882
+			division_template = "日本帝国装甲师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "装甲二师"
+			location = 1067
+			division_template = "日本帝国装甲师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "装甲三师"
+			location = 7221
+			division_template = "日本帝国装甲师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "装甲四师"
+			location = 10070
+			division_template = "日本帝国装甲师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "装甲五师"
+			location = 7187
+			division_template = "日本帝国装甲师"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "装甲六师"
+			location = 9950
+			division_template = "日本帝国装甲师"
+			start_experience_factor = 0.5
+		}
+
+		division = {	
+			name = "海军陆战队别动队"
+			location = 11997
+			division_template = "海军陆战队"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "海军陆战队别动队"
+			location = 12040
+			division_template = "海军陆战队"
+			start_experience_factor = 0.5
+		}
+		division = {	
+			name = "海军陆战队别动队"
+			location = 12240
+			division_template = "海军陆战队"
+			start_experience_factor = 0.5
+		}
+}

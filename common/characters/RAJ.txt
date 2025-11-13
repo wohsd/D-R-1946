@@ -1,0 +1,17 @@
+characters = {
+	RAJ_Subhash_Chandra_Bose = {
+		name = RAJ_Subhash_Chandra_Bose
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/RAJ_Subhash_Chandra_Bose.png"
+			}
+		}
+		country_leader = {
+			ideology = Populist_Conservatism
+			desc = RAJ_Subhash_Chandra_Bose_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

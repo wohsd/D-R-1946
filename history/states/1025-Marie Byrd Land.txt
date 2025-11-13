@@ -1,0 +1,22 @@
+state = {
+	id = 1025
+	name = "MARIE_BYRD_LAND"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = USA
+		buildings = {
+			17688 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16384 16389 16390 16427 16430 16434 16437 16444 17560 17574 17592 17605 17619 17649 17670 17688 17749 17754 
+	}
+
+	local_supplies=0.0 
+}

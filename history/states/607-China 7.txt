@@ -1,0 +1,31 @@
+
+state={
+	id=607
+	name="STATE_607"
+	manpower=34289800
+	
+	state_category = town
+	
+	buildings_max_level_factor=1.000
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		
+		buildings = {
+			infrastructure = 2 #was: 5
+			industrial_complex = 1
+		}
+		victory_points = {
+			9958 1 
+		}
+
+		
+	}
+
+	provinces={
+		1004 1139 1603 4066 4114 4144 4158 4519 4547 6932 7085 7126 7459 7508 7540 7568 7656 9958 9995 10098 10364 10434 10446 11816 11931 11933 12012 12426 16841 19471 19609 19702 19753 19807 19820 19823 19824 19840 19844 19862 19863 19870 19881 19899 19909 
+	}
+
+	local_supplies=3.0 
+}

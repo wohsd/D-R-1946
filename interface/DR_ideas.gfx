@@ -1,0 +1,197 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_idea_low_industrialization"
+		texturefile = "gfx/interface/ideas/idea_low_industrialization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Agricultural_economy"
+		texturefile = "gfx/interface/ideas/idea_Agricultural_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Basic_industrialization"
+		texturefile = "gfx/interface/ideas/idea_Basic_industrialization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Mature_industrialization"
+		texturefile = "gfx/interface/ideas/idea_Mature_industrialization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Developed_industrialization"
+		texturefile = "gfx/interface/ideas/idea_Developed_industrialization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_completely_illiterate"
+		texturefile = "gfx/interface/ideas/idea_completely_illiterate.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_elementary_school"
+		texturefile = "gfx/interface/ideas/idea_elementary_school.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_secondary_school"
+		texturefile = "gfx/interface/ideas/idea_secondary_school.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_university_level"
+		texturefile = "gfx/interface/ideas/idea_university.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_compulsory_education"
+		texturefile = "gfx/interface/ideas/idea_compulsory_education.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_No_labor_laws"
+		texturefile = "gfx/interface/ideas/idea_No_labor_laws.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Deflection_workers"
+		texturefile = "gfx/interface/ideas/idea_Deflection_workers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Deflection_employer"
+		texturefile = "gfx/interface/ideas/idea_Deflection_employer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Trade_union_neutrality"
+		texturefile = "gfx/interface/ideas/idea_Trade_union_neutrality.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_State_trade_unions"
+		texturefile = "gfx/interface/ideas/idea_State_trade_unions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Local_trade_unions"
+		texturefile = "gfx/interface/ideas/idea_Local_trade_unions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_atheism"
+		texturefile = "gfx/interface/ideas/idea_atheism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Freedom_belief"
+		texturefile = "gfx/interface/ideas/idea_Freedom_belief.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Religion_prohibited"
+		texturefile = "gfx/interface/ideas/idea_Religion_prohibited.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Theocratic_state"
+		texturefile = "gfx/interface/ideas/idea_Theocratic_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_State_control"
+		texturefile = "gfx/interface/ideas/idea_State_control.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Special_police"
+		texturefile = "gfx/interface/ideas/idea_Special_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Local_police"
+		texturefile = "gfx/interface/ideas/idea_Local_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Autonomous_police"
+		texturefile = "gfx/interface/ideas/idea_Autonomous_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Freedom_press"
+		texturefile = "gfx/interface/ideas/idea_Freedom_press.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_State_media"
+		texturefile = "gfx/interface/ideas/idea_State_media.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Media_control"
+		texturefile = "gfx/interface/ideas/idea_Media_control.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Control_media"
+		texturefile = "gfx/interface/ideas/idea_Control_media.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Patriarchy_supreme"
+		texturefile = "gfx/interface/ideas/idea_Patriarchy_supreme.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Traditional_conservatism"
+		texturefile = "gfx/interface/ideas/idea_Traditional_conservatism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Affirmative_action"
+		texturefile = "gfx/interface/ideas/idea_Affirmative_action.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Radical_feminism"
+		texturefile = "gfx/interface/ideas/idea_Radical_feminism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Weak_investments"
+		texturefile = "gfx/interface/ideas/idea_Weak_investments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Underlying_investment"
+		texturefile = "gfx/interface/ideas/idea_Underlying_investment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Medium_investment"
+		texturefile = "gfx/interface/ideas/idea_Medium_investment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Best_investment"
+		texturefile = "gfx/interface/ideas/idea_Best_investment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_No_investment"
+		texturefile = "gfx/interface/ideas/idea_No_investment.dds"
+	}
+
+
+
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_idea_FRA_Burdened_Foreign_Debt"
+		texturefile = "gfx\interface\ideas\FRA\FRA_Burdened_Foreign_Debt.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Champagne_Agreement"
+		texturefile = "gfx\interface\ideas\FRA\FRA_Champagne_Agreement.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Food_crisis"
+		texturefile = "gfx\interface\ideas\FRA\FRA_Food_crisis.png"		
+	}
+
+
+
+
+
+
+###JAP
+	spriteType = {
+		name = "GFX_idea_JAP_Yoshida_faction_staff"
+		texturefile = "gfx\interface\ideas\JAP\JAP_Yoshida_faction_staff.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Golden_Age"
+		texturefile = "gfx\interface\ideas\JAP\JAP_Golden_Age.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Showa_Democracy"
+		texturefile = "gfx\interface\ideas\JAP\JAP_Showa_Democracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Members_Co_Prosperity_Sphere"
+		texturefile = "gfx\interface\ideas\JAP\JAP_Members_Co_Prosperity_Sphere.png"
+	}
+}
+
+

@@ -1,0 +1,28 @@
+﻿
+add_namespace = EGY_newevent
+news_event = {
+	id = EGY_newevent.1
+	title = EGY_newevent.1.t
+	desc = EGY_newevent.1.d
+	picture = GFX_EGY_newevent_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = EGY_newevent.1.a
+	}
+}
+# debug event used for creating agency & cryptology
+country_event = {
+	id = eco_countryevent.1
+	title = eco_countryevent.1.t
+	desc = eco_countryevent.1.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	immediate = {
+		#create_intelligence_agency = yes
+		#upgrade_intelligence_agency = upgrade_form_department
+	}
+	option = {
+		name = eco_countryevent.1.a
+	}
+}

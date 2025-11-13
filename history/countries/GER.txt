@@ -1,0 +1,139 @@
+﻿capital = 64
+
+set_oob = "GER_1936"
+set_air_oob = "GER_1936_air_bba"
+set_naval_oob = "GER_1936_naval"
+set_convoys = 800
+
+set_technology = {
+
+	# Infantry
+	interwar_artillery = 1
+	interwar_antitank = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	paratroopers = 1
+
+	# Doctrines
+	delay = 1
+	elastic_defence = 1
+	armored_spearhead = 1
+	schwerpunk = 1
+	blitzkrieg = 1
+	convoy_interdiction_ti = 1
+	unrestricted_submarine_warfare = 1
+	raider_patrols = 1
+
+	# Air
+	formation_flying = 1		
+	dive_bombing = 1
+	direct_ground_support = 1
+
+	# Electronics
+	electronic_mechanical_engineering = 1
+	radio = 1
+	cavity_magnatron = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	basic_encryption = 1
+	basic_decryption = 1
+
+	# Industry
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	oil_processing = 1
+	fuel_refining2 = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	construction4 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+	dispersed_industry3 = 1
+	dispersed_industry4 = 1
+	basic_fortification_tech = 1
+}
+
+set_technology = {
+	aa_lmg = 1
+	engines_1 = 1
+	engines_2 = 1
+	early_bombs = 1
+    aircraft_construction = 1
+	iw_small_airframe = 1
+	iw_medium_airframe = 1
+	basic_small_airframe = 1
+	air_torpedoe_1 = 1
+	bba_early_transport_plane = 1
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_transport_plane = 1
+}
+
+set_technology = {
+	basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+		basic_dp_light_battery = 1
+}
+
+recruit_character = GER_Franz_von_Papen
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	Dictatorship = 13
+	Liberalism = 13
+	Conservatism = 50
+	Nationalism = 19
+	Reformism = 5
+}
+
+add_ideas = {
+	
+	#law
+	Market_economy
+	Freedom_belief
+	Traditional_conservatism
+	No_labor_laws
+	Media_control
+	Underlying_investment
+	low_industrialization
+	Local_police
+}
+
+
+
+

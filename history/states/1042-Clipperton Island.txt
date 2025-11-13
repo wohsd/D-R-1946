@@ -1,0 +1,22 @@
+state={
+	id=1042
+	name="CLIPPERTON_ISLAND"
+	manpower=10
+	state_category = tiny_island
+	
+	history= {
+		owner = USA
+		buildings = {
+			#infrastructure = 1
+			19995 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		19995
+	}
+
+	local_supplies=0.0 
+}

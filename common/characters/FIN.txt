@@ -1,0 +1,17 @@
+characters = {
+	FIN_Carl_Mannerheim = {
+		name = FIN_Carl_Mannerheim
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FIN/FIN_Carl_Mannerheim.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = FIN_Carl_Mannerheim_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

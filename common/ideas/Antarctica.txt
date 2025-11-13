@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		ZZZ_Antarctic_Anarchy = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = ZZZ_antarctic_anarchy
+			modifier = {
+				Army_org = -10
+				Army_morale_factor = -1
+				#Training_time_factor = 0.00
+				Army_defence_factor = -1
+				Mobilization_speed = -1
+				Conscription_factor = -1
+				Political_power_gain = -2
+				Industrial_capacity_factory = -1
+				Production_speed_buildings_factor = -1
+				research_speed_factor = -10
+				resistance_target = -1
+				monthly_population = -1
+				recruitable_population = -1
+			}
+		}
+	}
+	hidden_ideas = {
+		ZZZ_hidden = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				ai_call_ally_desire_factor = -100
+				ai_desired_divisions_factor = -100
+				ai_get_ally_desire_factor = -100
+				ai_join_ally_desire_factor = -100
+				ai_license_acceptance = -100
+				democratic_acceptance = -10000
+				communism_acceptance = -10000
+				neutrality_acceptance = -10000
+				fascism_acceptance = -10000
+				drift_defence_factor = 1000
+				neutrality_drift = 1000
+				disabled_ideas = 1
+				join_faction_tension = 100
+				justify_war_goal_time = 100
+				guarantee_tension = 100
+				generate_wargoal_tension = 100
+				embargo_cost_factor = 10000
+				weekly_manpower = -100
+
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=744
+	name="STATE_744"
+	provinces={
+		1976 2006 4167 4256 4295 5092 7301 7406 7418 10257 12408 12713 16941 16993 17053 19508 19617 19641 19647 19658 19663 19694 19703 19707 19713 19754 
+	}
+
+	history={
+		owner = CHI
+		
+		add_core_of = CHI
+		victory_points = {
+			7418 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	manpower=9000000
+	buildings_max_level_factor=1.000
+	state_category = town
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,17 @@
+characters = {
+	JOR_Abd_Allah_ibn_al_Husayn = {
+		name = JOR_Abd_Allah_ibn_al_Husayn
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JOR/JOR_Abd_Allah_ibn_al_Husayn.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = JOR_Abd_Allah_ibn_al_Husayn_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

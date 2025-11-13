@@ -1,0 +1,32 @@
+state={
+	id=726
+	name="STATE_726"
+	manpower=123214
+	state_category = small_island
+
+	history={
+		owner = NZL
+		add_core_of = SAM
+		buildings = {
+			infrastructure = 2
+			7290 = {
+				naval_base = 1
+			}
+			#
+			19969 = {
+				naval_base = 1
+			}
+			19980 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			7290 1
+		}
+	}
+	provinces={
+		7290 19960 19969 19980 
+	}
+
+	local_supplies=0.0 
+}

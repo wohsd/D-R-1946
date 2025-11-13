@@ -1,0 +1,17 @@
+characters = {
+	LAO_Sisavang_Vong = {
+		name = LAO_Sisavang_Vong
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/LAO_Sisavang_Vong.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = LAO_Sisavang_Vong_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

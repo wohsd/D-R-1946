@@ -1,0 +1,17 @@
+characters = {
+	FRA_Paul_Ramadier = {
+		name = FRA_Paul_Ramadier
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Paul_Ramadier.png"
+			}
+		}
+		country_leader = {
+			ideology = Social_Democracy
+			desc = FRA_Paul_Ramadier_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

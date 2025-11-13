@@ -1,0 +1,123 @@
+﻿capital = 361
+
+oob = "USA_1936"
+
+# Starting tech
+set_naval_oob = "USA_1946_naval"
+
+set_technology = {
+
+	# Infantry
+	interwar_artillery = 1
+	interwar_antitank = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	paratroopers = 1
+
+	# Doctrines
+	delay = 1
+	elastic_defence = 1
+	armored_spearhead = 1
+	schwerpunk = 1
+	blitzkrieg = 1
+	convoy_interdiction_ti = 1
+	unrestricted_submarine_warfare = 1
+	raider_patrols = 1
+
+	# Air
+	formation_flying = 1		
+	dive_bombing = 1
+	direct_ground_support = 1
+
+	# Electronics
+	electronic_mechanical_engineering = 1
+	radio = 1
+	cavity_magnatron = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	basic_encryption = 1
+	basic_decryption = 1
+
+	# Industry
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	oil_processing = 1
+	fuel_refining2 = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	construction4 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+	dispersed_industry3 = 1
+	dispersed_industry4 = 1
+	basic_fortification_tech = 1
+}
+
+set_technology = {
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	early_transport_plane = 1
+}
+
+set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+		basic_dp_light_battery = 1
+}
+
+recruit_character = USA_Thomas_Dewey
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1948.11.2"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	Dictatorship = 5
+	Liberalism = 45
+	Conservatism = 25
+	Reformism = 25
+}
+
+add_ideas = {
+	#law
+	Market_economy
+	Freedom_belief
+	Traditional_conservatism
+	No_labor_laws
+	Media_control
+	Underlying_investment
+	low_industrialization
+	Local_police
+}

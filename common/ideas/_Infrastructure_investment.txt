@@ -1,0 +1,120 @@
+ideas = {
+
+	Livelihood_investment = {
+		law = yes
+		use_list_view = yes
+		No_investment = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor= -0.1
+				production_speed_infrastructure_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+			}
+
+			cancel_if_invalid = no
+		}
+		Weak_investments = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor= -0.05
+				production_speed_infrastructure_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+			}
+
+			cancel_if_invalid = no
+
+		}
+		Underlying_investment = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+				modifier = {
+					production_speed_buildings_factor= 0.05
+					production_speed_infrastructure_factor = 0.05
+					production_speed_arms_factory_factor = 0.05
+					production_speed_industrial_complex_factor = 0.05
+				}
+
+		}
+		Medium_investment = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+			modifier = {
+					production_speed_buildings_factor= 0.1
+					production_speed_arms_factory_factor = 0.1
+					production_speed_industrial_complex_factor = 0.1
+					production_speed_infrastructure_factor = 0.1
+				}
+		}
+		Best_investment = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+				modifier = {
+					production_speed_buildings_factor= 0.15
+					production_speed_arms_factory_factor = 0.15
+					production_speed_industrial_complex_factor = 0.15
+					production_speed_infrastructure_factor = 0.15
+				}
+   			
+		}
+	}
+}

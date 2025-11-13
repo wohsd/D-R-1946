@@ -1,0 +1,39 @@
+state = {
+	id = 888
+	name = "STATE_888"
+	manpower = 885237
+	state_category = pastoral 
+
+	history = {
+
+		owner = COG
+
+		IF = {
+			limit = {
+				has_dlc = "Gotterdammerung"
+			}
+			transfer_state_to = COG
+			add_dynamic_modifier = {
+				modifier = COG_state_loyal_to_free_congo_modifier
+			}
+		}
+
+		victory_points = {
+			2024 1 # Bakwanga
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_core_of = COG
+
+	}
+
+	provinces = {
+		5176 13376 13377 13378 13381 13384 13388 13389 13886 13887 13906 13910 13911 13918 13930 14331 14387 
+	}
+
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

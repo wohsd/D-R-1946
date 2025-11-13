@@ -1,0 +1,468 @@
+ideologies = {
+
+    ####无政府主义###
+	Anarchism = {
+	
+		types = {
+			Syndicalist_Anarchism={}
+			Anarchist_Communism={}
+			Community_Anarchism={}
+			Gelaohui_Order = {}
+			Agarian_Autonomism = {}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 0 0 0 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	####激进社会主义###
+	Radical_Socialism = {
+		types = {
+			Radical_Socialism_type={}
+		}
+		dynamic_faction_names = {
+		}
+		color = { 133 0 0 }
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	####革命社会主义###
+	Revolutionism = {
+		types = {
+			Revolutionary_Socialism={}
+			Authoritarian_Socialism={}
+			National_Communism={}
+			Scientific_Socialism={}
+			Leninism={}
+			Council_Socialism={}
+			Agrarian_Socialism={}
+			Populist_Socialism={}
+			Socialist_Popular_Revolution ={}
+			Revolutionary_Syndicalism = {}
+			Revolutionary_Marxism = {}
+			Revolutionary_Massimalismo = {}
+			Revolutionary-front-rev = {}
+		}
+		dynamic_faction_names = {
+		}
+		color = { 194 0 0  }
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	####温和社会主义###
+	Moderate_Socialism = {
+		types = {
+			Moderate_Socialism_type={}
+			Massimalismo ={}
+			Revolutionary-front = {}
+			social_sanmin = {}
+			sunwen_sanmin = {}
+		}
+		dynamic_faction_names = {
+		}
+		color = { 255 0 0 }
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	
+	####改良主义###
+	Reformism = {
+		types = {
+			Social_Democracy={}
+			Reformist_Socialism={}
+			Fabian_Socialism={}
+			Union_Socialism={}
+			Bernstein_Reformism={}
+			sanmin-reformism={}
+			national-socdem = {}
+			revolutionary-corporatism = {}
+			Dannunzionism_Ref = {}
+			Ref-Big-tent = {}
+			social-radicalism = {}
+			new-nationalism = {}
+		}
+		dynamic_faction_names = {
+		}
+		color = { 178 82 107 }
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	
+	####自由主义###
+	Liberalism = {
+	
+		types = {
+			Liberalism_type = {}
+			Social_Liberalism={}
+			Classical_Liberalism={}
+			Conservative_Liberalism={}
+			Progressive_Liberalism={}
+			Hamiltonian_Liberalism = {}
+			sanmin-liberalism = {}
+			national-liberalism = {}
+			progressive-sanmin={}
+			oligarchic-liberalism={}
+			Lib-Big-tent = {}
+			comprador-liberalism = {}
+			agarian-liberalism = {}
+			socialist-liberalism = {}
+			radicalism = {}
+			Jadidism = {}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 0 107 190 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	
+	####保守主义###
+	Conservatism = {
+	
+		types = {
+			Conservatism_type = {}
+			Classical_Conservatism={}
+			Authoritarian_Conservatism={}
+			Religious_Conservatism={}
+			National_Conservatism={}
+			Populist_Conservatism={}
+			Liberal_Conservatism = {}
+			conservative-agarianism = {}
+			conservative-sanmin= {}
+			oligarchic-conservatism = {}
+			jacksonian-conservatism = {}
+			Co-Big-tent = {}
+			comprador-conservatism = {}
+			progressive-conservatism = {}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 101 85 86 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+
+	###家长制##
+	Paternalism = {
+	
+		types = {
+			Paternalism_type={}
+			shishen-contdem = {}
+			semi-democratic-constitutional-monarchy = {}
+			Nationalist_Paternalist_Democracy = {}
+			caudillo-paternalist-democracy = {}
+			tribalism = {}
+			oligarchic-semi-democratic-liberalism = {}
+			sanmin-paternalism={}
+			progressive-sanmin-paternalism={}
+			semidem-cm-liberalism = {}
+			semidem-progressivism = {}
+			warlord-poly = {}
+			military_junta = {}
+			semi-democratic-colonial-government = {}
+			electorial-theocracy = {}
+			semipup-monarchy = {}
+			semipup-civilian = {}
+			semipup-aristocracy = {}
+			batsu-party-mixture = {}
+		}
+		dynamic_faction_names = {
+		}
+		color = { 49 49 49 }
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	
+	###专制主义#
+	Dictatorship = {
+	
+		types = {
+			Dictatorship_type = {}
+			military-dictatorship={}
+			autocratic-constitutional-monarchy = {}
+			Absolute_Monarchy={}
+			warlord-dictatorship = {}
+			ironfist-colonial-government = {}
+			ironfist-colonial-assimilation = {}
+			theocracy = {}
+			theocratic-aristocratic-autocracy = {}
+			aristocratic-monarchy = {}
+			civilian-dictatorship = {}
+			pseudo-rev-rea-aut = {}
+			party-state-warlordism = {}
+			party-state-autocracy = {}
+			institutional-revolutionary-autocracy = {}
+			comprador-dictatorship = {}
+			autocratic-colonial-government = {}
+			caudillo-dictatorship = {}
+			aristocratic-autocracy = {}
+			oligarchic-autocracy = {}
+			zhongshi-rs-dirigisme = {}
+			qing-dirigisme = {}
+			progressive-autocracy = {}
+			guerrilla_movement = {}
+			nationalist-autocracy = {}
+			bonaparte-autocracy = {}
+			bonaparte-auto-cm = {}
+			multinational-colony = {}
+			Edinogist_Colonization = {}
+			interim_government = {}
+			Monarcho-Caesaropapism = {}
+			Chiyouzenism = {}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 55 69 64 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	
+	####民族主义###
+	Nationalism = {
+	
+		types = {
+			Hybrid_Nationalism = {}
+			Edinogism = {}
+			Dannunzionism_N={}
+			National_Populism={}
+			National_Corporatism = {}
+			National_Militarism={}
+			Na-Big-tent = {}
+			fascism = {}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 153 126 0 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	
+	###新反动主义###
+	Neoreactionism = {
+		types = {
+			Neoreactionism_type={}
+			monarch-restorationism = {}
+		}
+		dynamic_faction_names = {
+		}
+		color = { 135 94 22 }
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+}

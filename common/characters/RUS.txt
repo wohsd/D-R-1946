@@ -1,0 +1,17 @@
+characters = {
+	RUS_Lvan_Alexandrovich_Llyin = {
+		name = RUS_Lvan_Alexandrovich_Llyin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/RUS_Lvan_Alexandrovich_Llyin.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = RUS_Lvan_Alexandrovich_Llyin_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

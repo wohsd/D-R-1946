@@ -1,0 +1,93 @@
+ideas = {
+
+	Women_rights = {
+		law = yes
+		use_list_view = yes
+
+		Patriarchy_supreme = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.01
+				conscription_factor = 0.05
+				non_core_manpower = 0.01
+			}
+
+			cancel_if_invalid = no
+
+		}
+		Traditional_conservatism = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.01
+				conscription_factor = 0.08
+				non_core_manpower = 0.05
+			}
+
+			cancel_if_invalid = no
+
+		}
+		Affirmative_action = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+            modifier = {
+				consumer_goods_factor = -0.05
+				}
+   			
+		}
+		Radical_feminism = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+			modifier = {
+				stability_factor = -0.01
+				conscription_factor = -0.15
+				consumer_goods_factor = 0.05
+				}
+   			}
+	}
+}

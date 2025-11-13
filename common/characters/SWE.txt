@@ -1,0 +1,17 @@
+characters = {
+	SWE_Tage_Erlander = {
+		name = SWE_Tage_Erlander
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWE/SWE_Tage_Erlander.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = SWE_Tage_Erlander_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

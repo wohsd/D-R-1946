@@ -1,0 +1,59 @@
+
+
+defined_text = { 
+	name = GetGovernment
+	text = {
+		localization_key = Reformism_desc
+    	trigger = {
+	 		has_government = Reformism
+		}
+	}
+    text = {
+		localization_key = Revolutionism_desc
+		trigger = {
+		has_government = Revolutionism
+		}
+	}
+    text = {
+		localization_key = Conservatism_desc
+		trigger = {
+			has_government = Conservatism
+		}
+	} 
+    text = {
+		 localization_key = Liberalism_desc
+    trigger = {
+	 has_government = Liberalism
+}
+}
+    text = {
+		localization_key = Nationalism_desc
+    	trigger = { 
+	 		has_government = Nationalism
+	}
+	}
+    text = {
+		localization_key = Anarchism_desc
+    	trigger = {
+	 		has_government = Anarchism
+	}
+	}
+	text = {
+		localization_key = Dictatorship_desc
+    	trigger = {
+	 		has_government = Dictatorship
+    	}
+	}
+	text = {
+		localization_key = Paternalism_desc
+    	trigger = {
+	 		has_government = Paternalism
+    	}
+	}
+	text = {
+		localization_key = Neoreactionism_desc
+    	trigger = {
+	 		has_government = Neoreactionism
+    	}
+	}
+}

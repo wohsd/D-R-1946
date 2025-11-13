@@ -1,0 +1,17 @@
+characters = {
+	NOR_Einar_Gerhardsen = {
+		name = NOR_Einar_Gerhardsen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOR/NOR_Einar_Gerhardsen.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = NOR_Einar_Gerhardsen_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

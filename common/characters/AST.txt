@@ -1,0 +1,17 @@
+characters = {
+	AST_Benchifley = {
+		name = AST_Benchifley
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AST/AST_Benchifley.png"
+			}
+		}
+		country_leader = {
+			ideology = Fabian_Socialism
+			desc = AST_Benchifley_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

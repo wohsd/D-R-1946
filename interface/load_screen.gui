@@ -1,0 +1,86 @@
+guiTypes = {
+	windowType = {
+		name = "load_screen"
+		backGround =""
+		position = { x = 0 y = 0 }
+		size = { x = 1024 y = 768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+				
+		windowType = {
+			name = "status"
+			backGround = ""
+			position = { x = 0 y = 20 }
+			size = { x = 1024 y = 768 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = "0"
+			verticalBorder = ""
+			fullScreen = no
+			Orientation = "LOWER_RIGHT"
+
+			iconType = {
+				name = "progressbar"
+				spriteType = "GFX_loadingstatus_progress"
+				position = { x= 570 y = 125 }
+				#scale = 0.85
+			}
+			
+			instantTextBoxType = {
+				name = "text"
+				position = { x = 10000 y = 10000 } #-466
+				textureFile = ""
+				font = "loadscreen_tip"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 933
+				maxHeight = 30
+				fixedsize = yes
+				format = centre
+			}
+		}
+		
+		windowType = {
+			name = "tip"
+			backGround =""
+			position = { x = 0 y = 20 }
+			size = { x = 1024 y = 200 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = "0"
+			verticalBorder = ""
+			fullScreen = no
+			Orientation = "LOWER_LEFT"
+			
+			#iconType = {
+			#	name ="bg_load_screen"
+			#	spriteType = "GFX_loadingtip_bg"
+			#	position = { x= 300 y = -147 }
+			#}
+			#iconType = {
+			#	name ="loadingscreen_back"
+			#	spriteType = "GFX_loadingscreen_back"
+			#	position = { x = 20 y = 120 }
+			#}
+
+
+			instantTextBoxType = {
+				name = "text"
+				position = { x = 80 y = 130 }
+				textureFile = ""
+				font = "loadscreen_tip"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 600
+				maxHeight = 800
+				fixedsize = yes
+				format = left
+				#vertical_alignment = left
+			}
+		}
+	}
+}

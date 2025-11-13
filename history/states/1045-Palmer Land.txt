@@ -1,0 +1,20 @@
+state={
+	id=1045
+	name="PALMER_LAND"
+	manpower=10
+	state_category = wasteland
+	impassable = yes
+	
+	history= {
+		owner = ZZZ
+		buildings = {
+			#infrastructure = 1
+		}
+	}
+	
+	provinces={
+		17568 17599 17604 17606 17613 17710 17769 17775 17776 17777 17779 17781 17783 18103 18104 
+	}
+
+	local_supplies=0.0 
+}

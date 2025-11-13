@@ -1,0 +1,17 @@
+characters = {
+	HUN_Mihaly_Karolyi = {
+		name = HUN_Mihaly_Karolyi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/HUN_Mihaly_Karolyi.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = HUN_Mihaly_Karolyi_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

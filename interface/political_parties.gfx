@@ -1,0 +1,130 @@
+spriteTypes = {
+	#spriteType = { 
+		#name = "GFX_ideology_National_populism_group" 
+		#texturefile = "gfx/interface/ideologies/Hybrid_Nationalism.dds"
+	#}
+	spriteType = { 
+		name = "GFX_ideology_Anarchism_group" 
+		texturefile = "gfx/interface/ideologies/Anarchism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Radical_Socialism_group" 
+		texturefile = "gfx/interface/ideologies/radical_socialist_group.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Revolutionism_group" 
+		texturefile = "gfx/interface/ideologies/Revolutionism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Moderate_Socialism_group" 
+		texturefile = "gfx/interface/ideologies/Reform_socialism_group.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Reformism_group" 
+		texturefile = "gfx/interface/ideologies/Reformism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Liberalism_group" 
+		texturefile = "gfx/interface/ideologies/Liberalism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Conservatism_group" 
+		texturefile = "gfx/interface/ideologies/Conservatism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Paternalism_group" 
+		texturefile = "gfx/interface/ideologies/Paternalism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Dictatorship_group" 
+		texturefile = "gfx/interface/ideologies/Autocratic_Dictatorship.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Nationalism_group" 
+		texturefile = "gfx/interface/ideologies/Hybrid_Nationalism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Neoreactionism_group" 
+		texturefile = "gfx/interface/ideologies/Reactionary.dds"
+	}
+
+	
+
+
+
+
+	spriteType = { 
+		name = "GFX_ideology_Reformist_Socialism" 
+		texturefile = "gfx/interface/ideologies/Democratic_Socialism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Fabian_Socialism" 
+		texturefile = "gfx/interface/ideologies/Fabian_Socialism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_FRW_Syndicalist_Anarchism" 
+		texturefile = "gfx/interface/ideologies/FRW_Syndicalist_Anarchism.dds" 
+	}
+	spriteType = { 
+		name = "GFX_ideology_JPN_Social_Liberalism" 
+		texturefile = "gfx/interface/ideologies/JPN_Social_Liberalism.dds" 
+	}
+	#spriteType = { 
+		#name = "GFX_ideology_WWS_autocratic-constitutional-monarchy" 
+		#texturefile = "gfx/interface/ideologies/WWS_Semi-Constitutional_Monarchy.dds"
+	#}
+	#spriteType = { 
+		#name = "GFX_ideology_SHW_autocratic-constitutional-monarchy" 
+		#texturefile = "gfx/interface/ideologies/SHW_Semi-Constitutional_Monarchy.dds"
+	#}
+	#spriteType = { 
+		#name = "GFX_ideology_AOX_autocratic-constitutional-monarchy" 
+		#texturefile = "gfx/interface/ideologies/AOX_Semi-Constitutional_Monarchy.dds"
+	#}
+	#spriteType = { 
+		#name = "GFX_ideology_JPN_autocratic-constitutional-monarchy" 
+		#texturefile = "gfx/interface/ideologies/JPN_Semi-Constitutional_Monarchy.dds"
+	#}
+	
+
+
+
+	
+	spriteType = { 
+		name = "GFX_ideology_sanmin-reformism" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_progressive-sanmin" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_conservative-sanmin" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_sanmin-paternalism" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Socialist_Popular_Revolution" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Gelaohui_Order" 
+		texturefile = "gfx/interface/ideologies/Gelaohui_Order.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Religious_Conservatism" 
+		texturefile = "gfx/interface/ideologies/religion_conservatism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_oligarchic-conservatism" 
+		texturefile = "gfx/interface/ideologies/oligarchy_conservatism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_jacksonian-conservatism" 
+		texturefile = "gfx/interface/ideologies/Jackson_conservatism.dds"
+	}
+}
+

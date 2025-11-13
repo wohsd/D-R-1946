@@ -1,0 +1,17 @@
+characters = {
+	CAN_William_Lyon_MacKenzie = {
+		name = CAN_William_Lyon_MacKenzie
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAN/CAN_William_Lyon_MacKenzie.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = CAN_William_Lyon_MacKenzie_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

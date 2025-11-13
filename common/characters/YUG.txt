@@ -1,0 +1,17 @@
+characters = {
+	YUG_Peter_II = {
+		name = YUG_Peter_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/YUG_Peter_II.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = YUG_Peter_II_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

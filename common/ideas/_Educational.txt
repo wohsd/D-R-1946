@@ -1,0 +1,208 @@
+ideas = {
+
+	Educational = {
+		law = yes
+		use_list_view = yes
+
+		completely_illiterate = {
+			available = {
+				NOT={
+					OR={
+						has_idea = elementary_school
+						has_idea = secondary_school
+						has_idea = university_level
+						has_idea = compulsory_education
+					}
+				}
+			}
+			on_add = {
+
+			}
+		
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				research_sharing_per_country_bonus_factor = -0.35
+				research_speed_factor = -0.25
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		elementary_school = {
+
+			available = {
+				NOT={
+					OR={
+						has_idea = completely_illiterate
+						has_idea = secondary_school
+						has_idea = university_level
+						has_idea = compulsory_education
+					}
+				}
+			}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				research_sharing_per_country_bonus_factor = -0.25
+				research_speed_factor = -0.2
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		secondary_school = {
+
+			available = {
+				NOT={
+					OR={
+						has_idea = completely_illiterate
+						has_idea = elementary_school
+						has_idea = university_level
+						has_idea = compulsory_education
+					}
+				}
+			}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				research_sharing_per_country_bonus_factor = 0.05
+				research_speed_factor = 0.05
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		university_level = {
+
+			available = {
+				NOT={
+					OR={
+						has_idea = completely_illiterate
+						has_idea = elementary_school
+						has_idea = secondary_school
+						has_idea = compulsory_education
+					}
+				}
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				research_sharing_per_country_bonus_factor = 0.15
+				research_speed_factor = 0.15
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		compulsory_education = {
+
+			available = {
+				NOT={
+					OR={
+						has_idea = completely_illiterate
+						has_idea = elementary_school
+						has_idea = secondary_school
+						has_idea = university_level
+					}
+				}
+			}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				research_sharing_per_country_bonus_factor = 0.25
+				research_speed_factor = 0.25
+				
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+	}
+}

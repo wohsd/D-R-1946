@@ -1,0 +1,114 @@
+ideas = {
+
+	Media_Publishers = {
+		law = yes
+		use_list_view = yes
+
+		Freedom_press = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.02
+				drift_defence_factor = -0.15
+                foreign_subversive_activites = 0.15
+			}
+
+			cancel_if_invalid = no
+
+		}
+		State_media = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.01
+				drift_defence_factor = 0.05
+                foreign_subversive_activites = -0.05
+				subversive_activites_upkeep = -0.05
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		Media_control = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.02
+				drift_defence_factor = 0.1
+                foreign_subversive_activites = -0.1
+				subversive_activites_upkeep = 0.1
+			}
+
+			cancel_if_invalid = no
+
+		}
+		Control_media = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+            modifier = {
+				    stability_factor = -0.02
+					drift_defence_factor = 0.2
+					foreign_subversive_activites = 0.2
+					subversive_activites_upkeep = 0.2
+				}
+   			
+		}
+	}
+}

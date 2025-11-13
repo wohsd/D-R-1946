@@ -1,0 +1,399 @@
+﻿l_simp_chinese:
+ Revolutionism_drift:0 "革命社会主义理念每日新增支持率"
+ Revolutionism_acceptance:0 "革命社会主义外交接纳度"
+ Reformism_drift:0 "社会改良主义理念每日新增支持率"
+ Reformism_acceptance:0 "社会改良主义外交接纳度"
+ Conservatism_drift:0 "保守主义理念每日新增支持率"
+ Conservatism_acceptance:0 "保守主义外交接纳度"
+ Liberalism_drift:0 "自由主义理念每日新增支持率"
+ Liberalism_acceptance:0 "自由主义外交接纳度"
+ Nationalism_drift:0 "民族主义理念每日新增支持率"
+ Nationalism_acceptance:0 "民族主义外交接纳度"
+ Anarchism_drift:0 "无政府主义理念每日新增支持率"
+ Anarchism_acceptance:0 "无政府主义外交接纳度"
+
+ Dictatorship_drift:0 "专制主义理念每日新增支持率"
+ Dictatorship_acceptance:0 "专制主义外交接纳度"
+ Neoreactionism_drift:0 "新反动主义理念每日新增支持率"
+ Neoreactionism_acceptance:0 "新反动主义外交接纳度"
+ Paternalism_drift:0 "家长主义理念每日新增支持率"
+ Paternalism_acceptance:0 "家长主义外交接纳度"
+###母意识形态
+ Revolutionism:0 "革命社会主义"
+ Revolutionism_noun:0 "革命社会主义"
+ Revolutionism_desc:0 "一党制政府"
+
+ Radical_Socialism:0 "激进社会主义"
+ Radical_Socialism_noun:0 "激进社会主义"
+ Radical_Socialism_desc:0 "多党制政府"
+
+ Moderate_Socialism:0 "温和社会主义"
+ Moderate_Socialism_noun:0 "温和社会主义"
+ Moderate_Socialism_desc:0 "多党制政府"
+
+ Reformism:0 "社会改良主义"
+ Reformism_noun:0 "社会改良主义"
+ Reformism_desc:0 "多党制政府"
+
+ Conservatism:0 "保守主义"
+ Conservatism_noun:0 "保守主义"
+ Conservatism_desc:0 "一党制政府"
+
+ Liberalism:0 "自由主义"
+ Liberalism_noun:0 "自由主义"
+ Liberalism_desc:0 "多党制政府"
+
+ Nationalism:0 "传统民族主义"
+ Nationalism_noun:0 "传统民族主义"
+ Nationalism_desc:0 "一党制政府"
+
+ Anarchism:0 "无政府主义"
+ Anarchism_noun:0 "无政府主义"
+ Anarchism_desc:0 "无政党"
+
+ Dictatorship:0 "专制主义"
+ Dictatorship_noun:0 "专制主义"
+ Dictatorship_desc:0 "无党派政府"
+
+ Paternalism:0 "家长制"
+ Paternalism_noun:0 "家长制"
+ Paternalism_desc:0 "一党制政府"
+
+ Neoreactionism:0 "新反动主义"
+ Neoreactionism_noun:0 "新反动主义"
+ Neoreactionism_desc:0 "一党制政府"
+
+ 
+
+###子意识形态
+
+##无政府主义
+ Syndicalist_Anarchism:0 "无政府工团主义"
+ Syndicalist_Anarchism_desc:0 ""
+ Anarchist_Communism:0 "无政府共产主义"
+ Anarchist_Communism_desc:0 "§Y无政府共产主义§!\n"
+ Community_Anarchism:0 "社区无政府主义"
+ Community_Anarchism_desc:0 "§Y社区无政府主义§!\n国家及其国家机器的概念，在不同人眼里有不同的见解。而对于无政府主义者们来讲，国家机器意味着少数人对多数人的暴力专政，代表着等级制度和压迫，代表着旧秩序的延续。因此，这些站在时代风口浪尖的人们大胆提出了一种抛弃现有国家机器模式，以一种全新的方式塑造社会的，激进而浪漫的意识形态——无政府主义。无政府主义者们信奉一种“最完善的社会，乃是无政府而有秩序”的原则。他们从工人群众自发性震荡旧秩序的行为中看到了对未来社会的展望。而这些作为等级社会最底层的劳动阶级，则不能通过政党或是国家组织来代表其行使权力。必须让劳动阶级自发地团结起来，形成一个个新的自发性的社会组织体系，进而形成一种抛弃政党政治和国家机器的社会模式。在经济上，无政府主义者们提倡平等自治的去中心化经济模式，他们相信这种方式能够避免历史上发生过的一切不平等和剥削再次在新社会产生。因其大胆而激进的主张，无政府主义在这个时代难免会招来一些批评。老练的革命家们批评无政府主义是“小资产阶级的自发倾向”，而保守派们则嘲笑无政府主义是不切实际的狂想。但这又如何呢？当黑旗在旧世界的上空升起时，那些压迫者们将会感受到人民千百年来的怒火。而无政府主义者们则会带领他们，喊出那句发自肺腑的口号：“没有神，也没有主人。”"
+ Gelaohui_Order:0 "哥老会秩序"
+ Gelaohui_Order_desc:0 ""
+ anarchist-futurism:0 "无政府未来主义"
+ anarchist-futurism_desc:0 ""
+ Agarian_Autonomism:0 "农民自治主义"
+ Agarian_Autonomism_desc:0 ""
+
+####激进社会主义
+ Radical_Socialism:0 "激进社会主义"
+ Radical_Socialism_desc:0 ""
+ revolutionary-futurism:0 "革命未来主义"
+ revolutionary-futurism_desc:0 ""
+
+##革命社会主义 
+ Revolutionary_Socialism:0 "革命社会主义"
+ Revolutionary_Socialism_desc:0 "§Y革命社会主义§!\n革命社会主义主张通过一场革命来促进国家的权力变革，并通过这种变革改善社会环境和促进公众利益。"
+
+ Authoritarian_Socialism:0 "专政社会主义"
+ Authoritarian_Socialism_desc:0 "§Y专政社会主义§!\n专政社会主义是一种主张由特定的阶级或人群领导，并由这类人群进行权力分配及执政的革命意识形态。通常来讲，专政社会主义一般出现在革命条件尚未成熟，却因为历史作用而不得不发生革命的国家或地区。这类革命通常尚未能够发展出符合现状的革命纲领。因此，为了维护稚嫩的革命果实不受反动派反攻倒算，必须通过专政的手段对一切阻碍革命的力量进行清理与制裁。因此，专政社会主义与其说是一种意识形态，不如说是一种为了保护革命的必要手段。尽管如此，出于各种各样的原因，比如未接受过充足的理论指导和革命教育，也有一部分人认为革命并不是一蹴而就的，而是要在很长段时间内维持专政社会的状态。这种情况下，如果无法适时发展出一种符合实际情况的革命主义理论，那么专政社会主义就有滑向革命反面的风险。"
+
+ National_Communism:0 "民族革命主义"
+ National_Communism_desc:0 "§Y民族革命主义§!\n民族革命主义是一种带有显著本民族色彩的革命思想，这类革命者往往只主张在本民族或由本民族领导、占主体的国家和地区中进行革命，并且往往不打算将革命推及其他国家与民族，甚至可能刻意建立不同民族间的隔阂和地位差距。"
+
+ Scientific_Socialism:0 "科学社会主义"
+ Scientific_Socialism_desc:0 "§Y科学社会主义§!\n科学社会主义主张通过合理的、具有可靠性并且能因地制宜的方法来真正意义上地建成社会主义社会，并一次向更高级的社会形式过渡。这类革命者往往是学习过马克思与恩格斯理论的有识之士，并通常会对自己所属的国家与地区的发展方向具有不同的认识，但通常都主张通过革命的形式来尽可能合理地重新调整国家与社会的情况。"
+
+
+ Leninism:0 "列宁主义"
+ Leninism_desc:0 "§Y列宁主义§!\n列宁主义，又称马克思列宁主义，是一种继承并发展了马克思、恩格斯有关阶级社会理念的意识形态，根据列宁主义者们对这一意识形态的阐述，可以将列宁主义看作是帝国主义和无产阶级革命时代的马克思主义。马克思列宁主义认为，“人类社会的一切历史，都是阶级斗争的历史”。只有通过暴力革命的形式才能推翻资产阶级，实现无产阶级专政。对于革命的领导权问题，列宁主义者认为，巴黎公社式的委员会制度固然有可取之处，但是俄国的革命现状不允许其在革命伊始就实现大规模的委员会民主。因此作为革命的基础,需要组建一个社会主义政党，并将其作为革命的核心，发动最广大的无产阶级群众进行无产阶级革命。" 
+
+ Council_Socialism:0 "委员会社会主义"
+ Council_Socialism_desc:0 "§Y委员会社会主义§!\n委员会社会主义通常指沿袭了马克思、恩格斯阶级斗争学说，并且希望通过工人自发性组织和斗争以推翻封建阶级和资产阶级，从而实现社会主义革命的意识形态。委员会社会主义者们认为，革命组织在革命的过程当中，并不是起领导作用的，而是在阶级内部进行宣传、鼓动，进而激发工人阶级的斗争觉悟,并通过工人阶级控制的直接民主机关一工人委员会来进行斗争。因此，委员会主义对革命党夺取政权的主张相当排斥，认为这一举措将会导致政党的独裁。因其激进的民主主义和革命主义观点，委员会社会主义和师出同门的列宁主义在革命的领导权上出现了分歧，又在对待革命问题的态度上和改良主义者们分道扬镶。他们的观点更加接近于工团主义乃至无政府主义。委员会社会主义者们相信，必须激发工人的自主斗争意识，必须通过民主的工人委员会进行斗争和建设，才能推翻资本主义、远离官僚主义，进而实现马克思、恩格斯的夙愿。"
+
+ Agrarian_Socialism:0 "农业社会主义"
+ Agrarian_Socialism_desc:0 "§Y农业社会主义§!\n现代资本主义和工业催生了无产阶级，并使其登上历史舞台。但是在繁荣的城市之外，尚有广袤的田野，以及几千年来供养着全人类的劳动者一一农民。因此，当革命的风吹向那些尚未迈入工业社会的古老国度时，农业社会主义便在古老的土壤里结出了新世界的果实。农业社会主义，正如同其名字一样，一般流行于那些尚未完成工业化，农业生产依然占主流的国家。在这些国家当中，城市无产阶级的力量往往不足以独立进行无产阶级革命，因此必须与农村的广大劳动者进行有机的结合，从而进行符合最广大人民群众利益的，打倒大资产阶级和封建地主阶级的革命，并彻底改变以往带来诸多苦难的土地私有制。尽管带有“农业”二字.并且植根于土地之上。但农业社会主义者不是什么要倒退回原始文明的卢德主义者。相反，他们深知现代工业是如何彻底改变农业这一人类沿袭上千年的职业。因此，农业社会主义者并不排斥工业化，相反，他们还鼓励工业化的成果往农业资源倾斜。毕竟锄头抡冒烟了都不可能比拖拉机快。"
+
+ Populist_socialism:0 "民粹社会主义"
+ Populist_socialism_desc:0 ""
+
+ Socialist_Popular_Revolution:0 "社会国民革命"
+ Socialist_Popular_Revolution_desc:0 "社会国民革命"
+
+ Revolutionary_Syndicalism:0 "革命工团主义"
+ Revolutionary_Syndicalism_desc:0 "§Y革命工团主义§!\n革命工团主义主张以无产工人组织成的工人团体来发动革命、领导社会、组织生产和掌握权力。这派革命者通常认为经过良好教育并且进行过实际生产的工人群众能有力地代表、领导无产阶级，并且能自发地做出相较其他阶级和无产阶级其他群体更理智、更符合全体无产阶级利益的决策。"
+
+ Revolutionary_Marxism:0 "革命马克思主义"
+ Revolutionary_Marxism_desc:0 "革命马克思主义"
+
+ Revolutionary_Massimalismo:0 "革命最高纲领主义"
+ Revolutionary_Massimalismo_desc:0 "革命最高纲领主义"
+
+ Revolutionary-front-rev:0 "革命阵线"
+ Revolutionary-front-rev_desc:0 "革命阵线"
+
+####温和社会主义
+ Moderate_Socialism:0 "温和社会主义"
+ Moderate_Socialism_desc:0 ""
+ Massimalismo:0 "最高纲领主义"
+ Massimalismo_desc:0 "最高纲领主义"
+ Revolutionary-front:0 "革命阵线"
+ Revolutionary-front_desc:0 "革命阵线"
+ social_sanmin:0 "社会三民主义"
+ social_sanmin_desc:0 "社会三民主义"
+ sunwen_sanmin:0 "孙文三民主义"
+ sunwen_sanmin_desc:0 "孙文三民主义"
+
+
+##社会改良主义
+ Social_Democracy:0 "社会民主主义"
+ Social_Democracy_desc:0"§Y社会民主主义§!\n当社会民主主义第一次出现在世人眼前时，它无疑是革命的。从赫赫有名的《反社会党人非常法案》就能看出来，在当时的旧秩序的眼中，社会民主党人便是革命的代名词，要以最严苛的态度去镇压这群妄图带着泥腿子们企图掀翻王座的空想家们。然而，当我们把目光放到当今这样一个时代时，我们所谈论的社会民主主义，通常是指那些尝试通过民主议会改革资本主义制度，进而通过不流血的方式实现社会共同繁荣的一种意识形态。社会民主主义者们认为，普选权的推广让工人政党通过民主议会进行和平的斗争是可行的；而在那些已经完成了革命的国家，社会民主党人则主张“让市场经济发挥其余热”，放缓社会主义的改造进程，通过和平民主的方式进行缓慢的变革。社会民主主义通常支持对市场经济进行限制，以“有形的大手”保障社会公平。同时，社会民主主义还支持一种进步的多元文化观，对于“文化马克思主义”和“西方马克思主义”也是推崇有加。和这个世界一样，社会民主党人再也不在以原有的面目展示在世人面前了，保守派们一如既往地将他们视为危险的“社会主义分子”，而他们对于革命“无谓的流血”的态度也让革命家们和他们割席断交。但社会革命党人们进行社会变革的理想依然没有改变。他们相信，终有一天他们会向世界证明，社会民主主义的理念才是迈向社会主义的唯一正道。"
+
+ Reformist_Socialism:0 "民主社会主义"
+ Reformist_Socialism_noun:0 "民主社会主义"
+ Reformist_Socialism_desc:0 "§Y民主社会主义§!\n民主社会主义是一种主张在民主框架之内，通过温和的手段实现社会主义变革的意识形态。尽管在终极目的上，他们和其同胞兄弟——革命主义有着很大的相似性，但民主社会主义者认为，通过民主的政治框架去推动社会变革，达到社会革命的目的是可行的。而暴力革命只会带来无谓的牺牲。因此，民主社会主义者反对通过暴力手段推翻资产阶级民主政权，并主张通过工人组织政党参与选举来进行“和平的斗争”。尽管在名字上，民主社会主义和“社会民主主义”看似是一样的，但是在实践过程中，民主社会主义者们相较已经建制化的社民党人们，更多地表现出了一种更为激进的进步主张——包括但不限于，国有化进程，对社会公平的坚定维护和对现政权的“温和改造”，当然，一切都是在民主框架之内的“合法议程”。很难说清这些主张究竟是民主社会主义者们为了争取选票而放出的噱头，还是其为了实现革命目标所采用的和平手段。无论是哪一边，民主社会主义者们都一再强调“无意推翻民主”。但是民主机制下更为保守的政党们对这些“议会里的革命党”还是抱有很强的戒心，毕竟他们都不希望来之不易的民主政权就这样悄悄地被革命者们打着民主的旗号偷走。"
+ #
+ Fabian_Socialism:0 "费边社会主义"
+ Fabian_Socialism_desc:0 "§Y费边社会主义§!\n就连最激进的革命主义者都不得不承认，不列颠是一个古老而保守的国度。血腥的英国内战最后换来的却是迎回君主制；轰轰烈烈的宪章运动没有迎来革命，而是妥协性地成立了工党。既然激烈的革命最终都会在走向温婉的改良，那我们不如大大方方地融入到这亘古不变的风潮当中。由此，一种符合英国“四千万总保守”的社会主义思想诞生了。这种意识形态的信奉者们用善用缓进待机战术取胜的古罗马统帅费边来为其命名，费边主义由此诞生。费边主义，又称费边社会主义。这一意识形态将费边的古老战术运用到了现代的政治策略上。费边主义认为社会是一个有机体，是在不间断地成长与发展的，任何时候都无需破坏社会组织的连续性或是对整个社会组织进行突然地改变。社会主义的到来是不可避免的，但是只能是民主主义的、渐进的、合乎道德的和合乎宪法的与和平的。和一般性的民主社会主义者高度类似，费边主义者们主张通过议会斗争来推动渐进的社会变革，反对暴力革命。但是，吸收了英国传统的费边主义者们也大胆地提出了自己的新主张——如激进的地方分权自治，以及在社会道德层面上的民主改造等。时至今日，费边主义者们仍然以工党激进派的身份活跃于英国的政坛之上，或许假以时日，他们能够给古老而走向衰朽的保守高堂吹来粉色的变革之风。"
+ Union_Socialism:0 "工联社会主义"
+ Union_Socialism_desc:0 "§Y工联社会主义§!\n英国是无产阶级运动的始源地之一，伟大的英国工人在面对部分企业主的压迫时，发出了属于工人的声音。尽管宪章运动因其本身的局限性最终失败了，但是工人阶级的精神还是得到了传承和“符合这个时代的发展性解释”，而如今自诩继承了这股精神的意识形态，便是工联主义。尽管名字来源于第一国际时期，和革命主义者紧密结合的工联团体。但是在现如今的革命主义者看来，工联主义是不折不扣的改良派——这是因为，如今的工联主义者大多认为，劳资矛盾是一体而非对抗式的，因此主张以工会为单位，在社会框架所允许的范围之内，向那些对工人阶级进行残酷剥削的企业主进行经济上的和平抗争，而排斥社会革命乃至任何一种通过暴力或者罢工形式的斗争。同时，工联主义者往往以熟练工人行会作为基本组织，这导致了广大非熟练工人无法参与到他们的组织当中。尽管这维护了他们的“纯洁”，却也让他们成为了改良主义思潮当中的边缘一环。"
+ Bernstein_Reformism:0 "伯恩斯坦主义"
+ Bernstein_Reformism_desc:0 "§Y伯恩斯坦主义§!\n作为马克思和恩格斯的好学生，爱德华·伯恩斯坦在早期革命主义的圈子当中可谓是家喻户晓的人物。然而，随着法兰西民主邦联开始走向改良化，以及国际工人运动开始走向低潮。伯恩施坦的改良思想随着这一低潮开始高涨，并最终得出了一种“进化社会主义”，也就是“伯恩斯坦主义”。伯恩斯坦对经典马克思主义理论进行了一种延伸和“再质疑”。他认为马克思主义理论当中，对于资本主义经济危机的“预言”是“有失偏颇”的。并反对通过暴力来推翻资本主义政权，而是主张工人阶级通过和平的斗争方式来掌握政治权利和经济权利，并“民主而和平地改造国家”。很多情况下，伯恩斯坦都会因为他这些“离经叛道”的主张遭到保守的革命主义者们的斥责。但因为其在左翼圈子的地位以及和导师们的特殊关系，这位蜕化为改良主义者的“前革命家”在如今的泛左翼当中也并不缺乏支持者。而只有时间才能证明，他究竟有没有将马克思和恩格斯的遗产带往一个新的方向。"
+ sanmin-reformism:0 "改良三民主义"
+ sanmin-reformism_desc:0 ""
+
+ national-socdem:0 "民族社会民主主义"
+ national-socdem_desc:0 ""
+
+ revolutionary-corporatism:0 "革命法团主义"
+ revolutionary-corporatism_desc:0 ""
+
+ Dannunzionism_Ref:0 "邓南遮主义"
+ Dannunzionism_Ref_desc:0 ""
+
+ Ref-Big-tent:0 "社会改良大帐篷"
+ Ref-Big-tent_desc:0 ""
+
+ social-radicalism:0 "社会激进主义"
+ social-radicalism_desc:0 ""
+
+ new-nationalism:0 "新国家主义"
+ new-nationalism_desc:0 "§Y新国家主义§!\n罗斯福胜利了。他赢得了选举，改变了新阿比恩，摧毁了联邦党和信托寡头的长期勾结。从背叛他的塔夫脱，到成天在关税问题上喋喋不休的辉格党人，都早已被改组联邦党踩在脚下。新阿比恩将第一次真正走向进步时代，摆脱奴隶制和极端自由主义的恶果。改良后的汉密尔顿主义已然崛起，致大政府、致联邦、致社会进步！"
+
+##自由主义
+ Liberalism:0 "自由主义"
+
+ Social_Liberalism:0 "社会自由主义"
+ Social_Liberalism_desc:0 "§Y社会自由主义§!\n如何在保障民主自由不被极权暴政吞噬的同时维护社会公平不被部分无良的权贵所侵害?如何在革命的烈火和保守的反扑当中走出一条迈向公平正义和自由开放的道路来?社会自由主义给出了自己的答案。社会自由主义，又称现代自由主义。被认为是自由主义发展到二十世纪的一个新的阶段。政治上，社会自由主义认为应当在维护民主的政治框架同时，保障人民的自由权利和发展。因此，和一般的自由主义者相比，他们主张一种政府干预的自由市场经济。通过有形的大手保障市场不会成为吃人的工具，而是全社会共同繁荣的聚宝盆。同时，社会自由主义还主张进一步拓展福利制度和文化上的多元化。这也使得社会自由主义实际上和进步主义者们走得更近，而非他们的自由主义前辈。"
+ Classical_Liberalism:0 "古典自由主义"
+ Classical_Liberalism_desc:0 "§Y古典自由主义§!\n作为最经典的一种自由主义意识形态，古典自由主义被认为是影响自由主义本身，和整个世界最为深远的自由主义思潮。古典自由主义最为鲜明的特征在于其政治哲学:那就是，重视个人的主权，并认为个人先于国家存在。因此，古典自由主义不仅反对其他思潮对自由主义的侵害，也反对国家本身对自由主义的侵害。在众多自由主义的权利中，古典自由主义认为，个人财产的自由是最神圣不可侵犯的。因此古典自由主义极力主张将国家“有形的大手”排斥在自由市场之外，主张完全放任的自由市场经济。并认为这是一种能够最大化效率和保障个人权利的经济方式。古典自由主义带来了将近两个世纪的繁荣。但是对于不少人来讲，古典自由主义往往伴随着无情的利润和鲜血。这也使得一些“现代性”的自由主义者们开始走出古典自由主义的藩篱，追求“现代性的自由”。但是对于古典自由主义本身来说，这一制度是维系发展和繁荣的唯一方式。"
+ Conservative_Liberalism:0 "保守自由主义"
+ Conservative_Liberalism_desc:0 "§Y保守自由主义§!\n作为一种处于光谱中间的意识形态，自由主义尝试在进步和反动两种倾向当中寻找一种平衡，而在这个过程当中，有这样一种自由主义思潮的变种，选择和现状相结合，最终形成了——保守自由主义。作为民主政体的双生子，自由主义和保守主义在相似的立场之下有了结合并非一件很稀奇的事情。但保守自由主义又和其他的自由主义/保守主义思潮又有着明显的不同。比如，他们支持古典自由主义的经济政策，却不支持其他任何形式的自由主义政策。在社会政策等方面，他们往往趋向保守主义，并将其视为维护自由市场的手段或是正道世界的必然选择。无论保守自由主义出于什么样的态度奉行这一理念，我们都可以用一句话概括这种思想：“除了市场是自由的，其他什么都不是自由的。”"
+ Progressive_Liberalism:0 "进步自由主义"
+ Progressive_Liberalism_desc:0 "§Y进步自由主义§!\n作为最具“现代性”的自由主义思想之一，进步自由主义实际上也是两种思想的杂糅产物——从名字我们就能看得出来，进步自由主义混合了自由主义的经济思想和进步主义的社会议题，这也使得这一意识形态成为正道世界当中一个独特的存在。然而，这一思想和其他更为进步的意识形态相比，最大的区别就在于反对国家干预经济，主张自由放任的经济政策。而与之相关的一系列社会政策，往往会让进步自由主义的党派内部吵得个不可开交，最后在各方利益的交换之下取得妥协。在不那么和经济系统相关的社会议题上，进步自由主义则提倡多元化和进步主义的政策。显然，进步自由主义之所以能够成为最具“现代性”的思想，归根结底是因为它站在了正道世界的过去(市场的自由主义)和未来(文化的进步主义)当中。但是它是否能保持这样的现代性，则要取决于这一思想的信奉者能否在这两者之中维系平衡，亦或者是投入其中一方的怀抱当中。"
+
+ progressive-sanmin:0 "进步三民主义"
+ progressive-sanmin_desc:0 ""
+
+ Progressive_Warlord:0 "进步军阀"
+ Progressive_Warlord_desc:0 ""
+
+ Hamiltonian_Liberalism:0 "汉密尔顿自由主义"
+ Hamiltonian_Liberalism_desc:0 ""
+
+ sanmin-liberalism:0 "三民自由主义"
+ sanmin-liberalism_desc:0 ""
+
+ national-liberalism:0 "民族自由主义"
+ national-liberalism_desc:0 ""
+
+ oligarchic-liberalism:0 "寡头自由主义"
+ oligarchic-liberalism_desc:0 ""
+
+ Lib-Big-tent:0 "自由主义大帐篷"
+ Lib-Big-tent_desc:0 ""
+
+ comprador-liberalism:0 "买办自由主义"
+ comprador-liberalism_desc:0 ""
+ 
+ agarian-liberalism:0 "农业自由主义"
+ agarian-liberalism_desc:0 ""
+
+ socialist-liberalism:0 "自由社会主义"
+ socialist-liberalism_desc:0 ""
+ 
+ radicalism:0 "激进主义"
+ radicalism_desc:0 ""
+
+ jadidism:0 "扎吉德主义"
+ jadidism_desc:0 ""
+
+##保守主义
+ Conservatism:0 "保守主义"
+
+ Classical_Conservatism:0 "古典保守主义"
+ Classical_Conservatism_desc:0 "§Y古典保守主义§!\n变革是需要付出代价的，但这个代价又应该让来承担？自由主义的理想固然是好的，但这必然会造成社会的动荡，甚至倒向不可挽回的革命。因此，在自由的浪子们放荡不羁地追求所谓进步之时，需要一位家长来保障已经建立起来的秩序不会因为这些聒噪的言语而被动摇。这就是古典保守主义。古典保守主义认为，如今的人类秩序，是社会历史演变了千百年来的结果。而这一精妙而复杂的机器不应该在新兴思想的粗暴干涉之下像橡皮泥一般被塑造成各种样子，而是让其保留原样。作为控制人类“非理性”部分的重要力量。因此，古典保守主义认为现存的制度是“历史选择的结果”，应当予以保留。在已经构建世界霸权的帝国看来，古典保守主义是维持现存秩序的最佳方案，而在部分新兴国家看来，选择部分回归传统也是一种选择。无论如何，古典保守主义就在那里，偏安于历史长河当中的一隅。"
+
+ Authoritarian_Conservatism:0 "威权保守主义"
+ Authoritarian_Conservatism_desc:0 "§Y威权保守主义§!\n控制国家机器是保护自身传统的最佳方式，但是如果只是控制国家机器，对于威权保守主义者而言远远不够，必须狠狠地对那些“不安定因素”出重拳，才能保证国家的稳定与安全，才能保障传统不被玷污。威权保守主义通常依靠强大的国家机器——如专制君主或者军政府，把持着政权，并对任何尝试挑战权威的异见分子重拳出击。但是，威权保守主义实行专制的目的却可以因为国家状况的不同而大相径庭。但无论是哪种，威权保守主义的底层逻辑都是一样的。那就是，保护现在这个政权不受任何势力(无论国内还是国外)的侵扰和动摇。除此之外，威权保守主义的国家主张相对传统的文化和生活方式，而对于经济的控制力度则随着世界变化和统治集团的意愿而做出相应的调整。"
+ Religious_Conservatism:0 "宗教保守主义"
+ Religious_Conservatism_desc:0 "§Y宗教保守主义§!\n在人类失去对现实的信心之后，往往会向宗教寻求精神寄托。但如果这一人类古老的精神慰藉如同千百年以前一样，进入了国家机器当中，影响甚至控制了政权呢？这就是宗教保守主义。宗教保守主义，是指那些宗教机构和国家机器高度绑定，或者宗教机构部分替代国家机器行使职能的国家所信奉的意识形态。一般来讲，这些国家并没有一种明确的治国思想，而是遵从着所信奉的宗教教义进行国家治理。和极端的传统主义相比，宗教保守主义的一大特点是，他们并不完全排斥现代化，而是愿意进行部分的改革——当然，是在尊重宗教教义的基础上进行的。"
+ National_Conservatism:0 "民族保守主义"
+ National_Conservatism_desc:0 ""
+ Populist_Conservatism:0 "民粹保守主义"
+ Populist_Conservatism_desc:0 "§Y民粹保守主义§!\n如果说对于革命者而言，选择变革是“人民的意愿”，那么对于保守派来讲，选择保守也是“人民的意愿”。要想保卫现在的生活，必须要向人们展示变革的动荡和保守的优越性。我们将这种号召全社会“保卫现在生活”的意识形态为保守民粹主义。保守民粹主义这通常出现在保守主义思潮浓厚的民主国家。这一思想的信奉者们痛斥变革所带来的坏处，并力图让人们相信，只有在现有框架下的生活才是稳定而美好的。因此，他们反对对现有秩序进行进一步的变革，并将其冠以人民意志的名义。在旁人看来，将顽固的保守主义和激进的民粹主义结合在一起，是一种怪异的行为。但在保守民粹主义者看来，这是证明保守主义是由人民选择的最好方式。而只有时间知道，人们会不会愿意继续接受这一成不变的生活，还是选择做出改变。"
+ 
+ conservative-sanmin:0 "保守三民主义"
+ conservative-sanmin_desc:0 ""
+ Liberal_Conservatism:0 "自由保守主义"
+ Liberal_Conservatism_desc:0 ""
+ conservative-agarianism:0 "保守农业主义"
+ conservative-agarianism_desc:0 ""
+ oligarchic-conservatism:0 "寡头保守主义"
+ oligarchic-conservatism_desc:0 ""
+ jacksonian-conservatism:0 "杰克逊保守主义"
+ jacksonian-conservatism_desc:0 ""
+ 
+ Co-Big-tent:0 "保守主义大帐篷"
+ Co-Big-tent_desc:0 ""
+
+ comprador-conservatism:0 "买办保守主义"
+ comprador-conservatism_desc:0 ""
+
+ progressive-conservatism:0 "进步保守主义"
+ progressive-conservatism_desc:0 ""
+
+####家长制
+ Paternalism:0 "家长制"
+ Paternalism_type:0 "家长制"
+ Paternalism_type_desc:0 ""
+ shishen-contdem:0 "士绅指导式民主"
+ shishen-contdem_desc:0 ""
+ sanmin-paternalism:0 "家长制三民主义"
+ sanmin-paternalism_desc:0 ""
+ progressive-sanmin-paternalism:0 "进步家长制三民主义"
+ progressive-sanmin-paternalism_desc:0 ""
+ semi-democratic-constitutional-monarchy:0 "半民主君宪制"
+ semi-democratic-constitutional-monarchy_desc:0 ""
+ Nationalist_Paternalist_Democracy:0 "家长制民族民主主义"
+ Nationalist_Paternalist_Democracy_desc:0 ""
+ caudillo-paternalist-democracy:0 "考迪罗家长制民主"
+ caudillo-paternalist-democracy_desc:0 ""
+ tribalism:0 "部落制"
+ tribalism_desc:0 ""
+ oligarchic-semi-democratic-liberalism:0 "寡头半民主自由主义"
+ oligarchic-semi-democratic-liberalism_desc:0 ""
+ semidem-cm-liberalism:0 "半民主君宪自由主义"
+ semidem-cm-liberalism_desc:0 ""
+ semidem-progressivism:0 "半民主进步主义"
+ semidem-progressivism_desc:0 ""
+ warlord-poly:0 "军阀割据多头制"
+ warlord-poly_desc:0 ""
+ military_junta:0 "军政府"
+ military_junta_desc:0 ""
+ semi-democratic-colonial-government:0 "指导式殖民政府"
+ semi-democratic-colonial-government_desc:0 ""
+ electorial-theocracy:0 "选举神权制"
+ electorial-theocracy_desc:0 ""
+ semipup-monarchy:0 "半傀儡君主制"
+ semipup-monarchy_desc:0 ""
+ semipup-civilian:0 "半傀儡文官专制"
+ semipup-civilian_desc:0 ""
+ semipup-aristocracy:0 "半傀儡贵族专制"
+ semipup-aristocracy_desc:0 ""
+batsu-party-mixture:0 "阀党混合体制"
+batsu-party-mixture_desc:0 ""
+
+####专制主义
+ Dictatorship:0 "专制主义"
+ Dictatorship_type:0 "专制主义"
+ Dictatorship_type_desc:0 ""
+ military-dictatorship:0 "军政专制"
+ military-dictatorship_desc:0 ""
+ warlord-dictatorship:0 "军阀专制"
+ warlord-dictatorship_desc:0 ""
+ civilian-dictatorship:0 "文官专制"
+ civilian-dictatorship_desc:0 ""
+ Absolute_Monarchy:0 "绝对君主制"
+ Absolute_Monarchy_desc:0 ""
+ autocratic-constitutional-monarchy:0 "专制君宪制"
+ autocratic-constitutional-monarchy_desc:0 ""
+ ironfist-colonial-government:0 "铁腕殖民政府"
+ ironfist-colonial-government_desc:0 "铁腕殖民政府"
+ ironfist-colonial-assimilation:0 "殖民同化政府"
+ ironfist-colonial-assimilation_desc:0 "殖民同化政府"
+ theocracy:0 "神权制"
+ theocracy_desc:0 "神权制"
+ theocratic-aristocratic-autocracy:0 "神权-贵族专制"
+ theocratic-aristocratic-autocracy_desc:0 "神权-贵族专制"
+ pseudo-rev-rea-aut:0 "伪革命专制"
+ pseudo-rev-rea-aut_desc:0 "伪革命专制"
+ party-state-warlordism:0 "党国军阀专制"
+ party-state-warlordism_desc:0 "党国军阀专制"
+ party-state-autocracy:0 "党国专制"
+ party-state-autocracy_desc:0 "党国专制"
+ institutional-revolutionary-autocracy:0 "制度化革命专制"
+ institutional-revolutionary-autocracy_desc:0 "制度化革命专制"
+ comprador-dictatorship:0 "买办专制"
+ comprador-dictatorship_desc:0 "买办专制"
+ autocratic-colonial-government:0 "专制殖民政府"
+ autocratic-colonial-government_desc:0 ""
+ caudillo-dictatorship:0 "考迪罗独裁制"
+ caudillo-dictatorship_desc:0 ""
+ aristocratic-autocracy:0 "贵族专制"
+ aristocratic-autocracy_desc:0 ""
+ oligarchic-autocracy:0 "寡头专制"
+ oligarchic-autocracy_desc:0 ""
+ zhongshi-rs-dirigisme:0 "中式君权统制"
+ zhongshi-rs-dirigisme_desc:0 ""
+ qing-dirigisme:0 "大清统制"
+ qing-dirigisme_desc:0 ""
+ progressive-autocracy:0 "进步专制"
+ progressive-autocracy_desc:0 ""
+ nationalist-autocracy:0 "民族主义专制"
+ nationalist-autocracy_desc:0 ""
+ guerrilla_movement:0 "游击运动"
+ guerrilla_movement_desc:0 ""
+bonaparte-autocracy:0 "专制波拿巴主义"
+bonaparte-autocracy_desc:0 ""
+bonaparte-auto-cm:0 "专制君宪波拿巴主义"
+bonaparte-auto-cm_desc:0 ""
+multinational-colony:0 "多国殖民政府"
+multinational-colony_desc:0 ""
+aristocratic-monarchy:0 "贵族君主制"
+aristocratic-monarchy_desc:0 ""
+Edinogist_Colonization:0 "归一主义殖民政府"
+Edinogist_Colonization_desc:0 ""
+interim_government:0 "过渡政府"
+interim_government_desc:0 ""
+Monarcho-Caesaropapism:0 "政教合一君主制"
+Monarcho-Caesaropapism_desc:0 ""
+Chiyouzenism:0 "超然主义"
+Chiyouzenism_desc:0 ""
+
+##民族主义
+ Hybrid_Nationalism:0 "传统民族主义"
+ Hybrid_Nationalism_desc:0 ""
+ Dannunzionism_N:0 "邓南遮主义"
+ Dannunzionism_N_desc:0 ""
+ National_Populism:0 "民族民粹主义"
+ National_Populism_desc:0 ""
+ National_Corporatism:0 "民族法团主义"
+ National_Corporatism_desc:0 ""
+ National_Militarism:0 "民族军国主义"
+ National_Militarism_desc:0 ""
+ Edinogism:0 "归一主义"
+ Edinogism_desc:0 ""
+ fascism:0 "法西斯主义"
+ fascism_desc:0 ""
+
+####新反动主义
+Neoreactionism:0 "新反动主义"
+Neoreactionism_desc:0 ""
+monarch-restorationism:0 "君主复辟主义"
+monarch-restorationism_desc:0 ""
+
+###各国政党
+
+JAP_Liberalism_party:0 "日本自由党"
+JAP_Liberalism_party_long:0 "日本自由党"
+
+ENG_Liberalism_party:0 "英国自由党"
+ENG_Liberalism_party_long:0 "英国自由党"
+

@@ -1,0 +1,17 @@
+characters = {
+	SIA_Rama_VIII = {
+		name = SIA_Rama_VIII
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_Rama_VIII.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = SIA_Rama_VIII_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

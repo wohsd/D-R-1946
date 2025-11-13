@@ -1,0 +1,18 @@
+state={
+	id=1046
+	name="STATE_1046"
+	provinces={
+		 18878 19779 
+	}
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SIK
+		add_core_of = CHI
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

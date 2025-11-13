@@ -1,0 +1,17 @@
+characters = {
+	SAF_Gideon_Brand_van_Zyl = {
+		name = SAF_Gideon_Brand_van_Zyl
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/SAF_Gideon_Brand_van_Zyl.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = SAF_Gideon_Brand_van_Zyl_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

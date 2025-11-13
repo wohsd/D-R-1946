@@ -1,0 +1,90 @@
+﻿l_simp_chinese:
+ head_of_government:0 "政府首脑"
+ head_of_parliament:0 "议会议长"
+ government1:0 "经济法案"
+ government2:0 "政府首脑"
+ government3:0 "政府内阁"
+ research_production:0 "装备研究所"
+ research_production1:0 "工业研究"
+ high_commands:0 "最高指挥部"
+ industrialization:0 "工业化"
+ Educational:0 "受教育水平"
+ Legal:0 "经济体制"
+ Labor:0 "劳工法"
+ No_labor_laws:0 "无劳工保护"
+ Trade_union_neutrality:0 "禁止童工"
+ Deflection_workers:0 "偏向工人"
+ Local_trade_unions:0 "监管机构"
+ State_trade_unions:0 "福利保障"
+ Media_Publishers:0 "媒体出版社"
+ Freedom_press:0 "言论自由"
+ State_media:0 "集会权利"
+ Media_control:0 "出版审查"
+ Control_media:0 "异论非法"
+ Women_rights:0 "妇女权利"
+ Patriarchy_supreme:0 "法定监护"
+ Traditional_conservatism:0 "有产妇女"
+ Affirmative_action:0 "女性工作权"
+ Radical_feminism:0 "女性选举权"
+ Livelihood_investment:0 "生活水平"
+ No_investment:0 "生活水平§R极度贫困§"
+ Weak_investments:0 "生活水平§R贫困§"
+ Underlying_investment:0 "生活水平§R温饱§"
+ Medium_investment:0 "生活水平§G较好§"
+ Best_investment:0 "生活水平§O富裕§"
+ Supervisory_bodies:0 "监管机构"
+ Autonomous_police:0 "自治警察"
+ Local_police:0 "地方警察"
+ Special_police:0 "职业警察"
+ State_control:0 "武装警察"
+ Religious_policy:0 "宗教政策"
+ atheism:0 "国家无神论"
+ Freedom_belief:0 "信仰自由"
+ Religion_prohibited:0 "禁止宗教"
+ Theocratic_state:0 "国教体制"
+ social_security:0 "社会保障"
+ Agricultural_economy:0 "工业化：§R无§！"
+ low_industrialization:0 "工业化：§R低§！"
+ Basic_industrialization:0 "工业化：§G基础§！"
+ Mature_industrialization:0 "工业化：§G中等§！"
+ Developed_industrialization:0 "工业化：§O发达§！"
+
+ completely_illiterate:0 "国民教育水平：§R文盲§！"
+ elementary_school:0 "国民教育水平：§R低§！"
+ secondary_school:0 "国民教育水平：§G中§！"
+ university_level:0 "国民教育水平：§G高§！"
+ compulsory_education:0 "国民教育水平：§O完善§！"
+
+ Syndicate_economy:0 "工人自治"
+ Smallholder_economy:0 "传统经济"
+ Corporate_economy:0 "法团经济"
+ Market_economy:0 "市场经济"
+ Planned_economy:0 "计划经济"
+ Mixed_economy:0 "混合经济"
+
+
+
+
+
+
+
+
+
+
+
+
+Economy_TITLE:0 "经济面板" 
+State_eco_tt:0 "地区生产总值" 
+state_eco_DESC:0 "地区生产总值代表着各地的总和，代表了国家从该地区直接获取的、不经过市场循环资产和生产授权。" 
+state_eco_DELAYED_DESC:0 "地区类型带来的收入：\n飞地/极小岛屿/小岛/荒漠§H+0.15%§!\n牧区/乡村地区/发达乡村地区§H+0.25%§!\n稀疏城镇地区/城镇地区/密集城镇地区§H+0.55%§!\n大城市地区§H+0.70%§!\n大都市地区§H+0.90%§!" 
+
+
+manpower_eco_tt:0 "人口生产总值" 
+company_eco_tt:0 "工厂生产总值" 
+income_eco_tt:0 "生产总值(GDP)"
+GDP_capita_tt:0 "人均(GDP)"
+army_eco_tt:0 "陆军支出"
+navy_eco_tt:0 "海军支出"
+air_eco_tt:0 "空军支出"
+resource_exported_tt:0 "外贸收入"
+resource_imported_tt:0 "外贸支出"

@@ -1,0 +1,17 @@
+characters = {
+	IRE_Sean_ThomasOKelly = {
+		name = IRE_Sean_ThomasOKelly
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRE/IRE_Sean_ThomasOKelly.png"
+			}
+		}
+		country_leader = {
+			ideology = Progressive_Liberalism
+			desc = IRE_Sean_ThomasOKelly_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

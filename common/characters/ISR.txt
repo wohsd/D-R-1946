@@ -1,0 +1,17 @@
+characters = {
+	ISR_David_Ben_Gurion = {
+		name = ISR_David_Ben_Gurion
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISR/ISR_David_Ben_Gurion.png"
+			}
+		}
+		country_leader = {
+			ideology = Populist_Conservatism
+			desc = ISR_David_Ben_Gurion_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

@@ -1,0 +1,81 @@
+
+
+
+
+
+
+
+
+
+
+scripted_gui = { 
+	# Treasury Topbar Container
+	treasury = {
+		context_type = player_context
+
+		window_name = "treasury_container"
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			treasury_bg_click = {
+				if = {
+					limit = {
+						OR = {
+							NOT = { has_country_flag = hide_money }
+						}
+					}
+
+					set_country_flag = hide_money
+				}
+				else = {
+					clr_country_flag = hide_money
+				}
+				income_eco_setup = yes
+				manpower_eco_setup = yes
+				company_eco_setup = yes
+ 
+				army_eco_setup = yes  
+				GDP_resource_exported = yes 
+				GDP_resource_imported = yes 
+			}
+		}
+	}
+	# International Investments Topbar Container
+	all_tab_bg = {
+		context_type = player_context
+
+		window_name = "all_tab"
+
+		visible = {
+			ROOT = { NOT = { has_country_flag = hide_money } }
+		} 
+
+		effects = {
+			close_economy_screen_click = {
+				set_country_flag = hide_money
+			}
+			economy_grid_button_click = {
+				if = {
+					limit = {
+						OR = {
+							NOT = { has_country_flag = open_economy_list }
+							is_ai = yes
+						}
+					}
+
+					set_country_flag = open_economy_list
+				}
+				else = {
+					clr_country_flag = open_economy_list
+				}
+			}
+		}
+
+		triggers = {
+		}
+	}
+
+}

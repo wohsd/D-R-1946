@@ -1,0 +1,17 @@
+characters = {
+	POR_Antonio_de_Oliveira_Salazar = {
+		name = POR_Antonio_de_Oliveira_Salazar
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POR/POR_Antonio_de_Oliveira_Salazar.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = POR_Antonio_de_Oliveira_Salazar_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

@@ -1,0 +1,88 @@
+defined_text = { 
+	name = GetFactionDesc
+text = {
+		 localization_key = NPL_Bonaparte_family_alliance_Desc
+
+		 trigger = {
+				OR = {
+					tag = NPL
+					is_in_faction_with =  NPL
+					is_puppet_of =  NPL
+				}
+	}
+}
+text = {
+	localization_key = United_Provinces_Northern_Italy_Desc
+
+	trigger = {
+		   OR = {
+			   tag = ITE
+			   is_in_faction_with =  ITE
+			   is_puppet_of =  ITE
+		   }
+}
+}
+text = {
+	localization_key = GER_Desc
+
+	trigger = {
+		   OR = {
+			   tag = AOX
+			   is_in_faction_with =  AOX
+			   is_puppet_of =  AOX
+		   }
+}
+}
+text = {
+	localization_key = Se_International_Desc
+
+	trigger = {
+		   OR = {
+			   tag = FRW
+			   is_in_faction_with =  FRW
+		   }
+}
+}
+text = {
+	localization_key = Vienna_Entent_Desc
+
+	trigger = {
+		   AND = {
+			   tag = AOX
+			   is_in_faction_with =  WWS
+			   has_country_flag = ger_con_7
+		   }
+}
+}
+text = {
+	localization_key = North_German_Confederation_Desc
+
+	trigger = {
+		   OR = {
+			WWS={is_faction_leader = yes}
+			is_puppet_of = WWS
+		   }
+}
+}
+text = {
+	localization_key = CHI_BeiPing_Desc
+
+	trigger = {
+		   OR = {
+			tag = ZHX
+			   is_in_faction_with = ZHX
+			   is_puppet_of = ZHX
+		   }
+}
+}
+text = {
+	localization_key = SHW_Russian_White_Army_Desc
+
+	trigger = {
+		   OR = {
+			tag = SHW
+			   is_in_faction_with = SHW
+		   }
+}
+}
+}

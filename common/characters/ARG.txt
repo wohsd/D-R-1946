@@ -1,0 +1,17 @@
+characters = {
+	ARG_Juan_Peron = {
+		name = ARG_Juan_Peron
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARG/ARG_Juan_Peron.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = ARG_Juan_Peron_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

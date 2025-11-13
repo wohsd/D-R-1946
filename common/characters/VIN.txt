@@ -1,0 +1,17 @@
+characters = {
+	VIN_Nguyen_Phuc_Bui = {
+		name = VIN_Nguyen_Phuc_Bui
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VIN/VIN_Nguyen_Phuc_Bui.png"
+			}
+		}
+		country_leader = {
+			ideology = autocratic-constitutional-monarchy
+			desc = VIN_Nguyen_Phuc_Bui_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

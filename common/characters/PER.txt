@@ -1,0 +1,17 @@
+characters = {
+	PER_Mohammad_Reza_Shah_Pahlavi = {
+		name = PER_Mohammad_Reza_Shah_Pahlavi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/PER_Mohammad_Reza_Shah_Pahlavi.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = PER_Mohammad_Reza_Shah_Pahlavi_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

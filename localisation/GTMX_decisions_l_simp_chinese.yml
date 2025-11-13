@@ -1,0 +1,608 @@
+﻿l_simp_chinese:
+####经济决议####
+GTMX_jingji_jueyi:0 "经济政策"
+GTMX_jingji_jueyi_desc:0 "自第三次圣杯战争结束后，经济环境开始逐渐变得全球化，单凭我们自身发展的是很难迅速富强起来的，必须向自己的邻居们做点生意才行"
+GTMX_jianshui:0 "对向[FROM.GetName]出口的资源打折"
+
+GTMX_ranyou_zousi:0 "走私燃油"
+GTMX_ranyou_zousi_desc:0 "燃油是维持战争机器中不可缺少的血液，因此国家会不惜一切代价得到它，我们可以利用这点大发横财，将满载燃油的货船伪装成民用的邮轮逃避潜艇侦查"
+zousi_fuel_small:0 "向[FROM.GetName]走私§Y10§!万吨燃料"
+huode_fuel_small:0 "下一批燃油输送"
+shuchu_fuel_small:0 "秘密输送燃料"
+
+jingji_xiaotiao:0 "经济萧条"
+####
+gtmx_UBS_bank:0 "萌心经济系统"
+gtmx_UBS_bank_desc: "萌心经济系统将粗略地模拟国家收支，以1926年§C圣杯联邦货币§! £hcp_small §Y（Holy Grail Commonwealth Pound）§!简称§YHCP§!为统一单位。游戏默认单位为§Y亿元§!。\nHCP可以兑付为§Y工厂§!或§Y政治点§!，一个国家可以同时拥有§G存款§!和§R贷款§!。\n债务每月§R利息§!为千分之五。\n\n为了性能考虑，收入与支出每月结算一次。"
+####
+UBS_diya_pp:0 "£pol_power_icon §Y政治点§!兑换 £hcp_small "
+UBS_gongchang_pp:0 "£industrial_capacity_icon §Y民用工厂§!兑换 £hcp_small "
+duihuan_pp_1:0 "购买§G政治点§! £pol_power_icon "
+duihuan_gongchang_1:0 "建设§G民用工厂§!£industrial_capacity_icon "
+benguo_fazhan:0 "投资本国发展"
+goumai_renli:0 "购买雇佣兵"
+goumai_keyan:0 "雇佣科学家"
+goumai_ranyou:0 "购买燃油"
+goumai_stability:0 "使用 £hcp_small 调节国内物价"
+goumai_war_support:0 "使用 £hcp_small 发行战争债券"
+daikuan:0 "申请§R贷款§!"
+huanzhai:0 "§Y偿还§!债务"
+
+
+
+
+
+
+warning:0 "§R经济崩溃警告！§!"
+RULE_BAN_UBS:0 "萌心经济系统"
+RULE_OPTION_ALL:0 "全体适用"
+RULE_OPTION_ONLYAI:0 "仅AI"
+RULE_OPTION_ALL_NO:0 "全体禁用"
+####捕获决议#####
+GTMX_prisoner_ENG:0 "被囚禁的骑士王"
+GTMX_prisoner_ENG_desc:0 "随着圣杯王国的灭亡，部分军政要员沦为了我们的阶下囚，这些英灵具有容易被一些特定的魔法操纵的弱点，或者我们也可以投其所好......"
+GTMX_prisoner_FRA:0 "瓶中妖精"
+GTMX_prisoner_FRA_desc:0 "幻想乡政权已彻底不复存在，她们的高层人员不得不向我们屈服。如果考虑到某个知名领袖那人尽皆知的恶劣喜好的话，说服她们为我们效忠应该不算困难。"
+GTMX_prisoner_SHY:0 "伊甸夕阳"
+GTMX_prisoner_SHY_desc:0 "宏伟的圣都伊甸如今已经易主，波拿文都拉皇室的唯一正统继承人已经落入我们手中，只要获得她的支持，部分伊甸将领会加入我们。"
+GTMX_prisoner_NPT:0 "紫耀之都的薄暮"
+GTMX_prisoner_NPT_desc:0 "超次元女神联盟已经被我们完全击败，紫耀之都的两名女神现在是我们的俘虏。那个紫毛萝莉一直嚷嚷着要求游戏机和布丁，得快点解决这档子事情。"
+GTMX_prisoner_USA:0 "无法关押的囚徒"
+GTMX_prisoner_USA_desc:0 "精灵之国的最后一战结束之后时崎狂三等一众精灵就赖在了我们的监狱里，实际上我们根本不知道怎么才能关押可以自由穿梭时空间的精灵，现在她们正在到处乱逛并蹭吃蹭喝。"
+GTMX_prisoner_ITA:0 "烦人的女神"
+GTMX_prisoner_ITA_desc:0 "意呆莉覆灭后，我们成功抓获了阿库西丝教团领袖，水之女神阿库娅本人，她一直在不顾形象地大哭大闹，很难相信这个看起来有智力障碍的不幸女孩是一名女神。"
+GTMX_prisoner_DVL:0 "无主的兵器"
+GTMX_prisoner_DVL_desc:0 "戴比路克的势力已经全面放弃了地球，一些不是那么核心的前帝国军人员看来并未跟随皇家舰队一并撤离，无处可去的她们目前作为战犯被收押在监。"
+GTMX_prisoner_MGU:0 "少女的末路"
+GTMX_prisoner_MGU_desc:0 "苏联彻底分崩离析后，在战争中幸存的魔法少女们部分转入区域性的抵抗运动，还有一些人回归了以前各自为战自由行动的生活，在这种状态下抓捕她们的前领导人相当轻松。"
+anfu:0 "安抚笼络"
+xingxun:0 "刑讯拷打"
+xinao:0 "魔力洗脑"
+anfu1:0 "安抚笼络"
+xingxun1:0 "刑讯拷打"
+xinao1:0 "魔力洗脑"
+anfu2:0 "安抚笼络"
+xingxun2:0 "刑讯拷打"
+xinao2:0 "魔力洗脑"
+anfu3:0 "安抚笼络"
+xingxun3:0 "刑讯拷打"
+xinao3:0 "魔力洗脑"
+anfu4:0 "安抚笼络"
+xingxun4:0 "刑讯拷打"
+xinao4:0 "魔力洗脑"
+anfu5:0 "安抚笼络"
+xingxun5:0 "刑讯拷打"
+xinao5:0 "魔力洗脑"
+anfu6:0 "安抚笼络"
+xingxun6:0 "刑讯拷打"
+xinao6:0 "魔力洗脑"
+anfu7:0 "安抚笼络"
+xingxun7:0 "刑讯拷打"
+xinao7:0 "魔力洗脑"
+####GUI####
+econmic_debuff_modifer: "债务负担"
+UBS_load_high_TXT:0 "§R债务过高§!"
+UBS_jinglirun_TXT:0 "[?lirun_meiyue]"
+UBS_cunkuan_TXT:0 "§Y存款总额§!" 
+UBS_zhaiwu_TXT:0 "§Y债务总额§!"
+UBS_cunkuan_jine_number:0 "§G[?ubs_save]§!"
+UBS_zhaiwu_jine_number:0 "§R[?ubs_load]§!"
+UBS_debt_cost_tt:0 "利息：§R0.50%§!\n目前§R债务负担率§!为：[?Debt_ratio|%-=]\n§Y产生的修正为§!：\n稳定度：[?UBS_debuff_stability_factor|%+=]\n战争支持度：[?UBS_debuff_stability_factor|%+=]\n工厂产出：[?UBS_debuff_production_speed_buildings_factor|%+=]\n船坞产出：[?UBS_debuff_production_speed_buildings_factor|%+=]\n建造速度：[?UBS_debuff_production_speed_buildings_factor|%+=]\n生产效率保持：[?UBS_debuff_industrial_capacity_factory|%+=]\n生产效率上限：[?UBS_debuff_industrial_capacity_factory|%+=]\n生产效率增长：[?UBS_debuff_industrial_capacity_factory|%+=]\n政治点数：[?UBS_debuff_industrial_capacity_factory|%+=]\n陆军攻击：[?UBS_debuff_industrial_capacity_factory|%+=]\n陆军防御：[?UBS_debuff_industrial_capacity_factory|%+=]\n陆军组织度：[?UBS_debuff_industrial_capacity_factory|%+=]"
+ubs_debt_1_text:0 ""
+ubs_debt_2_text:0 "利息:§R5%§!"
+ubs_debt_3_text:0 "利息:§R6%§!"
+ubs_debt_4_text:0 "利息:§R8%§!"
+ubs_debt_5_text:0 "利息:§R10%§!"
+UBS_save_cost_tt:0 ""
+ubs_save_1_text:0 "利息:§G3%§!"
+ubs_save_2_text:0 "利息:§G5%§!"
+ubs_save_3_text:0 "利息:§G7%§!"
+ubs_save_4_text:0 "利息:§G9%§!"
+####军队维护费####
+dongyuan_dengji_1_txt:0 "§Y前期动员§!：§G-10%§!的军队维护费"
+dongyuan_dengji_2_txt:0 "§Y部分动员§!：§G-15%§!的军队维护费"
+dongyuan_dengji_3_txt:0 "§Y战时经济§!：§G-20%§!的军队维护费"
+dongyuan_dengji_4_txt:0 "§Y总动员§!:§G-25%§!的军队维护费"
+jinzhi_shuishou_txt:0 "§R不会获得工业税及消费税！§!"
+jiesheng_junfei_1_TT:0 "军费总体修正：§G-10%§!"
+jiesheng_junfei_2_TT:0 "军费总体修正：§G-15%§!"
+jiesheng_junfei_3_TT:0 "军费总体修正：§G-20%§!"
+jiesheng_junfei_4_TT:0 "军费总体修正：§G-25%§!"
+jiesheng_junfei_5_TT:0 "军费总体修正：§G-30%§!"
+#####特殊buff-减免军费####
+idea_ita_haijun_txt:0 "§Y意呆莉军备发展：§!§G-30%§!"
+####资源贸易/税收###
+#######################################################################################################################
+############################################   新 算 法   ############################################################
+#######################################################################################################################
+UBS_shouru_titile:0 "§G收入明细§!:"
+xiaofeishui_number:0 "国内§Y消费税§!收入：§G[?xiaofeipin]§! £hcp_small §Y/月§!"
+xiaofeishui_number_desc:0 "国内共有§Y[?xiaofeipin]§!座工厂提供生活消费品，产生的消费税为§G[?xiaofeipin]§!\n\n由于P社的神奇的代码，导致出口得到的工厂和附庸提供的工厂都算在了消费税内而不是工业税内。"
+UBS_shuishou:0 "国内§Y工业税§!收入：§G[?gongyeshui]§! £hcp_small §Y/月§!"
+UBS_shuishou_desc:0 "§Y本国§!可用民工数量为§Y[?num_of_civilian_factories_available_for_projects]§!，产生的工业税为§G[?gongyeshui]§!"
+UBS_ziyuan_maoyi_number:0 "§Y出口§!获得的§Y税收:§! §G[?ziyuan_lirun]§!§Y £hcp_small /月§!"
+chukouziyuan_xiangxi:0 "§Y出口到民间市场§!资源总量:§Y[?chukou_zongliang]§!\n £resources_strip|1 §G[?chukou_4]§!§Y单位§!\n £resources_strip|2 §G[?chukou_2]§!§Y单位§!\n £resources_strip|3 §G[?chukou_5]§!§Y单位\n £resources_strip|4 §G[?chukou_3]§!§Y单位§!\n £resources_strip|5 §G[?chukou_1]§!§Y单位§!\n £resources_strip|6 §G[?chukou_6]§!§Y单位§!\n £resources_strip|7 §G[?chukou_7]§!§Y单位§!\n\n出口给别的国家的资源已经成为工厂，产生了消费税或者工业税，故此处不再重复计算。"
+ex_income_number: "其他§Y收支§!：[?exincome|+=] £hcp_small §Y/月§!"
+total_shouru_number:0 "§G合计收入§!：§G[?total_shouru]§! £hcp_small §Y/月§!"
+total_shouru_number_desc: "§G合计收入§!：§G[?total_shouru]§! £hcp_small §Y/月§!\n每月收入修正：[?exincome_modifier|%+=]"
+
+
+UBS_zhichu_titile:0 "§R支出明细§!:"
+UBS_lujun_feiyong_number:0 "§O陆军§!§Y开支§!§R[?lujun_meiyue]§! £hcp_small §Y/月§!"
+UBS_haijun_feiyong_number:0 "§C海军§!§Y开支§!§R[?haijun_meiyue_navy]§! £hcp_small §Y/月§!"
+UBS_kongjun_feiyong_number:0 "§R合计开支§!： §R[?heji_meiyue]§! £hcp_small §Y/月§!"
+lujun_xiangxi_cost_tt:0 "§Y陆军营总数为§!§G[?num_battalions]§!\n§Y产生的支出为§!§R[?lujun_meiyue]§! £hcp_small §Y/月§!\n[lujun_text]\n§Y陆军§!维护费修正为：[?army_fee_modifier|%-=]"
+haijun_xiangxi_cost_tt: "我们拥有海军舰船：\n§Y主力舰§!§G[?zhulijian]§!艘，产生的维护费为§R[?zhulijian]§! £hcp_small §Y/月§!\n§Y航母§!§G[?hangmu]§!艘，产生的维护费为§R[?hangmu]§! £hcp_small §Y/月§!\n§Y屏卫舰§!§G[?pingweijian_num]§!艘，产生的维护费为§R[?pingweijian_money]§! £hcp_small §Y/月§!\n§Y潜艇§!§G[?num_ships_with_type@submarine]§!艘，产生的维护费为§R[?qianting_num]§! £hcp_small §Y/月§!\n§C海军§!维护费修正为：[?navy_fee_modifier|%-=]"
+junfei_zonge_cost_tt:0 "总军队维护费修正为：[?weihufei_modifer|%-=]\n支出总体修正为：[?kaizhi_modifer|%-=]"
+xingzheng_kaizhi_number:0 "行政§Y开支§!§R[?xingzengkaizhi_var]§! £hcp_small §Y/月§!"
+xingzheng_kaizhi_number_desc:0 "§Y我们控制省份共有§!§G[?num_controlled_states]§!§Y个，产生的支出为§!§R[?hexinkaizhi]§! £hcp_small §Y/月§!\n§Y我们拥有的驻军共§!§G[?garrison_manpower_need]§!§Y人，产生的支出为§!§R[?zhujunkaizhi]§! £hcp_small §Y/月§!"
+kongjunkaizhi:0 "§B空军§!§Y开支§!§R[?air_money]§! £hcp_small §Y/月§!"
+# kongjunkaizhi_number_desc:0 "我们已部署§Y飞机§!§G[?num_deployed_planes]§!架，产生的维护费为§R[?air_money]§! £hcp_small §Y/月§!"
+kongjunkaizhi_number_desc: "由于AI会爆一堆垃圾飞机，导致经济崩溃，所以暂时移除了空军维护费"
+
+
+
+shuaxin_desc: "刷新收支数据与GDP排行"
+
+
+################################
+
+income_modifier: "§Y收入§!修正：[?exincome_modifier|%+=]"
+exoutcome: "额外§Y支出§!：[?exoutcome|-=] £hcp_small §Y/月§!"
+
+#######################################################################################################################
+exincome_10_modifier_lose: "HCP收入减少§R10%§! £hcp_small /月"
+exincome_20_modifier_lose: "HCP收入减少§R20%§! £hcp_small /月"
+exincome_30_modifier_lose: "HCP收入减少§R30%§! £hcp_small /月"
+exincome_40_modifier_lose: "HCP收入减少§R40%§! £hcp_small /月"
+exincome_50_modifier_lose: "HCP收入减少§R50%§! £hcp_small /月"
+exincome_60_modifier_lose: "HCP收入减少§R60%§! £hcp_small /月"
+exincome_80_modifier_lose: "HCP收入减少§R80%§! £hcp_small /月"
+exincome_100_modifier_lose: "HCP收入减少§R100%§! £hcp_small /月"
+
+
+exincome_8_modifier_gain: "HCP收入增加§G8%§! £hcp_small /月"
+exincome_10_modifier_gain: "HCP收入增加§G10%§! £hcp_small /月"
+exincome_15_modifier_gain: "HCP收入增加§G15%§! £hcp_small /月"
+exincome_20_modifier_gain: "HCP收入增加§G20%§! £hcp_small /月"
+exincome_30_modifier_gain: "HCP收入增加§G30%§! £hcp_small /月"
+exincome_40_modifier_gain: "HCP收入增加§G40%§! £hcp_small /月"
+exincome_50_modifier_gain: "HCP收入增加§G50%§! £hcp_small /月"
+exincome_60_modifier_gain: "HCP收入增加§G60%§! £hcp_small /月"
+exincome_80_modifier_gain: "HCP收入增加§G80%§! £hcp_small /月"
+exincome_100_modifier_gain: "HCP收入增加§G100%§! £hcp_small /月"
+
+UBS_COST_5_monthly_money: "HCP开支增加§R5§! £hcp_small /月"
+UBS_COST_10_monthly_money: "HCP开支增加§R10§! £hcp_small /月"
+UBS_COST_15_monthly_money: "HCP开支增加§R15§! £hcp_small /月"
+UBS_COST_20_monthly_money: "HCP开支增加§R20§! £hcp_small /月"
+UBS_COST_25_monthly_money: "HCP开支增加§R25§! £hcp_small /月"
+UBS_COST_30_monthly_money: "HCP开支增加§R30§! £hcp_small /月"
+UBS_COST_50_monthly_money: "HCP开支增加§R50§! £hcp_small /月"
+
+UBS_out_modifier_5_monthly_money: "HCP开支增加§R5%§! £hcp_small /月"
+UBS_out_modifier_10_monthly_money: "HCP开支增加§R10%§! £hcp_small /月"
+UBS_out_modifier_15_monthly_money: "HCP开支增加§R15%§! £hcp_small /月"
+UBS_out_modifier_20_monthly_money: "HCP开支增加§R20%§! £hcp_small /月"
+UBS_out_modifier_25_monthly_money: "HCP开支增加§R25%§! £hcp_small /月"
+UBS_out_modifier_30_monthly_money: "HCP开支增加§R30%§! £hcp_small /月"
+UBS_out_modifier_50_monthly_money: "HCP开支增加§R50%§! £hcp_small /月"
+
+UBS_gain_5_monthly_money: "HCP收入增加§G5§! £hcp_small /月"
+UBS_gain_10_monthly_money: "HCP收入增加§G10§! £hcp_small /月"
+UBS_gain_15_monthly_money: "HCP收入增加§G15§! £hcp_small /月"
+UBS_gain_20_monthly_money: "HCP收入增加§G20§! £hcp_small /月"
+UBS_gain_25_monthly_money: "HCP收入增加§G25§! £hcp_small /月"
+UBS_gain_50_monthly_money: "HCP收入增加§G50§! £hcp_small /月"
+
+
+UBS_lose_10_monthly_money: "HCP收入减少§R10§! £hcp_small /月"
+UBS_lose_15_monthly_money: "HCP收入减少§R15§! £hcp_small /月"
+
+navy_fee_modifier_80_decrease: "§C海军§!§Y维护费§!减少§G80%§! £hcp_small /月"
+
+
+
+#custom_modifier_tooltip
+
+HCP_300: "£hcp_small §H300§!"
+HCP_300_blocked: "£hcp_small §R300§!"
+HCP_300_tooltip: "执行此决议需要£hcp_small §H300§!"
+
+HCP_200: "£hcp_small §H200§!"
+HCP_200_blocked: "£hcp_small §R200§!"
+HCP_200_tooltip: "执行此决议需要£hcp_small §H200§!"
+
+HCP_150: "£hcp_small §H150§!"
+HCP_150_blocked: "£hcp_small §R150§!"
+HCP_150_tooltip: "执行此决议需要£hcp_small §H150§!"
+
+HCP_100: "£hcp_small §H100§!"
+HCP_100_blocked: "£hcp_small §R100§!"
+HCP_100_tooltip: "执行此决议需要£hcp_small §H100§!"
+
+HCP_50: "£hcp_small §H50§!"
+HCP_50_blocked: "£hcp_small §R50§!"
+HCP_50_tooltip: "执行此决议需要£hcp_small §H50§!"
+
+
+
+
+
+daikuan_forbid: "禁止贷款"
+
+
+weihufei_jian_10: "军队维护费修正：§G-10%§!"
+weihufei_jian_15: "军队维护费修正：§G-15%§!"
+weihufei_jian_20: "军队维护费修正：§G-20%§!"
+weihufei_jian_25: "军队维护费修正：§G-25%§!"
+weihufei_jian_30: "军队维护费修正：§G-30%§!"
+
+#######################################################################################################################
+your_country_name: "§Y[ROOT.Getname]§!"
+your_country_number: "世界GDP排行为：§G[?ROOT.econ_ranking]§!"
+gdp_number: "排行"
+gdp_country_name: "国家"
+mounthly_income: "当前GDP排行"
+world_gdp_paihang_view_window_tital: "§C全球前20经济体§!\n(每月刷新)"
+
+
+world_indu_paihang_view_window_tital: "§C全球前20工业体§!\n(每月刷新)"
+total_indu_tital: "人均GDP"
+indu_your_country_number: "人均GDP排行为：§G[?ROOT.indu_ranking]§!"
+Total_number_factories_num: "工厂总数：§G[?ROOT.num_of_factories]§!"
+Total_number_state_num: "控制的省份：§G[?ROOT.num_controlled_states]§!"
+
+#######################################################################################################################
+####自定义####
+ziyuan_dazhe_ing:0 "正在对他国施行贸易政策"
+gtmx_trade_love:0 "额外贸易优惠"
+gtmx_trade_love_2:0 "额外贸易优惠"
+maoyi_youhui_love:0 "额外贸易优惠"
+zousi_lirun_no:0 "输出§Y5§!次燃料"
+jieshou_fuel_small_no:0 "接收§Y5§!次燃料"
+GTMX_jianshui_qianzhi:0 "我们国家§Y任意资源§!的产出在§Y80§!点以上"
+ubs_bank_UP_cost_100:0 "存款§G增加§!§Y100§! £hcp_small"
+diya_CD_30_1:0"§Y30§!天内用政治点兑换过 £hcp_small"
+diya_CD_30_2:0"§Y30§!天内用民用工厂兑换过 £hcp_small"
+daikuan_CD_60:0"§Y60§!天内进行过贷款"
+goumai_CD_30_1:0"§Y30§!天内购买过§Y政治点数§!"
+goumai_CD_30_2:0"§Y30§!天内购买过§Y民用工厂§!"
+ubs_huanzhai_text:0"从§Y存款总额§!中扣除HCP来减少§Y债务总额§!\n一次还款最多为§Y500§! £hcp_small，若§G存款§!或§R债务§!任意数额低于§Y500§! £hcp_small则以较小方的全部的HCP数量作为还款金额"
+JING_LIRUN:0 "§Y每月净收益§!\n\n下个月HCP变化§Y[?lirun_meiyue]§!"
+JING_LIRUN_DELAYED:0 "每月§Y固定收入§!减去§Y军队维护费§!可得到每月净收益"
+CUI_ZHAI:0 "§R负债过高§!\n\n你的国家当前负债为§Y[?ubs_load]§!\n请通过决议尽快还款，否则将来有可能引发§R经济萧条§!"
+####瑞银变量效果####
+UBS_SAVE_UP_50:0 "增加§G50§! £hcp_small\n"
+UBS_SAVE_UP_70:0 "增加§G70§! £hcp_small\n"
+UBS_SAVE_UP_100:0 "增加§G100§! £hcp_small\n"
+UBS_SAVE_UP_150:0 "增加§G150§! £hcp_small\n"
+UBS_SAVE_UP_170:0 "增加§G170§! £hcp_small\n"
+UBS_SAVE_UP_200:0 "增加§G200§! £hcp_small\n"
+UBS_SAVE_UP_300:0 "增加§G300§! £hcp_small\n"
+UBS_SAVE_UP_600:0 "增加§G600§! £hcp_small\n"
+UBS_SAVE_UP_1000:0 "增加§G1000§! £hcp_small\n"
+
+UBS_SAVE_down_50:0 "减少§R50§! £hcp_small\n"
+UBS_SAVE_down_70:0 "减少§R70§! £hcp_small\n"
+UBS_SAVE_down_100:0 "减少§R100§! £hcp_small\n"
+UBS_SAVE_down_150:0 "减少§R150§! £hcp_small\n"
+UBS_SAVE_down_170:0 "减少§R170§! £hcp_small\n"
+UBS_SAVE_down_200:0 "减少§R200§! £hcp_small\n"
+UBS_SAVE_down_300:0 "减少§R300§! £hcp_small\n"
+
+UBS_LOAD_UP_50:0 "增加§R50亿§!债务\n"
+UBS_LOAD_UP_70:0 "增加§R70亿§!债务\n"
+UBS_LOAD_UP_105:0 "增加§R105亿§!债务\n"
+UBS_LOAD_UP_315:0 "增加§R315亿§!债务\n"
+UBS_LOAD_UP_630:0 "增加§R630亿§!债务\n"
+UBS_LOAD_UP_1050:0 "增加§R1050亿§!债务\n"
+
+
+
+
+cunkuan_xuqiu_50:0 "至少有§G50§! £hcp_small "
+cunkuan_xuqiu_100:0 "至少有§G100§! £hcp_small "
+cunkuan_xuqiu_150:0 "至少有§G150§! £hcp_small "
+cunkuan_xuqiu_200:0 "至少有§G200§! £hcp_small "
+cunkuan_xuqiu_300:0 "至少有§G300§! £hcp_small "
+
+
+daikuan_xuqiu_5000:0 "债务不高于§R5000§!"
+daikuan_xuqiu_4000:0 "债务不高于§R4000§!"
+daikuan_xuqiu_3000:0 "债务不高于§R3000§!"
+daikuan_xuqiu_1000:0 "债务不高于§R1000§!"
+####精神####
+ubs_debt_1:0 "债务负担 低"
+ubs_debt_2:0 "债务负担 §Y一般§!"
+ubs_debt_3:0 "债务负担 §Y高§!"
+ubs_debt_4:0 "债务负担 §R非常高§!"
+ubs_debt_5:0 "债务负担 §R灾难§!"
+ziyuan_youhui:0 "资源进口优惠"
+ziyuan_youhui_desc:0 "这个国家进口我们的资源时会得到优惠"
+
+####事件####
+gtmx_jueyi.1.t:0 "[From.GetName]对我们贸易优惠"
+gtmx_jueyi.1.d:0 "为了我们两国的能够更深层的交往[From.GetName]决定减少我们对其资源的进口价格，我们在进口[From.GetName]的战略物资上将享受半价优惠"
+gtmx_jueyi.1.a:0 "大好事"
+
+gtmx_jueyi.2.t:0"[From.GetName]可以对我们走私石油"
+gtmx_jueyi.2.d:0"我们陷入了战争，部分石油来源被封锁了。[From.GetName]表示可以对我们秘密的输送燃料，总量为50吨，分批次运输且不会被敌人干扰，当然价格也不会便宜"
+gtmx_jueyi.2.a:0"这对我们很有帮助"  
+gtmx_jueyi.2.b:0"还不需要"  
+
+gtmx_jueyi.3.t:0"[From.GetName]同意燃料我们秘密输送燃料"
+gtmx_jueyi.3.d:0"对方同意我们走私燃料的提议，我们会把货船伪装成邮轮以此来躲避他国的海上封锁"
+gtmx_jueyi.3.a:0"很好"  
+gtmx_jueyi.3.b:0""  
+
+gtmx_jueyi.4.t:0"燃油悄悄到岸了"
+gtmx_jueyi.4.d:0"我们每20天都会从走私中收到10万吨的燃料，这对我们的战争非常有用"
+gtmx_jueyi.4.a:0"非常有用"  
+gtmx_jueyi.4.b:0""  
+
+gtmx_jueyi.5.t:0"对方拒绝"
+gtmx_jueyi.5.d:0"[From.GetName]拒绝了我们的提议"
+gtmx_jueyi.5.a:0"好吧"  
+gtmx_jueyi.5.b:0"" 
+
+gtmx_jueyi.6.t:0"走私燃油的利润"
+gtmx_jueyi.6.d:0"我们每周都会从燃油走私中获得收益"
+gtmx_jueyi.6.a:0"很好"  
+gtmx_jueyi.6.b:0""  
+
+gtmx_jueyi.7.t:0"政治点兑换HCP"
+gtmx_jueyi.7.d:0"我们可以用政治点数来购买全球通用货币——HCP\nHCP可以用来辅助国家更好发展甚至维持战争运作"
+gtmx_jueyi.7.a:0"少量的购买"  
+gtmx_jueyi.7.b:0"适量的购买"  
+gtmx_jueyi.7.c:0"大量的购买"  
+
+gtmx_jueyi.8.t:0"民用工厂兑换HCP"
+gtmx_jueyi.8.d:0"我们可以变卖民用工厂的方式换取全球通用货币——HCP\nHCP可以用来辅助国家更好发展甚至维持战争运作"
+gtmx_jueyi.8.a:0"变卖一座工厂"  
+gtmx_jueyi.8.b:0"变卖两座工厂" 
+gtmx_jueyi.8.c:0"变卖三座工厂" 
+
+gtmx_jueyi.9.t:0"申请贷款"
+gtmx_jueyi.9.d:0"根据国家实力一次贷款的额度也不同，一般工业越高可申请贷款的金额也越高\n每次贷款瑞士银行会收取5%手续费。如果你有过多的债务很可能导致经济崩溃"
+gtmx_jueyi.9.a:0"100亿"  
+gtmx_jueyi.9.b:0"300亿"  
+gtmx_jueyi.9.c:0"600亿"  
+gtmx_jueyi.9.e:0"1000亿"  
+
+gtmx_jueyi.10.t:0"经济大萧条"
+gtmx_jueyi.10.d:0"我们国家由于负债太高，资金周转出现了严重问题，不立即解决的话我们的经济将无法继续运作下去"
+gtmx_jueyi.10.a:0"必须解决这个问题！"
+gtmx_jueyi.10.b:0""
+
+prisoner.10.t:0"骑士王的谢幕"
+prisoner.10.d:0"随着圣杯王国在军事方面上的所有努力最终全部宣告失败，骑士王亚瑟不得不接受这个伟大国家毁在自己手中的事实，当占领军冲进皇宫时，她们看到王座上坐着一位心灰意冷的孤独的王。"
+prisoner.10.a:0"软禁皇室成员！这是一场伟大的胜利。"
+prisoner.10.b:0"变幻莫测的时代。"
+
+prisoner.20.t:0"博丽巫女"
+prisoner.20.d:0"幻想乡的妖精们早已四散奔逃，不过占领军还是在博丽神社逮住了其中一位人类领袖，她在被捕时一脸决绝地声明自己绝不会屈服于邪恶的侵略者，即使她们愿意出很多钱（重音）。\n\n另外据幻想乡驻军报告今晨自军防空部队于边境击落一名企图偷越国境的金发女子和一只疑似乌鸦的鸟人。"
+prisoner.20.a:0"都是好事。"
+prisoner.20.b:0"变幻莫测的时代。"
+
+prisoner.30.t:0"波拿文都拉的末裔"
+prisoner.30.d:0"伊甸之都陨落之后整座小岛的外出航路都被封锁，驻军搜查队没费多大力气就在岛上的圣教堂学校找到了伊甸皇室唯一的血脉，世羽。伊甸以广泛使用魔法力量Xeno而闻名于世，没有人知道陷入绝境的世羽会发动怎样的反扑，数百人组成的包围圈小心谨慎地向中心的少女收缩，而她只是茫然地看着这一切。"
+prisoner.30.a:0"抓住她！"
+prisoner.30.b:0"变幻莫测的时代。"
+
+prisoner.40.t:0"紫耀之都的女神姐妹"
+prisoner.40.d:0"超次元女神联盟的失败已成定局，各地零星的抵抗运动虽然仍在继续，但大规模的军事反击已经不可能再被组织起来了。守护女神们拒绝撤离教会，因为守护游戏业界四国是她们自诞生以来的使命。当宪兵队出现在紫耀之都教会时，与慌慌张张的涅普姬雅不同，她的姐姐苦笑着承认了自己的失败，并希望让自己代替人民承受战败的代价。"
+prisoner.40.a:0"把她们带走。"
+prisoner.40.b:0"变幻莫测的时代。"
+
+prisoner.50.t:0"精灵们的末路"
+prisoner.50.d:0"精灵的强大力量并没有将精灵国从异族的侵占下拯救出来。经历漫长的战争之后这个国家最终还是沦陷了。占领军没费什么力气就抓获了时崎狂三在内的几名军政领袖，这实在是太过顺利以致于很多人都怀疑其中有什么蹊跷。"
+prisoner.50.a:0"小心谨慎......"
+prisoner.50.b:0"变幻莫测的时代。"
+
+prisoner.60.t:0"行动目标阿库娅"
+prisoner.60.d:0"意呆莉灭亡不久后占领军就成功找到了阿库娅的藏身地，她试图躲在阿库西丝教团的一处分教堂的告解室里扮演修女来躲过搜捕，但因为过于有特色的声线和说话方式被当场抓获。同日，一名身着黄色中世纪铠甲手持长剑的疑似精神病患者在多次骚扰驻军搜查队驻地后被捕。"
+prisoner.60.a:0"这都是啥啊......"
+prisoner.60.b:0"变幻莫测的时代。"
+
+prisoner.70.t:0"无主之刃"
+prisoner.70.d:0"随着戴比路克全面放弃在地球的势力范围，大量帝国军核心力量撤离了这颗行星。但一些编制外的雇佣兵似乎没有一并离开，失去任务的她们正在随心所欲地到处游荡，这些外星人拥有强大的破坏力，并且基本上没有法制观念。"
+prisoner.70.a:0"在引发灾难前控制住她们。"
+prisoner.70.b:0"变幻莫测的时代。"
+
+prisoner.80.t:0"少女的末路"
+prisoner.80.d:0"苏联分崩离析之后绝大多数魔法少女再度化为一盘散沙，令人意外的是，入侵者在时间起始之地轻松捕获了筋疲力竭的联盟前领导人晓美焰，她并没有逃走，而是赶到这里销毁了大量机密文件。这很奇怪，因为战争的胜负已成定局，这些情报应该已经失去意义了。"
+prisoner.80.a:0"她在隐瞒什么？"
+prisoner.80.b:0"变幻莫测的时代。"
+
+prisoner.11.t:0"安抚骑士王"
+prisoner.11.z:0"古人云先礼后兵，我们决定在动粗之前先尝试想办法收买骑士王。saber会喜欢什么东西呢......"
+prisoner.11.a:0"甜品"
+prisoner.11.b:0"正式料理"
+prisoner.11.c:0"人为财死鸟为食亡"
+prisoner.11.d:0"艺术收藏"
+
+prisoner.12.t:0"刑讯拷打"
+prisoner.12.d:0"对于意志不那么坚强的人，用暴力迫使对方屈服是很容易的事情。对合适的对象动粗有概率迫使对方就范，但也可能让对方产生对立情绪或身体伤残甚至死亡。"
+prisoner.12.a:0"威吓惩戒"
+prisoner.12.b:0"严刑拷打"
+prisoner.12.c:0"只要还没死就往死里打"
+
+prisoner.13.t:0"魔力洗脑"
+prisoner.13.d:0"据说英灵可以受到一种名为令咒的契约魔法的束缚，从而为固定的主人效劳，我们的魔法学者花费了一段时间来研究这种术式，并构建伪造的魔力契约来控制saber，这招果然有效。"
+prisoner.13.a:0"很好。"
+
+prisoner.14.t:0"食量惊人"
+prisoner.14.d:0"saber接受了我们的宴会邀请，她在宴会上胡吃海塞的样子把在场的人都吓傻了。据目击者报告saber吃进去的食物的体积目测是她自己体积的0.5倍。暴饮暴食之后的saber心情很好，顺势答应了协助我们的请求，但以后我们要保证优质伙食。"
+prisoner.14.a:0"完了，要被吃破产了，快去请卫宫佛祖。"
+
+prisoner.15.t:0"无动于衷"
+prisoner.15.d:0"saber对我们送去的东西不是很感兴趣，显然我们的礼物对她来说缺乏吸引力。"
+prisoner.15.a:0"小妹妹你不要敬酒不吃吃罚酒嗷。"
+
+prisoner.16.t:0"他俩白给了"
+prisoner.16.d:0"两名狱卒强烈抗议要求她们肉搏英灵的命令，但出于对国家的忠诚她们还是去了。saber很生气，还很饿。"
+prisoner.16.a:0"啊这。。。"
+
+prisoner.21.t:0"安抚灵梦"
+prisoner.21.d:0"灵梦已经快把奉纳箱顶到我们脸上了，说真的脸皮那么厚的人我们也是第一次见到。"
+
+prisoner.22.t:0"刑讯拷打"
+prisoner.22.d:0"灵梦义正言辞地声称自己无论如何都不会服从我们，哪怕我们严刑拷打她最好的朋友（重音）。于是我们决定拿那个名为雾雨魔理沙的金发小姑娘开刀。"
+
+prisoner.23.t:0"魔力洗脑"
+prisoner.23.d:0"尽管善于使用魔力，但是毕竟种族还是人类，和那些天生具有对魔力的妖怪或者女神相比，强制控制灵梦的精神非常容易。她现在对我们言听计从。"
+prisoner.23.a:0"很好。"
+
+prisoner.24.t:0"上当了"
+prisoner.24.d:0"灵梦许诺我们只要十万元就愿意帮助我们，因此我们筹备了相当规模的资金交给她，结果她却说按照神社旧时代的金价比和如今的国际汇率她要的钱应该是100亿国际货币！\n\n我们不得不向银行临时贷款来筹措这笔钱，等我们拿着钱再去找她的时候她已经脱光衣服在床上躺好了。"
+prisoner.24.a:0"这里是军队不是窑子！"
+
+prisoner.25.t:0"无动于衷"
+prisoner.25.d:0"灵梦对我们送去的东西看都不看一眼。她抱着奉纳箱向我们投来不满的眼神。"
+prisoner.25.a:0"明抢了啊这是。"
+
+prisoner.26.t:0"博丽灵梦屈服了"
+prisoner.26.d:0"狱卒装模做样地殴打了魔理沙一顿，虽然下手不重但是她叫的很大声，这显然吓坏了灵梦。"
+prisoner.26.a:0"很好。"
+
+prisoner.27.t:0"博丽灵梦屈服了"
+prisoner.27.d:0"狱卒狠狠地折磨了魔理沙，直到她奄奄一息为止，发生在自己好友身上的事显然吓坏了灵梦，她决定效忠我们。但是一段时间后我们发现这次暴行显然对魔理沙的身体造成了永久性的严重危害，恐怕她以后的作战能力会因伤残而下降了。"
+prisoner.27.a:0"很好。"
+
+prisoner.28.t:0"博丽灵梦屈服了"
+prisoner.28.d:0"狱卒竭尽全力地殴打了魔理沙，很快她就不再发出任何声音了。经过检查我们发现魔理沙已经死于内脏破裂和内出血。灵梦被吓得几乎精神崩溃。"
+prisoner.28.a:0"糟糕，做过头了。"
+
+prisoner.29.t:0"博丽灵梦拒绝服从"
+prisoner.29.d:0"虽然对朋友的遭遇痛心疾首，不过她还是宣称拒绝效忠。"
+prisoner.29.a:0"敢情不是打在你身上啊？"
+
+prisoner.31.t:0"安抚世羽"
+prisoner.31.d:0"我们尝试通过一些礼物收买世羽，世羽喜欢什么东西呢......"
+
+prisoner.34.t:0"棉花糖攻势"
+prisoner.34.d:0"我们准备了很多各种各样的甜品，世羽把里面的棉花糖挑出来吃掉了。"
+prisoner.34.a:0"以后就用这个勾引她。"
+
+prisoner.35.t:0"无动于衷"
+prisoner.35.d:0"世羽对我们送去的东西不感兴趣，看来她不喜欢这个。"
+prisoner.35.a:0"试试看别的。"
+
+prisoner.32.t:0"刑讯拷打"
+prisoner.32.d:0"世羽仍然在悠哉游哉地发呆和闲逛，她显然没有意识到我们已经打算采取暴力手段了。没有发动xeno的世羽只是一个瘦弱的未成年少女，实际上审讯科担心她根本撑不过拷打。"
+
+prisoner.33.t:0"魔力洗脑"
+prisoner.33.d:0"伊甸是一个广泛普及魔法的国家，而世羽擅长的是防御和治愈的xeno，虽然种族是人类，但是她对精神控制魔法的抵抗力远远超出我们的预期。我们花费了大量时间，采取了各种无法描述的手段之后才成功地征服了她的意志。"
+prisoner.33.a:0"很好。"
+
+prisoner.36.t:0"世羽被干碎了"
+prisoner.36.d:0"世羽的身体素质实际上比我们预估的最坏状况还要差，她的生理功能根本承受不了暴力的摧残，光是看守的威吓就把她吓坏了。拷问进行到一半的时候她就已经没有心跳和呼吸了。"
+prisoner.36.a:0"世羽对不起！（哭腔）"
+
+prisoner.41.t:0"安抚涅普迪努"
+prisoner.41.d:0"我们尝试通过一些礼物收买涅普迪努，涅普迪努喜欢什么东西呢......"
+
+prisoner.44.t:0"布丁狂热"
+prisoner.44.d:0"涅普把我们送去的甜品全都吃掉了，并且尤其喜欢鸡蛋布丁。虽然她贪吃零食并且整天发懒，但是完全没有长胖的迹象。据说成为女神之后身体的生长就会完全停滞。"
+prisoner.44.a:0"好羡慕。"
+
+prisoner.45.t:0"无动于衷"
+prisoner.45.d:0"涅普礼貌地表示自己不需要这些东西。"
+prisoner.45.a:0"试试看别的。"
+
+prisoner.42.t:0"刑讯拷打"
+prisoner.42.d:0"眼前这个紫毛萝莉看起来好吃懒做并且身体瘦弱，给予一定的精神压力应该可以轻易地迫使她屈服。"
+
+prisoner.46.t:0"终极硬♀汉"
+prisoner.46.d:0"我们完全被涅普迪努的外表欺骗了。实际上她是一个肉身空降万米高空，脸接变身后女神的全力攻击，甚至被剑刺穿胸口还能保持微笑的铁血猛♀男。看守的拳头完全不敌她的铁头。"
+prisoner.46.a:0"心怀敬意。"
+
+prisoner.43.t:0"洗脑失败"
+prisoner.43.d:0"对神明种进行洗脑几乎被认为是不可能的任务。她们拥有非常惊人的魔力抵抗力。我们的团队经过半年的努力最终不得不宣布以目前的魔法技术水平还无法完成这项壮举。"
+prisoner.43.a:0"心怀敬意。"
+
+prisoner.51.t:0"安抚精灵们"
+prisoner.51.d:0"精灵们之间地位并不是很分明，只要能讨好其中任何一个人，应该都能说服她们留下来。应该送她们什么礼物呢？"
+
+prisoner.54.t:0"家庭餐厅"
+prisoner.54.d:0"精灵们喜欢聚集在一起用餐的感觉。那个紫头发的家伙尤其能吃。她们决定跟着我们混了。"
+prisoner.54.a:0"好极了。"
+
+prisoner.55.t:0"无动于衷"
+prisoner.55.d:0"精灵们对我们的礼物不是很感兴趣。她们继续四处闲逛。"
+prisoner.55.a:0"试试看别的。"
+
+prisoner.52.t:0"刑讯拷打"
+prisoner.52.d:0"说真的我们其实连怎么逮住这些家伙都不知道，只能硬着头皮上了。"
+
+prisoner.56.t:0"空间震"
+prisoner.56.d:0"我们的暴力企图明显刺激到了精灵们，出于恐惧或是反感的情绪，精灵们四散而去纷纷逃离了这个次元。精灵们在穿越次元的时候引发了一种名为空间震的现象，巨大的灵力洪泛把我们的城市撕成了碎片。如果暴力能解决精灵的话，又有什么必要和她们约会呢。"
+prisoner.56.a:0"我日！"
+
+prisoner.53.t:0"魔力洗脑"
+prisoner.53.d:0"精灵种比人类拥有更高的魔力抗性，不过根据研究，在她们之中存在一种由于情绪波动而引发自身灵力性质和思维发生改变的情况，利用好这种情绪诱导，就能控制她们。"
+prisoner.53.a:0"很好。"
+
+prisoner.61.t:0"安抚阿库娅"
+prisoner.61.d:0"我们尝试通过一些礼物收买阿库娅，阿库娅喜欢什么东西呢......"
+
+prisoner.65.t:0"自大女神"
+prisoner.65.d:0"阿库娅把我们的礼物照单全收了，并且表示非常欣赏我们的虔诚，希望我们加入阿库西丝教团为侍奉她服务，另外还要求提供更多贡品。她完全没有认识到自己目前的立场。"
+prisoner.65.a:0"给！我！打！"
+
+prisoner.62.t:0"刑讯拷打"
+prisoner.62.d:0"像阿库娅这种家伙除了一顿暴打没有修正她个性的方法。打就完事了，反正她是司掌复活的女神，应该是打不死的。"
+
+prisoner.66.t:0"阿库娅屈服了"
+prisoner.66.d:0"在被打到第一下的时候阿库娅就大声尖叫并且投降了。她很明智地避免了被打的皮开肉绽。那个穿黄色铠甲的女骑士比她顽强的多，直到被打到晕过去之前都一直在喊话挑衅我们。不过怎么感觉她一边被打一边在笑，是我们的错觉么。"
+prisoner.66.a:0"现在你知道谁是老大了嗷。"
+
+prisoner.63.t:0"洗脑失败"
+prisoner.63.d:0"阿库娅是司掌净化与复苏之力的女神，本身就很擅长对抗洗脑魔法，而且她身为神明种天生具有超高的魔力抗性。我们的研究者用尽一切办法都没能对她造成任何影响。阿库娅不屑地嘲笑我们。"
+prisoner.63.a:0"好气。"
+
+prisoner.71.t:0"安抚金色暗影"
+prisoner.71.d:0"我们尝试通过一些礼物收买金色暗影，金色暗影喜欢什么东西呢......"
+
+prisoner.75.t:0"再次雇佣"
+prisoner.75.d:0"暗影礼貌地收下了我们的礼物并且表示，实际上作为流浪杀手自己并没有对种族或意识形态的执念，如果我们愿意，可以重新雇佣她们作战，直到合约到期或其中一方无法再履行合约。"
+prisoner.75.a:0"就这样吧。"
+
+prisoner.72.t:0"刑讯拷打"
+prisoner.72.d:0"当小暗发现我们尝试伤害她的身体的时，她使用了变硬，效果拔群。说起来之前在战斗中也见过这家伙把身体部分金属化来攻击敌人。"
+prisoner.72.a:0"硬了！她硬了！"
+
+prisoner.73.t:0"魔力洗脑"
+prisoner.73.d:0"我们的专家们通过各种手段了解到，金色暗影漠然的外表下隐藏着对自己过去遭遇的哀伤和疯狂的破坏欲望，只需设法引出这种毁灭的冲动......"
+prisoner.73.a:0"我们正在制造一个怪物。"
+
+prisoner.81.t:0"安抚晓美焰"
+prisoner.81.d:0"我们尝试通过一些礼物收买晓美焰，晓美焰喜欢什么东西呢......"
+
+prisoner.85.t:0"焰的执着"
+prisoner.85.d:0"焰无论如何都不愿意和我们达成某种妥协，不管是什么都无法打动她的心。她看起来像一潭没有生气的死水。"
+prisoner.85.a:0"我们在浪费时间。"
+
+prisoner.82.t:0"刑讯拷打"
+prisoner.82.d:0"虽然对方看起来是那种特别死脑筋的类型，但也只能尝试强迫她屈服了。"
+
+prisoner.86.t:0"怪异生物"
+prisoner.86.d:0"不管承受多重的伤害魔法少女都能自行复原，我们在晓美焰身上留下的伤痕也一样，破损的皮肤，断裂的肌腱，或是粉碎的骨骼......看起来我们的努力毫无用处。但在这次拷打之后，她突然开始呼吸急促，紧接着瞳孔放大，失去了心跳和呼吸。一瞬之间，在我们反应过来之前，晓美焰死亡了，或者应该说重生了，一个非常诡异的巨大生物诞生在她的尸体旁。"
+prisoner.86.a:0"这是什么鬼东西？！"
+
+prisoner.87.t:0"碎裂的灵魂"
+prisoner.87.d:0"在今天的拷问中由于对象剧烈挣扎，行刑者不慎打碎了她左手上的宝石状饰品。令人震惊的是在那一瞬间晓美焰就像突然被人抽走了灵魂一样失去了意识，几分钟后医生宣布她已经脑死亡。"
+prisoner.87.a:0"发生什么了？！"
+
+prisoner.89.t:0"拒绝屈服"
+prisoner.89.d:0"即使被折磨到生不如死，晓美焰也没有向我们妥协，就好像有什么东西仍然在被她保护一样。"
+prisoner.89.a:0"可是联盟都已经灭亡了啊。"
+
+prisoner.83.t:0"魔力洗脑"
+prisoner.83.d:0"由于魔法少女的身体复原能力很强，我们可以随意使用致死量的致幻药物和魔力量来尝试扭曲对象的思想，对方看起来完全处于我们的控制之下了，至少看起来是这样。"
+prisoner.83.a:0"光是看着那双黑翼就让人感觉不自在。"
+
+
+improved_worker_conditions_1:0 "改善工作环境"
+improved_worker_conditions_1_desc:0 "工厂中的劳作不仅辛苦，而且还充斥着许多危险。改善工厂作业人员的工作环境尽管会在短期内降低产出，但是从长远收益来看是值得的。"

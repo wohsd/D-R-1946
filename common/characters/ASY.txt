@@ -1,0 +1,17 @@
+characters = {
+	ASY_Malik_Yaqo_Ismail = {
+		name = ASY_Malik_Yaqo_Ismail
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ASY/ASY_Malik_Yaqo_Ismail.png"
+			}
+		}
+		country_leader = {
+			ideology = Populist_Conservatism
+			desc = ASY_Malik_Yaqo_Ismail_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

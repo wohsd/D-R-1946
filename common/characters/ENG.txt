@@ -1,0 +1,17 @@
+characters = {
+	ENG_Archibald_Sinclair = {
+		name = ENG_Archibald_Sinclair
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/ENG_Archibald_Sinclair.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = ENG_Archibald_Sinclair_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

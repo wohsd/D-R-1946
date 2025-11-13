@@ -1,0 +1,22 @@
+state = {
+	id = 1021
+	name = "VICTORIA_LAND"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		buildings = {
+			16447 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16386 16447 17638 17692 
+	}
+
+	local_supplies=0.0 
+}

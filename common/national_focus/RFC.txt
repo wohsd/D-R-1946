@@ -1,0 +1,428 @@
+focus_tree = {
+	id = RFC
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RFC
+		}
+	}
+	default = no
+	focus = {
+		id = The_Third_Road
+		icon = GFX_focus_GER_the_peoples_victory
+		cost = 10
+		completion_reward = { 
+			add_ideas = Provisional_Committee_Uprising
+			declare_war_on = { target = CHI type = annex_everything  }
+			add_dynamic_modifier = {
+				modifier = Political_Department
+			}
+		}
+		x = 10
+		y = 0
+	}
+	focus = {
+		id = Revolutionar_Military_Academy
+		icon = GFX_goal_rhineland
+		cost = 5
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = The_Third_Road
+		}
+	}
+	focus = {
+		id = Establish_weapon_workshop
+		icon = GFX_focus_generic_spur_communist_revolutions
+		cost = 5
+		x = 3
+		y = 2
+		completion_reward = {
+			add_ideas = Revolutionary_Armed_Forces
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+		prerequisite = {
+			focus = Revolutionar_Military_Academy
+		}
+	}
+	focus = {
+		id = Requisitioned_factory
+		icon = GFX_focus_spr_class_war
+		cost = 5
+		x = 3
+		y = 3
+		completion_reward = {
+            stability_factor = -0.1
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
+		prerequisite = {
+			focus = Establish_weapon_workshop
+		}
+	}
+	focus = {
+		id = Reconstruct_the_Political_Department
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 5
+		x = 10
+		y = 1
+		completion_reward = { 
+			RFC = { country_event = { id = RFC_country.2 } }
+			add_to_variable = {
+				RFC_army_org_factor = 0.4
+			}
+			add_to_variable = { 
+                RFC_supply_consumption_factor = -0.1
+			}
+			add_to_variable = { 
+				RFC_political_power_gain = 0.3
+			}   
+			add_to_variable = { 
+				RFC_experience_loss_factor = 0.1
+			}   
+		custom_effect_tooltip = Political_Department_tooltip
+		}
+		prerequisite = {
+			focus = The_Third_Road
+		}
+	}
+	focus = {
+		id = Regulate_military_discipline
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		cost = 5
+		x = 7
+		y = 2
+		completion_reward = { 
+			add_war_support = -0.1
+			add_stability = 0.1 
+			add_to_variable = { 
+				RFC_political_power_gain = 0.05
+			}  
+			custom_effect_tooltip = Political_Department_tooltip
+		}
+		prerequisite = {
+			focus = Reconstruct_the_Political_Department
+		}
+		prerequisite = {
+			focus = Revolutionar_Military_Academy
+		}
+	}
+	focus = {
+		id = Mobiliz_the_people
+		icon = GFX_focus_generic_workers
+		cost = 5
+		x = 7
+		y = 3
+		completion_reward = { 
+		   add_ideas = Extensive_conscription
+		}
+		prerequisite = {
+			focus = Regulate_military_discipline
+		}
+	}
+	focus = {
+		id = Build_revolutionary_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 5
+		x = 5
+		y = 4
+		completion_reward = { 
+			add_to_variable = {
+				RFC_army_org_factor = 0.4
+			}
+			add_to_variable = { 
+                RFC_army_morale_factor = 0.05
+			}
+		   add_to_variable = { 
+                RFC_army_defence_factor = 0.1
+			}
+			add_to_variable = { 
+                RFC_army_attack_factor = 0.1
+			}
+			add_to_variable = { 
+                RFC_supply_consumption_factor = -0.1
+			}
+			custom_effect_tooltip = Political_Department_tooltip
+		}
+		prerequisite = {
+			focus = Mobiliz_the_people
+		}
+		prerequisite = {
+			focus = Requisitioned_factory
+		}
+	}
+	focus = {
+		id = Carry_out_land_reform
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		cost = 5
+		x = 10
+		y = 2
+		completion_reward = { 
+
+		}
+		prerequisite = {
+			focus = Reconstruct_the_Political_Department
+		}
+	}
+	focus = {
+		id = Revolutionar_Education
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 5
+		x = 10
+		y = 3
+		completion_reward = { 
+			add_research_slot = 1
+
+		}
+		prerequisite = {
+			focus = Carry_out_land_reform
+		}
+	}
+	focus = {
+		id = Contact_the_anti_Chiang_forces
+		icon = GFX_goal_tripartite_pact
+		cost = 5
+		x = 18
+		y = 1
+		prerequisite = {
+			focus = The_Third_Road
+		}
+		completion_reward = { 
+		   add_equipment_to_stockpile = {
+		   type = infantry_equipment
+		   amount = 1000
+		   producer = RFC
+	       }
+		}
+	}
+	focus = {
+		id = Contact_the_Communist_Party
+		icon = GFX_goal_support_communism
+		cost = 5
+		x = 15
+		y = 2
+		prerequisite = {
+			focus = Reconstruct_the_Political_Department
+		}
+		prerequisite = {
+			focus = Contact_the_anti_Chiang_forces
+		}
+		available = {
+		    NOT = { PRC = { has_idea = Leftism }}
+	    }
+		completion_reward = { 
+			add_popularity = { ideology = communism popularity = 0.1 }
+			PRC = {
+				add_to_faction = RFC
+			}
+		}
+		mutually_exclusive = {
+			focus = Contact_the_old_warlords
+		}
+	}
+	focus = {
+		id = Learn_from_the_political_commissar_system
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		cost = 5
+		x = 13
+		y = 3
+		prerequisite = {
+			focus = Contact_the_Communist_Party
+		}
+		completion_reward = { 
+			add_to_variable = {
+				RFC_army_org_factor = 0.02
+			}
+			add_to_variable = { 
+                RFC_supply_consumption_factor = -0.05
+			}
+			add_to_variable = { 
+                RFC_army_morale_factor = 0.1
+			}
+			add_to_variable = { 
+                RFC_army_defence_factor = 0.05
+			}
+			add_to_variable = { 
+                RFC_army_attack_factor = 0.05
+			}
+			add_to_variable = { 
+                RFC_communism_drift  = 0.01
+			}
+			custom_effect_tooltip = Political_Department_tooltip
+		}
+        
+	}
+	focus = {
+		id = Expanded_Political_Department
+		icon = GFX_focus_generic_limited_social_mobilization
+		cost = 15
+		x = 10
+		y = 4
+		prerequisite = {
+			focus = Learn_from_the_political_commissar_system
+		}
+		prerequisite = {
+			focus = Revolutionar_Education
+		}
+		completion_reward = { 
+			add_to_variable = {
+				RFC_army_org_factor = 0.02
+			}
+			add_to_variable = { 
+                RFC_supply_consumption_factor = -0.05
+			}
+			add_to_variable = { 
+                RFC_army_morale_factor = 0.05
+			}
+			add_to_variable = { 
+				RFC_political_power_gain = 0.1 
+			}
+			add_to_variable = { 
+                RFC_army_defence_factor = 0.05
+			}
+			add_to_variable = { 
+                RFC_army_attack_factor = 0.05
+			}
+			add_to_variable = { 
+				RFC_experience_loss_factor = 0.05
+			}     
+			custom_effect_tooltip = Political_Department_tooltip
+		}
+	}
+	focus = {
+		id = Learn_guerrilla_warfare
+		icon = GFX_focus_prc_infiltration
+		cost = 5
+		x = 17
+		y = 3
+		prerequisite = {
+			focus = Contact_the_Communist_Party
+		}
+        completion_reward = { 
+		    add_to_variable = { 
+				RFC_terrain_penalty_reduction = 0.15
+			}  
+			add_to_variable = { 
+				RFC_recon_factor = 0.15
+			}  
+			custom_effect_tooltip = Political_Department_tooltip
+		}
+
+	}
+	focus = {
+		id = Contact_the_old_warlords
+		icon = GFX_focus_RAJ_a_private_military
+		cost = 5
+		x = 21
+		y = 2
+		prerequisite = {
+			focus = Contact_the_anti_Chiang_forces
+		}
+		mutually_exclusive = {
+			focus = Contact_the_Communist_Party
+		}
+		completion_reward = {
+            ROG = {
+		    	add_to_faction = RFC
+			}
+		}
+	}
+	focus = {
+		id = Communication_positional_warfare
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		x = 19
+		y = 3
+		prerequisite = {
+			focus = Contact_the_old_warlords
+		}
+		completion_reward = {
+		    add_to_variable = { 
+				RFC_max_dig_in_factor = 0.15
+			}  
+			add_to_variable = { 
+				RFC_dig_in_speed_factor = 0.15
+			}
+			add_to_variable = { 
+				RFC_recon_factor_while_entrenched = 0.15
+			} 
+			custom_effect_tooltip = Political_Department_tooltip
+		}
+	}
+	focus = {
+		id = Accepting_assistance
+		icon = GFX_focus_GER_support_the_proletarian_uprising
+		cost = 5
+		x = 23
+		y = 3
+		prerequisite = {
+			focus = Contact_the_old_warlords
+		}
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 2000
+		    producer = RFC
+	        }
+		}
+	}
+	focus = {
+		id = Build_military_factory
+		icon = GFX_focus_generic_reorient_production
+		cost = 5
+		x = 21
+		y = 4
+		prerequisite = {
+			focus = Accepting_assistance
+		}
+		completion_reward = {
+		    add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+	focus = {
+		id = Inspire_private_enterprises
+		icon = GFX_focus_generic_industry_1
+		cost = 5
+		x = 25
+		y = 4
+		prerequisite = {
+			focus = Accepting_assistance
+		}
+		completion_reward = {
+		    add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+	focus = {
+		id = The_place_where_the_revolution_originated
+		icon = GFX_focus_generic_social_democracy
+		cost = 5
+		x = 23
+		y = 5
+		prerequisite = {
+			focus = Build_military_factory
+		}
+		prerequisite = {
+			focus = Inspire_private_enterprises
+		}
+		completion_reward = {
+        add_ideas = revolutionary_three_principles_of_the_people_economy 
+		281 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes  #立刻完成 no反之
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes  #立刻完成 no反之
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes  #立刻完成 no反之
+			}
+		}
+	    }
+	}
+}

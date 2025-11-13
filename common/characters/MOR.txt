@@ -1,0 +1,17 @@
+characters = {
+	MOR_Mohammed_V = {
+		name = MOR_Mohammed_V
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MOR/MOR_Mohammed_V.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = MOR_Mohammed_V_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

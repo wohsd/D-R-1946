@@ -1,0 +1,22 @@
+state={
+	id=1044
+	name="PETER_I_ISLAND"
+	manpower=10
+	state_category = tiny_island
+	
+	history= {
+		owner = NOR
+		buildings = {
+			#infrastructure = 1
+			17758 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		17758
+	}
+
+	local_supplies=0.0 
+}

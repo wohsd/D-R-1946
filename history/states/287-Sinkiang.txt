@@ -1,0 +1,28 @@
+state={
+	id=287
+	name="STATE_287"
+
+	history={
+		owner = CHI
+		add_core_of = SIK
+		add_core_of = CHI
+		
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			4973 1
+		}
+	}
+
+
+	provinces={
+		4973 7790 10911 12864 19394 19681 19709 19723 
+	}
+	manpower=408000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=4.0 
+}

@@ -1,0 +1,17 @@
+characters = {
+	PHI_Jose_P_Laurel = {
+		name = PHI_Jose_P_Laurel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PHI/PHI_Jose_P_Laurel.png"
+			}
+		}
+		country_leader = {
+			ideology = Populist_Conservatism
+			desc = PHI_Jose_P_Laurel_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

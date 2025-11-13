@@ -1,0 +1,22 @@
+state = {
+	id = 1032
+	name = "COATS_LAND"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		buildings = {
+			16425 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16425 17637 17673 17739 17759 
+	}
+
+	local_supplies=0.0 
+}

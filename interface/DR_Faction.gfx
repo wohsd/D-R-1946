@@ -1,0 +1,111 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_zhen_ying_xiang_kuang"
+		texturefile = "gfx/阵营/圆底框.png"
+	}
+	spriteType = {
+		name = "GFX_zhen_ying_ming_zi"
+		texturefile = "gfx/阵营/名字.png"
+	}
+	spriteType = {
+		name = "GFX_zhen_ying_qi"
+		texturefile = "gfx/阵营/旗帜框.png"
+	}
+	spriteType = {
+		name = "GFX_you_zhen_ying"
+		texturefile = "gfx/阵营/按钮.png"
+	}
+	spriteType = {
+		name = "GFX_NO_Faction"
+		texturefile = "gfx/interface/Faction/.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Habsburg_monarchy"
+		texturefile = "gfx/interface/Faction/Habsburg_monarchy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_austrian_empire"
+		texturefile = "gfx/interface/Faction/Habsburg_monarchy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Se_International"
+		texturefile = "gfx/interface/Faction/Se_International.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Vienna_Entent"
+		texturefile = "gfx/interface/Faction/Habsburg_monarchy.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_North_German_Confederation"
+		texturefile = "gfx/interface/Faction/Habsburg_monarchy.dds"
+		legacy_lazy_load = no
+	}	
+   	spriteType = {
+		name = "GFX_United_Provinces_Northern_Italy"
+		texturefile = "gfx/interface/Faction/United_Provinces_Northern_Italy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Second_International"
+		texturefile = "gfx/interface/Faction/Second_International.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Rpublic_China"
+		texturefile = "gfx/interface/Faction/Progressive_Party.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Italian_Union"
+		texturefile = "gfx/interface/Faction/Italian_Union.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Rpublic_China_Anhui"
+		texturefile = "gfx/interface/Faction/Progressive_Party.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Rpublic_China_Kuomintang"
+		texturefile = "gfx/interface/Faction/Rpublic_China_Kuomintang.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Warlord"
+		texturefile = "gfx/interface/Faction/Warlord.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Progressive_Party"
+		texturefile = "gfx/interface/Faction/Progressive_Party.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Commonwealth_of_Nations"
+		texturefile = "gfx/interface/Faction/Commonwealth_of_Nations.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Empire_Japan"
+		texturefile = "gfx/interface/Faction/Empire_Japan.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Bonaparte_family_alliance"
+		texturefile = "gfx/interface/Faction/Bonaparte_family_alliance.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Russian_White_Army"
+		texturefile = "gfx/interface/Faction/Russian_White_Army.dds"
+		legacy_lazy_load = no
+	}			
+}

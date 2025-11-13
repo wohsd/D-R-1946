@@ -1,0 +1,31 @@
+characters = {
+	CHI_TangPingShang = {
+		name = CHI_TangPingShang
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_TangPingShang.png"
+			}
+		}
+		country_leader = {
+			ideology = sanmin-reformism
+			desc = CHI_TangPingShang_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+	CHI_SunKe = {
+		name = CHI_SunKe
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_SunKe.png"
+			}
+		}
+		country_leader = {
+			ideology = sanmin-reformism
+			desc = CHI_SunKe_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

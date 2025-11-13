@@ -1,0 +1,39 @@
+ideas = {
+	country = {
+		FRA_Champagne_Agreement = {
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				political_power_factor = -0.05
+			}
+		}
+		FRA_Burdened_Foreign_Debt = {
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				production_speed_facility_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				local_building_slots_factor = -0.1
+			}
+		}
+		FRA_Food_crisis = {
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.02
+			}
+		}
+	}
+}

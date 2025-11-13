@@ -1,0 +1,17 @@
+characters = {
+	BRM_Ba_Maw = {
+		name = BRM_Ba_Maw
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRM/BRM_Ba_Maw.png"
+			}
+		}
+		country_leader = {
+			ideology = Populist_Conservatism
+			desc = BRM_Ba_Maw_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

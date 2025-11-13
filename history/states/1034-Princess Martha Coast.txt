@@ -1,0 +1,22 @@
+state = {
+	id = 1034
+	name = "PRINCESS_MARTHA_COAST"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = GER
+		buildings = {
+			17810 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16448 17618 17654 17655 17690 17772 17792 17794 17798 17800 17810 
+	}
+
+	local_supplies=0.0 
+}

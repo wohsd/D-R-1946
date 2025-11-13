@@ -1,0 +1,16 @@
+﻿focus_tree = {
+	id = SIA
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+				tag = SIA
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1350 }
+}

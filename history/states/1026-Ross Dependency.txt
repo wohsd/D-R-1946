@@ -1,0 +1,32 @@
+state = {
+	id = 1026
+	name = "ROSS_DEPENDENCY"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		buildings = {
+			17791 = {
+				naval_base = 1
+			}
+			17802 = {
+				naval_base = 1
+			}
+			16451 = {
+				naval_base = 1
+			}
+			19947 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		16394 16397 16399 16408 16409 16416 16420 16421 16428 16436 16440 16451 17580 17583 17587 17628 17672 17680 17686 17709 17725 17791 17793 17802 17815 19947 
+	}
+
+	local_supplies=0.0 
+}

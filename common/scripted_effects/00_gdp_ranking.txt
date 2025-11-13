@@ -1,0 +1,47 @@
+
+#GDP排行
+generate_econ_rankings = {
+	clear_array = global.econ_countries
+	every_country = {
+		add_to_array = {
+			global.econ_countries = THIS
+		}
+	}
+	get_sorted_scored_countries = {
+		scorer = GDP_rank_scorer
+		array = global.econ_countries
+	}
+	# Set up ranking positions
+	for_each_scope_loop = {
+		array = global.econ_countries
+		add_to_variable = {
+			global.econ_countries_index = 1
+		}
+		set_variable = {
+			econ_ranking = global.econ_countries_index
+		}
+	}
+	clear_variable = global.econ_countries_index
+	#####
+	clear_array = global.indu_countries
+	every_country = {
+		add_to_array = {
+			global.indu_countries = THIS
+		}
+	}
+	get_sorted_scored_countries = {
+		scorer = industy_rank_scorer
+		array = global.indu_countries
+	}
+	# Set up ranking positions
+	for_each_scope_loop = {
+		array = global.indu_countries
+		add_to_variable = {
+			global.indu_countries_index = 1
+		}
+		set_variable = {
+			indu_ranking = global.indu_countries_index
+		}
+	}
+	clear_variable = global.indu_countries_index
+}

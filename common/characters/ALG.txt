@@ -1,0 +1,17 @@
+characters = {
+	ALG_messali_hadj = {
+		name = ALG_messali_hadj
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALG/ALG_messali_hadj.png"
+			}
+		}
+		country_leader = {
+			ideology = National_Conservatism
+			desc = ALG_messali_hadj_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

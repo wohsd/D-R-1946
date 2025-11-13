@@ -1,0 +1,17 @@
+characters = {
+	SYR_Shukri_al_Quwatli = {
+		name = SYR_Shukri_al_Quwatli
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SYR/SYR_Shukri_al_Quwatli.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = SYR_Shukri_al_Quwatli_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

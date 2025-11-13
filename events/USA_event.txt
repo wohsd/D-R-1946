@@ -1,0 +1,14 @@
+﻿
+add_namespace = USA_newevent
+
+news_event = {
+	id = USA_newevent.1
+	title = USA_newevent.1.t
+	desc = USA_newevent.1.d
+	picture = GFX_USA_newevent_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = USA_newevent.1.a
+	}
+}

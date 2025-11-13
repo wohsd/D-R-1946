@@ -1,0 +1,16 @@
+﻿focus_tree = {
+	id = TAN
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+				tag = TAN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1350 }
+}

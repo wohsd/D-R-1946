@@ -1,0 +1,17 @@
+characters = {
+	TTS_Ranieri_Maria_Gaetano = {
+		name = TTS_Ranieri_Maria_Gaetano
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TTS/TTS_Ranieri_Maria_Gaetano.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = TTS_Ranieri_Maria_Gaetano_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

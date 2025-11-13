@@ -1,0 +1,72 @@
+﻿
+add_namespace = SIK_newevent
+add_namespace = SIK_countryevent
+
+country_event = {
+	id = SIK_countryevent.1
+	title = SIK_countryevent.1.t
+	desc = SIK_countryevent.1.d
+	picture = GFX_SIK_countryevent_1
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			618={
+				transfer_state_to = RKT
+			}
+		}
+	}
+	option = {
+		name = SIK_countryevent.1.a
+
+	}
+}
+country_event = {
+	id = SIK_countryevent.2
+	title = SIK_countryevent.2.t
+	desc = SIK_countryevent.2.d
+	picture = GFX_SIK_countryevent_2
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = SIK_countryevent.2.a
+	}
+}
+
+country_event = {
+	id = SIK_countryevent.3
+	title = SIK_countryevent.3.t
+	desc = SIK_countryevent.3.d
+	picture = GFX_SIK_countryevent_3
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = SIK_countryevent.3.a
+	}
+}
+
+country_event = {
+	id = SIK_countryevent.4
+	title = SIK_countryevent.4.t
+	desc = SIK_countryevent.4.d
+	picture = GFX_SIK_countryevent_4
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = SIK_countryevent.4.a
+	}
+}
+
+news_event = {
+	id = SIK_newevent.1
+	title = SIK_newevent.1.t
+	desc = SIK_newevent.1.d
+	picture = GFX_SIK_newevent_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = SIK_newevent.1.a
+	}
+}

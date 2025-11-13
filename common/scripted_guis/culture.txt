@@ -1,0 +1,16 @@
+
+scripted_gui = {
+	State_Culture_window = {
+		window_name = "State_Culture_window" 
+		context_type = selected_state_context
+		parent_window_name = countrystateview
+
+		properties = {
+		}
+		
+		triggers = {
+        }
+		effects = {
+		}
+	}
+}

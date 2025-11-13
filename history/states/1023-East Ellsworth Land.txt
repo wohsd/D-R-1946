@@ -1,0 +1,22 @@
+state = {
+	id = 1023
+	name = "EAST_ELLSWORTH_LAND"
+	manpower = 10
+	
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		buildings = {
+			17787 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16433 17756 17787 
+	}
+
+	local_supplies=0.0 
+}

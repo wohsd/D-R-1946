@@ -1,0 +1,17 @@
+characters = {
+	SPR_Jose_Maria_Leon = {
+		name = SPR_Jose_Maria_Leon
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPR/SPR_Jose_Maria_Leon.png"
+			}
+		}
+		country_leader = {
+			ideology = Populist_Conservatism
+			desc = SPR_Jose_Maria_Leon_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	
