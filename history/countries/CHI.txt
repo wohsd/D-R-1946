@@ -35,4 +35,6 @@ add_ideas = {
 	Underlying_investment
 	low_industrialization
 	Local_police
+
+	CHI_Land_Reform
 }

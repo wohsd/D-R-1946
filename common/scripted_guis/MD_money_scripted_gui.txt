@@ -10,6 +10,20 @@
 
 scripted_gui = { 
 	# Treasury Topbar Container
+	test_green = {
+		context_type = player_context
+
+		window_name = "test_green"
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+		}
+	}
+
+
 	treasury = {
 		context_type = player_context
 
@@ -39,7 +53,9 @@ scripted_gui = {
  
 				army_eco_setup = yes  
 				GDP_resource_exported = yes 
-				GDP_resource_imported = yes 
+				GDP_resource_imported = yes  
+				render_graph = yes 
+				generate_econ_rankings = yes  
 			}
 		}
 	}

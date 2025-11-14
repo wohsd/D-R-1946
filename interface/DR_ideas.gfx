@@ -171,7 +171,11 @@ spriteTypes = {
 	}
 
 
-
+###CHI
+spriteType = {
+	name = "GFX_idea_CHI_Land_Reform"
+	texturefile = "gfx\interface\ideas\CHI\CHI_Land_Reform.png"
+}
 
 
 

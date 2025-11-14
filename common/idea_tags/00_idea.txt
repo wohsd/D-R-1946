@@ -47,16 +47,8 @@ idea_categories = {
 		cost = 150
 		removal_cost = 0
 	}
-	government2 = {
-		character_slot = head_of_government
-		character_slot = head_of_parliament
-		ledger = civilian
-		
-		cost = 100
-		removal_cost = 0
-	}
                 government3 = {
-		character_slot = political_advisor
+		character_slot = head_of_government
                                 character_slot = political_advisor
                                 character_slot = political_advisor
                                 character_slot = political_advisor
@@ -233,7 +225,10 @@ slot_ledgers = {
 	tank_manufacturer = army
 	naval_manufacturer = navy
 	aircraft_manufacturer = air
-	
+
+	head_of_government = civilian
+	head_of_parliament = civilian
+
 	theorist = invalid # must be overridden
 	high_command = invalid # must be overridden
 	

@@ -851,7 +851,7 @@ containerWindowType = {
 		
 		buttonType = {
 			name = "add_idea_button"
-			position = { x = 10 y = 0 }
+			position = { x = 10 y = 5 }
 			spriteType = "GFX_add_pol_idea_button"
 			clicksound = click_default
 		}

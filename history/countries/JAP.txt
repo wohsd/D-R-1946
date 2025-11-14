@@ -150,3 +150,6 @@ add_to_faction = PHI
 add_to_faction = MAL
 add_to_faction = INS
 add_to_faction = KOR
+
+
+JAP_parliament_setup=yes
