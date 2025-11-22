@@ -1,0 +1,17 @@
+characters = {
+	GAB_Lucius_Dubignon_Clay = {
+		name = GAB_Lucius_Dubignon_Clay
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GAB/GAB_Lucius_Dubignon_Clay.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = GAB_Lucius_Dubignon_Clay_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

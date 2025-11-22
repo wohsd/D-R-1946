@@ -654,7 +654,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "desc"
 			position = { x = 0 y = 0 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 100
 			maxHeight = 20
@@ -743,7 +743,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "text"
 				position = { x=0 y=5 }
-				font = "dr_font_16"
+				font = "hoi_16mbs"
 				text = ""
 				maxWidth = 95
 				alwaystransparent = yes
@@ -759,7 +759,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "infrastructure_effect"
 				position = { x=8 y=25 }
-				font = "dr_font_16"
+				font = "hoi_16mbs"
 				text = "+25%"
 				maxWidth = 94
 				maxHeight = 20
@@ -815,7 +815,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "industry_count"
 				position = { x=25 y=1 }
-				font = "dr_font_16"
+				font = "hoi_16mbs"
 				text = ""
 				maxWidth = 52
 				maxHeight = 20
@@ -826,7 +826,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "arms_count"
 				position = { x=60 y=1 }
-				font = "dr_font_16"
+				font = "hoi_16mbs"
 				text = ""
 				maxWidth = 52
 				maxHeight = 20
@@ -859,7 +859,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "wings_count"
 			position = { x=32 y=1 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 70
 			maxHeight = 20
@@ -878,7 +878,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "permission_wings_count"
 			position = { x=32 y=21 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			text = "100/2000"
 			maxWidth = 49
 			maxHeight = 20
@@ -956,6 +956,20 @@ guiTypes = {
 			position = { x=0 y=0 }
 		}
 	}
+	
+	#### NAVAL HEADQUARTER MAP ICON
+	containerWindowType = {
+		name = "naval_headquarter_mapicon"
+		position = { x=0 y=0 }
+		size = { width=46 height=46 }
+		orientation = upper_left
+		
+		buttonType ={
+			name ="bg_btn"
+			quadTextureSprite = "GFX_mapicon_naval_headquarter"
+			position = { x=0 y=0 }
+		}
+	}
 
 	#### NAVAL BASES MAP ICON
 	containerWindowType = {
@@ -979,7 +993,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "txt_capacity"
 			position = { x=36 y=8 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			text = "99/99"
 			maxWidth = 70
 			maxHeight = 20
@@ -1027,6 +1041,13 @@ guiTypes = {
 			Orientation = center
 			centerPosition = yes
 			position = { x=1 y=-30 }
+		}
+
+		buttonType = {
+			name = "frame_btn"
+			position = { x = 17 y = -9 }
+			centerposition = yes
+			spriteType = "GFX_naval_hq_combat_frame"
 		}
 
 		gridBoxType = {
@@ -1129,7 +1150,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "combat_progress"
 			position = {x=3 y=16}
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			text = "?"
 			maxWidth = 30
 			maxHeight = 23
@@ -1203,7 +1224,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "supply_count"
 			position = { x=-7 y=-6 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			maxWidth = 60
 			maxHeight = 14
 			format = center
@@ -1219,7 +1240,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "count"
 			position = { x=2 y=34 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			maxWidth = 45
 			maxHeight = 14
 			format = center
@@ -1258,7 +1279,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "count"
 			position = { x=7 y=33 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			maxWidth = 32
 			maxHeight = 14
 			format = center
@@ -1274,7 +1295,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "efficiency"
 			position = { x=7 y=46 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			maxWidth = 34
 			maxHeight = 14
 			format = center
@@ -1294,7 +1315,22 @@ guiTypes = {
 			spriteType = "GFX_mapicon_unit_no_orders"
 		}
 	}
-
+	
+	#### STRATEGIC LOCATION MAP ICON
+	containerWindowType = {
+		name = "strategic_location_mapicon"
+		position = { x=0 y=0 }
+		size = { width=32 height=32 }
+		orientation = upper_left
+		
+		buttonType ={
+			name ="bg_btn"
+			spriteType = "GFX_NV_icon_pride" # Replaced from code
+			position = { x=0 y=0 }
+			scale = 0.55
+		}
+	}
+	
 	#### NAVAL MISSIONS MAP ICON
 	containerWindowType = {
 		name = "naval_mission_mapicon"
@@ -1390,7 +1426,7 @@ guiTypes = {
 				instantTextboxType = {
 					name = "count"
 					position = { x=0 y=10 }
-					font = "dr_font_16"
+					font = "hoi_16mbs"
 					maxWidth = 25
 					maxHeight = 14
 					format = center
@@ -1415,7 +1451,7 @@ guiTypes = {
 				instantTextboxType = {
 					name = "count"
 					position = { x=0 y=10 }
-					font = "dr_font_16"
+					font = "hoi_16mbs"
 					maxWidth = 25
 					maxHeight = 14
 					format = center
@@ -1440,7 +1476,7 @@ guiTypes = {
 				instantTextboxType = {
 					name = "count"
 					position = { x=0 y=10 }
-					font = "dr_font_16"
+					font = "hoi_16mbs"
 					maxWidth = 25
 					maxHeight = 14
 					format = center
@@ -1470,7 +1506,7 @@ guiTypes = {
 			position = { x = 0 y = -20 }
 			size = { x = 80 y = 23 }
 			quadTextureSprite = "GFX_tiling_sort_button"
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			buttontext = SELECT_ALL
 			clicksound = click_default
 		}
@@ -1510,7 +1546,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "text"
 			position = {x=16 y=4}
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			maxWidth = 305
 			maxHeight = 24
 			format = left
@@ -1572,7 +1608,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "supported"
 			position = {x=5 y=40}
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			maxWidth = 40
 			maxHeight = 30
 			format = center
@@ -1598,7 +1634,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "value"
 				position = {x=5 y=40}
-				font = "dr_font_16"
+				font = "hoi_16mbs"
 				maxWidth = 42
 				maxHeight = 24
 				format = center
@@ -1612,7 +1648,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "capacity"
 				position = {x=5 y=-10}
-				font = "dr_font_16"
+				font = "hoi_16mbs"
 				maxWidth = 42
 				maxHeight = 24
 				format = center
@@ -1646,7 +1682,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "value"
 				position = {x=5 y=40}
-				font = "dr_font_16"
+				font = "hoi_16mbs"
 				maxWidth = 42
 				maxHeight = 24
 				format = center
@@ -1871,7 +1907,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "cost_text"
-				font = "dr_font_16"
+				font = "hoi_16mbs"
 				position = { x = -80 y = -15 }
 				maxWidth = 160
 				maxHeight = 30
@@ -2044,7 +2080,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "operation_progress_text"
 			position = { x = -4 y = 47 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			text = "100%"
 			maxWidth = 58
 			maxHeight = 20
@@ -2142,7 +2178,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "mission_progress_text"
 			position = { x = 0 y = 47 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			text = "100%"
 			maxWidth = 40
 			maxHeight = 20
@@ -2224,7 +2260,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "percent"
 			position = { x = -15 y = 58 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			text = "10%"
 			maxWidth = 94
 			maxHeight = 20
@@ -2248,7 +2284,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "count"
 			position = { x=7 y=33 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			maxWidth = 32
 			maxHeight = 14
 			format = center
@@ -2275,7 +2311,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "count"
 			position = { x=2 y=34 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			maxWidth = 48
 			maxHeight = 14
 			format = center
@@ -2517,7 +2553,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "supply"
 			position = { x = -24 y = 32 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			text = "20/20"
 			maxWidth = 84
@@ -2654,7 +2690,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "amount"
 			position = { x= 28 y = 3 }
-			font = "dr_font_16"
+			font = "hoi_16mbs"
 			text = "99"
 			format = left
 			maxWidth = 30
@@ -2696,6 +2732,48 @@ guiTypes = {
 			    position = { x = 16 y = 16 }
 			    spriteType = "GFX_raid_type_icon_multiple_targets"
 				centerposition = yes
+				alwaystransparent = yes
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "faction_ping_map_icon"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height = 0 }
+		clipping = no
+		orientation = center
+
+		containerWindowType = {
+			name = "icon_container"
+			position = { x = -25 y = -25 }
+			size = { width = 50 height = 50 }
+			clipping = no
+
+			buttonType = {
+			    name = "button"
+			    position = { x = 0 y = 0 }
+			    spriteType = "GFX_mapicon_faction_theatre"
+				frame = 2
+				centerposition = yes
+				alwaystransparent = no
+			}
+			
+			iconType = {
+			    name = "faction_icon"
+			    position = { x = 0 y = -2 }
+			    spriteType = "GFX_raid_type_icon_multiple_targets"
+				centerposition = yes
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "count"
+				position = { x = -15 y = 9 }
+				font = "hoi_16mbs"
+				text = "99"
+				format = center
+				maxWidth = 30
 				alwaystransparent = yes
 			}
 		}

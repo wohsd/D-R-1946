@@ -1,4 +1,15 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+14799;17941;sea;17954;-1;-1;-1;-1;;South chile
+17769;17629;impassable;-1;-1;-1;-1;-1;;Antarctandes
+17571;17629;impassable;-1;-1;-1;-1;-1;;Antarctandes
+17568;17610;impassable;-1;-1;-1;-1;-1;;Antarctandes
+17604;17610;impassable;-1;-1;-1;-1;-1;;Antarctandes
+17599;17610;impassable;-1;-1;-1;-1;-1;;Antarctandes
+6364;13259;sea;2408;-1;-1;-1;-1;;DENMARK ISLANDS
+3325;13259;sea;2408;-1;-1;-1;-1;;DENMARK ISLANDS
+3260;13259;sea;2408;-1;-1;-1;-1;;DENMARK ISLANDS
+19989;13015;sea;1886;-1;-1;-1;-1;;Sao Tome Islands
+19988;13015;sea;4699;-1;-1;-1;-1;;Sao Tome Islands
 6201;185;sea;1885;-1;-1;-1;-1;;West Estonian Archipelago
 19968;19973;sea;8515;-1;-1;-1;-1;;Tahiti Islands
 19979;19973;sea;8563;-1;-1;-1;-1;;Tahiti Islands
@@ -28,8 +39,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17715;17700;sea;16748;-1;-1;-1;-1;;Antarctic Peninsula Islands
 17653;17700;sea;16748;-1;-1;-1;-1;;Antarctic Peninsula Islands
 17715;17735;sea;16748;-1;-1;-1;-1;;Antarctic Peninsula Islands
-17809;17566;sea;16795;-1;-1;-1;-1;;Antarctic Peninsula Islands
 17677;17566;sea;16795;-1;-1;-1;-1;;Antarctic Peninsula Islands
+17809;17566;sea;16795;-1;-1;-1;-1;;Antarctic Peninsula Islands
 17639;17677;sea;16795;-1;-1;-1;-1;;Antarctic Peninsula Islands
 17639;17666;sea;16795;-1;-1;-1;-1;;Antarctic Peninsula Islands
 17643;17666;sea;16799;-1;-1;-1;-1;;Antarctic Peninsula Islands
@@ -44,7 +55,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17724;17811;sea;16768;-1;-1;-1;-1;;Antarctic Peninsula Islands
 17724;17766;sea;16768;-1;-1;-1;-1;;Antarctic Peninsula Islands
 17766;16410;sea;16723;-1;-1;-1;-1;;Antarctic Peninsula Islands
-17766;17660;sea;16723;-1;-1;-1;-1;;Antarctic Peninsula Islands
+16410;17660;sea;16723;-1;-1;-1;-1;;Antarctic Peninsula Islands
 17660;17689;sea;16770;-1;-1;-1;-1;;Antarctic Peninsula Islands
 9388;13257;sea;2358;-1;-1;-1;-1;;ruegen to pomerania
 13315;761;sea;9092;-1;-1;-1;-1;;canadian arctic archipelago
@@ -295,7 +306,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17538;17542;impassable;-1;-1;-1;-1;-1;;andes mountains
 14818;17556;impassable;-1;-1;-1;-1;-1;;andes mountains
 14839;14953;impassable;-1;-1;-1;-1;-1;;andes mountains
-2179;14858;impassable;-1;-1;-1;-1;-1;;andes mountains
+14857;15050;impassable;-1;-1;-1;-1;-1;;andes mountains
 14843;14951;impassable;-1;-1;-1;-1;-1;;andes mountains
 15508;17505;impassable;-1;-1;-1;-1;-1;;andes mountains
 8195;14861;impassable;-1;-1;-1;-1;-1;;andes mountains
@@ -306,7 +317,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10986;17542;impassable;-1;-1;-1;-1;-1;;andes mountains
 14808;15091;impassable;-1;-1;-1;-1;-1;;andes mountains
 8198;15017;impassable;-1;-1;-1;-1;-1;;andes mountains
-8192;8251;impassable;-1;-1;-1;-1;-1;;andes mountains
+8192;14825;impassable;-1;-1;-1;-1;-1;;andes mountains
 15058;17938;impassable;-1;-1;-1;-1;-1;;andes mountains
 8161;17515;impassable;-1;-1;-1;-1;-1;;andes mountains
 2179;14857;impassable;-1;-1;-1;-1;-1;;andes mountains
@@ -332,7 +343,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14819;17556;impassable;-1;-1;-1;-1;-1;;andes mountains
 15017;17544;impassable;-1;-1;-1;-1;-1;;andes mountains
 15058;17506;impassable;-1;-1;-1;-1;-1;;andes mountains
-14806;15024;impassable;-1;-1;-1;-1;-1;;andes mountains
+2161;15024;impassable;-1;-1;-1;-1;-1;;andes mountains
 14858;15038;impassable;-1;-1;-1;-1;-1;;andes mountains
 14803;15003;impassable;-1;-1;-1;-1;-1;;andes mountains
 14818;14914;impassable;-1;-1;-1;-1;-1;;andes mountains
@@ -343,7 +354,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14852;15050;impassable;-1;-1;-1;-1;-1;;andes mountains
 2215;17519;impassable;-1;-1;-1;-1;-1;;andes mountains
 14842;14951;impassable;-1;-1;-1;-1;-1;;andes mountains
-14840;14951;impassable;-1;-1;-1;-1;-1;;andes mountains
+14840;14842;impassable;-1;-1;-1;-1;-1;;andes mountains
 14857;14979;impassable;-1;-1;-1;-1;-1;;andes mountains
 14861;14871;impassable;-1;-1;-1;-1;-1;;andes mountains
 5146;8195;impassable;-1;-1;-1;-1;-1;;andes mountains
@@ -534,7 +545,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4579;19231;sea;5290;-1;-1;-1;-1;;south maluku
 19231;19354;sea;5290;-1;-1;-1;-1;;south maluku
 10219;13001;sea;5414;-1;-1;-1;-1;;south maluku-timor
-12218;12314;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+10205;18659;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 6282;6334;sea;2358;-1;-1;-1;-1;;stettin lagoon
 8241;15278;sea;2236;-1;-1;-1;-1;;stewart island
 161;8753;sea;1211;-1;-1;-1;-1;;stockholm land
@@ -577,7 +588,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1216;18686;impassable;-1;-1;-1;-1;-1;;tajik-uzbek mountains
 1384;18659;impassable;-1;-1;-1;-1;-1;;tajik-uzbek mountains
 4184;9998;sea;5664;-1;-1;-1;-1;;tokyo bay
-10502;10515;sea;5951;-1;-1;-1;-1;;uruguay river
+15301;10515;sea;5951;-1;-1;-1;-1;;uruguay river
 4457;14891;sea;5951;-1;-1;-1;-1;;uruguay river
 10660;18617;impassable;-1;-1;-1;-1;-1;;uzbek-kyrgyz mountains
 10660;18643;impassable;-1;-1;-1;-1;-1;;uzbek-kyrgyz mountains

@@ -104,3 +104,12 @@ add_ideas = {
 	low_industrialization
 	Local_police
 }
+
+create_faction = ERA
+add_to_faction = GER
+add_to_faction = GRE
+add_to_faction = ARM
+add_to_faction = ROM
+add_to_faction = HUN
+add_to_faction = MON
+add_to_faction = DJI

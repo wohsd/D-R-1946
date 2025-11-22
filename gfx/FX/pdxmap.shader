@@ -316,11 +316,9 @@ PixelShader =
 			float vSnowAlpha = 1-vSpec;
 			diffuse.rgb = GetOverlay( diffuse.rgb, TerrainColor.rgb, COLORMAP_OVERLAY_STRENGTH );
 
-		#ifndef LOW_END_GFX
 			float4 vMudSnow = GetMudSnowColor( Input.prepos, SnowMudData );	
 			diffuse.rgb = ApplySnow( diffuse.rgb, Input.prepos, normal, vMudSnow, SnowTexture, CityLightsAndSnowNoise, vGlossiness, vSnowAlpha );
-			diffuse.rgb = GetMudColor( diffuse.rgb, vMudSnow, Input.prepos, normal, vGlossiness, vSpec, MudDiffuseGloss, MudNormalSpec );
-		#endif
+			diffuse.rgb = GetMudColor( diffuse.rgb, vMudSnow, Input.prepos, normal, vGlossiness, vSpec, MudDiffuseGloss, MudNormalSpec, TerrainColor.rgb, CityLightsAndSnowNoise );
 							
 			// Gradient Borders
 			float vBloomAlpha = 0.0f;

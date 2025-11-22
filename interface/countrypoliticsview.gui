@@ -228,7 +228,7 @@ guiTypes = {
 				name = "faction_name"
 				position = { x = 200 y = 25 }
 				font = "dr_font_16"
-				text = "faction"
+				text = "faction" 
 				maxWidth = 195
 				maxHeight = 20
 				multiline = no

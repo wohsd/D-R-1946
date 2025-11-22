@@ -1,0 +1,58 @@
+ARG_defend_south_orkney_from_britain = {
+	allowed = { 
+		original_tag = ARG 
+	}
+	enable = {
+		has_country_flag = south_orkney_war
+	}
+	
+	abort = {
+		NOT = {
+			has_country_flag = south_orkney_war
+		}
+	}
+
+	ai_strategy = {
+		type = invade #DON'T INVADE FALKLANDS
+		id = ENG
+		value = -100
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.4
+		states = {
+			1054 #South Orkney Islands
+		}
+		subtract_fronts_from_need = yes
+	}
+}
+
+
+
+ENG_invade_south_orkney_but_nowhere_else_NOW = {
+	allowed = { 
+		original_tag = ENG 
+	}
+	enable = {
+		has_country_flag = south_orkney_war
+	}
+	
+	abort = {
+		NOT = {
+			has_country_flag = south_orkney_war
+		}
+	}
+
+	ai_strategy = { #DON'T INVADE TIERRA DEL FUEGO
+		type = invade
+		id = ARG
+		value = -100
+	}
+
+	ai_strategy = {
+		type = invasion_unit_request
+		state = 1054 #South Orkney Islands
+		value = 500
+	}
+}

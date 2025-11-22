@@ -5,7 +5,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = SAF
+		owner = CAR
 		buildings = {
 			infrastructure = 2
 

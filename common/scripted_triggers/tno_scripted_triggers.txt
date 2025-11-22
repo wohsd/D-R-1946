@@ -1,0 +1,199 @@
+form_antarctic_department_trigger = {
+	if = { #Germany
+		limit = {
+			original_tag = GER
+		}
+		OR = {
+			has_completed_focus = GER_anschluss
+			has_completed_focus = GER_liberate_austria
+			has_completed_focus = GER_the_austrian_question
+			has_completed_focus = GER_brothers_in_arms
+		}
+	}
+	if = { #Argentina
+		limit = {
+			original_tag = ARG
+		}
+		OR = {
+			has_completed_focus = ARG_war_division
+			has_completed_focus = ARG_align_with_the_monroe_doctrine
+			has_completed_focus = ARG_the_buenos_aires_conference
+			has_completed_focus = ARG_centralize_power
+			has_completed_focus = SMB_reescalate_the_naval_arms_race
+		}
+	}
+
+	if = { #Chile
+		limit = {
+			original_tag = CHL
+		}
+		OR = {
+			has_completed_focus = CHL_the_patagonian_giants
+			has_completed_focus = CHL_enforce_the_chilean_identity
+			has_completed_focus = CHL_an_attempt_to_maintain_our_neutrality
+			has_completed_focus = CHL_support_the_democracies
+			has_completed_focus = SMB_reescalate_the_naval_arms_race
+		}
+	}
+
+	if = { #France
+		limit = {
+			original_tag = FRA
+		}
+		has_completed_focus = FRA_naval_rearmament
+		OR = {
+			has_completed_focus = FRA_diplomatic_freedom
+			has_completed_focus = FRA_repeal_the_law_of_exile
+			has_completed_focus = FRA_go_with_britain
+			has_completed_focus = FRA_france_leads
+			has_completed_focus = FRA_strengthen_the_little_entente
+			has_completed_focus = FRA_force_the_issue
+		}
+	}
+
+	if = { #Norway
+		limit = {
+			original_tag = NOR
+		}
+		OR = {
+			has_completed_focus = NOR_the_kingdom_of_norway
+			has_completed_focus = NOR_quislings_coup
+			has_completed_focus = NOR_fortify_norway
+			has_completed_focus = NOR_coastal_defense
+			has_completed_focus = NOR_prepare_for_war
+			has_completed_focus = NOR_send_the_king_back_to_denmark
+		}
+	}
+
+	if = { #Australia
+		limit = {
+			original_tag = AST
+		}
+		OR = {
+			has_completed_focus = AST_protect_the_south_west_pacific
+			has_completed_focus = AST_indirect_support
+			has_completed_focus = AST_direct_support
+			has_completed_focus = AST_adopt_westminster
+			has_completed_focus = AST_the_south_west_pacific_initiative
+		}
+	}
+
+	if = { #New Zealand
+		limit = {
+			original_tag = NZL
+		}
+		has_completed_focus = NZL_expand_devonport_naval_base
+		OR = {
+			has_completed_focus = NZL_independent_new_zealand
+			has_completed_focus = NZL_arrest_pacifist_leaders
+			has_completed_focus = NZL_rule_them_all
+			has_completed_focus = NZL_befriend_japan
+			has_completed_focus = NZL_join_comintern
+		}
+	}
+
+	if = { #United States
+		limit = {
+			original_tag = USA
+		}
+		OR = {
+			has_completed_focus = USA_income_tax_reform
+			has_completed_focus = USA_federal_housing_act
+			has_completed_focus = USA_war_powers_act
+			has_completed_focus = USA_bureau_of_ships
+		}
+	}
+
+	if = { #United Kingdom
+		limit = {
+			original_tag = ENG
+		}
+		has_completed_focus = naval_rearmament_focus
+		NOT = {
+			has_completed_focus = ENG_revisit_colonial_policy
+		}
+		OR = {
+			has_completed_focus = ENG_military_training_act
+			has_completed_focus = ENG_no_further_appeasement
+			has_completed_focus = ENG_isolate_the_mediterranean_threat
+			has_completed_focus = ENG_secure_the_italian_alliance
+			has_completed_focus = ENG_for_the_good_of_the_revolution
+		}
+	}
+
+	if = { #Generic countries
+		limit = {
+			NOT = {
+				original_tag = ARG
+				original_tag = AST
+				original_tag = CHL
+				original_tag = FRA
+				original_tag = GER
+				original_tag = NZL
+				original_tag = NOR
+				original_tag = ENG
+				original_tag = USA
+			}
+		}
+		OR = {
+			threat > 0.99
+			date > 1940.1.1
+		}
+
+	}
+
+}
+
+
+
+can_claim_antarctica = {
+	NOT = { has_game_rule = { rule = antarctica_content option = BLOCKED } }
+	NOT = { has_global_flag = ZZZ_isnt_ai }
+	OR = {
+		AND = { #Generic countries
+			NOT = { has_game_rule = { rule = antarctica_content option = LIMITED } }
+			is_major = yes
+			any_state = {
+				is_owned_by = ROOT
+				is_coastal = yes # Don't allow majors without sea access
+			}
+			has_navy_size = { #Only allow countries that have a large navy
+				size > 3
+				type = capital_ship
+			}
+			is_ai = no #Don't want AI Sweden claiming Antarctica
+			has_capitulated = no #?????
+		}
+		#OR = {
+		historical_antarctic_claimants = yes
+		#}
+	}
+}
+
+historical_antarctic_claimants = {
+	OR = {
+		original_tag = ARG
+		original_tag = AST
+		original_tag = CHL
+		original_tag = FRA
+		original_tag = GER
+		original_tag = NZL
+		original_tag = NOR
+		original_tag = ENG
+		original_tag = USA
+	}
+}
+
+all_historical_antarctic_claimants = {
+	AND = {
+		original_tag = ARG
+		original_tag = AST
+		original_tag = CHL
+		original_tag = FRA
+		original_tag = GER
+		original_tag = NZL
+		original_tag = NOR
+		original_tag = ENG
+		original_tag = USA
+	}
+}

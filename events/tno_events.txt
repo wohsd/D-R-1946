@@ -1,0 +1,1189 @@
+add_namespace = antarctica
+add_namespace = GER_antarctica
+add_namespace = ARG_antarctica
+add_namespace = ENG_antarctica
+add_namespace = CHL_antarctica
+add_namespace = FRA_antarctica
+add_namespace = USA_antarctica
+add_namespace = NZL_antarctica
+add_namespace = AST_antarctica
+add_namespace = NOR_antarctica
+
+#ZZZ
+
+#Hidden startup event that only fires if the player starts the game as Antarctica
+country_event = {
+	id = antarctica.0
+	title = antarctica.0.t
+	desc = antarctica.0.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = antarctica.0.a
+		set_global_flag = ZZZ_isnt_ai
+		remove_ideas = {
+			ZZZ_Antarctic_Anarchy
+			ZZZ_hidden
+		}
+		load_focus_tree = generic_focus
+		set_cosmetic_tag = ZZZ_DEF
+		set_research_slots = 2
+		add_naval_bases_in_antarctic_anarchy = yes
+
+		log = "[GetDateText]: [ROOT.GetName]: Hidden startup event that only fires if the player starts the game as Antarctica picked Option A"
+
+	}
+}
+
+#Options for research focus in antarctic base
+state_event = {
+	id = antarctica.10
+	title = antarctica.10.t
+	desc = antarctica.10.desc
+	picture = GFX_report_event_generic_research_lab
+	is_triggered_only = yes
+
+	option = { # Land
+		name = antarctica.10.a
+		save_event_target_as = antarctic_base
+		construct_building_in_random_province = {
+			land_facility = 1
+		}
+	}
+
+	option = { # Navy
+		name = antarctica.10.b
+	}
+
+	option = { # Air
+		name = antarctica.10.c
+	}
+
+	option = { # Nuclear
+		name = antarctica.10.d
+	}
+
+}
+
+#GER
+
+#Alfred Ritscher returns from his expedition to Antarctica
+country_event = {
+	id = GER_antarctica.1
+	title = GER_antarctica.1.t
+	desc = GER_antarctica.1.desc
+	picture = GFX_schwabenland_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Looks feasable
+		name = GER_antarctica.1.a
+		set_country_flag = is_antarctica_claimant
+		unlock_decision_tooltip = {
+			decision = GER_establish_neumayer_station
+		}
+		unlock_decision_tooltip = {
+			decision = GER_establish_schirmacher_station
+		}
+		GER = {
+			add_state_claim = 1027
+			add_state_claim = 1034
+			add_state_claim = 1046
+			add_state_claim = 1047
+			add_state_claim = 1053
+		}
+
+		ai_chance = {
+			base = 80
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Alfred Ritscher returns from his expedition to Antarctica picked Option A"
+
+	}
+	option = { #Not worth it
+		name = GER_antarctica.1.b
+		add_political_power = 25
+		custom_effect_tooltip = stopped_antarctic_research
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: Alfred Ritscher returns from his expedition to Antarctica picked Option B"
+	}
+}
+
+#If we're defeated should we evacuate to Base 211?
+country_event = {
+	id = GER_antarctica.10
+	title = GER_antarctica.10.t
+	desc = GER_antarctica.10.desc
+	picture = GFX_schwabenland_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Yes we should.
+		name = GER_antarctica.10.a
+		set_country_flag = GER_can_flee_to_antarctica
+		custom_effect_tooltip = will_flee_to_antarctica_tt
+		ai_chance = {
+			base = 67
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: If we're defeated should we evacuate to Base 211? picked Option A"
+	}
+	option = { #Preposterous!
+		name = GER_antarctica.10.b
+		ai_chance = {
+			base = 33
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: If we're defeated should we evacuate to Base 211? picked Option B"
+	}
+
+}
+
+
+
+
+
+#ARG
+
+#Relieve civilian administration in South Orkney? (Argentina)
+country_event = {
+	id = ARG_antarctica.1
+	title = ARG_antarctica.1.t
+	desc = ARG_antarctica.1.desc
+	picture = GFX_omond_house_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = ARG_antarctica.1.a
+		ENG = { country_event = { id = ARG_antarctica.4 hours = 18 } }
+		ARG = { transfer_state = 1054 }
+		1054 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				province = 17594
+			}
+		}
+
+		ai_chance = {
+			base = 100
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Relieve civilian administration in South Orkney? (Argentina) picked Option A (Yes)"
+
+	}
+	option = { #No
+		name = ARG_antarctica.1.b
+		add_political_power = 25
+		custom_effect_tooltip = stopped_antarctic_research
+		ai_chance = {
+			base = 0
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Relieve civilian administration in South Orkney? (Argentina) picked Option B (No)"
+
+	}
+}
+
+#Britain does not interfere (Argentina)
+country_event = {
+	id = ARG_antarctica.2
+	title = ARG_antarctica.2.t
+	desc = ARG_antarctica.2.desc
+	picture = GFX_omond_house_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Good
+		name = ARG_antarctica.2.a
+		set_country_flag = is_antarctica_claimant
+		ARG = {
+			add_state_claim = 1018
+			add_state_claim = 1019
+			add_state_claim = 1022
+			add_state_claim = 1031
+			add_state_claim = 1032
+			add_state_claim = 1045
+			add_state_claim = 1052
+			add_state_claim = 1054
+			add_state_claim = 1055
+			add_state_claim = 1056
+			add_state_claim = 1057
+			add_state_claim = 1058
+			add_state_claim = 1059
+			add_state_claim = 1062
+			add_state_claim = 1063
+		}
+		add_command_power = 50
+		log = "[GetDateText]: [ROOT.GetName]: Britain does not interfere (Argentina)"
+	}
+}
+
+#Britain takes a stance against us (Argentina)
+country_event = {
+	id = ARG_antarctica.3
+	title = ARG_antarctica.3.t
+	desc = ARG_antarctica.3.desc
+	picture = GFX_omond_house_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #We'll show them!
+		name = ARG_antarctica.3.a
+		#set_country_flag = is_antarctica_claimant
+		custom_effect_tooltip = hold_south_orkney_for_35_days_tt
+		ENG = { country_event = { id = ARG_antarctica.5 hours = 3 } }
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 50
+				has_war = yes
+			}
+			#modifier = {
+			#	add = 10
+			#	naval_strength_ratio = { #add 10 if British navy is not at least 33% larger than Argentina's. (i think)
+			#		tag = ENG
+			#		ratio < 0.33
+			#	} 
+			#}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: Britain takes a stance against us (Argentina) picked Option A"
+	}
+
+	option = { #There's nothing we can do, back down.
+		name = ARG_antarctica.3.b
+		custom_effect_tooltip = stopped_antarctic_research
+		add_political_power = -25
+		ENG = { country_event = { id = ARG_antarctica.6 hours = 3 } }
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 50
+				has_war = yes
+			}
+			#modifier = {
+			#	add = -10
+			#	naval_strength_ratio = { #add -10 if the British navy is larger than 33% than of Argentina Navy. (i think)
+			#		tag = ENG
+			#		ratio > 0.33
+			#	} 
+			#}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Britain takes a stance against us (Argentina) picked Option B"
+
+	}
+
+}
+
+#Argentina militarizes the South Orkney Islands (Event for Britain)
+country_event = {
+	id = ARG_antarctica.4
+	title = ARG_antarctica.4.t
+	desc = ARG_antarctica.4.desc
+	picture = GFX_omond_house_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Demand that they leave immediately
+		name = ARG_antarctica.4.a
+		ARG = { country_event = { id = ARG_antarctica.3 hours = 6 } }
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 10
+				has_war_with_major = yes #Will be less likely
+			}
+			modifier = {
+				factor = 33
+				has_war = yes #Will be less likely
+			}
+			modifier = {
+				add = 5
+				naval_strength_ratio = { #add 5 if Argentine navy is not at least 33% the size of Britain
+					tag = ARG
+					ratio < 0.33
+				} 
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: Argentina militarizes the South Orkney Islands (Event for Britain) picked Option A"
+	}
+	option = { #We can't deal with this right now
+		name = ARG_antarctica.4.b
+		ARG = { country_event = { id = ARG_antarctica.2 hours = 6 } }
+		add_political_power = 25
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ENG_if_we_make_antarctic_department_can_take_back_south_orkney_tt
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 90
+				has_war_with_major = yes #Will be less likely
+			}
+			modifier = {
+				factor = 67
+				has_war = yes #Will be less likely
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: Argentina militarizes the South Orkney Islands (Event for Britain) picked Option B"
+	}
+}
+
+#Argentina doesn't back down. (Event for Britain)
+country_event = {
+	id = ARG_antarctica.5
+	title = ARG_antarctica.5.t
+	desc = ARG_antarctica.5.desc
+	picture = GFX_omond_house_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #We will take back South Orkney.
+		name = ARG_antarctica.5.a
+		custom_effect_tooltip = ENG_hold_south_orkney_for_35_days_tt
+
+		ARG = {
+			remove_ideas = USA_monroe_doctrine_idea #Don't want USA intervening
+			set_country_flag = south_orkney_war
+			activate_mission = south_orkney_war_mission
+		}
+		# VVVVV
+		ENG = {
+			declare_war_on = {
+				target = ARG
+				type = take_claimed_state
+			}
+			add_timed_idea = {
+				idea = ENG_south_orkney_war
+				days = 70
+			}
+			set_country_flag = south_orkney_war
+			add_named_threat = {
+				threat = 5
+				name = ENG_south_orkney_war
+			}
+		}
+		ARG = {
+			add_timed_idea = {
+				idea = ARG_south_orkney_war
+				days = 70
+			}
+		}
+
+
+		hidden_effect = {
+			news_event = { id = tno_news.3 hours = 24 }
+		}
+		activate_mission = south_orkney_war_mission
+
+		# ^^^^^
+
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 33
+				has_war_with_major = yes #Will be less likely
+			}
+			modifier = {
+				factor = 67
+				has_war = yes #Will be less likely
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Argentina doesn't back down. (Event for Britain) picked Option A"
+
+	}
+
+	option = { #War is inevitable, back down.	
+		name = ARG_antarctica.5.b
+		add_political_power = -25
+		ARG = { country_event = { id = ARG_antarctica.7 hours = 3 } }
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 50
+				has_war_with_major = yes #Will be less likely
+			}
+			modifier = {
+				factor = 33
+				has_war = yes #Will be less likely
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Argentina doesn't back down. (Event for Britain) picked Option B"
+
+	}
+}
+
+#Argentina backs down (Event for Britain)
+country_event = {
+	id = ARG_antarctica.6
+	title = ARG_antarctica.6.t
+	desc = ARG_antarctica.6.desc
+	picture = GFX_omond_house_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Good, keep the islands demilitarized.
+		name = ARG_antarctica.6.a
+		1054 = { transfer_state_to = ZZZ }
+		add_stability = 0.05
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 10
+				has_war_with_major = yes #Will be less likely
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Argentina backs down (Event for Britain) picked Option A"
+
+	}
+
+	option = { #Put a garrison on the island, just in case.
+		name = ARG_antarctica.6.b
+		1054 = { transfer_state_to = ENG }
+		add_command_power = -20
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 90
+				has_war_with_major = yes #Will be less likely
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Argentina backs down (Event for Britain) picked Option B"
+
+	}
+}
+#Britain backs down after we refused (Event for Argentina)
+country_event = {
+	id = ARG_antarctica.7
+	title = ARG_antarctica.7.t
+	desc = ARG_antarctica.7.desc
+	picture = GFX_omond_house_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Good
+		name = ARG_antarctica.7.a
+		set_country_flag = is_antarctica_claimant
+		ARG = {
+			add_state_claim = 1018
+			add_state_claim = 1019
+			add_state_claim = 1022
+			add_state_claim = 1031
+			add_state_claim = 1032
+			add_state_claim = 1045
+			add_state_claim = 1052
+			add_state_claim = 1054
+			add_state_claim = 1055
+			add_state_claim = 1056
+			add_state_claim = 1057
+			add_state_claim = 1058
+			add_state_claim = 1059
+			add_state_claim = 1062
+			add_state_claim = 1063
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Britain backs down after we refused (Event for Argentina) picked Option A"
+
+	}
+}
+
+#Demand East Base decision. (Event for USA)
+country_event = {
+	id = ARG_antarctica.8
+	title = ARG_antarctica.8.t
+	desc = ARG_antarctica.8.desc
+	picture = GFX_east_base_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #We cannot risk alienating Argentina.
+		name = ARG_antarctica.8.a
+		ARG = {
+			country_event = {
+				id = ARG_antarctica.9
+				hours = 12
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Demand East Base decision. (Event for USA) picked Option A"
+
+	}
+
+	option = { #Who do they think they are?
+		name = ARG_antarctica.8.b
+		ARG = {
+			country_event = {
+				id = ARG_antarctica.10
+				hours = 12
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Demand East Base decision. (Event for USA) picked Option B"
+
+	}
+
+}
+
+
+#United States abandons East Base (Event for Argentina)
+country_event = {
+	id = ARG_antarctica.9
+	title = ARG_antarctica.9.t
+	desc = ARG_antarctica.9.desc
+	picture = GFX_east_base_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #A great victory!
+		name = ARG_antarctica.9.a
+			USA = {
+				hidden_effect = { set_victory_points = { province = 17811 value = 0 } #East Base
+				reset_province_name = 17811 }
+				custom_effect_tooltip = {
+					localization_key = abandon_antarctic_base
+					BASE = USA_BASE_VICTORY_POINTS_17811
+				}
+				1056 = {
+					clr_state_flag = antarctic_base
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}		
+			ARG = { transfer_state = 1056 } #SOUTH_GRAHAM_LAND
+			add_war_support = 0.05
+		log = "[GetDateText]: [ROOT.GetName]: United States abandons East Base (Event for Argentina) picked Option A"
+
+	}
+
+}
+
+#USA refuses to leave East Base (Event for Argentina)
+country_event = {
+	id = ARG_antarctica.10
+	title = ARG_antarctica.10.t
+	desc = ARG_antarctica.10.desc
+	picture = GFX_east_base_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #We will teach them a lesson.
+		name = ARG_antarctica.10.a	
+		start_border_war = {
+			change_state_after_war = no
+			attacker = { #Argentina
+				state = 1018 #NORTH_GRAHAM_LAND
+				num_provinces = 2
+				on_win = ARG_antarctica.12
+				on_lose = ARG_antarctica.13
+				on_cancel = ARG_antarctica.16
+				modifier = 0.1
+				dig_in_factor = 0
+				terrain_factor = 0
+			}	
+			defender = { #United States
+				state = 1056 #SOUTH_GRAHAM_LAND
+				num_provinces = 2
+				on_win = ARG_antarctica.13
+				on_lose = ARG_antarctica.11
+				on_cancel = ARG_antarctica.16
+			}
+		}
+		USA = {
+			load_oob = "USA_east_base_border_war"
+		}
+		log = "[GetDateText]: [ROOT.GetName]: USA refuses to leave East Base (Event for Argentina) picked Option A"
+	}
+
+	option = { #Perhaps war isn't the best idea.
+		name = ARG_antarctica.10.b	
+		add_political_power = -50
+		log = "[GetDateText]: [ROOT.GetName]: USA refuses to leave East Base (Event for Argentina) picked Option B"
+	}
+
+}
+
+#Fall of East Base (Event for USA)
+country_event = {
+	id = ARG_antarctica.11
+	title = ARG_antarctica.11.t
+	desc = ARG_antarctica.11.desc
+	picture = GFX_east_base_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #What choice do we have?
+		name = ARG_antarctica.11.a	
+		log = "[GetDateText]: [ROOT.GetName]: USA refuses to leave East Base (Event for Argentina) picked Option A"
+		effect_tooltip = {
+			USA = {
+				hidden_effect = { set_victory_points = { province = 17811 value = 0 } #East Base
+				reset_province_name = 17811 }
+				custom_effect_tooltip = {
+					localization_key = abandon_antarctic_base
+					BASE = USA_BASE_VICTORY_POINTS_17811
+				}
+				1056 = {
+					clr_state_flag = antarctic_base
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+		}
+	}
+
+	option = { #This is not the end.
+		name = ARG_antarctica.11.b	
+		custom_effect_tooltip = panay_incident.2.c.tt
+		if = {
+			limit = {
+				has_completed_focus = USA_neutrality_act
+			}
+			add_war_support = -0.1
+			add_stability = -0.3
+		}
+		create_wargoal = {
+			type = take_state_focus
+			target = ARG
+			generator = { 1056 } #SOUTH_GRAHAM_LAND
+			expire = 90
+		}
+		log = "[GetDateText]: [ROOT.GetName]: USA refuses to leave East Base (Event for Argentina) picked Option B"
+	}
+
+}
+
+#ARG Victory (Event for Argentina)
+country_event = {
+	id = ARG_antarctica.12
+	title = ARG_antarctica.12.t
+	desc = ARG_antarctica.12.desc
+	picture = GFX_east_base_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			USA = {
+				hidden_effect = { set_victory_points = { province = 17811 value = 0 } #East Base
+				reset_province_name = 17811 }
+				custom_effect_tooltip = {
+					localization_key = abandon_antarctic_base
+					BASE = USA_BASE_VICTORY_POINTS_17811
+				}
+				1056 = {
+					clr_state_flag = antarctic_base
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+				ARG = { transfer_state = 1056 } #SOUTH_GRAHAM_LAND
+				add_war_support = 0.05
+				add_manpower = -100
+				delete_unit = {
+					state = 1056
+				}
+			}	
+		}
+
+	}
+
+	option = { #A great victory!
+		name = ARG_antarctica.12.a	
+		log = "[GetDateText]: [ROOT.GetName]: ARG Victory (Event for Argentina) picked Option A"
+		add_political_power = 50
+		add_command_power = 25
+		effect_tooltip = {
+			USA = {
+				hidden_effect = { set_victory_points = { province = 17811 value = 0 } #East Base
+				reset_province_name = 17811 }
+				custom_effect_tooltip = {
+					localization_key = abandon_antarctic_base
+					BASE = USA_BASE_VICTORY_POINTS_17811
+				}
+				1056 = {
+					clr_state_flag = antarctic_base
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+				ARG = { transfer_state = 1056 } #SOUTH_GRAHAM_LAND
+				add_war_support = 0.05
+				add_manpower = -100
+			}	
+		}
+
+	}
+
+}
+
+#Shared event for American victory
+country_event = {
+	id = ARG_antarctica.13
+	title = ARG_antarctica.13.t
+	desc = ARG_antarctica.13.desc
+	picture = GFX_east_base_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Textbook operation
+		name = ARG_antarctica.13.a	
+		log = "[GetDateText]: [ROOT.GetName]: Shared event for American victory picked Option A"
+		add_political_power = 50
+		add_command_power = 25
+		trigger = {
+			original_tag = USA
+		}
+
+	}
+
+	option = { #Unfortunate
+		name = ARG_antarctica.13.b
+		log = "[GetDateText]: [ROOT.GetName]: Shared event for American victory picked Option B"
+		add_command_power = -25
+		trigger = {
+			original_tag = ARG
+		}
+	}
+
+}
+
+
+
+#Argentina establishes a base in Trinity Peninsula (Event for Chile)
+country_event = {
+	id = ARG_antarctica.15
+	title = ARG_antarctica.15.t
+	desc = ARG_antarctica.15.desc
+	picture = GFX_omond_house_event_picture #TODO change this
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Challenge their claim
+		name = ARG_antarctica.15.a
+		set_country_flag = is_antarctica_claimant
+		set_country_flag = CHL_complained_to_argentina
+		CHL = {
+			add_state_claim = 1018
+			add_state_claim = 1019
+			add_state_claim = 1022
+			add_state_claim = 1023
+			add_state_claim = 1024
+			add_state_claim = 1031
+			add_state_claim = 1045
+			add_state_claim = 1055
+			add_state_claim = 1056
+			add_state_claim = 1057
+			add_state_claim = 1058
+			add_state_claim = 1059
+			add_state_claim = 1062
+			add_state_claim = 1063
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Argentina establishes a base in Trinity Peninsula (Event for Chile) picked Option A"
+
+	}
+
+	option = { #None of our concern. (Allow them to take North Trinity Coast)
+		name = ARG_antarctica.15.b
+		custom_effect_tooltip = CHL_cant_construct_o_higgins_base_tt
+
+		log = "[GetDateText]: [ROOT.GetName]: Argentina establishes a base in Trinity Peninsula (Event for Chile) picked Option B"
+
+	}
+
+}
+
+#Cancellation event for arg-usa border war (should never be used)
+country_event = {
+	id = ARG_antarctica.16
+	title = ARG_antarctica.13.t #same loc as ARG_antarctica.13
+	desc = ARG_antarctica.13.desc
+	picture = GFX_east_base_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Textbook operation
+		name = ARG_antarctica.13.a	
+		log = "[GetDateText]: [ROOT.GetName]: Cancellation event for arg-usa border war (should never be used) picked Option A"
+		add_political_power = 50
+		add_command_power = 25
+		trigger = {
+			original_tag = USA
+		}
+
+	}
+
+	option = { #Unfortunate
+		name = ARG_antarctica.13.b
+		log = "[GetDateText]: [ROOT.GetName]: Cancellation event for arg-usa border war (should never be used) picked Option B"
+		add_command_power = -25
+		trigger = {
+			original_tag = ARG
+		}
+	}
+
+}
+
+
+#CHL
+
+#The Chilean Antarctic Expedition
+country_event = {
+	id = CHL_antarctica.1
+	title = CHL_antarctica.1.t
+	desc = CHL_antarctica.1.desc
+	picture = GFX_riquelme_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #yes
+		name = CHL_antarctica.1.a
+		set_country_flag = is_antarctica_claimant
+		unlock_decision_tooltip = {
+			decision = CHL_establish_o_higgins_station
+		}
+		CHL = {
+			add_state_claim = 1018
+			add_state_claim = 1019
+			add_state_claim = 1022
+			add_state_claim = 1023
+			add_state_claim = 1024
+			add_state_claim = 1031
+			add_state_claim = 1045
+			add_state_claim = 1055
+			add_state_claim = 1056
+			add_state_claim = 1057
+			add_state_claim = 1058
+			add_state_claim = 1059
+			add_state_claim = 1062
+			add_state_claim = 1063
+		}
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: The Chilean Antarctic Expedition picked Option A"
+
+	}
+	option = { #no
+		name = CHL_antarctica.1.b
+		add_political_power = 25
+		custom_effect_tooltip = stopped_antarctic_research
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: The Chilean Antarctic Expedition picked Option B"
+	}
+
+	option = { #wait until britain or argentina does something
+		name = CHL_antarctica.1.c
+		add_political_power = 25
+		custom_effect_tooltip = stopped_antarctic_research
+		trigger = {
+			NOT = {
+				has_country_flag = CHL_complained_to_argentina
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: The Chilean Antarctic Expedition picked Option C"
+	}
+}
+
+#FRA
+
+#Surveying Adelie Land
+country_event = {
+	id = FRA_antarctica.1
+	title = FRA_antarctica.1.t
+	desc = FRA_antarctica.1.desc
+	picture = GFX_generic_antarctic_expedition_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Good idea
+		name = FRA_antarctica.1.a
+		set_country_flag = is_antarctica_claimant
+		unlock_decision_tooltip = {
+			decision = FRA_establish_port_martin
+		}
+		FRA = {
+			add_state_claim = 1020
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Surveying Adelie Land picked Option A"
+
+	}
+	option = { #We don't need this.
+		name = FRA_antarctica.1.b
+		add_political_power = 25
+		custom_effect_tooltip = stopped_antarctic_research
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: Surveying Adelie Land picked Option B"
+	}
+}
+
+#NOR
+
+#Whaling ships in antarctica
+country_event = {
+	id = NOR_antarctica.1
+	title = NOR_antarctica.1.t
+	desc = NOR_antarctica.1.desc
+	picture = GFX_generic_antarctic_expedition_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Good idea
+		name = NOR_antarctica.1.a
+		set_country_flag = is_antarctica_claimant
+		unlock_decision_tooltip = {
+			decision = NOR_establish_christiensen_station
+		}
+		unlock_decision_tooltip = {
+			decision = NOR_establish_riiser_larsen_station
+		}
+		NOR = {
+			add_state_claim = 1027
+			add_state_claim = 1034
+			add_state_claim = 1046
+			add_state_claim = 1047
+			add_state_claim = 1048
+			add_state_claim = 1049
+			add_state_claim = 1053
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Whaling ships in antarctica picked Option A"
+
+	}
+	option = { #We don't need this.
+		name = NOR_antarctica.1.b
+		add_political_power = 25
+		custom_effect_tooltip = stopped_antarctic_research
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: Whaling ships in antarctica picked Option B"
+	}
+}
+
+#AST
+
+#Mawson's Third Expedition
+country_event = {
+	id = AST_antarctica.1
+	title = AST_antarctica.1.t
+	desc = AST_antarctica.1.desc
+	picture = GFX_banzare_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Good idea
+		name = AST_antarctica.1.a
+		set_country_flag = is_antarctica_claimant
+		unlock_decision_tooltip = {
+			decision = AST_establish_mawson_station
+		}
+		unlock_decision_tooltip = {
+			decision = AST_establish_davis_station
+		}
+		unlock_decision_tooltip = {
+			decision = AST_establish_wilkes_station
+		}
+		AST = {
+			add_state_claim = 1021
+			add_state_claim = 1028
+			add_state_claim = 1029
+			add_state_claim = 1050
+			add_state_claim = 1064
+			add_state_claim = 1065
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: Mawson's Third Expedition picked Option A"
+
+	}
+	option = { #We don't need this.
+		name = AST_antarctica.1.b
+		add_political_power = 25
+		custom_effect_tooltip = stopped_antarctic_research
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: Mawson's Third Expedition picked Option B"
+	}
+}
+
+#NZL
+
+#USA
+
+country_event = {
+	id = USA_antarctica.1
+	title = USA_antarctica.1.t
+	desc = USA_antarctica.1.desc
+	picture = GFX_byrd_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Consider establishing bases.
+		name = USA_antarctica.1.a
+		set_country_flag = is_antarctica_claimant
+		unlock_decision_tooltip = {
+			decision = USA_establish_little_america
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: The Return of our Antarctic Expedition picked Option A"
+
+	}
+	option = { #None of these sites are suitable, shelve the project.
+		name = USA_antarctica.1.b
+		add_political_power = 25
+		custom_effect_tooltip = stopped_antarctic_research
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: The Return of our Antarctic Expedition picked Option B"
+	}
+}
+
+#ENG
+
+#Generic
+
+#The Return of our Antarctic Expedition
+country_event = {
+	id = antarctica.1
+	title = antarctica.1.t
+	desc = antarctica.1.desc
+	picture = GFX_generic_antarctic_expedition_event_picture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #We will consider it
+		name = antarctica.1.a
+		set_country_flag = is_antarctica_claimant
+		if = {
+			limit = {
+				original_tag = NZL
+			}
+			unlock_decision_tooltip = {
+				decision = NZL_establish_scott_base
+			}
+			unlock_decision_tooltip = {
+				decision = NZL_establish_hallett_station
+			}
+			NZL = {
+				add_state_claim = 1026
+				add_state_claim = 1051
+				add_state_claim = 1068
+			}
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		log = "[GetDateText]: [ROOT.GetName]: The Return of our Antarctic Expedition picked Option A"
+
+	}
+	option = { #On second thought...
+		name = antarctica.1.b
+		add_political_power = 25
+		custom_effect_tooltip = stopped_antarctic_research
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		log = "[GetDateText]: [ROOT.GetName]: The Return of our Antarctic Expedition picked Option B"
+	}
+}

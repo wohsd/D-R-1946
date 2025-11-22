@@ -1,0 +1,27 @@
+antarctica_content = {
+	name = "antarctica_content"
+	group = "RULE_GROUP_ANTARCTICA"
+	icon = "GFX_decision_antarctica"
+	default = {
+		name = "ALLOWED"
+		text = DISABLE_ANTARCTIC_CONTENT_GAMERULE_YES
+		desc = "DISABLE_ANTARCTIC_CONTENT_GAMERULE_YES_desc"
+	}
+	option = {
+		name = "BLOCKED"
+		text = "DISABLE_ANTARCTIC_CONTENT_GAMERULE_NO"
+		desc = "DISABLE_ANTARCTIC_CONTENT_GAMERULE_NO_desc"
+	}
+	option = {
+		name = "LIMITED"
+		text = DISABLE_ANTARCTIC_CONTENT_GAMERULE_LIMITED
+		desc = "DISABLE_ANTARCTIC_CONTENT_GAMERULE_LIMITED_desc"
+	}
+
+	#option = {
+	#	name = ZZZ_FRAGMENTED
+	#	text = RULE_OPTION_ZZZ_FRAGMENTED
+	#	desc = "RULE_OPTION_ZZZ_FRAGMENTED_desc"
+	#}
+
+}

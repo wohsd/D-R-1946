@@ -1,0 +1,3810 @@
+########  ######## ########     ###    ########  ######## ##     ## ######## ##    ## ######## 
+##     ## ##       ##     ##   ## ##   ##     ##    ##    ###   ### ##       ###   ##    ##    
+##     ## ##       ##     ##  ##   ##  ##     ##    ##    #### #### ##       ####  ##    ##    
+##     ## ######   ########  ##     ## ########     ##    ## ### ## ######   ## ## ##    ##    
+##     ## ##       ##        ######### ##   ##      ##    ##     ## ##       ##  ####    ##    
+##     ## ##       ##        ##     ## ##    ##     ##    ##     ## ##       ##   ###    ##    
+########  ######## ##        ##     ## ##     ##    ##    ##     ## ######## ##    ##    ##    
+
+
+
+
+
+
+
+
+political_actions = {
+	GENERIC_form_antarctica_department = {
+		priority = 11
+		icon = GFX_decision_antarctica
+		fire_only_once = yes
+		allowed = { always = yes }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			form_antarctic_department_trigger = yes
+		}
+		visible = {
+			can_claim_antarctica = yes
+			OR = {
+				date > 1937.6.1
+				threat > 0.19
+				#is_debug = yes
+			}
+		}
+		complete_effect = {
+			set_country_flag = antarctica_department
+			custom_effect_tooltip = antarctica_department_tt
+		}
+		cost = 50
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+}
+
+
+
+	######## ##     ## ########  ######## ########  #### ######## ####  #######  ##    ##  ###### 
+	##        ##   ##  ##     ## ##       ##     ##  ##     ##     ##  ##     ## ###   ## ##    ##
+	##         ## ##   ##     ## ##       ##     ##  ##     ##     ##  ##     ## ####  ## ##      
+	######      ###    ########  ######   ##     ##  ##     ##     ##  ##     ## ## ## ##  ###### 
+	##         ## ##   ##        ##       ##     ##  ##     ##     ##  ##     ## ##  ####       ##
+	##        ##   ##  ##        ##       ##     ##  ##     ##     ##  ##     ## ##   ### ##    ##
+	######## ##     ## ##        ######## ########  ####    ##    ####  #######  ##    ##  ###### 
+
+antarctica_decisions = {
+
+
+
+	#GER Decisions
+	GER_send_ritscher_to_antarctica = {
+		priority = 95
+		icon = GFX_decision_antarctica
+		days_remove = 1
+		fire_only_once = yes
+		allowed = { original_tag = GER }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+		}
+		visible = {
+			has_country_flag = antarctica_department
+			original_tag = GER
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			custom_effect_tooltip = GENERIC_antarctic_expedition_tt
+			hidden_effect = { country_event = { id = GER_antarctica.1 hours = 6 } }
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	GER_flee_to_antarctica = {
+		priority = 94
+		icon = GFX_decision_antarctica
+		fire_only_once = yes
+		allowed = { original_tag = GER }
+		available = {
+			surrender_progress > 0.8
+				if = {
+					limit = {
+						original_tag = GER
+					}
+					controls_state = 1053 #LAKE_UNTERSEE
+				}
+		}
+		visible = {
+			surrender_progress > 0.75
+			original_tag = GER
+			has_country_flag = GER_can_flee_to_antarctica
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		complete_effect = {
+			custom_effect_tooltip = will_flee_to_antarctica_tt
+			country_event = {
+				id = GER_antarctica.2
+				hours = 1
+			}
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	#ARG Decisions
+	ARG_militarize_south_orkney_islands = {
+		priority = 95
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = ARG }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+		}
+		visible = {
+			has_country_flag = antarctica_department
+			original_tag = ARG
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			custom_effect_tooltip = GENERIC_antarctic_expedition_tt
+			country_event = { id = ARG_antarctica.1 hours = 6 }
+			custom_effect_tooltip = ARG_eng_may_respond_harsly_tt
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 1054 }
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+
+	#South Orkney War Mission
+	south_orkney_war_mission = {
+		activation = {
+			always = no
+		}
+		available = { #To complete:
+			ENG = {
+				controls_state = 1054 #South Orkney
+			}
+		}
+		cancel_trigger = { #Will abort if:
+			any_state = {
+				is_core_of = ARG
+				is_controlled_by = ENG
+			}
+		
+		}
+		icon = GFX_decision_generic_naval
+		is_good = no
+		days_mission_timeout = 90
+		timeout_effect = { #Effects if not completed with X days:
+			ARG = {
+				white_peace = ENG
+			}
+			hidden_effect = {
+				news_event = { id = tno_news.1 days = 1 }
+				ENG = { clr_country_flag = south_orkney_war }
+				ARG = { clr_country_flag = south_orkney_war }
+				ARG = { set_country_flag = is_antarctica_claimant }
+			}
+		}
+		complete_effect = { #Effects when completed:
+			1054 = { transfer_state_to = ENG }
+			ENG = {
+				white_peace = {
+					tag = ARG
+				}
+				hidden_effect = {
+					ARG = {
+						remove_ideas = ARG_south_orkney_war
+						add_ideas = USA_monroe_doctrine_idea
+					}
+					ENG = {
+						remove_ideas = ENG_south_orkney_war
+					}
+					news_event = { id = tno_news.2 days = 1 }
+
+					ENG = { clr_country_flag = south_orkney_war }
+					ARG = { clr_country_flag = south_orkney_war }
+				}
+			}
+		}
+	}
+
+	#CHL Decisions
+	CHL_chilean_antarctic_expedition = {
+		priority = 95
+		icon = GFX_decision_antarctica
+		days_remove = 100
+		fire_only_once = yes
+		allowed = { original_tag = CHL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = antarctica_department
+				has_country_flag = CHL_complained_to_argentina
+			}
+			original_tag = CHL
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			custom_effect_tooltip = GENERIC_antarctic_expedition_tt
+			hidden_effect = { country_event = { id = CHL_antarctica.1 hours = 6 } }
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	#FRA Decisions
+
+	FRA_survey_adelie_land = {
+		priority = 95
+		icon = GFX_decision_antarctica
+		days_remove = 140
+		fire_only_once = yes
+		allowed = { original_tag = FRA }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = antarctica_department
+			}
+			original_tag = FRA
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			custom_effect_tooltip = GENERIC_antarctic_expedition_tt
+			hidden_effect = { country_event = { id = FRA_antarctica.1 hours = 6 } }
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	#NOR Decisions
+
+	NOR_send_whaling_ships_to_antarctica = {
+		priority = 95
+		icon = GFX_decision_antarctica
+		days_remove = 140
+		fire_only_once = yes
+		allowed = { original_tag = NOR }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = antarctica_department
+			}
+			original_tag = NOR
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			custom_effect_tooltip = GENERIC_antarctic_expedition_tt
+			hidden_effect = { country_event = { id = NOR_antarctica.1 hours = 6 } }
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	#AST Decisions
+
+	AST_continue_the_antarctic_research_expedition = {
+		priority = 95
+		icon = GFX_decision_antarctica
+		days_remove = 140
+		fire_only_once = yes
+		allowed = { original_tag = AST }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = antarctica_department
+			}
+			original_tag = AST
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			custom_effect_tooltip = GENERIC_antarctic_expedition_tt
+			hidden_effect = { country_event = { id = AST_antarctica.1 hours = 6 } }
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	#NZL Decisions
+
+	NZL_geological_survey_antarctic_expedition = {
+		priority = 95
+		icon = GFX_decision_antarctica
+		days_remove = 1 #140
+		fire_only_once = yes
+		allowed = { original_tag = NZL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = antarctica_department
+			}
+			original_tag = NZL
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			custom_effect_tooltip = GENERIC_antarctic_expedition_tt
+			hidden_effect = { country_event = { id = antarctica.1 hours = 6 } }
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	#USA Decisions
+
+	USA_antarctic_service_expedition = {
+		priority = 95
+		icon = GFX_decision_antarctica
+		days_remove = 1 #365
+		fire_only_once = yes
+		allowed = { original_tag = USA }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = antarctica_department
+			}
+			original_tag = USA
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			custom_effect_tooltip = GENERIC_antarctic_expedition_tt
+			hidden_effect = { country_event = { id = USA_antarctica.1 hours = 6 } }
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	#ENG Decisions
+
+
+}
+
+
+
+
+
+	 ######  ########    ###    ######## ####  #######  ##    ##  ######  
+	##    ##    ##      ## ##      ##     ##  ##     ## ###   ## ##    ## 
+	##          ##     ##   ##     ##     ##  ##     ## ####  ## ##       
+	 ######     ##    ##     ##    ##     ##  ##     ## ## ## ##  ######  
+	      ##    ##    #########    ##     ##  ##     ## ##  ####       ## 
+	##    ##    ##    ##     ##    ##     ##  ##     ## ##   ### ##    ## 
+	 ######     ##    ##     ##    ##    ####  #######  ##    ##  ######  
+
+
+
+
+
+
+
+	 ######   ######## ########  
+	##    ##  ##       ##     ## 
+	##        ##       ##     ## 
+	##   #### ######   ########  
+	##    ##  ##       ##   ##   
+	##    ##  ##       ##    ##  
+	 ######   ######## ##     ## 
+
+antarctica_decisions = {
+
+	GER_establish_schirmacher_station = {
+		priority = 10 #This should be the main station in new swabia
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = GER }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1027 #PRINCESS_ASTRID_COAST
+				}
+				ZZZ = {
+					controls_state = 1027 #PRINCESS_ASTRID_COAST
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1027 #PRINCESS_ASTRID_COAST
+				hidden_effect = { set_victory_points = { province = 17742 value = 1 } #Hafen von Admiral Gran Spee
+				set_province_name = { id = 17742 name = BASE_VICTORY_POINTS_17742 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17742
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1027 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17742
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1027 #PRINCESS_ASTRID_COAST
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+		modifier = { consumer_goods_factor = 0.1 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		ai_will_do = {
+			base = 5.0
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+	}
+
+	GER_establish_neumayer_station = {
+		priority = 8 #secondary station, should be high but not as high as schirmacher
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = GER }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1034 #PRINCESS_MARTHA_COAST
+				}
+				ZZZ = {
+					controls_state = 1034 #PRINCESS_MARTHA_COAST
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1034 #PRINCESS_MARTHA_COAST
+				hidden_effect = { set_victory_points = { province = 17810 value = 1 } #Stützpunkt Georg von Neumayer
+				set_province_name = { id = 17810 name = BASE_VICTORY_POINTS_17810 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17810
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1034 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17810
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1034 #PRINCESS_MARTHA_COAST
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+		modifier = { consumer_goods_factor = 0.1 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+	}
+
+	GER_establish_untersee_base = {
+		priority = 10 #Base 211, should be highest, but will only appear after Schirmacher is built.
+		icon = GFX_decision_antarctica
+		days_remove = 1 #140
+		fire_only_once = yes
+		allowed = { original_tag = GER }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1053 #LAKE_UNTERSEE
+				}
+				ZZZ = {
+					controls_state = 1053 #LAKE_UNTERSEE
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+			1053 = {
+				any_neighbor_state = {
+					is_fully_controlled_by = GER
+				}
+			}
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1053 #LAKE_UNTERSEE
+				hidden_effect = { set_victory_points = { province = 17772 value = 3 } #Base 211
+				set_province_name = { id = 17772 name = BASE_VICTORY_POINTS_17772 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17772
+					VALUE = "3"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1053 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1053 #LAKE_UNTERSEE
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+		modifier = { consumer_goods_factor = 0.1 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+	}
+
+
+
+
+
+	   ###    ########   ######   
+	  ## ##   ##     ## ##    ##  
+	 ##   ##  ##     ## ##        
+	##     ## ########  ##   #### 
+	######### ##   ##   ##    ##  
+	##     ## ##    ##  ##    ##  
+	##     ## ##     ##  ######   
+
+	ARG_expand_orcadas_base = {
+		priority = 10 #First station Argentina should construct
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = ARG }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1054 #SOUTH_ORKNEY_ISLANDS
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				hidden_effect = { set_victory_points = { province = 17594 value = 2 } #Base Orcadas
+				set_province_name = { id = 17594 name = BASE_VICTORY_POINTS_17594 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17594
+					VALUE = "2"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1054 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17594
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1054 #SOUTH_ORKNEY_ISLANDS
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+		modifier = { consumer_goods_factor = 0.1 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+	}
+
+	ARG_establish_esperanza_base = {
+		priority = 9 #Main Antarctic station
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = ARG }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1057 #TRINITY_PENINSULA
+				}
+				ZZZ = {
+					controls_state = 1057 #TRINITY_PENINSULA
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1057 #TRINITY_PENINSULA
+				hidden_effect = { set_victory_points = { province = 17715 value = 3 } #Base Esperanza
+				set_province_name = { id = 17715 name = BASE_VICTORY_POINTS_17715 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17715
+					VALUE = "3"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1057 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17715
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+			CHL = {
+				country_event = {
+					id = ARG_antarctica.15
+					days = 1
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1057 #TRINITY_PENINSULA
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		modifier = { consumer_goods_factor = 0.1 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	ARG_establish_san_martin_base = {
+		priority = 8 #Second argentine base
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = ARG }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1056 #SOUTH_GRAHAM_LAND
+				}
+				ZZZ = {
+					controls_state = 1056 #SOUTH_GRAHAM_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+			1056 = { #SOUTH_GRAHAM_LAND
+				is_fully_controlled_by = ZZZ
+			}
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1056 #SOUTH_GRAHAM_LAND
+				hidden_effect = { set_victory_points = { province = 17811 value = 2 } #Base San Martin
+				set_province_name = { id = 17811 name = BASE_VICTORY_POINTS_17811 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17811
+					VALUE = "2"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1056 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17811
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1056 #SOUTH_GRAHAM_LAND
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		modifier = { consumer_goods_factor = 0.1 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	ARG_establish_primavera_base = {
+		priority = 7 #Third and smallest Argentine station
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = ARG }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1018 #NORTH_GRAHAM_LAND
+				}
+				ZZZ = {
+					controls_state = 1018 #NORTH_GRAHAM_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1018 #NORTH_GRAHAM_LAND
+				hidden_effect = { set_victory_points = { province = 17809 value = 1 } #Base Primavera
+				set_province_name = { id = 17809 name = BASE_VICTORY_POINTS_17809 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17809
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1018 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17809
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1018 #NORTH_GRAHAM_LAND
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		modifier = { consumer_goods_factor = 0.1 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	ARG_demand_east_base = {
+		priority = 3
+		icon = GFX_decision_generic_confiscation
+		fire_only_once = yes
+		allowed = { original_tag = ARG }
+		available = {
+			ROOT = {
+				controls_state = 1018 #NORTH_GRAHAM_LAND
+			}
+		}
+		visible = {
+			USA = {
+				controls_state = 1056 #SOUTH_GRAHAM_LAND
+			}
+			has_country_flag = is_antarctica_claimant
+			original_tag = ARG	
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+			NOT = {
+				has_war_with = USA
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1056 #SOUTH_GRAHAM_LAND
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+		complete_effect = {
+			USA = {
+				country_event = {
+					id = ARG_antarctica.8
+					hours = 12
+				}
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+
+
+
+
+	 ######  ##     ## ##      
+	##    ## ##     ## ##      
+	##       ##     ## ##      
+	##       ######### ##      
+	##       ##     ## ##      
+	##    ## ##     ## ##      
+	 ######  ##     ## ########
+
+
+
+
+	CHL_establish_o_higgins_station = {
+		priority = 10 #Main Chilean station
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = CHL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1062 #NORTH_TRINITY_COAST
+				}
+				ZZZ = {
+					controls_state = 1062 #NORTH_TRINITY_COAST
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1062 #NORTH_TRINITY_COAST
+				hidden_effect = { set_victory_points = { province = 17667 value = 3 } #Base Riquelme O'Higgins
+				set_province_name = { id = 17667 name = BASE_VICTORY_POINTS_17667 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17667
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1062 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17667
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1062 #NORTH_TRINITY_COAST
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		modifier = { consumer_goods_factor = 0.1 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	CHL_establish_prat_station = {
+		priority = 9 #Second chilean station
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = CHL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1055 #SOUTH_SHETLAND_ISLANDS
+				}
+				ZZZ = {
+					controls_state = 1055 #SOUTH_SHETLAND_ISLANDS
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1055 #SOUTH_SHETLAND_ISLANDS
+				hidden_effect = { set_victory_points = { province = 17666 value = 1 } #Prat Station
+				set_province_name = { id = 17666 name = BASE_VICTORY_POINTS_17666 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17666
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1055 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17666
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1055 #SOUTH_SHETLAND_ISLANDS
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		modifier = { consumer_goods_factor = 0.05 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+	}
+
+	CHL_establish_carvajal_station = {
+		priority = 8 #third chilean station
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = CHL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1063 #ADELAIDE_ISLAND
+				}
+				ZZZ = {
+					controls_state = 1063 #ADELAIDE_ISLAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1063 #ADELAIDE_ISLAND
+				hidden_effect = { set_victory_points = { province = 17813 value = 1 } #Teniente Carajal Station
+				set_province_name = { id = 17813 name = BASE_VICTORY_POINTS_17813 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17813
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1063 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17813
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1063 #ADELAIDE_ISLAND
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		modifier = { consumer_goods_factor = 0.05 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	CHL_establish_carrera_station = {
+		priority = 5 #First small outpost
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = CHL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1023 #EAST_ELLSWORTH_LAND
+				}
+				ZZZ = {
+					controls_state = 1023 #EAST_ELLSWORTH_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1023 #EAST_ELLSWORTH_LAND
+				hidden_effect = { set_victory_points = { province = 17787 value = 1 } #Base Carrera
+				set_province_name = { id = 17787 name = BASE_VICTORY_POINTS_17787 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17787
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1023 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17787
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1023 #EAST_ELLSWORTH_LAND
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		modifier = { consumer_goods_factor = 0.05 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	CHL_establish_allesandri_station = {
+		priority = 4 #Second small outpost
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = CHL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1024 #WEST_ELLSWORTH_LAND
+				}
+				ZZZ = {
+					controls_state = 1024 #WEST_ELLSWORTH_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1024 #WEST_ELLSWORTH_LAND
+				hidden_effect = { set_victory_points = { province = 17805 value = 1 } #Base Carrera
+				set_province_name = { id = 17805 name = BASE_VICTORY_POINTS_17805 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17805
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1024 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17805
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1024 #WEST_ELLSWORTH_LAND
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		modifier = { consumer_goods_factor = 0.05 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+
+
+
+
+######## ########     ###   
+##       ##     ##   ## ##  
+##       ##     ##  ##   ## 
+######   ########  ##     ##
+##       ##   ##   #########
+##       ##    ##  ##     ##
+##       ##     ## ##     ##
+
+
+
+
+
+	FRA_establish_port_martin = {
+		priority = 10 #Only french station
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = FRA }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1020 #ADELIE_LAND
+				}
+				ZZZ = {
+					controls_state = 1020 #ADELIE_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1020 #ADELIE_LAND
+				hidden_effect = { set_victory_points = { province = 17612 value = 1 } #Port-Martin
+				set_province_name = { id = 17612 name = BASE_VICTORY_POINTS_17612 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17612
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1020 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17612
+					}
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1020 #ADELIE_LAND
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		modifier = { consumer_goods_factor = 0.1 }
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+
+
+
+
+	##    ##  #######  ######## 
+	###   ## ##     ## ##     ##
+	####  ## ##     ## ##     ##
+	## ## ## ##     ## ######## 
+	##  #### ##     ## ##   ##  
+	##   ### ##     ## ##    ## 
+	##    ##  #######  ##     ##
+
+
+
+
+
+	NOR_establish_riiser_larsen_station = {
+		priority = 9 #PRINCE_HARALD_COAST
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = NOR }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1049 #PRINCE_HARALD_COAST
+				}
+				ZZZ = {
+					controls_state = 1049 #PRINCE_HARALD_COAST
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1049 #PRINCE_HARALD_COAST
+				hidden_effect = { set_victory_points = { province = 17785 value = 1 } #Riiser-Larsen Stasjonen
+				set_province_name = { id = 17785 name = BASE_VICTORY_POINTS_17785 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17785
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 17785
+				}
+				1049 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1049 #PRINCE_HARALD_COAST
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	NOR_establish_christiensen_station = {
+		priority = 9 #PRINCESS_RAGNHILD_COAST
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = NOR }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1048 #PRINCESS_RAGNHILD_COAST
+				}
+				ZZZ = {
+					controls_state = 1048 #PRINCESS_RAGNHILD_COAST
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1048 #PRINCESS_RAGNHILD_COAST
+				hidden_effect = { set_victory_points = { province = 17799 value = 1 } #Riiser-Larsen Stasjonen
+				set_province_name = { id = 17799 name = BASE_VICTORY_POINTS_17799 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17799
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 17799
+				}
+				1048 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1048 #PRINCESS_RAGNHILD_COAST
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+
+
+
+
+	   ###     ######  ########
+	  ## ##   ##    ##    ##   
+	 ##   ##  ##          ##   
+	##     ##  ######     ##   
+	#########       ##    ##   
+	##     ## ##    ##    ##   
+	##     ##  ######     ##   
+
+
+
+
+
+	AST_establish_mawson_station = {
+		priority = 9 #MAC_ROBERTSON_LAND
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = AST }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				#is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1064 #MAC_ROBERTSON_LAND
+				}
+				ZZZ = {
+					controls_state = 1064 #MAC_ROBERTSON_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1064 #MAC_ROBERTSON_LAND
+				hidden_effect = { set_victory_points = { province = 17808 value = 2 } #Mawson Station
+				set_province_name = { id = 17808 name = BASE_VICTORY_POINTS_17808 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17808
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 17808
+				}
+				1064 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1064 #MAC_ROBERTSON_LAND
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	AST_establish_davis_station = {
+		priority = 9 #PRINCESS_ELIZABETH_LAND
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = AST }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				#is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1029 #MAC_ROBERTSON_LAND
+				}
+				ZZZ = {
+					controls_state = 1029 #MAC_ROBERTSON_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1029 #PRINCESS_ELIZABETH_LAND
+				hidden_effect = { set_victory_points = { province = 17786 value = 1 } #Davis Station
+				set_province_name = { id = 17786 name = BASE_VICTORY_POINTS_17786 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17786
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 17786
+				}
+				1029 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1029 #MAC_ROBERTSON_LAND
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	AST_establish_wilkes_station = {
+		priority = 9 #WILKES_LAND
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = AST }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				#is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1028 #WILKES_LAND
+				}
+				ZZZ = {
+					controls_state = 1028 #WILKES_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1028 #WILKES_LAND
+				hidden_effect = { set_victory_points = { province = 17790 value = 1 } #Wilkes Station
+				set_province_name = { id = 17790 name = BASE_VICTORY_POINTS_17790 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17790
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 17790
+				}
+				1028 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1028 #WILKES_LAND
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+	}
+
+	AST_establish_enderby_station = {
+		priority = 8 #ENDERBY_LAND
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = AST }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				#is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1050 #ENDERBY_LAND
+				}
+				ZZZ = {
+					controls_state = 1050 #ENDERBY_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1050 #ENDERBY_LAND
+				hidden_effect = { set_victory_points = { province = 17814 value = 1 } #Enderby Station
+				set_province_name = { id = 17814 name = BASE_VICTORY_POINTS_17814 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17814
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 17814
+				}
+				1050 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1050 #ENDERBY_LAND
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+
+
+
+
+	##    ## ######## ##      
+	###   ##      ##  ##      
+	####  ##     ##   ##      
+	## ## ##    ##    ##      
+	##  ####   ##     ##      
+	##   ###  ##      ##      
+	##    ## ######## ########
+
+
+
+
+
+	NZL_establish_scott_base = {
+		priority = 10 #ROSS_ISLAND
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = NZL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				#is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1068 #ROSS_ISLAND
+				}
+				ZZZ = {
+					controls_state = 1068 #ROSS_ISLAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1068 #ROSS_ISLAND
+				hidden_effect = { set_victory_points = { province = 17802 value = 1 } #Scott Base
+				set_province_name = { id = 17802 name = NZL_BASE_VICTORY_POINTS_17802 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = NZL_BASE_VICTORY_POINTS_17802
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 17802
+				}
+				1068 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1068 #ROSS_ISLAND
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	NZL_establish_hallett_station = {
+		priority = 9 #ROSS_DEPENDENCY
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = NZL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				#is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1026 #ROSS_DEPENDENCY
+				}
+				ZZZ = {
+					controls_state = 1026 #ROSS_DEPENDENCY
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1026 #ROSS_DEPENDENCY
+				hidden_effect = { set_victory_points = { province = 17706 value = 1 } #Hallett Station
+				set_province_name = { id = 17706 name = BASE_VICTORY_POINTS_17706 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17706
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 17706
+				}
+				1026 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1026 #ROSS_DEPENDENCY
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+
+
+
+
+	##     ##  ######     ###   
+	##     ## ##    ##   ## ##  
+	##     ## ##        ##   ## 
+	##     ##  ######  ##     ##
+	##     ##       ## #########
+	##     ## ##    ## ##     ##
+	 #######   ######  ##     ##
+
+
+
+
+
+	USA_establish_little_america = {
+		priority = 10 #EAST_ROSS_DEPENDENCY
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = USA }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1051 #EAST_ROSS_DEPENDENCY
+				}
+				ZZZ = {
+					controls_state = 1051 #EAST_ROSS_DEPENDENCY
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1051 #EAST_ROSS_DEPENDENCY
+				hidden_effect = { set_victory_points = { province = 17791 value = 1 } #Little America III
+				set_province_name = { id = 17791 name = BASE_VICTORY_POINTS_17791 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = BASE_VICTORY_POINTS_17791
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 17791
+				}
+				1051 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1051 #EAST_ROSS_DEPENDENCY
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	USA_establish_east_base = {
+		priority = 8 #
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = { original_tag = USA }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+			ROOT = {
+				has_capitulated = no
+				is_subject = no
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1056 #SOUTH_GRAHAM_LAND
+				}
+				ZZZ = {
+					controls_state = 1056 #SOUTH_GRAHAM_LAND
+				}
+			}
+			NOT = { has_country_flag = is_establishing_antarctic_base }
+		}
+		visible = {
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			ROOT = {
+				transfer_state = 1056 #SOUTH_GRAHAM_LAND
+				hidden_effect = { set_victory_points = { province = 17811 value = 1 } #East Base
+				set_province_name = { id = 17811 name = USA_BASE_VICTORY_POINTS_17811 } }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = create_antarctic_base
+					BASE = USA_BASE_VICTORY_POINTS_17811
+					VALUE = "1"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				1056 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17811
+					}
+				}
+
+				1056 = {
+					set_state_flag = antarctic_base
+				}
+				clr_country_flag = is_establishing_antarctic_base
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1056 #SOUTH_GRAHAM_LAND
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		modifier = { consumer_goods_factor = 0.1 }
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = is_establishing_antarctic_base
+			
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 3.3
+				date > 1938.06.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1939.01.01
+			}
+			modifier = {
+				factor = 3.3
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1943.01.01
+				has_war = no
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = someone_claimed_antarctica
+				NOT = { has_global_flag = dont_care_about_others_claiming_antarctica }
+			}
+			modifier = {
+				factor = 10
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	USA_abandon_east_base = {
+		priority = 0 #Abandoning bases should always be below other decisions
+		icon = GFX_decision_generic_scorched_earth
+		fire_only_once = yes
+		allowed = { original_tag = USA }
+		available = {
+			ROOT = {
+				controls_state = 1056
+			}
+		}
+		visible = {
+			ROOT = {
+				controls_state = 1056
+			}
+			has_country_flag = is_antarctica_claimant
+			original_tag = ROOT
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+			NOT = {
+				has_war_with = ARG
+			}
+		}
+        highlight_states = {
+            highlight_state_targets = {
+                state = 1056 #SOUTH_GRAHAM_LAND
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+		complete_effect = {
+			ROOT = {
+				hidden_effect = { set_victory_points = { province = 17811 value = 0 } #East Base
+				reset_province_name = 17811 }
+				custom_effect_tooltip = {
+					localization_key = abandon_antarctic_base
+					BASE = USA_BASE_VICTORY_POINTS_17811
+				}
+				1056 = {
+					clr_state_flag = antarctic_base
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}		
+			if = {
+				limit = {
+					ARG = {
+						controls_state = 1018 #NORTH_GRAHAM_LAND
+					}
+				}
+				custom_effect_tooltip = USA_deconstruct_east_base_arg_presence
+				ARG = { transfer_state = 1056 } #SOUTH_GRAHAM_LAND
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_war_support = 0.05
+			}
+			else = {
+				ZZZ = { transfer_state = 1056 } #SOUTH_GRAHAM_LAND
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 0.05
+				date > 1939.01.01
+			}
+			modifier = {
+				add = 5
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = LATE_ANTARCTIC_EXPANSION
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = AGGRESSIVE_ANTARCTIC_EXPANSION
+			}
+		}
+
+	}
+
+	######## ##    ##  ######  
+	##       ###   ## ##    ## 
+	##       ####  ## ##       
+	######   ## ## ## ##   ####
+	##       ##  #### ##    ## 
+	##       ##   ### ##    ## 
+	######## ##    ##  ######  
+
+
+
+
+
+	
+
+
+
+
+
+	 ######   ######## ##    ## ######## ########  ####  ###### 
+	##    ##  ##       ###   ## ##       ##     ##  ##  ##    ##
+	##        ##       ####  ## ##       ##     ##  ##  ##      
+	##   #### ######   ## ## ## ######   ########   ##  ##      
+	##    ##  ##       ##  #### ##       ##   ##    ##  ##      
+	##    ##  ##       ##   ### ##       ##    ##   ##  ##    ##
+	 ######   ######## ##    ## ######## ##     ## ####  ###### 
+
+
+
+
+
+	
+}
+
+
+
+
+
+	########  ######## ##     ## ######## ##        #######  ########  ##     ## ######## ##    ## ######## 
+	##     ## ##       ##     ## ##       ##       ##     ## ##     ## ###   ### ##       ###   ##    ##    
+	##     ## ##       ##     ## ##       ##       ##     ## ##     ## #### #### ##       ####  ##    ##    
+	##     ## ######   ##     ## ######   ##       ##     ## ########  ## ### ## ######   ## ## ##    ##    
+	##     ## ##        ##   ##  ##       ##       ##     ## ##        ##     ## ##       ##  ####    ##    
+	##     ## ##         ## ##   ##       ##       ##     ## ##        ##     ## ##       ##   ###    ##    
+	########  ########    ###    ######## ########  #######  ##        ##     ## ######## ##    ##    ##    
+
+
+
+antarctic_development = {
+
+	military_exercises_in_antarctic_base = {
+		priority = -5 #Always be below station creation
+		icon = GFX_decision_generic_military
+		days_remove = 35
+		days_re_enable = 365
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		allowed = {
+		}
+		available = {
+			NOT = {
+				has_country_flag = antarctic_exercises
+			}
+		}
+		visible = {
+			any_state = {
+				is_controlled_by = ROOT
+				has_state_flag = antarctic_base
+				has_state_flag = {
+					flag = antarctic_base_expanded
+					value > 1
+				}
+			}
+			#has_country_flag = antarctica_department
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = antarctic_base
+				#region = 310
+				NOT = {
+					impassable = yes
+				}
+			}
+		}
+
+		modifier = {
+			experience_gain_army = 0.15 #0.143 #Gives exactly 5 XP in 35 days
+			command_power_gain_mult = 0.1
+			acclimatization_cold_climate_gain_factor = 0.2
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -5 }
+			set_country_flag = antarctic_exercises
+		}
+		remove_effect = {
+			clr_country_flag = antarctic_exercises
+		}
+		custom_cost_trigger = {
+			command_power > 5
+		}
+		custom_cost_text = decision_cost_CP_5
+	}
+
+	expand_antarctic_base_0 = {
+		name = expand_antarctic_base
+		priority = -1 #Always be below station creation, but be above other development.
+		icon = GFX_decision_generic_construction
+		days_remove = 1 #35
+		#days_re_enable = 3 #180
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		visible = {
+			any_state = {
+					is_controlled_by = ROOT
+					has_state_flag = antarctic_base
+			}
+			#has_country_flag = antarctica_department
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = antarctic_base
+				NOT = {
+					has_state_flag = {
+						flag = antarctic_base_expanded
+						value = 1
+					}
+				}
+				NOT = {
+					has_state_flag = {
+						flag = antarctic_base_expanded
+						value = 2
+					}
+				}
+				NOT = {
+					has_state_flag = {
+						flag = antarctic_base_expanded
+						value = 3
+					}
+				}
+				NOT = {
+					impassable = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			#set_country_flag = antarctic_exercises
+		}
+		remove_effect = {
+			FROM = {
+				set_state_flag = {
+					flag = antarctic_base_expanded
+					value = 1
+				}
+			}
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+			}
+			#unlock_decision_tooltip = antarctic_science_station
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	expand_antarctic_base_1 = {
+		name = expand_antarctic_base
+		priority = -1 #Always be below station creation, but be above other development.
+		icon = GFX_decision_generic_construction
+		days_remove = 1 #35
+		#days_re_enable = 3 #180
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		visible = {
+			any_state = {
+					is_controlled_by = ROOT
+					has_state_flag = antarctic_base
+			}
+			#has_country_flag = antarctica_department
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = antarctic_base
+				has_state_flag = {
+					flag = antarctic_base_expanded
+					value = 1
+				}
+				NOT = {
+					has_state_flag = {
+						flag = antarctic_base_expanded
+						value = 2
+					}
+				}
+				NOT = {
+					has_state_flag = {
+						flag = antarctic_base_expanded
+						value = 3
+					}
+				}
+				NOT = {
+					impassable = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			#set_country_flag = antarctic_exercises
+		}
+		remove_effect = {
+					FROM = {
+						set_state_flag = {
+							flag = antarctic_base_expanded
+							value = 2
+						}
+					}
+					#custom_effect_tooltip = antarctic_base_expanded_tolvl3
+				#
+				unlock_decision_tooltip = military_exercises_in_antarctic_base
+
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	expand_antarctic_base_2 = {
+		name = expand_antarctic_base
+		priority = -1 #Always be below station creation, but be above other development.
+		icon = GFX_decision_generic_construction
+		days_remove = 1 #35
+		#days_re_enable = 3 #180
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		visible = {
+			any_state = {
+					is_controlled_by = ROOT
+					has_state_flag = antarctic_base
+			}
+			#has_country_flag = antarctica_department
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = antarctic_base
+				NOT = {
+					has_state_flag = {
+						flag = antarctic_base_expanded
+						value = 1
+					}
+				}
+				has_state_flag = {
+					flag = antarctic_base_expanded
+					value = 2
+				}
+				NOT = {
+					has_state_flag = {
+						flag = antarctic_base_expanded
+						value = 3
+					}
+				}
+				NOT = {
+					impassable = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+			#set_country_flag = antarctic_exercises
+		}
+		remove_effect = {
+					FROM = {
+						set_state_flag = {
+							flag = antarctic_base_expanded
+							value = 3
+						}
+					}
+					#custom_effect_tooltip = antarctic_base_expanded_tolvl3
+				#
+
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+
+
+
+
+	antarctic_science_station = {
+		priority = 100 #Always be above other development.
+		icon = GFX_decision_generic_research
+		days_remove = 1 #70
+		#days_re_enable = 3 #180
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			any_state = {
+				is_controlled_by = ROOT
+				has_state_flag = antarctic_base
+			}
+			#has_country_flag = antarctica_department
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		target_trigger = {
+			FROM = {
+				always = no #for update 1.2 TODO
+				is_fully_controlled_by = ROOT
+				has_state_flag = antarctic_base
+				has_state_flag = {
+					flag = antarctic_base_expanded
+					value > 0
+				}
+				NOT = {
+					impassable = yes
+					has_state_flag = has_research_lab
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			FROM = {
+				set_state_flag = has_research_lab
+				state_event = {
+					id = antarctica.2
+					trigger_for = controller
+					days = 1 #70
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				set_state_flag = {
+					flag = antarctic_base_expanded
+					value = 1
+				}
+			}
+		}
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		custom_cost_text = decision_cost_civ_factory_5
+	}
+
+
+
+
+
+
+
+
+
+
+
+	GER_install_thermal_plants_in_base_211 = {
+		priority = 10 #always above others
+		icon = GFX_decision_generic_electricity
+		days_remove = 1 #70
+		fire_only_once = yes
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			1053 = {
+					is_controlled_by = ROOT
+					has_state_flag = {
+						flag = antarctic_base
+						#TODO days > 70 #not right away
+					}
+			}
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -50 }
+		}
+		remove_effect = {
+			FROM = {
+				set_state_flag = {
+					flag = antarctic_base_expanded
+					value = 1
+				}
+			}
+					#custom_effect_tooltip = antarctic_base_expanded_tolvl3
+				#
+
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1053 #LAKE_UNTERSEE
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50
+	}
+
+
+
+
+}
+
+
+
+
+########  ######## ########  ##     ##  ######   
+##     ## ##       ##     ## ##     ## ##    ##  
+##     ## ##       ##     ## ##     ## ##        
+##     ## ######   ########  ##     ## ##   #### 
+##     ## ##       ##     ## ##     ## ##    ##  
+##     ## ##       ##     ## ##     ## ##    ##  
+########  ######## ########   #######   ######   
+
+
+
+
+
+
+
+
+
+
+debug_decisions = {
+
+	unlock_antarctic_department = {
+		icon = GFX_decision_antarctica
+		visible = {
+			is_debug = yes
+			is_ai = no
+			NOT = { has_country_flag = antarctica_department }
+		}
+
+		complete_effect = {
+			set_country_flag = antarctica_department
+		}
+	}
+
+	unlock_antarctic_bases = {
+		icon = GFX_decision_antarctica
+		visible = {
+			is_debug = yes
+			is_ai = no
+			NOT = { has_country_flag = is_antarctica_claimant }
+		}
+
+		complete_effect = {
+			set_country_flag = is_antarctica_claimant
+
+			if = {
+				limit = {
+					original_tag = ARG
+				}
+				transfer_state = 1054 #South Orkney Islands
+				1054 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 17594
+					}
+				}
+			}
+		}
+	}
+
+	enable_scramble_for_antarctica = {
+		icon = GFX_decision_antarctica
+		visible = {
+			is_debug = yes
+			is_ai = no
+			NOT = { has_country_flag = scramble_for_antarctica }
+		}
+
+		complete_effect = {
+			set_country_flag = scramble_for_antarctica
+			set_country_flag = is_antarctica_claimant
+		}
+	}
+
+	test_removable = {
+		icon = GFX_decision_antarctica
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+
+		days_remove = -1
+		complete_effect = {
+			if = {
+				limit = { has_decision  = test_removable2 }
+				remove_decision_on_cooldown = test_removable2
+			}
+		}
+	}
+
+	test_removable2 = {
+		icon = GFX_decision_antarctica
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+
+		days_remove = -1
+		complete_effect = {
+			if = {
+				limit = { has_decision  = test_removable }
+				remove_decision_on_cooldown = test_removable
+			}
+		}
+	}
+}

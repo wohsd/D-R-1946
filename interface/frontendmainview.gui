@@ -107,7 +107,7 @@ guiTypes = {
 			position = { x = 16 y = 18 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CONTINUE"
-			buttonFont = "hoi_24header"
+			buttonFont = "dr_font_21"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -149,7 +149,7 @@ guiTypes = {
 			position = { x = 16 y = 58 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_NEW"
-			buttonFont = "hoi_24header"
+			buttonFont = "dr_font_21"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -159,7 +159,7 @@ guiTypes = {
 			position = {  x = 16 y = 98 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD"
-			buttonFont = "hoi_24header"
+			buttonFont = "dr_font_21"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -169,7 +169,7 @@ guiTypes = {
 			position = { x = 16 y = 138}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_TUTORIAL"
-			buttonFont = "hoi_24header"
+			buttonFont = "dr_font_21"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -179,7 +179,7 @@ guiTypes = {
 			position = { x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "BACK"
-			buttonFont = "hoi_24header"
+			buttonFont = "dr_font_21"
 			clicksound = click_close
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"

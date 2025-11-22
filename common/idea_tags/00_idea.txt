@@ -37,23 +37,23 @@ idea_categories = {
 	}
     social_security = {
 		slot = Labor
-                                slot = Religious_policy  
-                                slot = Media_Publishers
-                                slot = Women_rights
-                                slot = Supervisory_bodies
-                                slot = Livelihood_investment
+        slot = Religious_policy  
+        slot = Media_Publishers
+        slot = Women_rights
+        slot = Supervisory_bodies
+        slot = Livelihood_investment
 		ledger = civilian
 		
 		cost = 150
 		removal_cost = 0
 	}
-                government3 = {
+    government3 = {
 		character_slot = head_of_government
-                                character_slot = political_advisor
-                                character_slot = political_advisor
-                                character_slot = political_advisor
-                                character_slot = political_advisor
-                                character_slot = political_advisor
+        character_slot = Minister_Finance
+        character_slot = Minister_Interior
+        character_slot = Minister_Foreign
+        character_slot = Minister_Defense
+        character_slot = Minister_Justice
 		ledger = civilian
 		
 		cost = 100

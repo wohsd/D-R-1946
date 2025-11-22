@@ -14,12 +14,12 @@ containerWindowType = {
 		name = "test_green"
 		position = { x = 1025 y = 0 }
 
-		buttonType ={
-			name ="treasury_bg"
-			spriteType = "GFX_OGAS_econ_line_graph_segment_green"
-			position = { x=10 y=10 }
+		#buttonType ={
+			#name ="treasury_bg"
+			#spriteType = "GFX_OGAS_econ_line_graph_segment_green"
+			#position = { x=10 y=10 }
 			#shortcut = "ctrl+k"
-		}
+		#}
 	}
 	containerWindowType = {
 		name = "politics_economy_open_button"

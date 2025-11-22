@@ -1,6 +1,10 @@
 ﻿l_simp_chinese:
  head_of_government:0 "政府首脑"
- head_of_parliament:0 "议会议长"
+ Minister_Finance:0 "财政部长"
+ Minister_Interior:0 "内政部长"
+ Minister_Foreign:0 "外交部长"
+ Minister_Defense:0 "国防部长"
+ Minister_Justice:0 "司法部长"
  government1:0 "经济法案"
  government2:0 "政府首脑"
  government3:0 "政府内阁"

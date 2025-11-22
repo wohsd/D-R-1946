@@ -1,5 +1,6 @@
 ﻿l_simp_chinese:
 
+
  GER:0 "德意志合众国"
  GER_DEF:0 "德意志合众国"
  GER_ADJ:0 "德意志合众国"
@@ -282,17 +283,17 @@
  BOT_DEF: "博茨瓦纳"
  BOT_ADJ: "博茨瓦纳"
 
- GAB: "加蓬"
- GAB_DEF: "加蓬"
- GAB_ADJ: "加蓬"
+ GAB: "阿非利加托管领"
+ GAB_DEF: "阿非利加托管领"
+ GAB_ADJ: "阿非利加托管领"
 
  RCG: "刚果"
  RCG_DEF: "刚果"
  RCG_ADJ: "刚果"
 
- CAR: "中非共和国"
- CAR_DEF: "中非共和国"
- CAR_ADJ: "中非"
+ CAR: "德属非洲"
+ CAR_DEF: "德属非洲"
+ CAR_ADJ: "德属非洲"
 
  CMR: "喀麦隆"
  CMR_DEF: "喀麦隆"

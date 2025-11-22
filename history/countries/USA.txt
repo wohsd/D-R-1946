@@ -121,3 +121,7 @@ add_ideas = {
 	low_industrialization
 	Local_police
 }
+
+
+create_faction = CFS
+add_to_faction = GAB

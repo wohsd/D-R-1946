@@ -1,0 +1,72 @@
+on_actions = {
+	on_startup = {
+
+		effect = {
+			every_country = {
+				limit = {
+					original_tag = ZZZ
+					is_ai = no
+				}
+				country_event = { id = antarctica.0 }
+			}
+		}
+		effect = { #Limited
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = antarctica_content
+						option = LIMITED
+					}
+				}
+				set_global_flag = no_generic_antarctic_bases
+			}
+		}
+
+		effect = { #Blocked
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = antarctica_content
+						option = BLOCKED
+					}
+				}
+				set_global_flag = ZZZ_isnt_ai
+			}
+		}
+
+		#effect = { #Partitioned Antarctica
+		#	if = {
+		#		limit = {
+		#			has_game_rule = {
+		#				rule = antarctica_content
+		#				option = ZZZ_FRAGMENTED
+		#			}
+		#		}
+		#		set_global_flag = ZZZ_isnt_ai
+		#		add_naval_bases_in_antarctic_anarchy = yes
+		#		ZZZ_fragmented_effect = yes
+		#	}
+		#}
+
+		effect = {
+			every_state = { #why does ZZZ have cores on antarctica?
+				limit = {
+					is_core_of = ZZZ
+				}
+				remove_core_of = ZZZ
+			}
+		}
+
+
+	}
+
+
+
+	on_war = { 
+		effect = {
+			add_naval_bases_in_antarctic_anarchy = yes
+		}
+	}
+
+
+}

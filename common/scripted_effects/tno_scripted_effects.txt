@@ -1,0 +1,452 @@
+add_naval_bases_in_antarctic_anarchy = { 
+	if = { #NORTH_GRAHAM_LAND
+		limit = {
+			original_tag = ZZZ
+			1018 = { is_fully_controlled_by = ZZZ } 
+		}
+		1018 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17809
+			}
+		}
+	}
+
+	if = { #ADELIE_LAND
+		limit = {
+			original_tag = ZZZ
+			1020 = { is_fully_controlled_by = ZZZ } 
+		}
+		1020 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17612
+			}
+		}
+	}
+
+	if = { #OATES_LAND
+		limit = {
+			original_tag = ZZZ
+			1021 = { is_fully_controlled_by = ZZZ } 
+		}
+		1021 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 16447
+			}
+		}
+	}
+
+	if = { #GEORGE_VI_SOUND
+		limit = {
+			original_tag = ZZZ
+			1022 = { is_fully_controlled_by = ZZZ } 
+		}
+		1022 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17658
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17702
+			}
+		}
+	}
+
+	if = { #EAST_ELLSWORTH_LAND
+		limit = {
+			original_tag = ZZZ
+			1023 = { is_fully_controlled_by = ZZZ } 
+		}
+		1023 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17787
+			}
+		}
+	}
+
+	if = { #WEST_ELLSWORTH_LAND
+		limit = {
+			original_tag = ZZZ
+			1024 = { is_fully_controlled_by = ZZZ } 
+		}
+		1024 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17805
+			}
+		}
+	}
+
+	if = { #MARY_BYRD_LAND
+		limit = {
+			original_tag = ZZZ
+			1025 = { is_fully_controlled_by = ZZZ } 
+		}
+		1025 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17688
+			}
+		}
+	}
+
+	if = { #WEST_ROSS_DEPENDENCY
+		limit = {
+			original_tag = ZZZ
+			1026 = { is_fully_controlled_by = ZZZ } 
+		}
+		1026 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17802
+			}
+		}
+	}
+
+	if = { #PRINCESS_ASTRID_COAST
+		limit = {
+			original_tag = ZZZ
+			1027 = { is_fully_controlled_by = ZZZ } 
+		}
+		1027 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17742
+			}
+		}
+	}
+
+	if = { #WILKES_LAND
+		limit = {
+			original_tag = ZZZ
+			1028 = { is_fully_controlled_by = ZZZ } 
+		}
+		1028 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17790
+			}
+		}
+	}
+
+	if = { #PRINCESS_ELIZABETH_COAST
+		limit = {
+			original_tag = ZZZ
+			1029 = { is_fully_controlled_by = ZZZ } 
+		}
+		1029 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17786
+			}
+		}
+	}
+
+	if = { #RONNE_ICE_SHELF
+		limit = {
+			original_tag = ZZZ
+			1031 = { is_fully_controlled_by = ZZZ } 
+		}
+		1031 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17565
+			}
+		}
+	}
+
+	if = { #COATS_LAND
+		limit = {
+			original_tag = ZZZ
+			1032 = { is_fully_controlled_by = ZZZ } 
+		}
+		1032 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 16425
+			}
+		}
+	}
+
+	if = { #BRUNT_ICE_SHELF
+		limit = {
+			original_tag = ZZZ
+			1033 = { is_fully_controlled_by = ZZZ } 
+		}
+		1033 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 16392
+			}
+		}
+	}
+
+	if = { #PRINCESS_MARTHA_COAST
+		limit = {
+			original_tag = ZZZ
+			1034 = { is_fully_controlled_by = ZZZ } 
+		}
+		1034 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17810
+			}
+		}
+	}
+
+	if = { #RIISER_LARSEN_ICE_SHELF
+		limit = {
+			original_tag = ZZZ
+			1046 = { is_fully_controlled_by = ZZZ } 
+		}
+		1046 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17800
+			}
+		}
+	}
+
+	if = { #FIMBUL_ICE_SHELF
+		limit = {
+			original_tag = ZZZ
+			1047 = { is_fully_controlled_by = ZZZ } 
+		}
+		1047 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17693
+			}
+		}
+	}
+
+	if = { #PRINCESS_RAGNHILD_COAST
+		limit = {
+			original_tag = ZZZ
+			1048 = { is_fully_controlled_by = ZZZ } 
+		}
+		1048 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17799
+			}
+		}
+	}
+
+	if = { #PRINCE_HARALD_OLAV_COAST
+		limit = {
+			original_tag = ZZZ
+			1049 = { is_fully_controlled_by = ZZZ } 
+		}
+		1049 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17804
+			}
+		}
+	}
+
+	if = { #ENDERBY_LAND
+		limit = {
+			original_tag = ZZZ
+			1050 = { is_fully_controlled_by = ZZZ } 
+		}
+		1050 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17814
+			}
+		}
+	}
+
+	if = { #EAST_ROSS_DEPENDENCY
+		limit = {
+			original_tag = ZZZ
+			1051 = { is_fully_controlled_by = ZZZ } 
+		}
+		1051 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17791
+			}
+		}
+	}
+
+	if = { #BERKNER_ICE_SHELF
+		limit = {
+			original_tag = ZZZ
+			1052 = { is_fully_controlled_by = ZZZ } 
+		}
+		1052 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17751
+			}
+		}
+	}
+
+	if = { #SOUTH_ORKNEY_ISLANDS
+		limit = {
+			original_tag = ZZZ
+			1054 = { is_fully_controlled_by = ZZZ } 
+		}
+		1054 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17594
+			}
+		}
+	}
+
+	if = { #SOUTH_SHETLAND_ISLANDS
+		limit = {
+			original_tag = ZZZ
+			1055 = { is_fully_controlled_by = ZZZ } 
+		}
+		1055 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17732
+			}
+		}
+	}
+
+	if = { #SOUTH_GRAHAM_LAND
+		limit = {
+			original_tag = ZZZ
+			1056 = { is_fully_controlled_by = ZZZ } 
+		}
+		1056 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17811
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17813
+			}
+		}
+	}
+
+	if = { #TRINITY_PENINSULA
+		limit = {
+			original_tag = ZZZ
+			1057 = { is_fully_controlled_by = ZZZ } 
+		}
+		1057 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17715
+			}
+		}
+	}
+
+	if = { #LARSEN_ICE_SHELF
+		limit = {
+			original_tag = ZZZ
+			1058 = { is_fully_controlled_by = ZZZ } 
+		}
+		1058 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17572
+			}
+		}
+	}
+
+	if = { #BLACK_COAST
+		limit = {
+			original_tag = ZZZ
+			1059 = { is_fully_controlled_by = ZZZ } 
+		}
+		1059 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 16413
+			}
+		}
+	}
+
+	if = { #NORTH_TRINITY_COAST
+		limit = {
+			original_tag = ZZZ
+			1062 = { is_fully_controlled_by = ZZZ } 
+		}
+		1062 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 17667
+			}
+		}
+	}
+
+
+
+
+}

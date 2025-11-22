@@ -1,0 +1,18 @@
+antarctica_decisions = {
+	icon = GFX_decision_category_antarctica
+	picture = GFX_decision_cat_antarctica
+	visible = {
+		OR = {
+			has_country_flag = antarctica_department
+			has_country_flag = is_antarctica_claimant
+		}
+	}
+	priority = 2
+}
+antarctic_development = {
+	icon = GFX_decision_category_antarctica
+	visible = {
+
+	}
+	priority = 2
+}

@@ -1,0 +1,86 @@
+ideas = {
+	country = {
+		ZZZ_Antarctic_Anarchy = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = ZZZ_antarctic_anarchy
+			modifier = {
+				army_org = -10
+				army_morale_factor = -1
+				army_defence_factor = -1
+				mobilization_speed = -1
+				conscription_factor = -1
+				political_power_gain = -2
+				industrial_capacity_factory = -1
+				production_speed_buildings_factor = -1
+				research_speed_factor = -10
+				resistance_target = -1
+				monthly_population = -1
+				recruitable_population = -1
+			}
+		}
+
+		ARG_south_orkney_war = {
+			allowed = {
+				original_tag = ARG
+				has_war_with = ENG
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_naval_invasion
+			modifier = {
+				dig_in_speed_factor = 0.2
+			}
+			rule = {
+				can_join_factions = no
+			}
+		}
+
+		ENG_south_orkney_war = {
+			allowed = {
+				original_tag = ENG
+				has_war_with = ARG
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_naval_invasion
+			modifier = {
+				invasion_preparation = -0.5
+				amphibious_invasion = 0.25
+			}
+			rule = {
+				can_join_factions = no
+			}
+		}
+
+	}
+	hidden_ideas = {
+		ZZZ_hidden = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				ai_call_ally_desire_factor = -100
+				ai_desired_divisions_factor = -100
+				ai_get_ally_desire_factor = -100
+				ai_join_ally_desire_factor = -100
+				ai_license_acceptance = -100
+				democratic_acceptance = -10000
+				communism_acceptance = -10000
+				neutrality_acceptance = -10000
+				fascism_acceptance = -10000
+				drift_defence_factor = 1000
+				neutrality_drift = 1000
+				disabled_ideas = 1
+				join_faction_tension = 100
+				justify_war_goal_time = 100
+				guarantee_tension = 100
+				generate_wargoal_tension = 100
+				embargo_cost_factor = 10000
+				weekly_manpower = -100
+
+			}
+		}
+	}
+}

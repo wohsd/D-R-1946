@@ -166,8 +166,8 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = hsv { 0.05 0.3 1 }
-	color_ui = hsv { 0.05 0.25 1.2 }
+	color = rgb { 221 146 134 }
+	color_ui = rgb { 221 146 134 }
 }
 LIB = {
 	color = rgb { 152 130 191 }
@@ -420,24 +420,24 @@ ANG = {
 }
 
 COG = {
-	color = rgb { 152 159 209 }
-	color_ui = rgb { 152 159 209 }
+	color =  rgb { 117 64 86 }
+	color_ui =  rgb { 117 64 86 } 
 }
 MZB = {
 	color = rgb { 112 62 90 }
 	color_ui = rgb { 112 62 90 }
 }
 KEN = {
-	color = rgb { 145 103 14 }
-	color_ui = rgb { 145 103 14 }
+	color = rgb { 201  56  93 }
+	color_ui = rgb { 201  56  93 }
 }
 ZIM = {
-	color = rgb { 7 7 239 }
-	color_ui = rgb { 7 7 239 }
+	color = rgb { 201  56  93 }
+	color_ui = rgb { 201  56  93 }
 }
 BOT = {
-	color = rgb { 11 132 112 }
-	color_ui = rgb { 11 132 112 }
+	color = rgb { 201  56  93 }
+	color_ui = rgb { 201  56  93 }
 }
 PAK = {
 	color = rgb { 0 102 0  }

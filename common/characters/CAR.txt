@@ -1,0 +1,17 @@
+characters = {
+	CAR_Erwin_Rommel = {
+		name = CAR_Erwin_Rommel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAR/CAR_Erwin_Rommel.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = CAR_Erwin_Rommel_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

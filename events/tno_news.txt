@@ -1,0 +1,114 @@
+add_namespace = tno_news
+
+#News
+
+#Argentina wins the South Orkney War
+news_event = {
+	id = tno_news.1
+	title = tno_news.1.t
+	desc = tno_news.1.desc
+	picture = GFX_news_event_generic_south_american_dreadnought_race
+	#fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = { #Option for Britain
+		name = tno_news.1.a
+		trigger = {
+			original_tag = ENG
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+	}
+	option = { #Option for Argentina
+		name = tno_news.1.b
+		trigger = {
+			original_tag = ARG
+		}
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+	}
+	option = { #Option for other countries
+		name = tno_news.1.c
+		trigger = {
+			NOT = {
+				original_tag = ENG
+				original_tag = ARG
+			}
+		}
+	}
+}
+
+#Britain wins the South Orkney War
+news_event = {
+	id = tno_news.2
+	title = tno_news.2.t
+	desc = tno_news.2.desc
+	picture = GFX_news_event_generic_south_american_dreadnought_race
+	#fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = { #Option for Britain
+		name = tno_news.2.a
+		trigger = {
+			original_tag = ENG
+		}
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+	}
+	option = { #Option for Argentina
+		name = tno_news.2.b
+		trigger = {
+			original_tag = ARG
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+	}
+	option = { #Option for other countries
+		name = tno_news.2.c
+		trigger = {
+			NOT = {
+				original_tag = ENG
+				original_tag = ARG
+			}
+		}
+	}
+}
+
+#South Orkney War
+news_event = {
+	id = tno_news.3
+	title = tno_news.3.t
+	desc = tno_news.3.desc
+	picture = GFX_news_event_generic_south_american_dreadnought_race
+	#fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = { #Option for Britain
+		name = tno_news.3.a
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = { #Option for Argentina
+		name = tno_news.3.b
+		trigger = {
+			original_tag = ARG
+		}
+	}
+	option = { #Option for other countries
+		name = tno_news.3.c
+		trigger = {
+			NOT = {
+				original_tag = ENG
+				original_tag = ARG
+			}
+		}
+	}
+}

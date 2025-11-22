@@ -33,3 +33,18 @@ add_ideas = {
 	low_industrialization
 	Local_police
 }
+
+
+puppet = OMA
+puppet = YEM
+puppet = UGA
+puppet = KEN
+puppet = ZIM
+puppet = TZN
+puppet = BOT
+puppet = SAF
+puppet = SOM
+puppet = NGR
+puppet = NGA
+puppet = MLI
+puppet = SEN

@@ -1,0 +1,352 @@
+	######## ##     ## ########  ######## ########  #### ######## ####  #######  ##    ##  ###### 
+	##        ##   ##  ##     ## ##       ##     ##  ##     ##     ##  ##     ## ###   ## ##    ##
+	##         ## ##   ##     ## ##       ##     ##  ##     ##     ##  ##     ## ####  ## ##      
+	######      ###    ########  ######   ##     ##  ##     ##     ##  ##     ## ## ## ##  ###### 
+	##         ## ##   ##        ##       ##     ##  ##     ##     ##  ##     ## ##  ####       ##
+	##        ##   ##  ##        ##       ##     ##  ##     ##     ##  ##     ## ##   ### ##    ##
+	######## ##     ## ##        ######## ########  ####    ##    ####  #######  ##    ##  ###### 
+
+
+
+antarctica_decisions = {
+	GENERIC_antarctic_expedition = {
+		priority = 95
+		icon = GFX_decision_antarctica
+		days_remove = 1 #140
+		fire_only_once = yes
+		allowed = {
+			NOT = {
+				historical_antarctic_claimants = yes
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = can_claim_antarctica_tt
+				can_claim_antarctica = yes
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = antarctica_department
+			}
+			NOT = { historical_antarctic_claimants = yes }
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+		}
+		remove_effect = {
+			custom_effect_tooltip = GENERIC_antarctic_expedition_tt
+			hidden_effect = { country_event = { id = antarctica.1 hours = 6 } }
+		}
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 }
+		}
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+}
+
+
+
+	 ######   ######  ########     ###    ##     ## ########  ##       ########    
+	##    ## ##    ## ##     ##   ## ##   ###   ### ##     ## ##       ##          
+	##       ##       ##     ##  ##   ##  #### #### ##     ## ##       ##          
+	 ######  ##       ########  ##     ## ## ### ## ########  ##       ######      
+	      ## ##       ##   ##   ######### ##     ## ##     ## ##       ##          
+	##    ## ##    ## ##    ##  ##     ## ##     ## ##     ## ##       ##          
+	 ######   ######  ##     ## ##     ## ##     ## ########  ######## ######## 
+
+
+
+	########  #######  ########                                                    
+	##       ##     ## ##     ##                                                   
+	##       ##     ## ##     ##                                                   
+	######   ##     ## ########                                                    
+	##       ##     ## ##   ##                                                     
+	##       ##     ## ##    ##                                                    
+	##        #######  ##     ##     
+
+
+
+	   ###    ##    ## ########    ###    ########   ######  ######## ####  ######     ###   
+	  ## ##   ###   ##    ##      ## ##   ##     ## ##    ##    ##     ##  ##    ##   ## ##  
+	 ##   ##  ####  ##    ##     ##   ##  ##     ## ##          ##     ##  ##        ##   ## 
+	##     ## ## ## ##    ##    ##     ## ########  ##          ##     ##  ##       ##     ##
+	######### ##  ####    ##    ######### ##   ##   ##          ##     ##  ##       #########
+	##     ## ##   ###    ##    ##     ## ##    ##  ##    ##    ##     ##  ##    ## ##     ##
+	##     ## ##    ##    ##    ##     ## ##     ##  ######     ##    ####  ######  ##     ##                                                      
+
+
+
+antarctica_decisions = {
+
+	GENERIC_consolidate_antarctic_claims = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+		}
+
+		available = {
+			all_state = {
+				OR = {
+					NOT = { owner = {
+					OR = {
+						tag = YUG
+						is_subject_of = YUG
+					}
+				} }
+					OR = {
+						has_state_flag = strongest_claimant_ROM
+						has_state_flag = strongest_claimant_HUN
+						has_state_flag = strongest_claimant_GER
+						has_state_flag = strongest_claimant_ITA
+						AND = {
+							is_claimed_by = GER
+							GER = { has_country_flag = invited_to_split_yugo }
+						}
+						AND = {
+							is_claimed_by = ITA
+							ITA = { has_country_flag = invited_to_split_yugo }
+						}
+						AND = {
+							is_claimed_by = HUN
+							HUN = { has_country_flag = invited_to_split_yugo }
+						}
+						is_claimed_by = ROM
+					}
+				}
+			}
+		}
+		
+		visible = {
+			has_country_flag = scramble_for_antarctica
+		}
+
+		cost = 0
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = GENERIC_consolidate_antarctic_claims_tt
+			YUG = {
+				country_event = DOD_romania.60
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+
+	#Claim state decisions
+
+	GENERIC_claim_ice_shelf = {
+		name = GENERIC_claim_ice_shelf
+		priority = -5 #Always be below station creation
+		icon = GFX_decision_antarctica
+		days_remove = 1 #70
+		fire_only_once = yes
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		allowed = {
+		}
+		available = {
+			FROM = {
+				any_neighbor_state = {
+					is_fully_controlled_by = ROOT
+				}
+				is_claimed_by = ROOT
+				is_fully_controlled_by = ZZZ
+			}
+
+		}
+		visible = {
+			NOT = { has_global_flag = ZZZ_isnt_ai }
+			ROOT = { has_country_flag = is_antarctica_claimant }
+			FROM = {
+				is_claimed_by = ROOT
+			}
+			any_state = {
+				has_state_flag = ice_shelf
+				is_fully_controlled_by = ZZZ
+			}
+		}
+		target_trigger = {
+			FROM = {
+				#is_claimed_by = ROOT
+				has_state_flag = ice_shelf
+				is_controlled_by = ZZZ
+				#region = 310
+				NOT = {
+					impassable = yes
+				}
+			}
+		}
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = FROM #FROM = STATE
+            }
+            highlight_color_while_active = 3
+            highlight_color_before_active = 2
+        }
+
+		complete_effect = {
+			hidden_effect = { add_manpower = -300 add_command_power = -15 }
+			set_country_flag = claiming_ice_shelf
+		}
+		remove_effect = {
+			clr_country_flag = claiming_ice_shelf
+			FROM = {
+				transfer_state_to = ROOT
+			}
+		}
+		custom_cost_trigger = {
+			has_manpower > 300
+			command_power > 15
+		}
+		custom_cost_text = decision_cost_MP_300_CP_15
+	}
+
+	GENERIC_claim_antarctic_state = {
+
+		#Fallback
+		icon = {
+			key = GFX_decision_ROM_claim_yugo_4
+			trigger = {
+				45 = {
+					45 = { check_variable = {  var = claim_strength_ROM value = 3 compare = greater_than_or_equals } }
+					has_state_flag = strongest_claimant_ROM
+				}
+			}
+		}
+		icon = {
+			key = GFX_decision_ROM_claim_yugo_3
+			trigger = {
+				45 = {
+					45 = { check_variable = {  var = claim_strength_ROM value = 2 compare = greater_than_or_equals } }
+					has_state_flag = strongest_claimant_ROM
+				}
+			}
+		}
+		icon = {
+			key = GFX_decision_ROM_claim_yugo_2
+			trigger = {
+				45 = {
+					45 = { check_variable = {  var = claim_strength_ROM value = 1 compare = greater_than_or_equals } }
+					has_state_flag = strongest_claimant_ROM
+				}
+			}
+		}
+		icon = {
+			key = GFX_decision_ROM_claim_yugo_1
+			trigger = {
+				45 = {
+					NOT = {
+						has_state_flag = strongest_claimant_GER
+						has_state_flag = strongest_claimant_ROM
+						has_state_flag = strongest_claimant_ITA
+						has_state_flag = strongest_claimant_HUN
+					}
+				}
+			}
+		}
+
+		#Country
+		icon = {
+			key = GFX_decision_ITA_claim_yugo_4
+			trigger = {
+				45 = {
+					45 = { check_variable = {  var = claim_strength_ITA value = 3 compare = greater_than_or_equals } }
+					has_state_flag = strongest_claimant_ITA
+				}
+			}
+		}
+		icon = {
+			key = GFX_decision_ITA_claim_yugo_3
+			trigger = {
+				45 = {
+					45 = { check_variable = {  var = claim_strength_ITA value = 2 compare = greater_than_or_equals } }
+					has_state_flag = strongest_claimant_ITA
+				}
+			}
+		}
+		icon = {
+			key = GFX_decision_ITA_claim_yugo_2
+			trigger = {
+				45 = {
+					45 = { check_variable = {  var = claim_strength_ITA value = 1 compare = greater_than_or_equals } }
+					has_state_flag = strongest_claimant_ITA
+				}
+			}
+		}
+
+		allowed = {
+		}
+
+		available = {
+			45 = {
+				has_anyone_else_claimed_ROM = yes
+			}
+		}
+		
+		visible = {
+			has_country_flag = scramble_for_antarctica
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 45 }
+		}
+
+		#on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = no
+		days_remove = 7
+		
+		remove_effect = {
+			45 = {
+				custom_effect_tooltip = romania_total_claims_tt
+				calculate_claimant_effect = yes
+			}
+			hidden_effect = { clr_country_flag = claiming_a_yugoslav_state_flag }
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = claiming_a_yugoslav_state_flag }
+		}
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				NOT = {
+					45 = {
+						any_neighbor_state = {
+							OR = {
+								AND = {
+									owner = {
+										OR = {
+											tag = YUG
+											is_subject_of = YUG
+										}
+									}
+									OR = {
+										is_claimed_by = ROOT
+										has_state_flag = strongest_claimant_@ROOT
+									}
+								}
+								is_owned_by = ROOT
+							}
+						}
+					}
+				}
+				factor = 0
+			}
+		}
+
+	}
+
+}
