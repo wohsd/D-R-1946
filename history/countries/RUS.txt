@@ -4,6 +4,18 @@ oob = "SOV_1939_nsb"
 set_air_oob = "SOV_1939_air_bba"
 set_naval_oob = "SOV_1939_naval_mtg"
 
+create_faction_from_template = faction_template_ERA
+add_to_faction = GER
+add_to_faction = GRE
+add_to_faction = ARM
+add_to_faction = ROM
+add_to_faction = HUN
+add_to_faction = MON
+add_to_faction = DJI
+add_to_faction = YUG
+add_to_faction = DEN
+add_to_faction = BEL
+add_to_faction = NOR
 # Starting tech
 set_technology = {
 
@@ -105,11 +117,4 @@ add_ideas = {
 	Local_police
 }
 
-create_faction = ERA
-add_to_faction = GER
-add_to_faction = GRE
-add_to_faction = ARM
-add_to_faction = ROM
-add_to_faction = HUN
-add_to_faction = MON
-add_to_faction = DJI
+#create_faction = ERA

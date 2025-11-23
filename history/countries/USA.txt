@@ -123,5 +123,6 @@ add_ideas = {
 }
 
 
-create_faction = CFS
+create_faction_from_template = faction_template_CFS
 add_to_faction = GAB
+add_to_faction = ENG

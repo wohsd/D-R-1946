@@ -1,0 +1,32 @@
+	### FACTION ASSETS ###
+
+	spriteTypes = {
+		spriteType = {
+			name = "GFX_faction_icon_ERA"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_ERA.dds"
+			noOfFrames = 2
+		}
+		spriteType = {
+			name = "GFX_faction_icon_ERA_miniature"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_ERA_miniature.dds"
+		}
+
+		spriteType = {
+			name = "GFX_faction_icon_CFS"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_CFS.dds"
+			noOfFrames = 2
+		}
+		spriteType = {
+			name = "GFX_faction_icon_CFS_miniature"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_CFS_miniature.dds"
+		}
+		spriteType = {
+			name = "GFX_faction_icon_JAP"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_JAP.dds"
+			noOfFrames = 2
+		}
+		spriteType = {
+			name = "GFX_faction_icon_JAP_miniature"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_JAP_miniature.dds"
+		}
+	}

@@ -272,7 +272,7 @@ GDP_resource_exported = {
 		add_to_variable = {temp_resource_exported = resource_exported@aluminium}
 		add_to_variable = {temp_resource_exported = resource_exported@tungsten}
 		add_to_variable = {temp_resource_exported = resource_exported@rubber}
-
+		add_to_variable = {temp_resource_exported = resource_exported@coal}
 		multiply_variable = { temp_resource_exported = 0.1}
 
 		add_to_variable = { income = temp_resource_exported }
@@ -289,7 +289,7 @@ GDP_resource_imported = {
 		add_to_variable = {temp_resource_imported = resource_imported@aluminium}
 		add_to_variable = {temp_resource_imported = resource_imported@tungsten}
 		add_to_variable = {temp_resource_imported = resource_imported@rubber}
-
+		add_to_variable = {temp_resource_imported = resource_exported@coal}
 		multiply_variable = { temp_resource_imported = 0.1}
 
 		subtract_from_variable = { income = temp_resource_imported}

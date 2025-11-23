@@ -1,4 +1,21 @@
 characters = {
+	FRA_Joseph_Laniel= {
+		name = FRA_Joseph_Laniel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Joseph_Laniel.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = FRA_Joseph_Laniel_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
+
+
 	FRA_Paul_Ramadier = {
 		name = FRA_Paul_Ramadier
 		portraits = {

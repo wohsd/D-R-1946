@@ -140,7 +140,8 @@ add_ideas = {
 	JAP_Showa_Democracy
 }
 
-create_faction = Greater_South_Asia_Prosperity_Sphere
+create_faction_from_template = faction_template_GEA
+
 add_to_faction = CAM
 add_to_faction = SIA
 add_to_faction = VIN
@@ -151,5 +152,3 @@ add_to_faction = MAL
 add_to_faction = INS
 add_to_faction = KOR
 
-
-JAP_parliament_setup=yes

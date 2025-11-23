@@ -8,19 +8,19 @@ set_technology = {
 }
 
 recruit_character = FRA_Paul_Ramadier
-
+recruit_character = FRA_Joseph_Laniel
 set_politics = {
-	ruling_party = Reformism
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 set_popularities = {
 	Dictatorship = 13
-	Liberalism = 13
+	Reformism = 13
 	Conservatism = 5
 	Nationalism = 19
-	Reformism = 50
+	Liberalism = 50
 }
 
 add_ideas = {

@@ -5,7 +5,7 @@ state = {
 	state_category = wasteland
 	
 	history= {
-		owner = ZZZ
+		owner = ENG
 		set_state_flag = ice_shelf
 	}
 	
