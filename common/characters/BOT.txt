@@ -1,0 +1,17 @@
+characters = {
+	BOT_Seretse_Khama = {
+		name = BOT_Seretse_Khama
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOT/BOT_Seretse_Khama.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = BOT_Seretse_Khama_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

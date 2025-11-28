@@ -75,7 +75,7 @@ containerWindowType = {
 
 		buttonType = {
 			name = "close_economy_screen"
-			position = { x = 485 y = 15 }
+			position = { x = 480 y = 30 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -84,19 +84,9 @@ containerWindowType = {
 			pdx_tooltip = "CLOSE"
 		}
 
-		buttonType = {
-			name = "close_economy_screen"
-			position = { x = 485 y = 15 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
 		instantTextBoxType = {
 			name = "economy_TITILE"
-			position = { x = 135 y = 45 }
+			position = { x = 133 y = 44 }
 			font = "dr_font_21"
 			format = center 
 			maxWidth = 280 
@@ -106,32 +96,32 @@ containerWindowType = {
 		}
 		instantTextBoxType = {
 			name = "country_TITILE"
-			position = { x = -25 y = 110 }
+			position = { x = -35 y = 110 }
 			font = "dr_font_16"
 			format = center 
 			maxWidth = 280 
 			maxHeight = 24
 			fixedsize = yes
-			text = "[?ROOT.GetName]"
+			text = "[?ROOT.GetFlag][?ROOT.GetName]"
 		}
 
 		containerWindowType = {
 			name = "country_gdp_counter_totals"
-			position = { x = 0 y = 20 }
+			position = { x = -10 y = 20 }
 			#GDP
 			containerWindowType = {
 				name = "state_eco_total_window"
-				position = { x = 200 y = 95 }
+				position = { x = 190 y = 95 }
 				iconType = {
 					name ="gdp_per_capita_bg"
 					spriteType = "GFX_generic_box_96"
 				}
 				instantTextBoxType = {  
 					name = "state_eco_tip"
-					position = { x = 5 y = -20 }
+					position = { x = 0 y = -20 }
 					font = "dr_font_16" 
 					format = left   
-					maxWidth = 195
+					maxWidth = 100
 					maxHeight = 24
 					fixedsize = yes
 					text = "State_eco_tt"  
@@ -154,9 +144,60 @@ containerWindowType = {
 
 			containerWindowType = {
 				name = "resource_exported_window"
-				position = { x = 270 y = 135 }
+				position = { x = 80 y = 275 }
+
 				iconType = {
-					name ="gdp_per_capita_bg"
+					name ="Trade_investment_exported_bg"
+					spriteType = "GFX_generic_box_96"
+					position = { x = 300 y = 0 }
+				}
+
+				instantTextBoxType = {  
+					name = "Trade_tip"
+					position = { x = 0 y = -60 }
+					font = "dr_font_21" 
+					format = left   
+					maxWidth = 195 
+					maxHeight = 24
+					fixedsize = yes 
+					text = "Trade_tt"  
+				}  
+ 
+
+				instantTextBoxType = {  
+					name = "Trade_investment_tip"
+					position = { x = 300 y = -20 }
+					font = "dr_font_16" 
+					format = left   
+					maxWidth = 195 
+					maxHeight = 24
+					fixedsize = yes 
+					text = "Trade_investment_tt"  
+				}  
+
+				instantTextBoxType = {
+					name = "Trade_investment_total" 
+					position = { x = 300 y = 5 }
+					font = "hoi_18mbs"
+					format = left
+					maxWidth = 95
+					maxHeight = 24
+					fixedsize = yes 
+					text = "[?Trade_investment|2]B"
+					pdx_tooltip = "Trade_investment_DESC"
+					pdx_tooltip_delayed = "Trade_investment_DELAYED_DESC"
+				}
+
+
+
+
+
+
+
+
+
+				iconType = {
+					name ="resource_exported_bg"
 					spriteType = "GFX_generic_box_96"
 				}
 				instantTextBoxType = {  
@@ -181,21 +222,14 @@ containerWindowType = {
 					pdx_tooltip = "resource_exported_DESC"
 					pdx_tooltip_delayed = "resource_exported_DELAYED_DESC"
 				}
-				
-			}
-
-
-
-			containerWindowType = {
-				name = "resource_imported_window"
-				position = { x = 380 y = 135 }
 				iconType = { 
-					name ="gdp_per_capita_bg"
+					name ="resource_imported_bg"
 					spriteType = "GFX_generic_box_96"
+					position = { x = 150 y = 0 }
 				}
 				instantTextBoxType = {  
 					name = "resource_imported_tip"
-					position = { x = 5 y = -20 }
+					position = { x = 150 y = -20 }
 					font = "dr_font_16" 
 					format = left   
 					maxWidth = 195
@@ -205,7 +239,7 @@ containerWindowType = {
 				}  
 				instantTextBoxType = {
 					name = "resource_imported_total" 
-					position = { x = 5 y = 5 }
+					position = { x = 150 y = 5 }
 					font = "hoi_18mbs"
 					format = left
 					maxWidth = 95
@@ -215,9 +249,7 @@ containerWindowType = {
 					pdx_tooltip = "resource_imported_DESC"
 					pdx_tooltip_delayed = "resource_imported_DELAYED_DESC"
 				}
-				
 			}
-
 
 
 
@@ -235,7 +267,7 @@ containerWindowType = {
 				}
 				instantTextBoxType = {  
 					name = "manpower_eco_tip"
-					position = { x = 5 y = -20 }
+					position = { x = 0 y = -20 }
 					font = "dr_font_16" 
 					format = left   
 					maxWidth = 195
@@ -260,14 +292,14 @@ containerWindowType = {
 			#Productivity
 			containerWindowType = {
 				name = "productivity_window"
-				position = { x = 400 y = 95 }
+				position = { x = 410 y = 95 }
 				iconType = {
 					name ="gdp_per_capita_bg"
 					spriteType = "GFX_generic_box_96"
 				}
 				instantTextBoxType = {
 					name = "company_eco_tip"
-					position = { x = 5 y = -20 }
+					position = { x = 0 y = -20 }
 					font = "dr_font_16"
 					format = left
 					maxWidth = 120
@@ -291,21 +323,8 @@ containerWindowType = {
 		}
 
 		containerWindowType = {
-			name = "economic_project_buttons"
-			position = { x = 35 y = 280 }
-
-			buttonType = {
-				name = "agriculture_district_button"
-				position = { x = 430 y = 0 }
-				spriteType = "GFX_AC_agriculture_district"
-				pdx_tooltip = "ag_district_employment_button_tt"
-				pdx_tooltip_delayed = "ag_district_employment_button_delayed_tt"
-			}
-		}
-
-		containerWindowType = {
 			name = "income_table"
-			position = { x = 35 y = 155 }
+			position = { x = 50 y = 175 }
 
 			# Employment Container
 			containerWindowType = {
@@ -314,10 +333,11 @@ containerWindowType = {
 				iconType = {
 					name ="income_bg"
 					spriteType = "GFX_generic_box_96"
+					position = { x = 20 y = 10 }
 				}
 				instantTextBoxType = {
 					name = "income_eco_tip"
-					position = { x = 0 y = -15 }
+					position = { x = 20 y = -15 }
 					font = "dr_font_16"
 					format = left
 					maxWidth = 125
@@ -327,7 +347,7 @@ containerWindowType = {
 				} 
 				instantTextBoxType = {
 					name = "income_eco"
-					position = { x = 5 y = 5 }
+					position = { x = 25 y = 15 }
 					font = "hoi_18mbs"
 					format = left
 					maxWidth = 95
@@ -337,19 +357,15 @@ containerWindowType = {
 					pdx_tooltip = "income_TOTAL_DESC"
 					pdx_tooltip_delayed = "income_TOTAL_DELAYED_DESC"
 				}
-			}
-			# Income Container
-			containerWindowType = {
-				name = "GDP_capita"
 
 				iconType = {
 					name ="GDP_capita_bg"
 					spriteType = "GFX_generic_box_96"
-					position = { x = 120 y = 0 }
+					position = { x = 170 y = 10 }
 				}
 				instantTextBoxType = {
 					name = "GDP_capita_eco_tip"
-					position = { x = 120 y = -15 }
+					position = { x = 175 y = -15 }
 					font = "dr_font_16"
 					format = left
 					maxWidth = 125
@@ -359,7 +375,7 @@ containerWindowType = {
 				} 
 				instantTextBoxType = {
 					name = "GDP_capita_eco"
-					position = { x = 125 y = 5 }
+					position = { x = 175 y = 15 }
 					font = "hoi_18mbs" 
 					format = left
 					maxWidth = 95
@@ -369,13 +385,38 @@ containerWindowType = {
 					pdx_tooltip = "GDP_capita_TOTAL_DESC"
 					pdx_tooltip_delayed = "GDP_capita_TOTAL_DELAYED_DESC"
 				}
-			}
-			# Expenses Container
-			containerWindowType = {
-				name = "budget_table_expenses"
-				
-				# Expenses/Income Expenditure
-				
+
+
+
+
+
+				iconType = {
+					name ="Inflation_rate_bg"
+					spriteType = "GFX_generic_box_96"
+					position = { x = 320 y = 10 }
+				}
+				instantTextBoxType = {
+					name = "Inflation_rate_eco_tip"
+					position = { x = 320 y = -15 }
+					font = "dr_font_16"
+					format = left
+					maxWidth = 125
+					maxHeight = 24
+					fixedsize = yes
+					text = "Inflation_rate_tt"
+				} 
+				instantTextBoxType = {
+					name = "Inflation_rate_eco"
+					position = { x = 320 y = 15 }
+					font = "hoi_18mbs" 
+					format = left
+					maxWidth = 95
+					maxHeight = 24
+					fixedsize = yes
+					text = "[?Inflation_rate_eco|2]%"
+					pdx_tooltip = "Inflation_rate_TOTAL_DESC"
+					pdx_tooltip_delayed = "Inflation_rate_TOTAL_DELAYED_DESC"
+				}
 			}
 		}
 
@@ -398,8 +439,17 @@ containerWindowType = {
 		#Net Income/Deficit
 		containerWindowType = {
 			name = "army_eco_section"
-			position = { x = 35 y = 275 }
-
+			position = { x = 70 y = 410 }
+			instantTextBoxType = {
+				name = "army_eco_section_tip"
+				position = { x = 0 y = -60 }
+				font = "dr_font_21"
+				format = left
+				maxWidth = 95
+				maxHeight = 24
+				fixedsize = yes
+				text = "army_eco_section_tt"
+			} 
 			iconType = {
 				name = "army_eco_all"
 				spriteType = "GFX_generic_box_96"
@@ -428,80 +478,238 @@ containerWindowType = {
 				pdx_tooltip_delayed = "income_TOTAL_DELAYED_DESC"
 			}
 
-			containerWindowType = {
-				name = "navy_eco_all"
-				position = { x = 100 y = 0 }
-
-				iconType = {
-					name = "navy_eco_bg"
-					spriteType = "GFX_generic_box_96"
-					position = { x = 0 y = 0 }
-				}
-				instantTextBoxType = {
-					name = "navy_eco_tip"
-					position = { x = 5 y = -20 }
-					font = "dr_font_16"
-					format = left
-					maxWidth = 95
-					maxHeight = 24
-					fixedsize = yes
-					text = "navy_eco_tt"
-				}
-				instantTextBoxType = {
-					name = "navy_eco"
-					position = { x = 5 y = 5 }
-					font = "hoi_18mbs"
-					format = left
-					maxWidth = 95
-					maxHeight = 24
-					fixedsize = yes
-					text = "[?all_navy_eco|2]B"
-					pdx_tooltip = "income_TOTAL_DESC"
-					pdx_tooltip_delayed = "income_TOTAL_DELAYED_DESC"
-				}
+			iconType = {
+				name = "navy_eco_bg"
+				spriteType = "GFX_generic_box_96"
+				position = { x = 150 y = 0 }
 			}
-
-			containerWindowType = {
-				name = "air_eco_all"
-				position = { x = 200 y = 0 }
-
-				iconType = {
-					name = "air_eco_bg"
-					spriteType = "GFX_generic_box_96"
-					position = { x = 0 y = 0 }
-				}
-				instantTextBoxType = {
-					name = "air_eco_tip"
-					position = { x = 5 y = -20 }
-					font = "dr_font_16"
-					format = left
-					maxWidth = 95
-					maxHeight = 24
-					fixedsize = yes
-					text = "air_eco_tt"
-				}
-				instantTextBoxType = {
-					name = "air_eco"
-					position = { x = 5 y = 5 }
-					font = "hoi_18mbs"
-					format = left
-					maxWidth = 95 
-					maxHeight = 24
-					fixedsize = yes
-					text = "[?all_air_eco|2]B"
-					pdx_tooltip = "income_TOTAL_DESC"
-					pdx_tooltip_delayed = "income_TOTAL_DELAYED_DESC"
-				}
+			instantTextBoxType = {
+				name = "navy_eco_tip"
+				position = { x = 150 y = -20 }
+				font = "dr_font_16"
+				format = left
+				maxWidth = 95
+				maxHeight = 24
+				fixedsize = yes
+				text = "navy_eco_tt"
 			}
-			containerWindowType = {
-				name = "bottom_bar_treasury"
-				position = { x = 340 y = 520 }
-
-				
+			instantTextBoxType = {
+				name = "navy_eco"
+				position = { x = 150 y = 5 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 95
+				maxHeight = 24
+				fixedsize = yes
+				text = "[?all_navy_eco|2]B"
+				pdx_tooltip = "income_TOTAL_DESC"
+				pdx_tooltip_delayed = "income_TOTAL_DELAYED_DESC"
 			}
-			
+			iconType = {
+				name = "air_eco_bg"
+				spriteType = "GFX_generic_box_96"
+				position = { x = 300 y = 0 }
+			}
+			instantTextBoxType = {
+				name = "air_eco_tip"
+				position = { x = 300 y = -20 }
+				font = "dr_font_16"
+				format = left
+				maxWidth = 95
+				maxHeight = 24
+				fixedsize = yes
+				text = "air_eco_tt"
+			}
+			instantTextBoxType = {
+				name = "air_eco"
+				position = { x = 300 y = 5 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 95 
+				maxHeight = 24
+				fixedsize = yes
+				text = "[?all_air_eco|2]B"
+				pdx_tooltip = "income_TOTAL_DESC"
+				pdx_tooltip_delayed = "income_TOTAL_DELAYED_DESC"
+			} 
 		}
+		containerWindowType = {
+			name = "all_expenses"
+			position = { x = 70 y = 520 }
+
+			instantTextBoxType = {
+				name = "all_expenses_tip"
+				position = { x = 0 y = -60 } 
+				font = "dr_font_21"
+				format = left
+				maxWidth = 95
+				maxHeight = 24
+				fixedsize = yes
+				text = "all_expenses_tt"
+			}
+			iconType = {
+				name = "Medical_expenses_all"
+				spriteType = "GFX_generic_box_96"
+				position = { x = 0 y = 0 }
+			}
+			iconType = {
+				name = "Education_expenses_all"
+				spriteType = "GFX_generic_box_96"
+				position = { x = 150 y = 0 }
+			}
+			iconType = {
+				name = "Government_expenses_all"
+				spriteType = "GFX_generic_box_96"
+				position = { x = 300 y = 0 }
+			}
+			instantTextBoxType = {
+				name = "Medical_expenses_tip"
+				position = { x = 5 y = -20 } 
+				font = "dr_font_16"
+				format = left
+				maxWidth = 95
+				maxHeight = 24
+				fixedsize = yes
+				text = "Medical_expenses_tt"
+			}
+			instantTextBoxType = {
+				name = "Medical_expenses"
+				position = { x = 5 y = 5 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 95 
+				maxHeight = 24
+				fixedsize = yes
+				text = "[?Medical_expenses|2]B"
+				pdx_tooltip = "Medical_expenses_DESC"
+				pdx_tooltip_delayed = "Medical_expenses_DELAYED_DESC"
+			}
+
+			instantTextBoxType = {
+				name = "Education_expenses_tip"
+				position = { x = 150 y = -20 }
+				font = "dr_font_16"
+				format = left
+				maxWidth = 95
+				maxHeight = 24
+				fixedsize = yes
+				text = "Education_expenses_tt"
+			}
+			instantTextBoxType = {
+				name = "Education_expenses"
+				position = { x = 150 y = 5 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 95 
+				maxHeight = 24
+				fixedsize = yes
+				text = "[?Education_expenses|2]B"
+				pdx_tooltip = "Education_expenses_DESC"
+				pdx_tooltip_delayed = "Education_expenses_DELAYED_DESC"
+			}
+
+			
+
+			instantTextBoxType = {
+				name = "Government_expenses_tip"
+				position = { x = 300 y = -20 }
+				font = "dr_font_16"
+				format = left
+				maxWidth = 95
+				maxHeight = 24
+				fixedsize = yes
+				text = "Government_expenses_tt"
+			}
+			instantTextBoxType = {
+				name = "Government_expenses"
+				position = { x = 300 y = 5 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 95 
+				maxHeight = 24
+				fixedsize = yes
+				text = "[?Government_expenses|2]B"
+				pdx_tooltip = "Government_expenses_DESC"
+				pdx_tooltip_delayed = "Government_expenses_DELAYED_DESC"
+			}
+		}
+		
+
+
+
+
+
+
+
+
+
+ 
 
 		
+		containerWindowType = {
+			name = "Income_Expenditure"
+			position = { x = 100 y = 620 }
+
+			instantTextBoxType = {
+				name = "Income_Expenditure_tip"
+				position = { x = -30 y = -30 } 
+				font = "dr_font_16"
+				format = left
+				maxWidth = 95 
+				maxHeight = 24
+				fixedsize = yes
+				text = "Income_Expenditure_tt"
+			}
+			iconType = {
+				name = "Income_Expenditure_all"
+				spriteType = "GFX_generic_box_96"
+				position = { x = 50 y = -35 }
+			}
+			instantTextBoxType = {
+				name = "Income_Expenditure"
+				position = { x = 55 y = -30 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 95 
+				maxHeight = 24
+				fixedsize = yes
+				text = "[?Income_Expenditure|2+]B"
+				pdx_tooltip = "Income_Expenditure_DESC"
+				pdx_tooltip_delayed = "Income_Expenditure_DELAYED_DESC"
+			} 
+
+ 
+			instantTextBoxType = {
+				name = "Reserve_tip"
+				position = { x = 190 y = -30 } 
+				font = "dr_font_16"
+				format = left
+				maxWidth = 95 
+				maxHeight = 24
+				fixedsize = yes
+				text = "Reserve_tt"
+			}
+			iconType = {
+				name = "Reserve_all"
+				spriteType = "GFX_generic_box_96"
+				position = { x = 270 y = -35 }
+			}
+
+
+			instantTextBoxType = {
+				name = "Reserve_eco"
+				position = { x = 275 y = -30 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 95 
+				maxHeight = 24
+				fixedsize = yes
+				text = "[?Reserve_eco|2+]B"
+				pdx_tooltip = "Reserve_DESC"
+				pdx_tooltip_delayed = "Reserve_DELAYED_DESC"
+			} 
+		}
+
+
 	}
 }

@@ -1,0 +1,17 @@
+characters = {
+	OMA_Said_bin_Taimur = {
+		name = OMA_Said_bin_Taimur
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OMA/OMA_Said_bin_Taimur.png"
+			}
+		}
+		country_leader = {
+			ideology = Religious_Conservatism
+			desc = OMA_Said_bin_Taimur_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

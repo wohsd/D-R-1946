@@ -1,0 +1,36 @@
+﻿capital = 656
+
+#oob = "AOX_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = KUW_Sheikh_Ahmed_Al_Jaber_Al_Sabah
+
+set_politics = {
+	ruling_party = Paternalism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	Paternalism= 50
+	Liberalism = 13
+	Conservatism = 5
+	Nationalism = 19
+	Dictatorship = 13
+}
+
+add_ideas = {
+	#law
+	Market_economy
+	Freedom_belief
+	Traditional_conservatism
+	No_labor_laws
+	Media_control
+	Underlying_investment
+	low_industrialization
+	Local_police
+}

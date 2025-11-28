@@ -297,4 +297,119 @@ GDP_resource_imported = {
 		add_to_variable = { temp_resource_imported = modifier@GDP_resource_imported }
 	}
 }
- 
+
+
+
+Inflation_rate_eco_setup = {  
+	
+	every_country = {
+		set_variable = {Inflation_rate_eco = 0}
+		add_to_variable = {Inflation_rate_eco=num_company_eco}
+		add_to_variable = {Inflation_rate_eco=weighted_manpower}
+
+		divide_variable = {
+			Inflation_rate_eco = 100
+		}
+
+		#add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
+		
+	}
+}
+
+
+
+Medical_expenses_setup = {  
+	
+	every_country = {
+		set_variable = {Medical_expenses = 0}
+		add_to_variable = {Medical_expenses=weighted_manpower}
+
+		divide_variable = {
+			Medical_expenses = 15
+		}
+		#add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
+		
+	}
+}
+Education_expenses_setup = {  
+	
+	every_country = {
+		set_variable = {Education_expenses = 0}
+		add_to_variable = {Education_expenses=state_eco}
+
+		divide_variable = {
+			Education_expenses = 15
+		}
+		#add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
+		
+	}
+}
+
+Government_expenses_setup = {  
+	
+	every_country = {
+		set_variable = {Government_expenses = 0}
+		add_to_variable = {Government_expenses=num_company_eco}
+
+		divide_variable = {
+			Government_expenses = 15
+		}
+		#add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
+		
+	}
+}
+
+
+
+Expenditure_setup = {  
+	
+	every_country = {
+		set_variable = {Expenditure = 0}
+		add_to_variable = {Expenditure=Medical_expenses}
+		add_to_variable = {Expenditure=Government_expenses}
+		add_to_variable = {Expenditure=Education_expenses}
+		add_to_variable = {Expenditure=temp_resource_imported}
+		add_to_variable = {Expenditure=all_infantry_eco}
+		add_to_variable = {Expenditure=all_navy_eco}
+		add_to_variable = {Expenditure=all_air_eco}
+		add_to_variable = {Expenditure=Trade_investment}
+		#add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
+		 
+	}
+}
+
+Income_Expenditure_setup = {  
+	
+	every_country = {
+		set_variable = {Income_Expenditure = 0}
+		add_to_variable = {Income_Expenditure=income}
+
+		divide_variable = {
+			Income_Expenditure = 5
+		}
+		
+		subtract_from_variable = {
+			Income_Expenditure = Expenditure
+		}
+		#add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
+
+		set_variable = {
+			Income_Expenditure_temp = Income_Expenditure
+		}
+		divide_variable = {
+			Income_Expenditure_temp = 2
+		}
+	}
+}
+
+Reserve_eco_setup = {   
+	
+	every_country = {
+		set_variable = {Reserve_eco = 0}
+		add_to_variable = {Reserve_eco=Income_Expenditure}
+
+		divide_variable = {
+			Reserve_eco = 2
+		}
+	}
+}

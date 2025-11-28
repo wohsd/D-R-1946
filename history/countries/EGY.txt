@@ -7,6 +7,7 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+
 recruit_character = EGY_Abbas_II_Hilmi_Bey
 
 set_politics = {
@@ -34,3 +35,4 @@ add_ideas = {
 	low_industrialization
 	Local_police
 }
+

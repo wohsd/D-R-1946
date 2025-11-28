@@ -12,8 +12,8 @@
  research_production1:0 "工业研究"
  high_commands:0 "最高指挥部"
  industrialization:0 "工业化"
- Educational:0 "受教育水平"
- Legal:0 "经济体制"
+ Educational:0 "教育水平"
+ Legal:0 "医疗水平"
  Labor:0 "劳工法"
  No_labor_laws:0 "无劳工保护"
  Trade_union_neutrality:0 "禁止童工"
@@ -30,7 +30,7 @@
  Traditional_conservatism:0 "有产妇女"
  Affirmative_action:0 "女性工作权"
  Radical_feminism:0 "女性选举权"
- Livelihood_investment:0 "生活水平"
+ Livelihood_investment:0 "福利保障"
  No_investment:0 "生活水平§R极度贫困§"
  Weak_investments:0 "生活水平§R贫困§"
  Underlying_investment:0 "生活水平§R温饱§"
@@ -83,12 +83,26 @@ state_eco_DESC:0 "地区生产总值代表着各地的总和，代表了国家�
 state_eco_DELAYED_DESC:0 "地区类型带来的收入：\n飞地/极小岛屿/小岛/荒漠§H+0.15%§!\n牧区/乡村地区/发达乡村地区§H+0.25%§!\n稀疏城镇地区/城镇地区/密集城镇地区§H+0.55%§!\n大城市地区§H+0.70%§!\n大都市地区§H+0.90%§!" 
 
 
+Trade_tt:0 "贸易收支" 
+
 manpower_eco_tt:0 "人口生产总值" 
 company_eco_tt:0 "工厂生产总值" 
 income_eco_tt:0 "生产总值(GDP)"
 GDP_capita_tt:0 "人均(GDP)"
+Inflation_rate_tt:0 "通胀率"
+
 army_eco_tt:0 "陆军支出"
 navy_eco_tt:0 "海军支出"
 air_eco_tt:0 "空军支出"
 resource_exported_tt:0 "外贸收入"
 resource_imported_tt:0 "外贸支出"
+Trade_investment_tt:0 "国际投资"
+
+Medical_expenses_tt:0 "医疗支出"
+Education_expenses_tt:0 "教育支出"
+Government_expenses_tt:0 "福利支出"
+all_expenses_tt:0 "政府支出"
+army_eco_section_tt:0 "国防支出"
+
+Income_Expenditure_tt:0 "月度开支"
+Reserve_tt:0 "国库储备"

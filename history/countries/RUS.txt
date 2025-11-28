@@ -4,6 +4,8 @@ oob = "SOV_1939_nsb"
 set_air_oob = "SOV_1939_air_bba"
 set_naval_oob = "SOV_1939_naval_mtg"
 
+puppet = DJI
+
 create_faction_from_template = faction_template_ERA
 add_to_faction = GER
 add_to_faction = GRE

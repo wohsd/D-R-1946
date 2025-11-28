@@ -173,9 +173,23 @@ spriteTypes = {
 
 ###CHI
 spriteType = {
-	name = "GFX_idea_CHI_Land_Reform"
+	name = "GFX_modifiers_CHI_Land_Reform"
 	texturefile = "gfx\interface\ideas\CHI\CHI_Land_Reform.png"
 }
+spriteType = {
+	name = "GFX_modifiers_CHI_National_Revolutionary_Army"
+	texturefile = "gfx\interface\ideas\CHI\CHI_National_Revolutionary_Army.png"
+}
+spriteType = {
+	name = "GFX_idea_CHI_Revolutionary_Ally"
+	texturefile = "gfx\interface\ideas\CHI\CHI_Revolutionary_Ally.png"
+}
+
+spriteType = {
+	name = "GFX_idea_CHI_Triumph_Republican_Constitutionalism"
+	texturefile = "gfx\interface\ideas\CHI\CHI_Triumph_Republican_Constitutionalism.png"
+}
+
 
 
 

@@ -1,0 +1,17 @@
+characters = {
+	MAD_Gabriel_Ramanantsoa = {
+		name = MAD_Gabriel_Ramanantsoa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MAD/MAD_Gabriel_Ramanantsoa.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = MAD_Gabriel_Ramanantsoa_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

@@ -254,7 +254,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "econ_sphere_member_name"
 			position = { x = 85 y = 0 }
-			font = "hoi_20bs"
+			font = "dr_font_16"
 			text = "[?THIS.GetName]"
 			maxWidth = 340
 			maxHeight = 24

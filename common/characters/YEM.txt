@@ -1,0 +1,17 @@
+characters = {
+	YEM_Ahmad_bin_Yahya = {
+		name = YEM_Ahmad_bin_Yahya
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YEM/YEM_Ahmad_bin_Yahya.png"
+			}
+		}
+		country_leader = {
+			ideology = Religious_Conservatism
+			desc = YEM_Ahmad_bin_Yahya_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

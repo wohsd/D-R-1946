@@ -1,0 +1,17 @@
+characters = {
+	ZIM_Campbell_Tait = {
+		name = ZIM_Campbell_Tait
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZIM/ZIM_Campbell_Tait.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = ZIM_Campbell_Tait_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

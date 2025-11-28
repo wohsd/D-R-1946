@@ -8,12 +8,52 @@ on_actions = {
 				income_eco_setup = yes
 
 				army_eco_setup = yes 
-
 				GDP_capita = yes
 				generate_econ_rankings = yes
 				GDP_resource_exported = yes
 				GDP_resource_imported = yes 
+				Income_Expenditure_setup = yes  
+				Inflation_rate_eco_setup = yes 
+
+				Medical_expenses_setup = yes 
+				Education_expenses_setup = yes 
+				Government_expenses_setup = yes 
+				Expenditure_setup = yes 
+				Reserve_eco_setup = yes 
 			}
 		}
 	}
+
+
+	on_monthly= {
+		effect = {
+			ROOT = {
+				generate_econ_rankings = yes
+
+				add_to_variable = {
+					Reserve_eco = Income_Expenditure_temp
+				} 
+
+
+				state_eco_setup = yes
+				manpower_eco_setup = yes
+				company_eco_setup = yes
+				income_eco_setup = yes
+
+				army_eco_setup = yes 
+				GDP_capita = yes
+				GDP_resource_exported = yes
+				GDP_resource_imported = yes 
+				Income_Expenditure_setup = yes  
+				Inflation_rate_eco_setup = yes 
+
+				Medical_expenses_setup = yes 
+				Education_expenses_setup = yes 
+				Government_expenses_setup = yes 
+				Expenditure_setup = yes
+			}
+		}
+	}
+
+
 }

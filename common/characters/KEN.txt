@@ -1,0 +1,32 @@
+characters = {
+	KEN_Dedan_Kimathi = {
+		name = KEN_Dedan_Kimathi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEN/KEN_Dedan_Kimathi.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = KEN_Dedan_Kimathi_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
+	KEN_Sir_Philip_Euen_Mitchell = {
+		name = KEN_Sir_Philip_Euen_Mitchell
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEN/KEN_Sir_Philip_Euen_Mitchell.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = KEN_Sir_Philip_Euen_Mitchell_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

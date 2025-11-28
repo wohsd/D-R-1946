@@ -1,0 +1,17 @@
+characters = {
+	KUW_Sheikh_Ahmed_Al_Jaber_Al_Sabah = {
+		name = KUW_Sheikh_Ahmed_Al_Jaber_Al_Sabah
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KUW/KUW_Sheikh_Ahmed_Al_Jaber_Al_Sabah.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = KUW_Sheikh_Ahmed_Al_Jaber_Al_Sabah_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

@@ -1,0 +1,17 @@
+characters = {
+	SOM_Sir_Gerald_Reece = {
+		name = SOM_Sir_Gerald_Reece
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOM/SOM_Sir_Gerald_Reece.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = SOM_Sir_Gerald_Reece_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

@@ -5,9 +5,10 @@ state=
 	manpower = 38373200
 	state_category = town
 	
-	
-	history=
-	{
+	resources = {
+		coal = 10
+	}
+	history={
 		owner = CHI
 		add_core_of = CHI
 		

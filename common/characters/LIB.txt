@@ -1,0 +1,17 @@
+characters = {
+	LIB_William_Tubman = {
+		name = LIB_William_Tubman
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LIB/LIB_William_Tubman.png"
+			}
+		}
+		country_leader = {
+			ideology = Social_Liberalism
+			desc = LIB_William_Tubman_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

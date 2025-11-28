@@ -47,6 +47,7 @@ scripted_gui = {
 				else = {
 					clr_country_flag = hide_money
 				}
+				
 				income_eco_setup = yes
 				manpower_eco_setup = yes
 				company_eco_setup = yes
@@ -56,6 +57,15 @@ scripted_gui = {
 				GDP_resource_imported = yes  
 				render_graph = yes 
 				generate_econ_rankings = yes  
+				Income_Expenditure_setup = yes  
+				Inflation_rate_eco_setup = yes 
+
+
+				Medical_expenses_setup = yes 
+				Education_expenses_setup = yes 
+				Government_expenses_setup = yes 
+				Expenditure_setup = yes 
+				
 			}
 		}
 	}

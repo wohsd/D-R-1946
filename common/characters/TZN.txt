@@ -1,0 +1,17 @@
+characters = {
+	TZN_Sir_William_Denis_Battershill = {
+		name = TZN_Sir_William_Denis_Battershill
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TZN/TZN_Sir_William_Denis_Battershill.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = TZN_Sir_William_Denis_Battershill_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

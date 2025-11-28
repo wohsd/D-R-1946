@@ -1,0 +1,28 @@
+
+
+DIPLOMACY_WAR_ENABLE_TRIGGER = {
+	NOT = {
+		custom_trigger_tooltip = {has_global_flag = yongjiu_heping_on tooltip = "以和为贵，不可宣战"}
+	}
+}
+
+
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+    NOT = {
+		custom_trigger_tooltip = {has_global_flag = dulang_xingdong_on tooltip = "不能加阵营，我说不能就不能"}
+	}
+}
+
+DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {
+    NOT = {
+		custom_trigger_tooltip = {has_global_flag = dulang_xingdong_on tooltip = "不能创阵营，我说不能就不能"}
+	}
+}
+
+DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
+    NOT = {
+		custom_trigger_tooltip = {has_global_flag = dulang_xingdong_on tooltip = "不能创阵营，我说不能就不能"}
+	}
+}
+
+### 如果有全局变量：可以和ARE外交(has_global_flag = ARE_can_diplomacy_flag)，那么将会解锁互动选项 ###

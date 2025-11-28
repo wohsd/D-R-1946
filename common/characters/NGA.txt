@@ -1,0 +1,17 @@
+characters = {
+	NGA_Sir_John_Stuart_Macpherson = {
+		name = NGA_Sir_John_Stuart_Macpherson
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NGA/NGA_Sir_John_Stuart_Macpherson.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = NGA_Sir_John_Stuart_Macpherson_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	
