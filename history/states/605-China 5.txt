@@ -14,6 +14,11 @@ state={
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 1
+			6999={
+				landmark_nanjing_presidential_palace= {
+					level = 1
+				}
+			}
 		}
 		victory_points = {
 			4925 5 

@@ -1,0 +1,17 @@
+characters = {
+	CUB_Fulgencio_Batista_y_Zaldivar = {
+		name = CUB_Fulgencio_Batista_y_Zaldivar
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CUB/CUB_Fulgencio_Batista_y_Zaldivar.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = CUB_Fulgencio_Batista_y_Zaldivar_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

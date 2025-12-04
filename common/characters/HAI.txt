@@ -1,0 +1,17 @@
+characters = {
+	HAI_Franck_Lavaud = {
+		name = HAI_Franck_Lavaud
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAI/HAI_Franck_Lavaud.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = HAI_Franck_Lavaud_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

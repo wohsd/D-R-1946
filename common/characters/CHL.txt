@@ -1,0 +1,17 @@
+characters = {
+	CHL_Juan_Antonio_Rios = {
+		name = CHL_Juan_Antonio_Rios
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHL/CHL_Juan_Antonio_Rios.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = CHL_Juan_Antonio_Rios_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

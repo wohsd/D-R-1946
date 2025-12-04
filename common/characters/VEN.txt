@@ -1,0 +1,17 @@
+characters = {
+	VEN_Romulo_Medina_Rodriguez = {
+		name = VEN_Romulo_Medina_Rodriguez
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/VEN_Romulo_Medina_Rodriguez.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = VEN_Romulo_Medina_Rodriguez_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

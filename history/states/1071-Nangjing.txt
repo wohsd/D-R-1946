@@ -1,0 +1,49 @@
+state={
+	id=1071
+	name="STATE_1071"
+	provinces={
+		11913 19853 19892 19872 19895
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			19892={
+				landmark_nanjing_presidential_palace = {
+					level = 1
+				}
+			}
+			19872={
+				landmark_nanjing_presidential_palace = {
+					level = 1
+				}
+			}
+			19895={
+				landmark_nanjing_presidential_palace = {
+					level = 1
+				}
+			}
+			19853={
+				landmark_nanjing_presidential_palace = {
+					level = 1
+				}
+			}
+			11913={
+				landmark_nanjing_presidential_palace = {
+					level = 1
+				}
+			}
+		}
+		victory_points = {
+			11913 20
+		}
+		
+
+	}
+	manpower=8399000
+	buildings_max_level_factor=1
+	local_supplies=0
+}

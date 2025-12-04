@@ -1,0 +1,17 @@
+characters = {
+	PRU_Jose_Luis_Bustamante_Rivero = {
+		name = PRU_Jose_Luis_Bustamante_Rivero
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRU/PRU_Jose_Luis_Bustamante_Rivero.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = PRU_Jose_Luis_Bustamante_Rivero_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

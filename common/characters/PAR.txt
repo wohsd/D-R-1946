@@ -1,0 +1,17 @@
+characters = {
+	PAR_Higinio_Morinigo_Martinez = {
+		name = PAR_Higinio_Morinigo_Martinez
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAR/PAR_Higinio_Morinigo_Martinez.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = PAR_Higinio_Morinigo_Martinez_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

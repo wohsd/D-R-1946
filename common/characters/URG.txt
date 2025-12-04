@@ -1,0 +1,17 @@
+characters = {
+	URG_Tomas_Berreta = {
+		name = URG_Tomas_Berreta
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/URG/URG_Tomas_Berreta.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = URG_Tomas_Berreta_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

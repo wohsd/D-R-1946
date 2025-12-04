@@ -1,0 +1,17 @@
+characters = {
+	ECU_Jose_Velasco_Ibarra = {
+		name = ECU_Jose_Velasco_Ibarra
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ECU/ECU_Jose_Velasco_Ibarra.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = ECU_Jose_Velasco_Ibarra_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

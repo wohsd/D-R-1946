@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ WHILE_FOCUSING: "执行该国策将产生以下效果：\n$EFF$"
+ generic_focus: "国策"
+ complete_effect: "修正§H追加效果：§!"
+###prc
+GER_focus1: "独立之路"
+GER_focus1_desc: "无描述"
+GER_focus2: "德意志的领头羊"
+GER_focus2_desc: "无描述"
+GER_focus3: "阿登纳计划"
+GER_focus3_desc: "无描述" 
+GER_focus4: "常态化演习"
+GER_focus4_desc: "无描述"

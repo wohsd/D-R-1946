@@ -1,0 +1,18 @@
+spriteTypes = {
+spriteType = {
+name = "GFX_gfx_GER_focus1"
+texturefile = "gfx\interface\goal\GER/gfx_GER_focus1.png"
+}
+spriteType = {
+name = "GFX_gfx_GER_focus2"
+texturefile = "gfx\interface\goal\GER/gfx_GER_focus2.png"
+}
+spriteType = {
+name = "GFX_gfx_GER_focus3"
+texturefile = "gfx\interface\goal\GER/gfx_GER_focus3.png"
+}
+spriteType = {
+name = "GFX_gfx_GER_focus4"
+texturefile = "gfx\interface\goal\GER/gfx_GER_focus4.png"
+}
+}

@@ -17,7 +17,7 @@ set_politics = {
 }
 set_popularities = {
 	Paternalism= 3
-	Liberalism = 13
+	Liberalism = 15
 	Conservatism = 50
 	Nationalism = 19
 	Dictatorship = 13

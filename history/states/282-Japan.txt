@@ -28,7 +28,11 @@ state = {
 			19978 = {
 				naval_base = 1
 			}
-
+			1182 = {
+				landmark_tokyo_imperial_palace = {
+			        level = 1
+			    }
+			}
 		}
 
 		victory_points = {

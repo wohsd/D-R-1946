@@ -1,0 +1,17 @@
+characters = {
+	DOM_Rafael_Leonidas_Trujillo_Molina = {
+		name = DOM_Rafael_Leonidas_Trujillo_Molina
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOM/DOM_Rafael_Leonidas_Trujillo_Molina.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = DOM_Rafael_Leonidas_Trujillo_Molina_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

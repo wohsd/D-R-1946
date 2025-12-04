@@ -216,13 +216,13 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 14725;14728;sea;8751;-1;-1;-1;-1;;Philippines
 14737;14738;sea;2899;-1;-1;-1;-1;;Philippines
 1293;14729;sea;8751;-1;-1;-1;-1;;Philippines
-4288;7419;sea;2971;-1;-1;-1;-1;;Philippines
+19381;7419;sea;2971;-1;-1;-1;-1;;Philippines
 10184;12245;sea;8797;-1;-1;-1;-1;;Philippines
 1368;7307;sea;2876;-1;-1;-1;-1;;Philippines
-10272;14720;sea;2876;-1;-1;-1;-1;;Philippines
+19376;14720;sea;2876;-1;-1;-1;-1;;Philippines
 10306;14719;sea;2876;-1;-1;-1;-1;;Philippines
 7423;14720;sea;2876;-1;-1;-1;-1;;Philippines
-10272;14716;sea;2876;-1;-1;-1;-1;;Philippines
+4288;14716;sea;2876;-1;-1;-1;-1;;Philippines
 12245;14738;sea;2899;-1;-1;-1;-1;;Philippines
 10302;14722;sea;2876;-1;-1;-1;-1;;Philippines
 1440;4155;sea;5507;-1;-1;-1;-1;;Puerto Rico-Virgin Islands
@@ -276,18 +276,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17468;11735;sea;14650;-1;-1;-1;-1;;adriatic islands
 17468;18177;sea;14650;-1;-1;-1;-1;;adriatic islands
 7127;17915;sea;6801;-1;-1;-1;-1;;aegean sea island
-12776;12714;impassable;-1;-1;-1;-1;-1;;alxa league desert
-2028;10770;impassable;-1;-1;-1;-1;-1;;alxa league desert
-7727;8102;impassable;-1;-1;-1;-1;-1;;alxa league desert
-5031;12327;impassable;-1;-1;-1;-1;-1;;alxa league desert
-4783;8102;impassable;-1;-1;-1;-1;-1;;alxa league desert
-5031;5100;impassable;-1;-1;-1;-1;-1;;alxa league desert
-8102;10770;impassable;-1;-1;-1;-1;-1;;alxa league desert
-7511;12776;impassable;-1;-1;-1;-1;-1;;alxa league desert
-5031;12776;impassable;-1;-1;-1;-1;-1;;alxa league desert
-7511;16857;impassable;-1;-1;-1;-1;-1;;alxa league desert
-12750;12776;impassable;-1;-1;-1;-1;-1;;alxa league desert
-5100;10770;impassable;-1;-1;-1;-1;-1;;alxa league desert
 5215;15121;impassable;-1;-1;-1;-1;-1;;amogus
 17941;14801;sea;17954;-1;-1;-1;-1;;amogus
 14871;14870;impassable;-1;-1;-1;-1;-1;;andes mountains

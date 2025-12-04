@@ -1,0 +1,17 @@
+characters = {
+	BOL_Gualberto_Villarroel = {
+		name = BOL_Gualberto_Villarroel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOL/BOL_Gualberto_Villarroel.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = BOL_Gualberto_Villarroel_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

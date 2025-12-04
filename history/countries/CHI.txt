@@ -72,3 +72,4 @@ set_variable = {NRA_no_supply_grace0=0}
 set_variable = {NRA_pocket_penalty0=0}
 set_variable = {NRA_planning_speed002=-0.02}
 ###国军
+

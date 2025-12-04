@@ -1,0 +1,17 @@
+characters = {
+	COL_Alberto_Lleras_Camargo = {
+		name = COL_Alberto_Lleras_Camargo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COL/COL_Alberto_Lleras_Camargo.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = COL_Alberto_Lleras_Camargo_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

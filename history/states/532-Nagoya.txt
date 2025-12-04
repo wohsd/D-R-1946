@@ -19,7 +19,6 @@ state = {
 
 			# Ōi Dam
 			4069 = { dam = 1 }
-
 		}
 		
 		victory_points = {
