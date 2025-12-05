@@ -1,74 +1,453 @@
 focus_tree = {
-    id = GER
-    default = no
-    country = {
+	id = GER
+	country = {
 		factor = 0
 		modifier = {
 			add = 10
-				tag = GER
+			tag = GER
 		}
 	}
- 
-  
-# 独立之路： 
-focus = { 
-    id = GER_focus1
-    icon = gfx_GER_focus1    
-    x = 0  
-    y = 0 
-    prerequisite = { 
-    } 
-    cost = 5
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus GER_focus1"
-    }
-} 
-
-# 德意志的领头羊： 
-focus = {
-    id = GER_focus2
-    icon = gfx_GER_focus2
-    
-    x = 1
-    y = 2
-    cost = 5
-    prerequisite = { # 前置组 4
-        focus = GER_focus1
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus GER_focus2"
-    }
-}
-
-# 阿登纳计划：
-focus = {
-    id = GER_focus3
-    icon = gfx_GER_focus3
-    
-    x = 1
-    y = 3
-    cost = 5.000
-    prerequisite = { # 前置组 5
-        focus = GER_focus2
-    }
-    completion_reward = { 
-        log = "[GetDateText]: [Root.GetName]: Focus GER_focus3"
-    }
-}
- 
-# 常态化演习：
-focus = {
-    id = GER_focus4
-    icon = gfx_GER_focus4
-    x = 1
-    y = 4
-    cost = 5
-    prerequisite = { # 前置组 5
-    focus = GER_focus3
-}
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus GER_focus4"
-    }
-}
-
+	default = no
+	focus = {
+		id = GER_focus1
+		icon = GFX_GER_focus1
+		cost = 5
+		x = 12
+		y = 0
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_focus21
+		icon = GFX_GER_focus21
+		cost = 10
+		x = 29
+		y = 0
+		completion_reward = {
+			add_to_variable = {
+				var = income
+			}
+		}
+	}
+	focus = {
+		id = GER_focus2
+		icon = GFX_GER_focus2
+		cost = 5
+		x = 12
+		y = 1
+		prerequisite = {
+			focus = GER_focus1
+		}
+	}
+	focus = {
+		id = GER_focus3
+		icon = GFX_GER_focus3
+		cost = 5
+		x = 12  
+		y = 2
+		prerequisite = {
+			focus = GER_focus2
+		}
+	}
+	focus = {
+		id = GER_focus6
+		icon = GFX_GER_focus6
+		cost = 10
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = GER_focus3
+		}
+		mutually_exclusive = {
+			focus = GER_focus7
+		}
+	}
+	focus = {
+		id = GER_focus5
+		icon = GFX_GER_focus5
+		cost = 10
+		x = 6
+		y = 4
+		prerequisite = {
+			focus = GER_focus6
+		}
+	}
+	focus = {
+		id = GER_focus8
+		icon = GFX_GER_focus8
+		cost = 10
+		x = 9
+		y = 4
+		prerequisite = {
+			focus = GER_focus6
+		}
+	}
+	focus = {
+		id = GER_focus12
+		icon = GFX_GER_focus12
+		cost = 10
+		x = 10
+		y = 5
+		prerequisite = {
+			focus = GER_focus8
+		}
+	}
+	focus = {
+		id = GER_focus10
+		icon = GFX_GER_focus10
+		cost = 10
+		x = 12
+		y = 4
+		prerequisite = {
+			focus = GER_focus3
+		}
+	}
+	focus = {
+		id = GER_focus9
+		icon = GFX_GER_focus9
+		cost = 10
+		x = 12
+		y = 5
+		prerequisite = {
+			focus = GER_focus10
+		}
+	}
+	focus = {
+		id = GER_focus7
+		icon = GFX_GER_focus7
+		cost = 10
+		x = 16
+		y = 3
+		prerequisite = {
+			focus = GER_focus3
+		}
+		mutually_exclusive = {
+			focus = GER_focus6
+		}
+	}
+	focus = {
+		id = GER_focus16
+		icon = GFX_GER_focus16
+		cost = 10
+		x = 15
+		y = 4
+		prerequisite = {
+			focus = GER_focus7
+		}
+	}
+	focus = {
+		id = GER_focus18
+		icon = GFX_GER_focus18
+		cost = 10
+		x = 14
+		y = 5
+		prerequisite = {
+			focus = GER_focus16
+		}
+	}
+	focus = {
+		id = GER_focus4
+		icon = GFX_GER_focus4
+		cost = 5
+		x = 29
+		y = 1
+		prerequisite = {
+			focus = GER_focus21
+		}
+	}
+	focus = {
+		id = GER_focus17
+		icon = GFX_GER_focus17
+		cost = 10
+		x = 16
+		y = 5
+		prerequisite = {
+			focus = GER_focus16
+		}
+		
+	}
+	focus = {
+		id = GER_focus20
+		icon = GFX_GER_focus20
+		cost = 10
+		x = 18
+		y = 5
+        prerequisite = {
+			focus = GER_focus7
+		}
+	}
+	focus = {
+		id = GER_focus23
+		icon = GFX_GER_focus23
+		cost = 10
+		x = 25
+		y = 1
+		prerequisite = {
+			focus = GER_focus21
+		}
+	}
+	focus = {
+		id = GER_focus22
+		icon = GFX_GER_focus22
+		cost = 10
+		x = 22
+		y = 2
+		prerequisite = {
+			focus = GER_focus23
+		}
+	}
+	focus = {
+		id = GER_focus24
+		icon = GFX_GER_focus24
+		cost = 10
+		x = 24
+		y = 2
+		prerequisite = {
+			focus = GER_focus23
+		}
+	}
+	focus = {
+		id = GER_focus25
+		icon = GFX_GER_focus25
+		cost = 10
+		x = 26
+		y = 2
+		prerequisite = {
+			focus = GER_focus23
+		}
+	}
+	focus = {
+		id = GER_focus32
+		icon = GFX_GER_focus32
+		cost = 10
+		x = 23
+		y = 3
+		prerequisite = {
+			focus = GER_focus22
+		}
+		prerequisite = {
+			focus = GER_focus24
+		}
+		prerequisite = {
+			focus = GER_focus25
+		}
+	}
+	focus = {
+		id = GER_focus38
+		icon = GFX_GER_focus38
+		cost = 10
+		x = 25
+		y = 3
+		prerequisite = {
+			focus = GER_focus25
+		}
+		prerequisite = {
+			focus = GER_focus22
+		}
+		prerequisite = {
+			focus = GER_focus24
+		}
+	}
+	focus = { 
+		id = GER_focus29
+		icon = GFX_GER_focus29
+		cost = 10 
+		x = 29
+		y = 3
+        prerequisite = { 
+			focus = GER_focus4
+		}
+	}
+	focus = {
+		id = GER_focus33
+		icon = GFX_GER_focus33
+		cost = 10
+		x = 27
+		y = 4
+		prerequisite = {
+			focus = GER_focus29
+		}
+		mutually_exclusive = {
+			focus = GER_focus34
+		}
+	}
+	focus = {
+		id = GER_focus30
+		icon = GFX_GER_focus30
+		cost = 10
+		x = 28
+		y = 2
+		prerequisite = {
+			focus = GER_focus4
+		}
+	}
+	focus = {
+		id = GER_focus31
+		icon = GFX_GER_focus31
+		cost = 10
+		x = 30
+		y = 2
+		prerequisite = {
+			focus = GER_focus4
+		}
+	}
+	focus = {
+		id = GER_focus34
+		icon = GFX_GER_focus34
+		cost = 10
+		x = 31
+		y = 4
+		prerequisite = {
+			focus = GER_focus29
+		}
+		mutually_exclusive = {
+			focus = GER_focus33
+		}
+	}
+	focus = {
+		id = GER_focus26
+		icon = GFX_GER_focus26
+		cost = 10
+		x = 35
+		y = 1
+		prerequisite = {
+			focus = GER_focus21
+		}
+	}
+	focus = {
+		id = GER_focus27
+		icon = GFX_GER_focus27
+		cost = 10
+		x = 35
+		y = 2 
+		prerequisite = {
+			focus = GER_focus26
+		}
+		completion_reward = {
+			add_to_variable = {
+				all_infantry_eco = 5
+			}
+			custom_effect_tooltip = {
+				localization_key = all_infantry_eco_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				all_navy_eco = 5
+			}
+			custom_effect_tooltip = {
+				localization_key = all_navy_eco_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				all_air_eco = 5
+			}
+			custom_effect_tooltip = {
+				localization_key = all_air_eco_tt
+				VALUE = "+5.00"
+			}
+		}
+	}
+	focus = {
+		id = GER_focus28
+		icon = GFX_GER_focus28
+		cost = 10
+		x = 32
+		y = 3
+		prerequisite = {
+			focus = GER_focus27
+		}
+	}
+	focus = {
+		id = GER_focus36
+		icon = GFX_GER_focus36
+		cost = 10
+		x = 34
+		y = 3
+		prerequisite = {
+			focus = GER_focus27
+		}
+	}
+	focus = {
+		id = GER_focus37
+		icon = GFX_GER_focus37
+		cost = 10
+		x = 36
+		y = 3
+		prerequisite = {
+			focus = GER_focus27
+		}
+	}
+	focus = {
+		id = GER_focus11
+		icon = GFX_GER_focus11
+		cost = 10
+		x = 12
+		y = 6
+		prerequisite = {
+			focus = GER_focus9
+		}
+	}
+	focus = {
+		id = GER_focus13
+		icon = GFX_GER_focus13
+		cost = 10
+		x = 8
+		y = 5
+		prerequisite = {
+			focus = GER_focus8
+		}
+	}
+	focus = {
+		id = GER_focus14
+		icon = GFX_GER_focus14
+		cost = 10
+		x = 8
+		y = 6
+		prerequisite = {
+			focus = GER_focus13
+		}
+		prerequisite = {
+			focus = GER_focus12
+		}
+		prerequisite = {  
+			focus = GER_focus15
+		}  
+	}   
+	focus = { 
+		id = GER_focus15 
+		icon = GFX_GER_focus15 
+		cost = 10
+		x = 6
+		y = 5
+		prerequisite = {
+			focus = GER_focus5
+		}
+	}
+	focus = {
+		id = GER_focus19 
+		icon = GFX_GER_focus19
+		cost = 10
+		x = 16
+		y = 6
+		prerequisite = {
+			focus = GER_focus18
+		}
+		prerequisite = {
+			focus = GER_focus17
+		}
+		prerequisite = {
+			focus = GER_focus20
+		}
+	}
+	focus = {
+		id = GER_focus35
+		icon = GFX_GER_focus35
+		cost = 10
+		x = 38
+		y = 3
+		prerequisite = {
+			focus = GER_focus27
+		}
+	}
 }

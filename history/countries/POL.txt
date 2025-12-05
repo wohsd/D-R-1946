@@ -7,7 +7,7 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-recruit_character = BOL_Gualberto_Villarroel
+#recruit_character = BOL_Gualberto_Villarroel
 
 set_politics = {
 	ruling_party = Conservatism

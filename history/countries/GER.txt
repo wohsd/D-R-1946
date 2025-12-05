@@ -106,6 +106,10 @@ set_technology = {
 }
 
 recruit_character = GER_Franz_von_Papen
+recruit_character = GER_Werner_Heisenberg
+recruit_character = GER_Albert_Einstein
+
+
 
 set_politics = {
 	ruling_party = Conservatism

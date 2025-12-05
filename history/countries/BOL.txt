@@ -8,7 +8,6 @@ set_technology = {
 }
 
 recruit_character = BOL_Gualberto_Villarroel
-
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1918.11.11"

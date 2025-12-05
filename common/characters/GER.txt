@@ -13,5 +13,49 @@ characters = {
 			id = -1
 		}
 	}
+
+	
+ #     #                                                 
+ ##    #  #    #   ####   #       ######    ##    #####  
+ # #   #  #    #  #    #  #       #        #  #   #    # 
+ #  #  #  #    #  #       #       #####   #    #  #    # 
+ #   # #  #    #  #       #       #       ######  #####  
+ #    ##  #    #  #    #  #       #       #    #  #   #  
+ #     #   ####    ####   ######  ######  #    #  #    # 
+                                                         
+
+ GER_Werner_Heisenberg = {
+	name = GER_Werner_Heisenberg
+	portraits = {
+		army = {
+			large = "gfx/leaders/GER/GER_Werner_Heisenberg.png"
+			small = GFX_idea_heisenberg
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
+		skills = {
+			specialization_nuclear = 2
+		}
+	}
+}
+
+GER_Albert_Einstein = {
+	name = GER_Albert_Einstein
+	portraits = {
+		army = {
+			large = "gfx/leaders/GER/GER_Albert_Einstein.png"
+			small = GFX_idea_heisenberg
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
+		skills = {
+			specialization_nuclear = 2
+		}
+	}
+}
 }
 	

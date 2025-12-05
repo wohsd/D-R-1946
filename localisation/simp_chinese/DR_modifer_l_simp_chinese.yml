@@ -3,3 +3,11 @@ GDP_Growth:"GDP增长率"
 GDP_avg_Growth:"人均GDP增长率"
 GDP_resource_exported:"外贸收入"
 GDP_resource_imported:"外贸支出"
+
+income_tt:"收入：§H$VALUE|2$B§!"
+
+all_infantry_eco_tt:"陆军开支：§H$VALUE|2$B§!"
+
+all_navy_eco_tt:"海军开支：§H$VALUE|2$B§!"
+
+all_air_eco_tt:"空军开支：§H$VALUE|2$B§!"
