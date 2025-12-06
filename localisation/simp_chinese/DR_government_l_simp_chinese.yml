@@ -26,69 +26,88 @@
 #########新
 #########新
 #########新
- No_labor_laws:0 "无劳工保护"
- Trade_union_neutrality:0 "最低工人权利"
- Deflection_workers:0 "有限工人权利"
- Local_trade_unions:0 "适当工人权利"
- State_trade_unions:0 "工人福利国家"
+ labor_laws1:0 "无劳工保护"
+ labor_laws2:0 "最低工人权利"
+ labor_laws3:0 "有限工人权利"
+ labor_laws4:0 "适当工人权利"
+ labor_laws5:0 "工人福利国家"
+
+#########新
+#########新
+
+ Public_Education1:0 "无公共教育"
+ Public_Education2:0 "初等义务教育"
+ Public_Education3:0 "中等义务教育"
+ Public_Education4:0 "高等教育补贴"
+ Public_Education5:0 "公立高等教育"
 
 
- completely_illiterate:0 "无公共教育"
- elementary_school:0 "初等义务教育"
- secondary_school:0 "中等义务教育"
- university_level:0 "高等教育补贴"
- compulsory_education:0 "公立高等教育"
+#########新
+#########新
 
  Women_rights:0 "妇女权利"
- Patriarchy_supreme:0 "社会法定监护"
- Traditional_conservatism:0 "传统性别角色"
- Affirmative_action:0 "女性平等权利"
- Radical_feminism:0 "母权制社会"
+ Women_rights1:0 "社会法定监护"
+ Women_rights2:0 "传统性别角色"
+ Women_rights3:0 "女性平等权利"
+ Women_rights4:0 "母权制社会"
+
+
+
+ #########新
+#########新
 
  Livelihood_investment:0 "福利保障"
  social_security:0 "社会保障"
- No_investment:0 "无社会保障"
- Weak_investments:0 "最低社会保障"
- Underlying_investment:0 "中等社会福利"
- Medium_investment:0 "高昂社会福利"
- Best_investment:0 "国家全面补贴"
 
- Religious_policy:0 "种族政策"
- atheism:0 "驱逐少数民族"
- Freedom_belief:0 "少数族裔法案"
- Religion_prohibited:0 "比例代表制"
- Theocratic_state:0 "超额代表"
+ Livelihood_investment1:0 "无社会保障"
+ Livelihood_investment2:0 "最低社会保障"
+ Livelihood_investment3:0 "中等社会福利"
+ Livelihood_investment4:0 "高昂社会福利"
+ Livelihood_investment5:0 "国家全面补贴"
+#########新
+#########新
 
-
- Supervisory_bodies:0 "无公安机关"
- Autonomous_police:0 "地方公安机关"
- Local_police:0 "武装警察机关"
- Special_police:0 "社会监控机关"
- State_control:0 "国家秘密警察"
-
-
- Media_Publishers:0 "官方媒体控制"
- Freedom_press:0 "新闻言论自由"
- State_media:0 "民间集会权利"
- Media_control:0 "新闻出版审查"
- Control_media:0 "民间异论非法"
-
-
- Agricultural_economy:0 "手工产业"
- low_industrialization:0 "机械化制造业"
- Basic_industrialization:0 "流水线制造业"
- Mature_industrialization:0 "高精尖工业"
- Developed_industrialization:0 "现代化工业"
+ Racial_policy:0 "种族政策"
+ Racial_policy1:0 "驱逐少数民族"
+ Racial_policy2:0 "少数族裔法案"
+ Racial_policy3:0 "比例代表制"
+ Racial_policy4:0 "超额代表"
 
 
 
- Syndicate_economy:0 "自给农业"
- Smallholder_economy:0 "基本粮食生产"
- Corporate_economy:0 "机械化农村"
- Market_economy:0 "多样化农业繁荣"
- Planned_economy:0 "现代化农业"
+#########新
+#########新
+ Police_policy:0 "执法机关"
+ Police_policy2:0 "地方公安机关"
+ Police_policy3:0 "武装警察机关"
+ Police_policy4:0 "社会监控机关"
+ Police_policy5:0 "国家秘密警察"
+#########新
+#########新
+ Public_control:0 "集会权利"
+ Public_control2:0 "新闻言论自由"
+ Public_control3:0 "新闻出版审查"
+ Public_control4:0 "官方媒体控制"
+ Public_control5:0 "民间异论非法"
 
 
+#########新
+#########新
+ Industrialization_level1:0 "手工产业"
+ Industrialization_level2:0 "机械化制造业"
+ Industrialization_level3:0 "流水线制造业"
+ Industrialization_level4:0 "高精尖工业"
+ Industrialization_level5:0 "现代化工业"
+
+#########新
+#########新
+ Agriculture_level1:0 "自给农业"
+ Agriculture_level2:0 "基本粮食生产"
+ Agriculture_level3:0 "机械化农村"
+ Agriculture_level4:0 "多样化农业繁荣"
+ Agriculture_level5:0 "现代化农业"
+#########新
+#########新
  Mixed_economy:0 "混合经济"
 
 #########新

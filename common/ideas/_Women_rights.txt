@@ -4,7 +4,7 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
-		Patriarchy_supreme = {
+		Women_rights1 = {
 
 			available = {
 				hidden_trigger = {
@@ -27,7 +27,7 @@ ideas = {
 			cancel_if_invalid = no
 
 		}
-		Traditional_conservatism = {
+		Women_rights2 = {
 
 			available = {
 				hidden_trigger = {
@@ -50,7 +50,7 @@ ideas = {
 			cancel_if_invalid = no
 
 		}
-		Affirmative_action = {
+		Women_rights3 = {
 
 			available = {
 				hidden_trigger = {
@@ -69,7 +69,7 @@ ideas = {
 				}
    			
 		}
-		Radical_feminism = {
+		Women_rights4 = {
 
 			available = {
 				hidden_trigger = {

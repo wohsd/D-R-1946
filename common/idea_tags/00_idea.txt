@@ -37,10 +37,10 @@ idea_categories = {
 	}
     social_security = {
 		slot = Labor
-        slot = Religious_policy  
-        slot = Media_Publishers
+        slot = Racial_policy  
+        slot = Public_control
         slot = Women_rights
-        slot = Supervisory_bodies
+        slot = Police_policy
         slot = Livelihood_investment
 		ledger = civilian
 		

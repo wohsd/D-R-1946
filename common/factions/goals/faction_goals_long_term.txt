@@ -1009,7 +1009,7 @@ faction_goal_great_offensive = {
 			add_war_support = 0.1
 		}
 		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = TARGET_STATE_CONTROLLERS
+		custom_effect_tooltip = TARGET_Police_policy5LERS
 		every_faction_member = {
 			visible_when_empty = yes
 			limit = {

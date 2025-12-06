@@ -20,7 +20,7 @@
 # 		#   none #will render nothing for this layer
 # 		#   country #will render using country provinces
 # 		#   state #will render using state provinces
-# 		#   state_controller #will render using state provinces & controllers. if a state is shared between countries it will be called for each country
+# 		#   Police_policy5ler #will render using state provinces & controllers. if a state is shared between countries it will be called for each country
 # 		
 # 		#   game_map_mode_country (these are hard coded map mode layers. if these are used all other layer entries are ignored)
 # 		#   game_map_mode_states
@@ -37,7 +37,7 @@
 # 		# from scope depends on type
 # 		#   country: current country that will be rendered
 # 		#   state: current state that will be rendered
-# 		#   state_controller: current state that will be rendered and from from scope will be the controller of current portion of the state
+# 		#   Police_policy5ler: current state that will be rendered and from from scope will be the controller of current portion of the state
 # 		# if return value is true the game expects you to set some temp variables which will be used as border color etc
 # 		
 # 		color = {

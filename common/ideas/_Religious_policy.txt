@@ -1,9 +1,9 @@
 ideas = {
 
-	Religious_policy = {
+	Racial_policy = {
 		law = yes
 		use_list_view = yes
-		atheism = {
+		Racial_policy1 = {
 
 			available = {
 				hidden_trigger = {
@@ -38,7 +38,7 @@ ideas = {
 				}
    			}
 		}
-		Freedom_belief = {
+		Racial_policy2 = {
 
 			available = {
 				hidden_trigger = {
@@ -75,7 +75,7 @@ ideas = {
    			}
 		}
 		
-		Theocratic_state = {
+		Racial_policy4 = {
 
 			available = {
 				hidden_trigger = {

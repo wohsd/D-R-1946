@@ -27,14 +27,15 @@ set_popularities = {
 add_ideas = {
 	
 	#law
-	Market_economy
-	Freedom_belief
-	Traditional_conservatism
-	No_labor_laws
-	Media_control
-	Underlying_investment
-	low_industrialization
-	Local_police
+	Agriculture_level4
+	Racial_policy2
+	Women_rights2
+	labor_laws1
+	Public_control4
+	Livelihood_investment3
+	Industrialization_level2
+Public_Education3
+	Police_policy3
 
 	CHI_Triumph_Republican_Constitutionalism
 	CHI_Revolutionary_Ally

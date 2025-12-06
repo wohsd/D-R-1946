@@ -4,7 +4,7 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
-		No_labor_laws = {
+		labor_laws1 = {
 
 			available = {
 				hidden_trigger = {
@@ -39,7 +39,7 @@ ideas = {
    			}
 		}
 		
-		Trade_union_neutrality = {
+		labor_laws2 = {
 
 			available = {
 				hidden_trigger = {
@@ -74,7 +74,7 @@ ideas = {
    			}
 		}
 		
-		Local_trade_unions = {
+		labor_laws4 = {
 
 			available = {
 				hidden_trigger = {
@@ -93,7 +93,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				}
 		}
-		State_trade_unions = {
+		labor_laws5 = {
 
 			available = {
 				hidden_trigger = {

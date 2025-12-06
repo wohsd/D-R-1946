@@ -1,159 +1,172 @@
 spriteTypes = {
 	
-	spriteType = {
-		name = "GFX_idea_low_industrialization"
-		texturefile = "gfx/interface/ideas/idea_low_industrialization.dds"
+	
+spriteType = {
+	name = "GFX_idea_Police_policy2"
+	texturefile = "gfx\interface\ideas\Police_policy2.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Agricultural_economy"
-		texturefile = "gfx/interface/ideas/idea_Agricultural_economy.dds"
+	name = "GFX_idea_Agriculture_level1"
+	texturefile = "gfx\interface\ideas\Agriculture_level1.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Basic_industrialization"
-		texturefile = "gfx/interface/ideas/idea_Basic_industrialization.dds"
+	name = "GFX_idea_Agriculture_level2"
+	texturefile = "gfx\interface\ideas\Agriculture_level2.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Mature_industrialization"
-		texturefile = "gfx/interface/ideas/idea_Mature_industrialization.dds"
+	name = "GFX_idea_Agriculture_level3"
+	texturefile = "gfx\interface\ideas\Agriculture_level3.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Developed_industrialization"
-		texturefile = "gfx/interface/ideas/idea_Developed_industrialization.dds"
+	name = "GFX_idea_Agriculture_level4"
+	texturefile = "gfx\interface\ideas\Agriculture_level4.png"
 	}
 	spriteType = {
-		name = "GFX_idea_completely_illiterate"
-		texturefile = "gfx/interface/ideas/idea_completely_illiterate.dds"
+	name = "GFX_idea_Agriculture_level5"
+	texturefile = "gfx\interface\ideas\Agriculture_level5.png"
 	}
 	spriteType = {
-		name = "GFX_idea_elementary_school"
-		texturefile = "gfx/interface/ideas/idea_elementary_school.dds"
+	name = "GFX_idea_Industrialization_level1"
+	texturefile = "gfx\interface\ideas\Industrialization_level1.png"
 	}
 	spriteType = {
-		name = "GFX_idea_secondary_school"
-		texturefile = "gfx/interface/ideas/idea_secondary_school.dds"
+	name = "GFX_idea_Industrialization_level2"
+	texturefile = "gfx\interface\ideas\Industrialization_level2.png"
 	}
 	spriteType = {
-		name = "GFX_idea_university_level"
-		texturefile = "gfx/interface/ideas/idea_university.dds"
+	name = "GFX_idea_Industrialization_level3"
+	texturefile = "gfx\interface\ideas\Industrialization_level3.png"
 	}
 	spriteType = {
-		name = "GFX_idea_compulsory_education"
-		texturefile = "gfx/interface/ideas/idea_compulsory_education.dds"
+	name = "GFX_idea_Industrialization_level4"
+	texturefile = "gfx\interface\ideas\Industrialization_level4.png"
 	}
 	spriteType = {
-		name = "GFX_idea_No_labor_laws"
-		texturefile = "gfx/interface/ideas/idea_No_labor_laws.dds"
+	name = "GFX_idea_Industrialization_level5"
+	texturefile = "gfx\interface\ideas\Industrialization_level5.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Deflection_workers"
-		texturefile = "gfx/interface/ideas/idea_Deflection_workers.dds"
+	name = "GFX_idea_labor_laws1"
+	texturefile = "gfx\interface\ideas\labor_laws1.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Deflection_employer"
-		texturefile = "gfx/interface/ideas/idea_Deflection_employer.dds"
+	name = "GFX_idea_labor_laws2"
+	texturefile = "gfx\interface\ideas\labor_laws2.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Trade_union_neutrality"
-		texturefile = "gfx/interface/ideas/idea_Trade_union_neutrality.dds"
+	name = "GFX_idea_labor_laws3"
+	texturefile = "gfx\interface\ideas\labor_laws3.png"
 	}
 	spriteType = {
-		name = "GFX_idea_State_trade_unions"
-		texturefile = "gfx/interface/ideas/idea_State_trade_unions.dds"
+	name = "GFX_idea_labor_laws4"
+	texturefile = "gfx\interface\ideas\labor_laws4.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Local_trade_unions"
-		texturefile = "gfx/interface/ideas/idea_Local_trade_unions.dds"
+	name = "GFX_idea_labor_laws5"
+	texturefile = "gfx\interface\ideas\labor_laws5.png"
 	}
 	spriteType = {
-		name = "GFX_idea_atheism"
-		texturefile = "gfx/interface/ideas/idea_atheism.dds"
+	name = "GFX_idea_Livelihood_investment1"
+	texturefile = "gfx\interface\ideas\Livelihood_investment1.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Freedom_belief"
-		texturefile = "gfx/interface/ideas/idea_Freedom_belief.dds"
+	name = "GFX_idea_Livelihood_investment2"
+	texturefile = "gfx\interface\ideas\Livelihood_investment2.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Religion_prohibited"
-		texturefile = "gfx/interface/ideas/idea_Religion_prohibited.dds"
+	name = "GFX_idea_Livelihood_investment3"
+	texturefile = "gfx\interface\ideas\Livelihood_investment3.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Theocratic_state"
-		texturefile = "gfx/interface/ideas/idea_Theocratic_state.dds"
+	name = "GFX_idea_Livelihood_investment4"
+	texturefile = "gfx\interface\ideas\Livelihood_investment4.png"
 	}
 	spriteType = {
-		name = "GFX_idea_State_control"
-		texturefile = "gfx/interface/ideas/idea_State_control.dds"
+	name = "GFX_idea_Livelihood_investment5"
+	texturefile = "gfx\interface\ideas\Livelihood_investment5.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Special_police"
-		texturefile = "gfx/interface/ideas/idea_Special_police.dds"
+	name = "GFX_idea_Police_policy3"
+	texturefile = "gfx\interface\ideas\Police_policy3.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Local_police"
-		texturefile = "gfx/interface/ideas/idea_Local_police.dds"
+	name = "GFX_idea_Police_policy4"
+	texturefile = "gfx\interface\ideas\Police_policy4.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Autonomous_police"
-		texturefile = "gfx/interface/ideas/idea_Autonomous_police.dds"
+	name = "GFX_idea_Police_policy5"
+	texturefile = "gfx\interface\ideas\Police_policy5.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Freedom_press"
-		texturefile = "gfx/interface/ideas/idea_Freedom_press.dds"
+	name = "GFX_idea_Public_control2"
+	texturefile = "gfx\interface\ideas\Public_control2.png"
 	}
 	spriteType = {
-		name = "GFX_idea_State_media"
-		texturefile = "gfx/interface/ideas/idea_State_media.dds"
+	name = "GFX_idea_Public_control3"
+	texturefile = "gfx\interface\ideas\Public_control3.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Media_control"
-		texturefile = "gfx/interface/ideas/idea_Media_control.dds"
+	name = "GFX_idea_Public_control4"
+	texturefile = "gfx\interface\ideas\Public_control4.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Control_media"
-		texturefile = "gfx/interface/ideas/idea_Control_media.dds"
+	name = "GFX_idea_Public_control5"
+	texturefile = "gfx\interface\ideas\Public_control5.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Patriarchy_supreme"
-		texturefile = "gfx/interface/ideas/idea_Patriarchy_supreme.dds"
+	name = "GFX_idea_Public_Education1"
+	texturefile = "gfx\interface\ideas\Public_Education1.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Traditional_conservatism"
-		texturefile = "gfx/interface/ideas/idea_Traditional_conservatism.dds"
+	name = "GFX_idea_Public_Education2"
+	texturefile = "gfx\interface\ideas\Public_Education2.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Affirmative_action"
-		texturefile = "gfx/interface/ideas/idea_Affirmative_action.dds"
+	name = "GFX_idea_Public_Education3"
+	texturefile = "gfx\interface\ideas\Public_Education3.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Radical_feminism"
-		texturefile = "gfx/interface/ideas/idea_Radical_feminism.dds"
+	name = "GFX_idea_Public_Education4"
+	texturefile = "gfx\interface\ideas\Public_Education4.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Weak_investments"
-		texturefile = "gfx/interface/ideas/idea_Weak_investments.dds"
+	name = "GFX_idea_Public_Education5"
+	texturefile = "gfx\interface\ideas\Public_Education5.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Underlying_investment"
-		texturefile = "gfx/interface/ideas/idea_Underlying_investment.dds"
+	name = "GFX_idea_Racial_policy1"
+	texturefile = "gfx\interface\ideas\Racial_policy1.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Medium_investment"
-		texturefile = "gfx/interface/ideas/idea_Medium_investment.dds"
+	name = "GFX_idea_Racial_policy2"
+	texturefile = "gfx\interface\ideas\Racial_policy2.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Best_investment"
-		texturefile = "gfx/interface/ideas/idea_Best_investment.dds"
+	name = "GFX_idea_Racial_policy3"
+	texturefile = "gfx\interface\ideas\Racial_policy3.png"
 	}
 	spriteType = {
-		name = "GFX_idea_No_investment"
-		texturefile = "gfx/interface/ideas/idea_No_investment.dds"
+	name = "GFX_idea_Racial_policy4"
+	texturefile = "gfx\interface\ideas\Racial_policy4.png"
 	}
-
-
-
-
-
-
+	spriteType = {
+	name = "GFX_idea_Women_rights1"
+	texturefile = "gfx\interface\ideas\Women_rights1.png"
+	}
+	spriteType = {
+	name = "GFX_idea_Women_rights2"
+	texturefile = "gfx\interface\ideas\Women_rights2.png"
+	}
+	spriteType = {
+	name = "GFX_idea_Women_rights3"
+	texturefile = "gfx\interface\ideas\Women_rights3.png"
+	}
+	spriteType = {
+	name = "GFX_idea_Women_rights4"
+	texturefile = "gfx\interface\ideas\Women_rights4.png"
+	}
+	
+	
 
 
 

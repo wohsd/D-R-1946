@@ -3,7 +3,7 @@ ideas = {
 	industrialization = {
 		law = yes
 		use_list_view = yes
-		Agricultural_economy = {
+		Industrialization_level1 = {
 
 			available = {
 				hidden_trigger = {
@@ -46,7 +46,7 @@ ideas = {
 
 
 
-		low_industrialization = {
+		Industrialization_level2 = {
 
 			available = {
 				hidden_trigger = {
@@ -84,7 +84,7 @@ ideas = {
 				}
    			}
 		}
-		Basic_industrialization = {
+		Industrialization_level3 = {
 
 			available = {
 				hidden_trigger = {
@@ -122,7 +122,7 @@ ideas = {
 				}
    			}
 		}
-		Mature_industrialization = {
+		Industrialization_level4 = {
 
 			available = {
 				hidden_trigger = {
@@ -160,7 +160,7 @@ ideas = {
 				}
    			}
 		}
-		Developed_industrialization = {
+		Industrialization_level5 = {
 
 			available = {
 				hidden_trigger = {

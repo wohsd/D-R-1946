@@ -1,10 +1,10 @@
 ideas = {
 
-	Media_Publishers = {
+	Public_control = {
 		law = yes
 		use_list_view = yes
 
-		Freedom_press = {
+		Public_control2 = {
 
 			available = {
 				hidden_trigger = {
@@ -27,7 +27,7 @@ ideas = {
 			cancel_if_invalid = no
 
 		}
-		State_media = {
+		Public_control3 = {
 
 			available = {
 				hidden_trigger = {
@@ -64,7 +64,7 @@ ideas = {
 				}
    			}
 		}
-		Media_control = {
+		Public_control4 = {
 
 			available = {
 				hidden_trigger = {
@@ -88,7 +88,7 @@ ideas = {
 			cancel_if_invalid = no
 
 		}
-		Control_media = {
+		Public_control5 = {
 
 			available = {
 				hidden_trigger = {

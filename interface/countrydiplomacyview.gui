@@ -3320,7 +3320,7 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "ask_for_state_control"
+			name = "ask_for_Police_policy5"
 			position = { x = -263 y = -266}
 			size = { width = 527 height = 532 }
 			moveable = yes
@@ -3404,7 +3404,7 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "give_state_control"
+			name = "give_Police_policy5"
 			position = { x = -263 y = -266}
 			size = { width = 527 height = 532 }
 			moveable = yes

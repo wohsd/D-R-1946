@@ -1,9 +1,9 @@
 ideas = {
 
-	Supervisory_bodies = {
+	Police_policy = {
 		law = yes
 		use_list_view = yes
-		Autonomous_police = {
+		Police_policy2 = {
 
 			available = {
 				hidden_trigger = {
@@ -24,7 +24,7 @@ ideas = {
 			cancel_if_invalid = no
 
 		}
-		Local_police = {
+		Police_policy3 = {
 
 			available = {
 				hidden_trigger = {
@@ -45,7 +45,7 @@ ideas = {
 			cancel_if_invalid = no
 
 		}
-		Special_police = {
+		Police_policy4 = {
 
 			available = {
 				hidden_trigger = {
@@ -67,7 +67,7 @@ ideas = {
 				}
    		
 		}
-		State_control = {
+		Police_policy5 = {
 
 			available = {
 				hidden_trigger = {

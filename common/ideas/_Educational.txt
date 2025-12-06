@@ -4,14 +4,14 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
-		completely_illiterate = {
+		Public_Education1 = {
 			available = {
 				NOT={
 					OR={
-						has_idea = elementary_school
-						has_idea = secondary_school
-						has_idea = university_level
-						has_idea = compulsory_education
+						has_idea = Public_Education2
+						has_idea = Public_Education3
+						has_idea = Public_Education4
+						has_idea = Public_Education5
 					}
 				}
 			}
@@ -43,15 +43,15 @@ ideas = {
 				}
    			}
 		}
-		elementary_school = {
+		Public_Education2 = {
 
 			available = {
 				NOT={
 					OR={
-						has_idea = completely_illiterate
-						has_idea = secondary_school
-						has_idea = university_level
-						has_idea = compulsory_education
+						has_idea = Public_Education1
+						has_idea = Public_Education3
+						has_idea = Public_Education4
+						has_idea = Public_Education5
 					}
 				}
 			}
@@ -83,15 +83,15 @@ ideas = {
 				}
    			}
 		}
-		secondary_school = {
+		Public_Education3 = {
 
 			available = {
 				NOT={
 					OR={
-						has_idea = completely_illiterate
-						has_idea = elementary_school
-						has_idea = university_level
-						has_idea = compulsory_education
+						has_idea = Public_Education1
+						has_idea = Public_Education2
+						has_idea = Public_Education4
+						has_idea = Public_Education5
 					}
 				}
 			}
@@ -123,15 +123,15 @@ ideas = {
 				}
    			}
 		}
-		university_level = {
+		Public_Education4 = {
 
 			available = {
 				NOT={
 					OR={
-						has_idea = completely_illiterate
-						has_idea = elementary_school
-						has_idea = secondary_school
-						has_idea = compulsory_education
+						has_idea = Public_Education1
+						has_idea = Public_Education2
+						has_idea = Public_Education3
+						has_idea = Public_Education5
 					}
 				}
 				}
@@ -163,15 +163,15 @@ ideas = {
 				}
    			}
 		}
-		compulsory_education = {
+		Public_Education5 = {
 
 			available = {
 				NOT={
 					OR={
-						has_idea = completely_illiterate
-						has_idea = elementary_school
-						has_idea = secondary_school
-						has_idea = university_level
+						has_idea = Public_Education1
+						has_idea = Public_Education2
+						has_idea = Public_Education3
+						has_idea = Public_Education4
 					}
 				}
 			}
