@@ -7,7 +7,7 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-recruit_character = PAR_Higinio_Morínigo_Martinez
+recruit_character = PAR_Higinio_Morinigo_Martinez
 
 set_politics = {
 	ruling_party = Conservatism

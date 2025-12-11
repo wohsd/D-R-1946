@@ -1,0 +1,17 @@
+characters = {
+	SKK_Tashi_Namgyal = {
+		name = SKK_Tashi_Namgyal
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKK/SKK_Tashi_Namgyal.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = SKK_Tashi_Namgyal_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

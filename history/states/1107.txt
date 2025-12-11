@@ -1,0 +1,21 @@
+state={
+	id=1107
+	name="STATE_1107"
+	manpower = 729419
+	
+	state_category = pastoral
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		1847 7873 7894 10567 19456 19521 19529 19571 19583 19603 19842 
+	}
+
+	local_supplies=0.0 
+}

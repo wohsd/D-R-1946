@@ -12,9 +12,7 @@ state={
 	state_category = wasteland
 	history={
 		owner = CHI
-		add_core_of = XSM
 		add_core_of = CHI
-		
 		buildings = {
 			infrastructure = 1
 			5100={
@@ -23,8 +21,6 @@ state={
 			    }
 			}
 		}
-		
-
 	}
 
 	local_supplies=0.0 

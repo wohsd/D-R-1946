@@ -5,10 +5,25 @@
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-}
+} 
 
 recruit_character = CHI_TangPingShang
 recruit_character = CHI_SunKe
+recruit_character = CHI_WeiLiHuang
+recruit_character = CHI_GuMengYu
+recruit_character = CHI_SongQingLing
+recruit_character = CHI_ZhouEngLai
+recruit_character = CHI_SongZhiWeng
+
+recruit_character = CHI_XueYue
+recruit_character = CHI_SunLiRen
+recruit_character = CHI_LiZongRen
+recruit_character = CHI_ChenCheng
+recruit_character = CHI_CaiTingKai
+recruit_character = CHI_GuZhuTong
+recruit_character = CHI_HuangQiXiang
+recruit_character = CHI_DengYangDa
+recruit_character = CHI_JiangGuangDing
 
 set_politics = {
 	ruling_party = Reformism
@@ -34,8 +49,16 @@ add_ideas = {
 	Public_control4
 	Livelihood_investment3
 	Industrialization_level2
-Public_Education3
+	Public_Education3
 	Police_policy3
+
+	SunKe_J
+	WeiLiHuang_D
+	GuMengYu_G
+	SongQingLing_I
+	ZhouEngLai_O
+	SongZhiWeng_F
+
 
 	CHI_Triumph_Republican_Constitutionalism
 	CHI_Revolutionary_Ally

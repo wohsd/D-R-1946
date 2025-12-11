@@ -15,4 +15,71 @@ spriteType = {
 name = "GFX_GER_focus4"
 texturefile = "gfx\interface\goal\GER/GER_focus4.png"
 }
+
+spriteType = {
+	name = "GFX_GER_focus12"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus12.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus13"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus13.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus14"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus14.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus15"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus15.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus16"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus16.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus17"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus17.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus18"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus18.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus19"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus19.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus20"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus20.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus7"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus7.png"
+	}
+	
+	
+spriteType = {
+	name = "GFX_GER_focus10"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus10.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus11"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus11.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus5"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus5.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus6"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus6.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus8"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus8.png"
+	}
+	spriteType = {
+	name = "GFX_GER_focus9"
+	texturefile = "gfx\interface\goal\GER/GFX_GER_focus9.png"
+	}
 }

@@ -1,0 +1,19 @@
+state={
+	id=1097
+	name="STATE_1097"
+	manpower = 1075377
+	state_category = rural
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		934 3814 3828 3881 3934 6852 6898 7633 9927 10426 11855 11886 14627 14628 14632 19491 19514
+	}
+
+	local_supplies=0.0 
+}

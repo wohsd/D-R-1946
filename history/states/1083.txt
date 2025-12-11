@@ -1,0 +1,25 @@
+state={
+	id=1083
+	name="STATE_1083"
+	provinces={
+		4896 7101 7279 7434 10006 12086 13140 19505 19549 19810 19837 19875 
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category = town
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = {
+			7101 10 
+		}
+	}
+
+	local_supplies=0.0 
+}

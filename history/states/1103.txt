@@ -1,0 +1,18 @@
+state={
+	id=1103
+	name="STATE_1103"
+	manpower = 236266
+	
+	state_category = pastoral
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+	}
+
+	provinces={
+		7832 7848 10675 12537 14622 19463 19467 19472 19487 19543 19548 19561
+	}
+
+	local_supplies=0.0 
+}

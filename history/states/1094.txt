@@ -1,0 +1,24 @@
+state={
+	id=1094
+	name="STATE_1094"
+	manpower = 8373200
+	state_category = large_town
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			4205 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+	provinces={
+		1104 1184 1200 4186 4205 7089 7105 10018 19587 19845 19857 19864 19907
+	}
+
+	local_supplies=4.0 
+}

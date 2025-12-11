@@ -1,0 +1,17 @@
+characters = {
+	NEP_Tribhuvan = {
+		name = NEP_Tribhuvan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/NEP_Tribhuvan.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = NEP_Tribhuvan_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

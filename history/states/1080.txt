@@ -1,0 +1,21 @@
+state={
+	id=1080
+	name="STATE_1080"
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		2030 2091 5048 7256 7948 10144 11865 12274 19535 19649 19672 19814 19865 19910
+	}
+	manpower=4102400
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

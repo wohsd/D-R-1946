@@ -1,0 +1,23 @@
+state={
+	id=1084
+	name="STATE_1084"
+	resources = {
+		coal = 7
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1053 4081 4083 4183 7172 7199 9942 10112 11945 12030 19531 19594 19607
+	}
+	manpower=4820400
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=3.0 
+}

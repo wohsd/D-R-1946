@@ -1,0 +1,23 @@
+state={
+	id=1090
+	name="STATE_1090"
+	resources = {
+		steel = 11
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		1001 1146 1161 4079 7094 9937 10008 10040 10079 11916 13144 19817 19839 19882 19889
+	}
+	manpower=10265400
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=2.0 
+}

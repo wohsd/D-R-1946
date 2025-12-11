@@ -1,0 +1,18 @@
+state={
+	id=1093
+	name="STATE_1093"
+	manpower = 7573200
+	state_category = town
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		1124 1154 4071 4157 4181 7055 9971 12074 19559 19797 19880 19886 19903
+	}
+
+	local_supplies=4.0 
+}

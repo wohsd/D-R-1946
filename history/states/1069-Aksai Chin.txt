@@ -4,6 +4,7 @@ state={
 	provinces={
 		 18878 19779 
 	}
+	state_category=wasteland
 	history={
 		owner = CHI
 		buildings = {

@@ -1,0 +1,20 @@
+state={
+	id=1085
+	name="STATE_1085"
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1066 1110 4038 4185 7007 7054 9984 13141 19452 19460 19470 19480 19570
+	}
+	manpower=5220400
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=3.0 
+}

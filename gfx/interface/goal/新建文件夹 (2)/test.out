@@ -1,0 +1,26 @@
+spriteTypes = {
+spriteType = {
+name = "GFX_GFX_GER_focus10"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/GFX_GER_focus10.png"
+}
+spriteType = {
+name = "GFX_GFX_GER_focus11"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/GFX_GER_focus11.png"
+}
+spriteType = {
+name = "GFX_GFX_GER_focus5"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/GFX_GER_focus5.png"
+}
+spriteType = {
+name = "GFX_GFX_GER_focus6"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/GFX_GER_focus6.png"
+}
+spriteType = {
+name = "GFX_GFX_GER_focus8"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/GFX_GER_focus8.png"
+}
+spriteType = {
+name = "GFX_GFX_GER_focus9"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/GFX_GER_focus9.png"
+}
+}

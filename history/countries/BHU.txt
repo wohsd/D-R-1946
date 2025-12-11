@@ -1,0 +1,37 @@
+﻿capital = 324
+
+#oob = "AOX_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = BHU_Jigme_Wangchuk
+
+set_politics = {
+	ruling_party = Dictatorship
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	Dictatorship = 50
+	Liberalism = 13
+	Conservatism = 5
+	Nationalism = 19
+	Reformism = 13
+}
+
+add_ideas = {
+	#law
+	Agriculture_level4
+	Racial_policy2
+	Women_rights2
+	labor_laws1
+	Public_control4
+	Livelihood_investment3
+	Industrialization_level2
+Public_Education3
+	Police_policy3
+}

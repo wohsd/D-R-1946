@@ -1,0 +1,28 @@
+state={
+	id=1098
+	name="STATE_1098"
+	resources={
+		steel = 10
+		coal = 5
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			964 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		836 945 964 3783 3839 3849 3895 3970 6804 6860 6868 6910 6918 6981 9848 9854
+	}
+	manpower=4264620
+	buildings_max_level_factor=1.000
+	state_category=large_town
+
+	local_supplies=0.0 
+}

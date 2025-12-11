@@ -3,12 +3,8 @@ state = {
 	name = "STATE_616"
 
 	history = {
-
 		owner = CHI
-		add_core_of = XSM
 		add_core_of = CHI
-		
-
 		buildings = {
 			infrastructure = 1
 			15555={
@@ -17,12 +13,9 @@ state = {
 			    }
 			}
 		}
-
 		victory_points = {
 			8127 2 #Yinchuan
 		}
-
-
 	}
 
 	provinces = {

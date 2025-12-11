@@ -4,10 +4,10 @@ state={
 	provinces={
 		11913 19853 19892 19872 19895
 	}
+	state_category = large_city
 	history={
 		owner = CHI
 		add_core_of = CHI
-		
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

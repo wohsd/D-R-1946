@@ -15,7 +15,12 @@ focus_tree = {
 		x = 12
 		y = 0
 		completion_reward = {
-			
+			add_faction_influence_ratio = 0.025
+			set_can_be_fired_in_advisor_role = {
+				character = AUS_arthur_seyss-inquart
+				slot = political_advisor
+				value = yes
+			}
 		}
 	}
 	focus = {
@@ -25,8 +30,16 @@ focus_tree = {
 		x = 29
 		y = 0
 		completion_reward = {
-			add_to_variable = {
-				var = income
+			add_mastery_bonus = {
+				bonus = 0.02
+				days = 365
+				name = CHI_military_affairs_commission_sea
+				# FILTERS:
+				folder = land
+				grand_doctrine = mobile_warfare
+				sub_doctrine = mobile_infantry
+				track = infantry
+				index = 1
 			}
 		}
 	}
@@ -39,6 +52,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus1
 		}
+		completion_reward = {
+			add_faction_influence_ratio = 0.025
+		}
 	}
 	focus = {
 		id = GER_focus3
@@ -48,6 +64,12 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = GER_focus2
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_faction_influence_ratio = 0.025
+
+			
 		}
 	}
 	focus = {
@@ -62,6 +84,33 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_focus7
 		}
+		completion_reward = {
+			GER={
+				random_core_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+					add_building_construction = {
+						type = energy_infrastructure
+						level = 1
+					}
+				}
+				random_core_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+					add_building_construction = {
+						type = energy_infrastructure
+						level = 1
+					}
+				}
+			}
+			
+		}
 	}
 	focus = {
 		id = GER_focus5
@@ -71,6 +120,13 @@ focus_tree = {
 		y = 4
 		prerequisite = {
 			focus = GER_focus6
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 15
+				state = 893
+			}
 		}
 	}
 	focus = {
@@ -82,6 +138,20 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus6
 		}
+		completion_reward = {
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_focus12
@@ -91,6 +161,34 @@ focus_tree = {
 		y = 5
 		prerequisite = {
 			focus = GER_focus8
+		}
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_tech_bonus = {
+				name = GER_the_four_year_plan
+				bonus = 1
+				uses = 1
+				category = industry
+			}
 		}
 	}
 	focus = {
@@ -102,6 +200,19 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus3
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = nuclear
+			}
+			65={
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_focus9
@@ -109,21 +220,33 @@ focus_tree = {
 		cost = 10
 		x = 12
 		y = 5
+		available = {
+			has_tech = atomic_research
+		}
 		prerequisite = {
 			focus = GER_focus10
+		}
+		completion_reward = {
+			set_technology = {
+				nukes = 1
+			}
 		}
 	}
 	focus = {
 		id = GER_focus7
 		icon = GFX_GER_focus7
 		cost = 10
-		x = 16
+		x = 16 
 		y = 3
 		prerequisite = {
 			focus = GER_focus3
 		}
 		mutually_exclusive = {
 			focus = GER_focus6
+		}
+		completion_reward = {
+			add_faction_influence_ratio = -0.035
+			add_faction_initiative = 1
 		}
 	}
 	focus = {
@@ -135,6 +258,17 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus7
 		}
+		completion_reward = {
+			RUS={add_faction_influence_ratio = 0.020}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+
+			add_faction_influence_ratio = -0.020
+			add_opinion_modifier = {
+				target = RUS
+				modifier = AUS_market_help
+			}
+		}
 	}
 	focus = {
 		id = GER_focus18
@@ -144,6 +278,25 @@ focus_tree = {
 		y = 5
 		prerequisite = {
 			focus = GER_focus16
+		}
+		completion_reward = {
+			add_equipment_subsidy = {
+				cic = 2000 
+				equipment_type = infantry_equipment
+				seller_tags = { RUS }  
+			}
+
+			add_equipment_subsidy = {
+				cic = 1000 
+				equipment_type = support_equipment 
+				seller_tags = { RUS }  
+			}
+
+			add_equipment_subsidy = {
+				cic = 1000  
+				equipment_type = artillery_equipment  
+				seller_tags = { RUS }  
+			}
 		}
 	}
 	focus = {
@@ -155,6 +308,24 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus21
 		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			add_mastery_bonus = {
+				bonus = 0.3
+				days = 30
+				name = CHI_military_affairs_commission_sea
+				# FILTERS:
+				folder = land
+				grand_doctrine = mobile_warfare
+				sub_doctrine = mobile_infantry
+				track = infantry
+				index = 1
+			}
+		}
 	}
 	focus = {
 		id = GER_focus17
@@ -165,7 +336,24 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus16
 		}
-		
+		completion_reward = {
+			ROM={
+				custom_effect_tooltip = [GetName]
+				46={
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+
+			create_import = {
+				resource = oil
+				amount = 10
+				exporter = ROM
+			}
+		}
 	}
 	focus = {
 		id = GER_focus20
@@ -175,6 +363,13 @@ focus_tree = {
 		y = 5
         prerequisite = {
 			focus = GER_focus7
+		}
+		completion_reward = {
+			create_import = {
+				resource = oil
+				amount = 15
+				exporter = RUS
+			}
 		}
 	}
 	focus = {
@@ -186,6 +381,20 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus21
 		}
+		completion_reward = {
+			add_command_power = 50
+			add_mastery = {
+				amount = 100
+				track = infantry
+			}
+
+			add_doctrine_cost_reduction = {
+				name = GER_the_prussian_legacy
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = GER_focus22
@@ -195,6 +404,18 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = GER_focus23
+		}
+		completion_reward = {
+			add_mastery_bonus = {
+				bonus = 0.02
+				days = 365
+				name = CHI_military_affairs_commission_sea
+				# FILTERS:
+				folder = naval
+				grand_doctrine = trade_interdiction
+				track = naval
+				index = 1
+			}
 		}
 	}
 	focus = {
@@ -216,6 +437,8 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus23
 		}
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = GER_focus32
@@ -230,11 +453,18 @@ focus_tree = {
 			focus = GER_focus24
 		}
 		prerequisite = {
-			focus = GER_focus25
+			focus = GER_focus25 
+		}  
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = rocketry #radar_tech
+			}
 		}
 	}
 	focus = {
-		id = GER_focus38
+		id = GER_focus38 
 		icon = GFX_GER_focus38
 		cost = 10
 		x = 25
@@ -248,6 +478,15 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus24
 		}
+		completion_reward = {
+			air_experience = 25
+			add_doctrine_cost_reduction = {
+				name = GER_form_the_jagdwaffe
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
 	}
 	focus = { 
 		id = GER_focus29
@@ -257,6 +496,42 @@ focus_tree = {
 		y = 3
         prerequisite = { 
 			focus = GER_focus4
+		}
+		completion_reward = {
+			add_command_power = 25
+			army_experience = 15
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_mastery = {
+				amount = 100
+				track = infantry
+			}
+
+			add_doctrine_cost_reduction = {
+				name = GER_the_prussian_legacy
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			effect_tooltip = { #This is done for tooltip purposes
+				add_dynamic_modifier = { modifier = GER_bewegungskrieg_modifier }
+			}
+			
+			IF = {
+				limit = { 
+					is_faction_leader = yes
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_faction_goal_slot = {
+					category  = short_term # options: short_term, medium_term, long_term 
+					value = 1 
+				}
+				add_faction_goal = faction_goal_an_infantry_army
+			}
 		}
 	}
 	focus = {
@@ -314,6 +589,80 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus21
 		}
+		completion_reward = {
+			
+			
+			if = {
+				limit = {
+					909 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				909 = { 
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+					add_extra_state_shared_building_slots = 1 
+				}
+			}
+			if = {
+				limit = {
+					61 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				61 = { 
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+					add_extra_state_shared_building_slots = 1 
+				}
+			}
+			if = {
+				limit = {
+					62 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				62 = { 
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+					add_extra_state_shared_building_slots = 1 
+				}
+			}
+			if = {
+				limit = {
+					63 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				63 = { 
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+					add_extra_state_shared_building_slots = 1 
+				}
+			}
+			if = {
+				limit = {
+					5 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				5 = { 
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+					add_extra_state_shared_building_slots = 1 
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_focus27
@@ -346,6 +695,8 @@ focus_tree = {
 				localization_key = all_air_eco_tt
 				VALUE = "+5.00"
 			}
+
+
 		}
 	}
 	focus = {
@@ -357,6 +708,70 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus27
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_expand_kummersdorfs_capacity
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = cat_heavy_armor
+			}
+			add_tech_bonus = {
+				name = GER_expand_kummersdorfs_capacity
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.5
+			}
+
+			
+				custom_effect_tooltip = generic_skip_one_line_tt
+				create_equipment_variant = {
+					name = "五号中型坦克G型"
+					type = medium_tank_chassis_3
+					design_team = mio:GER_man_organization #We feed on your tears
+					modules = {
+						main_armament_slot = tank_high_velocity_cannon
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = tank_radio_1
+						special_type_slot_2 = sloped_armor
+						special_type_slot_3 = smoke_launchers
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 6
+						tank_nsb_armor_upgrade = 4
+					}
+					icon = "GFX_GER_advanced_medium_tank_medium"
+				}
+				create_equipment_variant = {
+					name = "虎王式重型坦克"
+					type = heavy_tank_chassis_2
+					design_team = mio:GER_porsche_organization #We feed on your tears
+					modules = {
+						main_armament_slot = tank_heavy_cannon
+						turret_type_slot = tank_heavy_three_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = tank_radio_1
+						special_type_slot_2 = smoke_launchers
+						special_type_slot_3 = additional_machine_guns
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 8
+						tank_nsb_armor_upgrade = 6
+					}
+					icon = "GFX_GER_advanced_heavy_tank_medium"
+				}
+			
+
+		}
 	}
 	focus = {
 		id = GER_focus36
@@ -366,6 +781,16 @@ focus_tree = {
 		y = 3
 		prerequisite = {
 			focus = GER_focus27
+		}
+		completion_reward = {
+			add_design_template_bonus = {
+				name = air_equipment
+				uses = 1
+				cost_factor = 0.75
+				equipment = small_plane_airframe
+				equipment = medium_plane_airframe
+				equipment = large_plane_airframe
+			  }			  
 		}
 	}
 	focus = {
@@ -377,6 +802,20 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus27
 		}
+		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.3
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.3
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.3
+			}
+		}
 	}
 	focus = {
 		id = GER_focus11
@@ -387,6 +826,12 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus9
 		}
+		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.3
+			}
+		}
 	}
 	focus = {
 		id = GER_focus13
@@ -396,6 +841,18 @@ focus_tree = {
 		y = 5
 		prerequisite = {
 			focus = GER_focus8
+		}
+		completion_reward = {
+			add_resource = {
+				type = coal
+				amount = 5
+				state = 51
+			}
+			add_resource = {
+				type = coal
+				amount = 5
+				state = 57
+			}
 		}
 	}
 	focus = {
@@ -413,6 +870,62 @@ focus_tree = {
 		prerequisite = {  
 			focus = GER_focus15
 		}  
+		completion_reward = {
+			if = {	
+				limit = {
+					42 = {
+						is_fully_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				42 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			42 = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_tech_bonus = {
+				name = GER_invest_in_vereinigte_stahlwerke
+				bonus = 1
+				uses = 1
+				category = excavation_tech
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = { 
+				GER_recovering_economy_modifier_local_resources_factor = 0.05
+				tooltip = local_resources_factor_tt
+			}
+		}
 	}   
 	focus = { 
 		id = GER_focus15 
@@ -422,6 +935,20 @@ focus_tree = {
 		y = 5
 		prerequisite = {
 			focus = GER_focus5
+		}
+		completion_reward = {
+			893={
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			541={
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -448,6 +975,18 @@ focus_tree = {
 		y = 3
 		prerequisite = {
 			focus = GER_focus27
+		}
+		completion_reward = {
+			add_equipment_bonus = {
+				project = FROM
+				bonus = {
+					small_plane_naval_bomber_airframe = {
+						air_range = 0.1
+						naval_strike_attack = 0.1
+					  }
+				}
+			  }
+			
 		}
 	}
 }

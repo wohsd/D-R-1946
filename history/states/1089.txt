@@ -1,0 +1,29 @@
+state = {
+	id = 1089
+	name = "STATE_1089"
+	manpower = 6230700
+	state_category = city
+
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		victory_points = { 
+			9974 1 # Ningbo
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1 # Ningbo Lishe Airbase
+			9974 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+
+	provinces = {
+		1096 1168 7058 7146 9974 10058 19524 19590 19656 19659
+	}
+
+	local_supplies = 0.0 
+}

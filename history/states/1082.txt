@@ -1,0 +1,35 @@
+state={
+	id=1082
+	name="STATE_1082"
+	resources={
+		steel=10
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			6999={
+				landmark_nanjing_presidential_palace= {
+					level = 1
+				}
+			}
+		}
+		victory_points = {
+			6999 20 
+		}
+	}
+
+	provinces={
+		1893 4141 4431 6999 7240 8026 8744 15194 19496 19536 19576 19826 19877 19901 19926 
+	}
+	manpower=43963300
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=0.0 
+}

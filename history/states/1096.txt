@@ -1,0 +1,27 @@
+state={
+	id=1096
+	name="STATE_1096"
+	manpower = 6601000
+	
+	state_category = large_town
+	resources = {
+		coal = 10
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		victory_points = {
+			1519 3 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+	provinces={
+		1027 1203 1438 1519 4074 4469 7158 10480 10507 12078 12300 12344 12432 14022 14237 16577 19581 19596 19767 19768
+	}
+
+	local_supplies=0.0 
+}

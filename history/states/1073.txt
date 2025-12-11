@@ -1,0 +1,26 @@
+state= {
+	id=1073
+	name="STATE_1073"
+	manpower = 3105200
+	state_category = town
+	resources={
+		tungsten=5
+		steel= 5
+	}
+	history= {
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 
+			10404 3 
+		}
+	}
+	provinces={
+		1023 4152 7095 7128 7168 7210 10039 10404 12407 17000 19540 19572
+	}
+
+	local_supplies=0.0 
+}

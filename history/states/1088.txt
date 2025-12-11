@@ -1,0 +1,28 @@
+state = {
+	id = 1088
+	name = "STATE_1088"
+	manpower = 8230700
+	state_category = city
+
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		victory_points = { 
+			7191 1 # Hangzhou
+		}
+		buildings = {
+			infrastructure = 2
+			19822 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+
+	provinces = {
+		4042 4173 7191 10014 10101 11991 19522 19601 19822 19902 
+	}
+
+	local_supplies = 0.0 
+}
