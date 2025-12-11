@@ -13,10 +13,11 @@ state = {
 
 	history = {
 		
-		owner = RUS
-		add_core_of = POL
+		owner = GER
+		add_core_of = GER
 		add_core_of = SIL
-		add_claim_by = PRE
+		add_core_of = PRE
+		add_core_of = POL
 
 		victory_points = {
 			6464 5 # Katovice
