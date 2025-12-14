@@ -32,19 +32,13 @@ state = {
 			air_base = 6
             6521 = {
                 landmark_berlin_reichstag = {
-                    level = 1
+                    level = 1 
                     allowed = {
                         has_dlc = "Gotterdammerung"
                     }
                 }
             }
             3499 = {
-				landmark_berlin_volkshalle = {
-                    level = 1
-                    allowed = {
-                        has_dlc = "Gotterdammerung"
-                    }
-                }
                 land_facility = 1 #Representing Kommersdorf's Research Facilities
             }
 		}
