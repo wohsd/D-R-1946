@@ -1,0 +1,15 @@
+Arab_oil_pipeline = {
+	icon = GFX_decision_category_antarctica
+	picture= GFX_decision_cat_picture_neo_assyrian_empire
+	visible = {
+		tag = USA
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 859 }
+		highlight_state_targets = { state = 857 }
+		highlight_state_targets = { state = 854 }
+		highlight_state_targets = { state = 455 }
+		highlight_state_targets = { state = 454 }
+	}
+	priority = 2
+}

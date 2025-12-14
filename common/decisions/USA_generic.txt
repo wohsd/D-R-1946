@@ -1,0 +1,220 @@
+
+Arab_oil_pipeline = {
+	# 1. 规划蓝图（Planning_blueprint）
+	Planning_blueprint = {
+		priority = 95
+		icon = GFX_decision_antarctica # 可替换为管道专属图标，暂用示例图标
+		days_remove = 180 # 规划耗时180天（6个月），如需默认1天则改回1
+		fire_only_once = yes
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+		}
+		remove_effect = {
+		}	
+		complete_effect = {
+		}
+		
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+		}
+		remove_effect = {
+		}	
+		complete_effect = {
+		}
+		
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	# 2. 外交斡旋（Diplomatic_mediation）
+	Diplomatic_mediation = {
+		priority = 94
+		icon = GFX_decision_antarctica
+		days_remove = 270 # 外交谈判9个月
+		fire_only_once = yes
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+		}
+		remove_effect = {
+		}	
+		complete_effect = {
+		}
+		
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+		}
+		remove_effect = {
+		}	
+		complete_effect = {
+		}
+		
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	# 3. 破土动工（Breaking_ground）
+	Breaking_ground = {
+		priority = 93
+		icon = GFX_decision_antarctica
+		days_remove = 360 # 建设准备12个月
+		fire_only_once = yes
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+		}
+		remove_effect = {
+		}	
+		complete_effect = {
+		}
+		
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	# 4. 沙漠铁军（Desert_construction）
+	Desert_construction = {
+		priority = 92
+		icon = GFX_decision_antarctica
+		days_remove = 540 # 主体建设18个月
+		fire_only_once = yes
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+		}
+		remove_effect = {
+		}	
+		complete_effect = {
+		}
+		
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	# 5. 海法终点（Haifa_terminal）
+	Haifa_terminal = {
+		priority = 91
+		icon = GFX_decision_antarctica
+		days_remove = 180 # 收尾6个月
+		fire_only_once = yes
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+		}
+		remove_effect = {
+		}	
+		complete_effect = {
+		}
+		
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	# 6. 黑金奔流（Oil_operation）
+	Oil_operation = {
+		priority = 90
+		icon = GFX_decision_antarctica
+		days_remove = 90 # 运营准备3个月
+		fire_only_once = yes
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+		}
+		remove_effect = {
+		}	
+		complete_effect = { 
+			859={
+				add_dynamic_modifier = {
+					modifier = Arab_oil
+				}
+		    } 
+			857={
+				add_dynamic_modifier = {
+					modifier = Arab_oil
+				}
+			} 
+			854={
+				add_dynamic_modifier = {
+					modifier = Arab_oil
+				}
+			} 
+			455={
+				add_dynamic_modifier = {
+					modifier = Arab_oil
+				}
+			} 
+			454={
+				add_dynamic_modifier = {
+					modifier = Arab_oil
+				}
+			} 
+		}
+		
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	# 7. 生命线维护（Pipeline_maintenance）
+	Pipeline_maintenance = {
+		priority = 89
+		icon = GFX_decision_antarctica
+		days_remove = 30 # 每月维护（30天）
+		fire_only_once = no # 可重复触发
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+		}
+		remove_effect = {
+		}	
+		complete_effect = {
+		}
+		
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = decision_cost_CP_25
+	}
+
+	
+}

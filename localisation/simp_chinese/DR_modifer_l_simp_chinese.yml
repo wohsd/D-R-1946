@@ -11,3 +11,5 @@ all_infantry_eco_tt:"陆军开支：§H$VALUE|2$B§!"
 all_navy_eco_tt:"海军开支：§H$VALUE|2$B§!"
 
 all_air_eco_tt:"空军开支：§H$VALUE|2$B§!"
+
+Arab_oil:"输油管道"

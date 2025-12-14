@@ -24,4 +24,10 @@ spriteTypes = {
 		name = "GFX_ISR_newevent_1"
 		texturefile = "gfx/event/ISR_newevent_1.png"
 	}
+
+
+	spriteType = {
+		name = "GFX_GER_newevent_1"
+		texturefile = "gfx/event/GER_newevent_1.png"
+	}
 } 

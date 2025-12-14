@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ Arab_oil_pipeline:0 "跨阿拉伯横贯油管"
+ Arab_oil_pipeline_desc:0 "阿拉伯横贯油管计划从凯苏马通往赛达港的原油管道，全长1718公里，管径为30英寸与31英寸，是中东地区最长的原油运输管道。该管道主要功能为缩短波斯湾原油输送至欧洲及美洲的距离，输油能力预计每年能达到2500万吨。"
+
+ Planning_blueprint:0"规划管道蓝图"
+ Diplomatic_mediation:0"争取管道通行权"
+ Breaking_ground:0"破土动工"
+ Desert_construction:0"主体管道铺设"
+ Haifa_terminal:0"管道收尾"
+ Oil_operation:0"运营管道"
+ Pipeline_maintenance:0"管道日常检修"

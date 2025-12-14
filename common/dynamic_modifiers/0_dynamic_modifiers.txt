@@ -44,3 +44,16 @@ CHI_National_Revolutionary_Army = {
 	pocket_penalty = NRA_pocket_penalty0
 	planning_speed = NRA_planning_speed002
 }
+
+
+
+
+Arab_oil = {
+	remove_trigger = { 
+	}
+	icon = GFX_modifiers_Arab_oil
+	
+	state_resources_factor = 0.2
+	state_resource_oil = 5
+	state_production_speed_fuel_silo_factor = 0.2
+}
