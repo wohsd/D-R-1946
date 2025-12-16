@@ -11,26 +11,6 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
-			19892={
-				landmark_nanjing_presidential_palace = {
-					level = 1
-				}
-			}
-			19872={
-				landmark_nanjing_presidential_palace = {
-					level = 1
-				}
-			}
-			19895={
-				landmark_nanjing_presidential_palace = {
-					level = 1
-				}
-			}
-			19853={
-				landmark_nanjing_presidential_palace = {
-					level = 1
-				}
-			}
 			11913={
 				landmark_nanjing_presidential_palace = {
 					level = 1

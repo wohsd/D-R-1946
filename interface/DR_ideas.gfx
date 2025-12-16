@@ -203,7 +203,19 @@ spriteType = {
 	texturefile = "gfx\interface\ideas\CHI\CHI_Triumph_Republican_Constitutionalism.png"
 }
 
-
+###GER
+	spriteType = {
+		name = "GFX_idea_GER_Eurasian_Hegemony"
+		texturefile = "gfx\interface\ideas\GER\GER_Eurasian_Hegemony.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Finale_Germany"
+		texturefile = "gfx\interface\ideas\GER\GER_Finale_Germany.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_German_Armed_Forces"
+		texturefile = "gfx\interface\ideas\GER\GER_German_Armed_Forces.png"
+	}
 
 
 ###JAP

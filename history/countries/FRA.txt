@@ -34,4 +34,8 @@ add_ideas = {
 	Industrialization_level2
 Public_Education3
 	Police_policy3
+
+	FRA_Champagne_Agreement
+	FRA_Burdened_Foreign_Debt
+	FRA_Food_crisis
 }

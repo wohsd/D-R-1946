@@ -27,7 +27,7 @@ spriteTypes = {
 
 
 	spriteType = {
-		name = "GFX_GER_newevent_1"
-		texturefile = "gfx/event/GER_newevent_1.png"
+		name = "GFX_GER_focusevent_1"
+		texturefile = "gfx/event/GER_focusevent_1.png"
 	}
 } 
