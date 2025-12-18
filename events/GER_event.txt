@@ -1,6 +1,6 @@
 ﻿
 add_namespace = GER_focusevent
-add_namespace = GER_focusevent
+add_namespace = GER_countryevent
 news_event = {
 	id = GER_focusevent.1
 	title = GER_focusevent.1.t
@@ -20,5 +20,618 @@ news_event = {
 			}
 		}
 		#landmark_berlin_volkshalle
+	}
+}
+
+# 基础事件模板续写（GER_countryevent.1 至 GER_countryevent.16）
+country_event = {
+	id = GER_countryevent.1
+	title = GER_countryevent.1.t
+	desc = GER_countryevent.1.d
+	picture = GFX_GER_countryevent_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.1.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.2
+	title = GER_countryevent.2.t
+	desc = GER_countryevent.2.d
+	picture = GFX_GER_countryevent_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.2.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.3
+	title = GER_countryevent.3.t
+	desc = GER_countryevent.3.d
+	picture = GFX_GER_countryevent_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.3.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.4
+	title = GER_countryevent.4.t
+	desc = GER_countryevent.4.d
+	picture = GFX_GER_countryevent_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.4.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.5
+	title = GER_countryevent.5.t
+	desc = GER_countryevent.5.d
+	picture = GFX_GER_countryevent_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.5.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.6
+	title = GER_countryevent.6.t
+	desc = GER_countryevent.6.d
+	picture = GFX_GER_countryevent_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.6.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.7
+	title = GER_countryevent.7.t
+	desc = GER_countryevent.7.d
+	picture = GFX_GER_countryevent_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.7.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.8
+	title = GER_countryevent.8.t
+	desc = GER_countryevent.8.d
+	picture = GFX_GER_countryevent_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.8.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.9
+	title = GER_countryevent.9.t
+	desc = GER_countryevent.9.d
+	picture = GFX_GER_countryevent_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.9.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.10
+	title = GER_countryevent.10.t
+	desc = GER_countryevent.10.d
+	picture = GFX_GER_countryevent_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.10.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.11
+	title = GER_countryevent.11.t
+	desc = GER_countryevent.11.d
+	picture = GFX_GER_countryevent_11
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.11.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.12
+	title = GER_countryevent.12.t
+	desc = GER_countryevent.12.d
+	picture = GFX_GER_countryevent_12
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.12.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.13
+	title = GER_countryevent.13.t
+	desc = GER_countryevent.13.d
+	picture = GFX_GER_countryevent_13
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.13.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.14
+	title = GER_countryevent.14.t
+	desc = GER_countryevent.14.d
+	picture = GFX_GER_countryevent_14
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.14.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.15
+	title = GER_countryevent.15.t
+	desc = GER_countryevent.15.d
+	picture = GFX_GER_countryevent_15
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.15.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.16
+	title = GER_countryevent.16.t
+	desc = GER_countryevent.16.d
+	picture = GFX_GER_countryevent_16
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.16.a
+	}
+}
+
+
+
+
+country_event = {
+	id = GER_countryevent.17
+	title = GER_countryevent.17.t
+	desc = GER_countryevent.17.d
+	picture = GFX_GER_countryevent_17
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.17.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.18
+	title = GER_countryevent.18.t
+	desc = GER_countryevent.18.d
+	picture = GFX_GER_countryevent_18
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.18.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.19
+	title = GER_countryevent.19.t
+	desc = GER_countryevent.19.d
+	picture = GFX_GER_countryevent_19
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.19.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.20
+	title = GER_countryevent.20.t
+	desc = GER_countryevent.20.d
+	picture = GFX_GER_countryevent_20
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.20.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.21
+	title = GER_countryevent.21.t
+	desc = GER_countryevent.21.d
+	picture = GFX_GER_countryevent_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.21.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.22
+	title = GER_countryevent.22.t
+	desc = GER_countryevent.22.d
+	picture = GFX_GER_countryevent_22
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.22.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.23
+	title = GER_countryevent.23.t
+	desc = GER_countryevent.23.d
+	picture = GFX_GER_countryevent_23
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.23.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.24
+	title = GER_countryevent.24.t
+	desc = GER_countryevent.24.d
+	picture = GFX_GER_countryevent_24
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.24.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.25
+	title = GER_countryevent.25.t
+	desc = GER_countryevent.25.d
+	picture = GFX_GER_countryevent_25
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.25.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.26
+	title = GER_countryevent.26.t
+	desc = GER_countryevent.26.d
+	picture = GFX_GER_countryevent_26
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.26.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.27
+	title = GER_countryevent.27.t
+	desc = GER_countryevent.27.d
+	picture = GFX_GER_countryevent_27
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.27.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.28
+	title = GER_countryevent.28.t
+	desc = GER_countryevent.28.d
+	picture = GFX_GER_countryevent_28
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.28.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.29
+	title = GER_countryevent.29.t
+	desc = GER_countryevent.29.d
+	picture = GFX_GER_countryevent_29
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.29.a
+	}
+}
+
+
+# 1946年1-3月
+country_event = {
+	id = GER_countryevent.30
+	title = GER_countryevent.30.t
+	desc = GER_countryevent.30.d
+	picture = GFX_GER_countryevent_30
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.30.a
+	}
+}
+
+# 1946年4-6月
+country_event = {
+	id = GER_countryevent.31
+	title = GER_countryevent.31.t
+	desc = GER_countryevent.31.d
+	picture = GFX_GER_countryevent_31
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.31.a
+	}
+}
+
+# 1946年7-9月
+country_event = {
+	id = GER_countryevent.32
+	title = GER_countryevent.32.t
+	desc = GER_countryevent.32.d
+	picture = GFX_GER_countryevent_32
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.32.a
+	}
+}
+
+# 1946年10-12月
+country_event = {
+	id = GER_countryevent.33
+	title = GER_countryevent.33.t
+	desc = GER_countryevent.33.d
+	picture = GFX_GER_countryevent_33
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.33.a
+	}
+}
+
+# 1947年1-3月
+country_event = {
+	id = GER_countryevent.34
+	title = GER_countryevent.34.t
+	desc = GER_countryevent.34.d
+	picture = GFX_GER_countryevent_34
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.34.a
+	}
+}
+
+# 1947年4-6月
+country_event = {
+	id = GER_countryevent.35
+	title = GER_countryevent.35.t
+	desc = GER_countryevent.35.d
+	picture = GFX_GER_countryevent_35
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.35.a
+	}
+	option = {
+		name = GER_countryevent.35.b
+	}
+}
+
+# 1947年7-9月
+country_event = {
+	id = GER_countryevent.36
+	title = GER_countryevent.36.t
+	desc = GER_countryevent.36.d
+	picture = GFX_GER_countryevent_36
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.36.a
+	}
+}
+
+# 1947年10-12月
+country_event = {
+	id = GER_countryevent.37
+	title = GER_countryevent.37.t
+	desc = GER_countryevent.37.d
+	picture = GFX_GER_countryevent_37
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.37.a
+	}
+}
+
+# 1948年1-3月
+country_event = {
+	id = GER_countryevent.38
+	title = GER_countryevent.38.t
+	desc = GER_countryevent.38.d
+	picture = GFX_GER_countryevent_38
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.38.a
+	}
+}
+
+# 1948年4-6月
+country_event = {
+	id = GER_countryevent.39
+	title = GER_countryevent.39.t
+	desc = GER_countryevent.39.d
+	picture = GFX_GER_countryevent_39
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.39.a
+	}
+}
+
+# 1948年7-9月
+country_event = {
+	id = GER_countryevent.40
+	title = GER_countryevent.40.t
+	desc = GER_countryevent.40.d
+	picture = GFX_GER_countryevent_40
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.40.a
+	}
+}
+
+# 1948年10-12月
+# 1948年10-12月
+country_event = {
+	id = GER_countryevent.41
+	title = GER_countryevent.41.t
+	desc = GER_countryevent.41.d
+	picture = GFX_GER_countryevent_41
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.41.a
+	}
+}
+
+# 1948年10月 央行加息
+country_event = {
+	id = GER_countryevent.42
+	title = GER_countryevent.42.t
+	desc = GER_countryevent.42.d
+	picture = GFX_GER_countryevent_42
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.42.a
+	}
+}
+
+# 1948年11月 波茨坦共识
+country_event = {
+	id = GER_countryevent.43
+	title = GER_countryevent.43.t
+	desc = GER_countryevent.43.d
+	picture = GFX_GER_countryevent_43
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.43.a
+	}
+}
+
+# 1948年12月 白皮书发布
+country_event = {
+	id = GER_countryevent.44
+	title = GER_countryevent.44.t
+	desc = GER_countryevent.44.d
+	picture = GFX_GER_countryevent_44
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.44.a
+	}
+}
+
+# 以下为 1949 年1-3月 示例（可继续追加）
+country_event = {
+	id = GER_countryevent.45
+	title = GER_countryevent.45.t
+	desc = GER_countryevent.45.d
+	picture = GFX_GER_countryevent_45
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.45.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.46
+	title = GER_countryevent.46.t
+	desc = GER_countryevent.46.d
+	picture = GFX_GER_countryevent_46
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.46.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.47
+	title = GER_countryevent.47.t
+	desc = GER_countryevent.47.d
+	picture = GFX_GER_countryevent_47
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.47.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.48
+	title = GER_countryevent.48.t
+	desc = GER_countryevent.48.d
+	picture = GFX_GER_countryevent_48
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.48.a
+	}
+}
+
+country_event = {
+	id = GER_countryevent.49
+	title = GER_countryevent.49.t
+	desc = GER_countryevent.49.d
+	picture = GFX_GER_countryevent_49
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GER_countryevent.49.a
 	}
 }

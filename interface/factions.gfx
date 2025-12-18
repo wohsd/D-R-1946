@@ -21,12 +21,12 @@
 			texturefile = "gfx/interface/factions/faction_logos/faction_icon_CFS_miniature.dds"
 		}
 		spriteType = {
-			name = "GFX_faction_icon_JAP"
-			texturefile = "gfx/interface/factions/faction_logos/faction_icon_JAP.dds"
+			name = "GFX_faction_icon_GEA"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_GEA.dds"
 			noOfFrames = 2
 		}
 		spriteType = {
-			name = "GFX_faction_icon_JAP_miniature"
-			texturefile = "gfx/interface/factions/faction_logos/faction_icon_JAP_miniature.dds"
+			name = "GFX_faction_icon_GEA_miniature"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_GEA_miniature.dds"
 		}
 	}

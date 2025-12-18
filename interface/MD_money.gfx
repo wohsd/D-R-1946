@@ -1,5 +1,10 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_parliament_icon"
+		texturefile = "gfx/interface/parliament_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_eco_icon"
 		texturefile = "gfx/interface/eco_icon.png"
 		legacy_lazy_load = no
