@@ -26,7 +26,7 @@ ideas = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -81,7 +81,7 @@ ideas = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -131,7 +131,7 @@ ideas = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -181,7 +181,7 @@ ideas = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -231,7 +231,7 @@ ideas = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {

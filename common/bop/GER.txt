@@ -26,7 +26,7 @@ GER_bop_balance = {
 	} 	
 	side = { 
 		id = GER_bop_right_side
-		icon = GFX_idea_generic_degauss_ship_hulls
+		icon = GFX_idea_William_III
 		range = { 
 			id = GER_bop_right_side_range
 			min = 0.1

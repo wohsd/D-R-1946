@@ -8,9 +8,7 @@ DIPLOMACY_WAR_ENABLE_TRIGGER = {
 
 
 DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
-    NOT = {
-		custom_trigger_tooltip = {has_global_flag = dulang_xingdong_on tooltip = "不能加阵营，我说不能就不能"}
-	}
+	always = no
 }
 
 DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {

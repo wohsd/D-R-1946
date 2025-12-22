@@ -46,10 +46,7 @@ on_actions = {
 				GDP_resource_imported = yes 
 				Income_Expenditure_setup = yes  
 				Inflation_rate_eco_setup = yes 
-
-				Medical_expenses_setup = yes 
-				Education_expenses_setup = yes 
-				Government_expenses_setup = yes 
+ 
 				Expenditure_setup = yes
 			}
 		}

@@ -27,7 +27,7 @@ ideas = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -78,7 +78,7 @@ ideas = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -142,7 +142,7 @@ ideas = {
 				gdp_growth_modifier=-0.03
 				new_nat_tre_modifier=0.1
 			}
-			cost = 0
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -193,7 +193,7 @@ ideas = {
 				new_nat_tre_modifier=0.05
 				min_export=0.05
 			}
-			cost = 0
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -246,7 +246,7 @@ ideas = {
 				gdp_growth_modifier=-0.05
 			}
 			
-			cost = 0
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
