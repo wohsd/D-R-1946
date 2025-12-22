@@ -311,7 +311,7 @@ Inflation_rate_eco_setup = {
 			Inflation_rate_eco = 100
 		}
 
-		#add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
+		add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
 		
 	}
 }

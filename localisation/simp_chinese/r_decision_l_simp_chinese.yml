@@ -9,3 +9,9 @@
  Haifa_terminal:0"管道收尾"
  Oil_operation:0"运营管道"
  Pipeline_maintenance:0"管道日常检修"
+
+ GER_Prime_Minister_Promise:0"首相的任期"
+ GER_Prime_Minister_Promise_desc:0"距离帕彭首相还有最后一年，下次大选对我们意义重大。"
+ GER_Employment_security:0"就业保障"
+ GER_Social_security:0"社会保障"
+ GER_Educational_Support:0"教育保障"

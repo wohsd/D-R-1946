@@ -1,0 +1,40 @@
+
+GER_bop_balance = {
+	initial_value = 0.25
+	left_side = GER_bop_left_side
+	right_side = GER_bop_right_side
+#	decision_category = GER_mefo_bills_category
+	range = {
+		id = GER_mid_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+			war_support_weekly = 0.5
+		}
+	}
+	side = {
+		id = GER_bop_left_side
+		icon = GFX_bop_SWI_centralization_canton_side
+		range = {
+			id = GER_bop_left_side_range
+			min = -1
+			max = -0.1
+			modifier = {
+				war_support_weekly = 0.1
+			}
+		}
+	} 	
+	side = { 
+		id = GER_bop_right_side
+		icon = GFX_idea_generic_degauss_ship_hulls
+		range = { 
+			id = GER_bop_right_side_range
+			min = 0.1
+			max = 1
+			modifier = {
+				war_support_weekly = 0.9
+			}
+		}
+	}
+}
+

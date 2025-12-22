@@ -27,29 +27,44 @@
 #########新
 #########新
  labor_laws1:0 "无劳工保护"
+ labor_laws1_desc:0 "当前劳工法案推进至：§H[?ROOT.labor_var]§!"
  labor_laws2:0 "最低工人权利"
+ labor_laws2_desc:0 "当前劳工法案推进至：§H[?ROOT.labor_var]§!"
  labor_laws3:0 "有限工人权利"
+ labor_laws3_desc:0 "当前劳工法案推进至：§H[?ROOT.labor_var]§!"
  labor_laws4:0 "适当工人权利"
+ labor_laws4_desc:0 "当前劳工法案推进至：§H[?ROOT.labor_var]§!"
  labor_laws5:0 "工人福利国家"
+ labor_laws5_desc:0 "当前劳工法案推进至：§H[?ROOT.labor_var]§!"
 
 #########新
 #########新
 
  Public_Education1:0 "无公共教育"
+ Public_Education1_desc:0 "当前教育法案推进至：§H[?ROOT.Educational_var]§!"
  Public_Education2:0 "初等义务教育"
+ Public_Education2_desc:0 "当前教育法案推进至：§H[?ROOT.Educational_var]§!"
  Public_Education3:0 "中等义务教育"
+ Public_Education3_desc:0 "当前教育法案推进至：§H[?ROOT.Educational_var]§!"
  Public_Education4:0 "高等教育补贴"
+ Public_Education4_desc:0 "当前教育法案推进至：§H[?ROOT.Educational_var]§!"
  Public_Education5:0 "公立高等教育"
+ Public_Education5_desc:0 "当前教育法案推进至：§H[?ROOT.Educational_var]§!"
 
 
 #########新
 #########新
 
  Women_rights:0 "妇女权利"
+ Women_rights_desc:0 "当前平权法案推进至：§H[?ROOT.Women_var]§!"
  Women_rights1:0 "社会法定监护"
+ Women_rights1_desc:0 "当前平权法案推进至：§H[?ROOT.Women_var]§!"
  Women_rights2:0 "传统性别角色"
+ Women_rights2_desc:0 "当前平权法案推进至：§H[?ROOT.Women_var]§!"
  Women_rights3:0 "女性平等权利"
+ Women_rights3_desc:0 "当前平权法案推进至：§H[?ROOT.Women_var]§!"
  Women_rights4:0 "母权制社会"
+ Women_rights4_desc:0 "当前平权法案推进至：§H[?ROOT.Women_var]§!"
 
 
 
@@ -60,18 +75,27 @@
  social_security:0 "社会保障"
 
  Livelihood_investment1:0 "无社会保障"
+ Livelihood_investment1_desc:0 "当前社保法案推进至：§H[?ROOT.Livelihood_var]§!"
  Livelihood_investment2:0 "最低社会保障"
+ Livelihood_investment2_desc:0 "当前社保法案推进至：§H[?ROOT.Livelihood_var]§!"
  Livelihood_investment3:0 "中等社会福利"
+ Livelihood_investment3_desc:0 "当前社保法案推进至：§H[?ROOT.Livelihood_var]§!"
  Livelihood_investment4:0 "高昂社会福利"
+ Livelihood_investment4_desc:0 "当前社保法案推进至：§H[?ROOT.Livelihood_var]§!"
  Livelihood_investment5:0 "国家全面补贴"
+ Livelihood_investment5_desc:0 "当前社保法案推进至：§H[?ROOT.Livelihood_var]§!"
 #########新
 #########新
 
  Racial_policy:0 "种族政策"
  Racial_policy1:0 "驱逐少数民族"
+ Racial_policy1_desc:0 "当前种族法案推进至：§H[?ROOT.Racial_var]§!"
  Racial_policy2:0 "少数族裔法案"
+ Racial_policy2_desc:0 "当前种族法案推进至：§H[?ROOT.Racial_var]§!"
  Racial_policy3:0 "比例代表制"
+ Racial_policy3_desc:0 "当前种族法案推进至：§H[?ROOT.Racial_var]§!"
  Racial_policy4:0 "超额代表"
+ Racial_policy4_desc:0 "当前种族法案推进至：§H[?ROOT.Racial_var]§!"
 
 
 
@@ -79,37 +103,53 @@
 #########新
  Police_policy:0 "执法机关"
  Police_policy2:0 "地方公安机关"
+ Police_policy2_desc:0 "当前警察法案推进至：§H[?ROOT.Police_var]§!"
  Police_policy3:0 "武装警察机关"
+ Police_policy3_desc:0 "当前警察法案推进至：§H[?ROOT.Police_var]§!"
  Police_policy4:0 "社会监控机关"
+ Police_policy4_desc:0 "当前警察法案推进至：§H[?ROOT.Police_var]§!"
  Police_policy5:0 "国家秘密警察"
+ Police_policy5_desc:0 "当前警察法案推进至：§H[?ROOT.Police_var]§!"
 #########新
 #########新
  Public_control:0 "集会权利"
  Public_control2:0 "新闻言论自由"
+ Public_control2_desc:0 "当前新闻法案推进至：§H[?ROOT.Public_var]§!"
  Public_control3:0 "新闻出版审查"
+ Public_control3_desc:0 "当前新闻法案推进至：§H[?ROOT.Public_var]§!"
  Public_control4:0 "官方媒体控制"
+ Public_control4_desc:0 "当前新闻法案推进至：§H[?ROOT.Public_var]§!"
  Public_control5:0 "民间异论非法"
+ Public_control5_desc:0 "当前新闻法案推进至：§H[?ROOT.Public_var]§!"
 
 
 #########新
 #########新
  Industrialization_level1:0 "手工产业"
+ Industrialization_level1_desc:0 "当前工业水平推进至：§H[?ROOT.Industrialization_var]§!"
  Industrialization_level2:0 "机械化制造业"
+ Industrialization_level2_desc:0 "当前工业水平推进至：§H[?ROOT.Industrialization_var]§!"
  Industrialization_level3:0 "流水线制造业"
+ Industrialization_level3_desc:0 "当前工业水平推进至：§H[?ROOT.Industrialization_var]§!"
  Industrialization_level4:0 "高精尖工业"
+ Industrialization_level4_desc:0 "当前工业水平推进至：§H[?ROOT.Industrialization_var]§!"
  Industrialization_level5:0 "现代化工业"
+ Industrialization_level5_desc:0 "当前工业水平推进至：§H[?ROOT.Industrialization_var]§!"
 
 #########新
 #########新
  Agriculture_level1:0 "自给农业"
+ Agriculture_level1_desc:0 "当前农业水平推进至：§H[?ROOT.Agriculture_var]§!"
  Agriculture_level2:0 "基本粮食生产"
+ Agriculture_level2_desc:0 "当前农业水平推进至：§H[?ROOT.Agriculture_var]§!"
  Agriculture_level3:0 "机械化农村"
+ Agriculture_level3_desc:0 "当前农业水平推进至：§H[?ROOT.Agriculture_var]§!"
  Agriculture_level4:0 "多样化农业繁荣"
+ Agriculture_level4_desc:0 "当前农业水平推进至：§H[?ROOT.Agriculture_var]§!"
  Agriculture_level5:0 "现代化农业"
+ Agriculture_level5_desc:0 "当前农业水平推进至：§H[?ROOT.Agriculture_var]§!"
 #########新
 #########新
- Mixed_economy:0 "混合经济"
-
 #########新
 #########新
 #########新

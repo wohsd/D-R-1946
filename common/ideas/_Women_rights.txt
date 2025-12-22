@@ -7,10 +7,22 @@ ideas = {
 		Women_rights1 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law4_var_1tt
+						check_variable = {
+							var = Women_var
+							value = 0
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Women_var
+							value = 250
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -30,10 +42,22 @@ ideas = {
 		Women_rights2 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law4_var_2tt
+						check_variable = {
+							var = Women_var
+							value = 250
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Women_var
+							value = 500
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -53,10 +77,22 @@ ideas = {
 		Women_rights3 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law4_var_3tt
+						check_variable = {
+							var = Women_var
+							value = 500
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Women_var
+							value = 750
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -72,10 +108,22 @@ ideas = {
 		Women_rights4 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law4_var_4tt
+						check_variable = {
+							var = Women_var
+							value = 750
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Women_var
+							value = 1000
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}

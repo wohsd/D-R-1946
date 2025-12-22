@@ -1,0 +1,53 @@
+
+GER_Prime_Minister_Promise={
+	GER_Employment_security = {
+		activation = {
+			has_completed_focus = GER_focus40
+		}
+		available = {
+			num_of_factories > 190
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		days_mission_timeout = 100
+		complete_effect = {
+		}
+		timeout_effect = {
+			
+		}
+	}
+	GER_Social_security = {
+		activation = {
+			has_completed_focus = GER_focus40
+		}
+		available = {
+			has_idea = Livelihood_investment4
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		days_mission_timeout = 100
+		complete_effect = {
+			add_ideas = my_idea
+		}
+		timeout_effect = {
+			
+		}
+	}
+	GER_Educational_Support = {
+		activation = {
+			has_completed_focus = GER_focus40
+		}
+		available = {
+			has_idea = Public_Education4
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		days_mission_timeout = 100
+		complete_effect = {
+			add_ideas = my_idea
+		}
+		timeout_effect = {
+			
+		}
+	}
+}

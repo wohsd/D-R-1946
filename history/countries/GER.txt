@@ -5,6 +5,21 @@ set_air_oob = "GER_1936_air_bba"
 set_naval_oob = "GER_1936_naval"
 set_convoys = 800
 
+set_variable = {Educational_var = 550}
+set_variable = {labor_var = 550}
+set_variable = {Women_var = 550}
+set_variable = {Livelihood_var = 550}
+set_variable = {Racial_var = 550}
+set_variable = {Police_var = 550}
+set_variable = {Public_var = 550}
+set_variable = {Industrialization_var = 550}
+set_variable = {Agriculture_var = 550}
+
+set_power_balance = {
+	id = GER_bop_balance
+	set_value = -0.7
+}
+
 set_technology = {
 
 	# Infantry
@@ -109,7 +124,7 @@ recruit_character = GER_Franz_von_Papen
 recruit_character = GER_Werner_Heisenberg
 recruit_character = GER_Albert_Einstein
 
-
+recruit_character = GER_Kurt_Schumacher
 
 set_politics = {
 	ruling_party = Conservatism
@@ -138,9 +153,10 @@ add_ideas = {
 	Public_Education3
 	Police_policy3
 
-	GER_German_Armed_Forces
+	GER_Ash_Roll
 	GER_Finale_Germany
 	GER_Eurasian_Hegemony
+
 }
 
 

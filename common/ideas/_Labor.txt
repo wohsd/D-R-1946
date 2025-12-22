@@ -7,10 +7,22 @@ ideas = {
 		labor_laws1 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_1tt
+						check_variable = {
+							var = labor_var
+							value = 0
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = labor_var
+							value = 250
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -42,10 +54,22 @@ ideas = {
 		labor_laws2 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_2tt
+						check_variable = {
+							var = labor_var
+							value = 250
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = labor_var
+							value = 500
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -74,13 +98,25 @@ ideas = {
    			}
 		}
 		
-		labor_laws4 = {
+		labor_laws3 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_3tt
+						check_variable = {
+							var = labor_var
+							value = 500
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = labor_var
+							value = 750
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -93,13 +129,25 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				}
 		}
-		labor_laws5 = {
+		labor_laws4 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_4tt
+						check_variable = {
+							var = labor_var
+							value = 750
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = labor_var
+							value = 950
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -112,6 +160,38 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.15
 				production_factory_max_efficiency_factor = 0.15
 				}
+		}
+		labor_laws5 = {
+
+			available = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_5tt
+						check_variable = {
+							var = labor_var
+							value = 950
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = labor_var
+							value = 1000
+							compare = less_than_or_equals
+						}
+					}
+				}
+			}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+			}
 		}
 	}
 }

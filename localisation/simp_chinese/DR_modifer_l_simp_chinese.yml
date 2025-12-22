@@ -1,15 +1,50 @@
 ﻿l_simp_chinese:
 GDP_Growth:"GDP增长率"
+Inflation_rate_modifer:"通胀率"
 GDP_avg_Growth:"人均GDP增长率"
 GDP_resource_exported:"外贸收入"
 GDP_resource_imported:"外贸支出"
 
 income_tt:"收入：§H$VALUE|2$B§!"
 
-all_infantry_eco_tt:"陆军开支：§H$VALUE|2$B§!"
+all_infantry_eco_tt:"§H陆军§!开支：§H$VALUE|2$B§!"
 
-all_navy_eco_tt:"海军开支：§H$VALUE|2$B§!"
+all_navy_eco_tt:"§H海军§!开支：§H$VALUE|2$B§!"
 
-all_air_eco_tt:"空军开支：§H$VALUE|2$B§!"
+all_air_eco_tt:"§H空军§!开支：§H$VALUE|2$B§!"
+
+
+
+Medical_expenses_eco_tt:"§H医疗§!支出：§H$VALUE|2$B§!"
+
+Education_expenses_eco_tt:"§H教育§!支出：§H$VALUE|2$B§!"
+
+Government_expenses_eco_tt:"§H福利§!支出：§H$VALUE|2$B§!"
+
+
 
 Arab_oil:"输油管道"
+
+
+Livelihood_var_tt:"§H社保法案§!推进：§H$VALUE|2$§!点"
+Educational_var_tt:"§H教育法案§!推进：§H$VALUE|2$§!点"
+labor_var_tt:"§H劳工法案§!推进：§H$VALUE|2$§!点"
+
+
+law5_var_1tt:"法案推进至：§H0-250§!区间"
+law5_var_2tt:"法案推进至：§H250-500§!区间"
+law5_var_3tt:"法案推进至：§H500-750§!区间"
+law5_var_4tt:"法案推进至：§H750-950§!区间"
+law5_var_5tt:"法案推进至：§H950-1000§!区间"
+
+law4_var_1tt:"法案推进至：§H0-250§!区间"
+law4_var_2tt:"法案推进至：§H250-500§!区间"
+law4_var_3tt:"法案推进至：§H500-750§!区间"
+law4_var_4tt:"法案推进至：§H750-1000§!区间"
+
+
+level5_var_1tt:"水平推进至：§H0-250§!区间"
+level5_var_2tt:"水平推进至：§H250-500§!区间"
+level5_var_3tt:"水平推进至：§H500-750§!区间"
+level5_var_4tt:"水平推进至：§H750-950§!区间"
+level5_var_5tt:"水平推进至：§H950-1000§!区间"

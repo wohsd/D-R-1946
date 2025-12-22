@@ -3,6 +3,12 @@
 #############################
 
 # Adds Weekly Stability when < 50%
+Inflation_rate_modifer= {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
 GDP_Growth = {
 	color_type = good
 	value_type = percentage

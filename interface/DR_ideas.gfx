@@ -216,7 +216,14 @@ spriteType = {
 		name = "GFX_idea_GER_German_Armed_Forces"
 		texturefile = "gfx\interface\ideas\GER\GER_German_Armed_Forces.png"
 	}
-
+	spriteType = {
+		name = "GFX_idea_GER_Ash_Roll"
+		texturefile = "gfx\interface\ideas\GER\GER_Ash_Roll.png"
+	}
+    spriteType = {
+		name = "GFX_idea_William_III"
+		texturefile = "gfx\interface\bop\William_III.png"
+	}
 
 ###JAP
 	spriteType = {

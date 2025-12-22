@@ -12,8 +12,9 @@ focus_tree = {
 		id = GER_focus1
 		icon = GFX_GER_focus1
 		cost = 5
-		x = 12
+		x = 27
 		y = 0
+
 		completion_reward = {
 			add_faction_influence_ratio = 0.025
 			GER_Franz_von_Papen = {
@@ -38,62 +39,205 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_focus21
-		icon = GFX_GER_focus21
-		cost = 10
-		x = 29
-		y = 0
-		completion_reward = {
-			add_mastery_bonus = {
-				bonus = 0.02
-				days = 365
-				name = CHI_military_affairs_commission_sea
-				# FILTERS:
-				folder = land
-				grand_doctrine = mobile_warfare
-				sub_doctrine = mobile_infantry
-				track = infantry
-				index = 1
-			}
-		}
-	}
-	focus = {
 		id = GER_focus2
 		icon = GFX_GER_focus2
 		cost = 5
-		x = 12
+		x = 27
 		y = 1
 		prerequisite = {
 			focus = GER_focus1
 		}
+		prerequisite = {
+			focus = GER_focus39
+		}
+	}
+	focus = {
+		id = GER_focus39
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 15
+		y = 0
 		completion_reward = {
-			add_faction_influence_ratio = 0.025
+			unlock_decision_category_tooltip = GER_Prime_Minister_Promise
+			activate_mission = GER_Employment_security
+			activate_mission = GER_Social_security
+			activate_mission = GER_Educational_Support
+		}
+	}
+	focus = {
+		id = GER_focus40
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 12
+		y = 1
+		prerequisite = {
+			focus = GER_focus39
+		}
+		prerequisite = {
+		}
+		completion_reward={
+			country_event=GER_countryevent.22
+			remove_ideas = GER_Ash_Roll
+		}
+	}
+	focus = {
+		id = GER_focus41
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 15
+		y = 1
+		prerequisite = {
+			focus = GER_focus39
+		}
+		prerequisite = {
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_to_variable = {
+				labor_var = 10
+			}
+			custom_effect_tooltip = {
+				localization_key = labor_var_tt
+				VALUE = "+10.00"
+			}
+			add_to_variable = {
+				Livelihood_var = 10
+			}
+			custom_effect_tooltip = {
+				localization_key = Livelihood_var_tt
+				VALUE = "+10.00"
+			}
+
+			add_to_variable = {
+				Government_expenses = 2
+			}
+			custom_effect_tooltip = {
+				localization_key = Government_expenses_eco_tt
+				VALUE = "+2.00"
+			}
+			add_to_variable = {
+				Medical_expenses = 2 
+			}
+			custom_effect_tooltip = {
+				localization_key = Medical_expenses_eco_tt
+				VALUE = "+2.00"
+			}
+
+		} 
+	}
+	focus = {
+		id = GER_focus42
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 18  
+		y = 1
+		prerequisite = {
+			focus = GER_focus39
+		}
+		prerequisite = {
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_to_variable = {
+				Educational_var = 10
+			}
+			custom_effect_tooltip = {
+				localization_key = Educational_var_tt
+				VALUE = "+10.00"
+			}
+
+			add_to_variable = {
+				Education_expenses = 2
+			}
+			custom_effect_tooltip = {
+				localization_key = Education_expenses_eco_tt
+				VALUE = "+2.00"
+			}
+		}
+	}
+	focus = {
+		id = GER_focus43
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 17
+		y = 3
+		prerequisite = {
+			focus = GER_focus40
+		}
+		prerequisite = {
+			focus = GER_focus41
+		}
+		prerequisite = {
+			focus = GER_focus42
+		}
+		mutually_exclusive = {
+			focus = GER_focus44
+		}
+		completion_reward={
+			set_politics = {
+				ruling_party = Reformism
+				elections_allowed = no
+			} 
+			hidden_effect={
+				set_popularities = {
+					Dictatorship = 5
+					Liberalism = 5
+					Conservatism = 30
+					Nationalism = 5
+					Reformism = 45
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = GER_focus44
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 13 
+		y = 3
+		prerequisite = {
+			focus = GER_focus40
+		}
+		prerequisite = {
+			focus = GER_focus41
+		}
+		prerequisite = {
+			focus = GER_focus42
+		}
+		mutually_exclusive = {
+			focus = GER_focus43
+		}
+		
+		completion_reward = {
+			
 		}
 	}
 	focus = {
 		id = GER_focus3
 		icon = GFX_GER_focus3
 		cost = 5
-		x = 12  
-		y = 2
+		x = 10
+		y = 4
 		prerequisite = {
-			focus = GER_focus2
+			focus = GER_focus44
 		}
 		completion_reward = {
 			add_political_power = 100
 			add_faction_influence_ratio = 0.025
 
-			
 		}
 	}
 	focus = {
 		id = GER_focus6
 		icon = GFX_GER_focus6
 		cost = 10
-		x = 8
+		x = 23
 		y = 3
 		prerequisite = {
-			focus = GER_focus3
+			focus = GER_focus2
 		}
 		mutually_exclusive = {
 			focus = GER_focus7
@@ -123,14 +267,13 @@ focus_tree = {
 					}
 				}
 			}
-			
 		}
 	}
 	focus = {
 		id = GER_focus5
 		icon = GFX_GER_focus5
 		cost = 10
-		x = 6
+		x = 21
 		y = 4
 		prerequisite = {
 			focus = GER_focus6
@@ -147,7 +290,7 @@ focus_tree = {
 		id = GER_focus8
 		icon = GFX_GER_focus8
 		cost = 10
-		x = 9
+		x = 24
 		y = 4
 		prerequisite = {
 			focus = GER_focus6
@@ -168,15 +311,44 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_focus12
-		icon = GFX_GER_focus12
+		id = GER_focus13
+		icon = GFX_GER_focus13
 		cost = 10
-		x = 10
+		x = 23
 		y = 5
 		prerequisite = {
 			focus = GER_focus8
 		}
 		completion_reward = {
+			add_resource = {
+				type = coal
+				amount = 5
+				state = 51
+			}
+			add_resource = {
+				type = coal
+				amount = 5
+				state = 57
+			}
+		}
+	}
+	focus = {
+		id = GER_focus12
+		icon = GFX_GER_focus12
+		cost = 10
+		x = 25
+		y = 5
+		prerequisite = {
+			focus = GER_focus8
+		}
+		completion_reward = {
+			add_to_variable = {
+				labor_var = 10
+			}
+			custom_effect_tooltip = {
+				localization_key = labor_var_tt
+				VALUE = "+10.00"
+			}
 			every_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -209,10 +381,10 @@ focus_tree = {
 		id = GER_focus10
 		icon = GFX_GER_focus10
 		cost = 10
-		x = 12
-		y = 4
+		x = 27
+		y = 2
 		prerequisite = {
-			focus = GER_focus3
+			focus = GER_focus2
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -232,8 +404,8 @@ focus_tree = {
 		id = GER_focus9
 		icon = GFX_GER_focus9
 		cost = 10
-		x = 12
-		y = 5
+		x = 27
+		y = 4
 		available = {
 			has_tech = atomic_research
 		}
@@ -250,24 +422,20 @@ focus_tree = {
 		id = GER_focus7
 		icon = GFX_GER_focus7
 		cost = 10
-		x = 16 
+		x = 31
 		y = 3
 		prerequisite = {
-			focus = GER_focus3
+			focus = GER_focus2
 		}
 		mutually_exclusive = {
 			focus = GER_focus6
-		}
-		completion_reward = {
-			add_faction_influence_ratio = -0.035
-			add_faction_initiative = 1
 		}
 	}
 	focus = {
 		id = GER_focus16
 		icon = GFX_GER_focus16
 		cost = 10
-		x = 15
+		x = 30
 		y = 4
 		prerequisite = {
 			focus = GER_focus7
@@ -288,7 +456,7 @@ focus_tree = {
 		id = GER_focus18
 		icon = GFX_GER_focus18
 		cost = 10
-		x = 14
+		x = 29
 		y = 5
 		prerequisite = {
 			focus = GER_focus16
@@ -314,38 +482,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_focus4
-		icon = GFX_GER_focus4
-		cost = 5
-		x = 29
-		y = 1
-		prerequisite = {
-			focus = GER_focus21
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-			add_mastery_bonus = {
-				bonus = 0.3
-				days = 30
-				name = CHI_military_affairs_commission_sea
-				# FILTERS:
-				folder = land
-				grand_doctrine = mobile_warfare
-				sub_doctrine = mobile_infantry
-				track = infantry
-				index = 1
-			}
-		}
-	}
-	focus = {
 		id = GER_focus17
 		icon = GFX_GER_focus17
 		cost = 10
-		x = 16
+		x = 31
 		y = 5
 		prerequisite = {
 			focus = GER_focus16
@@ -373,16 +513,36 @@ focus_tree = {
 		id = GER_focus20
 		icon = GFX_GER_focus20
 		cost = 10
-		x = 18
+		x = 33
 		y = 5
-        prerequisite = {
+		prerequisite = {
 			focus = GER_focus7
 		}
+	}
+	focus = {
+		id = GER_focus21
+		icon = GFX_GER_focus21
+		cost = 10
+		x = 43
+		y = 1
+		prerequisite = {
+			focus = GER_focus1
+		}
 		completion_reward = {
-			create_import = {
-				resource = oil
-				amount = 15
-				exporter = RUS
+			army_experience = 50
+			air_experience = 50
+			navy_experience = 50
+			add_command_power =20
+			add_mastery_bonus = {
+				bonus = 0.02
+				days = 365
+				name = CHI_military_affairs_commission_sea
+				# FILTERS:
+				folder = land
+				grand_doctrine = mobile_warfare
+				sub_doctrine = mobile_infantry
+				track = infantry
+				index = 1
 			}
 		}
 	}
@@ -390,8 +550,8 @@ focus_tree = {
 		id = GER_focus23
 		icon = GFX_GER_focus23
 		cost = 10
-		x = 25
-		y = 1
+		x = 37
+		y = 2
 		prerequisite = {
 			focus = GER_focus21
 		}
@@ -414,8 +574,8 @@ focus_tree = {
 		id = GER_focus22
 		icon = GFX_GER_focus22
 		cost = 10
-		x = 22
-		y = 2
+		x = 34
+		y = 3
 		prerequisite = {
 			focus = GER_focus23
 		}
@@ -436,8 +596,8 @@ focus_tree = {
 		id = GER_focus24
 		icon = GFX_GER_focus24
 		cost = 10
-		x = 24
-		y = 2
+		x = 36
+		y = 3
 		prerequisite = {
 			focus = GER_focus23
 		}
@@ -446,43 +606,18 @@ focus_tree = {
 		id = GER_focus25
 		icon = GFX_GER_focus25
 		cost = 10
-		x = 26
-		y = 2
+		x = 38
+		y = 3
 		prerequisite = {
 			focus = GER_focus23
 		}
-		completion_reward = {
-		}
 	}
 	focus = {
-		id = GER_focus32
-		icon = GFX_GER_focus32
-		cost = 10
-		x = 23
-		y = 3
-		prerequisite = {
-			focus = GER_focus22
-		}
-		prerequisite = {
-			focus = GER_focus24
-		}
-		prerequisite = {
-			focus = GER_focus25 
-		}  
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.75
-				uses = 2
-				category = rocketry #radar_tech
-			}
-		}
-	}
-	focus = {
-		id = GER_focus38 
+		id = GER_focus38
 		icon = GFX_GER_focus38
 		cost = 10
-		x = 25
-		y = 3
+		x = 37
+		y = 5
 		prerequisite = {
 			focus = GER_focus25
 		}
@@ -502,13 +637,74 @@ focus_tree = {
 			}
 		}
 	}
-	focus = { 
+	focus = {
+		id = GER_focus32
+		icon = GFX_GER_focus32
+		cost = 10
+		x = 35
+		y = 5
+		prerequisite = {
+			focus = GER_focus22
+		}
+		prerequisite = {
+			focus = GER_focus24
+		}
+		prerequisite = {
+			focus = GER_focus25
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = rocketry #radar_tech
+			}
+		}
+	}
+	focus = {
+		id = GER_focus4
+		icon = GFX_GER_focus4
+		cost = 5
+		x = 41
+		y = 3
+		prerequisite = {
+			focus = GER_focus21
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			add_mastery_bonus = {
+				bonus = 0.3
+				days = 30
+				name = CHI_military_affairs_commission_sea
+				# FILTERS:
+				folder = land
+				grand_doctrine = mobile_warfare
+				sub_doctrine = mobile_infantry
+				track = infantry
+				index = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_focus30
+		icon = GFX_GER_focus30
+		cost = 10
+		x = 40
+		y = 4
+		prerequisite = {
+			focus = GER_focus4
+		}
+	}
+	focus = {
 		id = GER_focus29
 		icon = GFX_GER_focus29
-		cost = 10 
-		x = 29
-		y = 3
-        prerequisite = { 
+		cost = 10
+		x = 41
+		y = 5
+		prerequisite = {
 			focus = GER_focus4
 		}
 		completion_reward = {
@@ -526,6 +722,8 @@ focus_tree = {
 				name = GER_the_prussian_legacy
 				cost_reduction = 0.25
 				uses = 1
+				cost_reduction = 0.5
+				uses = 2
 				category = land_doctrine
 			}
 
@@ -545,61 +743,36 @@ focus_tree = {
 					value = 1 
 				}
 				add_faction_goal = faction_goal_an_infantry_army
+			add_mastery_bonus = {
+				bonus = 0.3
+				days = 30
+				name = CHI_military_affairs_commission_sea
+				# FILTERS:
+				folder = land
+				grand_doctrine = mobile_warfare
+				sub_doctrine = mobile_infantry
+				track = infantry
+				index = 1
 			}
 		}
 	}
-	focus = {
-		id = GER_focus33
-		icon = GFX_GER_focus33
-		cost = 10
-		x = 27
-		y = 4
-		prerequisite = {
-			focus = GER_focus29
-		}
-		mutually_exclusive = {
-			focus = GER_focus34
-		}
-	}
-	focus = {
-		id = GER_focus30
-		icon = GFX_GER_focus30
-		cost = 10
-		x = 28
-		y = 2
-		prerequisite = {
-			focus = GER_focus4
-		}
 	}
 	focus = {
 		id = GER_focus31
 		icon = GFX_GER_focus31
 		cost = 10
-		x = 30
-		y = 2
-		prerequisite = {
-			focus = GER_focus4
-		}
-	}
-	focus = {
-		id = GER_focus34
-		icon = GFX_GER_focus34
-		cost = 10
-		x = 31
+		x = 42
 		y = 4
 		prerequisite = {
-			focus = GER_focus29
-		}
-		mutually_exclusive = {
-			focus = GER_focus33
+			focus = GER_focus4
 		}
 	}
 	focus = {
 		id = GER_focus26
 		icon = GFX_GER_focus26
 		cost = 10
-		x = 35
-		y = 1
+		x = 46
+		y = 2
 		prerequisite = {
 			focus = GER_focus21
 		}
@@ -682,8 +855,8 @@ focus_tree = {
 		id = GER_focus27
 		icon = GFX_GER_focus27
 		cost = 10
-		x = 35
-		y = 2 
+		x = 46
+		y = 4
 		prerequisite = {
 			focus = GER_focus26
 		}
@@ -695,30 +868,14 @@ focus_tree = {
 				localization_key = all_infantry_eco_tt
 				VALUE = "+5.00"
 			}
-			add_to_variable = {
-				all_navy_eco = 5
-			}
-			custom_effect_tooltip = {
-				localization_key = all_navy_eco_tt
-				VALUE = "+5.00"
-			}
-			add_to_variable = {
-				all_air_eco = 5
-			}
-			custom_effect_tooltip = {
-				localization_key = all_air_eco_tt
-				VALUE = "+5.00"
-			}
-
-
 		}
 	}
 	focus = {
 		id = GER_focus28
 		icon = GFX_GER_focus28
 		cost = 10
-		x = 32
-		y = 3
+		x = 43
+		y = 5
 		prerequisite = {
 			focus = GER_focus27
 		}
@@ -791,51 +948,56 @@ focus_tree = {
 		id = GER_focus36
 		icon = GFX_GER_focus36
 		cost = 10
-		x = 34
-		y = 3
+		x = 45
+		y = 5
 		prerequisite = {
 			focus = GER_focus27
-		}
-		completion_reward = {
-			add_design_template_bonus = {
-				name = air_equipment
-				uses = 1
-				cost_factor = 0.75
-				equipment = small_plane_airframe
-				equipment = medium_plane_airframe
-				equipment = large_plane_airframe
-			  }			  
 		}
 	}
 	focus = {
 		id = GER_focus37
 		icon = GFX_GER_focus37
 		cost = 10
-		x = 36
-		y = 3
+		x = 47
+		y = 5
 		prerequisite = {
 			focus = GER_focus27
 		}
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.3
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.3
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.3
-			}
+			
+		}
+	}
+	focus = {
+		id = GER_focus33
+		icon = GFX_GER_focus33
+		cost = 10
+		x = 39
+		y = 6
+		prerequisite = {
+			focus = GER_focus29
+		}
+		mutually_exclusive = {
+			focus = GER_focus34
+		}
+	}
+	focus = {
+		id = GER_focus34
+		icon = GFX_GER_focus34
+		cost = 10
+		x = 43
+		y = 6
+		prerequisite = {
+			focus = GER_focus29
+		}
+		mutually_exclusive = {
+			focus = GER_focus33
 		}
 	}
 	focus = {
 		id = GER_focus11
 		icon = GFX_GER_focus11
 		cost = 10
-		x = 12
+		x = 27
 		y = 6
 		prerequisite = {
 			focus = GER_focus9
@@ -848,32 +1010,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_focus13
-		icon = GFX_GER_focus13
-		cost = 10
-		x = 8
-		y = 5
-		prerequisite = {
-			focus = GER_focus8
-		}
-		completion_reward = {
-			add_resource = {
-				type = coal
-				amount = 5
-				state = 51
-			}
-			add_resource = {
-				type = coal
-				amount = 5
-				state = 57
-			}
-		}
-	}
-	focus = {
 		id = GER_focus14
 		icon = GFX_GER_focus14
 		cost = 10
-		x = 8
+		x = 23
 		y = 6
 		prerequisite = {
 			focus = GER_focus13
@@ -881,9 +1021,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus12
 		}
-		prerequisite = {  
+		prerequisite = {
 			focus = GER_focus15
-		}  
+		}
 		completion_reward = {
 			if = {	
 				limit = {
@@ -940,12 +1080,12 @@ focus_tree = {
 				tooltip = local_resources_factor_tt
 			}
 		}
-	}   
-	focus = { 
-		id = GER_focus15 
-		icon = GFX_GER_focus15 
+	}
+	focus = {
+		id = GER_focus15
+		icon = GFX_GER_focus15
 		cost = 10
-		x = 6
+		x = 21
 		y = 5
 		prerequisite = {
 			focus = GER_focus5
@@ -966,10 +1106,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_focus19 
+		id = GER_focus19
 		icon = GFX_GER_focus19
 		cost = 10
-		x = 16
+		x = 31
 		y = 6
 		prerequisite = {
 			focus = GER_focus18
@@ -985,8 +1125,8 @@ focus_tree = {
 		id = GER_focus35
 		icon = GFX_GER_focus35
 		cost = 10
-		x = 38
-		y = 3
+		x = 49
+		y = 5
 		prerequisite = {
 			focus = GER_focus27
 		}

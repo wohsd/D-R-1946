@@ -6,10 +6,22 @@ ideas = {
 		Industrialization_level1 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = level5_var_1tt
+						check_variable = {
+							var = Industrialization_var
+							value = 0
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Industrialization_var
+							value = 250
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -49,10 +61,22 @@ ideas = {
 		Industrialization_level2 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = level5_var_2tt
+						check_variable = {
+							var = Industrialization_var
+							value = 250
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Industrialization_var
+							value = 500
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -87,10 +111,22 @@ ideas = {
 		Industrialization_level3 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = level5_var_3tt
+						check_variable = {
+							var = Industrialization_var
+							value = 500
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Industrialization_var
+							value = 750
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}
@@ -125,9 +161,21 @@ ideas = {
 		Industrialization_level4 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = level5_var_4tt
+						check_variable = {
+							var = Industrialization_var
+							value = 750
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Industrialization_var
+							value = 950
+							compare = less_than_or_equals
+						}
+					}
+				}
 			}
 			on_add = {
 
@@ -163,10 +211,22 @@ ideas = {
 		Industrialization_level5 = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = level5_var_5tt
+						check_variable = {
+							var = Industrialization_var
+							value = 950
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Industrialization_var
+							value = 1000
+							compare = less_than_or_equals
+						}
+					}
 				}
+			}
 			on_add = {
 
 			}

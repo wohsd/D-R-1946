@@ -6,20 +6,29 @@ ideas = {
 
 		Public_Education1 = {
 			available = {
-				NOT={
-					OR={
-						has_idea = Public_Education2
-						has_idea = Public_Education3
-						has_idea = Public_Education4
-						has_idea = Public_Education5
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_1tt
+						check_variable = {
+							var = Educational_var
+							value = 0
+							compare = greater_than_or_equals
+						}
+						check_variable = {
+							var = Educational_var
+							value = 250
+							compare = less_than_or_equals
+						}
 					}
+					
 				}
+				
 			}
 			on_add = {
 
 			}
 		
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -46,20 +55,28 @@ ideas = {
 		Public_Education2 = {
 
 			available = {
-				NOT={
-					OR={
-						has_idea = Public_Education1
-						has_idea = Public_Education3
-						has_idea = Public_Education4
-						has_idea = Public_Education5
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_2tt
+						check_variable = {
+							var = Educational_var
+							value = 250
+							compare = greater_than
+						}
+						check_variable = {
+							var = Educational_var
+							value = 500
+							compare = less_than_or_equals
+						}
 					}
+					
 				}
 			}
 			on_add = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -86,20 +103,28 @@ ideas = {
 		Public_Education3 = {
 
 			available = {
-				NOT={
-					OR={
-						has_idea = Public_Education1
-						has_idea = Public_Education2
-						has_idea = Public_Education4
-						has_idea = Public_Education5
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_3tt
+						check_variable = {
+							var = Educational_var
+							value = 500
+							compare = greater_than
+						}
+						check_variable = {
+							var = Educational_var
+							value = 750
+							compare = less_than_or_equals
+						}
 					}
+					
 				}
 			}
 			on_add = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -126,12 +151,19 @@ ideas = {
 		Public_Education4 = {
 
 			available = {
-				NOT={
-					OR={
-						has_idea = Public_Education1
-						has_idea = Public_Education2
-						has_idea = Public_Education3
-						has_idea = Public_Education5
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_4tt
+						check_variable = {
+							var = Educational_var
+							value = 750
+							compare = greater_than
+						}
+						check_variable = {
+							var = Educational_var
+							value = 950
+							compare = less_than_or_equals
+						}
 					}
 				}
 				}
@@ -139,7 +171,7 @@ ideas = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -166,12 +198,19 @@ ideas = {
 		Public_Education5 = {
 
 			available = {
-				NOT={
-					OR={
-						has_idea = Public_Education1
-						has_idea = Public_Education2
-						has_idea = Public_Education3
-						has_idea = Public_Education4
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = law5_var_5tt
+						check_variable = {
+							var = Educational_var
+							value = 950
+							compare = greater_than
+						} 
+						check_variable = {
+							var = Educational_var
+							value = 1000
+							compare = less_than_or_equals
+						}
 					}
 				}
 			}
@@ -179,7 +218,7 @@ ideas = {
 
 			}
 
-			cost = 0
+			cost = 200
 			removal_cost = -1
 
 			modifier = {

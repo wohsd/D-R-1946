@@ -33,5 +33,17 @@ ideas = {
 
 			}
 		}
+		GER_Ash_Roll = {
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost=1
+				production_factory_max_efficiency_factor=-0.2
+				consumer_goods_factor= 0.15
+				Inflation_rate_modifer= 0.15
+			}
+		}
 	}
 }

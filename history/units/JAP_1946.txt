@@ -187,7 +187,7 @@ units = {
 		}
 		division = {	
 			name = "装甲四师"
-			location = 10070
+			location = 7221
 			division_template = "日本帝国装甲师"
 			start_experience_factor = 0.5
 		}
