@@ -1,0 +1,16 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			JAP = {
+				# You can put this in the country's history file alternatively too.
+				JAP_parliament_gui_initial = yes
+				set_country_flag = parliament_gui_button_yes
+			}
+			GER = {
+				# You can put this in the country's history file alternatively too.
+				GER_parliament_gui_initial = yes
+				set_country_flag = GER_parliament_gui_button_yes
+			}
+		}
+	}
+}

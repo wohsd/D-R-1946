@@ -1,0 +1,117 @@
+guiTypes = {
+
+	containerWindowType = {
+        name = "parliament_gui_container_button"
+        position = { x = 260 y = 303 }  
+		size = { width = 700 height = 600 } 
+
+		buttonType = {
+			name = "parliament_button"
+			spriteType = "GFX_parliament_icon"	
+			position = { x = 0 y = 0 }
+			oversound = ui_menu_over
+		}
+	}	
+
+
+	containerWindowType = {
+        name = "parliament_gui_container"
+        position = { x = 550 y = 90 }
+		size = { width = 700 height = 600 }
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window2_1b_border"
+		}
+ 
+		instantTextBoxType = {
+			name = "semicircle_parliament_gui_title"
+			position = { x = 140 y = 30 }
+			font = "dr_font_21"
+			text = "semicircle_parliament_gui_title"
+			maxWidth = 400
+			maxHeight = 24
+			format = center 
+		}
+
+		containerWindowType = {
+			name = "parliament_semicircle_main_container"
+			position = { x = 22 y = 75 }
+			size = { width = 10 height = 125 }
+
+
+			gridboxtype = {
+				name = "parliament_semicircle_main_grid"
+				position = { x = 65 y = 0 }
+				size = { width = 1 height = 1  }
+				slotsize = { width = 29 height = 0 }
+				max_slots_horizontal = 0 
+				add_horizontal = no
+			}
+
+		}
+
+		gridboxtype = {
+			name = "parliament_member_grid"
+			position = { x = -330 y = 400 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 200 height = 50 }
+			max_slots_vertical = 10
+			add_horizontal = no
+			
+		}
+
+		buttonType = { 
+			name = "parliament_close_button" 
+			quadTextureSprite ="GFX_closebutton" 
+			position = { x =10 y = 10 }  
+			oversound = ui_menu_over 
+		} 
+    } 
+   
+	containerWindowType = {
+        name = "parliament_main_entry"
+        position = { x = 0 y = 0 }  
+ 
+		iconType = {
+			name = "parliament_main_icon" 
+			spriteType = "GFX_parliament_party_icon"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "parliament_main_icon_tt"
+		}
+    }
+
+	containerWindowType = { 
+        name = "parliament_semicircle_main_entry"
+        position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "parliament_semicircle_main_icon"
+			spriteType = "GFX_parliament_party_icon"
+			position = { x = 0 y = 0 } 
+			pdx_tooltip = "parliament_main_icon_tt"
+		}
+    }  
+
+	containerWindowType = { 
+        name = "parliament_member_entry" 
+        position = { x = 0 y = 0 }
+		size = { width = 200 height = 18 } 
+
+		iconType = {
+			name = "parliament_member_icon"
+			spriteType = "GFX_parliament_party_icon"
+			position = { x = -20 y = 0 } 
+		}
+		instantTextboxType = {
+			name = "GER_parliament_member_text"
+			position = { x = 0 y = 0 }
+			font = "dr_font_21"
+			maxWidth = 300
+			maxHeight = 16
+			format = left
+			text = "parliament_member_text"
+                        pdx_tooltip = "parliament_seat_desc_text"
+		}
+    }
+}
