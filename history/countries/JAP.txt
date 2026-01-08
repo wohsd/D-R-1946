@@ -108,7 +108,8 @@ set_technology = {
 }
 
 recruit_character = JAP_Ichiro_Hatoyama
-
+recruit_character = JAP_Ryoki_Machijiri
+recruit_character = JAP_Yongren
 set_politics = {
 	ruling_party = Liberalism
 	last_election = "1918.11.11"
@@ -123,8 +124,14 @@ set_popularities = {
 	Reformism = 13
 }
 
+set_variable = {
+	age_year = 10
+}
+
+
+
 add_ideas = {
-	
+	Yongren_G
 	#law
 	Agriculture_level4
 	Racial_policy2

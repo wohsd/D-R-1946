@@ -11,6 +11,11 @@ on_actions = {
 				GER_parliament_gui_initial = yes
 				set_country_flag = GER_parliament_gui_button_yes
 			}
+			CHI = {
+				# You can put this in the country's history file alternatively too.
+				CHI_parliament_gui_initial = yes
+				set_country_flag = CHI_parliament_gui_button_yes
+			}
 		}
 	}
 }

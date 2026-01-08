@@ -4,7 +4,7 @@
 guiTypes = { 
 	
 
-	containerWindowType = {
+	containerWindowType = { 
 		name = "countrypoliticsview"
 		position = { x=-606 y=78}	
 		show_position = { x=-2 y =90 } 
@@ -619,7 +619,7 @@ containerWindowType = {
 			
 			iconType = {
 				name = "power_balance_ICON"
-				position = { x = 12 y = 4 }
+				position = { x = 12 y = -6 }
 				quadTextureSprite = "GFX_placeholder_bordered"
 				alwaystransparent = yes				
 				scale = 0.75
@@ -821,7 +821,7 @@ containerWindowType = {
 					quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
 					position = { x = -1 y = 0 }					
 				}
-
+				
 				gridBoxType = {
 					name = "box_grid"
 					position = { x = 10 y = 10 }
@@ -840,6 +840,7 @@ containerWindowType = {
 					add_horizontal = no
 					format = "UPPER_LEFT"
 				}
+
 			}
 			
 		}
@@ -940,11 +941,13 @@ containerWindowType = {
 
 		buttonType = {
 			name = "open_roster_button"
-			position = { x = 31 y = 31 }
+			position = { x = 121 y = 36 }
 			spriteType = "GFX_add_pol_idea_button"
 			centerposition = yes
 			clicksound = click_default
 		}
+
+		
 	}
 	
 	containerWindowType = {
@@ -954,7 +957,7 @@ containerWindowType = {
 			
 		background = {
 			name = "idea_entry_bg"
-			position = { x = 3 y = 0 }
+			position = { x = 13 y = 0 }
 			spriteType = "GFX_idea_entry_bg_2"
 		}
 			

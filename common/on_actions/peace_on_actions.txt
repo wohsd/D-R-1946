@@ -1,0 +1,166 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = ROOT
+						AND = {
+							is_in_faction_with = ROOT
+							has_war_together_with = ROOT
+						}
+					}
+				}
+				every_state = {
+					limit = { is_owned_by = PREV }
+					set_state_flag = state_to_reduce
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = AI_peace1 } }
+				if = {
+					limit = {
+						ROOT = { 
+							NOT = { civilwar_target = FROM }
+							OR = { 
+								AND = { 
+									is_in_faction = no
+									is_subject = no
+								}
+								AND = { 
+									is_in_faction = no
+									is_subject = yes
+									any_other_country = {
+										has_subject = ROOT
+										NOT = { has_war_with = FROM }
+									}
+								}
+								AND = { 
+									is_in_faction = yes
+									NOT = { any_allied_country = { has_war_together_with = ROOT } }
+								}
+								AND = {
+									is_in_faction = yes
+									is_major = no
+									any_allied_country = { has_war_together_with = ROOT }
+									NOT = {
+										any_allied_country = {
+											is_major = yes
+											has_war_together_with = ROOT
+										}
+									}
+								}
+							}
+						}
+					}
+					ROOT = { transfer_navy = { target = FROM } }
+					if = { 
+						limit = { has_global_flag = AI_peace }
+						random_state = { 
+							limit = {
+								is_owned_by = ROOT
+								NOT = { is_controlled_by = ROOT }
+							}
+							controller = { set_country_flag = prevcontroller }
+							set_state_flag = tobeown
+							set_state_controller_to = ROOT
+						}
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+								NOT = { is_controlled_by = ROOT }
+							}
+							controller = { transfer_state = PREV }
+						}
+					}
+					every_country = {
+						limit = { has_war_with = ROOT }
+						white_peace = ROOT
+					}
+					FROM = {
+						annex_country = { target = ROOT transfer_troops = no }
+						country_event = { id = sp_fuction.1 hours = 1 }
+					}
+					every_state = {
+						limit = { has_state_flag = tobeown }
+						clr_state_flag = tobeown
+						every_country = {
+							limit = { has_country_flag = prevcontroller }
+							clr_country_flag = prevcontroller
+							transfer_state = PREV
+						}
+					}
+				}
+				else_if = { 
+					limit = {
+						ROOT = { 
+							is_in_faction = yes
+							all_allied_country = {
+								OR = {
+									AND = {
+										has_war_together_with = ROOT
+										has_capitulated = yes
+										is_major = yes
+									}
+									AND = {
+										has_war_together_with = ROOT
+										is_major = no
+									}
+									NOT = { has_war_together_with = ROOT }
+								}
+							}
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = ROOT
+								AND = {
+									is_in_faction_with = ROOT
+									has_war_together_with = ROOT
+								}
+							}
+						}
+						transfer_navy = { target = FROM }
+						if = { 
+							limit = { has_global_flag = AI_peace }
+							random_state = { 
+								limit = {
+									is_owned_by = ROOT
+									NOT = { is_controlled_by = ROOT }
+								}
+								controller = { set_country_flag = prevcontroller }
+								set_state_flag = tobeown
+								set_state_controller_to = ROOT
+							}
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+									NOT = { is_controlled_by = ROOT }
+								}
+								controller = { transfer_state = PREV }
+							}
+						}
+						every_country = {
+							limit = { has_war_with = PREV }
+							white_peace = PREV
+						}
+						FROM = {
+							annex_country = { target = PREV transfer_troops = no }
+							country_event = { id = sp_fuction.1 hours = 1 }
+						}
+						every_state = {
+							limit = { has_state_flag = tobeown }
+							clr_state_flag = tobeown
+							every_country = {
+								limit = { has_country_flag = prevcontroller }
+								clr_country_flag = prevcontroller
+								transfer_state = PREV
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

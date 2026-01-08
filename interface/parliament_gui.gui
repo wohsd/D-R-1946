@@ -12,7 +12,7 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 	}	
-
+ 
 
 	containerWindowType = {
         name = "parliament_gui_container"

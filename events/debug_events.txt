@@ -1,16 +1,27 @@
 ﻿
-add_namespace = generic_debug
-add_namespace = fra
+add_namespace = vin_loss
 add_namespace = vin
 news_event = {
-	id = fra.1
-	title = fra.1.t
-	desc = fra.1.d
-	picture = GFX_fra_newsevent
+	id = vin_loss.1
+	title = vin_loss.1.t
+	desc = vin_loss.1.d
+	picture = GFX_vin_loss_1_newsevent
+	major = yes
 	is_triggered_only = yes
-	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			DRV = {
+				annex_country = {
+					target = VIN
+				}
+				white_peace = JAP
+				set_cosmetic_tag = DRV_country
+			}
+		}
+	}
 	option = {
-		name = fra.1.a
+		name = vin_loss.1.a
+	
 	}
 }
 news_event = {
@@ -18,79 +29,23 @@ news_event = {
 	title = vin.1.t
 	desc = vin.1.d
 	picture = GFX_vin_newsevent
+	major = yes 
 	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = vin.1.a
-		528={
-			add_building_construction = {
-				type = landmark_hakko_ichiu
-				level = 1
-				instant_build = yes
-				province = 1020
+	immediate = {
+		hidden_effect = {
+			DRV={
+				transfer_state = 1113
+				transfer_state = 1112
+				transfer_state = 1110
+				load_oob = "DRV_1946"
+				declare_war_on = {
+					target = VIN
+					type = independence_wargoal
+				}
 			}
 		}
-		
 	}
-}
-
-# debug event used for creating agency & cryptology
-country_event = {
-	id = generic_debug.42
-	title = generic_debug.42.t
-	desc = generic_debug.42.d
-	
-	picture = GFX_report_event_generic_factory
-
-	is_triggered_only = yes
-
-
-	immediate = {
-		#create_intelligence_agency = yes
-		#upgrade_intelligence_agency = upgrade_form_department
-	}
-
 	option = {
-		name = generic_debug.42.a
-	}
-}
-
-# give usa access
-country_event = {
-	id = generic_debug.43
-	title = generic_debug.43.t
-	desc = generic_debug.43.d
-	
-	picture = GFX_report_event_generic_factory
-
-	is_triggered_only = yes
-
-
-	immediate = {
-		give_military_access = USA
-	}
-
-	option = {
-		name = excellent
-	}
-}
-
-country_event = {
-	id = generic_debug.44
-	title = generic_debug.44.t
-	desc = TORPS
-	
-	picture = GFX_report_event_generic_factory
-
-	is_triggered_only = yes
-
-
-	immediate = {
-		
-	}
-
-	option = {
-		name = TORPS
-		add_ideas = bureau_of_ordnance_spirit
+		name = vin.1.a
 	}
 }

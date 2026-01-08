@@ -15,3 +15,38 @@
  GER_Employment_security:0"就业保障"
  GER_Social_security:0"社会保障"
  GER_Educational_Support:0"教育保障"
+
+
+
+ DRV_Road_Independence:0"反抗之路"
+ DRV_Road_Independence_desc:0"伪政府在日军的纵容下肆无忌惮地制造白色恐怖，许多优秀的革命党人都被处决示众。"
+
+ DRV_Road_Independence_ing:0"统一战争"
+ DRV_Road_Independence_ing_desc:0""
+
+ Vietnamese_Affairs_ing:0"越南大起义"
+ Vietnamese_Affairs_ing_desc:0""
+
+
+ Vietnamese_Affairs:0"越南事务"
+ Vietnamese_Affairs_desc:0"有消息称越南帝国境内正在酝酿一场大起义。中华民国支持的越南国民党和日本帝国支持的阮氏王朝将会在中南半岛争夺霸主权。\n\n[CHI.Getflag]当前中华民国力量投射：[?china_power]\n[JAP.Getflag]日本帝国力量投射：[?Japan_power]"
+
+ china_power_tt:0"中华民国力量投射：§H$VALUE|2$B§!"
+
+ Japan_power_tt:0"日本帝国力量投射：§H$VALUE|2$B§!"
+
+ DRV_Send_military_advisors:0"给起义军派遣军事顾问"
+ DRV_Send_military_advisors_desc:0""
+
+ DRV_Training_generals:0"在云南训练将领"
+ DRV_Training_generals_desc:0""
+
+ DRV_Transporting_materials:0"从边境运输军火"
+ DRV_Transporting_materials_desc:0""
+
+
+ VIN_Send_military_advisors:0"越南派遣军顾问"
+ VIN_Send_military_advisors_desc:0""
+
+ VIN_Transporting_materials:0"空运军火"
+ VIN_Transporting_materials_desc:0""

@@ -1,0 +1,21 @@
+state={
+	id=1109
+	name="STATE_1109"
+	provinces={
+		1302 4397 7280 9988 10016 10129 11909 11936 12297 19052 19060 19142 
+	}
+	history={
+		victory_points = {
+			7280 10
+		}
+		add_core_of = VIN
+		owner = VIN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=231210
+	buildings_max_level_factor=1
+	local_supplies=0
+}

@@ -1,0 +1,22 @@
+state={
+	id=1111
+	name="STATE_1111"
+	provinces={
+		1157 1185 4075 4119 19084 19085 19086 19087 
+	}
+	
+	history={
+		victory_points = {
+			4075 20
+		}
+		add_core_of = VIN
+		owner = VIN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=234211
+	buildings_max_level_factor=1
+	local_supplies=0
+}

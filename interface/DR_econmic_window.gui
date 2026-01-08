@@ -35,7 +35,6 @@ guiTypes = {
 			clicksound = click_send
 			shortcut = "RETURN"
 		}
-
 		buttonType = {
 			name = "eco_average_button"
 			position = { x = -10 y = -685 }

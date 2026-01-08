@@ -1,0 +1,45 @@
+﻿capital = 1111
+oob = "DRV_1946"
+add_manpower = 120000
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = DRV_Vu_Hong_Khanh
+recruit_character = DRV_Truong_Boi_Cong
+recruit_character = DRV_Vu_Nguyen_Giap
+recruit_character = DRV_Ho_Chi_Minh
+recruit_character = DRV_Huynh_Sam
+recruit_character = DRV_Hoang_Van_Thai
+recruit_character = DRV_Le_Thiet_Hung
+recruit_character = DRV_Le_Hien_Mai
+recruit_character = DRV_Van_Tien_Dung
+recruit_character = DRV_Tran_Tu_Binh
+recruit_character = DRV_Nguyen_Binh
+recruit_character = DRV_Nguyen_Son
+recruit_character = DRV_Chu_Van_Tan
+set_politics = {
+	ruling_party = Reformism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	Reformism= 50
+	Liberalism = 30
+	Conservatism = 20
+}
+
+add_ideas = {
+	#law
+	Agriculture_level4
+	Racial_policy2
+	Women_rights2
+	labor_laws1
+	Public_control4
+	Livelihood_investment3
+	Industrialization_level2
+	Public_Education3
+	Police_policy3
+}

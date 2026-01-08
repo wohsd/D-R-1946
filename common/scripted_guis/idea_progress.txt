@@ -1,0 +1,41 @@
+scripted_gui = {
+	idea_progress_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		#window_name = "idea_progress_window"
+		visible = {  
+		} 
+		effects = {
+		} 
+		properties = {
+			idea_progerss_Educational={
+				frame = Educational_var
+			}
+			idea_progerss_Industrialization={
+				frame = Industrialization_var
+			}
+			idea_progerss_Agriculture={
+				frame = Agriculture_var
+			}
+			
+			idea_progerss_labor={
+				frame = labor_var
+			}
+			idea_progerss_Women={
+				frame = Women_var
+			}
+			idea_progerss_Livelihood={
+				frame = Livelihood_var
+			}
+			idea_progerss_Racial={
+				frame = Racial_var
+			}
+			idea_progerss_Police={
+				frame = Police_var
+			}
+			idea_progerss_Public={
+				frame = Public_var
+			}
+		}
+	} 
+}

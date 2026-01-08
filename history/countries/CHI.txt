@@ -24,7 +24,7 @@ recruit_character = CHI_GuZhuTong
 recruit_character = CHI_HuangQiXiang
 recruit_character = CHI_DengYangDa
 recruit_character = CHI_JiangGuangDing
-
+recruit_character = CHI_ZhangFaKui
 set_politics = {
 	ruling_party = Reformism
 	last_election = "1918.11.11"

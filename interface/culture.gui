@@ -7,8 +7,8 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="State_Culture_value"
-			position = { x = 35 y = 10 }
-			font = "hoi_18mbs" 
+			position = { x = 0 y = -165 }
+			font = "dr_font_16" 
 			text = "[FROM.state_culture_name_texts]"
 			format = center
 			maxWidth = 125

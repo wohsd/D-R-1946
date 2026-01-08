@@ -34,8 +34,32 @@
  ITA_Pietro_Badoglio:0 "彼得罗·巴多格里奥"
  ITA_Pietro_Badoglio_desc:0 ""
  
- VIN_Nguyen_Phuc_Bui:0 "阮福永瑞"
+ VIN_Nguyen_Phuc_Bui:0 "保大"
  VIN_Nguyen_Phuc_Bui_desc:0 ""
+
+ VIN_Lam_Thanh_Nguyen:0 "林清阮"
+ VIN_Lam_Thanh_Nguyen_desc:0 "越南共和国陆军少将"
+
+ VIN_Nguyen_Giac_Ngo:0 "阮觉悟"
+ VIN_Nguyen_Giac_Ngo_desc:0 "越南共和国陆军指挥官" 
+
+ VIN_Nguyen_Van_Han:0 "阮文馨"
+ VIN_Nguyen_Van_Han_desc:0 "越南共和国陆军指挥官" 
+
+ VIN_Nguyen_Van_Vy:0 "阮文伟"
+ VIN_Nguyen_Van_Vy_desc:0 "越南共和国陆军将领" 
+
+ VIN_Tran_Van_Suat:0 "陈文帅"
+ VIN_Tran_Van_Suat_desc:0 "越南共和国陆军高级军官"
+
+ DRV_Truong_Boi_Cong:0 "张佩公"
+ DRV_Truong_Boi_Cong_desc:0 ""
+
+ DRV_Vu_Nguyen_Giap:0 "武元甲"
+ DRV_Vu_Nguyen_Giap_desc:0 ""
+
+ DRV_Ho_Chi_Minh:0 "胡志明"
+ DRV_Ho_Chi_Minh_desc:0 ""
 
  GRE_Alexandros_Papagos:0 "亚历山大·帕帕戈斯"
  GRE_Alexandros_Papagos_desc:0 ""
@@ -288,3 +312,86 @@ KOR_I_Eun_desc:0 ""
 
 GER_Kurt_Schumacher:0 "库尔特·舒马赫"
 GER_Kurt_Schumacher_desc:0 ""
+
+MLI_Sir_Alan_Burns:0 "艾伦·伯恩斯"
+MLI_Sir_Alan_Burns_desc:0 ""
+
+SEN_Sir_Arthur_Richards:0 "亚瑟·理查兹"
+SEN_Sir_Arthur_Richards_desc:0 ""
+
+NGR_Charles_Arden_Clarke:0 "查尔斯·阿登·克拉克"
+NGR_Charles_Arden_Clarke_desc:0 ""
+
+
+
+GER_Helene_Wessel:0 "海伦·韦塞尔"
+GER_Helene_Wessel_desc:0 ""
+
+GER_Ludwig_Beck:0 "路德·贝克"
+GER_Ludwig_Beck_desc:0 ""
+
+GER_Neuright:0 "康斯坦丁·冯·牛赖特"
+GER_Neuright_desc:0 ""
+
+GER_Wilhelm_von_PreuBen:0 "威廉三世"
+GER_Wilhelm_von_PreuBen_desc:0 ""
+
+GER_Otto_Georg_Thierack:0 "奥托·格奥尔格·蒂拉克"
+GER_Otto_Georg_Thierack_desc:0 ""
+
+GER_Wilhelm_Frick:0 "威廉·弗里克"
+GER_Wilhelm_Frick_desc:0 ""
+
+GER_Johann_Krosigk:0 "施维林·冯·克罗西克"
+GER_Johann_Krosigk_desc:0 ""
+
+JAP_Yongren:0 "雍仁"
+JAP_Yongren_desc:0 "生于：§H1902年6月25日§!\n势力：§H日本皇族§!\n\n日本皇族，大正天皇与贞明皇后次子，昭和天皇之弟，小名淳宫。年少的时候与裕仁和宣仁共同长大，据说三个人的关系不错。与其兄比起来，是最活泼的一个。\n\n自大哥裕仁身死虎之门事变中，被人称为皇太弟的雍仁自然接过了全日本的权力。和沉默寡言的昭和天皇相比，他在滑雪，橄榄球等项目上大出风头。被称为体育王子，他更受到全体国民的爱戴。他的家庭沙龙是上流贵族子弟的榜样。\n\n但大哥裕仁的过世，令其大受打击。身体健康的他在1940年被诊断出肺结核，到了第二年，回到御殿场疗养，从此基本淡出日本政坛。"
+
+
+PAK_Muhammad_Ali_Jinnah:0 "穆罕默德·阿里·真纳"
+PAK_Muhammad_Ali_Jinnah_desc:0 ""
+
+DRV_Vu_Hong_Khanh:0 "武鸿卿"
+DRV_Vu_Hong_Khanh_desc:0 ""
+
+JAP_Ryoki_Machijiri:0 "町尻量基"
+JAP_Ryoki_Machijiri_desc:0 ""
+
+CHI_ZhangFaKui:0 "张发奎"
+CHI_ZhangFaKui_desc:0 ""
+
+DRV_Huynh_Sam:0 "黄森"
+DRV_Huynh_Sam_desc:0 ""
+
+##黄文泰
+DRV_Hoang_Van_Thai:0 "黄文泰"
+DRV_Hoang_Van_Thai_desc:0 ""
+
+##黎铁雄
+DRV_Le_Thiet_Hung:0 "黎铁雄"
+DRV_Le_Thiet_Hung_desc:0 ""
+
+##黎献梅
+DRV_Le_Hien_Mai:0 "黎献梅"
+DRV_Le_Hien_Mai_desc:0 ""
+
+##文进勇
+DRV_Van_Tien_Dung:0 "文进勇"
+DRV_Van_Tien_Dung_desc:0 ""
+
+##陈子平
+DRV_Tran_Tu_Binh:0 "陈子平"
+DRV_Tran_Tu_Binh_desc:0 ""
+
+##阮平
+DRV_Nguyen_Binh:0 "阮平"
+DRV_Nguyen_Binh_desc:0 ""
+
+##阮山
+DRV_Nguyen_Son:0 "阮山"
+DRV_Nguyen_Son_desc:0 ""
+
+##朱文晋
+DRV_Chu_Van_Tan:0 "朱文晋"
+DRV_Chu_Van_Tan_desc:0 ""

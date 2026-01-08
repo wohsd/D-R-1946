@@ -1,0 +1,104 @@
+﻿division_template = {
+	name = "越南游击队"
+
+	regiments = {
+		militia  = { x = 0 y = 0 }
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+        militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+        militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "越南国民军"
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+units = {
+
+	##### Oberkommando des Heeres #####
+
+	### 1. Armee (Wehrmacht-Gruppenkommando) ###
+	# II. Armeekorps
+	division = {	
+		name = "越南游击队"
+		location = 7518
+		division_template = "越南游击队"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "越南国民军一师"
+		location = 7518
+		division_template = "越南国民军"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "越南游击队"
+		location = 12319
+		division_template = "越南游击队"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "越南国民军二师"
+		location = 12319
+		division_template = "越南国民军"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "越南游击队"
+		location = 4529
+		division_template = "越南游击队"
+		start_experience_factor = 0.5
+	}
+
+	division = {	
+		name = "越南游击队"
+		location = 19013
+		division_template = "越南游击队"
+		start_experience_factor = 0.5
+	}
+
+	division = {	
+		name = "越南游击队"
+		location = 19119
+		division_template = "越南游击队"
+		start_experience_factor = 0.5
+	}
+
+	division = {	
+		name = "越南游击队"
+		location = 4401
+		division_template = "越南游击队"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "越南国民军三师"
+		location = 4401
+		division_template = "越南国民军"
+		start_experience_factor = 0.5
+	}
+}

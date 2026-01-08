@@ -20,6 +20,7 @@ on_actions = {
 				Government_expenses_setup = yes 
 				Expenditure_setup = yes 
 				Reserve_eco_setup = yes 
+
 			}
 		}
 	}

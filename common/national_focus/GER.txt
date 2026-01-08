@@ -43,7 +43,7 @@ focus_tree = {
 		icon = GFX_GER_focus2
 		cost = 5
 		x = 27
-		y = 1
+		y = 1 
 		prerequisite = {
 			focus = GER_focus1
 		}
@@ -53,9 +53,9 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_focus39
-		icon = GFX_goal_unknown
+		icon = GFX_GER_focus1
 		cost = 10
-		x = 15
+		x = 15 
 		y = 0
 		completion_reward = {
 			unlock_decision_category_tooltip = GER_Prime_Minister_Promise
@@ -66,7 +66,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_focus40
-		icon = GFX_goal_unknown
+		icon = GFX_GER_focus40
 		cost = 10
 		x = 12
 		y = 1
@@ -82,7 +82,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_focus41
-		icon = GFX_goal_unknown
+		icon = GFX_GER_focus41
 		cost = 10
 		x = 15
 		y = 1
@@ -128,7 +128,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_focus42
-		icon = GFX_goal_unknown
+		icon = GFX_GER_focus42
 		cost = 10
 		x = 18  
 		y = 1
@@ -159,7 +159,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_focus43
-		icon = GFX_goal_unknown
+		icon = GFX_GER_focus43
 		cost = 10
 		x = 17
 		y = 3
@@ -176,25 +176,13 @@ focus_tree = {
 			focus = GER_focus44
 		}
 		completion_reward={
-			set_politics = {
-				ruling_party = Reformism
-				elections_allowed = no
-			} 
-			hidden_effect={
-				set_popularities = {
-					Dictatorship = 5
-					Liberalism = 5
-					Conservatism = 30
-					Nationalism = 5
-					Reformism = 45
-				}
-			}
+			
 			
 		}
 	}
 	focus = {
 		id = GER_focus44
-		icon = GFX_goal_unknown
+		icon = GFX_GER_focus44
 		cost = 10
 		x = 13 
 		y = 3
@@ -216,11 +204,67 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_focus45
+		icon = GFX_GER_focus45
+		cost = 10
+		x = 14 
+		y = 5
+		prerequisite = {
+			focus = GER_focus43
+		}
+		mutually_exclusive = {
+			focus = GER_focus46
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = Reformism
+				elections_allowed = no
+			} 
+			hidden_effect={
+				set_popularities = {
+					Dictatorship = 15
+					Liberalism = 5
+					Conservatism = 30
+					Nationalism = 5
+					Reformism = 45
+				}
+			} 
+		}
+	}
+	focus = {
+		id = GER_focus46
+		icon = GFX_GER_focus46
+		cost = 10
+		x = 19
+		y = 5
+		prerequisite = {
+			focus = GER_focus43
+		}
+		mutually_exclusive = {
+			focus = GER_focus45
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = Liberalism
+				elections_allowed = no
+			} 
+			hidden_effect={
+				set_popularities = {
+					Dictatorship = 15
+					Liberalism = 45
+					Conservatism = 30
+					Nationalism = 5
+					Reformism = 5
+				}
+			} 
+		}
+	}
+	focus = {
 		id = GER_focus3
 		icon = GFX_GER_focus3
 		cost = 5
 		x = 10
-		y = 4
+		y = 5
 		prerequisite = {
 			focus = GER_focus44
 		}
@@ -387,6 +431,7 @@ focus_tree = {
 			focus = GER_focus2
 		}
 		completion_reward = {
+			country_event = {id=GER_countryevent.16 days=100}
 			add_tech_bonus = {
 				bonus = 0.75
 				uses = 2
@@ -429,6 +474,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = GER_focus6
+		}
+		completion_reward = {
+			country_event = GER_countryevent.26
 		}
 	}
 	focus = {
@@ -491,6 +539,7 @@ focus_tree = {
 			focus = GER_focus16
 		}
 		completion_reward = {
+			country_event = GER_countryevent.13
 			ROM={
 				custom_effect_tooltip = [GetName]
 				46={
@@ -518,6 +567,13 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_focus7
 		}
+		completion_reward = {
+			give_resource_rights = {
+				receiver = RUS
+				state = 229
+				resources = { oil }
+			}
+		}
 	}
 	focus = {
 		id = GER_focus21
@@ -529,6 +585,9 @@ focus_tree = {
 			focus = GER_focus1
 		}
 		completion_reward = {
+			hidden_effect = {
+				country_event = {id=GER_countryevent.14 days=50}
+			}
 			army_experience = 50
 			air_experience = 50
 			navy_experience = 50
@@ -1091,6 +1150,7 @@ focus_tree = {
 			focus = GER_focus5
 		}
 		completion_reward = {
+			country_event = GER_countryevent.24
 			893={
 				add_building_construction = {
 					type = industrial_complex
@@ -1119,6 +1179,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = GER_focus20
+		}
+		completion_reward = {
+			country_event = GER_countryevent.20
 		}
 	}
 	focus = {

@@ -1,5 +1,8 @@
 spriteTypes = {
-	
+	spriteType = {
+		name = "GFX_black_flower_1"
+		texturefile = "gfx/event/black_flower_1.png"
+	}
 	spriteType = {
 		name = "GFX_RUS_WARnewevent_1"
 		texturefile = "gfx/event/RUS_WARnewevent_1.png"
@@ -15,6 +18,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_vin_newsevent"
 		texturefile = "gfx/event/vin_newsevent.png"
+	}
+	spriteType = {
+		name = "GFX_vin_loss_1_newsevent"
+		texturefile = "gfx/event/vin_loss_1_newsevent.png"
 	}
 	spriteType = {
 		name = "GFX_USA_newevent_1"

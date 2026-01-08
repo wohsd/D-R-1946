@@ -64,7 +64,7 @@ guiTypes = {
 		buttonType = { 
 			name = "GER_parliament_close_button"
 			quadTextureSprite ="GFX_closebutton"
-			position = { x =10 y = 10 }
+			position = { x =660 y = 10 }
 			oversound = ui_menu_over
 		}
     }

@@ -1,0 +1,67 @@
+scripted_gui = {
+	CHI_parliament_gui_button = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "CHI_parliament_gui_container_button"
+		visible = {  
+			has_country_flag = CHI_parliament_gui_button_yes
+		} 
+		effects = { 
+			CHI_parliament_button_click={
+				set_country_flag = CHI_parliament_gui_yes
+			} 
+		} 
+	} 
+ 
+	CHI_parliament_gui = {
+		context_type = player_context
+		#parent_window_token = politics_tab
+		window_name = "CHI_parliament_gui_container"
+		visible = {
+			has_country_flag = CHI_parliament_gui_yes
+		}
+		dynamic_lists = {
+			CHI_parliament_semicircle_main_grid = {
+				array = CHI_parliament_main_array
+				index = CHI_parliament_main_index
+				change_scope = no
+				entry_container = CHI_parliament_semicircle_main_entry
+			}
+			CHI_parliament_member_grid = {
+				array = CHI_parliament_member_array
+				index = CHI_parliament_member_index
+				change_scope = no
+				entry_container = CHI_parliament_member_entry
+			}
+		}
+
+		effects = {
+			CHI_parliament_modify_button_control_click = {
+				set_temp_variable = { temp_member = v }
+				set_temp_variable = { temp_seats = 5 }
+				modify_CHI_parliament_seat = yes
+			}
+			CHI_parliament_modify_button_shift_click = {
+				set_temp_variable = { temp_member = v }
+				set_temp_variable = { temp_seats = -5 }
+				modify_CHI_parliament_seat = yes
+			}
+			CHI_parliament_close_button_click = {
+				clr_country_flag = CHI_parliament_gui_yes
+			}
+		}
+
+		properties = {
+			CHI_parliament_semicircle_main_icon = {
+				frame = v
+				x = CHI_parliament_x_array^CHI_parliament_main_index
+				y = CHI_parliament_y_array^CHI_parliament_main_index
+			}
+			CHI_parliament_member_icon = {
+				frame = v
+			}
+
+
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	MLI_Sir_Alan_Burns = {
+		name = MLI_Sir_Alan_Burns
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLI/MLI_Sir_Alan_Burns.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = MLI_Sir_Alan_Burns_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

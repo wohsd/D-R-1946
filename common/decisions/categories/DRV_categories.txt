@@ -1,0 +1,10 @@
+DRV_Road_Independence = {
+	icon = GFX_decision_category_antarctica
+	picture= GFX_decision_cat_picture_neo_assyrian_empire
+	visible = {
+		tag = DRV 
+	}  
+	highlight_states = {
+	}
+	priority = 2
+}

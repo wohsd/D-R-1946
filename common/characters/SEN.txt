@@ -1,0 +1,17 @@
+characters = {
+	SEN_Sir_Arthur_Richards = {
+		name = SEN_Sir_Arthur_Richards
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEN/SEN_Sir_Arthur_Richards.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = SEN_Sir_Arthur_Richards_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

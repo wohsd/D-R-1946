@@ -1,6 +1,6 @@
 guiTypes = {
 	containerWindowType = {
-		name = "treasury_container"
+		name = "treasury_container" 
 		position = { x = 1025 y = 0 }
 
 		buttonType ={

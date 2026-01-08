@@ -10,7 +10,60 @@ characters = {
 			ideology = Progressive_Liberalism
 			desc = JAP_Ichiro_Hatoyama_desc
 			expire = "2000.1.1.1"
+			traits = {
+				BRA_political_fox
+			}
 			id = -1
+		}
+	}
+
+	JAP_Yongren = {
+		name = JAP_Yongren
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Yongren.png"
+			}
+		}
+		country_leader = {
+			ideology = Progressive_Liberalism
+			desc = JAP_Yongren_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+		advisor={	
+			slot = head_of_government
+			idea_token = Yongren_G
+			desc = JAP_Yongren_desc
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+			}
+			traits = {
+				emperor_genka
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	JAP_Ryoki_Machijiri= {
+		name = JAP_Ryoki_Machijiri
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/JAP_Ryoki_Machijiri.png"
+				small = "gfx/interface/ideas/CHI/JAP_Ryoki_Machijiri.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 }

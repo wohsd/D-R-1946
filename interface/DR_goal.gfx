@@ -1,4 +1,78 @@
 spriteTypes = {
+	
+	spriteType = {
+	name = "GFX_DRV_focus_10"
+	texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_10.png"
+	}
+	spriteType = {
+	name = "GFX_DRV_focus_11"
+	texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_11.png"
+	}
+	spriteType = {
+		name = "GFX_DRV_focus_12"
+		texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_12.png"
+		}
+	spriteType = {
+	name = "GFX_DRV_focus_13"
+	texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_13.png"
+	}
+	spriteType = {
+	name = "GFX_DRV_focus_14"
+	texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_14.png"
+	}
+	spriteType = {
+	name = "GFX_DRV_focus_8"
+	texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_8.png"
+	}
+	spriteType = {
+	name = "GFX_DRV_focus_9"
+	texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_9.png"
+	}
+	
+	spriteType = {
+		name = "GFX_GER_focus40"
+		texturefile = "gfx\interface\goal\GER\GFX_GER_focus40.png"
+		}
+	spriteType = {
+		name = "GFX_GER_focus43"
+		texturefile = "gfx\interface\goal\GER\GFX_GER_focus43.png"
+		}	
+		spriteType = {
+			name = "GFX_GER_focus44"
+			texturefile = "gfx\interface\goal\GER\GFX_GER_focus44.png"
+			}
+			spriteType = {
+			name = "GFX_GER_focus45"
+			texturefile = "gfx\interface\goal\GER\GFX_GER_focus45.png"
+			}
+			spriteType = {
+			name = "GFX_GER_focus46"
+			texturefile = "gfx\interface\goal\GER\GFX_GER_focus46.png"
+			}	
+spriteType = {
+	name = "GFX_GER_focus39"
+	texturefile = "gfx\interface\goal\GER\GFX_GER_focus39.png"
+}
+spriteType = {
+name = "GFX_GER_focus41"
+texturefile = "gfx\interface\goal\GER\GFX_GER_focus41.png"
+}
+spriteType = {
+name = "GFX_GER_focus42"
+texturefile = "gfx\interface\goal\GER\GFX_GER_focus42.png"
+}			
+spriteType = {
+name = "GFX_GER_focus1"
+texturefile = "gfx\interface\goal\GER/GER_focus1.png"
+}
+spriteType = {
+name = "GFX_GER_focus2"
+texturefile = "gfx\interface\goal\GER/GER_focus2.png"
+}
+spriteType = {
+name = "GFX_GER_focus3"
+texturefile = "gfx\interface\goal\GER/GER_focus3.png"
+}			
 spriteType = {
 name = "GFX_GER_focus1"
 texturefile = "gfx\interface\goal\GER/GER_focus1.png"

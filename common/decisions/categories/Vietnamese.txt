@@ -1,0 +1,14 @@
+Vietnamese_Affairs = {
+	icon = GFX_decision_category_antarctica
+	picture= GFX_decision_Vietnamese_Affairs
+	visible = {
+		OR = {
+			tag = CHI
+			tag = JAP
+		}
+		
+	}  
+	highlight_states = {
+	}
+	priority = 2
+}

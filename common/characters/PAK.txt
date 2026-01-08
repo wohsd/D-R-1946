@@ -1,0 +1,17 @@
+characters = {
+	PAK_Muhammad_Ali_Jinnah = {
+		name = PAK_Muhammad_Ali_Jinnah
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAK/PAK_Muhammad_Ali_Jinnah.png"
+			}
+		}
+		country_leader = {
+			ideology = National_Populism
+			desc = PAK_Muhammad_Ali_Jinnah_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

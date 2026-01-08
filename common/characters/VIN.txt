@@ -13,5 +13,101 @@ characters = {
 			id = -1
 		}
 	}
+
+	VIN_Le_Van_Tich = {
+		name = VIN_Le_Van_Tich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VIN/VIN_Le_Van_Tich.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+VIN_Lam_Thanh_Nguyen = {
+	name = VIN_Lam_Thanh_Nguyen
+	portraits = {
+		civilian = {
+			large = "gfx/leaders/VIN/VIN_Lam_Thanh_Nguyen.png"
+		}
+	}
+	corps_commander = {
+		skill = 1
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+	}
+}
+
+VIN_Nguyen_Giac_Ngo = {
+	name = VIN_Nguyen_Giac_Ngo
+	portraits = {
+		civilian = {
+			large = "gfx/leaders/VIN/VIN_Nguyen_Giac_Ngo.png"
+		}
+	}
+	corps_commander = {
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+	}
+}
+
+VIN_Nguyen_Van_Han = {
+	name = VIN_Nguyen_Van_Han
+	portraits = {
+		civilian = {
+			large = "gfx/leaders/VIN/VIN_Nguyen_Van_Han.png"
+		}
+	}
+	corps_commander = {
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+}
+
+VIN_Nguyen_Van_Vy = {
+	name = VIN_Nguyen_Van_Vy
+	portraits = {
+		civilian = {
+			large = "gfx/leaders/VIN/VIN_Nguyen_Van_Vy.png"
+		}
+	}
+	corps_commander = {
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+}
+
+VIN_Tran_Van_Suat = {
+	name = VIN_Tran_Van_Suat
+	portraits = {
+		civilian = {
+			large = "gfx/leaders/VIN/VIN_Tran_Van_Suat.png"
+		}
+	}
+	corps_commander = {
+		skill = 3
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
 }
 	

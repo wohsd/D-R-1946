@@ -5,15 +5,15 @@ set_air_oob = "GER_1936_air_bba"
 set_naval_oob = "GER_1936_naval"
 set_convoys = 800
 
-set_variable = {Educational_var = 550}
-set_variable = {labor_var = 550}
-set_variable = {Women_var = 550}
-set_variable = {Livelihood_var = 550}
-set_variable = {Racial_var = 550}
-set_variable = {Police_var = 550}
+set_variable = {Educational_var = 610}
+set_variable = {labor_var = 520}
+set_variable = {Women_var = 310}
+set_variable = {Livelihood_var = 650}
+set_variable = {Racial_var = 450}
+set_variable = {Police_var = 350}
 set_variable = {Public_var = 550}
-set_variable = {Industrialization_var = 550}
-set_variable = {Agriculture_var = 550}
+set_variable = {Industrialization_var = 650}
+set_variable = {Agriculture_var = 350}
 
 set_power_balance = {
 	id = GER_bop_balance
@@ -124,7 +124,20 @@ recruit_character = GER_Franz_von_Papen
 recruit_character = GER_Werner_Heisenberg
 recruit_character = GER_Albert_Einstein
 
+recruit_character = GER_Helene_Wessel
+
+recruit_character = GER_Ludwig_Beck
+recruit_character = GER_Neuright
+
+recruit_character = GER_Wilhelm_von_PreuBen
+
 recruit_character = GER_Kurt_Schumacher
+
+recruit_character = GER_Otto_Georg_Thierack
+
+recruit_character = GER_Wilhelm_Frick
+
+recruit_character = GER_Johann_Krosigk
 
 set_politics = {
 	ruling_party = Conservatism
@@ -141,15 +154,20 @@ set_popularities = {
 }
 
 add_ideas = {
-	
+	Otto_Georg_Thierack_J
+	Wilhelm_Frick_I
+	Johann_Krosigk_F
+	Wilhelm_von_PreuBen_G
+	Ludwig_Beck_D
+	Neuright_F
 	#law
-	Agriculture_level4
+	Agriculture_level2
 	Racial_policy2
 	Women_rights2
-	labor_laws1
+	labor_laws3
 	Public_control4
 	Livelihood_investment3
-	Industrialization_level2
+	Industrialization_level3
 	Public_Education3
 	Police_policy3
 

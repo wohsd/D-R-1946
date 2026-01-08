@@ -1,6 +1,6 @@
-﻿capital = 671
+﻿capital = 1111
 
-#oob = "AOX_1920"
+oob = "VIN_1946"
 
 # Starting tech
 set_technology = {
@@ -8,6 +8,11 @@ set_technology = {
 }
 
 recruit_character = VIN_Nguyen_Phuc_Bui
+recruit_character = VIN_Lam_Thanh_Nguyen 
+recruit_character = VIN_Nguyen_Giac_Ngo 
+recruit_character = VIN_Nguyen_Van_Han 
+recruit_character = VIN_Nguyen_Van_Vy 
+recruit_character = VIN_Tran_Van_Suat
 
 set_politics = {
 	ruling_party = Dictatorship

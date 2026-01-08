@@ -1,0 +1,64 @@
+guiTypes = {
+
+	containerWindowType = {
+        name = "idea_progress_window"
+        position = { x = 190 y = 253 }  
+		size = { width = 300 height = 300 } 
+		iconType = { 
+			name = "idea_progerss_Educational"
+			spriteType = "GFX_idea_progerss"	
+			position = { x = 165 y = 185 }
+			pdx_tooltip = Public_Education1_desc
+		}   
+		iconType = { 
+			name = "idea_progerss_Industrialization"
+			spriteType = "GFX_idea_progerss"	
+			position = { x = 85 y = 185 }
+			pdx_tooltip = Industrialization_level1_desc
+		}  
+		iconType = { 
+			name = "idea_progerss_Agriculture"
+			spriteType = "GFX_idea_progerss"	
+			position = { x = 245 y = 185 }
+			pdx_tooltip = Agriculture_level1_desc
+		} 
+
+		
+		iconType = { 
+			name = "idea_progerss_labor"
+			spriteType = "GFX_idea_progerss"	
+			position = { x = -155 y = 290 }
+			pdx_tooltip = labor_laws1_desc
+		} 
+		iconType = { 
+			name = "idea_progerss_Women"
+			spriteType = "GFX_idea_progerss"	
+			position = { x = -75 y = 290 }
+			pdx_tooltip = Women_rights_desc
+		} 
+		iconType = { 
+			name = "idea_progerss_Livelihood"
+			spriteType = "GFX_idea_progerss"	
+			position = { x = 5 y = 290 }
+			pdx_tooltip = Livelihood_investment1_desc
+		} 
+		iconType = { 
+			name = "idea_progerss_Racial"
+			spriteType = "GFX_idea_progerss"	
+			position = { x = 85 y = 290 }
+			pdx_tooltip = Racial_policy1_desc
+		} 
+		iconType = { 
+			name = "idea_progerss_Police"
+			spriteType = "GFX_idea_progerss"	
+			position = { x = 165 y = 290 }
+			pdx_tooltip = Police_policy2_desc
+		} 
+		iconType = { 
+			name = "idea_progerss_Public"
+			spriteType = "GFX_idea_progerss"	
+			position = { x = 245 y = 290 }
+			pdx_tooltip = Public_control2_desc
+		} 
+	}	
+}

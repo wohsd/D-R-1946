@@ -1,0 +1,225 @@
+characters = {
+	DRV_Vu_Hong_Khanh = {
+		name = DRV_Vu_Hong_Khanh
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Vu_Hong_Khanh.png"
+			}
+		}
+		country_leader = {
+			ideology = sanmin-reformism
+			desc = DRV_Vu_Hong_Khanh_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
+	DRV_Ho_Chi_Minh = {
+		name = DRV_Ho_Chi_Minh
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Ho_Chi_Minh.png"
+			}
+			army = {
+				large = "gfx/leaders/DRV/DRV_Ho_Chi_Minh1.png"
+			}
+		}
+		country_leader = {
+			ideology = Revolutionary_Marxism
+			desc = DRV_Ho_Chi_Minh_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
+	DRV_Truong_Boi_Cong = {
+		name = DRV_Truong_Boi_Cong
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Truong_Boi_Cong.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	DRV_Vu_Nguyen_Giap = {
+		name = DRV_Vu_Nguyen_Giap
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Vu_Nguyen_Giap.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+
+
+
+
+
+##黄森（Huỳnh Sâm）
+DRV_Huynh_Sam = {
+		name = DRV_Huynh_Sam
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Huynh_Sam.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+##黄文泰（Hoàng Văn Thái）
+DRV_Hoang_Van_Thai = {
+		name = DRV_Hoang_Van_Thai
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Hoang_Van_Thai.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+##黎铁雄（Lê Thiết Hùng）
+DRV_Le_Thiet_Hung = {
+		name = DRV_Le_Thiet_Hung
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Le_Thiet_Hung.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+##黎献梅（Lê Hiến Mai）
+DRV_Le_Hien_Mai = {
+		name = DRV_Le_Hien_Mai
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Le_Hien_Mai.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+##文进勇（Văn Tiến Dũng）
+DRV_Van_Tien_Dung = {
+		name = DRV_Van_Tien_Dung
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Van_Tien_Dung.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+##陈子平（Trần Tử Bình）
+DRV_Tran_Tu_Binh = {
+		name = DRV_Tran_Tu_Binh
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Tran_Tu_Binh.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+##阮平（Nguyễn Bình）
+DRV_Nguyen_Binh = {
+		name = DRV_Nguyen_Binh
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Nguyen_Binh.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+##阮山（Nguyễn Sơn）
+DRV_Nguyen_Son = {
+		name = DRV_Nguyen_Son
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Nguyen_Son.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+##朱文晋（Chu Văn Tấn）
+DRV_Chu_Van_Tan = {
+		name = DRV_Chu_Van_Tan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Chu_Van_Tan.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+}
+	

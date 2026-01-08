@@ -12,9 +12,25 @@ characters = {
 			expire = "2000.1.1.1"
 			id = -1
 		}
+	}
+
+	GER_Kurt_Schumacher = {
+		name = GER_Kurt_Schumacher
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_Kurt_Schumacher.png"
+				small = "gfx/interface/ideas/GER/GER_Kurt_Schumacher.png"
+			}
+		}
+		country_leader = {
+			ideology = Social_Democracy
+			desc = GER_Kurt_Schumacher_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
 		advisor={	
 			slot = head_of_government
-			idea_token = Franz_von_Papen_G
+			idea_token = Kurt_Schumacher_G
 			allowed = {
 				original_tag = GER
 			}
@@ -29,22 +45,179 @@ characters = {
 		}
 	}
 
-	GER_Kurt_Schumacher = {
-		name = GER_Kurt_Schumacher
+
+
+
+	GER_Helene_Wessel = {
+		name = GER_Helene_Wessel
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/GER/GER_Kurt_Schumacher.png"
+				large = "gfx/leaders/GER/GER_Helene_Wessel.png"
+				small = "gfx/interface/ideas/GER/GER_Helene_Wessel.png"
 			}
 		}
 		country_leader = {
-			ideology = Social_Democracy
-			desc = GER_Kurt_Schumacher_desc
+			ideology = Authoritarian_Conservatism
+			desc = GER_Helene_Wessel_desc
 			expire = "2000.1.1.1"
 			id = -1
 		}
 		advisor={	
 			slot = head_of_government
-			idea_token = Kurt_Schumacher_G
+			idea_token = Helene_Wessel_G
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	GER_Neuright = {
+		name = GER_Neuright
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/GER_Neuright.png"
+			}
+		}
+		advisor={	
+			slot = Minister_Foreign
+			idea_token = Neuright_F
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	GER_Wilhelm_von_PreuBen = {
+		name = GER_Wilhelm_von_PreuBen
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/GER_Wilhelm_von_Preußen.png"
+			}
+		}
+		advisor={	
+			slot =  head_of_government
+			idea_token = Wilhelm_von_PreuBen_G
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	GER_Ludwig_Beck = {
+		name = GER_Ludwig_Beck
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/GER_Ludwig_Beck.png"
+			}
+		}
+		advisor={	
+			slot =  Minister_Defense
+			idea_token = Ludwig_Beck_D
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+
+	GER_Johann_Krosigk = {
+		name = GER_Johann_Krosigk
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/GER_Johann_Krosigk.png"
+			}
+		}
+		advisor={	
+			slot =  Minister_Finance
+			idea_token = Johann_Krosigk_F
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	GER_Wilhelm_Frick = {
+		name = GER_Wilhelm_Frick
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/GER_Wilhelm_Frick.png"
+			}
+		}
+		advisor={	
+			slot =  Minister_Interior
+			idea_token = Wilhelm_Frick_I
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	GER_Otto_Georg_Thierack = {
+		name = GER_Otto_Georg_Thierack
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/GER_Otto_Georg_Thierack.png"
+			}
+		}
+		advisor={	
+			slot =  Minister_Justice
+			idea_token = Otto_Georg_Thierack_J
 			allowed = {
 				original_tag = GER
 			}

@@ -52,9 +52,6 @@ scripted_gui = {
 		}
 
 		properties = {
-			GER_parliament_main_icon = {
-				frame = v
-			}
 			GER_parliament_semicircle_main_icon = {
 				frame = v
 				x = GER_parliament_x_array^GER_parliament_main_index

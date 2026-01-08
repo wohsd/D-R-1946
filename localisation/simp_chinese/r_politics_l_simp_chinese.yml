@@ -12,9 +12,13 @@
   GER_parliament_seat_text:0 "席位 [?GER_temp_seat|Y0]"
   GER_parliament_member_text:0 "[GERGetParliamentSeatName] - [?GER_parliament_seat_array^GER_parliament_member_index] 席位"
 
- 
+  CHI_parliament_main_icon_tt:0 "[CHIGetParliamentSeatName] - [CHIGetParliamentPartyName]"
+  CHI_parliament_seat_text:0 "席位 [?CHI_temp_seat|Y0]"
+  CHI_parliament_member_text:0 "[CHIGetParliamentSeatName] - [?CHI_parliament_seat_array^CHI_parliament_member_index] 席位"
+
+
   JAP_party_1_text:0 "社大党"
-  JAP_party_1_text_desc:0 "社大党\n党寇：麻久生\n影响力：§H4[?party_0_var]%§!\n满意度：§H3[?party_1_var]%§!\n\n\n\n\n£GFX_Asao_Ma_icon\n\n\n\n\n\n作为日本左翼运动第二个高潮期（1918-1940年）的代表性人物，麻生久这个名字或许今天声名不显，当时却在左翼运动中赫赫有名。\n\n\n§H“在日本的国情下，打倒资本主义的社会改革，将使军队和无产阶级的合理结合成为必然，为了达到目的，除促成这个必然外，别无他途。”§!" 
+  JAP_party_1_text_desc:0 "社大党\n党寇：麻生久\n\n影响力：§H[?party_0_var]%§!\n满意度：§H[?party_1_var]%§!\n\n\n\n\n£GFX_Asao_Ma_icon\n\n\n\n\n\n作为日本左翼运动第二个高潮期（1918-1940年）的代表性人物，麻生久这个名字或许今天声名不显，当时却在左翼运动中赫赫有名。\n\n\n§H“在日本的国情下，打倒资本主义的社会改革，将使军队和无产阶级的合理结合成为必然，为了达到目的，除促成这个必然外，别无他途。”§!" 
   JAP_party_2_text:0 "民政党"
   JAP_party_3_text:0 "纵横会"
   JAP_party_4_text:0 "政友会"
@@ -24,6 +28,11 @@
   GER_party_3_text:0 "德意志国家人民党"
   GER_party_4_text:0 "德国民主党"
 
+  CHI_party_1_text:0 "革命社会党"
+  CHI_party_2_text:0 "中华工党"
+  CHI_party_3_text:0 "青年党"
+  CHI_party_4_text:0 "中国国民党"
+  CHI_party_5_text:0 "中国民主同盟"
 
  #POLITICS_SUBGOAL_HEADER: "$NAME$ ($COLOR$$PROGRESS|%0$§!):"
  Party_Name_text:0 "[ROOT.GetRulingParty]"

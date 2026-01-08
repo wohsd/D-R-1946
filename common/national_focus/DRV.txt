@@ -1,0 +1,413 @@
+focus_tree = {
+	id = DRV
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DRV
+		}
+	}
+	default = no
+	focus = {
+		id = DRV_focus_0 
+		icon = GFX_DRV_focus_0 
+		cost = 10
+		x = 20
+		y = 1
+	}
+	focus = {
+		id = DRV_focus_8
+		icon = GFX_DRV_focus_8
+		cost = 10
+		x = 32 
+		y = 1
+	}
+	focus = {
+		id = DRV_focus_11
+		icon = GFX_DRV_focus_11
+		cost = 10
+		prerequisite = {
+			focus = DRV_focus_9
+		}
+		x = 32
+		y = 3
+	}
+	focus = {
+		id = DRV_focus_1
+		icon = GFX_DRV_focus_1
+		cost = 10
+		x = 20
+		y = 2
+		prerequisite = {
+			focus = DRV_focus_0
+		}
+	}
+	focus = {
+		id = DRV_focus_2
+		icon = GFX_DRV_focus_2
+		cost = 10
+		x = 15
+		y = 3
+		prerequisite = {
+			focus = DRV_focus_1
+		}
+	}
+	focus = {
+		id = DRV_focus_3
+		icon = GFX_DRV_focus_3
+		cost = 10
+		x = 18
+		y = 3
+		prerequisite = {
+			focus = DRV_focus_1
+		}
+		mutually_exclusive = {
+			focus = DRV_focus_4
+		}
+		mutually_exclusive = {
+			focus = DRV_focus_4
+		}
+	}
+	focus = {
+		id = DRV_focus_4
+		icon = GFX_DRV_focus_4
+		cost = 10
+		x = 22
+		y = 3
+		prerequisite = {
+			focus = DRV_focus_1
+		}
+		mutually_exclusive = {
+			focus = DRV_focus_3
+		}
+		mutually_exclusive = {
+			focus = DRV_focus_3
+		}
+	}
+	focus = {
+		id = DRV_focus_5
+		icon = GFX_DRV_focus_5
+		cost = 10
+		x = 25
+		y = 3
+		prerequisite = {
+			focus = DRV_focus_1
+		}
+	}
+	focus = {
+		id = DRV_focus_9
+		icon = GFX_DRV_focus_9
+		cost = 10
+		x = 32
+		y = 2
+		prerequisite = {
+			focus = DRV_focus_8
+		}
+	}
+	focus = {
+		id = DRV_focus_10
+		icon = GFX_DRV_focus_10
+		cost = 10
+		x = 30
+		y = 3
+		prerequisite = {
+			focus = DRV_focus_9 
+		}
+	}
+	focus = {
+		id = DRV_focus_6
+		icon = GFX_DRV_focus_6
+		cost = 10
+		x = 18
+		y = 4
+		prerequisite = {
+			focus = DRV_focus_3
+		}
+	}
+	focus = {
+		id = DRV_focus_7
+		icon = GFX_DRV_focus_7
+		cost = 10
+		x = 22
+		y = 4
+		prerequisite = {
+			focus = DRV_focus_4
+		}
+	}
+	focus = {
+		id = DRV_focus_12
+		icon = GFX_DRV_focus_12
+		cost = 10
+		x = 34
+		y = 3
+		prerequisite = {
+			focus = DRV_focus_9
+		}
+	}
+	focus = {
+		id = DRV_focus_13
+		icon = GFX_DRV_focus_13
+		cost = 10
+		x = 31
+		y = 4
+		prerequisite = {
+			focus = DRV_focus_11
+		}
+	}
+	focus = {
+		id = DRV_focus_14
+		icon = GFX_DRV_focus_14 
+		cost = 10
+		x = 33
+		y = 4
+		prerequisite = {
+			focus = DRV_focus_11
+		}
+	}
+
+	focus = {
+		id = DRV_focus_15
+		icon = GFX_DRV_focus_15
+		cost = 10
+		x = 20
+		y = 5
+		prerequisite = {
+			focus = DRV_focus_5 
+		}
+		prerequisite = {
+			focus = DRV_focus_2
+		}
+	}
+
+	focus = {
+		id = DRV_focus_16
+		icon = GFX_DRV_focus_16
+		cost = 10
+		x = 20
+		y = 6
+		prerequisite = {
+			focus = DRV_focus_15
+		}
+	}
+	focus = { 
+		id = DRV_focus_17
+		icon = GFX_DRV_focus_17
+		cost = 10
+		x = 20
+		y = 7
+		prerequisite = {
+			focus = DRV_focus_16
+		}
+	}
+	focus = {
+		id = DRV_focus_18
+		icon = GFX_DRV_focus_18
+		cost = 10
+		x = 20
+		y = 8
+		prerequisite = {
+			focus = DRV_focus_17
+		}
+	}
+	focus = {
+		id = DRV_focus_19
+		icon = GFX_DRV_focus_19
+		cost = 10
+		x = 18
+		y = 8
+		prerequisite = {
+			focus = DRV_focus_17
+		}
+	}
+	focus = {
+		id = DRV_focus_20
+		icon = GFX_DRV_focus_20
+		cost = 10
+		x = 22
+		y = 8 
+		prerequisite = {
+			focus = DRV_focus_17
+		}
+	}
+
+	focus = {
+		id = DRV_focus_21
+		icon = GFX_DRV_focus_21
+		cost = 10
+		x = 24
+		y = 6
+		prerequisite = {
+			focus = DRV_focus_15
+		}
+		prerequisite = {
+			focus = DRV_focus_22
+		}
+	}
+	focus = {
+		id = DRV_focus_22
+		icon = GFX_DRV_focus_22
+		cost = 10
+		x = 26
+		y = 5
+		prerequisite = {
+			focus = DRV_focus_13
+		}
+		prerequisite = {
+			focus = DRV_focus_14
+		}
+	}
+
+	focus = {
+		id = DRV_focus_23
+		icon = GFX_DRV_focus_23
+		cost = 10
+		x = 32
+		y = 5
+		prerequisite = {
+			focus = DRV_focus_13
+		}
+		prerequisite = {
+			focus = DRV_focus_14
+		}
+	}
+
+	focus = {
+		id = DRV_focus_24
+		icon = GFX_DRV_focus_24
+		cost = 10
+		x = 29
+		y = 5
+		prerequisite = {
+			focus = DRV_focus_13
+		}
+		prerequisite = {
+			focus = DRV_focus_14
+		}
+	}
+
+	focus = {
+		id = DRV_focus_25
+		icon = GFX_DRV_focus_25
+		cost = 10
+		x = 34 
+		y = 5
+		prerequisite = {
+			focus = DRV_focus_12
+		}
+	}
+
+	focus = {
+		id = DRV_focus_26
+		icon = GFX_DRV_focus_26
+		cost = 10
+		x = 29
+		y = 6
+		prerequisite = {
+			focus = DRV_focus_23
+		}
+		prerequisite = {
+			focus = DRV_focus_22
+		}
+	}
+	focus = {
+		id = DRV_focus_27
+		icon = GFX_DRV_focus_27
+		cost = 10
+		x = 32
+		y = 6
+		prerequisite = {
+			focus = DRV_focus_23
+		}
+	}
+	focus = {
+		id = DRV_focus_28
+		icon = GFX_DRV_focus_28
+		cost = 10
+		x = 34
+		y = 6
+		prerequisite = {
+			focus = DRV_focus_23
+		}
+	}
+
+	focus = {
+		id = DRV_focus_29
+		icon = GFX_DRV_focus_29
+		cost = 10
+		x = 31
+		y = 7
+		prerequisite = {
+			focus = DRV_focus_26
+		}
+		prerequisite = {
+			focus = DRV_focus_27
+		}
+	}
+	focus = {
+		id = DRV_focus_30
+		icon = GFX_DRV_focus_30
+		cost = 10
+		x = 30
+		y = 8
+		mutually_exclusive = {
+			focus = DRV_focus_31
+		}
+		prerequisite = {
+			focus = DRV_focus_29
+		}
+	}
+	focus = {
+		id = DRV_focus_31
+		icon = GFX_DRV_focus_31
+		cost = 10
+		x = 32
+		y = 8
+		prerequisite = {
+			focus = DRV_focus_29
+		}
+		mutually_exclusive = {
+			focus = DRV_focus_30
+		}
+	}
+
+	focus = {
+		id = DRV_focus_32
+		icon = GFX_DRV_focus_32
+		cost = 10
+		x = 29
+		y = 7
+		prerequisite = {
+			focus = DRV_focus_26
+		}
+	}
+	focus = {
+		id = DRV_focus_33
+		icon = GFX_DRV_focus_33
+		cost = 10
+		x = 28
+		y = 8
+		prerequisite = {
+			focus = DRV_focus_32
+		}
+	}
+	focus = {
+		id = DRV_focus_34
+		icon = GFX_DRV_focus_34
+		cost = 10
+		x = 27
+		y = 7
+		prerequisite = {
+			focus = DRV_focus_26
+		}
+	}
+	focus = {
+		id = DRV_focus_35
+		icon = GFX_DRV_focus_35
+		cost = 10
+		x = 27
+		y = 6
+		prerequisite = {
+			focus = DRV_focus_24
+		}
+	}
+}

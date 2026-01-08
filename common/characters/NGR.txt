@@ -1,0 +1,17 @@
+characters = {
+	NGR_Charles_Arden_Clarke = {
+		name = NGR_Charles_Arden_Clarke
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NGR/NGR_Charles_Arden_Clarke.png"
+			}
+		}
+		country_leader = {
+			ideology = semi-democratic-colonial-government
+			desc = NGR_Charles_Arden_Clarke_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

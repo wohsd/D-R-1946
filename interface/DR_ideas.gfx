@@ -242,6 +242,19 @@ spriteType = {
 		name = "GFX_idea_JAP_Members_Co_Prosperity_Sphere"
 		texturefile = "gfx\interface\ideas\JAP\JAP_Members_Co_Prosperity_Sphere.png"
 	}
+
+
+	progressBarType = {
+		name = "GFX_idea_progerss"
+		textureFile1 = "gfx/interface/idea_progerss.png"
+		textureFile2 = "gfx/interface/idea_progerss_empty.png"
+		effectFile = "gfx/FX/progress.lua"
+		size = { x = 15 y = 60}
+		steps = 1000
+		horizontal = no
+	}
+
+ 
 }
 
 
