@@ -1,4 +1,18 @@
 characters = {
+	DRV_Ruan_Haichen = {
+		name = DRV_Ruan_Haichen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRV/DRV_Ruan_Haichen.png"
+			}
+		}
+		country_leader = {
+			ideology = sanmin-reformism
+			desc = DRV_Ruan_Haichen_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 	DRV_Vu_Hong_Khanh = {
 		name = DRV_Vu_Hong_Khanh
 		portraits = {
@@ -25,7 +39,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = Revolutionary_Marxism
+			ideology = social-radicalism
 			desc = DRV_Ho_Chi_Minh_desc
 			expire = "2000.1.1.1"
 			id = -1

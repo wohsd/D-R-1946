@@ -5,7 +5,11 @@ add_manpower = 120000
 set_technology = {
 	infantry_weapons = 1
 }
-
+set_power_balance = {
+	id = DRV_bop_balance
+	set_value = 0.45
+}
+recruit_character = DRV_Ruan_Haichen
 recruit_character = DRV_Vu_Hong_Khanh
 recruit_character = DRV_Truong_Boi_Cong
 recruit_character = DRV_Vu_Nguyen_Giap

@@ -234,7 +234,7 @@ focus_tree = {
 		id = DRV_focus_21
 		icon = GFX_DRV_focus_21
 		cost = 10
-		x = 24
+		x = 22
 		y = 6
 		prerequisite = {
 			focus = DRV_focus_15
@@ -334,7 +334,7 @@ focus_tree = {
 		id = DRV_focus_29
 		icon = GFX_DRV_focus_29
 		cost = 10
-		x = 31
+		x = 33
 		y = 7
 		prerequisite = {
 			focus = DRV_focus_26
@@ -347,11 +347,8 @@ focus_tree = {
 		id = DRV_focus_30
 		icon = GFX_DRV_focus_30
 		cost = 10
-		x = 30
+		x = 32
 		y = 8
-		mutually_exclusive = {
-			focus = DRV_focus_31
-		}
 		prerequisite = {
 			focus = DRV_focus_29
 		}
@@ -360,13 +357,10 @@ focus_tree = {
 		id = DRV_focus_31
 		icon = GFX_DRV_focus_31
 		cost = 10
-		x = 32
+		x = 34
 		y = 8
 		prerequisite = {
 			focus = DRV_focus_29
-		}
-		mutually_exclusive = {
-			focus = DRV_focus_30
 		}
 	}
 
@@ -389,12 +383,12 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_32
 		}
-	}
+	} 
 	focus = {
 		id = DRV_focus_34
 		icon = GFX_DRV_focus_34
 		cost = 10
-		x = 27
+		x = 26
 		y = 7
 		prerequisite = {
 			focus = DRV_focus_26
@@ -404,10 +398,94 @@ focus_tree = {
 		id = DRV_focus_35
 		icon = GFX_DRV_focus_35
 		cost = 10
-		x = 27
+		x = 24
 		y = 6
 		prerequisite = {
 			focus = DRV_focus_24
+		}
+	}
+	focus = { 
+		id = DRV_focus_36
+		icon = GFX_DRV_focus_36
+		cost = 10
+		x = 22
+		y = 7
+		prerequisite = {
+			focus = DRV_focus_16
+		}
+	}
+	focus = { 
+		id = DRV_focus_36
+		icon = GFX_DRV_focus_36
+		cost = 10
+		x = 22
+		y = 7
+		prerequisite = {
+			focus = DRV_focus_16
+		}
+	}
+
+	focus = { 
+		id = DRV_focus_37
+		icon = GFX_DRV_focus_37
+		cost = 10
+		x = 27
+		y = 9
+		prerequisite = {
+			focus = DRV_focus_33
+		}
+	}
+	focus = { 
+		id = DRV_focus_38
+		icon = GFX_DRV_focus_38
+		cost = 10
+		x = 29
+		y = 9
+		prerequisite = {
+			focus = DRV_focus_33
+		}
+	}
+	focus = { 
+		id = DRV_focus_39
+		icon = GFX_DRV_focus_39
+		cost = 10
+		x = 33
+		y = 9
+		prerequisite = {
+			focus = DRV_focus_30
+		}
+		prerequisite = {
+			focus = DRV_focus_31
+		}
+	}
+	focus = { 
+		id = DRV_focus_40
+		icon = GFX_DRV_focus_40
+		cost = 10
+		x = 30
+		y = 8
+		prerequisite = {
+			focus = DRV_focus_32
+		}
+	}
+	focus = { 
+		id = DRV_focus_41
+		icon = GFX_DRV_focus_41
+		cost = 10
+		x = 18
+		y = 7
+		prerequisite = {
+			focus = DRV_focus_16
+		}
+	} 
+	focus = { 
+		id = DRV_focus_42
+		icon = GFX_DRV_focus_42
+		cost = 10
+		x = 26
+		y = 6
+		prerequisite = {
+			focus = DRV_focus_22
 		}
 	}
 }

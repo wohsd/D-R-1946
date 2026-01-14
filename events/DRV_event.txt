@@ -1,0 +1,81 @@
+﻿
+add_namespace = DRV_countryevent
+add_namespace = DRV_focusevent
+# 基础事件模板续写（DRV_countryevent.1 至 DRV_countryevent.16）
+country_event = {
+	id = DRV_focusevent.25
+	title = DRV_focusevent.25.t
+	desc = DRV_focusevent.25.d
+	picture = GFX_DRV_focusevent_25
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = DRV_focusevent.25.a
+		country_event = {id=DRV_focusevent.26 days=120}
+	}
+	option = {
+		name = DRV_focusevent.25.b
+	}
+}
+
+country_event = {
+	id = DRV_focusevent.26
+	title = DRV_focusevent.26.t
+	desc = DRV_focusevent.26.d
+	picture = GFX_DRV_focusevent_26
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = DRV_focusevent.26.a
+		country_event = {id=DRV_focusevent.27 days=120}
+	}
+}
+
+country_event = {
+	id = DRV_focusevent.27
+	title = DRV_focusevent.27.t
+	desc = DRV_focusevent.27.d
+	picture = GFX_DRV_focusevent_27
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = DRV_focusevent.27.a
+		promote_character = DRV_Ho_Chi_Minh
+	}
+}
+
+
+country_event = {
+	id = DRV_countryevent.1
+	title = DRV_countryevent.1.t
+	desc = DRV_countryevent.1.d
+	picture = GFX_DRV_countryevent_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = DRV_countryevent.1.a
+	}
+}
+country_event = {
+	id = DRV_countryevent.2
+	title = DRV_countryevent.2.t
+	desc = DRV_countryevent.2.d
+	picture = GFX_DRV_countryevent_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = DRV_countryevent.2.a
+	}
+}
+
+country_event = {
+	id = DRV_countryevent.3
+	title = DRV_countryevent.3.t
+	desc = DRV_countryevent.3.d
+	picture = GFX_DRV_countryevent_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = DRV_countryevent.3.a
+	}
+}

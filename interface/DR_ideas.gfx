@@ -1,6 +1,19 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_Ho_Chi_Minh_leftists"
+		texturefile = "gfx\interface\bop\Ho_Chi_Minh_leftists.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Ruan_Haichen_Rightist"
+		texturefile = "gfx\interface\bop\Ruan_Haichen_Rightist.png"
+	}
 	
-	
+	spriteType = {
+		name = "GFX_idea_William_III"
+		texturefile = "gfx\interface\bop\William_III.png"
+	}
+
+
 spriteType = {
 	name = "GFX_idea_Police_policy2"
 	texturefile = "gfx\interface\ideas\Police_policy2.png"
@@ -220,10 +233,7 @@ spriteType = {
 		name = "GFX_idea_GER_Ash_Roll"
 		texturefile = "gfx\interface\ideas\GER\GER_Ash_Roll.png"
 	}
-    spriteType = {
-		name = "GFX_idea_William_III"
-		texturefile = "gfx\interface\bop\William_III.png"
-	}
+    
 
 ###JAP
 	spriteType = {

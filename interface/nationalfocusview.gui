@@ -12,9 +12,9 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "national_focus_title"
-			position = { x = 45 y = 8 }
+			position = { x = 45 y = 18 }
 			textureFile = ""
-			font = "hoi_36header"
+			font = "dr_font_21"
 			borderSize = {x = 0 y = 0}
 			text = "NATIONAL_FOCUS_TITLE"
 			maxWidth = 500
@@ -449,7 +449,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "name"
 			position = { x = 15 y = 58 }
-			font = "hoi_16mbs"
+			font = "dr_font_16"
 			text = ""
 			maxWidth = 147
 			maxHeight = 20

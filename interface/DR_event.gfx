@@ -41,4 +41,10 @@ spriteTypes = {
 		name = "GFX_GER_focusevent_1"
 		texturefile = "gfx/event/GER_focusevent_1.png"
 	}
+
+
+	spriteType = {
+		name = "GFX_DRV_countryevent_1"
+		texturefile = "gfx/event/DRV_countryevent_1.png"
+	}
 } 

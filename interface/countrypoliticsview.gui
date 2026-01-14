@@ -619,7 +619,7 @@ containerWindowType = {
 			
 			iconType = {
 				name = "power_balance_ICON"
-				position = { x = 12 y = -6 }
+				position = { x = 12 y = 5 }
 				quadTextureSprite = "GFX_placeholder_bordered"
 				alwaystransparent = yes				
 				scale = 0.75

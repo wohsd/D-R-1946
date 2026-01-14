@@ -7,3 +7,12 @@ GER_bop_left_side_range:0 "民主过渡"
 GER_bop_right_side_range:0 "独裁过渡"
 
 GER_mid_range:0 "不温不火"
+
+DRV_bop_balance:0 "联合阵线"
+DRV_bop_left_side:0 "左派主导"
+DRV_bop_right_side:0 "右派主导"
+
+DRV_bop_left_side_range:0 "右派式微"
+DRV_bop_right_side_range:0 "左派式微"
+
+DRV_mid_range:0 "牢不可破的阵线"

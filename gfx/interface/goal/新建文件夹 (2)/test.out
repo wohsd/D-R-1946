@@ -1,14 +1,18 @@
 spriteTypes = {
 spriteType = {
-name = "GFX_GER_focus44"
-texturefile = "gfx\interface\goal\GER\GFX_GER_focus44.png"
+name = "GFX_DRV_focus_0"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_0.png"
 }
 spriteType = {
-name = "GFX_GER_focus45"
-texturefile = "gfx\interface\goal\GER\GFX_GER_focus45.png"
+name = "GFX_DRV_focus_1"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_1.png"
 }
 spriteType = {
-name = "GFX_GER_focus46"
-texturefile = "gfx\interface\goal\GER\GFX_GER_focus46.png"
+name = "GFX_DRV_focus_17"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_17.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_4"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_4.png"
 }
 }
