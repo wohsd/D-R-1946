@@ -1,0 +1,41 @@
+ideas = {
+	country = {
+		DRV_Lack_firepower = {
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				license_tech_difference_speed = 0.5
+				production_factory_start_efficiency_factor = -0.15
+				army_bonus_air_superiority_factor=-0.5
+			}
+		}
+
+		DRV_Will_of_Total_Resistance = {
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				defensive_war_stability_factor = 0.15
+				army_claim_defence_factor=0.2
+				war_support_weekly=0.01
+			}
+		}
+
+		DRV_Fragmented_Homeland = {
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				supply_factor = -0.05
+				org_loss_when_moving = 0.05
+			}
+		}
+	}
+
+
+}

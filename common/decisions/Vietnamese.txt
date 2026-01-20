@@ -16,6 +16,9 @@ Vietnamese_Affairs={
 				always = no
 			} 
 		}
+		ai_will_do = {
+			factor = 10
+		}
 		fire_only_once = yes
 		icon = mission_icon     # For GFX_decision_mission_icon
 		is_good = no
@@ -36,6 +39,9 @@ Vietnamese_Affairs={
 		available = {
 			
 		}
+		ai_will_do = {
+			factor = 10
+		}
 		fire_only_once = yes
 		icon = mission_icon      
 		complete_effect = {
@@ -44,6 +50,11 @@ Vietnamese_Affairs={
 			}
 			add_to_variable = {
 				china_power = 1 
+			}
+			JAP = {
+				add_to_variable = {
+					china_power = 1 
+				}
 			}
 			custom_effect_tooltip = {
 				localization_key = china_power_tt
@@ -58,11 +69,19 @@ Vietnamese_Affairs={
 		available = {
 			
 		}
+		ai_will_do = {
+			factor = 10
+		}
 		fire_only_once = yes
 		icon = mission_icon     
 		complete_effect = {
 			add_to_variable = {
 				china_power = 1 
+			}
+			JAP = {
+				add_to_variable = {
+					china_power = 1 
+				}
 			}
 			custom_effect_tooltip = {
 				localization_key = china_power_tt
@@ -77,10 +96,20 @@ Vietnamese_Affairs={
 		available = {
 			
 		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 20
+		days_remove = 40
 		icon = mission_icon     
 		complete_effect = {
 			add_to_variable = {
 				china_power = 1 
+			}
+			JAP = {
+				add_to_variable = {
+					china_power = 1 
+				}
 			}
 			custom_effect_tooltip = {
 				localization_key = china_power_tt
@@ -105,6 +134,9 @@ Vietnamese_Affairs={
 		available = {
 			
 		}
+		ai_will_do = {
+			factor = 10
+		}
 		fire_only_once = yes
 		icon = mission_icon     
 		complete_effect = {
@@ -113,6 +145,11 @@ Vietnamese_Affairs={
 			}
 			add_to_variable = {
 				Japan_power = 1 
+			}
+			CHI = {
+				add_to_variable = {
+					Japan_power = 1 
+				}
 			}
 			custom_effect_tooltip = { 
 				localization_key = Japan_power_tt
@@ -127,10 +164,20 @@ Vietnamese_Affairs={
 		available = {
 			
 		} 
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 10
+		days_remove = 30
 		icon = mission_icon      
 		complete_effect = {
 			add_to_variable = {
 				Japan_power = 1 
+			}
+			CHI = {
+				add_to_variable = {
+					Japan_power = 1 
+				}
 			}
 			custom_effect_tooltip = { 
 				localization_key = Japan_power_tt

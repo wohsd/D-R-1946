@@ -2,6 +2,15 @@
 
 	spriteTypes = {
 		spriteType = {
+			name = "GFX_faction_icon_CHI"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_CHI.png"
+			noOfFrames = 2
+		}
+		spriteType = {
+			name = "GFX_faction_icon_CHI_miniature"
+			texturefile = "gfx/interface/factions/faction_logos/faction_icon_CHI_miniature.png"
+		}
+		spriteType = {
 			name = "GFX_faction_icon_ERA"
 			texturefile = "gfx/interface/factions/faction_logos/faction_icon_ERA.dds"
 			noOfFrames = 2

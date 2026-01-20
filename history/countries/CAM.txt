@@ -8,7 +8,7 @@ set_technology = {
 }
 
 recruit_character = CAM_Norodom_Sihanouk
-
+recruit_character = CAM_Shan_Yuming
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"

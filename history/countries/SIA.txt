@@ -8,7 +8,7 @@ set_technology = {
 }
 
 recruit_character = SIA_Rama_VIII
-
+recruit_character = SIA_Payom_Julanont
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"

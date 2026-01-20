@@ -36,3 +36,108 @@ DRV_Road_Independence={
 	}
 	
 }
+
+
+
+
+DRV_Liberate_Indochina_Peninsula={
+	DRV_Release_Cambodia = {
+		visible = {
+			tag = DRV
+			#DRV={has_war_with = CAM}
+		}
+		available = {
+			
+		}
+		ai_will_do = { 
+			factor = 10
+		}
+		fire_only_once = yes
+		icon = mission_icon      
+		complete_effect = {
+			CAM = {
+				set_politics = {
+					ruling_party = Reformism
+					elections_allowed = yes
+					last_election = "1949.12.17"
+					election_frequency = 48
+				}
+				set_popularities = {
+					Reformism = 100
+				}
+				white_peace = DRV
+				set_cosmetic_tag = CAM_Reformism
+			}
+			CHI = {
+				add_to_faction = CAM
+			}
+		}
+	}
+
+	DRV_Release_Thailand = {
+		visible = {
+			tag = DRV
+			#DRV={has_war_with = SIA}
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		icon = mission_icon      
+		complete_effect = {
+			SIA = {
+				set_politics = {
+					ruling_party = Reformism
+					elections_allowed = yes
+					last_election = "1949.12.17"
+					election_frequency = 48
+				}
+				set_popularities = {
+					Reformism = 100
+				}
+				white_peace = DRV
+				set_cosmetic_tag = SIA_Reformism
+			}
+			CHI = {
+				add_to_faction = SIA
+			}
+		}
+	}
+	DRV_Release_Laos = {
+		visible = {
+			tag = DRV
+			#DRV={has_war_with = LAO}
+			
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		icon = mission_icon      
+		complete_effect = {
+			LAO = {
+				set_politics = {
+					ruling_party = Reformism
+					elections_allowed = yes
+					last_election = "1949.12.17"
+					election_frequency = 48
+				}
+				set_popularities = {
+					Reformism = 100
+				}
+				set_cosmetic_tag = LAO_Reformism
+				white_peace = DRV
+			}
+			
+			CHI = {
+				add_to_faction = LAO
+			}
+		}
+	}
+}

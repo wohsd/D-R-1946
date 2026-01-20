@@ -1,4 +1,114 @@
 spriteTypes = {
+
+spriteType = {
+name = "GFX_DRV_focus_22"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_22.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_26"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_26.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_34"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_34.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_37"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_37.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_42"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_42.png"
+}
+
+
+spriteType = {
+name = "GFX_DRV_focus_16"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_16.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_29"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_29.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_30"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_30.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_31"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_31.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_32"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_32.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_35"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_35.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_38"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_38.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_40"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_40.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_41"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_41.png"
+}
+
+
+spriteType = {
+name = "GFX_DRV_focus_18"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_18.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_19"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_19.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_20"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_20.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_21"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_21.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_23"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_23.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_24"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_24.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_25"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_25.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_27"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_27.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_28"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_28.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_33"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_33.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_36"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_36.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_39"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_39.png"
+}
+
 	
 spriteType = {
 name = "GFX_DRV_focus_0"

@@ -145,6 +145,7 @@ DRV_focus_5_desc: "无描述"
 DRV_focus_6: "组建劳犯营"
 DRV_focus_6_desc: "由于人力的短缺，我们必须组建一支新的作战部队，虽然是由劳犯组成，但在严格的军规下也能发挥不错的战斗力。"
 
+
 DRV_focus_7: "英雄主义宣传"
 DRV_focus_7_desc: "我们无法承担劳犯背叛的后果，我们必须在民间大力宣传，树立英雄形象，号召更多的青年来保家卫国。"
 
@@ -160,10 +161,12 @@ DRV_focus_10_desc: "无描述"
 DRV_focus_11: "改造农村"
 DRV_focus_11_desc: "无描述"
 
+DRV_focus_11_tt: "([DRV.Getflag]§H[DRV.Getname]§!)\n所有地区添加§H$DRV_Rural_reform$§!的修正"
+
 DRV_focus_12: "维护国民党地位"
 DRV_focus_12_desc: "无描述"
 
-DRV_focus_13: "将土改带回越南"
+DRV_focus_13: "百废待兴的越南"
 DRV_focus_13_desc: "无描述"
 
 
@@ -184,6 +187,8 @@ DRV_focus_18_desc: "无描述"
 
 DRV_focus_19: "潜入暹罗"
 DRV_focus_19_desc: "无描述"
+DRV_focus_19_tt: "\n解锁对该国的§H干涉计划§!\n在§H解放/转变§!该国后，使其加入联盟"
+
 
 DRV_focus_20: "释放巨象"
 DRV_focus_20_desc: "无描述"
@@ -194,16 +199,19 @@ DRV_focus_21_desc: "无描述"
 DRV_focus_22: "发展越南军工"
 DRV_focus_22_desc: "无描述"
 
-DRV_focus_23: "百废待兴的越南"
+DRV_focus_23: "将土改带回越南"
 DRV_focus_23_desc: "无描述"
 
 DRV_focus_24: "树立村社民兵制"
 DRV_focus_24_desc: "无描述"
+DRV_focus_24_tt: "([DRV.Getflag]§H[DRV.Getname]§!)\n所有地区添加§H$DRV_militia$§!的修正"
+
+
 
 DRV_focus_25: "打击腐败制度"
 DRV_focus_25_desc: "无描述"
 
-DRV_focus_26: "三年经济建设计划"
+DRV_focus_26: "爱国卫生运动"
 DRV_focus_26_desc: "无描述"
 
 DRV_focus_27: "土地租金减免"

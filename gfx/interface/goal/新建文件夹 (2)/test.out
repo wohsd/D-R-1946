@@ -1,18 +1,22 @@
 spriteTypes = {
 spriteType = {
-name = "GFX_DRV_focus_0"
-texturefile = "gfx\interface\goal\DRV\DRV_focus_0.png"
+name = "GFX_DRV_focus_22"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/DRV_focus_22.png"
 }
 spriteType = {
-name = "GFX_DRV_focus_1"
-texturefile = "gfx\interface\goal\DRV\DRV_focus_1.png"
+name = "GFX_DRV_focus_26"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/DRV_focus_26.png"
 }
 spriteType = {
-name = "GFX_DRV_focus_17"
-texturefile = "gfx\interface\goal\DRV\DRV_focus_17.png"
+name = "GFX_DRV_focus_34"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/DRV_focus_34.png"
 }
 spriteType = {
-name = "GFX_DRV_focus_4"
-texturefile = "gfx\interface\goal\DRV\DRV_focus_4.png"
+name = "GFX_DRV_focus_37"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/DRV_focus_37.png"
+}
+spriteType = {
+name = "GFX_DRV_focus_42"
+texturefile = "gfx\interface\goal\新建文件夹 (2)/DRV_focus_42.png"
 }
 }

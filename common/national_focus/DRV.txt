@@ -7,20 +7,33 @@ focus_tree = {
 			tag = DRV
 		}
 	}
-	default = no
+	default = no 
 	focus = {
 		id = DRV_focus_0 
 		icon = GFX_DRV_focus_0 
 		cost = 10
 		x = 20
 		y = 1
+		completion_reward = {
+			add_ideas = DRV_Will_of_Total_Resistance
+		}
 	}
 	focus = {
 		id = DRV_focus_8
 		icon = GFX_DRV_focus_8
 		cost = 10
+		available = {
+			#VIN = {
+			#	exists = no
+			#}
+		}
 		x = 32 
 		y = 1
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = DRV_focus_11
@@ -31,6 +44,21 @@ focus_tree = {
 		}
 		x = 32
 		y = 3
+		completion_reward = {
+			custom_effect_tooltip = DRV_focus_11_tt
+			hidden_effect = {
+				every_state = { 
+					if = {  
+						limit = {  
+							is_controlled_by = DRV
+						}
+						add_dynamic_modifier = {
+							modifier = DRV_Rural_reform
+						}
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = DRV_focus_1
@@ -40,6 +68,9 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = DRV_focus_0
+		}
+		completion_reward = {
+			
 		}
 	}
 	focus = {
@@ -51,7 +82,12 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_1
 		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
 	}
+
 	focus = {
 		id = DRV_focus_3
 		icon = GFX_DRV_focus_3
@@ -93,6 +129,17 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_1
 		}
+		completion_reward = {
+			add_units_to_division_template = {
+				template_name = "越南国民军"
+				regiments = {
+					infantry = 4
+				}
+				support = {
+					military_police = 3
+				}
+			}
+		}
 	}
 	focus = {
 		id = DRV_focus_9
@@ -113,15 +160,39 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_9 
 		}
+		completion_reward = {
+			add_power_balance_value = {
+				id = DRV_bop_balance
+				value = 0.1
+			}
+		}
 	}
 	focus = {
-		id = DRV_focus_6
+		id = DRV_focus_6 
 		icon = GFX_DRV_focus_6
 		cost = 10
 		x = 18
 		y = 4
 		prerequisite = {
 			focus = DRV_focus_3
+		}
+		completion_reward = {
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			division_template = {
+				name = "惩戒营"
+				is_locked = yes
+				division_cap = 3 
+				priority = 0
+				template_counter = 0
+				regiments = {
+					penal_battalion = { x = 0 y = 0 }
+					penal_battalion = { x = 0 y = 1 }
+					penal_battalion = { x = 0 y = 2 }
+					penal_battalion = { x = 0 y = 3 }
+				}
+				support = {
+				}
+			}
 		}
 	}
 	focus = {
@@ -133,6 +204,17 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_4
 		}
+		completion_reward = {
+			add_trait = {
+				trait = PHI_revolutionary_hero
+				character = DRV_Ruan_Haichen 
+			}
+			add_popularity = {
+				ideology = Nationalism
+				popularity = 0.1
+			}
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = DRV_focus_12
@@ -143,15 +225,28 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_9
 		}
-	}
+		completion_reward = {
+			add_power_balance_value = {
+				id = DRV_bop_balance
+				value = 0.1
+			}
+		}
+	} 
 	focus = {
 		id = DRV_focus_13
-		icon = GFX_DRV_focus_13
+		icon = GFX_DRV_focus_23 
 		cost = 10
 		x = 31
 		y = 4
 		prerequisite = {
 			focus = DRV_focus_11
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = Reformism
+				popularity = 0.1
+			}
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -177,6 +272,16 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_2
 		}
+		completion_reward = {
+			every_unit_leader = {
+				add_skill_level = 1
+				gain_xp = 100
+			}
+			add_command_power = 20
+			army_experience = 10
+			air_experience = 10
+			navy_experience = 10
+		}
 	}
 
 	focus = {
@@ -188,6 +293,24 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_15
 		}
+		completion_reward = { 
+			CHI = {
+				give_guarantee = DRV 
+				add_to_faction = DRV
+			}
+			DRV = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = CHI
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = DRV
+				}
+			}
+		}
 	}
 	focus = { 
 		id = DRV_focus_17
@@ -197,6 +320,20 @@ focus_tree = {
 		y = 7
 		prerequisite = {
 			focus = DRV_focus_16
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = LAO
+				type = liberate_wargoal 
+			}
+			create_wargoal = {
+				target = CAM
+				type = liberate_wargoal 
+			}
+			create_wargoal = {
+				target = SIA
+				type = liberate_wargoal 
+			}
 		}
 	}
 	focus = {
@@ -208,6 +345,12 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_17
 		}
+		completion_reward = {
+			CAM = { 
+				custom_effect_tooltip = DRV_focus_19_tt
+			}
+			country_event = CAM_DRV_event.1
+		}
 	}
 	focus = {
 		id = DRV_focus_19
@@ -218,6 +361,12 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_17
 		}
+		completion_reward = {
+			SIA = { 
+				custom_effect_tooltip = DRV_focus_19_tt
+			}
+			country_event = SIA_DRV_event.1
+		}
 	}
 	focus = {
 		id = DRV_focus_20
@@ -226,7 +375,13 @@ focus_tree = {
 		x = 22
 		y = 8 
 		prerequisite = {
-			focus = DRV_focus_17
+			focus = DRV_focus_17 
+		}
+		completion_reward = {
+			LAO = {  
+				custom_effect_tooltip = DRV_focus_19_tt
+			}
+			country_event = LAO_DRV_event.1
 		}
 	}
 
@@ -255,11 +410,28 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_14
 		}
+		completion_reward = {
+			
+			DRV={
+				random_controlled_state = {
+					if = {
+						limit = { 
+							is_controlled_by = DRV
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+		}
 	}
 
 	focus = {
 		id = DRV_focus_23
-		icon = GFX_DRV_focus_23
+		icon = GFX_DRV_focus_13
 		cost = 10
 		x = 32
 		y = 5
@@ -272,7 +444,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DRV_focus_24
+		id = DRV_focus_24 
 		icon = GFX_DRV_focus_24
 		cost = 10
 		x = 29
@@ -282,6 +454,21 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = DRV_focus_14
+		}
+		completion_reward = {
+			custom_effect_tooltip = DRV_focus_24_tt
+			hidden_effect = {
+				every_state = { 
+					if = {  
+						limit = {  
+							is_controlled_by = DRV
+						}
+						add_dynamic_modifier = {
+							modifier = DRV_militia
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -293,6 +480,9 @@ focus_tree = {
 		y = 5
 		prerequisite = {
 			focus = DRV_focus_12
+		}
+		completion_reward = {
+			country_event = DRV_focusevent.25
 		}
 	}
 
@@ -307,6 +497,15 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = DRV_focus_22
+		}
+		completion_reward = {
+			add_to_variable = {
+				Livelihood_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Livelihood_var_tt
+				VALUE = "+50.00"
+			}
 		}
 	}
 	focus = {
@@ -328,6 +527,15 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_23
 		}
+		completion_reward = {
+			add_to_variable = {
+				labor_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = labor_var_tt
+				VALUE = "+50.00"
+			}
+		}
 	}
 
 	focus = {
@@ -342,6 +550,15 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_27
 		}
+		completion_reward = {
+			add_to_variable = {
+				Educational_var = 25
+			}
+			custom_effect_tooltip = {
+				localization_key = Educational_var_tt
+				VALUE = "+25.00"
+			}
+		}
 	}
 	focus = {
 		id = DRV_focus_30
@@ -351,6 +568,15 @@ focus_tree = {
 		y = 8
 		prerequisite = {
 			focus = DRV_focus_29
+		}
+		completion_reward = {
+			add_to_variable = {
+				Educational_var = 25
+			}
+			custom_effect_tooltip = {
+				localization_key = Educational_var_tt
+				VALUE = "+25.00"
+			}
 		}
 	}
 	focus = {
@@ -362,6 +588,27 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_29
 		}
+		completion_reward = {
+			add_to_variable = {
+				Educational_var = 25
+			}
+			custom_effect_tooltip = {
+				localization_key = Educational_var_tt
+				VALUE = "+25.00"
+			}
+			DRV = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = CHI
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = DRV
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -372,6 +619,32 @@ focus_tree = {
 		y = 7
 		prerequisite = {
 			focus = DRV_focus_26
+		}
+		completion_reward = {
+			1110={
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			1112={
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			DRV = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = CHI
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = DRV
+				}
+			}
 		}
 	}
 	focus = {
@@ -392,6 +665,19 @@ focus_tree = {
 		y = 7
 		prerequisite = {
 			focus = DRV_focus_26
+		}
+		completion_reward = {
+			1111={
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -444,6 +730,25 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_33
 		}
+		completion_reward = {
+			DRV = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+				add_offsite_building = { type = arms_factory level = 2 }
+			}
+			add_cic = 5000
+			DRV = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = CHI
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = DRV
+				}
+			}
+			}
 	}
 	focus = { 
 		id = DRV_focus_39
@@ -457,6 +762,28 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_31
 		}
+		completion_reward = {
+			add_research_slot = 1
+			add_to_variable = {
+				Educational_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Educational_var_tt
+				VALUE = "+50.00"
+			}
+			DRV = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = CHI
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = DRV
+				}
+			}
+		}
 	}
 	focus = { 
 		id = DRV_focus_40
@@ -466,6 +793,20 @@ focus_tree = {
 		y = 8
 		prerequisite = {
 			focus = DRV_focus_32
+		}
+		completion_reward = {
+			DRV = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = CHI
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = DRV
+				}
+			}
 		}
 	}
 	focus = { 
@@ -486,6 +827,22 @@ focus_tree = {
 		y = 6
 		prerequisite = {
 			focus = DRV_focus_22
+		}
+		completion_reward = {
+			DRV={
+				random_controlled_state = {
+					if = {
+						limit = { 
+							is_controlled_by = DRV
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
 		}
 	}
 }

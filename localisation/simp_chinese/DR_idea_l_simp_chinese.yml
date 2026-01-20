@@ -44,3 +44,13 @@
  GER_Eurasian_Hegemony_desc:0 ""
  GER_Ash_Roll:0 "“灰卷”体系"
  GER_Ash_Roll_desc:0 "帝国国库券是德国帝国国库局于1928年起发行的非正式法定纸币，因纸币颜色偏灰，也被称为“灰卷”。主要面值为5、10、20及50马克，由国家机构担保可兑换黄金，但不被私人市场接受。其发行旨在补充帝国银行高面额纸币的不足，并推动统一货币体系。"
+
+
+ DRV_Rural_reform:0 "建设农村"
+ DRV_militia:0 "村庄民兵制"
+
+
+
+ DRV_Lack_firepower:0 "匮乏的火力"
+ DRV_Will_of_Total_Resistance:0 "全民抗日战争"
+ DRV_Fragmented_Homeland:0 "被隔绝的地区"

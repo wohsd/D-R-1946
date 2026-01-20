@@ -13,5 +13,20 @@ characters = {
 			id = -1
 		}
 	}
+
+	CAM_Shan_Yuming= {
+		name = CAM_Shan_Yuming
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAM/CAM_Shan_Yuming.png"
+			}
+		}
+		country_leader = {
+			ideology = sanmin-reformism
+			desc = CAM_Shan_Yuming_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }
 	

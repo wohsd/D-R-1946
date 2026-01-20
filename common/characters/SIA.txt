@@ -13,5 +13,20 @@ characters = {
 			id = -1
 		}
 	}
+
+	SIA_Payom_Julanont= {
+		name = SIA_Payom_Julanont
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_Payom_Julanont.png"
+			}
+		}
+		country_leader = {
+			ideology = sanmin-reformism
+			desc = SIA_Payom_Julanont_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }
 	

@@ -24,6 +24,14 @@
  DRV_Road_Independence_ing:0"统一战争"
  DRV_Road_Independence_ing_desc:0""
 
+ DRV_Liberate_Indochina_Peninsula:0"解放中南半岛"
+ DRV_Liberate_Indochina_Peninsula_desc:0"解放中南半岛"
+ DRV_Release_Cambodia:0"释放柬埔寨"
+ DRV_Release_Thailand:0"释放泰国"
+ DRV_Release_Laos:0"释放老挝"
+
+
+
  Vietnamese_Affairs_ing:0"越南大起义"
  Vietnamese_Affairs_ing_desc:0""
 

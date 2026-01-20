@@ -120,6 +120,7 @@
  DRV_country:0 "越南民国"
 
 
+
  PAK:0 "巴基斯坦伊斯兰共和国"
  PAK_DEF:0 "巴基斯坦伊斯兰共和国"
  PAK_ADJ:0 "巴基斯坦伊斯兰共和国"
@@ -193,14 +194,17 @@
  LAO:0 "琅勃拉邦王国"
  LAO_DEF:0 "琅勃拉邦王国"
  LAO_ADJ:0 "琅勃拉邦王国"
+ LAO_Reformism:0 "老挝人民共和国"
 
  CAM:0 "柬埔寨王国"
  CAM_DEF:0 "柬埔寨王国"
  CAM_ADJ:0 "柬埔寨王国"
+ CAM_Reformism:0 "柬埔寨共和国"
 
  SIA:0 "暹罗帝国"
  SIA_DEF:0 "暹罗帝国"
  SIA_ADJ:0 "暹罗帝国"
+ SIA_Reformism:0 "暹罗共和国"
 
  EGY:0 "崇高阿拉维国"
  EGY_DEF:0 "崇高阿拉维国"

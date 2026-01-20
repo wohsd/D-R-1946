@@ -46,4 +46,8 @@ add_ideas = {
 	Industrialization_level2
 	Public_Education3
 	Police_policy3
+
+
+	DRV_Lack_firepower
+	DRV_Fragmented_Homeland
 }

@@ -19,7 +19,7 @@ bookmarks = {
 			}
 		}
 
-		"AUS"={
+		"GER"={
 			history = "AUS_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {

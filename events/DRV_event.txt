@@ -1,7 +1,74 @@
-﻿
+﻿add_namespace = CAM_DRV_event
+add_namespace = SIA_DRV_event
+add_namespace = LAO_DRV_event
+
+
 add_namespace = DRV_countryevent
 add_namespace = DRV_focusevent
 # 基础事件模板续写（DRV_countryevent.1 至 DRV_countryevent.16）
+#
+country_event = {
+	id = CAM_DRV_event.1
+	title = CAM_DRV_event.1.t
+	desc = CAM_DRV_event.1.d
+	picture = GFX_CAM_DRV_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAM_DRV_event.1.a
+		country_event = {id=CAM_event.2 days=120}
+	}
+	option = {
+		name = CAM_DRV_event.1.b
+		declare_war_on = {
+			target = CAM
+			type = liberate_wargoal 
+		}
+	}
+}
+
+country_event = {
+	id = LAO_DRV_event.1
+	title = LAO_DRV_event.1.t
+	desc = LAO_DRV_event.1.d
+	picture = GFX_LAO_DRV_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = LAO_DRV_event.1.a
+		country_event = {id=LAO_event.2 days=120}
+	}
+	option = {
+		name = LAO_DRV_event.1.b
+		declare_war_on = {
+			target = LAO
+			type = liberate_wargoal 
+		}
+	}
+}
+
+country_event = {
+	id = SIA_DRV_event.1
+	title = SIA_DRV_event.1.t
+	desc = SIA_DRV_event.1.d
+	picture = GFX_SIA_DRV_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = SIA_DRV_event.1.a
+		country_event = {id=SIA_event.2 days=120}
+	}
+	option = {
+		name = SIA_DRV_event.1.b
+		declare_war_on = {
+			target = SIA
+			type = liberate_wargoal 
+		}
+	}
+}
+
+
+
 country_event = {
 	id = DRV_focusevent.25
 	title = DRV_focusevent.25.t

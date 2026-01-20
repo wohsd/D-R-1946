@@ -13,5 +13,20 @@ characters = {
 			id = -1
 		}
 	}
+
+	LAO_Prince_Sufanufeng= {
+		name = LAO_Prince_Sufanufeng
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/LAO_Prince_Sufanufeng.png"
+			}
+		}
+		country_leader = {
+			ideology = sanmin-reformism
+			desc = LAO_Prince_Sufanufeng_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }
 	

@@ -11,7 +11,7 @@
 		militia = { x = 1 y = 2 }
 	}
 	support = {
-		Military_Police= { x = 0 y = 0 }
+		military_police= { x = 0 y = 0 }
 	}
 }
 
