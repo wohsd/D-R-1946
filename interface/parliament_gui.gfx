@@ -13,4 +13,15 @@ spriteTypes = {
 		name = "GFX_parliament_empty_button"
 		texturefile = "gfx/interface/parliament_empty_button.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Takeo_Yamazaki"
+		texturefile = "gfx/interface/pdx_icon/parliament/Takeo_Yamazaki.png"
+	}
+	spriteType = {
+		name = "GFX_SunKe"
+		texturefile = "gfx/interface/pdx_icon/parliament/SunKe.png"
+	}
+
+	
 }

@@ -1,0 +1,14 @@
+Agriculture_effect = {
+	every_country = {
+		if = {
+			limit = {
+				has_country_flag = Mao_Agriculture
+			}
+			CHI = {
+				add_to_variable = {
+					CHI_Agriculture_farmer_value = 10
+				}
+			}
+		}
+	}
+}

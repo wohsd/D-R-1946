@@ -1,0 +1,67 @@
+
+
+defined_text = { 
+	name = Agriculturepolitical
+	text = {
+		localization_key = Mao_Agriculture_desc
+    	trigger = {
+	 		has_country_flag = Mao_Agriculture
+		}
+	}
+	text = {
+		localization_key = Chen_Agriculture_desc
+    	trigger = {
+	 		has_country_flag = Chen_Agriculture
+		}
+	}
+	text = {
+		localization_key = Zuo_Agriculture_desc
+    	trigger = {
+	 		has_country_flag = Zuo_Agriculture
+		}
+	}
+}
+
+defined_text = { 
+	name = Agriculturepolitical_pic
+	text = {
+		localization_key = "GFX_Mao_Agriculture_button"
+    	trigger = {
+	 		has_country_flag = Mao_Agriculture
+		}
+	}
+	text = {
+		localization_key = "GFX_Chen_Agriculture_button"
+    	trigger = {
+	 		has_country_flag = Chen_Agriculture
+		}
+	}
+	text = {
+		localization_key = "GFX_Zuo_Agriculture_button"
+    	trigger = {
+	 		has_country_flag = Zuo_Agriculture
+		}
+	}
+}
+
+defined_text = { 
+	name = Agriculture_pic_tt
+	text = {
+		localization_key = Mao_Agriculture_effect
+    	trigger = {
+	 		has_country_flag = Mao_Agriculture
+		}
+	}
+	text = {
+		localization_key = Chen_Agriculture_effect
+    	trigger = {
+	 		has_country_flag = Chen_Agriculture
+		}
+	}
+	text = {
+		localization_key = Zuo_Agriculture_effect
+    	trigger = {
+	 		has_country_flag = Zuo_Agriculture
+		}
+	}
+}

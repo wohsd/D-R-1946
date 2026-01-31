@@ -2,6 +2,7 @@
  WHILE_FOCUSING: "执行该国策将产生以下效果：\n$EFF$"
  generic_focus: "国策"
  complete_effect: "修正§H追加效果：§!"
+ interfering_country: "\n解锁对该国的§H干涉计划§!\n在§H解放/转变§!该国后，使其加入联盟"
 ###prc
 GER_focus1: "独立之路"
 GER_focus1_desc: "无描述"
@@ -187,7 +188,7 @@ DRV_focus_18_desc: "无描述"
 
 DRV_focus_19: "潜入暹罗"
 DRV_focus_19_desc: "无描述"
-DRV_focus_19_tt: "\n解锁对该国的§H干涉计划§!\n在§H解放/转变§!该国后，使其加入联盟"
+
 
 
 DRV_focus_20: "释放巨象"
@@ -262,3 +263,60 @@ DRV_focus_41_desc: "无描述"
 
 DRV_focus_42: "筹设兵工厂"
 DRV_focus_42_desc: "无描述"
+
+
+
+CHI_focus_0: "兴复三民之亚洲"
+CHI_focus_0_desc: "无描述"
+
+CHI_focus_1: "聚焦交趾"
+CHI_focus_1_desc: "无描述"
+
+CHI_focus_2: "解放高丽"
+CHI_focus_2_desc: "无描述"
+
+CHI_focus_3: "守望南洋"
+CHI_focus_3_desc: "无描述"
+
+CHI_focus_4: "赤子功勋"
+CHI_focus_4_desc: "无描述"
+
+CHI_focus_5: "西征天竺"
+CHI_focus_5_desc: "无描述"
+
+CHI_focus_6: "对日寇的最后一击"
+CHI_focus_6_desc: "无描述"
+
+CHI_focus_7: "亚洲之光"
+CHI_focus_7_desc: "无描述"
+
+CHI_Agriculture_focus_1: "农业振兴五年计划"
+CHI_Agriculture_focus_1_desc: "无描述"
+
+CHI_Agriculture_focus_2: "修订《农田永佃权法》"
+CHI_Agriculture_focus_2_desc: "无描述"
+
+CHI_Agriculture_focus_3: "推广良种"
+CHI_Agriculture_focus_3_desc: "无描述"
+
+CHI_Agriculture_focus_4: "病虫害防治运动"
+CHI_Agriculture_focus_4_desc: "无描述"
+
+CHI_Agriculture_focus_5: "推广农村合作社"
+CHI_Agriculture_focus_5_desc: "无描述"
+
+CHI_Agriculture_focus_6: "自然灾害防控演练"
+CHI_Agriculture_focus_6_desc: "无描述"
+
+CHI_Agriculture_focus_7: "鼓励民间投资"
+CHI_Agriculture_focus_7_desc: "无描述"
+
+
+CHI_Agriculture_focus_8: "推广农事讲习所"
+CHI_Agriculture_focus_8_desc: "无描述"
+
+CHI_Agriculture_focus_9: "扩充农业科研机构"
+CHI_Agriculture_focus_9_desc: "无描述"
+
+CHI_Agriculture_focus_10: "封山育林"
+CHI_Agriculture_focus_10_desc: "无描述"

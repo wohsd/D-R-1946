@@ -34,7 +34,11 @@ scripted_gui = {
 				entry_container = parliament_member_entry
 			}
 		}
-
+		properties = {
+			parliament_leader = {
+				image = "[parliament_leader_pic]"
+			}
+		}
 		effects = {
 			parliament_modify_button_control_click = {
 				set_temp_variable = { temp_member = v }

@@ -58,3 +58,39 @@
 
  VIN_Transporting_materials:0"空运军火"
  VIN_Transporting_materials_desc:0""
+
+
+
+ CHI_Agriculture:0"农业概况"
+ CHI_Agriculture_desc:0"中国作为农业文明的发源地之一，农业发展贯穿五千年文明史。鸦片战争后，中国沦为半殖民地半封建社会，传统农业遭受冲击，农业发展陷入困境。军阀混战导致土地荒芜、水利失修，粮食产量大幅下降；封建土地制度依然根深蒂固，地主通过兼并土地，使大量农民沦为佃农，承受地租剥削。\n\n目前我们国家将农业恢复与发展作为首要任务，针对长期的农业困境，推行了一系列举措。"
+
+
+
+ CHI_Agriculture_landlord_tt:0"地主满意度：§H[?CHI_Agriculture_landlord_value]§!"
+ CHI_Agriculture_landlord_delayed:0"地主满意度代表着地主对我们的满意程度，一旦农民的满意度过低，地主可能会产生叛乱情绪。"
+
+ CHI_Agriculture_farmer_tt:0"农民满意度：§H[?CHI_Agriculture_farmer_value]§!"
+ CHI_Agriculture_farmer_delayed:0"农民满意度代表着农民对我们的满意程度，农民出身的部长与农民阶层深度绑定，一旦农民的满意度过低，具有农民背景的部长可能会提呈辞书。"
+
+ CHI_Agriculture_level_development_tt:0"农业发展度：§H[?CHI_Agriculture_level_development_value]§!"
+ CHI_Agriculture_level_development_delayed:0"农业发展度代表着我们的农业水平，更高的发展度能够提供地区的额外建筑槽，小幅提升我们的工业水平。"
+
+ CHI_Agriculture_natural_disaster_tt:0"防灾力度：§H[?CHI_Agriculture_natural_disaster_value]§!"
+ CHI_Agriculture_natural_disaster_delayed:0"防灾力度代表着我们对于天灾的抗性，充分的救灾能力能增加群众对我们政府的信任，并降低自然灾害的损失。"
+
+ CHI_Agriculture_title:0"农林部长：[Agriculturepolitical]"
+ CHI_Mao_tool:0"§H毛泽东§!辞职归乡"
+
+
+ Mao_Agriculture_desc:0"毛泽东"
+ Chen_Agriculture_desc:0"陈济棠"
+ Zuo_Agriculture_desc:0"左舜生"
+ 
+ CHI_Reclaim_wasteland:0"开垦边区荒地"
+ CHI_Agriculture_pic_tt:0"此人担任农林部长会产生以下§H效果§!：\n[Agriculture_pic_tt]"
+
+ Mao_Agriculture_effect:0"§H农民§!满意度：§H+10§!"
+
+ Chen_Agriculture_effect:0"§H抗灾§!力度：§H+10§!"
+
+ Zuo_Agriculture_effect:0"§H地主§!满意度：§H+10§!"

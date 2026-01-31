@@ -1,0 +1,28 @@
+scripted_gui = {
+	CHI_Agriculture = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		window_name = "CHI_Agriculture_button"
+		visible = {  
+		} 
+		properties = {
+			CHI_Agriculture_farmer_value={
+				frame=CHI_Agriculture_farmer_value
+			}
+			CHI_Agriculture_landlord_value={ 
+				frame=CHI_Agriculture_landlord_value
+			}
+			CHI_Agriculture_level_development_value={
+				frame=CHI_Agriculture_level_development_value
+			}
+			CHI_Agriculture_natural_disaster_value={
+				frame=CHI_Agriculture_natural_disaster_value
+			}
+			CHI_Agriculture_pic = {
+				image = "[Agriculturepolitical_pic]"
+			}
+		} 
+		effects = { 
+		} 
+	} 
+} 

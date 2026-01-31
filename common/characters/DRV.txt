@@ -33,9 +33,25 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/DRV/DRV_Ho_Chi_Minh.png"
+				small = "gfx/interface/ideas/DRV/DRV_Ho_Chi_Minh.png"
 			}
 			army = {
 				large = "gfx/leaders/DRV/DRV_Ho_Chi_Minh1.png"
+			}
+		}
+		advisor={	
+			slot = head_of_government
+			idea_token = Ho_Chi_Minh_G
+			allowed = {
+				original_tag = DRV
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		country_leader = {
@@ -67,6 +83,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/DRV/DRV_Vu_Nguyen_Giap.png"
+				small = "gfx/interface/ideas/DRV/DRV_Vu_Nguyen_Giap.png"
 			}
 		}
 		corps_commander = {
@@ -75,6 +92,21 @@ characters = {
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 3
+		}
+		advisor={	
+			slot = Minister_Defense
+			idea_token = Vu_Nguyen_Giap_D
+			allowed = {
+				original_tag = DRV
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -235,5 +267,106 @@ DRV_Chu_Van_Tan = {
 			logistics_skill = 3
 		}
 	}
+
+
+
+#财政
+DRV_Ruan_Liangbang= {
+		name = DRV_Ruan_Liangbang
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/DRV/DRV_Ruan_Liangbang.png"
+			}
+		}
+		advisor={	
+			slot = Minister_Finance
+			idea_token = Ruan_Liangbang_F
+			allowed = {
+				original_tag = DRV
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+}
+
+	DRV_Pham_Hung = {
+		name = DRV_Pham_Hung
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/DRV/DRV_Pham_Hung.png"
+			}
+		}
+		advisor={	
+			slot = Minister_Interior
+			idea_token = Pham_Hung_I
+			allowed = {
+				original_tag = DRV
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DRV_Hoang_Van_Hoan = {
+		name = DRV_Hoang_Van_Hoan
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/DRV/DRV_Hoang_Van_Hoan.png"
+			}
+		}
+		advisor={	
+			slot = Minister_Foreign
+			idea_token = Hoang_Van_Hoan_O
+			allowed = {
+				original_tag = DRV
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	DRV_Tran_Huy_Lieu = {
+		name = DRV_Tran_Huy_Lieu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/DRV/DRV_Tran_Huy_Lieu.png"
+			}
+		}
+		advisor={	
+			slot = Minister_Justice
+			idea_token = Tran_Huy_Lieu_J
+			allowed = {
+				original_tag = DRV
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
 }
 	

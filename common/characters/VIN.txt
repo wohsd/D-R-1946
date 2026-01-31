@@ -109,5 +109,8 @@ VIN_Tran_Van_Suat = {
 		logistics_skill = 2
 	}
 }
+
+
+
 }
 	

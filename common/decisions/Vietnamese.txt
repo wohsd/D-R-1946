@@ -35,6 +35,9 @@ Vietnamese_Affairs={
 			DRV = {
 				exists = yes
 			}
+			CHI={
+				has_completed_focus = CHI_focus_1
+			}
 		}
 		available = {
 			

@@ -1,4 +1,50 @@
-﻿add_namespace = CHI_death
+﻿add_namespace = CHI_Mao
+add_namespace = CHI_death
+add_namespace = CHI_kangsheng
+
+country_event = {
+	id = CHI_Mao.1
+	title = CHI_Mao.1.t
+	desc = CHI_Mao.1.d
+	picture = GFX_CHI_Mao_1
+	fire_only_once = yes
+	option = {
+		name = CHI_Mao.1.a
+		hidden_effect = {
+			country_event = {id=CHI_Mao.2 days=27}
+		}
+		
+	}
+}
+country_event = {
+	id = CHI_Mao.2
+	title = CHI_Mao.2.t
+	desc = CHI_Mao.2.d
+	picture = GFX_CHI_Mao_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI_Mao.2.a
+		hidden_effect = {
+			country_event = {id=CHI_Mao.2 days=27}
+		}
+		custom_effect_tooltip = CHI_Mao_tool
+		set_country_flag = Chen_Agriculture
+		clr_country_flag = Mao_Agriculture
+	}
+
+	option = {
+		name = CHI_Mao.2.b
+		hidden_effect = {
+			country_event = {id=CHI_Mao.2 days=27}
+		}
+		custom_effect_tooltip = CHI_Mao_tool
+		set_country_flag = Zuo_Agriculture
+		clr_country_flag = Mao_Agriculture
+	}
+}
+
+
 country_event = {
 	id = CHI_death.1
 	title = CHI_death.1.t
@@ -9,5 +55,69 @@ country_event = {
 	option = {
 		name = CHI_death.1.a
 		add_manpower = -1
+		hidden_effect = {
+			country_event = {id=CHI_death.2 days=27}
+		}
+		
+	}
+}
+country_event = {
+	id = CHI_death.2
+	title = CHI_death.2.t
+	desc = CHI_death.2.d
+	picture = GFX_CHI_death_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI_death.2.a
+		add_manpower = -15
+		hidden_effect = {
+			country_event = {id=CHI_death.3 days=21}
+		}
+		hidden_effect = {
+			country_event = {id=CHI_kangsheng.1 days=2}
+		}
+	}
+}
+
+country_event = {
+	id = CHI_death.3
+	title = CHI_death.3.t
+	desc = CHI_death.3.d
+	picture = GFX_CHI_death_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI_death.3.a
+		add_manpower = -17
+		hidden_effect = {
+			country_event = {id=CHI_kangsheng.2 days=30}
+		}
+	}
+}
+
+
+country_event = {
+	id = CHI_kangsheng.1
+	title = CHI_kangsheng.1.t
+	desc = CHI_kangsheng.1.d
+	picture = GFX_CHI_kangsheng_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI_kangsheng.1.a
+		
+	}
+}
+
+country_event = {
+	id = CHI_kangsheng.2
+	title = CHI_kangsheng.2.t
+	desc = CHI_kangsheng.2.d
+	picture = GFX_CHI_kangsheng_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI_kangsheng.2.a
 	}
 }

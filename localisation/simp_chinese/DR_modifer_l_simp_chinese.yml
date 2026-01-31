@@ -5,6 +5,9 @@ GDP_avg_Growth:"人均GDP增长率"
 GDP_resource_exported:"外贸收入"
 GDP_resource_imported:"外贸支出"
 
+unlock_law:"§H解锁§!新的法案"
+
+
 income_tt:"收入：§H$VALUE|2$B§!"
 
 all_infantry_eco_tt:"§H陆军§!开支：§H$VALUE|2$B§!"
@@ -29,6 +32,8 @@ Arab_oil:"输油管道"
 Livelihood_var_tt:"§H社保法案§!推进：§H$VALUE|2$§!点"
 Educational_var_tt:"§H教育法案§!推进：§H$VALUE|2$§!点"
 labor_var_tt:"§H劳工法案§!推进：§H$VALUE|2$§!点"
+
+Agriculture_var_tt:"§H农业法案§!推进：§H$VALUE|2$§!点"
 
 
 law5_var_1tt:"法案推进至：§H0-250§!区间"

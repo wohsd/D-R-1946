@@ -23,7 +23,20 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_window2_1b_border"
 		}
-
+		iconType = {
+			name = "parliament_leader" 	 
+			position = { x =520 y = 376 } 
+			pdx_tooltip = parliament_leader_tt
+		}  
+		instantTextBoxType = {
+			name = "parliament_leader_title"
+			position = { x =388 y = 383 } 
+			font = "dr_font_21"
+			text = "parliament_leader_title"
+			maxWidth = 400
+			maxHeight = 24
+			format = center 
+		}
 		instantTextBoxType = {
 			name = "semicircle_CHI_parliament_gui_title"
 			position = { x = 150 y = 30 }
@@ -36,7 +49,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "CHI_parliament_semicircle_main_container"
-			position = { x = 22 y = 75 }
+			position = { x = 35 y = 55 }
 			size = { width = 10 height = 125 }
 
 
@@ -54,7 +67,7 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "CHI_parliament_member_grid"
-			position = { x = -330 y = 425 }
+			position = { x = -330 y = 405 }
 			size = { width = 100%% height = 100%% }
 			slotsize = { width = 200 height = 35 } 
 			max_slots_vertical = 10

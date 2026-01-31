@@ -20,6 +20,11 @@ scripted_gui = {
 		visible = {
 			has_country_flag = CHI_parliament_gui_yes
 		}
+		properties = {
+			parliament_leader = {
+				image = "[parliament_leader_pic]"
+			}
+		}
 		dynamic_lists = {
 			CHI_parliament_semicircle_main_grid = {
 				array = CHI_parliament_main_array

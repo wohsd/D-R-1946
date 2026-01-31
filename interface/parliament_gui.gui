@@ -24,6 +24,21 @@ guiTypes = {
 			quadTextureSprite ="GFX_tiled_window2_1b_border"
 		}
  
+ 		iconType = {
+			name = "parliament_leader" 	 
+			position = { x =520 y = 376 } 
+			pdx_tooltip = parliament_leader_tt
+		}  
+		instantTextBoxType = {
+			name = "parliament_leader_title"
+			position = { x =388 y = 383 } 
+			font = "dr_font_21"
+			text = "parliament_leader_title"
+			maxWidth = 400
+			maxHeight = 24
+			format = center 
+		}
+
 		instantTextBoxType = {
 			name = "semicircle_parliament_gui_title"
 			position = { x = 140 y = 30 }
@@ -104,14 +119,14 @@ guiTypes = {
 			position = { x = -20 y = 0 } 
 		}
 		instantTextboxType = {
-			name = "GER_parliament_member_text"
+			name = "parliament_member_text"
 			position = { x = 0 y = 0 }
 			font = "dr_font_21"
 			maxWidth = 300
 			maxHeight = 16
 			format = left
 			text = "parliament_member_text"
-                        pdx_tooltip = "parliament_seat_desc_text"
+            pdx_tooltip = "parliament_seat_desc_text"
 		}
     }
 }

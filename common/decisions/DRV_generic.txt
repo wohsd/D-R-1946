@@ -47,6 +47,14 @@ DRV_Liberate_Indochina_Peninsula={
 			#DRV={has_war_with = CAM}
 		}
 		available = {
+			OR={
+				CAM = {
+					has_government = Reformism
+				}
+				DRV = {
+					has_contested_owner = 670
+				}
+			}
 			
 		}
 		ai_will_do = { 
@@ -80,7 +88,14 @@ DRV_Liberate_Indochina_Peninsula={
 			#DRV={has_war_with = SIA}
 		}
 		available = {
-			
+			OR={
+				CAM = {
+					has_government = Reformism
+				}
+				DRV = {
+					has_contested_owner = 670
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -113,7 +128,14 @@ DRV_Liberate_Indochina_Peninsula={
 			
 		}
 		available = {
-			
+			OR={
+				CAM = {
+					has_government = Reformism
+				}
+				DRV = {
+					has_contested_owner = 670
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10

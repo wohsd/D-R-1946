@@ -67,6 +67,38 @@ defined_text = {
 		localization_key = "Error"
 	}
 }
+
+defined_text = { 
+	name =parliament_leader_pic
+	text = {
+		localization_key = "GFX_Takeo_Yamazaki"
+    	trigger = {
+	 		has_country_flag = Takeo_Yamazaki_flag
+		}
+	}
+	text = {
+		localization_key = "GFX_SunKe"
+    	trigger = {
+	 		has_country_flag = SunKe_flag
+		}
+	}
+}
+defined_text = { 
+	name =parliament_leader_name
+	text = {
+		localization_key = parliament_Takeo_Yamazaki_name
+    	trigger = {
+	 		has_country_flag = Takeo_Yamazaki_flag
+		}
+	}
+	text = {
+		localization_key = parliament_SunKe_name
+    	trigger = {
+	 		has_country_flag = SunKe_flag
+		}
+	}
+}
+
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {
 	name = GetParliamentSeatName

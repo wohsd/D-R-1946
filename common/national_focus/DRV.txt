@@ -30,6 +30,7 @@ focus_tree = {
 		x = 32 
 		y = 1
 		completion_reward = {
+			remove_ideas = DRV_Fragmented_Homeland
 			add_political_power = 100
 			add_stability = 0.1
 			add_war_support = 0.1
@@ -70,7 +71,7 @@ focus_tree = {
 			focus = DRV_focus_0
 		}
 		completion_reward = {
-			
+			add_ideas = DRV_Will_of_Total_Resistance
 		}
 	}
 	focus = {
@@ -83,6 +84,10 @@ focus_tree = {
 			focus = DRV_focus_1
 		}
 		completion_reward = {
+			add_trait = {
+				trait = mussolini_minister_of_justice
+				character = DRV_Tran_Huy_Lieu
+			}
 			add_war_support = 0.05
 			add_stability = 0.05
 		}
@@ -103,6 +108,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DRV_focus_4
 		}
+		completion_reward = {
+			add_trait = {
+				trait = born_agitator
+				character = DRV_Ruan_Haichen 
+			}
+		}
 	}
 	focus = {
 		id = DRV_focus_4
@@ -119,6 +130,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DRV_focus_3
 		}
+		completion_reward = {
+			add_trait = {
+				trait = communist_orator
+				character = DRV_Ruan_Haichen 
+			}
+		}
 	}
 	focus = {
 		id = DRV_focus_5
@@ -130,6 +147,7 @@ focus_tree = {
 			focus = DRV_focus_1
 		}
 		completion_reward = {
+			army_experience = 10
 			add_units_to_division_template = {
 				template_name = "越南国民军"
 				regiments = {
@@ -209,6 +227,7 @@ focus_tree = {
 				trait = PHI_revolutionary_hero
 				character = DRV_Ruan_Haichen 
 			}
+			
 			add_popularity = {
 				ideology = Nationalism
 				popularity = 0.1
@@ -257,6 +276,12 @@ focus_tree = {
 		y = 4
 		prerequisite = {
 			focus = DRV_focus_11
+		}
+		completion_reward = {
+			add_trait = {
+				trait = PHI_radical_leader
+				character = DRV_Ruan_Haichen
+			}
 		}
 	}
 
@@ -347,7 +372,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			CAM = { 
-				custom_effect_tooltip = DRV_focus_19_tt
+				custom_effect_tooltip = interfering_country
 			}
 			country_event = CAM_DRV_event.1
 		}
@@ -363,7 +388,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			SIA = { 
-				custom_effect_tooltip = DRV_focus_19_tt
+				custom_effect_tooltip = interfering_country
 			}
 			country_event = SIA_DRV_event.1
 		}
@@ -379,7 +404,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			LAO = {  
-				custom_effect_tooltip = DRV_focus_19_tt
+				custom_effect_tooltip = interfering_country
 			}
 			country_event = LAO_DRV_event.1
 		}
@@ -396,6 +421,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = DRV_focus_22
+		}
+		completion_reward = {
+			add_ideas = DRV_Research_Development_Seized_Weapons
 		}
 	}
 	focus = {
@@ -440,6 +468,38 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = DRV_focus_14
+		}
+		completion_reward = {
+			random_core_state = {
+                limit = {
+                    is_controlled_by = ROOT
+                }
+                add_extra_state_shared_building_slots = 1   
+            }
+
+            random_core_state = {
+                limit = {
+                    is_controlled_by = ROOT
+                }
+                add_extra_state_shared_building_slots = 1 
+            }
+            random_core_state = {
+                limit = {
+                    is_controlled_by = ROOT
+                }
+                add_extra_state_shared_building_slots = 1   
+            }
+			add_trait = {
+				trait = PRC_rural_survey_trait
+				character = DRV_Ho_Chi_Minh
+			}
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
 		}
 	}
 
@@ -517,6 +577,19 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_23
 		}
+		completion_reward = {
+			add_trait = {
+				trait = defender_of_the_peasantry
+				character = DRV_Ho_Chi_Minh
+			}
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
+		}
 	}
 	focus = {
 		id = DRV_focus_28
@@ -528,12 +601,17 @@ focus_tree = {
 			focus = DRV_focus_23
 		}
 		completion_reward = {
+			custom_effect_tooltip = unlock_law
+			add_trait = {
+				trait = PRC_labor_rights_advocate
+				character = DRV_Ho_Chi_Minh
+			}
 			add_to_variable = {
-				labor_var = 50
+				labor_var = 250
 			}
 			custom_effect_tooltip = {
 				localization_key = labor_var_tt
-				VALUE = "+50.00"
+				VALUE = "+250.00"
 			}
 		}
 	}
@@ -570,6 +648,10 @@ focus_tree = {
 			focus = DRV_focus_29
 		}
 		completion_reward = {
+			add_trait = {
+				trait = SWE_education_for_all
+				character = DRV_Pham_Hung
+			}
 			add_to_variable = {
 				Educational_var = 25
 			}
@@ -656,6 +738,12 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_32
 		}
+		completion_reward = {
+			add_trait = {
+				trait = socialist_economist_upgraded
+				character = DRV_Ruan_Liangbang
+			}
+		}
 	} 
 	focus = {
 		id = DRV_focus_34
@@ -689,6 +777,25 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_24
 		}
+		completion_reward = {
+			1111={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			1109={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+
+			build_railway = {
+				path = { 4075 19085 11936 10016 4397 12297 19060 7280 }
+			}
+			
+		}
 	}
 	focus = { 
 		id = DRV_focus_36
@@ -708,6 +815,20 @@ focus_tree = {
 		y = 7
 		prerequisite = {
 			focus = DRV_focus_16
+		}
+		completion_reward = {
+			DRV = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = CHI
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = DRV
+				}
+			}
 		}
 	}
 
@@ -720,6 +841,20 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_33
 		}
+		completion_reward = {
+			DRV = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = CHI
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = DRV
+				}
+			}
+			}
 	}
 	focus = { 
 		id = DRV_focus_38
@@ -818,6 +953,24 @@ focus_tree = {
 		prerequisite = {
 			focus = DRV_focus_16
 		}
+		completion_reward = {
+			add_trait = {
+				trait = BRA_distinguished_diplomat
+				character = DRV_Hoang_Van_Hoan
+			}
+			DRV = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = CHI
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					modifier = DEN_deepening_partnership
+					target = DRV
+				}
+			}
+		}
 	} 
 	focus = { 
 		id = DRV_focus_42
@@ -829,6 +982,10 @@ focus_tree = {
 			focus = DRV_focus_22
 		}
 		completion_reward = {
+			add_trait = {
+				trait = PRC_organizier_aat
+				character = DRV_Pham_Hung
+			}
 			DRV={
 				random_controlled_state = {
 					if = {

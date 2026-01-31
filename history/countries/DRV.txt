@@ -23,6 +23,10 @@ recruit_character = DRV_Tran_Tu_Binh
 recruit_character = DRV_Nguyen_Binh
 recruit_character = DRV_Nguyen_Son
 recruit_character = DRV_Chu_Van_Tan
+recruit_character = DRV_Ruan_Liangbang
+recruit_character = DRV_Pham_Hung
+recruit_character = DRV_Hoang_Van_Hoan
+recruit_character = DRV_Tran_Huy_Lieu
 set_politics = {
 	ruling_party = Reformism
 	last_election = "1918.11.11"
@@ -36,16 +40,22 @@ set_popularities = {
 }
 
 add_ideas = {
+	Tran_Huy_Lieu_J
+	Hoang_Van_Hoan_O
+	Ho_Chi_Minh_G
+	Pham_Hung_I
+	Ruan_Liangbang_F
+	Vu_Nguyen_Giap_D
 	#law
-	Agriculture_level4
+	Agriculture_level1
 	Racial_policy2
 	Women_rights2
 	labor_laws1
-	Public_control4
-	Livelihood_investment3
-	Industrialization_level2
-	Public_Education3
-	Police_policy3
+	Public_control2
+	Livelihood_investment1
+	Industrialization_level1
+	Public_Education1
+	Police_policy2
 
 
 	DRV_Lack_firepower

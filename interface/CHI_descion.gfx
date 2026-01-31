@@ -1,0 +1,56 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Mao_Agriculture_button"
+		texturefile = "gfx\interface\GFX_Mao_Agriculture_button.png"
+	} 
+	spriteType = {
+		name = "GFX_Zuo_Agriculture_button"
+		texturefile = "gfx\interface\GFX_Zuo_Agriculture_button.png"
+	} 
+	spriteType = {
+		name = "GFX_Chen_Agriculture_button"
+		texturefile = "gfx\interface\GFX_Chen_Agriculture_button.png"
+	} 
+
+	progressBarType = {
+		name = "GFX_CHI_Agriculture_farmer_value"
+		textureFile1 = "gfx\interface\decisions\china\chi_farmer.png"
+		textureFile2 = "gfx\interface\decisions\china\chi_farmer0.png"
+		effectFile = "gfx/FX/progress.lua"
+		size = { x = 133 y = 134}
+		steps = 100
+		horizontal = no
+	} 
+
+
+	progressBarType = {
+		name = "GFX_CHI_Agriculture_landlord_value"
+		textureFile1 = "gfx\interface\decisions\china\chi_landlord.png"
+		textureFile2 = "gfx\interface\decisions\china\chi_landlord0.png"
+		effectFile = "gfx/FX/progress.lua"
+		size = { x = 133 y = 134}
+		steps = 100
+		horizontal = no
+	}
+
+	progressBarType = {
+		name = "GFX_CHI_Agriculture_level_development_value"
+		textureFile1 = "gfx\interface\decisions\china\chi_level_development.png"
+		textureFile2 = "gfx\interface\decisions\china\chi_level_development0.png"
+		effectFile = "gfx/FX/progress.lua"
+		size = { x = 133 y = 134}
+		steps = 100
+		horizontal = no
+	}
+
+	progressBarType = {
+		name = "GFX_CHI_Agriculture_natural_disaster_value"
+		textureFile1 = "gfx\interface\decisions\china\chi_natural_disaster.png"
+		textureFile2 = "gfx\interface\decisions\china\chi_natural_disaster0.png"
+		effectFile = "gfx/FX/progress.lua"
+		size = { x = 133 y = 134}
+		steps = 100
+		horizontal = no
+	}
+}

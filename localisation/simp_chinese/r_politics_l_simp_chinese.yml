@@ -16,6 +16,10 @@
   CHI_parliament_seat_text:0 "席位 [?CHI_temp_seat|Y0]"
   CHI_parliament_member_text:0 "[CHIGetParliamentSeatName] - [?CHI_parliament_seat_array^CHI_parliament_member_index] 席位"
 
+  parliament_leader_title:0 "国会议长"
+  parliament_leader_tt:0 "[parliament_leader_name]"
+  parliament_Takeo_Yamazaki_name:0 "山崎猛"
+  parliament_SunKe_name:0 "孙科"
 
   JAP_party_1_text:0 "社大党"
   JAP_party_1_text_desc:0 "社大党\n党寇：麻生久\n\n影响力：§H[?party_0_var]%§!\n满意度：§H[?party_1_var]%§!\n\n\n\n\n£GFX_Asao_Ma_icon\n\n\n\n\n\n作为日本左翼运动第二个高潮期（1918-1940年）的代表性人物，麻生久这个名字或许今天声名不显，当时却在左翼运动中赫赫有名。\n\n\n§H“在日本的国情下，打倒资本主义的社会改革，将使军队和无产阶级的合理结合成为必然，为了达到目的，除促成这个必然外，别无他途。”§!" 

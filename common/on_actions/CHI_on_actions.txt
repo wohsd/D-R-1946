@@ -1,0 +1,18 @@
+on_action = {
+	on_daily = {
+		effect = {
+			every_country ={
+				if = {
+					limit = { 
+						check_variable = {
+							CHI_Agriculture_farmer_value < 5
+						}
+					}
+					CHI={
+						country_event = CHI_Mao.1
+					}
+				}
+			}
+		}
+	}
+}

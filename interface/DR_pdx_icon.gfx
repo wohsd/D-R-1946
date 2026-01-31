@@ -2,5 +2,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Asao_Ma_icon"
 		texturefile = "gfx\interface\pdx_icon\Asao_Ma_icon.png"
+		alwaystransparent = no
 	}  
 }   

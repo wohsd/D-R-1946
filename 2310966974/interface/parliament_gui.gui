@@ -104,14 +104,14 @@ guiTypes = {
 			position = { x = -20 y = 0 } 
 		}
 		instantTextboxType = {
-			name = "GER_parliament_member_text"
+			name = "parliament_member_text"
 			position = { x = 0 y = 0 }
 			font = "dr_font_21"
 			maxWidth = 300
 			maxHeight = 16
 			format = left
 			text = "parliament_member_text"
-                        pdx_tooltip = "parliament_seat_desc_text"
+            pdx_tooltip_delayed = "parliament_seat_desc_text"
 		}
     }
 }

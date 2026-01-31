@@ -6,6 +6,8 @@ set_convoys = 500
 set_naval_oob = "JAP_1946_naval"
 set_air_oob =  "JAP_1946_air_bba"
 
+set_country_flag = Takeo_Yamazaki_flag
+
 set_technology = {
 
 	# Infantry

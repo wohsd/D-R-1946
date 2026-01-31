@@ -1,4 +1,6 @@
 spriteTypes = {
+	
+	
 	spriteType = {
 		name = "GFX_idea_Ho_Chi_Minh_leftists"
 		texturefile = "gfx\interface\bop\Ho_Chi_Minh_leftists.png"
@@ -253,6 +255,23 @@ spriteType = {
 		texturefile = "gfx\interface\ideas\JAP\JAP_Members_Co_Prosperity_Sphere.png"
 	}
 
+###DRV
+	spriteType = {
+		name = "GFX_idea_DRV_Lack_firepower"
+		texturefile = "gfx\interface\ideas\DRV\DRV_Lack_firepower.png"
+	}
+	spriteType = {
+		name = "GFX_idea_DRV_Fragmented_Homeland"
+		texturefile = "gfx\interface\ideas\DRV\DRV_Fragmented_Homeland.png"
+	}
+	spriteType = {
+		name = "GFX_idea_DRV_Will_of_Total_Resistance"
+		texturefile = "gfx\interface\ideas\DRV\DRV_Will_of_Total_Resistance.png"
+	}
+	spriteType = {
+		name = "GFX_idea_DRV_Research_Development_Seized_Weapons"
+		texturefile = "gfx\interface\ideas\DRV\DRV_Research_Development_Seized_Weapons.png"
+	}
 
 	progressBarType = {
 		name = "GFX_idea_progerss"

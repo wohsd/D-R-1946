@@ -13,7 +13,6 @@ recruit_character = VIN_Nguyen_Giac_Ngo
 recruit_character = VIN_Nguyen_Van_Han 
 recruit_character = VIN_Nguyen_Van_Vy 
 recruit_character = VIN_Tran_Van_Suat
-
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"

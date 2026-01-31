@@ -1,5 +1,3 @@
-#!gfx:interface\BFY_goals.gfx
-#!gfx:interface\goals.gfx
 focus_tree = {
 	id = CHI
 	country = {
@@ -7,6 +5,298 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = CHI
+		}
+	}
+	default = no
+	focus = {
+		id = CHI_focus_0
+		icon = GFX_CHI_focus_0
+		cost = 10
+		x = 8
+		y = 5
+		completion_reward = {
+			create_faction_from_template = faction_template_CHI
+			set_faction_military_unlocked = yes
+			add_faction_initiative = 1
+			add_faction_power_projection = 100
+			set_faction_manifest = faction_manifest_chinese_consolidation
+			reduce_focus_completion_cost = {
+			focus = {CHI_focus_1 CHI_focus_2 CHI_focus_3 CHI_focus_4 CHI_focus_5 CHI_focus_6}
+			cost = 20
+			}
+		}
+	}
+	focus = {
+		id = CHI_focus_1
+		icon = GFX_CHI_focus_1
+		cost = 10
+		x = 2
+		y = 6
+		prerequisite = {
+			focus = CHI_focus_0
+		}
+		completion_reward = {
+			VIN = {
+				custom_effect_tooltip = interfering_country
+			}
+			add_faction_power_projection = 10
+			add_faction_initiative = 1
+			add_faction_power_projection = 100
+		}
+	}
+	focus = {
+		id = CHI_focus_2
+		icon = GFX_CHI_focus_2
+		cost = 10
+		x = 5
+		y = 6
+		prerequisite = {
+			focus = CHI_focus_0
+		}
+		completion_reward = {
+			KOR = {
+				custom_effect_tooltip = interfering_country
+			}
+			add_faction_power_projection = 10
+			add_faction_initiative = 1
+			add_faction_power_projection = 100
+		}
+	}
+	focus = {
+		id = CHI_focus_3
+		icon = GFX_CHI_focus_3
+		cost = 10
+		x = 8
+		y = 6
+		prerequisite = {
+			focus = CHI_focus_0
+		}
+		completion_reward = {
+			PHI = {
+				custom_effect_tooltip = interfering_country
+			}
+			add_faction_power_projection = 10
+			add_faction_initiative = 1
+			add_faction_power_projection = 100
+		}
+	}
+	focus = {
+		id = CHI_focus_4
+		icon = GFX_CHI_focus_4
+		cost = 10
+		x = 11
+		y = 6
+		prerequisite = {
+			focus = CHI_focus_0
+		}
+		completion_reward = {
+			MAL = {
+				custom_effect_tooltip = interfering_country
+			}
+			INS = {
+				custom_effect_tooltip = interfering_country
+			}
+			add_faction_power_projection = 20
+			add_faction_initiative = 1
+			add_faction_power_projection = 100
+		}
+	}
+	focus = {
+		id = CHI_focus_5
+		icon = GFX_CHI_focus_5
+		cost = 10
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = CHI_focus_0
+		}
+		completion_reward = {
+			RAJ = {
+				custom_effect_tooltip = interfering_country
+			}
+			add_faction_power_projection = 10
+			add_faction_initiative = 1
+			add_faction_power_projection = 100
+		}
+	}
+	focus = {
+		id = CHI_focus_6
+		icon = GFX_CHI_focus_6
+		cost = 10
+		x = 8
+		y = 7
+		prerequisite = {
+			focus = CHI_focus_1
+		}
+		prerequisite = {
+			focus = CHI_focus_2
+		}
+		prerequisite = {
+			focus = CHI_focus_3
+		}
+		prerequisite = {
+			focus = CHI_focus_4
+		}
+		prerequisite = {
+			focus = CHI_focus_5
+		}
+		completion_reward = {
+			JAP = {
+				custom_effect_tooltip = interfering_country
+			}
+			create_wargoal = {
+				target = JAP
+				type = liberate_wargoal 
+			}
+		}
+	}
+	focus = {
+		id = CHI_focus_7
+		icon = GFX_CHI_focus_7
+		cost = 10
+		x = 8
+		y = 8
+		prerequisite = {
+			focus = CHI_focus_6
+		}
+		completion_reward = {
+			add_political_power = 200
+			add_faction_power_projection = 50
+			add_faction_initiative = 2
+			add_faction_power_projection = 200
+		}
+	}
+
+
+
+	focus = {
+		id = CHI_Agriculture_focus_1
+		icon = GFX_CHI_Agriculture_focus_1
+		cost = 10
+		x = 8
+		y = 0
+		prerequisite = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_Agriculture_focus_2
+		icon = GFX_CHI_Agriculture_focus_2
+		cost = 10
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = CHI_Agriculture_focus_1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_Agriculture_focus_3
+		icon = GFX_CHI_Agriculture_focus_3
+		cost = 10
+		x = 10
+		y = 1
+		prerequisite = {
+			focus = CHI_Agriculture_focus_1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_Agriculture_focus_4
+		icon = GFX_CHI_Agriculture_focus_4
+		cost = 10
+		x = 8
+		y = 2
+		prerequisite = {
+			focus = CHI_Agriculture_focus_1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_Agriculture_focus_5
+		icon = GFX_CHI_Agriculture_focus_5
+		cost = 10
+		x = 6
+		y = 2
+		prerequisite = {
+			focus = CHI_Agriculture_focus_1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_Agriculture_focus_6
+		icon = GFX_CHI_Agriculture_focus_6
+		cost = 10
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = CHI_Agriculture_focus_4
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_Agriculture_focus_7
+		icon = GFX_CHI_Agriculture_focus_7
+		cost = 10
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = CHI_Agriculture_focus_5
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_Agriculture_focus_8
+		icon = GFX_CHI_Agriculture_focus_8
+		cost = 10
+		x = 11
+		y = 2
+		prerequisite = {
+			focus = CHI_Agriculture_focus_3
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CHI_Agriculture_focus_9
+		icon = GFX_CHI_Agriculture_focus_9
+		cost = 10
+		x = 10
+		y = 3
+		prerequisite = {
+			focus = CHI_Agriculture_focus_3
+		}
+		prerequisite = {
+			focus = CHI_Agriculture_focus_8
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_Agriculture_focus_10
+		icon = GFX_CHI_Agriculture_focus_10
+		cost = 10
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = CHI_Agriculture_focus_2
+		}
+		completion_reward = {
 		}
 	}
 }

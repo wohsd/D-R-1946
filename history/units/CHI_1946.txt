@@ -124,9 +124,58 @@ division_template = {
 }
 units = {
 	division = {	
-		name = "国民革命军88师"
-		location = 11913
+		name = "国民革命军税警总旅"
+		location = 7014
+		division_template = "国民革命军税警总旅"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "国民革命军税警总旅"
+		location = 7014
+		division_template = "国民革命军税警总旅"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "国民革命军整编第88师"
+		location = 1066
 		division_template = "国民革命军甲等师"
 		start_experience_factor = 0.5
 	}
+	division = {	
+		name = "国民革命军整编第74师"
+		location = 1066
+		division_template = "国民革命军甲等师"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "国民革命军整编第11师"
+		location = 1066
+		division_template = "国民革命军甲等师"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "国民革命军整编第5师"
+		location = 1066
+		division_template = "国民革命军甲等师"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "国民革命军整编第1师"
+		location = 1066
+		division_template = "国民革命军甲等师"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "国民革命军整编第7师"
+		location = 1066
+		division_template = "国民革命军甲等师"
+		start_experience_factor = 0.5
+	}
+	division = {	
+		name = "国民革命军整编第30师"
+		location = 1066
+		division_template = "国民革命军甲等师"
+		start_experience_factor = 0.5
+	}
+	
 }

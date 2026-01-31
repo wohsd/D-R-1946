@@ -1,4 +1,9 @@
 spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_USA_Trump_1"
+		texturefile = "gfx/event/USA_Trump_1.png"
+	}
 	spriteType = {
 		name = "GFX_black_flower_1"
 		texturefile = "gfx/event/black_flower_1.png"
@@ -51,5 +56,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_CHI_death_1"
 		texturefile = "gfx/event/CHI_death_1.png"
+	}
+
+	spriteType = {
+		name = "GFX_CHI_death_2"
+		texturefile = "gfx/event/CHI_death_2.png"
+	}
+
+	spriteType = {
+		name = "GFX_CHI_death_3"
+		texturefile = "gfx/event/CHI_death_3.png"
+	}
+
+	spriteType = {
+		name = "GFX_CHI_kangsheng_1"
+		texturefile = "gfx/event/CHI_kangsheng_1.png"
 	}
 } 

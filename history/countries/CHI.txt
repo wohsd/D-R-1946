@@ -2,6 +2,25 @@
 
 oob = "CHI_1946"
 
+
+set_variable = {
+	CHI_Agriculture_farmer_value=13
+}
+set_variable = {
+	CHI_Agriculture_landlord_value=24
+}
+set_variable = {
+	CHI_Agriculture_level_development_value=15
+}
+set_variable = {
+	CHI_Agriculture_natural_disaster_value=10
+}
+
+set_country_flag = Mao_Agriculture
+set_country_flag = SunKe_flag
+Agriculture_effect = yes
+
+
 # Starting tech
 set_technology = {
 
@@ -105,7 +124,7 @@ set_technology = {
 		basic_dp_light_battery = 1
 }
 
-country_event = {id=CHI_death.1 days=45}
+country_event = {id=CHI_death.1 days=50}
 
 recruit_character = CHI_TangPingShang
 recruit_character = CHI_SunKe
@@ -138,7 +157,7 @@ set_popularities = {
 	Nationalism = 19
 	Reformism = 50
 }
-create_faction_from_template = faction_template_CHI
+
 add_ideas = {
 	
 	#law

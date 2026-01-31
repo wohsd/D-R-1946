@@ -1,0 +1,59 @@
+guiTypes = {
+
+	containerWindowType = {
+        name = "CHI_Agriculture_button"
+        position = { x = 260 y = 303 }
+		size = { width = 700 height = 300 }
+
+		iconType = {
+			name = "CHI_Agriculture_pic" 	 
+			position = { x =330 y = 30 } 
+			pdx_tooltip = CHI_Agriculture_pic_tt
+		}
+
+
+		iconType = {
+			name = "CHI_Agriculture_farmer_value" 
+			spriteType = "GFX_CHI_Agriculture_farmer_value"	 
+			position = { x =160 y = 10 } 
+			pdx_tooltip = CHI_Agriculture_farmer_tt
+			pdx_tooltip_delayed = CHI_Agriculture_farmer_delayed
+		}
+
+
+		iconType = {
+			name = "CHI_Agriculture_landlord_value" 
+			spriteType = "GFX_CHI_Agriculture_landlord_value"	 
+			position = { x =30 y = 10 } 
+			pdx_tooltip = CHI_Agriculture_landlord_tt
+			pdx_tooltip_delayed = CHI_Agriculture_landlord_delayed
+		}
+
+		iconType = {
+			name = "CHI_Agriculture_level_development_value" 
+			spriteType = "GFX_CHI_Agriculture_level_development_value"	 
+			position = { x =30 y = 140 } 
+			pdx_tooltip = CHI_Agriculture_level_development_tt
+			pdx_tooltip_delayed = CHI_Agriculture_level_development_delayed
+		}
+		iconType = {
+			name = "CHI_Agriculture_natural_disaster_value" 
+			spriteType = "GFX_CHI_Agriculture_natural_disaster_value"	 
+			position = { x =160 y = 140 } 
+			pdx_tooltip = CHI_Agriculture_natural_disaster_tt
+			pdx_tooltip_delayed = CHI_Agriculture_natural_disaster_delayed
+		}
+
+
+
+		instantTextBoxType = {
+			name = "CHI_Agriculture_title"
+			position = { x = 290 y = 250 }
+			font = "dr_font_21"
+			text = "CHI_Agriculture_title"
+			maxWidth = 230
+			maxHeight = 24 
+			format = center 
+		}
+	}	 
+}
