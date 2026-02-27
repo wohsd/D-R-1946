@@ -50,6 +50,7 @@ ideas = {
 				GDP_avg_Growth= 0.05
 				GDP_resource_exported= 0.05
 				GDP_resource_imported= 0.1
+				disabled_ideas = 1
 			}
 		}
 	}

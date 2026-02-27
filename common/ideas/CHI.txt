@@ -27,5 +27,320 @@ ideas = {
 				party_popularity_stability_factor = 0.05
 			}
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 	}
+
+
+	industrial_concern = {
+			MAN_showa_steel_works = {
+
+				picture = JAP_japan_steel_works			
+				
+				available = {
+					controls_state = 716
+				}
+
+				allowed = {
+					has_dlc = "Waking the Tiger"
+					OR = {
+						original_tag = MAN
+						is_literally_china = yes
+					}
+				}
+
+				visible = { NOT	= { has_completed_focus = MAN_tsr_mangyo } }
+
+				research_bonus = {
+					industry = 0.15
+				}
+
+				traits = {
+					industrial_steel_mills_trait
+				}
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			MAN_western_refinery = {
+				picture = generic_refining_concern_1
+
+				available = {
+					controls_state = 716
+				}
+
+				allowed = { ## If have SEA, then all China except PRC has it. Else all have it (because SEA PRC has Sinochem)
+					OR = {
+						AND = {
+							has_dlc = "No Compromise, No Surrender"
+							OR = {
+								original_tag = MAN
+								is_literally_china_not_prc = yes
+							}
+						}
+						AND = {
+							has_DLC = "Waking the Tiger"
+							NOT = { has_dlc = "No Compromise, No Surrender" }
+							OR = {
+								original_tag = MAN
+								is_literally_china = yes
+							}
+						}
+					}
+				}
+				
+				research_bonus = {
+					industry = 0.1
+					synth_resources = 0.15
+				}
+				
+				traits = { refinery_concern }
+				
+				# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
+							
+				ai_will_do = {
+					factor = 1
+				}
+
+			}
+
+			PRC_nanjing_wireless_electronics_plant = {
+				picture = idea_PRC_nanjing_wireless_electronics_plant 
+
+				allowed = {
+					OR = {
+						original_tag = MAN
+						is_literally_china = yes
+					}
+				}
+
+				visible = {
+					always = yes
+				}
+
+
+				traits = { electronics_concern }
+
+				research_bonus = {
+					electronics = 0.15
+				}
+
+				modifier = {
+					
+				}
+
+			}
+
+			
+			sino_soviet_resource_surveyors = {
+			
+				picture = stalingrad_tractor_factory
+
+				available = {
+					controls_state = 617
+					NOT = {
+						has_war_with = SOV
+					}
+					IF = {
+						limit = {
+							original_tag = SIK
+						}
+						has_country_flag = SIK_established_the_xinjiangneft_flag
+					}
+				}
+
+				allowed = { ## If have SEA, then all China except PRC has it. Else all have it (because SEA PRC has Sinochem)
+					OR = {
+						AND = {
+							has_dlc = "No Compromise, No Surrender"
+							OR = {
+								original_tag = MAN
+								is_literally_china_not_prc = yes
+							}
+						}
+						AND = {
+							has_DLC = "Waking the Tiger"
+							NOT = { has_dlc = "No Compromise, No Surrender" }
+							OR = {
+								original_tag = MAN
+								is_literally_china = yes
+							}
+						}
+					}
+				}
+				
+				research_bonus = {
+					industry = 0.1
+					synth_resources = 0.15
+				}
+				
+				traits = { refinery_concern }
+
+				ai_will_do = {
+					factor = 1
+				}
+
+			}
+			
+			shanghai_electronics = {
+			
+				picture = generic_electronics_concern_1
+
+				available = {
+					controls_state = 613
+				}
+
+				allowed = {
+					NOT = { has_DLC = "No Compromise, No Surrender" }
+					OR = {
+						original_tag = MAN
+						is_literally_china = yes
+					}
+				}
+				
+				research_bonus = {
+					electronics = 0.15
+				}
+				
+				traits = { electronics_concern }
+				
+				ai_will_do = {
+					factor = 1
+					
+					modifier = { # AI is likely to lose access to this state and waste the PP
+						factor = 0
+						OR = {
+							has_war_with = JAP
+							date < 1940.0.0
+						}
+					}
+				}
+			}
+
+			CHI_china_national_aviation_corporation = {
+							
+				picture = CHI_china_national_aviation_corporation
+				
+				allowed = {
+					original_tag = CHI
+				}
+							
+				research_bonus = {
+					air_equipment = 0.05
+				}
+
+				ai_will_do = {
+					base = 1
+				}
+				
+				traits = { civilian_airway_company }
+			}
+
+			CHI_china_merchant_group = {
+							
+				picture = CHI_china_merchant_group
+				
+				allowed = {
+					original_tag = CHI
+				}
+							
+				research_bonus = {
+				}
+
+				ai_will_do = {
+					base = 1
+				}
+				
+				traits = { transport_company }
+			}
+
+			CHI_shanghai_power_company = {
+							
+				picture = CHI_shanghai_power_company
+				
+				allowed = {
+					OR = {
+						original_tag = MAN
+						is_literally_china_not_prc = yes
+					}
+					has_dlc = "No Compromise, No Surrender"
+				}
+				available = {
+					controls_state = 613
+				}
+							
+				research_bonus = {
+				}
+
+				modifier = {
+					country_resource_coal = 18
+				}
+
+				ai_will_do = {
+					base = 1
+				}
+				
+				traits = { energy_supply_company }
+			}
+
+			CHI_bank_of_china = {
+							
+				picture = CHI_bank_of_china
+				
+				allowed = {
+					original_tag = CHI
+				}
+
+				ai_will_do = {
+					base = 3
+				}
+				
+				traits = { monopolistic_bank }
+			}
+
+			CHI_yongli_chemical_industries = {
+							
+				picture = CHI_yongli_chemical_industries
+				
+				allowed = {
+					is_literally_china_not_prc = yes
+					has_dlc = "No Compromise, No Surrender"
+				}
+				research_bonus = {
+					industry = 0.05
+					synth_resources = 0.15
+				}
+
+				ai_will_do = {
+					base = 1
+				}
+				
+				traits = { refinery_concern }
+			}
+		}
 }

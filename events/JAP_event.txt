@@ -1,0 +1,107 @@
+﻿
+add_namespace = JAP_countryevent
+
+
+# 事件1（原内容，保留完整性）
+country_event = {
+	id = JAP_countryevent.1
+	title = JAP_countryevent.1.t
+	desc = JAP_countryevent.1.d
+	picture = GFX_JAP_countryevent_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = JAP_countryevent.1.a
+		country_event = JAP_countryevent.2
+	}
+}
+
+# 事件2
+country_event = {
+	id = JAP_countryevent.2
+	title = JAP_countryevent.2.t
+	desc = JAP_countryevent.2.d
+	picture = GFX_JAP_countryevent_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = JAP_countryevent.2.a
+		country_event = JAP_countryevent.3
+	}
+}
+
+# 事件3
+country_event = {
+	id = JAP_countryevent.3
+	title = JAP_countryevent.3.t
+	desc = JAP_countryevent.3.d
+	picture = GFX_JAP_countryevent_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = JAP_countryevent.3.a
+		country_event = JAP_countryevent.4
+	}
+}
+
+# 事件4
+country_event = {
+	id = JAP_countryevent.4
+	title = JAP_countryevent.4.t
+	desc = JAP_countryevent.4.d
+	picture = GFX_JAP_countryevent_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = JAP_countryevent.4.a
+		country_event = JAP_countryevent.5
+	}
+}
+
+# 事件5
+country_event = {
+	id = JAP_countryevent.5
+	title = JAP_countryevent.5.t
+	desc = JAP_countryevent.5.d
+	picture = GFX_JAP_countryevent_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = JAP_countryevent.5.a
+		country_event = JAP_countryevent.6
+	}
+	option = {
+		name = JAP_countryevent.5.b
+		country_event = JAP_countryevent.6
+	}
+}
+
+# 事件6（最终节点，无后续触发）
+country_event = {
+	id = JAP_countryevent.6
+	title = JAP_countryevent.6.t
+	desc = JAP_countryevent.6.d
+	picture = GFX_JAP_countryevent_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = JAP_countryevent.6.a
+		# 6为最后一个事件，此处无后续country_event触发，可自行添加效果
+	}
+	option = {
+		name = JAP_countryevent.6.b
+		# 6为最后一个事件，此处无后续country_event触发，可自行添加效果
+	}
+}

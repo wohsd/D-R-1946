@@ -178,6 +178,13 @@ focus_tree = {
 		prerequisite = {
 		}
 		completion_reward = {
+			add_to_variable = {
+				Agriculture_var = 100
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+100.00"
+			}
 		}
 	}
 
@@ -191,6 +198,28 @@ focus_tree = {
 			focus = CHI_Agriculture_focus_1
 		}
 		completion_reward = {
+			add_stability = 0.1
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_farmer_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_farmer_value = 5
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_landlord_tt
+				VALUE = "-5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_landlord_value = -5
+			}
 		}
 	}
 
@@ -204,6 +233,20 @@ focus_tree = {
 			focus = CHI_Agriculture_focus_1
 		}
 		completion_reward = {
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_development_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_level_development_value = 5
+			}
 		}
 	}
 
@@ -217,6 +260,20 @@ focus_tree = {
 			focus = CHI_Agriculture_focus_1
 		}
 		completion_reward = {
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_disaster_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_natural_disaster_value = 5
+			}
 		}
 	}
 
@@ -230,6 +287,37 @@ focus_tree = {
 			focus = CHI_Agriculture_focus_1
 		}
 		completion_reward = {
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_farmer_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_farmer_value = 5
+			}
 		}
 	}
 
@@ -243,6 +331,20 @@ focus_tree = {
 			focus = CHI_Agriculture_focus_4
 		}
 		completion_reward = {
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_disaster_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_natural_disaster_value = 5
+			}
 		}
 	}
 
@@ -256,6 +358,40 @@ focus_tree = {
 			focus = CHI_Agriculture_focus_5
 		}
 		completion_reward = {
+			
+			random_core_state = {
+				add_building_construction = {
+					type =industrial_complex
+					level = 1
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type =industrial_complex
+					level = 1
+				}
+			}
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_landlord_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_landlord_value = 5
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_development_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_level_development_value = 5
+			}
 		}
 	}
 
@@ -269,6 +405,20 @@ focus_tree = {
 			focus = CHI_Agriculture_focus_3
 		}
 		completion_reward = {
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_development_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_level_development_value = 5
+			}
 		}
 	}
 	focus = {
@@ -284,6 +434,30 @@ focus_tree = {
 			focus = CHI_Agriculture_focus_8
 		}
 		completion_reward = {
+
+			custom_effect_tooltip = BRA_promote_agriculture_tt
+			show_ideas_tooltip = CHI_ShengZongHang_T
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_development_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_level_development_value = 5
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_disaster_tt
+				VALUE = "+5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_natural_disaster_value = 5
+			}
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
 		}
 	}
 
@@ -297,6 +471,20 @@ focus_tree = {
 			focus = CHI_Agriculture_focus_2
 		}
 		completion_reward = {
+			add_to_variable = {
+				Agriculture_var = 50
+			}
+			custom_effect_tooltip = {
+				localization_key = Agriculture_var_tt
+				VALUE = "+50.00"
+			}
+			custom_effect_tooltip = {
+				localization_key = CHI_Agriculture_farmer_tt
+				VALUE = "-5.00"
+			}
+			add_to_variable = {
+				CHI_Agriculture_farmer_value = -5
+			}
 		}
 	}
 }

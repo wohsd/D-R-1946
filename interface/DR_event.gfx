@@ -1,5 +1,14 @@
 spriteTypes = {
+
 	
+	spriteType = {
+		name = "GFX_usa_meme_1"
+		texturefile = "gfx/event/usa_meme_1.png"
+	}
+	spriteType = {
+		name = "GFX_RAJ_war_newsevent_1"
+		texturefile = "gfx/event/RAJ_war_newsevent_1.png"
+	}
 	spriteType = {
 		name = "GFX_USA_Trump_1"
 		texturefile = "gfx/event/USA_Trump_1.png"
@@ -47,6 +56,15 @@ spriteTypes = {
 		texturefile = "gfx/event/GER_focusevent_1.png"
 	}
 
+	spriteType = {
+		name = "GFX_GER_nuke_1"
+		texturefile = "gfx/event/GER_nuke_1.png"
+	}
+
+	spriteType = {
+		name = "GFX_CHI_nuke_1"
+		texturefile = "gfx/event/CHI_nuke_1.png"
+	}
 
 	spriteType = {
 		name = "GFX_DRV_countryevent_1"

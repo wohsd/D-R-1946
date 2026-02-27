@@ -13,5 +13,21 @@ characters = {
 			id = -1
 		}
 	}
+
+
+	USA_Donald_Trump = {
+		name = USA_Donald_Trump
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/meme1.png"
+			}
+		}
+		country_leader = {
+			ideology = Neoreactionism_type
+			desc = USA_Donald_Trump_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }
 	

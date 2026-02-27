@@ -1,0 +1,17 @@
+characters = {
+	NIC_Anastasio_Somoza_Garcia = {
+        name = NIC_Anastasio_Somoza_Garcia
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/NIC/NIC_Anastasio_Somoza_Garcia.png"
+            }
+        }
+        country_leader = {
+            ideology = military-dictatorship
+            desc = NIC_Anastasio_Somoza_Garcia_desc
+            expire = "2000.1.1.1"
+            id = -3
+        }
+    }
+}
+	

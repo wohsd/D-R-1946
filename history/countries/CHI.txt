@@ -144,6 +144,10 @@ recruit_character = CHI_HuangQiXiang
 recruit_character = CHI_DengYangDa
 recruit_character = CHI_JiangGuangDing
 recruit_character = CHI_ZhangFaKui
+
+recruit_character = CHI_ShengZongHang
+
+
 set_politics = {
 	ruling_party = Reformism
 	last_election = "1918.11.11"
@@ -158,17 +162,28 @@ set_popularities = {
 	Reformism = 50
 }
 
+set_variable = {Educational_var = 260}
+set_variable = {labor_var = 510}
+set_variable = {Women_var = 310}
+set_variable = {Livelihood_var = 270}
+set_variable = {Racial_var = 510}
+set_variable = {Police_var = 270}
+set_variable = {Public_var = 260}
+set_variable = {Industrialization_var = 350}
+set_variable = {Agriculture_var = 310}
+
+
 add_ideas = {
 	
 	#law
-	Agriculture_level4
-	Racial_policy2
+	Agriculture_level2
+	Racial_policy3
 	Women_rights2
-	labor_laws1
-	Public_control4
-	Livelihood_investment3
+	labor_laws3
+	Public_control3
+	Livelihood_investment2
 	Industrialization_level2
-	Public_Education3
+	Public_Education2
 	Police_policy3
 
 	SunKe_J

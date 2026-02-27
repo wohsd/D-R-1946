@@ -1,0 +1,42 @@
+spriteTypes = {
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_1"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_1.png"
+}
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_10"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_10.png"
+}
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_2"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_2.png"
+}
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_3"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_3.png"
+}
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_4"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_4.png"
+}
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_5"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_5.png"
+}
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_6"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_6.png"
+}
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_7"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_7.png"
+}
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_8"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_8.png"
+}
+spriteType = {
+name = "GFX_GFX_CHI_Agriculture_focus_9"
+texturefile = "gfx\interface\goal\gfx\interface\goals/GFX_CHI_Agriculture_focus_9.png"
+}
+}

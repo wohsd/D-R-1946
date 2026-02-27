@@ -1,0 +1,17 @@
+characters = {
+	COS_Teodoro_Picado_Michalski = {
+        name = COS_Teodoro_Picado_Michalski
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/COS/COS_Teodoro_Picado_Michalski.png"
+            }
+        }
+        country_leader = {
+            ideology = military-dictatorship
+            desc = COS_Teodoro_Picado_Michalski_desc
+            expire = "2000.1.1.1"
+            id = -2
+        }
+    }
+}
+	

@@ -1,6 +1,27 @@
 ﻿
 add_namespace = GER_focusevent
+add_namespace = GER_nuke
 add_namespace = GER_countryevent
+news_event = {
+	id = GER_nuke.1
+	title = GER_nuke.1.t
+	desc = GER_nuke.1.d
+	picture = GFX_GER_nuke_1
+	major=yes 
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			launch_nuke = {
+				province = 14151
+			}
+		}
+	}
+	option = {
+		name = GER_nuke.1.a
+	}
+}
+
 news_event = {
 	id = GER_focusevent.1
 	title = GER_focusevent.1.t

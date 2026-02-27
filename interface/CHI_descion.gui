@@ -16,7 +16,7 @@ guiTypes = {
 			name = "CHI_Agriculture_farmer_value" 
 			spriteType = "GFX_CHI_Agriculture_farmer_value"	 
 			position = { x =160 y = 10 } 
-			pdx_tooltip = CHI_Agriculture_farmer_tt
+			pdx_tooltip = CHI_Agriculture_farmer_tool
 			pdx_tooltip_delayed = CHI_Agriculture_farmer_delayed
 		}
 
@@ -25,7 +25,7 @@ guiTypes = {
 			name = "CHI_Agriculture_landlord_value" 
 			spriteType = "GFX_CHI_Agriculture_landlord_value"	 
 			position = { x =30 y = 10 } 
-			pdx_tooltip = CHI_Agriculture_landlord_tt
+			pdx_tooltip = CHI_Agriculture_landlord_tool
 			pdx_tooltip_delayed = CHI_Agriculture_landlord_delayed
 		}
 

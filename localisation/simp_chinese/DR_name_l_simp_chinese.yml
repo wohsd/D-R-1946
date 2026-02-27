@@ -23,6 +23,8 @@
  ENG_Archibald_Sinclair_desc:0 ""
  USA_Thomas_Dewey:0 "托马斯·杜威"
  USA_Thomas_Dewey_desc:0 ""
+ USA_Donald_Trump:0 "唐纳德·特朗普"
+ USA_Donald_Trump_desc:0 ""
  MAN_ZhangXueLiang:0 "张学良"
  MAN_ZhangXueLiang_desc:0 ""
  MON_Bashlugin_Zamslanzav:0 "巴什卢金·扎姆斯兰扎夫"
@@ -364,6 +366,9 @@ JAP_Ryoki_Machijiri_desc:0 ""
 CHI_ZhangFaKui:0 "张发奎"
 CHI_ZhangFaKui_desc:0 ""
 
+CHI_ShengZongHang:0 "沈宗翰"
+CHI_ShengZongHang_desc:0 ""
+
 DRV_Huynh_Sam:0 "黄森"
 DRV_Huynh_Sam_desc:0 ""
 
@@ -419,3 +424,29 @@ DRV_Hoang_Van_Hoan_desc:0 ""
 
 DRV_Tran_Huy_Lieu:0 "陈辉燎"
 DRV_Tran_Huy_Lieu_desc:0 ""
+
+# 整合后的人物名称及描述字段（格式统一，中文内容完整）
+PAN_Enrique_Adolfo_Jimenez:0 "恩里克·阿道夫·希门尼斯"
+PAN_Enrique_Adolfo_Jimenez_desc:0 "恩里克·阿道夫·希门尼斯（巴拿马前总统，巴拿马主义党相关政治人物）"
+
+COS_Teodoro_Picado_Michalski:0 "特奥多罗·皮卡多·米哈尔斯基"
+COS_Teodoro_Picado_Michalski_desc:0 "特奥多罗·皮卡多·米哈尔斯基（哥斯达黎加前总统，1944-1948年任职）"
+
+NIC_Anastasio_Somoza_Garcia:0 "阿纳斯塔西奥·索摩查·加西亚"
+NIC_Anastasio_Somoza_Garcia_desc:0 "阿纳斯塔西奥·索摩查·加西亚（尼加拉瓜前总统，索摩查家族独裁统治开创者）"
+
+ELS_Salvador_Castaneda_Castro:0 "萨尔瓦多·卡斯塔涅达·卡斯特罗"
+ELS_Salvador_Castaneda_Castro_desc:0 "萨尔瓦多·卡斯塔涅达·卡斯特罗（萨尔瓦多前总统，1931-1934年任职）"
+
+HON_Tiburcio_Carias_Andino:0 "蒂布尔西奥·卡里亚斯·安迪诺"
+HON_Tiburcio_Carias_Andino_desc:0 "蒂布尔西奥·卡里亚斯·安迪诺（洪都拉斯前总统，1933-1949年实行独裁统治）"
+
+GUA_Juan_Jose_Arevalo:0 "胡安·何塞·阿雷瓦洛"
+GUA_Juan_Jose_Arevalo_desc:0 "胡安·何塞·阿雷瓦洛（危地马拉前总统，1945-1951年任职，推行改革政策）"
+
+
+
+
+
+
+

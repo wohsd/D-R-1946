@@ -96,7 +96,7 @@ set_technology = {
 }
 
 recruit_character = USA_Thomas_Dewey
-
+recruit_character = USA_Donald_Trump
 set_politics = {
 	ruling_party = Liberalism
 	last_election = "1948.11.2"

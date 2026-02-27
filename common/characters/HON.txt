@@ -1,0 +1,17 @@
+characters = {
+	HON_Tiburcio_Carias_Andino = {
+        name = HON_Tiburcio_Carias_Andino
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/HON/HON_Tiburcio_Carias_Andino.png"
+            }
+        }
+        country_leader = {
+            ideology = military-dictatorship
+            desc = HON_Tiburcio_Carias_Andino_desc
+            expire = "2000.1.1.1"
+            id = -5
+        }
+    }
+}
+	

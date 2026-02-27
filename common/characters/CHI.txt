@@ -356,5 +356,34 @@ characters = {
 			logistics_skill = 2
 		}
 	}
+
+
+
+
+
+	####理论家
+	CHI_ShengZongHang={
+		name=CHI_ShengZongHang
+		portraits={
+			army={
+				small="gfx/interface/ideas/CHI/CHI_ShengZongHang.png"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = theorist
+			idea_token = CHI_ShengZongHang_T
+			ledger = all
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = CHI_Agriculture_focus_9
+			}
+			traits = {
+				PRC_agricultural_reformist
+			}
+		}
+	}
 }
 	

@@ -1,0 +1,13 @@
+﻿add_namespace = RAJ_war_newsevent
+
+news_event = {
+	id = RAJ_war_newsevent.1
+	title = RAJ_war_newsevent.1.t
+	desc = RAJ_war_newsevent.1.d
+	picture = GFX_RAJ_war_newsevent_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RAJ_war_newsevent.1.a
+	}
+}

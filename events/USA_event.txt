@@ -1,7 +1,7 @@
 ﻿add_namespace = USA_Trump
 add_namespace = USA_newevent
 add_namespace = black_flower
-
+add_namespace = usa_meme
 country_event = {
 	id = USA_Trump.1
 	title = USA_Trump.1.t
@@ -36,5 +36,22 @@ news_event = {
 	fire_only_once = yes
 	option = {
 		name = USA_newevent.1.a
+	}
+}
+
+news_event = {
+	id = usa_meme.1
+	title = usa_meme.1.t
+	desc = usa_meme.1.d
+	picture = GFX_usa_meme_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = usa_meme.1.a
+		set_politics = {
+			ruling_party = Neoreactionism
+			elections_allowed = no
+			last_election = "1935.12.17"
+		}
 	}
 }

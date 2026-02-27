@@ -1,0 +1,17 @@
+characters = {
+	GUA_Juan_Jose_Arevalo = {
+        name = GUA_Juan_Jose_Arevalo
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/GUA/GUA_Juan_Jose_Arevalo.png"
+            }
+        }
+        country_leader = {
+            ideology = military-dictatorship
+            desc = GUA_Juan_Jose_Arevalo_desc
+            expire = "2000.1.1.1"
+            id = -6
+        }
+    }
+}
+	

@@ -1,0 +1,17 @@
+characters = {
+	PAN_Enrique_Adolfo_Jimenez = {
+		name = PAN_Enrique_Adolfo_Jimenez
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/PAN_Enrique_Adolfo_Jimenez.png"
+			}
+		}
+		country_leader = {
+			ideology = military-dictatorship
+			desc = PAN_Enrique_Adolfo_Jimenez_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}
+	

@@ -32,7 +32,6 @@ Arab_oil:"输油管道"
 Livelihood_var_tt:"§H社保法案§!推进：§H$VALUE|2$§!点"
 Educational_var_tt:"§H教育法案§!推进：§H$VALUE|2$§!点"
 labor_var_tt:"§H劳工法案§!推进：§H$VALUE|2$§!点"
-
 Agriculture_var_tt:"§H农业法案§!推进：§H$VALUE|2$§!点"
 
 
@@ -53,3 +52,11 @@ level5_var_2tt:"水平推进至：§H250-500§!区间"
 level5_var_3tt:"水平推进至：§H500-750§!区间"
 level5_var_4tt:"水平推进至：§H750-950§!区间"
 level5_var_5tt:"水平推进至：§H950-1000§!区间"
+
+
+
+CHI_Agriculture_farmer_tt:"§H农民满意度§!增加：§H$VALUE|2$§!点"
+CHI_Agriculture_landlord_tt:"§H地主满意度§!增加：§H$VALUE|2$§!点"
+CHI_Agriculture_development_tt:"§H农业发展度§!增加：§H$VALUE|2$§!点"
+CHI_Agriculture_disaster_tt:"§H天灾抗性§!增加：§H$VALUE|2$§!点"
+

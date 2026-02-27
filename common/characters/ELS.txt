@@ -1,0 +1,17 @@
+characters = {
+	ELS_Salvador_Castaneda_Castro = {
+        name = ELS_Salvador_Castaneda_Castro
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/ELS/ELS_Salvador_Castaneda_Castro.png"
+            }
+        }
+        country_leader = {
+            ideology = military-dictatorship
+            desc = ELS_Salvador_Castaneda_Castro_desc
+            expire = "2000.1.1.1"
+            id = -4
+        }
+    }
+}
+	
