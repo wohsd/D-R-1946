@@ -1,4 +1,4 @@
-version="1.17.3"
+version="1.17.4"
 tags={
 	"Map"
 	"National Focuses"
@@ -16,5 +16,5 @@ replace_path="common/on_actions"
 replace_path="gfx/loadingscreens"
 replace_path="events"
 name="DRR1946"
-supported_version="1.17.3.0"
+supported_version="1.17.4.0"
 path="C:/Users/ZhenJiuZhe/Documents/Paradox Interactive/Hearts of Iron IV/mod/D-R-1946"
