@@ -1,4 +1,53 @@
 scripted_gui = {
+	###图书馆系统
+	book_gui_button = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "book_gui_container_button"
+		visible = {  
+		} 
+		effects = {
+			book_gui_button_click={
+				set_country_flag = book_gui_yes
+			} 
+		} 
+	}
+
+	book_gui = {
+		context_type = player_context
+		#parent_window_token = politics_tab
+		window_name = "book_gui_container"
+		visible = {
+			has_country_flag = book_gui_yes
+		}
+		properties = {
+			book_name = {
+				text = "[book_name]"
+			}
+			book_Author = {
+				text = "[book_author]"
+			}
+			book_title = {
+				text = "[book_content]"
+			}
+		}
+		effects = {
+			book_close_button_click = {
+				clr_country_flag = book_gui_yes
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
 	parliament_gui_button = {
 		context_type = player_context
 		parent_window_token = politics_tab
@@ -12,6 +61,10 @@ scripted_gui = {
 			} 
 		} 
 	} 
+
+
+
+
  
 	parliament_gui = {
 		context_type = player_context
@@ -71,4 +124,7 @@ scripted_gui = {
 
 		}
 	}
+
+	
+	
 }

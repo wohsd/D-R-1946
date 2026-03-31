@@ -273,6 +273,18 @@ spriteType = {
 		texturefile = "gfx\interface\ideas\DRV\DRV_Research_Development_Seized_Weapons.png"
 	}
 
+
+
+
+	spriteType = {
+		name = "GFX_idea_ASY_Assyrian_Kingdom"
+		texturefile = "gfx\interface\ideas\ASY\ASY_Assyrian_Kingdom.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ASY_Assyrian_militarism"
+		texturefile = "gfx\interface\ideas\ASY\ASY_Assyrian_militarism.png"
+	}
+
 	progressBarType = {
 		name = "GFX_idea_progerss"
 		textureFile1 = "gfx/interface/idea_progerss.png"

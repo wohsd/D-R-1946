@@ -1,4 +1,4 @@
-﻿capital = 1071
+capital = 1071
 
 oob = "CHI_1946"
 
@@ -146,6 +146,37 @@ recruit_character = CHI_JiangGuangDing
 recruit_character = CHI_ZhangFaKui
 
 recruit_character = CHI_ShengZongHang
+recruit_character = CHI_QianXueSen
+recruit_character = CHI_DengJiaXian
+recruit_character = CHI_QianSanQiang
+recruit_character = CHI_WuYouXun
+recruit_character = CHI_YeQiSun
+recruit_character = CHI_YanJiCi
+recruit_character = CHI_ZhaoZhongYao
+recruit_character = CHI_GuoYongHuai
+
+recruit_character = CHI_JiangZhongZheng
+recruit_character = CHI_MaoZeDong
+recruit_character = CHI_MaoZeDong1
+recruit_character = CHI_WangJingWei
+recruit_character = CHI_ZhuDe
+recruit_character = CHI_ZhangXueLiang
+recruit_character = CHI_ZhangXueLiang1
+recruit_character = CHI_ChenJiTang
+recruit_character = CHI_ZhangGuoTao
+recruit_character = CHI_ZhouFoHai
+recruit_character = CHI_ChenGongFu
+recruit_character = CHI_JuZheng
+recruit_character = CHI_HeJiang
+recruit_character = CHI_LiJiSheng
+recruit_character = CHI_DengXiHou
+recruit_character = CHI_ZuoSunSheng
+recruit_character = CHI_LingBiao
+recruit_character = CHI_KangSheng
+recruit_character = CHI_HuangQiXiang
+recruit_character = CHI_ChenMingQu
+recruit_character = CHI_GuWeiJun
+recruit_character = CHI_YuHangMou
 
 
 set_politics = {
@@ -230,4 +261,6 @@ set_variable = {NRA_no_supply_grace0=0}
 set_variable = {NRA_pocket_penalty0=0}
 set_variable = {NRA_planning_speed002=-0.02}
 ###国军
+
+
 

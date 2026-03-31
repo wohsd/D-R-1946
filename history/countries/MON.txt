@@ -1,4 +1,4 @@
-﻿capital = 330
+capital = 330
 
 #oob = "AOX_1920"
 
@@ -26,12 +26,12 @@ set_popularities = {
 add_ideas = {
 	#law
 	Agriculture_level4
-	Racial_policy2
-	Women_rights2
-	labor_laws1
+	Racial_policy1
+	Women_rights3
+	labor_laws3
 	Public_control4
 	Livelihood_investment3
 	Industrialization_level2
-Public_Education3
+	Public_Education4
 	Police_policy3
 }

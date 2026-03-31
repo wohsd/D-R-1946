@@ -13,6 +13,8 @@
  FRA_Paul_Ramadier_desc:0 ""
  JAP_Ichiro_Hatoyama:0 "鸠山一郎"
  JAP_Ichiro_Hatoyama_desc:0 ""
+ JAP_Yasuo_Kanemitsu:0 "金光庸夫"
+ JAP_Yasuo_Kanemitsu_desc:0 ""
  CHI_SunKe:0 "孙科"
  CHI_SunKe_desc:0 ""
  CHI_TangPingShang:0 "谭平山"
@@ -35,7 +37,7 @@
  SPR_Jose_Maria_Leon_desc:0 ""
  ITA_Pietro_Badoglio:0 "彼得罗·巴多格里奥"
  ITA_Pietro_Badoglio_desc:0 ""
- 
+
  VIN_Nguyen_Phuc_Bui:0 "保大"
  VIN_Nguyen_Phuc_Bui_desc:0 ""
 
@@ -155,6 +157,73 @@ POR_Antonio_de_Oliveira_Salazar:0 "安东尼奥·萨拉查"
 
 
 
+CHI_JiangZhongZheng:0 "蒋介石"
+CHI_JiangZhongZheng_desc:0 ""
+
+CHI_MaoZeDong:0 "毛泽东"
+CHI_MaoZeDong_desc:0 ""
+
+CHI_MaoZeDong1:0 "毛泽东"
+CHI_MaoZeDong1_desc:0 ""
+
+CHI_WangJingWei:0 "汪精卫"
+CHI_WangJingWei_desc:0 ""
+
+CHI_ZhuDe:0 "朱德"
+CHI_ZhuDe_desc:0 ""
+
+CHI_ZhangXueLiang:0 "张学良"
+CHI_ZhangXueLiang_desc:0 ""
+
+CHI_ZhangXueLiang1:0 "张学良"
+CHI_ZhangXueLiang1_desc:0 ""
+
+CHI_ChenJiTang:0 "陈济棠"
+CHI_ChenJiTang_desc:0 ""
+
+CHI_ZhangGuoTao:0 "张国焘"
+CHI_ZhangGuoTao_desc:0 ""
+
+CHI_ZhouFoHai:0 "周佛海"
+CHI_ZhouFoHai_desc:0 ""
+
+CHI_ChenGongFu:0 "陈公博"
+CHI_ChenGongFu_desc:0 ""
+
+CHI_JuZheng:0 "居正"
+CHI_JuZheng_desc:0 ""
+
+CHI_HeJiang:0 "何应钦"
+CHI_HeJiang_desc:0 ""
+
+CHI_LiJiSheng:0 "李济深"
+CHI_LiJiSheng_desc:0 ""
+
+CHI_DengXiHou:0 "邓锡侯"
+CHI_DengXiHou_desc:0 ""
+
+CHI_ZuoSunSheng:0 "左舜生"
+CHI_ZuoSunSheng_desc:0 ""
+
+CHI_LingBiao:0 "林彪"
+CHI_LingBiao_desc:0 ""
+
+CHI_KangSheng:0 "康生"
+CHI_KangSheng_desc:0 ""
+
+CHI_HuangQiXiang:0 "黄琪翔"
+CHI_HuangQiXiang_desc:0 ""
+
+CHI_ChenMingQu:0 "陈铭枢"
+CHI_ChenMingQu_desc:0 ""
+
+CHI_GuWeiJun:0 "顾维钧"
+CHI_GuWeiJun_desc:0 ""
+
+CHI_YuHangMou:0 "于汉谋"
+CHI_YuHangMou_desc:0 ""
+
+
 HOL_Willem_Schermerhorn:0 "威廉·舍默尔霍恩"
 HOL_Willem_Schermerhorn_desc:0 ""
 
@@ -192,7 +261,7 @@ LIB_William_Tubman_desc:0 "威廉·杜伯曼是利比里亚的总统。他的总
 
 
 NGA_Sir_John_Stuart_Macpherson:0 "约翰·斯图尔特·麦克弗森"
-NGA_Sir_John_Stuart_Macpherson_desc:0 "约翰·斯图尔特·麦克弗森爵士是尼日利亚的殖民地总督。作为一名经验丰富的行政官员，他正负责引导尼日利亚走过战后宪政改革的复杂进程。他的政策旨在通过引入更多的尼日利亚人参与治理，来逐步实现这个庞大而多元的殖民地走向自治。他主持制定的‘麦克弗森宪法’正是这一方向的关键步骤，尽管它需要平衡各方日益增长且时常冲突的政治诉求。"
+NGA_Sir_John_Stuart_Macpherson_desc:0 "约翰·斯图尔特·麦克弗森爵士是尼日利亚的殖民地总督。作为一名经验丰富的行政官员，他正负责引导尼日利亚走过战后宪政改革的复杂进程。他的政策旨在通过引入更多的尼日利亚人参与治理，来逐步实现这个庞大而多元的殖民地走向自治。他主持制定的'麦克弗森宪法'正是这一方向的关键步骤，尽管它需要平衡各方日益增长且时常冲突的政治诉求。"
 
 SOM_Sir_Gerald_Reece:0 "杰拉尔德·里斯"
 SOM_Sir_Gerald_Reece_desc:0 "杰拉尔德·里斯爵士是英属索马里兰的保护地总督。他的职业生涯大部分时间都在非洲之角度过，这使他对这个以游牧民族为主、地理环境严酷的地区有着深刻的理解。他的统治面临着维持边境安全、管理部落间关系以及应对意属索马里兰托管地未来不确定性所带来的挑战。他的政策务实而谨慎，主要着眼于维持英国的统治和地区的基本稳定。"
@@ -201,7 +270,7 @@ TZN_Sir_William_Denis_Battershill:0 "威廉·丹尼斯·巴特希尔"
 TZN_Sir_William_Denis_Battershill_desc:0 "威廉·丹尼斯·巴特希尔爵士是坦噶尼喀托管地的行政长官。在联合国托管体系下，他的任务与典型的殖民地统治有所不同，更侧重于促进居民的发展和自治。然而，有限的预算、欧洲定居者与非洲土著人口之间日益紧张的关系，以及托管地最终地位的问题，构成了他任期内的主要挑战。他是一位务实的管理者，在推动缓慢进步的同时，必须小心翼翼地维护着各方的平衡。"
 
 KEN_Sir_Philip_Euen_Mitchell:0 "菲利普·尤恩·米切尔"
-KEN_Sir_Philip_Euen_Mitchell_desc:0 "菲利普·尤恩·米切尔爵士是肯尼亚的殖民地总督。他是一位坚信英国殖民使命具有文明开化作用的资深总督。在他的任期内，他积极推动了一系列经济发展项目，尤其是备受争议的‘斯韦特纳姆计划’，该计划旨在重组肯尼亚的农业，但巩固了白人定居者的优势地位。他的统治期正是民族主义情绪开始酝酿的时期，他所推行的政策在加剧欧洲人、亚洲人和非洲人之间的种族与经济对立方面起到了重要作用。"
+KEN_Sir_Philip_Euen_Mitchell_desc:0 "菲利普·尤恩·米切尔爵士是肯尼亚的殖民地总督。他是一位坚信英国殖民使命具有文明开化作用的资深总督。在他的任期内，他积极推动了一系列经济发展项目，尤其是备受争议的'斯韦特纳姆计划'，该计划旨在重组肯尼亚的农业，但巩固了白人定居者的优势地位。他的统治期正是民族主义情绪开始酝酿的时期，他所推行的政策在加剧欧洲人、亚洲人和非洲人之间的种族与经济对立方面起到了重要作用。"
 
 COG_Joseph_Kasavubu:0 "约瑟夫·卡萨武布"
 COG_Joseph_Kasavubu_desc:0 "领导刚果摆脱比利时殖民统治获得独立。他在国家独立初期的权力格局中扮演关键角色，致力于维护刚果的主权统一，是非洲民族独立运动的重要代表人物之一。"
@@ -369,6 +438,30 @@ CHI_ZhangFaKui_desc:0 ""
 CHI_ShengZongHang:0 "沈宗翰"
 CHI_ShengZongHang_desc:0 ""
 
+CHI_QianXueSen:0 "钱学森"
+CHI_QianXueSen_desc:0 "中国著名科学家，空气动力学专家，中国航天事业的奠基人"
+
+CHI_DengJiaXian:0 "邓稼先"
+CHI_DengJiaXian_desc:0 "中国著名核物理学家，中国核武器研制工作的开拓者和奠基者"
+
+CHI_QianSanQiang:0 "钱三强"
+CHI_QianSanQiang_desc:0 "中国著名核物理学家，中国原子能科学事业的创始人"
+
+CHI_WuYouXun:0 "吴有训"
+CHI_WuYouXun_desc:0 "中国著名物理学家，中国近代物理学的奠基人之一"
+
+CHI_YeQiSun:0 "叶企孙"
+CHI_YeQiSun_desc:0 "中国著名物理学家，中国科学事业的先驱者"
+
+CHI_YanJiCi:0 "严济慈"
+CHI_YanJiCi_desc:0 "中国著名物理学家，中国现代物理学研究的开拓者"
+
+CHI_ZhaoZhongYao:0 "赵忠尧"
+CHI_ZhaoZhongYao_desc:0 "中国著名核物理学家，中国核物理研究的先驱者"
+
+CHI_GuoYongHuai:0 "郭永怀"
+CHI_GuoYongHuai_desc:0 "中国著名空气动力学家，中国航天事业的奠基人之一"
+
 DRV_Huynh_Sam:0 "黄森"
 DRV_Huynh_Sam_desc:0 ""
 
@@ -443,10 +536,3 @@ HON_Tiburcio_Carias_Andino_desc:0 "蒂布尔西奥·卡里亚斯·安迪诺（�
 
 GUA_Juan_Jose_Arevalo:0 "胡安·何塞·阿雷瓦洛"
 GUA_Juan_Jose_Arevalo_desc:0 "胡安·何塞·阿雷瓦洛（危地马拉前总统，1945-1951年任职，推行改革政策）"
-
-
-
-
-
-
-

@@ -391,8 +391,20 @@ monarch-restorationism_desc:0 ""
 
 ###各国政党
 
-JAP_Liberalism_party:0 "日本自由党"
-JAP_Liberalism_party_long:0 "日本自由党"
+JAP_Liberalism_party:0 "民政党"
+JAP_Liberalism_party_long:0 "民政党"
+
+JAP_Reformism_party:0 "社会大众党"
+JAP_Reformism_party_long:0 "社会大众党"
+
+JAP_Conservatism_party:0 "立宪政友会"
+JAP_Conservatism_party_long:0 "立宪政友会"
+
+JAP_Dictatorship_party:0 "宫内势力"
+JAP_Dictatorship_party_long:0 "宫内势力"
+
+JAP_Nationalism_party:0 "纵横会"
+JAP_Nationalism_party_long:0 "纵横会"
 
 ENG_Liberalism_party:0 "英国自由党"
 ENG_Liberalism_party_long:0 "英国自由党"

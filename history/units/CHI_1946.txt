@@ -178,4 +178,402 @@ units = {
 		start_experience_factor = 0.5
 	}
 	
+	# 湖南驻军
+	division = {
+		name = "国民革命军战车大队"
+		location = 7097
+		division_template = "国民革命军战车大队"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "国民革命军战车大队"
+		location = 7101
+		division_template = "国民革命军战车大队"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "国民革命军整编第73师"
+		location = 7097
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "国民革命军整编第100师"
+		location = 7101
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "国民革命军整编第52师"
+		location = 7097
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 江苏驻军
+	division = {
+		name = "国民革命军整编第74师"
+		location = 11913
+		division_template = "国民革命军甲等师"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "国民革命军整编第83师"
+		location = 11913
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.4
+	}
+
+	# 上海驻军
+	division = {
+		name = "国民革命军整编第51师"
+		location = 7014
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.4
+	}
+
+	# 北京驻军
+	division = {
+		name = "国民革命军整编第94师"
+		location = 9843
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 广东驻军
+	division = {
+		name = "国民革命军整编第64师"
+		location = 1047
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 山东驻军
+	division = {
+		name = "国民革命军整编第75师"
+		location = 1069
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 湖北驻军
+	division = {
+		name = "国民革命军整编第72师"
+		location = 4619
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 四川驻军
+	division = {
+		name = "国民革命军整编第24师"
+		location = 4925
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 浙江驻军
+	division = {
+		name = "国民革命军整编第28师"
+		location = 7191
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 河南驻军
+	division = {
+		name = "国民革命军整编第3师"
+		location = 9958
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 福建驻军
+	division = {
+		name = "国民革命军整编第25师"
+		location = 4196
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 贵州驻军
+	division = {
+		name = "国民革命军整编第89师"
+		location = 4504
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 广西驻军
+	division = {
+		name = "国民革命军整编第48师"
+		location = 7137
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 安徽驻军
+	division = {
+		name = "国民革命军整编第46师"
+		location = 7222
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 云南驻军
+	division = {
+		name = "国民革命军整编第60师"
+		location = 1319
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 陕西驻军
+	division = {
+		name = "国民革命军整编第17师"
+		location = 7418
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 山西驻军
+	division = {
+		name = "国民革命军整编第33师"
+		location = 1519
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 江西驻军
+	division = {
+		name = "国民革命军整编第58师"
+		location = 3992
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 辽宁驻军
+	division = {
+		name = "国民革命军整编第207师"
+		location = 11771
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 吉林驻军
+	division = {
+		name = "国民革命军整编第60师"
+		location = 4572
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 黑龙江驻军
+	division = {
+		name = "国民革命军整编第13军"
+		location = 10433
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 河北驻军
+	division = {
+		name = "国民革命军整编第16师"
+		location = 10068
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 天津驻军
+	division = {
+		name = "国民革命军整编第87师"
+		location = 10068
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 内蒙古驻军
+	division = {
+		name = "国民革命军整编第35师"
+		location = 19828
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 新疆驻军
+	division = {
+		name = "国民革命军整编第42师"
+		location = 4709
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 西藏驻军
+	division = {
+		name = "国民革命军整编第1师"
+		location = 5033
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 甘肃驻军
+	division = {
+		name = "国民革命军整编第29师"
+		location = 2022
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 宁夏驻军
+	division = {
+		name = "国民革命军整编第11师"
+		location = 8127
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 青海驻军
+	division = {
+		name = "国民革命军整编第82师"
+		location = 7940
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 台湾驻军
+	division = {
+		name = "国民革命军整编第62师"
+		location = 7071
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 海南驻军
+	division = {
+		name = "国民革命军整编第63师"
+		location = 1070
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 福建驻军
+	division = {
+		name = "国民革命军整编第96师"
+		location = 4196
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 浙江驻军
+	division = {
+		name = "国民革命军整编第67师"
+		location = 7191
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 湖北驻军
+	division = {
+		name = "国民革命军整编第15师"
+		location = 4619
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 四川驻军
+	division = {
+		name = "国民革命军整编第41师"
+		location = 4925
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 广东驻军
+	division = {
+		name = "国民革命军整编第65师"
+		location = 1047
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 广西驻军
+	division = {
+		name = "国民革命军整编第126师"
+		location = 7137
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 云南驻军
+	division = {
+		name = "国民革命军整编第93师"
+		location = 1319
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 陕西驻军
+	division = {
+		name = "国民革命军整编第27师"
+		location = 7418
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 山西驻军
+	division = {
+		name = "国民革命军整编第19军"
+		location = 1519
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 山东驻军
+	division = {
+		name = "国民革命军整编第45师"
+		location = 1069
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 河南驻军
+	division = {
+		name = "国民革命军整编第10师"
+		location = 9958
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 安徽驻军
+	division = {
+		name = "国民革命军整编第56师"
+		location = 7222
+		division_template = "国民革命军丙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 江苏驻军
+	division = {
+		name = "国民革命军整编第69师"
+		location = 11913
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 上海驻军
+	division = {
+		name = "国民革命军整编第26师"
+		location = 7014
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+
+	# 北京驻军
+	division = {
+		name = "国民革命军整编第13师"
+		location = 9843
+		division_template = "国民革命军乙等师"
+		start_experience_factor = 0.3
+	}
+	
 }

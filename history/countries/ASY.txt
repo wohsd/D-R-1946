@@ -32,6 +32,10 @@ add_ideas = {
 	Public_control4
 	Livelihood_investment3
 	Industrialization_level2
-Public_Education3
+    Public_Education3
 	Police_policy3
+
+
+	ASY_Assyrian_Kingdom
+	ASY_Assyrian_militarism
 }

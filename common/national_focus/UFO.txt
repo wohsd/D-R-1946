@@ -1,0 +1,381 @@
+focus_tree = {
+    id = CHI
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = ROD
+        }
+    }
+    default = no
+    continuous_focus_position = { x = 10000 y = 10000 }
+
+    # ========== 左主线（听命中央线）==========
+    # 第0行
+    focus = {
+        id = ROD_focus_0
+        icon = GFX_ROD_focus_0
+        x = 2
+        y = 0
+        cost = 10
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            add_stability = 0.1
+            add_manpower = 1
+        }
+    }
+
+    # 第1行
+    focus = {
+        id = ROD_focus_2
+        icon = GFX_ROD_focus_2
+        x = 2
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_0 }
+        completion_reward = {}
+    }
+
+    # 第2行
+    focus = {
+        id = ROD_focus_3
+        icon = GFX_ROD_focus_3
+        x = 2
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_2 }
+        completion_reward = {}
+    }
+
+    # 第3行
+    focus = {
+        id = ROD_focus_4
+        icon = GFX_ROD_focus_4
+        x = 2
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_3 }
+        completion_reward = {}
+    }
+
+    # 第4行 - 两个分支 (x=0 和 x=4，间隔2)
+    focus = {
+        id = ROD_focus_5
+        icon = GFX_ROD_focus_5
+        x = 0
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_4 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_6
+        icon = GFX_ROD_focus_6
+        x = 4
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_4 }
+        completion_reward = {}
+    }
+
+    # 第5行 - 长城抗战 (居中)
+    focus = {
+        id = ROD_focus_7
+        icon = GFX_ROD_focus_7
+        x = 2
+        y = 5
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_5 }
+        prerequisite = { focus = ROD_focus_6 }
+        completion_reward = {}
+    }
+
+    # 第6行 - 释放政治犯
+    focus = {
+        id = ROD_focus_8
+        icon = GFX_ROD_focus_8
+        x = 4
+        y = 6
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_7 }
+        completion_reward = {}
+    }
+
+    # 第7行 - 回国复出
+    focus = {
+        id = ROD_focus_9
+        icon = GFX_ROD_focus_9
+        x = 2
+        y = 7
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_7 }
+        completion_reward = {}
+    }
+
+    # 第8行 - 两个分支
+    focus = {
+        id = ROD_focus_10
+        icon = GFX_ROD_focus_10
+        x = 0
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_9 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_11
+        icon = GFX_ROD_focus_11
+        x = 4
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_9 }
+        completion_reward = {}
+    }
+
+    # 第9行 - 建立四维学会分支 (x=-2 和 x=0)
+    focus = {
+        id = ROD_focus_17
+        icon = GFX_ROD_focus_17
+        x = -2
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_10 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_18
+        icon = GFX_ROD_focus_18
+        x = 0
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_10 }
+        completion_reward = {}
+    }
+
+    # 第9行 - 重组东北军分支
+    focus = {
+        id = ROD_focus_12
+        icon = GFX_ROD_focus_12
+        x = 4
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_11 }
+        completion_reward = {}
+    }
+
+    # 第10行
+    focus = {
+        id = ROD_focus_13
+        icon = GFX_ROD_focus_13
+        x = 4
+        y = 10
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_12 }
+        completion_reward = {}
+    }
+
+    # 第11行
+    focus = {
+        id = ROD_focus_14
+        icon = GFX_ROD_focus_14
+        x = 4
+        y = 11
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_13 }
+        completion_reward = {}
+    }
+
+    # 第12行 - 两个分支
+    focus = {
+        id = ROD_focus_15
+        icon = GFX_ROD_focus_15
+        x = 2
+        y = 12
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_14 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_16
+        icon = GFX_ROD_focus_16
+        x = 6
+        y = 12
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_14 }
+        completion_reward = {}
+    }
+
+    # ========== 右主线（为民守土线）==========
+    # 第0行
+    focus = {
+        id = ROD_focus_1
+        icon = GFX_ROD_focus_1
+        x = 8
+        y = 0
+        cost = 10
+        ai_will_do = { factor = 1 }
+        completion_reward = {}
+    }
+
+    # 第1行 - 三个分支 (x=8, x=10, x=12)
+    focus = {
+        id = ROD_focus_19
+        icon = GFX_ROD_focus_19
+        x = 8
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_1 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_20
+        icon = GFX_ROD_focus_20
+        x = 10
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_1 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_21
+        icon = GFX_ROD_focus_21
+        x = 12
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_1 }
+        completion_reward = {}
+    }
+
+    # 第2行
+    focus = {
+        id = ROD_focus_22
+        icon = GFX_ROD_focus_22
+        x = 9
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_19 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_23
+        icon = GFX_ROD_focus_23
+        x = 12
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_21 }
+        completion_reward = {}
+    }
+
+    # 第3行
+    focus = {
+        id = ROD_focus_24
+        icon = GFX_ROD_focus_24
+        x = 6
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_22 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_25
+        icon = GFX_ROD_focus_25
+        x = 8
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_22 }
+        prerequisite = { focus = ROD_focus_20 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_26
+        icon = GFX_ROD_focus_26
+        x = 12
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_23 }
+        completion_reward = {}
+    }
+
+    # 第4行
+    focus = {
+        id = ROD_focus_27
+        icon = GFX_ROD_focus_27
+        x = 8
+        y = 5
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_24 }
+        prerequisite = { focus = ROD_focus_25 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_28
+        icon = GFX_ROD_focus_28
+        x = 10
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_26 }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = ROD_focus_29
+        icon = GFX_ROD_focus_29
+        x = 14
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_26 }
+        completion_reward = {}
+    }
+
+    # 第5行
+    focus = {
+        id = ROD_focus_30
+        icon = GFX_ROD_focus_30
+        x = 12
+        y = 5
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_28 }
+        prerequisite = { focus = ROD_focus_29 }
+        completion_reward = {}
+    }
+
+}

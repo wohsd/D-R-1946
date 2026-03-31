@@ -1,4 +1,4 @@
-﻿capital = 282
+capital = 282
 
 oob = "JAP_1946"
 set_convoys = 500
@@ -108,22 +108,22 @@ set_technology = {
 		basic_fire_control_system = 1
 		basic_dp_light_battery = 1
 }
-
+recruit_character = JAP_Yasuo_Kanemitsu
 recruit_character = JAP_Ichiro_Hatoyama
 recruit_character = JAP_Ryoki_Machijiri
 recruit_character = JAP_Yongren
 set_politics = {
-	ruling_party = Liberalism
-	last_election = "1918.11.11"
-	election_frequency = 72
-	elections_allowed = no
+	ruling_party = Conservatism
+	last_election = "1946.4.10"
+	election_frequency = 48
+	elections_allowed = yes
 }
 set_popularities = {
-	Dictatorship = 13
-	Liberalism = 50
-	Conservatism = 5
-	Nationalism = 19
-	Reformism = 13
+	Dictatorship = 5
+	Liberalism = 25
+	Conservatism = 45
+	Nationalism = 15
+	Reformism = 10
 }
 
 set_variable = {
@@ -135,15 +135,15 @@ set_variable = {
 add_ideas = {
 	Yongren_G
 	#law
-	Agriculture_level4
-	Racial_policy2
-	Women_rights2
-	labor_laws1
-	Public_control4
+	Agriculture_level3
+	Racial_policy1
+	Women_rights3
+	labor_laws2
+	Public_control2
 	Livelihood_investment3
 	Industrialization_level2
-Public_Education3
-	Police_policy3
+	Public_Education4
+	Police_policy2
 
 	JAP_Yoshida_faction_staff
 	JAP_Golden_Age

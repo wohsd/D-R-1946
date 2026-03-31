@@ -1,4 +1,24 @@
 characters = {
+	
+	JAP_Yasuo_Kanemitsu = {
+		name = JAP_Yasuo_Kanemitsu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Yasuo_Kanemitsu.png"
+			}
+		}
+		country_leader = {
+			ideology = progressive-conservatism
+			desc = JAP_Yasuo_Kanemitsu_desc
+			expire = "2000.1.1.1"
+			traits = {
+			}
+			id = -1
+		}
+	}
+
+	
+
 	JAP_Ichiro_Hatoyama = {
 		name = JAP_Ichiro_Hatoyama
 		portraits = {

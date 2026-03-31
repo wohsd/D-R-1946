@@ -2,6 +2,46 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Asao_Ma_icon"
 		texturefile = "gfx\interface\pdx_icon\Asao_Ma_icon.png"
+		alwaystransparent = no 
+	}
+	spriteType = { 
+		name = "GFX_Katayama_Tetsu"
+		texturefile = "gfx\interface\pdx_icon\Katayama_Tetsu.png"
 		alwaystransparent = no
 	}  
+	spriteType = { 
+		name = "GFX_Yasuo_Kanemitsu"
+		texturefile = "gfx\interface\pdx_icon\Yasuo_Kanemitsu.png"
+		alwaystransparent = no
+	}  
+	spriteType = { 
+		name = "GFX_Takao_Saito" 
+		texturefile = "gfx\interface\pdx_icon\Takao_Saito.png"
+		alwaystransparent = no
+	}  
+	spriteType = { 
+		name = "GFX_Masataka_Nakano" 
+		texturefile = "gfx\interface\pdx_icon\Masataka_Nakano.png"
+		alwaystransparent = no
+	} 
+	spriteType = {
+		name = "GFX_Civil_Affairs_Association_logo" 
+		texturefile = "gfx\interface\pdx_icon\Civil_Affairs_Association_logo.png"
+		alwaystransparent = no
+	} 
+	spriteType = {  
+		name = "GFX_Zongheng_Association_logo"
+		texturefile = "gfx\interface\pdx_icon\Zongheng_Association_logo.png"
+		alwaystransparent = no 
+	} 
+	spriteType = { 
+		name = "GFX_Social_Masses_Party_logo"
+		texturefile = "gfx\interface\pdx_icon\Social_Masses_Party_logo.png"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_Seiyukai_logo"
+		texturefile = "gfx\interface\pdx_icon\Seiyukai_logo.png"
+		alwaystransparent = no
+	}
 }   

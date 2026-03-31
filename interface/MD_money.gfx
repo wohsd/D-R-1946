@@ -3,7 +3,29 @@ spriteTypes = {
 		name = "GFX_parliament_icon"
 		texturefile = "gfx/interface/parliament_icon.png"
 		legacy_lazy_load = no
-	}
+	} 
+	spriteType = {
+		name = "GFX_book_selet_button"
+		texturefile = "gfx/interface/book_selet_button.png"
+		legacy_lazy_load = no
+	} 
+	
+	spriteType = {
+		name = "GFX_book_icon"
+		texturefile = "gfx/interface/book_icon.png"
+		legacy_lazy_load = no
+	} 
+	spriteType = {
+		name = "GFX_book_desc_bg"
+		texturefile = "gfx/interface/book_desc_bg.png"
+		legacy_lazy_load = no
+	} 
+	
+	spriteType = {
+		name = "GFX_parliament_icon_bg"
+		texturefile = "gfx/interface/parliament_icon_bg.png"
+		legacy_lazy_load = no
+	} 
 	spriteType = {
 		name = "GFX_eco_icon"
 		texturefile = "gfx/interface/eco_icon.png"
