@@ -2,7 +2,7 @@
 @HOUSE_TEXT_X = 230
 @HEADERS_Y = 80
 @STATUS_Y = 65
-@FEIYONG_TEXT_X = 310
+@FEIYONG_TEXT_X = 310 
 @MAOYI_TEXT_X = -30
 
 
@@ -12,7 +12,7 @@ guiTypes = {
 		position = { x = 677 y = 180 }
 		size = { width = 500 height = 700 }
 		moveable = no
-		# orientation = CENTER
+		# orientation = CENTER 
 		# origo = center
 		hide_sound = menu_close_window
 		show_sound = menu_open_window

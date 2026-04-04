@@ -3,11 +3,12 @@
  Minister_Finance:0 "财政部长"
  Minister_Interior:0 "内政部长"
  Minister_Foreign:0 "外交部长"
- Minister_Defense:0 "国防部长"
+ Minister_Defense:0 "国防部长" 
  Minister_Justice:0 "司法部长"
  government1:0 "经济法案"
  government2:0 "政府首脑"
  government3:0 "政府内阁"
+ world_gdp_paihang_view_window_tital:0 "世界GDP排行榜"
  research_production:0 "装备研究所"
  research_production1:0 "工业研究"
  high_commands:0 "最高指挥部"
@@ -15,7 +16,6 @@
  Educational:0 "教育水平"
  Legal:0 "医疗水平"
  Labor:0 "劳工法"
-
 
 
 #########新
@@ -171,6 +171,9 @@ manpower_eco_tt:0 "人口生产总值"
 company_eco_tt:0 "工厂生产总值" 
 income_eco_tt:0 "生产总值(GDP)"
 GDP_capita_tt:0 "人均(GDP)"
+gdp_country_name:0 "国家"
+gdp_number:0 "GDP"
+mounthly_income:0 "月收入"
 Inflation_rate_tt:0 "通胀率"
 
 army_eco_tt:0 "陆军支出"
@@ -178,7 +181,7 @@ navy_eco_tt:0 "海军支出"
 air_eco_tt:0 "空军支出"
 resource_exported_tt:0 "外贸收入"
 resource_imported_tt:0 "外贸支出"
-Trade_investment_tt:0 "国际投资"
+Trade_investment_tt:0 "国际投资" 
 
 Medical_expenses_tt:0 "医疗支出"
 Education_expenses_tt:0 "教育支出"

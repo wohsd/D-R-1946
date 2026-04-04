@@ -13,5 +13,103 @@ characters = {
 			id = -1
 		}
 	}
+	MON_Khorloogiin_Choibalsan = {
+		name = MON_Khorloogiin_Choibalsan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/MON_Khorloogiin_Choibalsan.png"
+			}
+		}
+		country_leader = {
+			ideology = Marxism
+			desc = MON_Khorloogiin_Choibalsan_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+	MON_Yumjaagiin_Tsedenbal = {
+		name = MON_Yumjaagiin_Tsedenbal
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/MON_Yumjaagiin_Tsedenbal.png"
+			}
+		}
+		country_leader = {
+			ideology = Marxism
+			desc = MON_Yumjaagiin_Tsedenbal_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+	MON_Dashiin_Damba = {
+		name = MON_Dashiin_Damba
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/MON_Dashiin_Damba.png"
+			}
+		}
+		country_leader = {
+			ideology = Marxism
+			desc = MON_Dashiin_Damba_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+	MON_Demchugdongrub = {
+		name = MON_Demchugdongrub
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/MON_Demchugdongrub.png"
+			}
+		}
+		country_leader = {
+			ideology = Absolute_Monarchy
+			desc = MON_Demchugdongrub_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+	MON_Li_Xinshou = {
+		name = MON_Li_Xinshou
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/MON_Li_Xinshou.png"
+			}
+		}
+		country_leader = {
+			ideology = Despotism
+			desc = MON_Li_Xinshou_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+	MON_Jagsi = {
+		name = MON_Jagsi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/MON_Jagsi.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			desc = MON_Jagsi_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+	MON_Dalizhaya = {
+		name = MON_Dalizhaya
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/MON_Dalizhaya.png"
+			}
+		}
+		country_leader = {
+			ideology = Religious_Conservatism
+			desc = MON_Dalizhaya_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }
 	

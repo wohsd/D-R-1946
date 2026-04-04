@@ -13,5 +13,19 @@ characters = {
 			id = -1
 		}
 	}
+	YUG_Josip_Broz_Tito = {
+		name = YUG_Josip_Broz_Tito
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/YUG_Josip_Broz_Tito.png"
+			}
+		}
+		country_leader = {
+			ideology = Marxism
+			desc = YUG_Josip_Broz_Tito_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }
 	

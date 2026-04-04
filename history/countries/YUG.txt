@@ -1,4 +1,4 @@
-﻿capital = 107
+capital = 107
 
 #oob = "AOX_1920"
 
@@ -8,6 +8,7 @@ set_technology = {
 }
 
 recruit_character = YUG_Peter_II
+recruit_character = YUG_Josip_Broz_Tito
 
 set_politics = {
 	ruling_party = Dictatorship

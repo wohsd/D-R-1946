@@ -77,11 +77,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "book_title"
-			position = { x =173 y = 273 } 
+			position = { x =173 y = 75 } 
 			font = "dr_font_16"
 			text = "book_title_desc"
 			maxWidth = 500
-			maxHeight = 310 
+			maxHeight = 510 
 			format = left  
 			scrollbartype = "standardtext_slider"
 			fixedsize = no

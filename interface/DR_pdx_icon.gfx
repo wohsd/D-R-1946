@@ -29,7 +29,7 @@ spriteTypes = {
 		texturefile = "gfx\interface\pdx_icon\Civil_Affairs_Association_logo.png"
 		alwaystransparent = no
 	} 
-	spriteType = {  
+	spriteType = {   
 		name = "GFX_Zongheng_Association_logo"
 		texturefile = "gfx\interface\pdx_icon\Zongheng_Association_logo.png"
 		alwaystransparent = no 

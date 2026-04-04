@@ -383,7 +383,25 @@ spriteType = {
 	texturefile = "gfx\interface\goal\GER/GFX_GER_focus8.png"
 	}
 	spriteType = {
-	name = "GFX_GER_focus9"
-	texturefile = "gfx\interface\goal\GER/GFX_GER_focus9.png"
-	}
+name = "GFX_GER_focus9"
+texturefile = "gfx\interface\goal\GER/GFX_GER_focus9.png"
+}
+
+# JAP Focus Icons
+spriteType = {
+name = "GFX_JAP_focus_1"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_1.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_2"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_2.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_6"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_6.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_10"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_10.png"
+}
 }

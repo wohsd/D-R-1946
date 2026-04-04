@@ -8,6 +8,13 @@ set_technology = {
 }
 
 recruit_character = MON_Bashlugin_Zamslanzav
+recruit_character = MON_Khorloogiin_Choibalsan
+recruit_character = MON_Yumjaagiin_Tsedenbal
+recruit_character = MON_Dashiin_Damba
+recruit_character = MON_Demchugdongrub
+recruit_character = MON_Li_Xinshou
+recruit_character = MON_Jagsi
+recruit_character = MON_Dalizhaya
 
 set_politics = {
 	ruling_party = Conservatism

@@ -147,14 +147,14 @@ containerWindowType = {
 				position = { x = 80 y = 275 }
 
 				iconType = {
-					name ="Trade_investment_exported_bg"
+					name ="Trade_investment_exported_bg" 
 					spriteType = "GFX_generic_box_96"
 					position = { x = 300 y = 0 }
 				}
 
 				instantTextBoxType = {  
 					name = "Trade_tip"
-					position = { x = 0 y = -60 }
+					position = { x = 0 y = -60 } 
 					font = "dr_font_21" 
 					format = left   
 					maxWidth = 195 
