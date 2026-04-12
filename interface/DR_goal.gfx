@@ -448,4 +448,16 @@ spriteType = {
 name = "GFX_JAP_focus_18"
 texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_18.png"
 }
+spriteType = {
+name = "GFX_JAP_focus_3"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_3.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_11"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_11.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_13"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_13.png"
+}
 }

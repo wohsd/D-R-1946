@@ -477,5 +477,13 @@
  ICE_ADJ: "冰岛共和国"
 
  DJI: "吉布提领地"
- DJI_DEF: "吉布提领地"
- DJI_ADJ: "吉布提领地"
+DJI_DEF: "吉布提领地"
+DJI_ADJ: "吉布提领地"
+
+MCU: "澳门"
+MCU_DEF: "澳门"
+MCU_ADJ: "澳门"
+
+HKG: "香港"
+HKG_DEF: "香港"
+HKG_ADJ: "香港"
