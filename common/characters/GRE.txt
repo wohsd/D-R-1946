@@ -27,5 +27,20 @@ characters = {
 			id = -1
 		}
 	}
+
+	GRE_Andrei_Alexandrovitch = {
+		name = GRE_Andrei_Alexandrovitch
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GRE/GRE_Andrei_Alexandrovitch.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = GRE_Andrei_Alexandrovitch_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
 }
-	

@@ -1,6 +1,6 @@
 characters = {
 	HKG_Sir_Chau_Tsun_nin = {
-		name = "Sir Chau Tsun-nin"
+		name = "HKG_Sir_Chau_Tsun_nin"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/HKG/HKG_Sir_Chau_Tsun_nin.png"
@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = ironfist-colonial-assimilation
-			desc = "Sir Chau Tsun-nin"
+			desc = "HKG_Sir_Chau_Tsun_nin_desc"
 			expire = "2000.1.1.1"
 			id = -1
 		}

@@ -17,8 +17,6 @@ characters = {
 		}
 	}
 
-	
-
 	JAP_Ichiro_Hatoyama = {
 		name = JAP_Ichiro_Hatoyama
 		portraits = {
@@ -42,6 +40,7 @@ characters = {
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/JAP/JAP_Yongren.png"
+				large = "gfx/leaders/JAP/JAP_Yongren.png"
 			}
 		}
 		country_leader = {
@@ -50,7 +49,7 @@ characters = {
 			expire = "2000.1.1.1"
 			id = -1
 		}
-		advisor={	
+		advisor={
 			slot = head_of_government
 			idea_token = Yongren_G
 			desc = JAP_Yongren_desc
@@ -69,7 +68,6 @@ characters = {
 		}
 	}
 
-
 	JAP_Ryoki_Machijiri= {
 		name = JAP_Ryoki_Machijiri
 		portraits = {
@@ -86,5 +84,80 @@ characters = {
 			logistics_skill = 1
 		}
 	}
+
+	JAP_Togo_Minoru = {
+		name = JAP_Togo_Minoru
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Togo_Minoru.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			desc = JAP_Togo_Minoru_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
+	JAP_Shigeru_Yoshida = {
+		name = JAP_Shigeru_Yoshida
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Shigeru_Yoshida.png"
+			}
+		}
+		country_leader = {
+			ideology = Liberalism
+			desc = JAP_Shigeru_Yoshida_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
+	JAP_Nobuhito = {
+		name = JAP_Nobuhito
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Nobuhito.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			desc = JAP_Nobuhito_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
+	JAP_Tokusaburo_Bedji = {
+		name = JAP_Tokusaburo_Bedji
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Tokusaburo_Bedji.png"
+			}
+		}
+		country_leader = {
+			ideology = Nationalism
+			desc = JAP_Tokusaburo_Bedji_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
+	JAP_Konoe_Fumimaro = {
+		name = JAP_Konoe_Fumimaro
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Konoe_Fumimaro.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			desc = JAP_Konoe_Fumimaro_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
 }
-	

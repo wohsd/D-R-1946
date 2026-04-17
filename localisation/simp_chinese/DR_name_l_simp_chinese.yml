@@ -83,6 +83,8 @@ GER_Albert_Einstein:0 "阿尔伯特·爱因斯坦"
  GRE_Alexandros_Papagos_desc:0 ""
  GRE_Roman_Romanov:0 "罗曼一世"
  GRE_Roman_Romanov_desc:0 ""
+ GRE_Andrei_Alexandrovitch:0 "安德烈一世"
+ GRE_Andrei_Alexandrovitch_desc:0 ""
  SYR_Shukri_al_Quwatli:0 "舒克里·库阿特利"
  SYR_Shukri_al_Quwatli_desc:0 ""
  ISR_David_Ben_Gurion:0 "戴维·本-古里安"
@@ -534,7 +536,7 @@ DRV_Hoang_Van_Hoan_desc:0 ""
 DRV_Tran_Huy_Lieu:0 "陈辉燎"
 DRV_Tran_Huy_Lieu_desc:0 ""
 
-# 整合后的人物名称及描述字段（格式统一，中文内容完整）
+
 PAN_Enrique_Adolfo_Jimenez:0 "恩里克·阿道夫·希门尼斯"
 PAN_Enrique_Adolfo_Jimenez_desc:0 "恩里克·阿道夫·希门尼斯（巴拿马前总统，巴拿马主义党相关政治人物）"
 
