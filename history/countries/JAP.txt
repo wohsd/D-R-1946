@@ -6,7 +6,7 @@ set_convoys = 500
 set_naval_oob = "JAP_1946_naval"
 set_air_oob =  "JAP_1946_air_bba"
 
-set_country_flag = Takeo_Yamazaki_flag
+set_country_flag = Ozaki_Yukio_flag
 
 set_technology = {
 
@@ -110,13 +110,16 @@ set_technology = {
 }
 recruit_character = JAP_Yasuo_Kanemitsu
 recruit_character = JAP_Ichiro_Hatoyama
+recruit_character = JAP_Yamamoto_Isoroku
 recruit_character = JAP_Ryoki_Machijiri
 recruit_character = JAP_Yongren
 recruit_character = JAP_Togo_Minoru
-recruit_character = JAP_Shigeru_Yoshida
 recruit_character = JAP_Nobuhito
 recruit_character = JAP_Tokusaburo_Bedji
 recruit_character = JAP_Konoe_Fumimaro
+recruit_character = JAP_Yoshida_Shigeru
+recruit_character = JAP_Tokitsura_Takashi
+recruit_character = JAP_Higashi_Kodama
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1946.4.10"
@@ -139,6 +142,10 @@ set_variable = {
 
 add_ideas = {
 	Yongren_G
+	Yoshida_Shigeru_F
+	Tokitsura_Takashi_I
+	Higashi_Kodama_E
+	Yamamoto_Isoroku_D
 	#law
 	Agriculture_level3
 	Racial_policy1
@@ -153,6 +160,8 @@ add_ideas = {
 	JAP_Yoshida_faction_staff
 	JAP_Golden_Age
 	JAP_Showa_Democracy
+
+
 }
 
 create_faction_from_template = faction_template_GEA

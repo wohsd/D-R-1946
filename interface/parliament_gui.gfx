@@ -15,8 +15,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_Takeo_Yamazaki"
-		texturefile = "gfx/interface/pdx_icon/parliament/Takeo_Yamazaki.png"
+		name = "GFX_Ozaki_Yukio"
+		texturefile = "gfx/interface/pdx_icon/parliament/Ozaki_Yukio.png"
 	}
 	spriteType = {
 		name = "GFX_SunKe"

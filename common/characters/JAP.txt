@@ -1,5 +1,5 @@
 characters = {
-	
+
 	JAP_Yasuo_Kanemitsu = {
 		name = JAP_Yasuo_Kanemitsu
 		portraits = {
@@ -21,6 +21,7 @@ characters = {
 		name = JAP_Ichiro_Hatoyama
 		portraits = {
 			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Ichiro_Hatoyama.png"
 				large = "gfx/leaders/JAP/JAP_Ichiro_Hatoyama.png"
 			}
 		}
@@ -32,6 +33,46 @@ characters = {
 				BRA_political_fox
 			}
 			id = -1
+		}
+		advisor={
+			slot = Minister_Justice
+			idea_token = Ichiro_Hatoyama_J
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	JAP_Yamamoto_Isoroku = {
+		name = JAP_Yamamoto_Isoroku
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Yamamoto_Isoroku.png"
+				large = "gfx/leaders/JAP/JAP_Yamamoto_Isoroku.png"
+			}
+		}
+		advisor={
+			slot = Minister_Defense
+			idea_token = Yamamoto_Isoroku_D
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -157,6 +198,84 @@ characters = {
 			desc = JAP_Konoe_Fumimaro_desc
 			expire = "2000.1.1.1"
 			id = -1
+		}
+	}
+
+	JAP_Yoshida_Shigeru = {
+		name = JAP_Yoshida_Shigeru
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Yoshida_Shigeru.png"
+				large = "gfx/leaders/JAP/JAP_Yoshida_Shigeru.png"
+			}
+		}
+		advisor = {
+			slot = Minister_Foreign
+			idea_token = Yoshida_Shigeru_F
+			desc = JAP_Yoshida_Shigeru_desc
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	JAP_Tokitsura_Takashi = {
+		name = JAP_Tokitsura_Takashi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Tokitsura_Takashi.png"
+				large = "gfx/leaders/JAP/JAP_Tokitsura_Takashi.png"
+			}
+		}
+		advisor = {
+			slot = Minister_Interior
+			idea_token = Tokitsura_Takashi_I
+			desc = JAP_Tokitsura_Takashi_desc
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	JAP_Higashi_Kodama = {
+		name = JAP_Higashi_Kodama
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Higashi_Kodama.png"
+				large = "gfx/leaders/JAP/JAP_Higashi_Kodama.png"
+			}
+		}
+		advisor = {
+			slot = Minister_Finance
+			idea_token = Higashi_Kodama_E
+			desc = JAP_Higashi_Kodama_desc
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 

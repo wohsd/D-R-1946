@@ -71,9 +71,9 @@ defined_text = {
 defined_text = { 
 	name =parliament_leader_pic
 	text = {
-		localization_key = "GFX_Takeo_Yamazaki"
+		localization_key = "GFX_Ozaki_Yukio"
     	trigger = {
-	 		has_country_flag = Takeo_Yamazaki_flag
+	 		has_country_flag = Ozaki_Yukio_flag
 		}
 	}
 	text = {
@@ -86,9 +86,9 @@ defined_text = {
 defined_text = { 
 	name =parliament_leader_name
 	text = {
-		localization_key = parliament_Takeo_Yamazaki_name
+		localization_key = parliament_Ozaki_Yukio_name
     	trigger = {
-	 		has_country_flag = Takeo_Yamazaki_flag
+	 		has_country_flag = Ozaki_Yukio_flag
 		}
 	}
 	text = {
