@@ -1,5 +1,559 @@
+﻿
+
+
+  
 l_simp_chinese:
+ WHILE_FOCUSING: "执行该国策将产生以下效果：\n$EFF$"
+ generic_focus: "国策"
+ complete_effect: "修正§H追加效果：§!"
+ interfering_country: "\n解锁对该国的§H干涉计划§!\n在§H解放/转变§!该国后，使其加入联盟"
+###prc
+GER_focus1: "独立之路"
+GER_focus1_desc: "无描述"
+GER_focus2: "德意志的领头羊"
+GER_focus2_desc: "无描述"
+GER_focus3: "阿登纳计划"
+GER_focus3_desc: "无描述" 
+GER_focus4: "常态化演习"
+GER_focus4_desc: "无描述"
+GER_focus5: "非洲石油勘探"
+GER_focus5_desc: "无描述"
+GER_focus6: "能源自给自足"
+GER_focus6_desc: "无描述"
+GER_focus7: "依赖俄国贸易伙伴"
+GER_focus7_desc: "无描述"
+GER_focus8: "振兴煤矿行业"
+GER_focus8_desc: "无描述"
+GER_focus9: "德累斯顿核计划"
+GER_focus9_desc: "无描述"
+GER_focus10: "任用核能科学家"
+GER_focus10_desc: "无描述"
+GER_focus11: "核能研究早期规划"
+GER_focus11_desc: "无描述"
+
+GER_focus12: "提高煤矿工人待遇"
+GER_focus12_desc: "无描述"
+GER_focus13: "鲁尔煤田扩建"
+GER_focus13_desc: "无描述"
+GER_focus14: "投资合成燃料"
+GER_focus14_desc: "无描述"
+
+GER_focus15: "扩张德资企业"
+GER_focus15_desc: "无描述"
+
+GER_focus16: "讨好俄国人"
+GER_focus16_desc: "无描述"
+
+GER_focus17: "与达契亚的合作"
+GER_focus17_desc: "无描述"
+
+GER_focus18: "对俄国企业补贴"
+GER_focus18_desc: "无描述"
+
+GER_focus19: "牢不可破的经济伙伴"
+GER_focus19_desc: "无描述"
+
+GER_focus20: "伏尔加石油走廊"
+GER_focus20_desc: "无描述"
+
+GER_focus21: "国防军现代化改革"
+GER_focus21_desc: "无描述"
+
+GER_focus22: "确立海洋霸权学说"
+GER_focus22_desc: "无描述"
+
+GER_focus23: "更新单兵作战手册"
+GER_focus23_desc: "无描述"
+
+GER_focus24: "重视信息战"
+GER_focus24_desc: "无描述"
+
+GER_focus25: "新一代雷达探测技术"
+GER_focus25_desc: "无描述"
+
+GER_focus26: "复兴德国军备"
+GER_focus26_desc: "无描述"
+GER_focus27: "军工企业补贴"
+GER_focus27_desc: "无描述"
+GER_focus28: "重型坦克升级方针"
+GER_focus28_desc: "无描述"
 
 
- CHI_focus: "11"
- CHI_focus_desc: "11"
+GER_focus29: "重振普鲁士传统"
+GER_focus29_desc: "无描述"
+GER_focus30: "德法边境防御计划"
+GER_focus30_desc: "无描述"
+GER_focus31: "德俄边境防御计划"
+GER_focus31_desc: "无描述"
+
+GER_focus32: "提高制导能力"
+GER_focus32_desc: "无描述"
+
+GER_focus33: "为国家而战"
+GER_focus33_desc: "无描述"
+GER_focus34: "为民族而战"
+GER_focus34_desc: "无描述"
+
+GER_focus35: "扩建北海舰队"
+GER_focus35_desc: "无描述"
+GER_focus36: "研究喷气式机动"
+GER_focus36_desc: "无描述"
+GER_focus37: "大力投资军备开发"
+GER_focus37_desc: "无描述"
+
+GER_focus38: "空地联动作战"
+GER_focus38_desc: "无描述"
+
+GER_focus39: "对民众的承诺"
+GER_focus39_desc: "无描述"
+
+GER_focus40: "终结“灰卷”制度"
+GER_focus40_desc: "无描述"
+
+GER_focus41: "俾斯麦的衣钵"
+GER_focus41_desc: "无描述"
+
+GER_focus42: "知识即力量"
+GER_focus42_desc: "无描述"
+
+GER_focus43: "另寻出路"
+GER_focus43_desc: "无描述"
+
+GER_focus44: "再干四年！"
+GER_focus44_desc: "无描述"
+
+GER_focus45: "德国社会民主党"
+GER_focus45_desc: "无描述"
+
+
+GER_focus46: "德国民主党"
+GER_focus46_desc: "无描述"
+
+DRV_focus_0: "民族独立浪潮"
+DRV_focus_0_desc: "随着二战结束，亚洲民族独立运动风起云涌。越南帝国作为法属印度支那的核心，必须抓住这一历史机遇，宣布独立，脱离法国殖民统治，建立属于越南人自己的国家。"
+
+DRV_focus_1: "战时紧急措施"
+DRV_focus_1_desc: "国家初立，百废待兴。为了维护新生政权的稳定，我们必须采取一系列紧急措施：稳定物价、恢复秩序、收编散兵游勇、肃清敌对势力。这些紧急措施将在战时持续生效，直至国家完全稳定。"
+
+DRV_focus_2: "成立战时法庭"
+DRV_focus_2_desc: "为了惩治叛国者、通敌卖国者以及战争罪犯，我们必须成立战时法庭。战时法庭将拥有特别司法权限，可以快速审理各类危害国家安全的案件，确保新生政权不受内敌破坏。"
+
+DRV_focus_3: "下达总动员令"
+DRV_focus_3_desc: "为了应对可能的外敌入侵和内乱，我们必须下达总动员令。全民备战，适龄青年踊跃参军，后方民众全力支援前线。每一个越南人都应为国家的独立和自由而战。"
+
+DRV_focus_4: "开展爱国竞赛"
+DRV_focus_4_desc: "在全国范围内开展爱国竞赛运动，鼓励工厂提高产量、农民多打粮食、军人英勇杀敌。竞赛的优胜者将获得崇高荣誉，成为全国人民学习的楷模。"
+
+DRV_focus_5: "扩编越南青年自卫团"
+DRV_focus_5_desc: "越南青年自卫团是我们重要的武装力量。我们将扩大自卫团的编制，招募更多热血青年，进行严格的军事训练，使之成为保卫祖国的重要力量。"
+
+DRV_focus_6: "组建劳犯营"
+DRV_focus_6_desc: "由于人力的短缺，我们必须组建一支新的作战部队，虽然是由劳犯组成，但在严格的军规下也能发挥不错的战斗力。"
+
+
+DRV_focus_7: "英雄主义宣传"
+DRV_focus_7_desc: "我们无法承担劳犯背叛的后果，我们必须在民间大力宣传，树立英雄形象，号召更多的青年来保家卫国。"
+
+DRV_focus_8: "独立，自由，幸福"
+DRV_focus_8_desc: "这是我们对越南人民的庄严承诺：独立——脱离一切殖民统治；自由——摆脱压迫与奴役；幸福——让每一个越南人都能过上安居乐业的生活。这三大目标将指引我们前进的方向。"
+
+DRV_focus_9: "寻求中国外交支持"
+DRV_focus_9_desc: "中国作为越南最重要的邻国和传统的宗主国，其外交支持对我们至关重要。我们将派遣使团前往中国，争取中国的承认与支持，建立稳固的中越友好关系。"
+
+DRV_focus_10: "打压左派阵线"
+DRV_focus_10_desc: "左派势力对国家安全构成潜在威胁。我们将采取措施打压极左势力，防止共产主义思想的蔓延，维护国家政治稳定和社会秩序。"
+
+DRV_focus_11: "改造农村"
+DRV_focus_11_desc: "农村是越南社会的根基。我们将推行农村改造运动，改善农村基础设施、提高农业生产、普及基础教育，让广大农民享受到国家发展的成果。"
+
+DRV_focus_11_tt: "([DRV.Getflag]§H[DRV.Getname]§!)\n所有地区添加§H$DRV_Rural_reform$§!的修正"
+
+DRV_focus_12: "维护国民党地位"
+DRV_focus_12_desc: "越南国民党是国家的执政党，我们必须维护其执政地位。通过各种政策手段巩固党的权威，确保国家政治方向的稳定性和连续性。"
+
+DRV_focus_13: "百废待兴的越南"
+DRV_focus_13_desc: "战争给越南带来了巨大的破坏，工业瘫痪、基础设施损毁、经济凋敝。我们必须制定全面的重建计划，让越南重新焕发生机。"
+
+
+DRV_focus_14: "逮捕宗教领袖"
+DRV_focus_14_desc: "某些宗教领袖利用宗教名义从事分裂活动，危害国家安全。我们将依法逮捕这些首恶分子，清除宗教极端主义对国家的威胁。"
+
+DRV_focus_15: "战火中淬炼的军队"
+DRV_focus_15_desc: "我们的军队在战火中诞生，在战斗中成长。通过实战锻炼和严格训练，我们将打造一支精锐之师，确保能够保卫国家的独立与安全。"
+
+DRV_focus_16: "社会主义兄弟同袍"
+DRV_focus_16_desc: "中国与越南山水相连，两国人民有着深厚的传统友谊。我们将与中国建立兄弟般的友好关系，在政治、经济、军事等方面开展全面合作。"
+
+DRV_focus_17: "解放中南半岛"
+DRV_focus_17_desc: "中南半岛各族人民都渴望独立与自由。越南帝国将承担起历史使命，解放老挝、柬埔寨、暹罗等地区，建立一个自由、独立、幸福的中南半岛联邦。"
+
+DRV_focus_18: "支持柬埔寨游击队"
+DRV_focus_18_desc: "柬埔寨人民正在遭受压迫，我们有责任支持他们的正义斗争。越南将向柬埔寨游击队提供物资援助和军事指导，帮助他们早日获得解放。"
+
+DRV_focus_19: "潜入暹罗"
+DRV_focus_19_desc: "暹罗是中南半岛的重要国家，但目前处于反动政权统治之下。我们将派遣特工人员潜入暹罗，建立情报网络，为将来的解放行动做准备。"
+
+
+
+DRV_focus_20: "释放巨象"
+DRV_focus_20_desc: "大象是东南亚的象征，代表着力量与尊严。我们将建立大象军团，利用这些巨兽在丛林作战中的独特优势，打造一支令敌人闻风丧胆的特殊部队。"
+
+DRV_focus_21: "研发缴获武器"
+DRV_focus_21_desc: "战争中我们缴获了大量的敌方武器装备。我们将组织技术人员研究这些武器，逆向工程仿制，尽快实现武器装备的国产化，摆脱对外国的依赖。"
+
+DRV_focus_22: "发展越南军工"
+DRV_focus_22_desc: "强大的国防离不开先进的军事工业。我们将集中力量发展兵工厂、弹药厂等军工产业，为军队提供充足的武器弹药保障。"
+
+DRV_focus_23: "将土改带回越南"
+DRV_focus_23_desc: "土地是农民的生命线。我们将推行土地改革，将地主阶级的土地分配给无地或少地的农民，实现'耕者有其田'的理想，激发农民的生产积极性。"
+
+DRV_focus_24: "树立村社民兵制"
+DRV_focus_24_desc: "农村是国家的根基，农民是国家的命脉。我们将在每个村庄建立民兵组织，平时维护地方安全，战时支援正规部队，形成全民皆兵的态势。"
+DRV_focus_24_tt: "([DRV.Getflag]§H[DRV.Getname]§!)\n所有地区添加§H$DRV_militia$§!的修正"
+
+
+
+DRV_focus_25: "打击腐败制度"
+DRV_focus_25_desc: "腐败是国家的毒瘤，严重损害政府形象和人民利益。我们将成立专门的反腐机构，彻查各级官员的贪腐行为，严惩不贷，还人民一个清明的政府。"
+
+DRV_focus_26: "爱国卫生运动"
+DRV_focus_26_desc: "健康是人民幸福的基础。我们将发起爱国卫生运动，改善城乡卫生条件，普及医疗卫生知识，接种疫苗，消灭传染病，提高全民族的健康水平。"
+
+DRV_focus_27: "土地租金减免"
+DRV_focus_27_desc: "农民负担过重是制约农业生产的重要因素。我们将通过立法手段限制地租，减轻农民负担，保障农民的合法权益，让农民能够安心生产。"
+
+DRV_focus_28: "制定新劳动法"
+DRV_focus_28_desc: "工人是工业生产的主力军。我们将制定保障工人权益的新劳动法，规定最低工资、工时限制、安全生产条件等，让工人能够体面地工作和生活。"
+
+DRV_focus_29: "弘扬传统文化"
+DRV_focus_29_desc: "越南有着悠久的历史和灿烂的文化。我们将大力弘扬传统文化，保护历史遗迹，传承民族精神，让人民对自己的文化感到自豪，增强民族凝聚力。"
+
+DRV_focus_30: "立法汉语必修课"
+DRV_focus_30_desc: "汉语是东亚最重要的语言，也是与中华文化交流的桥梁。我们将在学校设立汉语必修课，培养精通汉语的人才，为两国交流合作奠定基础。"
+
+DRV_focus_31: "优待华桥学生"
+DRV_focus_31_desc: "华侨华人是我们重要的同胞。我们将为华侨学生提供优惠政策，鼓励他们回国升学，培养对祖国的感情，让他们成为中越友好的使者。"
+
+
+DRV_focus_32: "中越友谊公路"
+DRV_focus_32_desc: "交通基础设施是两国交流的纽带。我们将修建连接中越边境的友谊公路，促进贸易往来和人员交流，巩固两国的友好关系。"
+
+DRV_focus_33: "成立越南国家银行"
+DRV_focus_33_desc: "金融是现代经济的核心。我们将成立越南国家银行，统一货币发行，管理国家外汇储备，调控金融市场，为经济发展提供坚实的金融保障。"
+
+DRV_focus_34: "河内建设计划"
+DRV_focus_34_desc: "河内是越南的首都，必须建设成为一座现代化的大都市。我们将制定河内建设计划，修建现代化的道路、桥梁、供水供电系统，让河内成为东南亚的一颗明珠。"
+
+DRV_focus_35: "铁路贯通计划"
+DRV_focus_35_desc: "铁路是经济发展的命脉。我们将制定铁路贯通计划，修建连接南北的铁路干线，打通内陆与沿海的交通动脉，促进物资流通和经济发展。"
+
+DRV_focus_36: "取缔帮长制度"
+DRV_focus_36_desc: "黑帮势力危害社会秩序，必须予以坚决打击。我们将取缔一切帮派组织，严惩帮派头目，还社会一个安定和谐的环境。"
+
+DRV_focus_37: "中越企业公司"
+DRV_focus_37_desc: "两国企业合作是互利共赢的重要途径。我们将成立中越合资企业，引入中国资本和技术，带动越南经济发展，创造就业机会。"
+
+DRV_focus_38: "华商经营特权"
+DRV_focus_38_desc: "华侨商人在越南经济发展中发挥着重要作用。我们将给予华侨商人经营特权，鼓励他们投资兴业，促进商业繁荣。"
+
+DRV_focus_39: "建立中山学院"
+DRV_focus_39_desc: "教育是国家发展的根本。我们将建立中山学院，培养高级人才，引进先进科技，为国家现代化建设提供智力支持。"
+
+DRV_focus_40: "开设汉文报馆"
+DRV_focus_40_desc: "媒体是舆论的阵地。我们将开设汉文报馆，传播政府声音，宣传政策法令，引导社会舆论，弘扬爱国主义精神。"
+
+DRV_focus_41: "建设中国驻越专署"
+DRV_focus_41_desc: "中国外交代表机构的设立标志着两国关系的深化。我们将为中华人民共和国驻越南大使馆建设专门的馆舍，为两国政府交往提供便利。"
+
+DRV_focus_42: "筹设兵工厂"
+DRV_focus_42_desc: "自主的军事工业是国防独立的保障。我们将在河内和西贡建立大型兵工厂，自主生产枪械、火炮、弹药等武器装备，逐步实现国防装备的自给自足。"
+
+
+
+CHI_focus_0: "兴复三民之亚洲"
+CHI_focus_0_desc: "无描述"
+
+CHI_focus_1: "聚焦交趾"
+CHI_focus_1_desc: "无描述"
+
+CHI_focus_2: "解放高丽"
+CHI_focus_2_desc: "无描述"
+
+CHI_focus_3: "守望南洋"
+CHI_focus_3_desc: "无描述"
+
+CHI_focus_4: "赤子功勋"
+CHI_focus_4_desc: "无描述"
+
+CHI_focus_5: "西征天竺"
+CHI_focus_5_desc: "无描述"
+
+CHI_focus_6: "对日寇的最后一击"
+CHI_focus_6_desc: "无描述"
+
+CHI_focus_7: "亚洲之光"
+CHI_focus_7_desc: "无描述"
+
+CHI_Agriculture_focus_1: "中国农业振兴"
+CHI_Agriculture_focus_1_desc: "无描述"
+
+CHI_Agriculture_focus_2: "修订《农田永佃权法》"
+CHI_Agriculture_focus_2_desc: "无描述"
+
+CHI_Agriculture_focus_3: "推广良种"
+CHI_Agriculture_focus_3_desc: "无描述"
+
+CHI_Agriculture_focus_4: "病虫害防治运动"
+CHI_Agriculture_focus_4_desc: "无描述"
+
+CHI_Agriculture_focus_5: "推广农村合作社"
+CHI_Agriculture_focus_5_desc: "无描述"
+
+CHI_Agriculture_focus_6: "自然灾害防控演练"
+CHI_Agriculture_focus_6_desc: "无描述"
+
+CHI_Agriculture_focus_7: "鼓励民间投资"
+CHI_Agriculture_focus_7_desc: "无描述"
+
+
+CHI_Agriculture_focus_8: "推广农事讲习所"
+CHI_Agriculture_focus_8_desc: "无描述"
+
+CHI_Agriculture_focus_9: "扩充农业科研机构"
+CHI_Agriculture_focus_9_desc: "无描述"
+
+CHI_Agriculture_focus_10: "封山育林"
+CHI_Agriculture_focus_10_desc: "无描述"
+
+CHI_focus_political_0: "国民党六大"
+CHI_focus_political_0_desc: "速度"
+
+CHI_focus_political_1: "全面深化自由市场"
+CHI_focus_political_1_desc: "速度"
+
+CHI_focus_political_2: "国家资本主导市场"
+CHI_focus_political_2_desc: "喻育之等人"
+
+CHI_focus_political_3: "制定工业化方针"
+CHI_focus_political_3_desc: "速度"
+
+CHI_focus_political_4: "邀请外资企业入驻"
+CHI_focus_political_4_desc: "速度"
+
+CHI_focus_political_5: "支持中国民族企业"
+CHI_focus_political_5_desc: "速度"
+
+CHI_focus_political_6: "国际发展实业计划"
+CHI_focus_political_6_desc: "速度"
+
+CHI_focus_political_7: "有限的门户开放"
+CHI_focus_political_7_desc: "虽然有限的门户开放政策时常遭受党内右派的批评，他们认为不过是另一种模式的“闭关锁国”。但现实很清楚，一旦全球经济危机来临，我们将无法独善其身。"
+
+CHI_focus_political_8: "重启对日交涉"
+CHI_focus_political_8_desc: ""
+
+
+CHI_focus_political_9: "产业振兴运动"
+CHI_focus_political_9_desc: ""
+
+CHI_focus_political_10: "向民众保证"
+CHI_focus_political_10_desc: ""
+
+CHI_focus_political_11: "引进日产高精产品"
+CHI_focus_political_11_desc: ""
+
+CHI_focus_political_12: "影响企业投资"
+CHI_focus_political_12_desc: ""
+
+CHI_focus_political_13: "矿业自由主义"
+CHI_focus_political_13_desc: ""
+
+CHI_focus_political_14: "控制党营事业"
+CHI_focus_political_14_desc: ""
+
+CHI_focus_political_15: "赋权中央监察委员会"
+CHI_focus_political_15_desc: ""
+
+# 日本国策
+JAP_focus_1: "金光庸夫阁下的任期"
+JAP_focus_1_desc: "14天"
+JAP_focus_2: "越南危机"
+JAP_focus_2_desc: "14天"
+JAP_focus_3: "众议院特别战争预算"
+JAP_focus_3_desc: "35天"
+JAP_focus_4: "送出旧装备"
+JAP_focus_4_desc: "28天"
+JAP_focus_5: "训练越南傀儡军队"
+JAP_focus_5_desc: "28天"
+JAP_focus_6: "大轰炸"
+JAP_focus_6_desc: "35天"
+JAP_focus_7: "威胁国民政府"
+JAP_focus_7_desc: "14天"
+JAP_focus_8: "渗透清剿计划"
+JAP_focus_8_desc: "28天"
+JAP_focus_9: "政友会的回归"
+JAP_focus_9_desc: "7天"
+JAP_focus_10: "一揽子经济计划"
+JAP_focus_10_desc: "7天"
+JAP_focus_11: "扩大商品保险覆盖面"
+JAP_focus_11_desc: "28天"
+JAP_focus_12: "南洋峰会"
+JAP_focus_12_desc: "14天"
+JAP_focus_13: "通过产业移民法案"
+JAP_focus_13_desc: "28天"
+JAP_focus_14: "对外贸易银行"
+JAP_focus_14_desc: "28天"
+JAP_focus_15: "台湾航线"
+JAP_focus_15_desc: "28天"
+JAP_focus_16: "争取传统贵族院的支持"
+JAP_focus_16_desc: "14天"
+JAP_focus_17: "打击其他三党选区"
+JAP_focus_17_desc: "28天"
+JAP_focus_18: "安抚回归的鸠山派"
+JAP_focus_18_desc: "28天"
+JAP_focus_19_desc: "28天"
+
+# 越南帝国国策
+VIN_focus_1: "大南帝国独立宣言"
+VIN_focus_1_desc: "1945年3月11日，保大帝宣布越南脱离法国殖民统治，建立大南帝国，加入大东亚共荣圈。这是越南走向独立的历史性一步。"
+VIN_focus_2: "临时政府组建"
+VIN_focus_2_desc: "组建以保大帝为首的临时政府，任命各部首长，建立基本的行政体系，确保国家机器正常运转。"
+VIN_focus_3: "国民大会筹备"
+VIN_focus_3_desc: "筹备召开国民大会，制定新宪法，确立国家的基本政治制度，为越南的未来发展奠定基础。"
+VIN_focus_4: "政治整合运动"
+VIN_focus_4_desc: "整合各个政治派别，消除内部矛盾，建立统一战线，共同致力于国家的独立和发展。"
+VIN_focus_5: "军事重整计划"
+VIN_focus_5_desc: "整编现有武装力量，组建正规军，建立军事指挥体系，训练军官和士兵，提升军队战斗力。"
+VIN_focus_6: "经济重建纲要"
+VIN_focus_6_desc: "制定经济重建计划，恢复农业生产，发展工业，改善交通基础设施，促进经济复苏和发展。"
+VIN_focus_7: "皇道精神宣扬"
+VIN_focus_7_desc: "宣扬皇道精神，增强民族自豪感和凝聚力，号召人民团结在保大帝周围，共同建设新越南。"
+VIN_focus_8: "海军建设规划"
+VIN_focus_8_desc: "规划海军建设，建立海防体系，保护沿海安全，维护海上权益，为越南的发展提供安全保障。"
+VIN_focus_9: "工业振兴方案"
+VIN_focus_9_desc: "振兴工业，建立基础工业体系，发展轻工业和重工业，提高越南的工业自给能力。"
+VIN_focus_10: "交通设施改善"
+VIN_focus_10_desc: "改善交通设施，修建公路、铁路、桥梁，打通南北交通动脉，促进物资流通和经济发展。"
+VIN_focus_11: "农村改革试点"
+VIN_focus_11_desc: "在部分地区试点农村改革，改善农民生活，提高农业生产积极性，促进农村经济发展。"
+VIN_focus_12: "陆军现代化"
+VIN_focus_12_desc: "推进陆军现代化，更新装备，改进训练，提高陆军的作战能力和现代化水平。"
+VIN_focus_13: "商业振兴政策"
+VIN_focus_13_desc: "制定商业振兴政策，鼓励商业发展，活跃市场，促进贸易，提高人民生活水平。"
+VIN_focus_14: "教育发展计划"
+VIN_focus_14_desc: "制定教育发展计划，建立学校体系，培养人才，提高国民素质，为国家发展提供智力支持。"
+VIN_focus_15: "国家防卫强化"
+VIN_focus_15_desc: "强化国家防卫体系，建立国防工业，加强军事训练，确保国家的安全和主权。"
+VIN_focus_16: "经济自给自足"
+VIN_focus_16_desc: "实现经济自给自足，减少对外依赖，建立独立的经济体系，保障国家的经济安全。"
+VIN_focus_17: "大南帝国的未来"
+VIN_focus_17_desc: "展望大南帝国的美好未来，号召全体国民团结奋斗，共同建设一个独立、自由、繁荣的新越南。"
+
+VIN_focus_18: "皇道政治确立"
+VIN_focus_18_desc: "确立以保大帝为核心的皇道政治体系，巩固皇室权威，建立稳定的政治秩序，确保国家的长治久安。"
+
+VIN_focus_19: "基础设施建设"
+VIN_focus_19_desc: "大力建设基础设施，修复战争破坏的道路、桥梁、港口，改善交通条件，促进经济发展。"
+
+VIN_focus_20: "农业复兴计划"
+VIN_focus_20_desc: "制定农业复兴计划，恢复农业生产，提高粮食产量，改善农民生活，确保粮食安全。"
+
+VIN_focus_21: "工业体系建立"
+VIN_focus_21_desc: "建立基础工业体系，发展轻工业和农产品加工业，提高越南的工业基础。"
+
+VIN_focus_22: "军队现代化"
+VIN_focus_22_desc: "推进军队现代化，建立现代化的军事指挥体系，训练现代化的军队。"
+
+VIN_focus_23: "国防工业起步"
+VIN_focus_23_desc: "建设国防工业，建立军事工厂，生产武器装备，逐步实现军事自给。"
+
+VIN_focus_24: "海防体系构建"
+VIN_focus_24_desc: "构建海防体系，建设海军和陆军协同作战，保护沿海安全。"
+
+VIN_focus_25: "经济自主发展"
+VIN_focus_25_desc: "发展经济自主，减少对外依赖，建立独立的经济体系。"
+
+VIN_focus_26: "陆军建设强化"
+VIN_focus_26_desc: "强化陆军建设，提高陆军战斗力，确保国家领土安全。"
+
+VIN_focus_27: "大南帝国建设"
+VIN_focus_27_desc: "全面推进大南帝国的建设，实现政治、经济、军事全面发展，建设一个强大的新越南。"
+
+
+VIN_focus_28: "大东亚共荣圈参与"
+VIN_focus_28_desc: "积极参与大东亚共荣圈建设，与日本等亚洲国家合作，共同建设繁荣的亚洲。"
+
+VIN_focus_29: "与日本合作深化"
+VIN_focus_29_desc: "深化与日本的合作，在政治、经济、军事等领域开展全面合作，共同发展。"
+
+VIN_focus_30: "与东南亚国家友好"
+VIN_focus_30_desc: "与东南亚国家建立友好关系，发展经贸往来，促进地区和平与稳定。"
+
+VIN_focus_31: "区域合作机制建立"
+VIN_focus_31_desc: "建立区域合作机制，与周边国家加强合作，共同应对挑战，实现共同发展。"
+
+VIN_focus_32: "东南亚联盟构想"
+VIN_focus_32_desc: "提出东南亚联盟构想，旨在建立一个由越南领导的区域性组织，促进东南亚各国的政治、经济、军事合作与协调。"
+
+VIN_focus_33: "联盟外交攻势"
+VIN_focus_33_desc: "积极开展联盟外交，与东南亚各国建立外交关系，争取各国支持东南亚联盟构想，扩大越南在地区的影响力。"
+
+VIN_focus_34: "经济一体化计划"
+VIN_focus_34_desc: "推动区域经济一体化，建立自由贸易区，促进商品、资本、人员的自由流动，实现区域经济共同发展。"
+
+VIN_focus_35: "东南亚联盟成立"
+VIN_focus_35_desc: "正式宣布东南亚联盟成立，越南作为创始成员国和核心领导者，将引领东南亚各国走向共同繁荣和安全。"
+
+VIN_focus_40: "农业基础设施建设"
+VIN_focus_40_desc: "加强农村基础设施建设，改善农田灌溉系统，修建农村道路，提高农业生产条件。"
+
+VIN_focus_41: "农业政策改革"
+VIN_focus_41_desc: "推行农业政策改革，减免农民税收，提供农业贷款支持，提高农民生产积极性。"
+
+VIN_focus_42: "粮食安全保障"
+VIN_focus_42_desc: "建立粮食储备系统，提高粮食生产能力，确保国家粮食安全和供应稳定。"
+
+VIN_focus_43: "农业技术推广"
+VIN_focus_43_desc: "推广现代农业技术，引进优良品种，提高农业生产效率和农产品质量。"
+
+VIN_focus_44: "农产品加工发展"
+VIN_focus_44_desc: "发展农产品加工业，提高农产品附加值，增加农民收入，促进农业现代化。"
+
+VIN_focus_45: "农村合作社建设"
+VIN_focus_45_desc: "建设农村合作社，组织农民集体生产，提高农业产业化水平和抗风险能力。"
+
+VIN_focus_46: "农业现代化完成"
+VIN_focus_46_desc: "全面实现农业现代化，建立完善的农业生产体系，确保粮食安全，促进农村经济发展。"
+
+VIN_focus_47: "军事指挥系统建立"
+VIN_focus_47_desc: "建立现代化军事指挥系统，完善指挥体系，提高军队指挥效率和作战能力。"
+
+VIN_focus_48: "军队训练改革"
+VIN_focus_48_desc: "推行军事训练改革，加强实战化训练，提高军队战斗力和协同作战能力。"
+
+VIN_focus_49: "军工体系建设"
+VIN_focus_49_desc: "建设军事工业体系，自主生产武器装备，减少对外依赖，提高国防自主能力。"
+
+VIN_focus_50: "军事人才培养"
+VIN_focus_50_desc: "建立军事院校体系，培养高素质军事人才，加强军官队伍建设，提高军队整体素质。"
+
+VIN_focus_51: "陆军现代化升级"
+VIN_focus_51_desc: "推进陆军现代化，更新武器装备，加强机械化建设，提高陆军作战能力。"
+
+VIN_focus_52: "海军海防强化"
+VIN_focus_52_desc: "强化海防体系，建设海军力量，保护领海安全，维护海洋权益。"
+
+VIN_focus_53: "军事现代化完成"
+VIN_focus_53_desc: "全面实现军事现代化，建立强大国防力量，确保国家安全，维护国家主权。"
+
+VIN_focus_36: "工业化战略升级"
+VIN_focus_36_desc: "实施工业化战略升级，整合现有工业资源，优化产业布局，提升工业产能和效率，推动越南从农业国向工业国转型。"
+
+VIN_focus_37: "轻工业发展计划"
+VIN_focus_37_desc: "重点发展轻工业，包括纺织、食品加工、制糖、造纸等民生产业，满足国内市场需求，提高人民生活水平。"
+
+VIN_focus_38: "重工业建设工程"
+VIN_focus_38_desc: "推进重工业建设，建设钢铁厂、机械厂、化工厂等基础工业设施，为国防和经济发展提供坚实支撑。"
+
+VIN_focus_39: "越南工业体系建成"
+VIN_focus_39_desc: "完成越南工业体系建设，形成完整的工业产业链，实现工业自主发展，奠定越南现代化建设的坚实基础。"

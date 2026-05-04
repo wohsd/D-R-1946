@@ -43,6 +43,7 @@ characters = {
 			available = {
 			}
 			traits = {
+				CHI_judicial_yuan_president
 			}
 			cost = 100
 			ai_will_do = {
@@ -68,6 +69,7 @@ characters = {
 			available = {
 			}
 			traits = {
+				naval_theorist
 			}
 			cost = 100
 			ai_will_do = {
@@ -123,6 +125,9 @@ characters = {
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 1
+			traits = {
+				infantry_expert
+			}
 		}
 	}
 
@@ -137,6 +142,9 @@ characters = {
 			ideology = Conservatism
 			desc = JAP_Togo_Minoru_desc
 			expire = "2000.1.1.1"
+			traits = {
+				war_hero
+			}
 			id = -1
 		}
 	}
@@ -152,6 +160,9 @@ characters = {
 			ideology = Liberalism
 			desc = JAP_Shigeru_Yoshida_desc
 			expire = "2000.1.1.1"
+			traits = {
+				democratic_reformer
+			}
 			id = -1
 		}
 	}
@@ -167,6 +178,9 @@ characters = {
 			ideology = Conservatism
 			desc = JAP_Nobuhito_desc
 			expire = "2000.1.1.1"
+			traits = {
+				royal_guard
+			}
 			id = -1
 		}
 	}
@@ -182,6 +196,9 @@ characters = {
 			ideology = Nationalism
 			desc = JAP_Tokusaburo_Bedji_desc
 			expire = "2000.1.1.1"
+			traits = {
+				fascist_demagogue
+			}
 			id = -1
 		}
 	}
@@ -197,6 +214,9 @@ characters = {
 			ideology = Conservatism
 			desc = JAP_Konoe_Fumimaro_desc
 			expire = "2000.1.1.1"
+			traits = {
+				smooth_talking_charmer
+			}
 			id = -1
 		}
 	}
@@ -219,6 +239,7 @@ characters = {
 			available = {
 			}
 			traits = {
+				BRA_distinguished_diplomat
 			}
 			cost = 100
 			ai_will_do = {
@@ -245,6 +266,7 @@ characters = {
 			available = {
 			}
 			traits = {
+				silent_workhorse
 			}
 			cost = 100
 			ai_will_do = {
@@ -271,10 +293,315 @@ characters = {
 			available = {
 			}
 			traits = {
+				financial_expert
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+		}
+	}
+
+	JAP_Yonai_Mitsumasa = {
+		name = JAP_Yonai_Mitsumasa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Yonai_Mitsumasa.png"
+			}
+		}
+		navy_leader = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			traits = {
+				naval_legend
+			}
+		}
+	}
+
+	JAP_Koaze_Shozo = {
+		name = JAP_Koaze_Shozo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Koaze_Shozo.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				infantry_expert
+			}
+		}
+	}
+
+	JAP_Inoue_Nariaki = {
+		name = JAP_Inoue_Nariaki
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Inoue_Nariaki.png"
+			}
+		}
+		navy_leader = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				naval_legend
+			}
+		}
+	}
+
+	JAP_Asaka_Yatsuhiko = {
+		name = JAP_Asaka_Yatsuhiko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Asaka_Yatsuhiko.png"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				infantry_expert
+			}
+		}
+	}
+
+	JAP_Tominaga_Kyoji = {
+		name = JAP_Tominaga_Kyoji
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Tominaga_Kyoji.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			traits = {
+				career_officer
+			}
+		}
+	}
+
+	JAP_Toyoda_Soemu = {
+		name = JAP_Toyoda_Soemu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Toyoda_Soemu.png"
+			}
+		}
+		navy_leader = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				naval_legend
+			}
+		}
+	}
+
+	JAP_Nemoto_Hiroshi = {
+		name = JAP_Nemoto_Hiroshi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Nemoto_Hiroshi.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			traits = {
+				career_officer
+			}
+		}
+	}
+
+	JAP_Okumura_Yasuji = {
+		name = JAP_Okumura_Yasuji
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Okumura_Yasuji.png"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			traits = {
+				infantry_expert
+			}
+		}
+	}
+
+	JAP_Kobayashi_Jin = {
+		name = JAP_Kobayashi_Jin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Kobayashi_Jin.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				spotter
+			}
+		}
+	}
+
+	JAP_Mito_Hiroshi = {
+		name = JAP_Mito_Hiroshi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Mito_Hiroshi.png"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				spotter
+			}
+		}
+	}
+
+	JAP_Hata_Shunroku = {
+		name = JAP_Hata_Shunroku
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Hata_Shunroku.png"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+			traits = {
+				career_officer
+			}
+		}
+	}
+
+	JAP_Koiso_Kuniaki = {
+		name = JAP_Koiso_Kuniaki
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Koiso_Kuniaki.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				career_officer
+			}
+		}
+	}
+
+	JAP_Terauchi_Hisaichi = {
+		name = JAP_Terauchi_Hisaichi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Terauchi_Hisaichi.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			traits = {
+				career_officer
+			}
+		}
+	}
+
+	JAP_Araki_Sadao = {
+		name = JAP_Araki_Sadao
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Araki_Sadao.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				career_officer
+			}
+		}
+	}
+
+	JAP_Honjo_Shigeru = {
+		name = JAP_Honjo_Shigeru
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Honjo_Shigeru.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				career_officer
+			}
+		}
+	}
+
+	JAP_Tada_Shun = {
+		name = JAP_Tada_Shun
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Tada_Shun.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			traits = {
+				career_officer
 			}
 		}
 	}

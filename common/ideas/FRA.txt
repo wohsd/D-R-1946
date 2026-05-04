@@ -35,5 +35,20 @@ ideas = {
 				political_power_factor = -0.02
 			}
 		}
+		FRA_European_Recovery_Plan = {
+			picture = GFX_idea_FRA_European_Recovery_Plan
+			available = {
+				has_country_flag = FRA_german_loan_accepted
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				production_speed_facility_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				stability_factor = 0.05
+			}
+		}
 	}
 }

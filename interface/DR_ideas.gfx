@@ -197,6 +197,10 @@ spriteType = {
 		name = "GFX_idea_FRA_Food_crisis"
 		texturefile = "gfx\interface\ideas\FRA\FRA_Food_crisis.png"		
 	}
+	spriteType = {
+		name = "GFX_idea_FRA_European_Recovery_Plan"
+		texturefile = "gfx\interface\ideas\FRA\FRA_European_Recovery_Plan.png"		
+	}
 
 
 ###CHI
@@ -243,16 +247,24 @@ spriteType = {
 		texturefile = "gfx\interface\ideas\JAP\JAP_Yoshida_faction_staff.png"
 	}
 	spriteType = {
-		name = "GFX_idea_JAP_Golden_Age"
-		texturefile = "gfx\interface\ideas\JAP\JAP_Golden_Age.png"
+		name = "GFX_idea_JAP_Constitutional_Norm_Thirty_Years"
+		texturefile = "gfx\interface\ideas\JAP\JAP_Constitutional_Norm_Thirty_Years.png"
 	}
 	spriteType = {
-		name = "GFX_idea_JAP_Showa_Democracy"
-		texturefile = "gfx\interface\ideas\JAP\JAP_Showa_Democracy.png"
+		name = "GFX_idea_JAP_Toranomon_Spirit"
+		texturefile = "gfx\interface\ideas\JAP\JAP_Toranomon_Spirit.png"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_Members_Co_Prosperity_Sphere"
 		texturefile = "gfx\interface\ideas\JAP\JAP_Members_Co_Prosperity_Sphere.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Naval_Supremacy"
+		texturefile = "gfx\interface\ideas\JAP\JAP_Naval_Supremacy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Golden_Age"
+		texturefile = "gfx\interface\ideas\JAP\JAP_Golden_Age.png"
 	}
 
 ###DRV

@@ -10,32 +10,27 @@ ideas = {
 				political_power_factor = -0.05
 			}
 		}
-		JAP_Golden_Age = {
+		JAP_Constitutional_Norm_Thirty_Years = {
 			available = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.1
-				production_speed_buildings_factor = 0.1
-				production_speed_facility_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
-				local_building_slots_factor = 0.1
-
-				GDP_Growth= 0.15
-				GDP_avg_Growth= 0.2
+				Liberalism_acceptance = 15
+				Conservatism_acceptance = 15
+				drift_defence_factor=0.05
+				master_ideology_drift=0.1
 			}
 		}
-		JAP_Showa_Democracy = {
+		JAP_Toranomon_Spirit = {
 			available = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.05
-				political_power_factor = 0.02
+				stability_factor = -0.05
+				political_power_factor = -0.1
+				foreign_subversive_activites = 0.1
 			}
 		}
 
@@ -51,6 +46,39 @@ ideas = {
 				GDP_resource_exported= 0.05
 				GDP_resource_imported= 0.1
 				disabled_ideas = 1
+			}
+		}
+		JAP_Naval_Supremacy = {
+			picture = GFX_idea_JAP_Naval_Supremacy
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_navy_unit_factor = 0.1
+				naval_coordination = 0.1
+				industrial_capacity_dockyard = 0.1
+				assign_navy_leader_cp_cost = -15
+				production_speed_naval_base_factor=0.05
+				production_speed_dockyard_factor=0.05
+				production_speed_naval_supply_hub_factor=0.05
+				production_speed_naval_headquarters_factor=0.05
+			}
+		}
+		JAP_Golden_Age = {
+			picture = GFX_idea_JAP_Golden_Age
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				production_speed_facility_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				local_building_slots_factor = 0.1
 			}
 		}
 	}
