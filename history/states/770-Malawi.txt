@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = ZIM
+		add_core_of = ZIM
 		add_core_of = MLW
 		victory_points = {
 			12986 1 
@@ -16,7 +17,7 @@ state={
 	}
 
 	provinces={
-		1846 2255 12908 12986 13209 13768 13772 13797 15166 17849 17853 
+		1846 12908 12986 13209 13768 13772 13797 17849 17853 
 	}
 	manpower=1603975
 	buildings_max_level_factor=1.000

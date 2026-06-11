@@ -9,7 +9,7 @@ state={
 		coal = 7
 	}
 	history={
-		owner = CAN
+		owner = USA
 		victory_points = {
 			7361 3
 		}
@@ -22,7 +22,7 @@ state={
 
 			}
 		}
-		add_core_of = CAN
+		add_core_of = USA
 	}
 
 	provinces={

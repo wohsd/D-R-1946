@@ -1,4 +1,4 @@
-capital = 1071
+capital = 608
 
 oob = "CHI_1946"
 

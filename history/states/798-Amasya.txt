@@ -13,12 +13,11 @@ state={
 		victory_points = {
 			3862 3
 		}
-		victory_points = {
-			919 5
-		}
+		
 		buildings = {
 			infrastructure = 2
 		}
+		add_core_of = GRE
 		add_core_of = TUR
 	}
 

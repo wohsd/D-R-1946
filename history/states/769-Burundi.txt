@@ -7,20 +7,12 @@ state = {
 
 	history = {
 
-		owner = COG
+		owner = AUS
 
-		IF = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
-			transfer_state_to = COG
-			add_dynamic_modifier = {
-				modifier = COG_burundian_separatism_modifier
-			}	
-		}
+		
 		
 		add_core_of = BRD
-
+		add_core_of = COG
 		victory_points = {
 			2220 1
 		}
@@ -32,7 +24,7 @@ state = {
 	}
 
 	provinces = {
-		2220 13363 13379 15164 
+		2220 13363 13379  
 	}
 	
 	buildings_max_level_factor = 1.000

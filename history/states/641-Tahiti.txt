@@ -6,7 +6,8 @@ state={
 	state_category = small_island
 
 	history={
-		owner = USA
+		owner = FRF
+add_core_of = FRF
 		add_core_of = TAH
 		buildings = {
 			infrastructure = 2

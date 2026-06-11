@@ -13,6 +13,7 @@ state = {
 	history = {
 
 		owner = ZIM
+		add_core_of = ZIM
 		add_core_of = ZAM
 
 		victory_points = {

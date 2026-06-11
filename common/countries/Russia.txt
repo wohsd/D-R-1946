@@ -2,4 +2,4 @@
 graphical_culture_2d = soviet_2d
 
 
-color = rgb { 51 145 101 }
+color = rgb { 35  76  41 }

@@ -1,4 +1,4 @@
-version="1.16.10"
+version="1.17.4"
 tags={
 	"National Focuses"
 	"Map"
@@ -17,4 +17,4 @@ replace_path="common/on_actions"
 replace_path="gfx/loadingscreens"
 replace_path="events"
 name="DR1946"
-supported_version="1.16.10"
+supported_version="1.17.4.0"

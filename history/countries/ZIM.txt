@@ -35,3 +35,4 @@ add_ideas = {
 Public_Education3
 	Police_policy3
 }
+set_cosmetic_tag = ZIM_DR
