@@ -6,7 +6,54 @@ set_convoys = 500
 set_naval_oob = "JAP_1946_naval"
 set_air_oob =  "JAP_1946_air_bba"
 
-set_country_flag = Takeo_Yamazaki_flag
+set_country_flag = Ozaki_Yukio_flag
+
+# Starting Equipment - 海主陆从定位
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 150000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = support_equipment
+    amount = 20000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = artillery_equipment
+    amount = 15000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = anti_tank_equipment
+    amount = 8000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = anti_air_equipment
+    amount = 6000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = light_tank_equipment
+    amount = 2000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = armored_car_equipment
+    amount = 1500
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = truck
+    amount = 10000
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = supply_truck
+    amount = 5000
+    producer = JAP
+}
 
 set_technology = {
 
@@ -17,14 +64,15 @@ set_technology = {
 	improved_infantry_weapons = 1
 	support_weapons = 1
 	support_weapons2 = 1
-	paratroopers = 1
+
+	# Armor
+	basic_light_tank = 1
+	basic_light_tank_chassis = 1
+	engine_tech_1 = 1
 
 	# Doctrines
 	delay = 1
 	elastic_defence = 1
-	armored_spearhead = 1
-	schwerpunk = 1
-	blitzkrieg = 1
 	convoy_interdiction_ti = 1
 	unrestricted_submarine_warfare = 1
 	raider_patrols = 1
@@ -55,8 +103,6 @@ set_technology = {
 	construction4 = 1
 	dispersed_industry = 1
 	dispersed_industry2 = 1
-	dispersed_industry3 = 1
-	dispersed_industry4 = 1
 	basic_fortification_tech = 1
 }
 
@@ -83,35 +129,69 @@ set_technology = {
 }
 
 set_technology = {
+		# Naval Mines
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
+		
+		# Ship Hulls
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
 		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_ship_hull_heavy = 1
 		early_ship_hull_carrier = 1
 		basic_ship_hull_carrier = 1
+		
+		# Weapons
 		basic_battery = 1
 		basic_light_battery = 1
 		basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_torpedo = 1
+		
+		# Detection & Defense
 		sonar = 1
 		smoke_generator = 1
 		basic_depth_charges = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
+		
+		# Support
 		mtg_transport = 1
 		basic_fire_control_system = 1
 		basic_dp_light_battery = 1
 }
 recruit_character = JAP_Yasuo_Kanemitsu
 recruit_character = JAP_Ichiro_Hatoyama
+recruit_character = JAP_Yamamoto_Isoroku
 recruit_character = JAP_Ryoki_Machijiri
 recruit_character = JAP_Yongren
+recruit_character = JAP_Togo_Minoru
+recruit_character = JAP_Nobuhito
+recruit_character = JAP_Tokusaburo_Bedji
+recruit_character = JAP_Konoe_Fumimaro
+recruit_character = JAP_Yoshida_Shigeru
+recruit_character = JAP_Tokitsura_Takashi
+recruit_character = JAP_Higashi_Kodama
+recruit_character = JAP_Yonai_Mitsumasa
+recruit_character = JAP_Koaze_Shozo
+recruit_character = JAP_Inoue_Nariaki
+recruit_character = JAP_Isoda_Saburo
+recruit_character = JAP_Tominaga_Kyoji
+recruit_character = JAP_Toyoda_Soemu
+recruit_character = JAP_Nemoto_Hiroshi
+recruit_character = JAP_Okumura_Yasuji
+recruit_character = JAP_Kobayashi_Jin
+recruit_character = JAP_Mito_Hiroshi
+recruit_character = JAP_Hata_Shunroku
+recruit_character = JAP_Koiso_Kuniaki
+recruit_character = JAP_Terauchi_Hisaichi
+recruit_character = JAP_Araki_Sadao
+recruit_character = JAP_Honjo_Shigeru
+recruit_character = JAP_Tada_Shun
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1946.4.10"
@@ -134,6 +214,11 @@ set_variable = {
 
 add_ideas = {
 	Yongren_G
+	Yoshida_Shigeru_F
+	Tokitsura_Takashi_I
+	Higashi_Kodama_E
+	Yamamoto_Isoroku_D
+	Ichiro_Hatoyama_J
 	#law
 	Agriculture_level3
 	Racial_policy1
@@ -145,9 +230,13 @@ add_ideas = {
 	Public_Education4
 	Police_policy2
 
-	JAP_Yoshida_faction_staff
+	JAP_Constitutional_Norm_Thirty_Years
+	JAP_Toranomon_Spirit
+	JAP_Naval_Supremacy
 	JAP_Golden_Age
-	JAP_Showa_Democracy
+
+
+
 }
 
 create_faction_from_template = faction_template_GEA

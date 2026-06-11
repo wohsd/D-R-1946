@@ -1,0 +1,16 @@
+characters = {
+	MCU_Gabriel_Mauricio_Teixeira = {
+		name = "MCU_Gabriel_Mauricio_Teixeira"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MCU/MCU_Gabriel_Mauricio_Teixeira.png"
+			}
+		}
+		country_leader = {
+			ideology = ironfist-colonial-assimilation
+			desc = "Gabriel Maurício Teixeira"
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}

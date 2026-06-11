@@ -1,0 +1,26 @@
+capital = 326
+
+set_politics = {
+	ruling_party = Dictatorship
+	last_election = "1946.1.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	Dictatorship = 100
+}
+
+recruit_character = HKG_Sir_Chau_Tsun_nin
+
+add_ideas = {
+	#law
+	Agriculture_level1
+	Racial_policy1
+	Women_rights1
+	labor_laws1
+	Public_control1
+	Livelihood_investment1
+	Industrialization_level1
+	Public_Education1
+	Police_policy1
+}

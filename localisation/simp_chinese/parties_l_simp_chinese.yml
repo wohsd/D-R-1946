@@ -64,8 +64,8 @@
  Nationalism_desc:0 "一党制政府"
 
  Neoreactionism:0 "新反动主义"
- Neoreactionism_noun:0 "新反动主义"
- Neoreactionism_desc:0 "一党制政府"
+Neoreactionism_noun:0 "新反动主义"
+Neoreactionism_desc:0 "一党制政府"
 
  
 
@@ -412,7 +412,6 @@ JAP_Nationalism_party_long:0 "纵横会"
 
 ENG_Liberalism_party:0 "英国自由党"
 ENG_Liberalism_party_long:0 "英国自由党"
-
 
 CHI_sanmin-reformism_party:0 "中国国民党"
 CHI_sanmin-reformism_party_long:0 "国民党中左派"

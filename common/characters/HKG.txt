@@ -1,0 +1,16 @@
+characters = {
+	HKG_Sir_Chau_Tsun_nin = {
+		name = "HKG_Sir_Chau_Tsun_nin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HKG/HKG_Sir_Chau_Tsun_nin.png"
+			}
+		}
+		country_leader = {
+			ideology = ironfist-colonial-assimilation
+			desc = "HKG_Sir_Chau_Tsun_nin_desc"
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+}

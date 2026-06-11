@@ -71,8 +71,40 @@ name = "GFX_CHI_focus_6"
 texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_6.png"
 }
 spriteType = {
-name = "GFX_CHI_focus_7"
-texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_7.png"
+	name = "GFX_CHI_focus_7"
+	texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_7.png"
+}
+spriteType = {
+	name = "GFX_CHI_focus_political_1"
+	texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_1.png"
+}
+spriteType = {
+	name = "GFX_CHI_focus_political_0"
+	texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_0.png"
+}
+spriteType = {
+	name = "GFX_CHI_focus_political_2"
+	texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_2.png"
+}
+spriteType = {
+	name = "GFX_CHI_focus_political_4"
+	texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_4.png"
+}
+spriteType = {
+	name = "GFX_CHI_focus_political_5"
+	texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_5.png"
+}
+spriteType = {
+	name = "GFX_CHI_focus_political_6"
+	texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_6.png"
+}
+spriteType = {
+	name = "GFX_CHI_focus_political_3"
+	texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_3.png"
+}
+spriteType = {
+	name = "GFX_CHI_focus_political_8"
+	texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_3.png"
 }
 
 
@@ -403,5 +435,61 @@ texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_6.png"
 spriteType = {
 name = "GFX_JAP_focus_10"
 texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_10.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_7"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_7.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_8"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_8.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_12"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_12.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_14"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_14.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_15"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_15.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_4"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_4.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_5"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_5.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_9"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_9.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_16"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_16.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_17"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_17.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_18"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_18.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_3"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_3.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_11"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_11.png"
+}
+spriteType = {
+name = "GFX_JAP_focus_13"
+texturefile = "gfx\interface\goal\JAP\GFX_JAP_focus_13.png"
 }
 }

@@ -805,17 +805,7 @@ focus_tree = {
 		y = 7
 		prerequisite = {
 			focus = DRV_focus_16
-		}
-	}
-	focus = { 
-		id = DRV_focus_36
-		icon = GFX_DRV_focus_36
-		cost = 10
-		x = 22
-		y = 7
-		prerequisite = {
-			focus = DRV_focus_16
-		}
+		} 
 		completion_reward = {
 			DRV = {
 				add_opinion_modifier = {

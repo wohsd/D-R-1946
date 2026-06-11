@@ -189,7 +189,7 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=50 y =790}
+		position = { x=50 y =1000}
 		size = { width = 320 height = 215 }
 		Orientation = UPPER_LEFT
 		Origo = LOWER_LEFT		
@@ -199,10 +199,10 @@ guiTypes = {
 			position = { x = 320 y = 563 }
 		}
 				
-		#background = {
-		#	name = "Background"		
-		#	quadTextureSprite ="GFX_tiled_window"
-		#}
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_window"
+		}
 			
 		ButtonType = {
 			name = "single_player_button"

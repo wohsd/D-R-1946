@@ -9,10 +9,20 @@ GER_Albert_Einstein:0 "阿尔伯特·爱因斯坦"
  AUS_Otto_von_Habsburg_desc:0 ""
  FRA_Joseph_Laniel:0 "约瑟夫·兰尼尔"
  FRA_Joseph_Laniel_desc:0 ""
- FRA_Paul_Ramadier:0 "保罗·拉马迪埃"
+ FRA_Paul_Ramadier:0 "保罗·拉马迪埃" 
  FRA_Paul_Ramadier_desc:0 ""
  JAP_Ichiro_Hatoyama:0 "鸠山一郎"
  JAP_Ichiro_Hatoyama_desc:0 ""
+ JAP_Yamamoto_Isoroku:0 "山本五十六"
+ JAP_Yamamoto_Isoroku_desc:0 "山本五十六是日本海军名将，偷袭珍珠港的总策划人。他具有出色的战略眼光和海军指挥才能，是日本二战时期最重要的海军将领之一。"
+ JAP_Konoe_Fumimaro:0 "近卫文磨"
+ JAP_Konoe_Fumimaro_desc:0 ""
+ JAP_Yoshida_Shigeru:0 "吉田茂"
+ JAP_Yoshida_Shigeru_desc:0 "吉田茂是日本著名外交官和政治人物，曾在战后担任日本首相。他以其出色的外交才能著称，主张与西方国家特别是美国建立密切关系。在战后日本重建过程中，他发挥了重要的外交作用。"
+ JAP_Tokitsura_Takashi:0 "床次德二"
+ JAP_Tokitsura_Takashi_desc:0 "床次德二是日本内政部长，主导战后日本的内政改革。他在警察政策和地方自治方面有深厚经验，致力于建立现代化的内政体系。"
+ JAP_Higashi_Kodama:0 "东乡实"
+ JAP_Higashi_Kodama_desc:0 "东乡实是日本经济部长，主导战后日本的经济复兴。他具有丰富的经济知识和实践经验，在工业化和贸易政策方面发挥了重要作用。"
  JAP_Yasuo_Kanemitsu:0 "金光庸夫"
  JAP_Yasuo_Kanemitsu_desc:0 ""
  CHI_SunKe:0 "孙科"
@@ -83,6 +93,8 @@ GER_Albert_Einstein:0 "阿尔伯特·爱因斯坦"
  GRE_Alexandros_Papagos_desc:0 ""
  GRE_Roman_Romanov:0 "罗曼一世"
  GRE_Roman_Romanov_desc:0 ""
+ GRE_Andrei_Alexandrovitch:0 "安德烈一世"
+ GRE_Andrei_Alexandrovitch_desc:0 ""
  SYR_Shukri_al_Quwatli:0 "舒克里·库阿特利"
  SYR_Shukri_al_Quwatli_desc:0 ""
  ISR_David_Ben_Gurion:0 "戴维·本-古里安"
@@ -448,6 +460,54 @@ DRV_Vu_Hong_Khanh_desc:0 ""
 JAP_Ryoki_Machijiri:0 "町尻量基"
 JAP_Ryoki_Machijiri_desc:0 ""
 
+JAP_Yonai_Mitsumasa:0 "米内光政"
+JAP_Yonai_Mitsumasa_desc:0 "米内光政是日本海军大将，曾担任日本联合舰队司令长官。"
+
+JAP_Koaze_Shozo:0 "河边正三"
+JAP_Koaze_Shozo_desc:0 "河边正三是日本陆军中将，曾任关东军司令官。"
+
+JAP_Inoue_Nariaki:0 "井上成美"
+JAP_Inoue_Nariaki_desc:0 "井上成美是日本海军中将，曾任海军省次官。"
+
+JAP_Asaka_Yatsuhiko:0 "朝香宫鸠彦王"
+JAP_Asaka_Yatsuhiko_desc:0 "朝香宫鸠彦王是日本陆军大将，昭和天皇的叔父，南京大屠杀主要元凶之一。"
+
+JAP_Tominaga_Kyoji:0 "富永恭次"
+JAP_Tominaga_Kyoji_desc:0 "富永恭次是日本陆军中将，曾任第14方面军参谋长。"
+
+JAP_Toyoda_Soemu:0 "丰田副武"
+JAP_Toyoda_Soemu_desc:0 "丰田副武是日本海军大将，曾任联合舰队司令官、军令部总长。"
+
+JAP_Nemoto_Hiroshi:0 "根本博"
+JAP_Nemoto_Hiroshi_desc:0 "根本博是日本陆军中将，曾任华北方面军司令官。"
+
+JAP_Okumura_Yasuji:0 "冈村宁次"
+JAP_Okumura_Yasuji_desc:0 "冈村宁次是日本陆军大将，曾任中国派遣军总司令。战后被国民党政府无罪释放。"
+
+JAP_Kobayashi_Jin:0 "小林仁"
+JAP_Kobayashi_Jin_desc:0 "小林仁是日本海军中将，曾任镇海警备府司令官。"
+
+JAP_Mito_Hiroshi:0 "三戸寿"
+JAP_Mito_Hiroshi_desc:0 "三戸寿是日本海军少将，曾任横须贺镇守府司令官。"
+
+JAP_Hata_Shunroku:0 "畑俊六"
+JAP_Hata_Shunroku_desc:0 "畑俊六是日本陆军元帅，曾任侵华日军总司令，指挥武汉会战、豫湘桂会战等重大战役。"
+
+JAP_Koiso_Kuniaki:0 "小矶国昭"
+JAP_Koiso_Kuniaki_desc:0 "小矶国昭是日本陆军大将，曾任首相兼陆军大臣，积极推动战争扩张。"
+
+JAP_Terauchi_Hisaichi:0 "寺内寿一"
+JAP_Terauchi_Hisaichi_desc:0 "寺内寿一是日本陆军大将，曾任南方军总司令，负责东南亚战场作战。"
+
+JAP_Araki_Sadao:0 "荒木贞夫"
+JAP_Araki_Sadao_desc:0 "荒木贞夫是日本陆军大将，皇道派领袖之一，曾任陆军大臣。"
+
+JAP_Honjo_Shigeru:0 "本庄繁"
+JAP_Honjo_Shigeru_desc:0 "本庄繁是日本陆军大将，曾任关东军司令官，参与策划九一八事变。"
+
+JAP_Tada_Shun:0 "多田骏"
+JAP_Tada_Shun_desc:0 "多田骏是日本陆军中将，曾任华北方面军司令官，推行囚笼政策。"
+
 CHI_ZhangFaKui:0 "张发奎"
 CHI_ZhangFaKui_desc:0 ""
 
@@ -534,7 +594,7 @@ DRV_Hoang_Van_Hoan_desc:0 ""
 DRV_Tran_Huy_Lieu:0 "陈辉燎"
 DRV_Tran_Huy_Lieu_desc:0 ""
 
-# 整合后的人物名称及描述字段（格式统一，中文内容完整）
+
 PAN_Enrique_Adolfo_Jimenez:0 "恩里克·阿道夫·希门尼斯"
 PAN_Enrique_Adolfo_Jimenez_desc:0 "恩里克·阿道夫·希门尼斯（巴拿马前总统，巴拿马主义党相关政治人物）"
 
@@ -552,3 +612,9 @@ HON_Tiburcio_Carias_Andino_desc:0 "蒂布尔西奥·卡里亚斯·安迪诺（�
 
 GUA_Juan_Jose_Arevalo:0 "胡安·何塞·阿雷瓦洛"
 GUA_Juan_Jose_Arevalo_desc:0 "胡安·何塞·阿雷瓦洛（危地马拉前总统，1945-1951年任职，推行改革政策）"
+
+MCU_Gabriel_Mauricio_Teixeira:0 "加布里埃尔·毛里西奥·特谢拉"
+MCU_Gabriel_Mauricio_Teixeira_desc:0 "加布里埃尔·毛里西奥·特谢拉是澳门殖民政府的领导人，代表葡萄牙对澳门进行殖民统治。"
+
+HKG_Sir_Chau_Tsun_nin:0 "周埈年"
+HKG_Sir_Chau_Tsun_nin_desc:0 "周埈年爵士是香港殖民政府的领导人，代表英国对香港进行殖民统治。"

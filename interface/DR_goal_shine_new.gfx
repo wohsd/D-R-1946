@@ -1,0 +1,926 @@
+spriteTypes = {
+
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_1_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_1.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_1.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_1.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_10_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_10.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_10.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_10.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_2_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_2.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_2.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_2.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_3_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_3.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_3.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_3.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_4_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_4.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_4.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_4.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_5_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_5.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_5.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_5.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_6_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_6.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_6.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_6.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_7_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_7.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_7.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_7.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_8_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_8.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_8.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_8.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_Agriculture_focus_9_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_9.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_9.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_Agriculture_focus_9.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+
+
+spriteType = {
+name = "GFX_CHI_focus_0_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_0.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_0.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_0.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_1_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_1.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_1.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_1.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_2_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_2.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_2.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_2.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_3_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_3.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_3.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_3.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_4_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_4.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_4.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_4.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_5_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_5.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_5.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_5.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_6_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_6.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_6.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_6.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_7_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_7.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_7.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_7.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+
+spriteType = {
+name = "GFX_CHI_focus_political_0_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_0.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_0.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_0.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+
+spriteType = {
+name = "GFX_CHI_focus_political_1_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_1.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_1.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_1.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_political_2_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_2.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_2.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_2.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_political_4_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_4.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_4.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_4.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_political_6_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_0.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_0.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_0.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_CHI_focus_political_8_shine"
+texturefile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_8.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_8.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\CHI\GFX_CHI_focus_political_8.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+
+spriteType = {
+name = "GFX_DRV_focus_22_shine"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_22.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_22.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_22.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_DRV_focus_26_shine"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_26.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_26.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_26.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_DRV_focus_34_shine"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_34.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_34.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_34.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_DRV_focus_37_shine"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_37.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_37.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_37.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_DRV_focus_42_shine"
+texturefile = "gfx\interface\goal\DRV\DRV_focus_42.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_42.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\DRV_focus_42.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+
+spriteType = {
+name = "GFX_DRV_focus_18_shine"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_18.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\GFX_DRV_focus_18.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\GFX_DRV_focus_18.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_DRV_focus_19_shine"
+texturefile = "gfx\interface\goal\DRV\GFX_DRV_focus_19.png"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\GFX_DRV_focus_19.png"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goal\DRV\GFX_DRV_focus

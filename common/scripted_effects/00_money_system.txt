@@ -44,7 +44,7 @@ state_eco_setup = {
 			limit = {
 				has_state_category = metropolis
 			}
-			add_to_variable = {state_eco=0.75}
+			add_to_variable = {state_eco=0.90}
 		}
 		add_to_variable = { PREV.state_eco = state_eco }
 	}
@@ -53,7 +53,7 @@ state_eco_setup = {
 			limit = {
 				has_state_category = megalopolis
 			}
-			add_to_variable = {state_eco=0.95}
+			add_to_variable = {state_eco=1.15}
 		}
 		add_to_variable = { PREV.state_eco = state_eco }
 	}
@@ -190,7 +190,7 @@ army_eco_setup = {
 		# 海军舰船统计
 		set_variable = { carrier_eco = 0 }
 		add_to_variable = { carrier_eco = num_ships_with_type@carrier }
-		multiply_variable = { carrier_eco = 0.18 }
+		multiply_variable = { carrier_eco = 0.12 }
 
 		set_variable = { destroyer_eco = 0 }
 		add_to_variable = { destroyer_eco = num_ships_with_type@destroyer }
@@ -214,7 +214,7 @@ army_eco_setup = {
 
 		set_variable = { battleship_eco = 0 }
 		add_to_variable = { battleship_eco = num_ships_with_type@battleship }
-		multiply_variable = { battleship_eco = 0.14 }
+		multiply_variable = { battleship_eco = 0.10 }
 		
 		#海军总计
 		set_variable = { all_navy_eco = 0 }
@@ -298,6 +298,26 @@ GDP_resource_imported = {
 	}
 }
 
+Investment_setup = {  
+	every_country = {
+		set_variable = {Investment = 0}
+		if = {
+			limit = {
+				income > 10000
+				has_idea = free_trade
+			}
+			add_to_variable = {Investment=income * 0.05}
+		}
+		if = {
+			limit = {
+				income > 15000
+				has_idea = export_focus
+			}
+			add_to_variable = {Investment=income * 0.03}
+		}
+	}
+}
+
 
 
 Inflation_rate_eco_setup = {  
@@ -309,6 +329,13 @@ Inflation_rate_eco_setup = {
 
 		divide_variable = {
 			Inflation_rate_eco = 100
+		}
+
+		if = {
+			limit = {
+				has_idea = closed_economy
+			}
+			multiply_variable = { Inflation_rate_eco = 0.8 }
 		}
 
 		add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
@@ -325,7 +352,7 @@ Medical_expenses_setup = {
 		add_to_variable = {Medical_expenses=weighted_manpower}
 
 		divide_variable = {
-			Medical_expenses = 15
+			Medical_expenses = 25
 		}
 		#add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
 		
@@ -336,7 +363,9 @@ Education_expenses_setup = {
 	every_country = {
 		set_variable = {Education_expenses = 0}
 		add_to_variable = {Education_expenses=state_eco}
-
+		multiply_variable = {
+			Education_expenses = 2
+		}
 		divide_variable = {
 			Education_expenses = 15
 		}
@@ -373,6 +402,7 @@ Expenditure_setup = {
 		add_to_variable = {Expenditure=all_navy_eco}
 		add_to_variable = {Expenditure=all_air_eco}
 		add_to_variable = {Expenditure=Trade_investment}
+		add_to_variable = {Expenditure=Investment}
 		#add_to_variable = { Inflation_rate_eco = modifier@Inflation_rate_modifer }
 		 
 	}
