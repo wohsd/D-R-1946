@@ -17,8 +17,8 @@
  Paternalism_acceptance:0 "家长主义外交接纳度"
  Dictatorship_drift:0 "专制主义理念每日新增支持率"
  Dictatorship_acceptance:0 "专制主义外交接纳度"
- Nationalism_drift:0 "传统民族主义理念每日新增支持率"
- Nationalism_acceptance:0 "传统民族主义外交接纳度"
+ Nationalism_drift:0 "朴素民族主义理念每日新增支持率"
+ Nationalism_acceptance:0 "朴素民族主义外交接纳度"
  Neoreactionism_drift:0 "新反动主义理念每日新增支持率"
  Neoreactionism_acceptance:0 "新反动主义外交接纳度"
 
@@ -59,8 +59,8 @@
  Dictatorship_noun:0 "专制主义"
  Dictatorship_desc:0 "无党派政府"
 
- Nationalism:0 "民族主义"
- Nationalism_noun:0 "民族主义"
+ Nationalism:0 "朴素民族主义"
+ Nationalism_noun:0 "朴素民族主义"
  Nationalism_desc:0 "一党制政府"
 
  Neoreactionism:0 "新反动主义"
@@ -372,8 +372,8 @@ Chiyouzenism:0 "超然主义"
 Chiyouzenism_desc:0 ""
 
 ##民族主义
- Hybrid_Nationalism:0 "混合民族主义"
- Hybrid_Nationalism_desc:0 ""
+ Modest_Nationalism:0 "朴素民族主义"
+ Modest_Nationalism_desc:0 ""
  Dannunzionism_N:0 "邓南遮主义"
  Dannunzionism_N_desc:0 ""
  National_Populism:0 "民族民粹主义"

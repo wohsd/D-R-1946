@@ -20,7 +20,7 @@ state = {
 		}
 
 		victory_points = {
-			10070 2 # Rabat
+			10070 12 # Rabat
 		}
 
 		buildings = {

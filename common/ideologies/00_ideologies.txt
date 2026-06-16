@@ -394,11 +394,11 @@ ideologies = {
 		}
 	}
 	
-	####民族主义###
+	####朴素民族主义###
 	Nationalism = {
 	
 		types = {
-			Hybrid_Nationalism = {}
+			Modest_Nationalism = {}
 			Edinogism = {}
 			Dannunzionism_N={}
 			National_Populism={}

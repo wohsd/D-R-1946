@@ -1,4 +1,4 @@
-﻿capital = 1111
+﻿capital = 1109
 
 oob = "VIN_1946"
 
