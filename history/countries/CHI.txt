@@ -180,17 +180,16 @@ recruit_character = CHI_YuHangMou
 
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Revolutionism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 set_popularities = {
-	Dictatorship = 13
-	Liberalism = 50
-	Conservatism = 5
-	Nationalism = 19
-	Reformism = 13
+	Revolutionism = 70
+	Liberalism = 7
+	Nationalism = 20
+	Reformism = 3
 }
 
 set_variable = {Educational_var = 260}

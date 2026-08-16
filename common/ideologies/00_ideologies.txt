@@ -83,6 +83,7 @@ ideologies = {
 			Revolutionary_Marxism = {}
 			Revolutionary_Massimalismo = {}
 			Revolutionary-front-rev = {}
+			Liao_Thought = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -445,6 +446,7 @@ ideologies = {
 		types = {
 			Neoreactionism_type={}
 			monarch-restorationism = {}
+			Integral_nat = {}
 		}
 		dynamic_faction_names = {
 		}

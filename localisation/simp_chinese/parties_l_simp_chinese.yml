@@ -132,6 +132,9 @@ Neoreactionism_desc:0 "一党制政府"
  Revolutionary-front-rev:0 "革命阵线"
  Revolutionary-front-rev_desc:0 "革命阵线"
 
+ Liao_Thought:0 "廖夷白思想"
+ Liao_Thought_desc:0 "廖夷白思想"
+
 ####温和社会主义
  Moderate_Socialism:0 "温和社会主义"
  Moderate_Socialism_desc:0 ""
@@ -395,6 +398,8 @@ Neoreactionism_type:0 "新反动主义"
 Neoreactionism_type_desc:0 ""
 monarch-restorationism:0 "君主复辟主义"
 monarch-restorationism_desc:0 ""
+Integral_nat:0 "整合民族主义"
+Integral_nat_desc:0 ""
 
 ###各国政党
 
@@ -413,15 +418,53 @@ JAP_Dictatorship_party_long:0 "宫内势力"
 JAP_Nationalism_party:0 "国协党"
 JAP_Nationalism_party_long:0 "国协党"
 
-ENG_Liberalism_party:0 "英国自由党"
-ENG_Liberalism_party_long:0 "英国自由党"
+ENG_Reformism_party:0 "工党"
+ENG_Reformism_party_long:0 "工党"
 
-CHI_sanmin-reformism_party:0 "中国国民党"
-CHI_sanmin-reformism_party_long:0 "国民党中左派"
+ENG_Liberalism_party:0 "自由党"
+ENG_Liberalism_party_long:0 "自由党"
 
+ENG_Conservatism_party:0 "保守党"
+ENG_Conservatism_party_long:0 "保守党"
 
-USA_Liberalism_party:0 "美国民主党"
-USA_Liberalism_party_long:0 "美国民主党"
+CHI_Radical_Socialism_party:0 "国民党(共同会)/国民革命军激进左派"
+CHI_Radical_Socialism_party_long:0 "国民党(共同会)/国民革命军激进左派"
 
-USA_Progressive_Liberalism:0 "新政联盟"
-USA_Progressive_Liberalism_long:0 "新政联盟"
+CHI_Revolutionism_party:0 "国民党(廖派-社会派-统制左派)"
+CHI_Revolutionism_party_long:0 "国民党(廖派-社会派-统制左派)"
+
+CHI_Moderate_Socialism_party:0 "国民党(改革派)"
+CHI_Moderate_Socialism_party_long:0 "国民党(改革派)"
+
+CHI_Reformism_party:0 "国民党(改良派)"
+CHI_Reformism_party_long:0 "国民党(改良派)"
+
+CHI_Liberalism_party:0 "国民党(自由派)/民主同盟"
+CHI_Liberalism_party_long:0 "国民党(自由派)/民主同盟"
+
+CHI_Conservatism_party:0 "国民党(自由派)/民主同盟[保守倾向]"
+CHI_Conservatism_party_long:0 "国民党(自由派)/民主同盟[保守倾向]"
+
+CHI_Paternalism_party:0 "国民党(自由派)/民主同盟[家长倾向]"
+CHI_Paternalism_party_long:0 "国民党(自由派)/民主同盟[家长倾向]"
+
+CHI_Dictatorship_party:0 "国民党(统制右派)/国民革命军新右派"
+CHI_Dictatorship_party_long:0 "国民党(统制右派)/国民革命军新右派"
+
+CHI_Nationalism_party:0 "朴素民族主义舆论"
+CHI_Nationalism_party_long:0 "朴素民族主义舆论"
+
+USA_Reformism_party:0 "联邦党-进步党"
+USA_Reformism_party_long:0 "联邦党-进步党"
+
+USA_Liberalism:0 "国家党/民主党(自由派)"
+USA_Liberalism_long:0 "国家党/民主党(自由派)"
+
+USA_Conservatism:0 "民主党/国家党(保守派)"
+USA_Conservatism_long:0 "民主党/国家党(保守派)"
+
+USA_Paternalism:0 "民主党(激进保守派)"
+USA_Paternalism_long:0 "民主党(激进保守派)"
+
+FRA_Neoreactionism:0 "法兰西行动"
+FRA_Neoreactionism_long:0 "法兰西行动"
