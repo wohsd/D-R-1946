@@ -6,9 +6,9 @@ Vietnamese_Affairs = {
 			tag = CHI
 			tag = JAP
 		}
-		
+		 
 	}  
 	highlight_states = {
 	}
-	priority = 2
+	priority = 1000
 }

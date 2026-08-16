@@ -4,7 +4,7 @@
             owner = "JAP"
             amount = 3500
         }
-        tac_bomber_equipment_0 = {
+        strat_bomber_equipment_1 = {
             owner = "JAP"
             amount = 1000
         }

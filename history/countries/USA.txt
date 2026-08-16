@@ -1,4 +1,4 @@
-﻿capital = 358
+capital = 358
 
 oob = "USA_1936"
 
@@ -94,7 +94,7 @@ set_technology = {
 		basic_fire_control_system = 1
 		basic_dp_light_battery = 1
 }
-
+recruit_character = USA_Henry_Wallace
 recruit_character = USA_Thomas_Dewey
 recruit_character = USA_Donald_Trump
 set_politics = {

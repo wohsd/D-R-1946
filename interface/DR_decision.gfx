@@ -3,4 +3,12 @@ spriteTypes = {
 		name = "GFX_decision_Vietnamese_Affairs"
 		texturefile = "gfx/event_pictures/Vietnamese_Affairs.png"
 	}
+	spriteType = {
+		name = "GFX_decision_JAP_vietnam_crisis_decisions"
+		texturefile = "gfx/event_pictures/JAP_vietnam_crisis_decisions.png"
+	}
+	spriteType = {
+		name = "GFX_decision_infiltration_ops"
+		texturefile = "gfx/event_pictures/infiltration_ops.png"
+	}
 }

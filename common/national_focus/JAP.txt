@@ -23,6 +23,10 @@ focus_tree = {
             add_political_power = 100
             add_stability = 0.15
             add_war_support = 0.1
+            add_trait = {
+				trait = fimperialist_diplomat
+				character = JAP_Yasuo_Kanemitsu
+			}
         }
     }
 
@@ -43,6 +47,54 @@ focus_tree = {
     }
 
     focus = {
+        id = JAP_focus_9
+        icon = GFX_JAP_focus_9
+        x = 12
+        y = 1 
+        cost = 7
+        prerequisite = { focus = JAP_focus_1 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 30
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = JAP_focus_19
+        icon = GFX_JAP_focus_19
+        x = 21
+        y = 1
+        cost = 14
+        prerequisite = { focus = JAP_focus_1 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 25
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = JAP_focus_32
+        icon = GFX_JAP_focus_32
+        x = 28
+        y = 1
+        cost = 14
+        prerequisite = { focus = JAP_focus_1 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 30
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
         id = JAP_focus_3
         icon = GFX_JAP_focus_3
         x = 7
@@ -55,6 +107,70 @@ focus_tree = {
         completion_reward = {
             add_stability = 0.1
             add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = JAP_focus_10
+        icon = GFX_JAP_focus_10
+        x = 12
+        y = 2
+        cost = 7
+        prerequisite = { focus = JAP_focus_9 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_weekly_consumer_goods_factor = -0.02
+            add_weekly_production_efficiency_factor = 0.01
+        }
+    }
+
+    focus = {
+        id = JAP_focus_16
+        icon = GFX_JAP_focus_16
+        x = 15
+        y = 2
+        cost = 14
+        prerequisite = { focus = JAP_focus_9 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 35
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = JAP_focus_20
+        icon = GFX_JAP_focus_20
+        x = 21
+        y = 2
+        cost = 28
+        prerequisite = { focus = JAP_focus_19 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_army_experience = 5
+            add_navy_experience = 5
+        }
+    }
+
+    focus = {
+        id = JAP_focus_33
+        icon = GFX_JAP_focus_33
+        x = 28
+        y = 2
+        cost = 28
+        prerequisite = { focus = JAP_focus_32 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_navy_experience = 10
+            add_army_experience = 5
         }
     }
 
@@ -87,16 +203,147 @@ focus_tree = {
         ai_will_do = {
             factor = 1
         }
-        completion_reward = {
+        completion_reward = { 
             army_experience = 10
             add_division_template = "Japanese Volunteer Division"
         }
     }
 
     focus = {
+        id = JAP_focus_11
+        icon = GFX_JAP_focus_11
+        x = 11
+        y = 3
+        cost = 28
+        prerequisite = { focus = JAP_focus_10 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = 0.05
+        }
+    }
+
+    focus = {
+        id = JAP_focus_12
+        icon = GFX_JAP_focus_12
+        x = 13
+        y = 3
+        cost = 14
+        prerequisite = { focus = JAP_focus_10 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 40
+            add_trade_influence = 3
+        }
+    }
+
+    focus = {
+        id = JAP_focus_17
+        icon = GFX_JAP_focus_17
+        x = 15
+        y = 3
+        cost = 28
+        prerequisite = { focus = JAP_focus_16 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_stability = 0.08
+            add_political_power = 20
+        }
+    }
+
+    focus = {
+        id = JAP_focus_18
+        icon = GFX_JAP_focus_18
+        x = 17
+        y = 3
+        cost = 28
+        prerequisite = { focus = JAP_focus_16 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_national_spirit = {
+                name = jap_mountain_comfort
+                remove_on_capitulation = yes
+            }
+            add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = JAP_focus_21
+        icon = GFX_JAP_focus_21
+        x = 19
+        y = 3
+        cost = 28
+        prerequisite = { focus = JAP_focus_20 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = JAP_focus_22
+        icon = GFX_JAP_focus_22
+        x = 23
+        y = 3
+        cost = 28
+        prerequisite = { focus = JAP_focus_20 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 30
+            add_trade_influence = 2
+        }
+    }
+
+    focus = {
+        id = JAP_focus_34
+        icon = GFX_JAP_focus_34
+        x = 26
+        y = 3
+        cost = 28
+        prerequisite = { focus = JAP_focus_33 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_war_support = 0.1
+            add_political_power = 25
+        }
+    }
+
+    focus = {
+        id = JAP_focus_35
+        icon = GFX_JAP_focus_35
+        x = 30
+        y = 3
+        cost = 28
+        prerequisite = { focus = JAP_focus_33 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_stability = 0.1
+            add_trade_influence = 3
+        }
+    }
+
+    focus = {
         id = JAP_focus_6
         icon = GFX_JAP_focus_6
-        x = 5
+        x = 5 
         y = 4
         cost = 35
         prerequisite = { focus = JAP_focus_4 }
@@ -107,6 +354,7 @@ focus_tree = {
         completion_reward = {
             add_war_support = 0.15
             add_stability = 0.1
+            unlock_decision_category_tooltip = vietnam_crisis
         }
     }
 
@@ -141,70 +389,6 @@ focus_tree = {
         completion_reward = {
             add_political_power = 50
             add_intel_network_efficiency = 0.1
-        }
-    }
-
-    focus = {
-        id = JAP_focus_9
-        icon = GFX_JAP_focus_9
-        x = 12
-        y = 1
-        cost = 7
-        prerequisite = { focus = JAP_focus_1 }
-        ai_will_do = {
-            factor = 1
-        }
-        completion_reward = {
-            add_political_power = 30
-            add_stability = 0.05
-        }
-    }
-
-    focus = {
-        id = JAP_focus_10
-        icon = GFX_JAP_focus_10
-        x = 12
-        y = 2
-        cost = 7
-        prerequisite = { focus = JAP_focus_9 }
-        ai_will_do = {
-            factor = 1
-        }
-        completion_reward = {
-            add_weekly_consumer_goods_factor = -0.02
-            add_weekly_production_efficiency_factor = 0.01
-        }
-    }
-
-    focus = {
-        id = JAP_focus_11
-        icon = GFX_JAP_focus_11
-        x = 11
-        y = 3
-        cost = 28
-        prerequisite = { focus = JAP_focus_10 }
-        ai_will_do = {
-            factor = 1
-        }
-        completion_reward = {
-            add_stability = 0.05
-            add_war_support = 0.05
-        }
-    }
-
-    focus = {
-        id = JAP_focus_12
-        icon = GFX_JAP_focus_12
-        x = 13
-        y = 3
-        cost = 14
-        prerequisite = { focus = JAP_focus_10 }
-        ai_will_do = {
-            factor = 1
-        }
-        completion_reward = {
-            add_political_power = 40
-            add_trade_influence = 3
         }
     }
 
@@ -244,6 +428,110 @@ focus_tree = {
     }
 
     focus = {
+        id = JAP_focus_23
+        icon = GFX_JAP_focus_23
+        x = 18
+        y = 4
+        cost = 28
+        prerequisite = { focus = JAP_focus_21 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_division_template = "Imperial Guards Division"
+            army_experience = 10
+        }
+    }
+
+    focus = {
+        id = JAP_focus_24
+        icon = GFX_JAP_focus_24
+        x = 21
+        y = 4
+        cost = 28
+        prerequisite = { focus = JAP_focus_21 }
+        prerequisite = { focus = JAP_focus_22 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_war_support = 0.15
+            add_political_power = 40
+        }
+    }
+
+    focus = {
+        id = JAP_focus_25
+        icon = GFX_JAP_focus_25
+        x = 24
+        y = 4
+        cost = 28
+        prerequisite = { focus = JAP_focus_22 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_national_spirit = {
+                name = jap_economic_cooperation
+                remove_on_capitulation = yes
+            }
+            add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = JAP_focus_36
+        icon = GFX_JAP_focus_36
+        x = 26
+        y = 4
+        cost = 28
+        prerequisite = { focus = JAP_focus_34 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_national_spirit = {
+                name = jap_military_modernization
+                remove_on_capitulation = yes
+            }
+            add_army_experience = 10
+        }
+    }
+
+    focus = {
+        id = JAP_focus_37
+        icon = GFX_JAP_focus_37
+        x = 28
+        y = 4
+        cost = 28
+        prerequisite = { focus = JAP_focus_34 }
+        prerequisite = { focus = JAP_focus_35 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_war_support = 0.15
+            add_political_power = 40
+        }
+    }
+
+    focus = {
+        id = JAP_focus_38
+        icon = GFX_JAP_focus_38
+        x = 33
+        y = 4
+        cost = 28
+        prerequisite = { focus = JAP_focus_35 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_industrial_capacity = 5
+            add_civilian_factories = 2
+        }
+    }
+
+    focus = {
         id = JAP_focus_15
         icon = GFX_JAP_focus_15
         x = 13
@@ -260,53 +548,208 @@ focus_tree = {
     }
 
     focus = {
-        id = JAP_focus_16
-        icon = GFX_JAP_focus_16
-        x = 15
-        y = 2
-        cost = 14
-        prerequisite = { focus = JAP_focus_9 }
+        id = JAP_focus_26
+        icon = GFX_JAP_focus_26
+        x = 19
+        y = 5
+        cost = 35
+        prerequisite = { focus = JAP_focus_23 }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
-            add_political_power = 35
-            add_stability = 0.05
+            add_army_experience = 15
+            add_division_template = "Japanese Mechanized Division"
         }
     }
 
     focus = {
-        id = JAP_focus_17
-        icon = GFX_JAP_focus_17
-        x = 15
-        y = 3
-        cost = 28
-        prerequisite = { focus = JAP_focus_16 }
+        id = JAP_focus_27
+        icon = GFX_JAP_focus_27
+        x = 22
+        y = 5
+        cost = 35
+        prerequisite = { focus = JAP_focus_24 }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
-            add_stability = 0.08
-            add_political_power = 20
+            add_war_support = 0.2
+            add_stability = 0.1
         }
     }
 
     focus = {
-        id = JAP_focus_18
-        icon = GFX_JAP_focus_18
-        x = 17
-        y = 3
+        id = JAP_focus_28
+        icon = GFX_JAP_focus_28
+        x = 24
+        y = 5
         cost = 28
-        prerequisite = { focus = JAP_focus_16 }
+        prerequisite = { focus = JAP_focus_25 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_civilian_factories = 3
+            add_weekly_production_efficiency_factor = 0.015
+        }
+    }
+
+    focus = {
+        id = JAP_focus_39
+        icon = GFX_JAP_focus_39
+        x = 26
+        y = 5
+        cost = 35
+        prerequisite = { focus = JAP_focus_36 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_division_template = "Japanese Armored Division"
+            army_experience = 15
+        }
+    }
+
+    focus = {
+        id = JAP_focus_40
+        icon = GFX_JAP_focus_40
+        x = 30
+        y = 5
+        cost = 35
+        prerequisite = { focus = JAP_focus_37 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_war_support = 0.2
+            add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = JAP_focus_41
+        icon = GFX_JAP_focus_41
+        x = 35
+        y = 5
+        cost = 28
+        prerequisite = { focus = JAP_focus_38 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_military_factories = 3
+            add_weekly_production_efficiency_factor = 0.02
+        }
+    }
+
+    focus = {
+        id = JAP_focus_29
+        icon = GFX_JAP_focus_29
+        x = 19
+        y = 6
+        cost = 35
+        prerequisite = { focus = JAP_focus_26 }
+        prerequisite = { focus = JAP_focus_27 }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
             add_national_spirit = {
-                name = jap_mountain_comfort
+                name = jap_imperial_doctrine
                 remove_on_capitulation = yes
             }
+            add_war_support = 0.15
+        }
+    }
+
+    focus = {
+        id = JAP_focus_30
+        icon = GFX_JAP_focus_30
+        x = 22
+        y = 6
+        cost = 35
+        prerequisite = { focus = JAP_focus_27 }
+        prerequisite = { focus = JAP_focus_28 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 50
             add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = JAP_focus_42
+        icon = GFX_JAP_focus_42
+        x = 28
+        y = 6
+        cost = 35
+        prerequisite = { focus = JAP_focus_39 }
+        prerequisite = { focus = JAP_focus_40 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_national_spirit = {
+                name = jap_imperial_military
+                remove_on_capitulation = yes
+            }
+            add_war_support = 0.15
+        }
+    }
+
+    focus = {
+        id = JAP_focus_43
+        icon = GFX_JAP_focus_43
+        x = 33
+        y = 6
+        cost = 35
+        prerequisite = { focus = JAP_focus_40 }
+        prerequisite = { focus = JAP_focus_41 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.15
+        }
+    }
+
+    focus = {
+        id = JAP_focus_31
+        icon = GFX_JAP_focus_31
+        x = 21
+        y = 7
+        cost = 35
+        prerequisite = { focus = JAP_focus_29 }
+        prerequisite = { focus = JAP_focus_30 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_war_support = 0.2
+            add_political_power = 50
+            unlock_decision_category_tooltip = jap_imperial_expansion
+        }
+    }
+
+    focus = {
+        id = JAP_focus_44
+        icon = GFX_JAP_focus_44
+        x = 30
+        y = 7
+        cost = 35
+        prerequisite = { focus = JAP_focus_42 }
+        prerequisite = { focus = JAP_focus_43 }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_war_support = 0.25
+            add_political_power = 50
+            unlock_decision_category_tooltip = jap_final_offensive
         }
     }
 }

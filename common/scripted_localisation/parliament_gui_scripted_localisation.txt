@@ -30,6 +30,13 @@ defined_text = {
 		localization_key = JAP_party_4_text
 	}
 	text = {
+		trigger = {
+			check_variable = { v = 5 }
+			original_tag = JAP
+		}
+		localization_key = JAP_party_5_text
+		}
+	text = {
 		localization_key = "Error"
 	}
 }
@@ -62,6 +69,13 @@ defined_text = {
 			original_tag = JAP
 		}
 		localization_key = JAP_party_4_text_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 5 }
+			original_tag = JAP
+		}
+		localization_key = JAP_party_5_text_desc
 	}
 	text = {
 		localization_key = "Error"
@@ -98,6 +112,108 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = JAPGetGovernmentStatus
+	
+	# 1. Priority: Coalition
+	text = { 
+		trigger = { has_country_flag = coalition_active } 
+		localization_key = "government_coalition" 
+	}
+	
+	# 2. 268 seats and above (2/3 Supermajority)
+	text = { 
+		trigger = { check_variable = { var = temp_ruling_party_seats value = 125 compare = greater_than } } 
+		localization_key = "government_supermajority" 
+	}
+	
+	# 3. Between 201 and 267 (Absolute Majority)
+	text = { 
+		trigger = { check_variable = { var = temp_ruling_party_seats value = 90 compare = greater_than } } 
+		localization_key = "government_absolute_majority" 
+	}
+	
+	# 4. 100 and below (Minority Government)
+	text = { 
+		trigger = { always = yes } 
+		localization_key = "government_minority" 
+	}
+}
+
+# Get Government Status Tooltip
+defined_text = {
+	name = JAPGetGovernmentStatusTooltip
+	
+	# 268 seats and above (Supermajority - Easily passes any law)
+	text = { 
+		trigger = { check_variable = { var = temp_ruling_party_seats value = 200 compare = greater_than } } 
+		localization_key = "tt_government_supermajority" 
+	}
+	
+	# Between 201 and 267 (Absolute Majority - Passes normal laws)
+	text = { 
+		trigger = { check_variable = { var = temp_ruling_party_seats value = 165 compare = greater_than } } 
+		localization_key = "tt_government_absolute_majority" 
+	}
+	
+	# 100 and below (Minority Government - Needs opposition to pass laws)
+	text = { 
+		trigger = { always = yes } 
+		localization_key = "tt_government_minority" 
+	}
+}
+
+
+defined_text = {
+	name = GetOppositePartyName
+	text = {
+		trigger = {
+			check_variable = { temp_second_largest_party_index = 0 }
+			original_tag = JAP
+		}
+		localization_key = JAP_party_1_text_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_second_largest_party_index = 1 }
+			original_tag = JAP
+		}
+		localization_key = JAP_party_2_text_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_second_largest_party_index = 2 }
+			original_tag = JAP
+		}
+		localization_key = JAP_party_3_text_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_second_largest_party_index = 3 }
+			original_tag = JAP
+		}
+		localization_key = JAP_party_4_text_desc
+	}
+	text = {
+		localization_key = "Error"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {

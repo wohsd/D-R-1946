@@ -86,6 +86,11 @@ spriteTypes = {
 		#texturefile = "gfx/interface/ideologies/JPN_Semi-Constitutional_Monarchy.dds"
 	#}
 	
+	spriteType = { 
+		name = "GFX_ideology_Constitutionalism" 
+		texturefile = "gfx/interface/ideologies/JPN_Constitutionalism.png"
+	}
+	
 
 
 

@@ -1,0 +1,35 @@
+﻿l_simp_chinese:
+
+ # ====================================
+ # 决议标题和描述
+ # ====================================
+
+ JAP_start_infiltration: "启动渗透行动"
+ JAP_start_infiltration_desc: "下令启动针对北越的渗透行动。特种部队和情报人员将被部署到越南战场。"
+ JAP_start_infiltration_effect: "启动渗透行动系统\n获得5点政治权力"
+
+ JAP_infiltration_vietnam: "渗透北越后方"
+ JAP_infiltration_vietnam_desc: "派遣特种部队渗透北越后方，破坏其指挥通信系统和物资补给线。需要与北越处于战争状态。"
+ JAP_infiltration_vietnam_effect: "北越稳定性-8%\n北越战争支持度-5%\n北越反对派支持度+5%\n获得5点政治权力\n7天冷却时间"
+
+ JAP_infiltration_cambodia: "渗透柬埔寨边境"
+ JAP_infiltration_cambodia_desc: "在柬埔寨边境部署情报人员，监视北越通过柬埔寨的物资运输路线。需要北越控制顺化地区。"
+ JAP_infiltration_cambodia_effect: "北越稳定性-6%\n北越战争支持度-4%\n获得3点政治权力\n7天冷却时间"
+
+ JAP_infiltration_laos: "渗透老挝边境"
+ JAP_infiltration_laos_desc: "在老挝边境建立情报网络，收集北越军事部署情报。需要北越控制岘港地区。"
+ JAP_infiltration_laos_effect: "北越稳定性-5%\n北越战争支持度-3%\n获得2点政治权力\n5天冷却时间"
+
+ JAP_intelligence_gathering: "全面情报收集"
+ JAP_intelligence_gathering_desc: "动用情报部门资源进行全面情报收集，深入了解北越的军事部署和指挥结构。消耗15点政治权力。"
+ JAP_intelligence_gathering_effect: "消耗15点政治权力\n获得5%战争支持度\n21天冷却时间"
+
+ JAP_infiltration_status: "渗透行动状态"
+ JAP_infiltration_status_desc: "显示当前渗透行动的状态和可用资源。"
+
+ # ==================================== 
+ # 决议分类
+ # ====================================
+
+ infiltration_ops: "渗透行动"
+ infiltration_ops_desc: "通过特种作战和情报活动削弱北越的战争能力。"

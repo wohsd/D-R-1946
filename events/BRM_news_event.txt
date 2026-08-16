@@ -1,0 +1,25 @@
+
+add_namespace = BRM_news_event
+
+#昂山政变
+news_event = {
+	id = BRM_news_event.1
+	title = BRM_news_event.1.t
+	desc = BRM_news_event.1.d
+	picture = GFX_BRM_newsevent1
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = { #Option for Burma
+		name = BRM_news_event.1.a 
+		set_politics = {
+        ruling_party = Nationalism
+        elections_allowed = no
+   		 }
+		promote_character = {
+			character = BRM_Aung_San
+			ideology = National_Populism
+		}
+	}
+}

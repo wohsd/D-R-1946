@@ -469,7 +469,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "EventWindow_News"
 		position = { x=-282 y=-310 }	
-		size = { width = 728 height = 595 }
+		size = { width = 728 height = 695 }
 		moveable = yes
 		Orientation = CENTER
 		show_sound = world_news_effect
@@ -482,15 +482,15 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "top_Window"
-			position = { x=0 y=0 }	
-			size = { width = 581 height =121 }
+			position = { x=-20 y=-75 }	
+			size = { width = 581 height =161 }
 			Orientation = UPPER_LEFT
 
 			iconType =
 			{
 				name ="event_picture"
 				spriteType = "GFX_news_event_001"
-				position = { x = 32 y = 35 }
+				position = { x = 28 y = 83 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
@@ -505,7 +505,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "Title"
-				position = { x = 110 y = 340 }
+				position = { x = 275 y = 120 }
 				font = "dr_font_21"
 				borderSize = {x = 0 y = 0}
 				text = "Title text here!"	
@@ -516,7 +516,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "btn_minimize"
-				position = {x=1 y=5}
+				position = {x=35 y=650}
 				spriteType = "GFX_event_button_minimize"
 				clicksound = click_default
 			}
@@ -524,17 +524,17 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "midsection"
-			position = { x=20 y=121 }	
+			position = { x=10 y=100 }	
 			size = { width = 580 height = 385 }
 			Orientation = UPPER_LEFT
 		
 			instantTextBoxType = {
 				name = "Description"
-				position = { x = 29 y = 260 }
+				position = { x = 320 y = 0 }
 				font = "dr_font_16"
 				borderSize = {x = 0 y = 0}
 				text = "Long text here!"	
-				maxWidth = 640
+				maxWidth = 360
 				maxHeight = 230
 				format = left
 			}	
@@ -543,13 +543,13 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "bottom_Window"
-			position = { x=100 y=221 }	
+			position = { x=105 y=221 }	
 			size = { width = 700 height = 405 }
 			Orientation = UPPER_LEFT
 
 			gridBoxType = {
 				name = "options_grid"
-				position = { x = 85 y = -1 }
+				position = { x = 225 y = -1 }
 				size = { width = 400 height = 30 }
 				slotsize = { width = 400 height = 47 }
 				max_slots_horizontal = 1

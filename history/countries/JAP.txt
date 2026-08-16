@@ -54,6 +54,11 @@ add_equipment_to_stockpile = {
     amount = 5000
     producer = JAP
 }
+add_equipment_to_stockpile = {
+    type = strat_bomber_equipment_1
+    amount = 1000
+    producer = JAP
+}
 
 set_technology = {
 
@@ -64,7 +69,7 @@ set_technology = {
 	improved_infantry_weapons = 1
 	support_weapons = 1
 	support_weapons2 = 1
-
+    paratroopers = 1
 	# Armor
 	basic_light_tank = 1
 	basic_light_tank_chassis = 1
@@ -81,6 +86,7 @@ set_technology = {
 	formation_flying = 1		
 	dive_bombing = 1
 	direct_ground_support = 1
+	strategic_bomber1 = 1
 
 	# Electronics
 	electronic_mechanical_engineering = 1
@@ -167,6 +173,10 @@ set_technology = {
 recruit_character = JAP_Yasuo_Kanemitsu
 recruit_character = JAP_Ichiro_Hatoyama
 recruit_character = JAP_Yamamoto_Isoroku
+recruit_character = JAP_Ishibashi_Tanzan
+recruit_character = JAP_Matsushita_Konosuke
+recruit_character = JAP_Honda_Soichiro
+recruit_character = JAP_Ibuka_Masaru
 recruit_character = JAP_Ryoki_Machijiri
 recruit_character = JAP_Yongren
 recruit_character = JAP_Togo_Minoru
@@ -179,7 +189,6 @@ recruit_character = JAP_Higashi_Kodama
 recruit_character = JAP_Yonai_Mitsumasa
 recruit_character = JAP_Koaze_Shozo
 recruit_character = JAP_Inoue_Nariaki
-recruit_character = JAP_Isoda_Saburo
 recruit_character = JAP_Tominaga_Kyoji
 recruit_character = JAP_Toyoda_Soemu
 recruit_character = JAP_Nemoto_Hiroshi
@@ -192,6 +201,16 @@ recruit_character = JAP_Terauchi_Hisaichi
 recruit_character = JAP_Araki_Sadao
 recruit_character = JAP_Honjo_Shigeru
 recruit_character = JAP_Tada_Shun
+recruit_character = JAP_Inamori_Kazuo
+recruit_character = JAP_Morita_Akio
+
+recruit_character = JAP_Hidetsugu_Yagi
+	recruit_character = JAP_Yoshio_Nishina
+	recruit_character = JAP_Hideo_Itokawa
+	recruit_character = JAP_Hideo_Shima
+	recruit_character = JAP_Hideki_Yukawa
+	recruit_character = JAP_Takao_Saito
+
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1946.4.10"
@@ -206,9 +225,10 @@ set_popularities = {
 	Reformism = 10
 }
 
-set_variable = {
-	age_year = 10
+set_variable={
+	JAP_party_4_power = 60
 }
+
 
 
 
@@ -234,10 +254,16 @@ add_ideas = {
 	JAP_Toranomon_Spirit
 	JAP_Naval_Supremacy
 	JAP_Golden_Age
+	JAP_Kagoshima_Group
+	JAP_No_Genro_Era
 
 
 
 }
+
+
+
+
 
 create_faction_from_template = faction_template_GEA
 

@@ -1,4 +1,4 @@
-﻿capital = 126
+capital = 126
 
 #oob = "AOX_1920"
 
@@ -8,18 +8,19 @@ set_technology = {
 }
 
 recruit_character = ENG_Archibald_Sinclair
+recruit_character = ENG_Clement_Attlee
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Reformism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 set_popularities = {
-	Dictatorship = 5
-	Liberalism = 45
+	Dictatorship = 10
+	Liberalism = 25
 	Conservatism = 25
-	Reformism = 25
+	Reformism = 40
 }
 
 add_ideas = {

@@ -4,17 +4,19 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/FRA/FRA_Joseph_Laniel.png"
+				small = "gfx/interface/ideas/FRA/FRA_Joseph_Laniel.png"
+				
 			}
 		}
-		country_leader = {
-			ideology = Conservative_Liberalism
-			desc = FRA_Joseph_Laniel_desc
-			expire = "2000.1.1.1"
-			id = -1
+		
+		advisor = {
+			cost = 100
+			slot = head_of_government
+			idea_token = FRA_Joseph_Laniel_H
+			traits = { silent_workhorse }
+			ai_will_do = { factor = 1.000 }
 		}
 	}
-
-
 
 	FRA_Paul_Ramadier = {
 		name = FRA_Paul_Ramadier
@@ -30,5 +32,20 @@ characters = {
 			id = -1
 		}
 	}
+
+	FRA_Michel_Clemenceau = {
+		name = FRA_Michel_Clemenceau
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/FRA/FRA_Michel_Clemenceau.png"
+				large = "gfx/leaders/FRA/FRA_Michel_Clemenceau.png"
+			}
+		}
+		country_leader = {
+			ideology = Conservative_Liberalism
+			desc = FRA_Michel_Clemenceau_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }
-	

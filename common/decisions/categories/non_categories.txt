@@ -1,0 +1,10 @@
+              
+JAP_political_reform = {
+	icon = GFX_decision_category_antarctica
+	picture=GFX_decision_cat_picture_chi_political_support
+	visible = { 
+	}    
+	highlight_states = {  
+	}          
+	priority = 2    
+    }

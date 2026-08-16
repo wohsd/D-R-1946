@@ -81,5 +81,104 @@ ideas = {
 				local_building_slots_factor = 0.1
 			}
 		}
+		JAP_Kagoshima_Group = {
+			picture = GFX_idea_JAP_Kagoshima_Group
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				custom_modifier_tooltip = JAP_Kagoshima_Group_tooltip
+			}
+
+		}
+		JAP_No_Genro_Era = {
+			picture = GFX_idea_JAP_No_Genro_Era
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+	}
+
+	industrial_concern = {
+		JAP_Panasonic = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = {
+				industrial_panasonic_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		JAP_Shibusawa_Enterprise = {
+			picture = generic_industrial_concern_2
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			research_bonus = {
+				industry = 0.1
+				electronics = 0.05
+			}
+			traits = {
+				industrial_shibusawa_enterprise_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		JAP_Honda_Motor = {
+			picture = generic_industrial_concern_3
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			research_bonus = {
+				industry = 0.12
+				automotive = 0.1
+			}
+			traits = {
+				industrial_honda_motor_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		JAP_Sony_Corporation = {
+			picture = generic_industrial_concern_4
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			research_bonus = {
+				electronics = 0.15
+				industry = 0.05
+			}
+			traits = {
+				industrial_sony_corporation_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 }

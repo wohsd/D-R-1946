@@ -263,6 +263,9 @@ Neoreactionism_desc:0 "一党制政府"
  progressive-conservatism:0 "进步保守主义"
  progressive-conservatism_desc:0 ""
 
+ Constitutionalism:0 "护宪主义"
+ Constitutionalism_desc:0 "§Y护宪主义§!\n护宪主义是日本大正民主运动的核心政治纲领，以1912年的“护宪运动”为分水岭，护宪主义正式登上历史舞台。在历经数十年的民主化改革后，“护宪主义”正式成为了日本的准官方意识形态。护宪主义严格维护《大日本帝国宪法》，严守宪法条文，捍卫议会拥有的预算权和选举成绩对组阁大命的决定权，并反对藩阀元老、军部、枢密院干涉内阁，具有鲜明的众议院优位之色彩。同时，护宪主义要求实现“宪政之常道”，追求效仿英国两党轮流执政，以内阁追随众议院民意，把政权交给议会多数政党，杜绝元老、藩阀随意组建超然内阁。"
+
 ####家长制
  Paternalism:0 "家长制"
  Paternalism_type:0 "家长制"
@@ -407,11 +410,18 @@ JAP_Conservatism_party_long:0 "立宪政友会"
 JAP_Dictatorship_party:0 "宫内势力"
 JAP_Dictatorship_party_long:0 "宫内势力"
 
-JAP_Nationalism_party:0 "纵横会"
-JAP_Nationalism_party_long:0 "纵横会"
+JAP_Nationalism_party:0 "国协党"
+JAP_Nationalism_party_long:0 "国协党"
 
 ENG_Liberalism_party:0 "英国自由党"
 ENG_Liberalism_party_long:0 "英国自由党"
 
 CHI_sanmin-reformism_party:0 "中国国民党"
 CHI_sanmin-reformism_party_long:0 "国民党中左派"
+
+
+USA_Liberalism_party:0 "美国民主党"
+USA_Liberalism_party_long:0 "美国民主党"
+
+USA_Progressive_Liberalism:0 "新政联盟"
+USA_Progressive_Liberalism_long:0 "新政联盟"

@@ -1,0 +1,78 @@
+# ====================================
+# 越南危机决议组
+# ====================================
+
+JAP_vietnam_crisis_decisions = {
+
+    # ====================================
+    # 任务：越南战争下的新形势（倒计时180天）
+    # ====================================
+    
+    JAP_vietnam_new_situation = {
+        icon = GFX_decision_generic_political_reform
+        priority = 50
+        
+        activation = {
+            #has_country_flag = vietnam_crisis_active
+            original_tag=JAP
+        }
+        
+        available = {
+            has_country_flag = vietnam_crisis_active
+            original_tag=JAP
+        }
+        
+        selectable_mission = yes
+        
+        days_mission_timeout = 180
+        
+        cost = 50
+        
+        complete_effect = {
+        }
+        
+        timeout_effect = {
+            country_event = JAP.vietnam_crisis.3
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    # ====================================
+    # 决议2：越南危机的解决（倒计时365天）
+    # ====================================
+    
+    JAP_vietnam_crisis_solution = {
+        icon = GFX_decision_generic_diplomacy
+        priority = 49
+        fire_only_once = yes
+        
+        activation = {
+            #has_country_flag = vietnam_crisis_active
+            original_tag=JAP
+        }
+        
+        available = {
+            has_country_flag = vietnam_crisis_active
+        }
+        
+        selectable_mission = yes
+        
+        days_mission_timeout = 365
+        
+        cost = 50
+        
+        complete_effect = {
+        }
+        
+        ai_will_do = {
+            factor = 0.8
+            modifier = {
+                factor = 0
+                NOT = { has_country_flag = vietnam_new_situation_done }
+            }
+        }
+    }
+}

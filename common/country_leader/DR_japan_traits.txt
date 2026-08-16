@@ -1,12 +1,38 @@
-trait = {
+leader_traits = {
 	financial_expert = {
 		initial = yes
 		political_power_factor = 0.1
 		consumer_goods_factor = -0.05
 	}
+	
+	imperialist_diplomat = {
+		initial = yes
+		send_volunteer_size = 1
+		consumer_goods_factor = -0.10
+		political_power_factor = 0.05
+		stability_factor = 0.05
+	}
+	seiyukai_centrist = {
+		initial = yes
+		political_power_factor = 0.05
+		stability_factor = 0.05
+	}
+
+
 	jurist = {
 		initial = yes
 		political_power_factor = 0.05
 		law_cost_factor = -0.25
+	}
+
+	constitutional_god = {
+		initial = yes
+		political_power_factor = 0.10
+		production_efficiency_factor = 0.05
+	}
+
+	vietnam_war_premier = {
+		initial = yes
+		send_volunteer_size = 1
 	}
 }

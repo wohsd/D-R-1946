@@ -266,6 +266,14 @@ spriteType = {
 		name = "GFX_idea_JAP_Golden_Age"
 		texturefile = "gfx\interface\ideas\JAP\JAP_Golden_Age.png"
 	}
+	spriteType = {
+		name = "GFX_idea_JAP_Kagoshima_Group"
+		texturefile = "gfx\interface\ideas\JAP\JAP_Kagoshima_Group.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_No_Genro_Era"
+		texturefile = "gfx\interface\ideas\JAP\JAP_No_Genro_Era.png"
+	}
 
 ###DRV
 	spriteType = {

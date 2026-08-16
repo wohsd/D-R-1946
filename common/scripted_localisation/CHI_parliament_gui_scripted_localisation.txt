@@ -93,3 +93,55 @@ defined_text = {
 		localization_key = CHI_parliament_seat_text
 	}
 }
+
+# Get Government Status
+defined_text = {
+	name = CHIGetGovernmentStatus
+	
+	# 1. Priority: Coalition
+	text = { 
+		trigger = { has_country_flag = coalition_active } 
+		localization_key = "government_coalition" 
+	}
+	
+	# 2. 268 seats and above (2/3 Supermajority)
+	text = { 
+		trigger = { check_variable = { var = temp_ruling_party_seats value = 125 compare = greater_than } } 
+		localization_key = "government_supermajority" 
+	}
+	
+	# 3. Between 201 and 267 (Absolute Majority)
+	text = { 
+		trigger = { check_variable = { var = temp_ruling_party_seats value = 90 compare = greater_than } } 
+		localization_key = "government_absolute_majority" 
+	}
+	
+	# 4. 100 and below (Minority Government)
+	text = { 
+		trigger = { always = yes } 
+		localization_key = "government_minority" 
+	}
+}
+
+# Get Government Status Tooltip
+defined_text = {
+	name = CHIGetGovernmentStatusTooltip
+	
+	# 268 seats and above (Supermajority - Easily passes any law)
+	text = { 
+		trigger = { check_variable = { var = temp_ruling_party_seats value = 125 compare = greater_than } } 
+		localization_key = "tt_government_supermajority" 
+	}
+	
+	# Between 201 and 267 (Absolute Majority - Passes normal laws)
+	text = { 
+		trigger = { check_variable = { var = temp_ruling_party_seats value = 90 compare = greater_than } } 
+		localization_key = "tt_government_absolute_majority" 
+	}
+	
+	# 100 and below (Minority Government - Needs opposition to pass laws)
+	text = { 
+		trigger = { always = yes } 
+		localization_key = "tt_government_minority" 
+	}
+}

@@ -3,22 +3,42 @@ JAP_parliament_gui_initial = {
 	# Put simply an array stores a list of things, used here to store the list of parties and list of seats.
 
 	# parliament_seat_array stores the list of seat numbers for each party
-	add_to_array = { parliament_seat_array = 51  } # Party A
-	add_to_array = { parliament_seat_array = 116 } # Party B
-	add_to_array = { parliament_seat_array = 93 } # Party C
+	add_to_array = { parliament_seat_array = 41  } # Party A
+	add_to_array = { parliament_seat_array = 106 } # Party B
+	add_to_array = { parliament_seat_array = 83 } # Party C
 	add_to_array = { parliament_seat_array = 206 } # Party D
-
+	add_to_array = { parliament_seat_array = 30 }
 	# parliament_member_array stores the list of parties
 	# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
 	add_to_array = { parliament_member_array = 1 } # Party A
 	add_to_array = { parliament_member_array = 2 } # Party B
 	add_to_array = { parliament_member_array = 3 } # Party C
 	add_to_array = { parliament_member_array = 4 } # Party D
+	add_to_array = { parliament_member_array = 5 } # Party E
 	# Set up the positions of the dots for the semicircle parliament
 	parliament_gui_positions = yes
 
 	# Modify what shows up in the gui
 	reload_parliament_gui = yes
+	find_second_largest_seats = yes
+	JAP= {
+		if = { 
+			limit = { has_government = Revolutionism} 
+			set_variable = { temp_ruling_party_seats = parliament_seat_array^0 } 
+		} 
+		if = { 
+			limit = { has_government = Liberalism } 
+			set_variable = { temp_ruling_party_seats = parliament_seat_array^1 } 
+		} 
+		if = { 
+			limit = { has_government = Nationalism } 
+			set_variable = { temp_ruling_party_seats = parliament_seat_array^2 } 
+		} 
+		if = { 
+			limit = { has_government = Conservatism } 
+			set_variable = { temp_ruling_party_seats = parliament_seat_array^3 } 
+		} 
+	}
 }
 
 # The following scripted effect does the main job of generating the gui, by adding the seats for each party in a grid.
@@ -165,6 +185,57 @@ modify_parliament_seat = {
 
 	# Modify what shows up in the gui
 	reload_parliament_gui = yes
+}
+
+# Find the second largest value and its party index in parliament_seat_array
+find_second_largest_seats = {
+	# Initialize variables: temp_max1 = largest, temp_max2 = second largest
+	set_temp_variable = { temp_max1 = 0 }
+	set_temp_variable = { temp_max2 = 0 }
+	set_temp_variable = { temp_max1_index = 0 }
+	set_temp_variable = { temp_max2_index = 0 }
+	set_temp_variable = { temp_index = 0 }
+	
+	# Get array size
+	set_temp_variable = { temp_array_size = parliament_seat_array^num }
+	
+	# Loop through each element in parliament_seat_array
+	while_loop_effect = {
+		limit = {
+			check_variable = { temp_index < temp_array_size }
+		}
+		
+		# Get current seat value
+		set_temp_variable = { temp_current = parliament_seat_array^temp_index }
+		
+		# Compare with current max values
+		if = {
+			limit = {
+				check_variable = { temp_current > temp_max1 }
+			}
+			# Current value is larger than max1, shift values down
+			set_temp_variable = { temp_max2 = temp_max1 }
+			set_temp_variable = { temp_max2_index = temp_max1_index }
+			set_temp_variable = { temp_max1 = temp_current }
+			set_temp_variable = { temp_max1_index = temp_index }
+		}
+		else_if = {
+			limit = {
+				check_variable = { temp_current > temp_max2 }
+				check_variable = { temp_current < temp_max1 }
+			}
+			# Current value is between max2 and max1
+			set_temp_variable = { temp_max2 = temp_current }
+			set_temp_variable = { temp_max2_index = temp_index }
+		}
+		
+		# Move to next element
+		add_to_temp_variable = { temp_index = 1 }
+	}
+	
+	# Store the results in variables for later use
+	set_variable = { temp_second_largest_seats = temp_max2 }
+	set_variable = { temp_second_largest_party_index = temp_max2_index }
 }
 
 # Clear all arrays (for debugging)

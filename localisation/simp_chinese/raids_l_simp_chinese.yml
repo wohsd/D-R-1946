@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+
+ # ====================================
+ # 决议标题和描述
+ # ====================================
+ raid_type_JAP_bombing_1: "天照大神行动-西原"
+ raid_type_JAP_bombing_2: "天照大神行动-湄公河三角洲"
+ raid_type_JAP_bombing_3: "天照大神行动-东北越南"
+ raid_type_JAP_bombing_4: "天照大神行动-红河三角洲"
+ raid_type_JAP_bombing_5: "天照大神行动-西贡"
+ raid_type_JAP_bombing_6: "天照大神行动-河内"
+ raid_type_JAP_bombing_7: "天照大神行动-顺化"
+ raid_type_JAP_bombing_8: "天照大神行动-岘港"
+
+ raid_type_JAP_paratrooper_raid: "菊花特攻行动-西贡"

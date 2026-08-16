@@ -1,0 +1,86 @@
+
+scripted_gui = {
+	da_kai_kai_jv_jie_shao = {
+		context_type = player_context
+		window_name = "da_kai_kai_jv_jie_shao"
+		visible = {
+			has_country_flag = da_kai_kai_jv_jie_shao_flag
+		}
+		effects = {
+			da_kai_kai_jv_jie_shao_an_niu_click = { #打开国家介绍按钮效果
+				clr_country_flag = kai_jv_jie_shao_win_kai
+				set_country_flag = guo_jia_jie_shao_kai
+			}
+		}
+	}
+	kai_jv_jie_shao_win = {
+		context_type = player_context
+		window_name = "kai_jv_jie_shao_win"
+		visible = { #没有该标记可见
+			NOT = { has_country_flag = kai_jv_jie_shao_win_kai }
+		}
+		effects = {
+			kai_jv_jie_shao_win_ok_click = { #关闭页面
+				set_country_flag = kai_jv_jie_shao_win_kai
+				
+			}
+			kai_jv_jie_shao_xuan_xiang1_click = { #国家介绍
+				set_country_flag = guo_jia_jie_shao_kai
+				clr_country_flag = lu_xian_zhi_nan_kai
+				clr_country_flag = mod_jie_shao_kai
+				clr_country_flag = mod_te_se
+			}
+			kai_jv_jie_shao_xuan_xiang2_click = { #路线指南
+				set_country_flag = lu_xian_zhi_nan_kai
+				clr_country_flag = guo_jia_jie_shao_kai
+				clr_country_flag = mod_jie_shao_kai
+				clr_country_flag = mod_te_se
+			}
+			kai_jv_jie_shao_xuan_xiang3_click = { #模组介绍
+				set_country_flag = mod_jie_shao_kai
+				clr_country_flag = guo_jia_jie_shao_kai
+				clr_country_flag = lu_xian_zhi_nan_kai
+				clr_country_flag = mod_te_se
+			}
+			kai_jv_jie_shao_xuan_xiang4_click = { #模组特色
+				set_country_flag = mod_te_se
+				clr_country_flag = guo_jia_jie_shao_kai
+				clr_country_flag = lu_xian_zhi_nan_kai
+				clr_country_flag = mod_jie_shao_kai
+			}
+		}
+	}
+	guo_jia_jie_shao_win = { #国家介绍
+		context_type = player_context
+		window_name = "guo_jia_jie_shao_win"
+		parent_window_name = "kai_jv_jie_shao_win"
+		visible = {
+			has_country_flag = guo_jia_jie_shao_kai
+		}
+	}
+	lu_xian_jie_shao_win = { #路线指南
+		context_type = player_context
+		window_name = "lu_xian_jie_shao_win"
+		parent_window_name = "kai_jv_jie_shao_win"
+		visible = {
+			has_country_flag = lu_xian_zhi_nan_kai
+		}
+	}
+	mod_jie_shao_win = { #mod介绍
+		context_type = player_context
+		window_name = "mod_jie_shao_win"
+		parent_window_name = "kai_jv_jie_shao_win"
+		visible = {
+			has_country_flag = mod_jie_shao_kai
+		}
+	}
+	mod_jie_shao_win = { #mod特色
+		context_type = player_context
+		window_name = "mod_te_se_win"
+		parent_window_name = "kai_jv_jie_shao_win"
+		visible = {
+			has_country_flag = mod_te_se
+		}
+	}
+}
+

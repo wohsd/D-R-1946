@@ -1,0 +1,49 @@
+# ====================================
+# 越南危机相关脚本效果
+# ====================================
+
+# 启动越南危机
+start_vietnam_crisis = {
+    JAP = {
+        country_event = JAP.vietnam_crisis.4
+    }
+}
+
+# 南越失利 - 解锁新轰炸区域（现已改为动态系统，此函数保留用于兼容）
+vietnam_south_setback = {
+    JAP = {
+        country_event = JAP.vietnam_crisis.3
+    }
+}
+
+# 手动设置轰炸机库存（调试用）
+set_bomber_inventory = {
+    JAP = {
+        set_variable = { bombers_available = 100 }
+    }
+}
+
+# 检查越南危机是否激活
+check_vietnam_crisis_active = {
+    custom_trigger_tooltip = {
+        tooltip = "越南危机已激活"
+        has_country_flag = vietnam_crisis_active
+    }
+}
+
+# 动态轰炸检查 - 检查DRV是否控制指定省份
+check_vietnam_state_control = {
+    DRV = { controls_state = $STATE$ }
+}
+
+# 重置所有轰炸冷却
+reset_all_bombing_cooldowns = {
+    clr_country_flag = bombing_vietnam_1111_cooldown
+    clr_country_flag = bombing_vietnam_1110_cooldown
+    clr_country_flag = bombing_vietnam_1112_cooldown
+    clr_country_flag = bombing_vietnam_1109_cooldown
+    clr_country_flag = bombing_vietnam_671_cooldown
+    clr_country_flag = bombing_vietnam_286_cooldown
+    clr_country_flag = bombing_vietnam_1114_cooldown
+    clr_country_flag = bombing_vietnam_1113_cooldown
+}
