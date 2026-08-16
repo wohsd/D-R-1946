@@ -94,14 +94,7 @@ BUL_dar_organization = {
 		tag = BUL
 	}
 
-	available = {
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			FROM = { has_completed_focus = BUL_darzhavna_aeroplanna_rabotilnitsa }
-		}
-	}
+	
 
 	add_trait = { 
 		token = BUL_mio_trait_prussia_of_the_balkans

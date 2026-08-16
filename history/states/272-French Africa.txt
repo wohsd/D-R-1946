@@ -1,19 +1,18 @@
-
-state={
-	id=272
-	name="STATE_272"
+state = {
+	id = 272
+	name = "STATE_272"
 	manpower = 1638000
-	resources={
-		steel=3 # was: 4
+	resources = {
+		steel = 3		# was: 4
 	}
-	
 	state_category = pastoral
-
-	history={
-		owner = SEN
+	history = {
+		owner = FRF
+		add_core_of = FRF
 		add_core_of = SEN
 		victory_points = {
-			4948 5 
+			4948
+			5
 		}
 		buildings = {
 			infrastructure = 2
@@ -23,10 +22,20 @@ state={
 			}
 		}
 	}
-
-	provinces={
-		2100 4948 7972 8015 12710 12834 14161 14173 14174 14189 14209 14211 14260 
+	provinces = {
+		2100
+		4948
+		7972
+		8015
+		12710
+		12834
+		14161
+		14173
+		14174
+		14189
+		14209
+		14211
+		14260
 	}
-
-	local_supplies=1.0 
+	local_supplies = 1
 }

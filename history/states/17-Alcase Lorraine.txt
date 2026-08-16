@@ -23,7 +23,7 @@ state={
 			industrial_complex = 1
 			air_base = 5
 		}
-		set_demilitarized_zone = yes
+
 		add_core_of = FRA
 	}
 

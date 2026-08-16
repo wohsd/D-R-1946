@@ -7,8 +7,9 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = ITA
-		add_core_of = ALG
+		owner = FRF
+		add_core_of = FRF
+		set_demilitarized_zone = yes
 		victory_points = {
 			12034 1 
 		}

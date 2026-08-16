@@ -9,9 +9,10 @@ state = {
 	manpower = 1693974
 
 	history = {
-
+		
 		owner = COG
 		add_core_of = COG
+		
 
 		victory_points = {
 			988 2 # Coquilhatville

@@ -1,4 +1,4 @@
-﻿capital = 904
+﻿capital = 547
 
 #oob = "AOX_1920"
 
@@ -35,3 +35,4 @@ add_ideas = {
 Public_Education3
 	Police_policy3
 }
+set_cosmetic_tag = KEN_DR

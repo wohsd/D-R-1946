@@ -275,5 +275,5 @@ add_to_faction = LAO
 add_to_faction = PHI
 add_to_faction = MAL
 add_to_faction = INS
-add_to_faction = KOR
+
 

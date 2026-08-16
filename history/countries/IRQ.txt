@@ -1,4 +1,4 @@
-﻿capital = 1011
+﻿capital = 291
 
 #oob = "AOX_1920"
 

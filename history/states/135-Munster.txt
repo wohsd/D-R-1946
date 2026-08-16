@@ -9,7 +9,7 @@ state={
 		coal = 1
 	}
 	history={
-		owner = IRE
+		owner = ENG
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
@@ -20,6 +20,7 @@ state={
 		victory_points = {
 			6313 1 #Limerick
 		}
+		add_core_of = ENG
 		add_core_of = IRE
 	}
 

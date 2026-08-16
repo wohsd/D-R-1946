@@ -12,15 +12,7 @@ state = {
 
 		owner = COG
 
-		IF = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
-			transfer_state_to = COG
-			add_dynamic_modifier = {
-				modifier = COG_state_loyal_to_free_congo_modifier
-			}
-		}
+		
 
 		buildings = {
 			infrastructure = 1
@@ -36,7 +28,7 @@ state = {
 	}
 	
 	provinces = {
-		191 1516 1817 1968 4515 4941 12795 13805 13816 13827 13830 13836 13837 13838 13844 13847 13849 13850 13851 13857 13859 13866 13870 13878 13884 
+		191 1516 1817 1968 4515 4941 12795 13805 13816 13827 13830 13836 13837 13838 13844 13847 13849 13850 13857 13859 13866 13870 13878 13884 
 	}
 
 	buildings_max_level_factor = 1.000

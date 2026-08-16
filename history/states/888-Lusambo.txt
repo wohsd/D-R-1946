@@ -8,15 +8,7 @@ state = {
 
 		owner = COG
 
-		IF = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
-			transfer_state_to = COG
-			add_dynamic_modifier = {
-				modifier = COG_state_loyal_to_free_congo_modifier
-			}
-		}
+		
 
 		victory_points = {
 			2024 1 # Bakwanga
@@ -31,7 +23,7 @@ state = {
 	}
 
 	provinces = {
-		5176 13376 13377 13378 13381 13384 13388 13389 13886 13887 13906 13910 13911 13918 13930 14331 14387 
+		5176 13376 13377 13378 13381 13384 13389 13886 13887 13906 13910 13911 13918 13930 14331 14387 
 	}
 
 	buildings_max_level_factor = 1.000
