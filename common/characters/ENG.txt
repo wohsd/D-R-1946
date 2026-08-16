@@ -13,5 +13,20 @@ characters = {
 			id = -1
 		}
 	}
+
+	ENG_Clement_Attlee = {
+		name = ENG_Clement_Attlee
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/ENG_Clement_Attlee.png"
+			}
+		}
+		country_leader = {
+			ideology = Social_Democracy
+			desc = ENG_Clement_Attlee_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }
 	

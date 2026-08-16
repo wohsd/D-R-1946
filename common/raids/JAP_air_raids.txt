@@ -1,0 +1,1538 @@
+types = {
+
+	JAP_bombing_1 = {
+		days_to_prepare = 30
+		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_other_raid
+		ai_will_do = { 
+		    base = 2
+		    modifier = {
+		    	factor = 10
+		    }
+		}
+		command_power = 15
+		allowed = {
+			has_dlc = "Gotterdammerung"
+			original_tag = JAP
+		}
+		fire_only_once = no
+		visible = {
+			has_country_flag = bombing_1114_unlocked
+		}
+		show_target = {
+			has_war_with = DRV
+			1114 = { is_owned_and_controlled_by = DRV }
+		}
+		available = {
+			has_country_flag = infiltration_active_ing
+		}
+		launchable = {
+			has_war_with = DRV
+		}
+		arrow = {
+		    type = air
+		}
+		target_type = {
+			province = 19043
+		}
+		launch_sound = raid_launch_air
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 30}
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.9
+
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0
+					weight = 0.05
+					start_weight = -0.05
+				}
+				reliability = {
+					reference = 1
+					weight = 0.05
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+
+				air_superiority = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+
+				anti_air = {
+					reference = 5
+					weight = -0.1
+				}
+				interception = {
+					reference = 500
+					weight = -0.2
+				}
+				intel = {
+					weight = 0.2
+					reference = 100
+				}
+
+			}
+			critical = {
+				base = 0.1
+			}
+		}
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 10
+					}
+					raid_add_unit_experience = 0.05
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 5
+					}
+					raid_add_unit_experience = 0.1
+
+					DRV = {
+						add_war_support = -0.02
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 2
+					}
+					raid_add_unit_experience = 0.2
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+					}
+					raid_add_unit_experience = 0.35
+
+					DRV = {
+						add_war_support = 0.05
+						IF = {
+							limit = { has_government = neutrality }
+							add_popularity = {
+								ideology = neutrality
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = communism }
+							add_popularity = {
+								ideology = communism
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = democratic }
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = fascism }
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.1
+							}
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+	JAP_bombing_2 = {
+		days_to_prepare = 30
+		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_other_raid
+		ai_will_do = {
+		    base = 2
+		    modifier = {
+		    	factor = 10
+		    }
+		}
+		command_power = 15
+		allowed = {
+			has_dlc = "Gotterdammerung"
+			original_tag = JAP
+		}
+		fire_only_once = no
+		visible = {
+			has_country_flag = bombing_1113_unlocked
+		}
+		show_target = {
+			has_war_with = DRV
+			1113 = { is_owned_and_controlled_by = DRV }
+		}
+		available = {
+			has_country_flag = infiltration_active_ing
+		}
+		launchable = {
+			has_war_with = DRV
+		}
+		arrow = {
+		    type = air
+		}
+		target_type = {
+			province = 19113
+		}
+		launch_sound = raid_launch_air
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 30}
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.9
+
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0
+					weight = 0.05
+					start_weight = -0.05
+				}
+				reliability = {
+					reference = 1
+					weight = 0.05
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+
+				air_superiority = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+
+				anti_air = {
+					reference = 5
+					weight = -0.1
+				}
+				interception = {
+					reference = 500
+					weight = -0.2
+				}
+				intel = {
+					weight = 0.2
+					reference = 100
+				}
+
+			}
+			critical = {
+				base = 0.1
+			}
+		}
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 10
+					}
+					raid_add_unit_experience = 0.05
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 5
+					}
+					raid_add_unit_experience = 0.1
+
+					DRV = {
+						add_war_support = -0.02
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 2
+					}
+					raid_add_unit_experience = 0.2
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+					}
+					raid_add_unit_experience = 0.35
+
+					DRV = {
+						add_war_support = 0.05
+						IF = {
+							limit = { has_government = neutrality }
+							add_popularity = {
+								ideology = neutrality
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = communism }
+							add_popularity = {
+								ideology = communism
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = democratic }
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = fascism }
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.1
+							}
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+	JAP_bombing_3 = {
+		days_to_prepare = 30
+		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_other_raid
+		ai_will_do = {
+		    base = 2
+		    modifier = {
+		    	factor = 10
+		    }
+		}
+		command_power = 15
+		allowed = {
+			has_dlc = "Gotterdammerung"
+			original_tag = JAP
+		}
+		fire_only_once = no
+		visible = {
+			has_country_flag = bombing_1110_unlocked
+		}
+		show_target = {
+			has_war_with = DRV
+			1110 = { is_owned_and_controlled_by = DRV }
+		}
+		available = {
+			has_country_flag = infiltration_active_ing
+		}
+		launchable = {
+			has_war_with = DRV
+		}
+		arrow = {
+		    type = air
+		}
+		target_type = {
+			province = 12065
+		}
+		launch_sound = raid_launch_air
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 30}
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.9
+
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0
+					weight = 0.05
+					start_weight = -0.05
+				}
+				reliability = {
+					reference = 1
+					weight = 0.05
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+
+				air_superiority = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+
+				anti_air = {
+					reference = 5
+					weight = -0.1
+				}
+				interception = {
+					reference = 500
+					weight = -0.2
+				}
+				intel = {
+					weight = 0.2
+					reference = 100
+				}
+
+			}
+			critical = {
+				base = 0.1
+			}
+		}
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 10
+					}
+					raid_add_unit_experience = 0.05
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 5
+					}
+					raid_add_unit_experience = 0.1
+
+					DRV = {
+						add_war_support = -0.02
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 2
+					}
+					raid_add_unit_experience = 0.2
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+					}
+					raid_add_unit_experience = 0.35
+
+					DRV = {
+						add_war_support = 0.05
+						IF = {
+							limit = { has_government = neutrality }
+							add_popularity = {
+								ideology = neutrality
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = communism }
+							add_popularity = {
+								ideology = communism
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = democratic }
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = fascism }
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.1
+							}
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+	JAP_bombing_4 = {
+		days_to_prepare = 30
+		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_other_raid
+		ai_will_do = {
+		    base = 2
+		    modifier = {
+		    	factor = 10
+		    }
+		}
+		command_power = 15
+		allowed = {
+			has_dlc = "Gotterdammerung"
+			original_tag = JAP
+		}
+		fire_only_once = no
+		visible = {
+			has_country_flag = bombing_1111_unlocked
+		}
+		show_target = {
+			has_war_with = DRV
+			1112 = { is_owned_and_controlled_by = DRV }
+		}
+		available = {
+			has_country_flag = infiltration_active_ing
+		}
+		launchable = {
+			has_war_with = DRV
+		}
+		arrow = {
+		    type = air
+		}
+		target_type = {
+			province = 10075
+		}
+		launch_sound = raid_launch_air
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 30}
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.9
+
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0
+					weight = 0.05
+					start_weight = -0.05
+				}
+				reliability = {
+					reference = 1
+					weight = 0.05
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+
+				air_superiority = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+
+				anti_air = {
+					reference = 5
+					weight = -0.1
+				}
+				interception = {
+					reference = 500
+					weight = -0.2
+				}
+				intel = {
+					weight = 0.2
+					reference = 100
+				}
+
+			}
+			critical = {
+				base = 0.1
+			}
+		}
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 10
+					}
+					raid_add_unit_experience = 0.05
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 5
+					}
+					raid_add_unit_experience = 0.1
+
+					DRV = {
+						add_war_support = -0.02
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 2
+					}
+					raid_add_unit_experience = 0.2
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+					}
+					raid_add_unit_experience = 0.35
+
+					DRV = {
+						add_war_support = 0.05
+						IF = {
+							limit = { has_government = neutrality }
+							add_popularity = {
+								ideology = neutrality
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = communism }
+							add_popularity = {
+								ideology = communism
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = democratic }
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = fascism }
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.1
+							}
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+	JAP_bombing_5 = {
+		days_to_prepare = 30
+		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_other_raid
+		ai_will_do = {
+		    base = 2
+		    modifier = {
+		    	factor = 10
+		    }
+		}
+		command_power = 15
+		allowed = {
+			has_dlc = "Gotterdammerung"
+			original_tag = JAP
+		}
+		fire_only_once = no
+		visible = {
+			has_country_flag = bombing_saigon_unlocked
+		}
+		show_target = {
+			has_war_with = DRV
+			1113 = { is_owned_and_controlled_by = DRV }
+		}
+		available = {
+			has_country_flag = infiltration_active_ing
+		}
+		launchable = {
+			has_war_with = DRV
+		}
+		arrow = {
+		    type = air
+		}
+		target_type = {
+			province = 4401
+		}
+		launch_sound = raid_launch_air
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 30}
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.9
+
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0
+					weight = 0.05
+					start_weight = -0.05
+				}
+				reliability = {
+					reference = 1
+					weight = 0.05
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+
+				air_superiority = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+
+				anti_air = {
+					reference = 5
+					weight = -0.1
+				}
+				interception = {
+					reference = 500
+					weight = -0.2
+				}
+				intel = {
+					weight = 0.2
+					reference = 100
+				}
+
+			}
+			critical = {
+				base = 0.1
+			}
+		}
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 10
+					}
+					raid_add_unit_experience = 0.05
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 5
+					}
+					raid_add_unit_experience = 0.1
+
+					DRV = {
+						add_war_support = -0.02
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 2
+					}
+					raid_add_unit_experience = 0.2
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+					}
+					raid_add_unit_experience = 0.35
+
+					DRV = {
+						add_war_support = 0.05
+						IF = {
+							limit = { has_government = neutrality }
+							add_popularity = {
+								ideology = neutrality
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = communism }
+							add_popularity = {
+								ideology = communism
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = democratic }
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = fascism }
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.1
+							}
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+	JAP_bombing_6 = {
+		days_to_prepare = 30
+		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_other_raid
+		ai_will_do = {
+		    base = 2
+		    modifier = {
+		    	factor = 10
+		    }
+		}
+		command_power = 15
+		allowed = {
+			has_dlc = "Gotterdammerung"
+			original_tag = JAP
+		}
+		fire_only_once = no
+		visible = {
+			has_country_flag = bombing_hanoi_unlocked
+		}
+		show_target = {
+			has_war_with = DRV
+			1111 = { is_owned_and_controlled_by = DRV }
+		}
+		available = {
+			has_country_flag = infiltration_active_ing
+		}
+		launchable = {
+			has_war_with = DRV
+		}
+		arrow = {
+		    type = air
+		}
+		target_type = {
+			province = 4075
+		}
+		launch_sound = raid_launch_air
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 30}
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.9
+
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0
+					weight = 0.05
+					start_weight = -0.05
+				}
+				reliability = {
+					reference = 1
+					weight = 0.05
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+
+				air_superiority = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+
+				anti_air = {
+					reference = 5
+					weight = -0.1
+				}
+				interception = {
+					reference = 500
+					weight = -0.2
+				}
+				intel = {
+					weight = 0.2
+					reference = 100
+				}
+
+			}
+			critical = {
+				base = 0.1
+			}
+		}
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 10
+					}
+					raid_add_unit_experience = 0.05
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 5
+					}
+					raid_add_unit_experience = 0.1
+
+					DRV = {
+						add_war_support = -0.02
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 2
+					}
+					raid_add_unit_experience = 0.2
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+					}
+					raid_add_unit_experience = 0.35
+
+					DRV = {
+						add_war_support = 0.05
+						IF = {
+							limit = { has_government = neutrality }
+							add_popularity = {
+								ideology = neutrality
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = communism }
+							add_popularity = {
+								ideology = communism
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = democratic }
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = fascism }
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.1
+							}
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+	JAP_bombing_7 = {
+		days_to_prepare = 30
+		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_other_raid
+		ai_will_do = {
+		    base = 2
+		    modifier = {
+		    	factor = 10
+		    }
+		}
+		command_power = 15
+		allowed = {
+			has_dlc = "Gotterdammerung"
+			original_tag = JAP
+		}
+		fire_only_once = no
+		visible = {
+			has_country_flag = bombing_danang_unlocked
+		}
+		show_target = {
+			has_war_with = DRV
+			1109 = { is_owned_and_controlled_by = DRV }
+		}
+		available = {
+			has_country_flag = infiltration_active_ing
+		}
+		launchable = {
+			has_war_with = DRV
+		}
+		arrow = {
+		    type = air
+		}
+		target_type = {
+			province = 7280
+		}
+		launch_sound = raid_launch_air
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 30}
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.9
+
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0
+					weight = 0.05
+					start_weight = -0.05
+				}
+				reliability = {
+					reference = 1
+					weight = 0.05
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+
+				air_superiority = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+
+				anti_air = {
+					reference = 5
+					weight = -0.1
+				}
+				interception = {
+					reference = 500
+					weight = -0.2
+				}
+				intel = {
+					weight = 0.2
+					reference = 100
+				}
+
+			}
+			critical = {
+				base = 0.1
+			}
+		}
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 10
+					}
+					raid_add_unit_experience = 0.05
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 5
+					}
+					raid_add_unit_experience = 0.1
+
+					DRV = {
+						add_war_support = -0.02
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 2
+					}
+					raid_add_unit_experience = 0.2
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+					}
+					raid_add_unit_experience = 0.35
+
+					DRV = {
+						add_war_support = 0.05
+						IF = {
+							limit = { has_government = neutrality }
+							add_popularity = {
+								ideology = neutrality
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = communism }
+							add_popularity = {
+								ideology = communism
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = democratic }
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = fascism }
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.1
+							}
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+	JAP_bombing_8 = {
+		days_to_prepare = 30
+		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_other_raid
+		ai_will_do = {
+		    base = 2
+		    modifier = {
+		    	factor = 10
+		    }
+		}
+		command_power = 15
+		allowed = {
+			has_dlc = "Gotterdammerung"
+			original_tag = JAP
+		}
+		fire_only_once = no
+		visible = {
+			has_country_flag = bombing_hue_unlocked
+		}
+		show_target = {
+			has_war_with = DRV
+			671 = { is_owned_and_controlled_by = DRV }
+		}
+		available = {
+			has_country_flag = infiltration_active_ing
+		}
+		launchable = {
+			has_war_with = DRV
+		}
+		arrow = {
+		    type = air
+		}
+		target_type = {
+			province = 4379
+		}
+		launch_sound = raid_launch_air
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 30}
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.9
+
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0
+					weight = 0.05
+					start_weight = -0.05
+				}
+				reliability = {
+					reference = 1
+					weight = 0.05
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+
+				air_superiority = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+
+				anti_air = {
+					reference = 5
+					weight = -0.1
+				}
+				interception = {
+					reference = 500
+					weight = -0.2
+				}
+				intel = {
+					weight = 0.2
+					reference = 100
+				}
+
+			}
+			critical = {
+				base = 0.1
+			}
+		}
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 10
+					}
+					raid_add_unit_experience = 0.05
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 5
+					}
+					raid_add_unit_experience = 0.1
+
+					DRV = {
+						add_war_support = -0.02
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 2
+					}
+					raid_add_unit_experience = 0.2
+
+					DRV = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+					}
+					raid_add_unit_experience = 0.35
+
+					DRV = {
+						add_war_support = 0.05
+						IF = {
+							limit = { has_government = neutrality }
+							add_popularity = {
+								ideology = neutrality
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = communism }
+							add_popularity = {
+								ideology = communism
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = democratic }
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.1
+							}
+						}
+						ELSE_IF = {
+							limit = { has_government = fascism }
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.1
+							}
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+}

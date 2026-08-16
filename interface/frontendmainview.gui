@@ -189,7 +189,7 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=50 y =1000}
+		position = { x=50 y =1100}
 		size = { width = 320 height = 215 }
 		Orientation = UPPER_LEFT
 		Origo = LOWER_LEFT		
@@ -199,14 +199,14 @@ guiTypes = {
 			position = { x = 320 y = 563 }
 		}
 				
-		background = {
-			name = "Background"		
-			quadTextureSprite ="GFX_tiled_window"
-		}
+		#background = {
+			#name = "Background"		
+			#quadTextureSprite ="GFX_tiled_window"
+		#}
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 16 y = 18 }
+			position = { x = 10 y = 480 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "dr_font_21"			
 			text = "FE_SINGLE_PLAYER"				
@@ -216,7 +216,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 16 y = 58}
+			position = { x = 390 y = 480}
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "dr_font_21"			
 			text = "FE_MULTI_PLAYER"			
@@ -234,7 +234,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 35 y = 396 }
+			position = { x = 635 y = 480 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -246,13 +246,13 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 35 y = 524 }
+			position = { x = 35 y = -380 }
 		}
 		
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 16 y = 98 }
+			position = { x = 760 y = 480 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "OPTIONS"
 			buttonFont = "dr_font_21"
@@ -262,7 +262,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = 16 y = 138 }
+			position = { x = 1150 y = 480 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "MENU_BAR_CAREER_PROFILE"
 			buttonFont = "dr_font_21"
@@ -279,37 +279,37 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		
-		buttonType = {
-			name = "friends_button"
-			position = { x = 16 y = 178 }
-			quadTextureSprite ="GFX_main_lobby_button"
-			buttonText = "MENU_BAR_FRIENDS"
-			buttonFont = "dr_font_21"
-			clicksound = click_default
-			oversound = ui_menu_over
-		}
+		#buttonType = {
+		#	name = "friends_button"
+		#	position = { x = 16 y = 178 }
+		#	quadTextureSprite ="GFX_main_lobby_button"
+		#	buttonText = "MENU_BAR_FRIENDS"
+		#	buttonFont = "dr_font_21"
+		#	clicksound = click_default
+		#	oversound = ui_menu_over
+		#}
 
-		ButtonType = {
-			name = "credits_button"
-			position = {  x = 16 y = 218 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "FE_CREDITS"
-			buttonFont = "dr_font_21"
-			clicksound = click_default
-			oversound = ui_menu_over
-		}
+		#ButtonType = {
+		#	name = "credits_button"
+		#	position = {  x = 16 y = 218 }
+		#	quadTextureSprite ="GFX_main_lobby_button"	
+		#	buttonText = "FE_CREDITS"
+		#	buttonFont = "dr_font_21"
+		#	clicksound = click_default
+		#	oversound = ui_menu_over
+		#}
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 258 }
+			position = { x = 1316 y =-510 }
 			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "Nudge!"
+			buttonText = "调试"
 			buttonFont = "dr_font_21"
 		}
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 300 }
+			position = { x = 1530 y = 480 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "dr_font_21"			
 			text = "FE_EXIT"			

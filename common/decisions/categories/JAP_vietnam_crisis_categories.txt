@@ -1,0 +1,16 @@
+vietnam_crisis = {
+	icon = GFX_decision_category_antarctica
+	#picture = GFX_decision_cat_picture_chi_political_support
+	visible = {
+		tag = JAP 
+	} 
+	priority = 1000 
+} 
+JAP_vietnam_crisis_decisions = {
+	icon = GFX_decision_category_antarctica
+	picture = GFX_decision_JAP_vietnam_crisis_decisions
+	visible = { 
+		tag = JAP 
+	} 
+	priority = 1000 
+} 

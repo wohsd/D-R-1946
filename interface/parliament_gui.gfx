@@ -22,6 +22,9 @@ spriteTypes = {
 		name = "GFX_SunKe"
 		texturefile = "gfx/interface/pdx_icon/parliament/SunKe.png"
 	}
-
+	spriteType = {
+		name = "GFX_Coalition_government_button"
+		texturefile = "gfx/interface/Coalition_government_button.png"
+	}
 	
 }

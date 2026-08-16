@@ -3,10 +3,10 @@ CHI_parliament_gui_initial = {
 	# Put simply an array stores a list of things, used here to store the list of parties and list of seats.
 
 	# CHI_parliament_seat_array stores the list of seat numbers for each party
-	add_to_array = { CHI_parliament_seat_array = 100  } # Party A
+	add_to_array = { CHI_parliament_seat_array = 10  } # Party A
 	add_to_array = { CHI_parliament_seat_array = 50 } # Party B
 	add_to_array = { CHI_parliament_seat_array = 30 } # Party C 
-	add_to_array = { CHI_parliament_seat_array = 10 } # Party D
+	add_to_array = { CHI_parliament_seat_array = 100 } # Party D
 	add_to_array = { CHI_parliament_seat_array = 10 }
 	# CHI_parliament_member_array stores the list of parties
 	# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
@@ -20,6 +20,31 @@ CHI_parliament_gui_initial = {
 
 	# Modify what shows up in the gui
 	reload_CHI_parliament_gui = yes
+
+	CHI={
+		if = { 
+			limit = { has_government = Revolutionism} 
+			set_variable = { temp_ruling_party_seats = CHI_parliament_seat_array^0 } 
+		} 
+		if = { 
+			limit = { has_government = Reformism } 
+			set_variable = { temp_ruling_party_seats = CHI_parliament_seat_array^1 } 
+		} 
+		if = { 
+			limit = { has_government = Nationalism } 
+			set_variable = { temp_ruling_party_seats = CHI_parliament_seat_array^2 } 
+		} 
+		if = { 
+			limit = { has_government = Liberalism } 
+			set_variable = { temp_ruling_party_seats = CHI_parliament_seat_array^3 } 
+		} 
+		if = { 
+			limit = { has_government = Conservatism } 
+			set_variable = { temp_ruling_party_seats = CHI_parliament_seat_array^4 } 
+		} 
+	}
+    
+ 
 }
 
 # The following scripted effect does the main job of generating the gui, by adding the seats for each party in a grid.

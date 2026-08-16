@@ -1,0 +1,354 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_CGT_map_icon"
+		texturefile = "gfx/interface/textpicture/CGT_map_icon.dds"
+		legacy_lazy_load = no
+	}
+ 
+
+	spriteType = {
+		name = "GFX_Pavel_Milyukov"
+		texturefile = "gfx/interface/textpicture/Portrait_Pavel_Milyukov.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Viktor_Chernov"
+		texturefile = "gfx/interface/textpicture/Portrait_Viktor_Chernov.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Lenin"
+		texturefile = "gfx/interface/textpicture/Portrait_Lenin.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Martov"
+		texturefile = "gfx/interface/textpicture/Portrait_Martov.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Boris_Vasilchikov"
+		texturefile = "gfx/interface/textpicture/Portrait_Boris_Vasilchikov.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Alexei_Feodorovich_Aladjin"
+		texturefile = "gfx/interface/textpicture/Portrait_Alexei_Feodorovich_Aladjin.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Raczkowski_Feliks"
+		texturefile = "gfx/interface/textpicture/portrait_Raczkowski_Feliks.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Alexander_Konovalov"
+		texturefile = "gfx/interface/textpicture/Portrait_Alexander_Konovalov.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Alexander_Guchkov"
+		texturefile = "gfx/interface/textpicture/Portrait_Alexander_Guchkov.tga"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_Shulgin"
+		texturefile = "gfx/interface/textpicture/Portrait_Shulgin.tga"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_Dubrovin"
+		texturefile = "gfx/interface/textpicture/Portrait_Alexander_Ivanovich_Dubrovin.tga"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_Jean_Jaures"
+		texturefile = "gfx/interface/textpicture/Portrait_Jean_Jaures.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Paul_Brousse"
+		texturefile = "gfx/interface/textpicture/Portrait_Paul_Brousse.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Jean_Allemane"
+		texturefile = "gfx/interface/textpicture/Portrait_Jean_Allemane.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_guesde"
+		texturefile = "gfx/interface/textpicture/portrait_guesde.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Marcel_Cachin"
+		texturefile = "gfx/interface/textpicture/portrait_Marcel_Cachin.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Sebastian_Fuhr"
+		texturefile = "gfx/interface/textpicture/Portrait_Sebastian_Fuhr.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Georges_Clemenceau"
+		texturefile = "gfx/interface/textpicture/Portrait_Georges_Clemenceau.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_YingCanHen"
+		texturefile = "gfx/interface/textpicture/Portrait_YingCanHen.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_LiuXiang"
+		texturefile = "gfx/interface/textpicture/Portrait_LiuXiang.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_luozezhou"
+		texturefile = "gfx/interface/textpicture/Portrait_luozezhou.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_DanXinHang"
+		texturefile = "gfx/interface/textpicture/Portrait_DanXinHang.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LiuWengHui"
+		texturefile = "gfx/interface/textpicture/Portrait_LiuWengHui.tga"
+		legacy_lazy_load = no
+	}
+	
+
+
+
+	spriteType = {
+		name = "GFX_Li_HongYuan"
+		texturefile = "gfx/interface/textpicture/portrait_Li_HongYuan.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Song_JiaoRen"
+		texturefile = "gfx/interface/textpicture/portrait_Song_JiaoRen.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LiangQiCao"
+		texturefile = "gfx/interface/textpicture/portrait_LiangQiCao.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_WangJiTang"
+		texturefile = "gfx/interface/textpicture/Portrait_WangJiTang.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ZhangJian"
+		texturefile = "gfx/interface/textpicture/portrait_ZhangJian.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_JiangKangHu"
+		texturefile = "gfx/interface/textpicture/portrait_JiangKangHu.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LiDaZhao"
+		texturefile = "gfx/interface/textpicture/portrait_LiDaZhao.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Huhangming"
+		texturefile = "gfx/interface/textpicture/portrait_Huhangming.tga"
+		legacy_lazy_load = no
+	}     
+	spriteType = {
+		name = "GFX_HuangXing"
+		texturefile = "gfx/interface/textpicture/portrait_HuangXing.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LiaoZhongKai"
+		texturefile = "gfx/interface/textpicture/portrait_LiaoZhongKai.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_YuYouReng"
+		texturefile = "gfx/interface/textpicture/portrait_YuYouReng.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CaiYuanPei"
+		texturefile = "gfx/interface/textpicture/portrait_CaiYuanPei.tga"
+		legacy_lazy_load = no
+	}
+	
+ 
+
+
+	spriteType = {
+		name = "GFX_country_map"
+		texturefile = "gfx/interface/textpicture/country_map.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_country_map_ENL"
+		texturefile = "gfx/interface/textpicture/country_map_ENL.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_country_map_WWS"
+		texturefile = "gfx/interface/textpicture/country_map_WWS.png"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_country_map_JPN"
+		texturefile = "gfx/interface/textpicture/country_map_JPN.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_country_map_AOX"
+		texturefile = "gfx/interface/textpicture/country_map_AOX.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_country_map_SHW"
+		texturefile = "gfx/interface/textpicture/country_map_SHW.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_country_map_SBY"
+		texturefile = "gfx/interface/textpicture/country_map_SBY.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_country_map_TEQ"
+		texturefile = "gfx/interface/textpicture/country_map_TEQ.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_FRW_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/FRW_Country_Introduction.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ENL_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/ENL_Country_Introduction.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_WWS_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/WWS_Country_Introduction.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/JPN_Country_Introduction.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_SHW_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/SHW_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_RMA_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/RMA_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TEQ_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/TEQ_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_europe_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/europe_Country_Introduction.png"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_asia_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/asia_Country_Introduction.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_africa_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/africa_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ROC_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/ROC_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_south_america_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/south_america_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_north_america_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/north_america_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_australia_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/australia_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_middle_east_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/middle_east_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	
+	
+
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_Taxation_private_factories"
+		texturefile = "gfx/interface/textpicture/Taxation_private_factories.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Taxation_private_Agricultural"
+		texturefile = "gfx/interface/textpicture/Taxation_private_Agricultural.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Factory_repairs"
+		texturefile = "gfx/interface/textpicture/Factory_repairs.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_factory_tot_profits"
+		texturefile = "gfx/interface/textpicture/factory_tot_profits.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_military_spend"
+		texturefile = "gfx/interface/textpicture/military_spend.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_people_cost"
+		texturefile = "gfx/interface/textpicture/people_cost.png"
+		legacy_lazy_load = no
+	}
+	
+}

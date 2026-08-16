@@ -17,20 +17,39 @@ guiTypes = {
 	containerWindowType = {
         name = "CHI_parliament_gui_container"
         position = { x = 550 y = 90 }
-		size = { width = 700 height = 600 }
+		 size = { width = 1320 height = 700 } 
 
 		background = {
-			name = "Background"
+			name = "Background" 
 			quadTextureSprite ="GFX_tiled_window2_1b_border"
 		}
+		instantTextboxType = {
+			name = "All_parliament_member_text"
+			position = { x = 507 y = 360 }
+			font = "dr_font_21" 
+			maxWidth = 300
+			maxHeight = 16
+			format = center
+			text = "[?temp_ruling_party_seats]/200" 
+		}
+		 instantTextBoxType = {  
+            name = "CHI_GovernmentStatus" 
+            position = { x = 455 y = 300 }
+            font = "dr_font_21" 
+            text = "[CHIGetGovernmentStatus]" 
+            format = center 
+            maxWidth = 400 
+            maxHeight = 30
+            pdx_tooltip = "CHI_GovernmentStatus_tt" 
+        }
 		iconType = {
 			name = "parliament_leader" 	 
-			position = { x =520 y = 376 } 
+			position = { x =1120 y = 376 } 
 			pdx_tooltip = parliament_leader_tt
 		}  
 		instantTextBoxType = {
 			name = "parliament_leader_title"
-			position = { x =388 y = 383 } 
+			position = { x =988 y = 383 } 
 			font = "dr_font_21"
 			text = "parliament_leader_title"
 			maxWidth = 400
@@ -38,8 +57,17 @@ guiTypes = {
 			format = center 
 		}
 		instantTextBoxType = {
+			name = "parliament_seats_title"
+			position =  { x = 457 y = 335 } 
+			font = "dr_font_16"
+			text = "parliament_seats_title"
+			maxWidth = 400
+			maxHeight = 24
+			format = center 
+		}
+		instantTextBoxType = {
 			name = "semicircle_CHI_parliament_gui_title"
-			position = { x = 150 y = 30 }
+			position = { x = 455 y = 20 }
 			font = "dr_font_21" 
 			text = "semicircle_parliament_gui_title" 
 			maxWidth = 400
@@ -55,7 +83,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "CHI_parliament_semicircle_main_grid"
-				position = { x = 20 y = 0 }
+				position = { x = 325 y = 0 }
 				size = { width = 1 height = 1 }
 				slotsize = { width = 29 height = 0 }
 				max_slots_horizontal = 0 
@@ -67,7 +95,7 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "CHI_parliament_member_grid"
-			position = { x = -330 y = 405 }
+			position = { x = -920 y = 405 }
 			size = { width = 100%% height = 100%% }
 			slotsize = { width = 200 height = 35 } 
 			max_slots_vertical = 10
@@ -115,5 +143,8 @@ guiTypes = {
 			text = "CHI_parliament_member_text"
 			pdx_tooltip = "CHI_parliament_seat_desc_text"
 		}
+
+
+		
     }
 }

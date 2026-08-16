@@ -12,6 +12,8 @@ characters = {
 			desc = JAP_Yasuo_Kanemitsu_desc
 			expire = "2000.1.1.1"
 			traits = {
+				imperialist_diplomat
+				seiyukai_centrist
 			}
 			id = -1
 		}
@@ -296,6 +298,227 @@ characters = {
 				financial_expert
 			}
 			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+JAP_Tojo_Hideki = {
+name = JAP_Tojo_Hideki
+portraits = {
+civilian = {
+large = "gfx/leaders/JAP/JAP_Tojo_Hideki.png"
+}
+}
+corps_commander = {
+skill = 5
+attack_skill = 5
+defense_skill = 5
+planning_skill = 4
+logistics_skill = 4
+traits = {
+infantry_expert
+}
+}
+}
+
+JAP_Kono_Jun = {
+name = JAP_Kono_Jun
+portraits = {
+civilian = {
+large = "gfx/leaders/JAP/JAP_Kono_Jun.png"
+}
+}
+corps_commander = {
+skill = 4
+attack_skill = 4
+defense_skill = 4
+planning_skill = 3
+logistics_skill = 3
+traits = {
+career_officer
+}
+}
+}
+
+JAP_Obata_Toshiro = {
+name = JAP_Obata_Toshiro
+portraits = {
+civilian = {
+large = "gfx/leaders/JAP/JAP_Obata_Toshiro.png"
+}
+}
+corps_commander = {
+skill = 3
+attack_skill = 3
+defense_skill = 3
+planning_skill = 4
+logistics_skill = 2
+traits = {
+career_officer
+}
+}
+}
+
+JAP_Isogai_Rensuke = {
+		name = JAP_Isogai_Rensuke
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Isogai_Rensuke.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			traits = {
+				infantry_expert
+			}
+		}
+	}
+
+	JAP_Ishibashi_Tanzan = {
+		name = JAP_Ishibashi_Tanzan
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Ishibashi_Tanzan.png"
+				large = "gfx/leaders/JAP/JAP_Ishibashi_Tanzan.png"
+			}
+		}
+		country_leader = {
+			ideology = Classical_Liberalism
+			desc = JAP_Ishibashi_Tanzan_desc
+			expire = "2000.1.1.1"
+			traits = {
+				production_expert
+			}
+			id = -1
+		}
+	}
+
+	JAP_Matsushita_Konosuke = {
+		name = JAP_Matsushita_Konosuke
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Matsushita_Konosuke.png"
+				large = "gfx/leaders/JAP/JAP_Matsushita_Konosuke.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = Matsushita_Konosuke
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	JAP_Honda_Soichiro = {
+		name = JAP_Honda_Soichiro
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Honda_Soichiro.png"
+				large = "gfx/leaders/JAP/JAP_Honda_Soichiro.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = Honda_Soichiro
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	JAP_Ibuka_Masaru = {
+		name = JAP_Ibuka_Masaru
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Ibuka_Masaru.png"
+				large = "gfx/leaders/JAP/JAP_Ibuka_Masaru.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = Ibuka_Masaru
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	JAP_Morita_Akio = {
+		name = JAP_Morita_Akio
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Morita_Akio.png"
+				large = "gfx/leaders/JAP/JAP_Morita_Akio.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = Morita_Akio
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+				electronics_expert
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	JAP_Inamori_Kazuo = {
+		name = JAP_Inamori_Kazuo
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Inamori_Kazuo.png"
+				large = "gfx/leaders/JAP/JAP_Inamori_Kazuo.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = Inamori_Kazuo
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			}
+			traits = {
+			}
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -606,4 +829,104 @@ characters = {
 		}
 	}
 
+	JAP_Hidetsugu_Yagi = {
+		name = JAP_Hidetsugu_Yagi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Hidetsugu_Yagi.png"
+				large = "gfx/leaders/JAP/JAP_Hidetsugu_Yagi.png"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_engineering_specialist scientist_trait_methodical }
+			skills = {
+				specialization_engineering = 2
+			}
+		}
+	}
+
+	JAP_Yoshio_Nishina = {
+		name = JAP_Yoshio_Nishina
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Yoshio_Nishina.png"
+				large = "gfx/leaders/JAP/JAP_Yoshio_Nishina.png"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+
+	JAP_Hideo_Itokawa = {
+		name = JAP_Hideo_Itokawa
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Hideo_Itokawa.png"
+				large = "gfx/leaders/JAP/JAP_Hideo_Itokawa.png"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist scientist_trait_determined }
+			skills = {
+				specialization_rocketry = 2
+			}
+		}
+	}
+
+	JAP_Hideo_Shima = {
+		name = JAP_Hideo_Shima
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Hideo_Shima.png"
+				large = "gfx/leaders/JAP/JAP_Hideo_Shima.png"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_engineering_specialist scientist_trait_methodical }
+			skills = {
+				specialization_engineering = 2
+			}
+		}
+	}
+
+	JAP_Hideki_Yukawa = {
+		name = JAP_Hideki_Yukawa
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/JAP_Hideki_Yukawa.png"
+				large = "gfx/leaders/JAP/JAP_Hideki_Yukawa.png"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_theoretical_specialist scientist_trait_brilliant }
+			skills = {
+				specialization_theoretical = 2
+			}
+		}
+	}
+
+	JAP_Takao_Saito = {
+		name = JAP_Takao_Saito
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Takao_Saito.png"
+			}
+		}
+		country_leader = {
+			ideology = Constitutionalism
+			desc = JAP_Takao_Saito_desc
+			expire = "2000.1.1.1"
+			traits = {
+				constitutional_god
+				vietnam_war_premier
+			}
+			id = -1
+		}
+	}
+
 }
+

@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿l_simp_chinese:
+﻿l_simp_chinese:
 iron_fist:0 "铁腕"
 iron_fist_desc:0 "该领导者具有铁腕统治风格，能够有效镇压内部反对势力。"
 prince_of_terror:0 "恐怖亲王"
@@ -23,3 +23,9 @@ iron_financed:0 "铁腕财政"
 iron_financed_desc:0 "该领导者精通财政与金融事务。"
 infantry_expert:0 "步兵专家"
 infantry_expert_desc:0 "该领导者是步兵战术专家。"
+imperialist_diplomat:0 "帝国主义外交者"
+imperialist_diplomat_desc:0 "积极拓展日本帝国的影响力。"
+seiyukai_centrist:0 "政友会中立派"
+seiyukai_centrist_desc:0 "致力于维护党内团结与国家稳定。"
+constitutional_god:0 "有待考量的宪政之神"
+vietnam_war_premier:0 "越南战争时代的首相"

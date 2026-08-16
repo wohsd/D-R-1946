@@ -44,4 +44,14 @@ spriteTypes = {
 		texturefile = "gfx\interface\pdx_icon\Seiyukai_logo.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_Club_Affiliation_logo"
+		texturefile = "gfx\interface\pdx_icon\Club_Affiliation_logo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Club_Affiliation"
+		texturefile = "gfx\interface\pdx_icon\Club_Affiliation.png"
+		legacy_lazy_load = no
+	}
 }   

@@ -94,3 +94,30 @@
  Chen_Agriculture_effect:0"§H抗灾§!力度：§H+10§!"
 
  Zuo_Agriculture_effect:0"§H地主§!满意度：§H+10§!"
+
+# ====================================
+# 日本政体改革决议
+# ====================================
+
+JAP_political_reform_category_NAME:0 "政体改革"
+JAP_political_reform_category_DESC:0 "政体改革决议允许我们通过合法的政治程序改变国家的基本政治体制。每一种政体都有其独特的优势和挑战，选择合适的政体对于国家的发展至关重要。"
+
+JAP_establish_constitutionalism:0 "确立宪政体制"
+JAP_establish_constitutionalism_desc:0 "宪政体制是现代国家的基石，通过宪法限制政府权力，保障公民权利。我们将建立一个遵循宪法、权力分立的政治体制。\n\n§Y前置条件§!：\n- 需要宪政主义政党成为多数\n- 消耗：100政治点数\n\n§Y效果§!：\n- 改变执政党为宪政主义\n- 开启选举\n- 宪政主义支持率+15%\n- 稳定度+5%\n- 获得50政治点数"
+JAP_establish_constitutionalism_effect_tooltip:0 "宪政体制已确立，国家将遵循宪法运作"
+
+JAP_military_junta:0 "军部执政"
+JAP_military_junta_desc:0 "军队是国家稳定的基石。在当前复杂的国际形势下，由军部接管政权将确保国家安全。\n\n§Y前置条件§!：\n- 需要法西斯主义政党成为多数\n- 陆军规模>50\n- 消耗：100政治点数\n\n§Y效果§!：\n- 改变执政党为法西斯主义\n- 禁止选举\n- 法西斯主义支持率+10%\n- 战争支持度+15%"
+JAP_military_junta_effect_tooltip:0 "军部已接管政权，国家进入军管状态"
+
+JAP_establish_democracy:0 "建立民主体制"
+JAP_establish_democracy_desc:0 "民主是人民的选择。通过建立多党制选举制度，让人民决定国家的未来。\n\n§Y前置条件§!：\n- 需要社会民主主义政党成为多数\n- 稳定度>50%\n- 消耗：150政治点数\n\n§Y效果§!：\n- 改变执政党为社会民主主义\n- 开启选举（48个月一次）\n- 社会民主主义支持率+20%\n- 稳定度+10%"
+JAP_establish_democracy_effect_tooltip:0 "民主体制已建立，国家将实行多党选举"
+
+JAP_restore_imperial_rule:0 "恢复帝政"
+JAP_restore_imperial_rule_desc:0 "天皇制是日本的传统政治体制。恢复帝政将加强国家统一，恢复传统秩序。\n\n§Y前置条件§!：\n- 需要威权保守主义政党成为多数\n- 消耗：120政治点数\n\n§Y效果§!：\n- 改变执政党为威权保守主义\n- 禁止选举\n- 威权保守主义支持率+15%\n- 稳定度+8%"
+JAP_restore_imperial_rule_effect_tooltip:0 "帝政已恢复，天皇将重新掌握国家最高权力"
+
+JAP_revolutionary_government:0 "建立革命政权"
+JAP_revolutionary_government_desc:0 "革命是历史的推动力。通过建立革命政权，彻底改变旧的社会制度，建设新日本。\n\n§Y前置条件§!：\n- 需要共产主义政党成为多数\n- 完成相关国策\n- 消耗：100政治点数\n\n§Y效果§!：\n- 改变执政党为共产主义\n- 禁止选举\n- 共产主义支持率+25%\n- 战争支持度+10%"
+JAP_revolutionary_government_effect_tooltip:0 "革命政权已建立，日本将走向社会主义道路"

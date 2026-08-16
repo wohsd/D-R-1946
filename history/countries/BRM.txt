@@ -1,4 +1,4 @@
-﻿capital = 995
+capital = 995
 
 #oob = "AOX_1920"
 
@@ -8,6 +8,7 @@ set_technology = {
 }
 
 recruit_character = BRM_Ba_Maw
+recruit_character = BRM_Aung_San
 
 set_politics = {
 	ruling_party = Conservatism

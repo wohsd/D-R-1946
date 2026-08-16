@@ -1,0 +1,79 @@
+# ====================================
+# 政体改革决议
+# ====================================
+
+JAP_political_reform = {
+
+    # ====================================
+    # 决议1：确立体制
+    # ====================================
+    
+    JAP_establish_constitutionalism = {
+        icon = GFX_decision_generic_political_reform
+        priority = 50
+        fire_only_once = yes
+        
+        available = {
+        }
+        
+        visible = {
+        }
+        
+        cost = 100
+        
+        complete_effect = {
+            promote_character = {
+                character = JAP_Takao_Saito
+                ideology = Constitutionalism
+            }
+        }
+        
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = { has_government = { ideology = Constitutionalism majority = yes } }
+            }
+        }
+    }
+
+    # ====================================
+    # 决议2：军部执政
+    # ====================================
+    
+    JAP_military_junta = {
+        icon = GFX_decision_generic_military
+        priority = 49
+        fire_only_once = yes
+        
+        available = {
+        }
+        
+        visible = {
+        }
+        
+        cost = 100
+        
+        complete_effect = {
+            set_country_flag = military_junta_established
+            set_politics = {
+                ruling_party = Fascism
+                elections_allowed = no
+            }
+            add_popularity = {
+                ideology = Fascism
+                popularity = 0.10
+            }
+            add_war_support = 0.15
+            custom_effect_tooltip = JAP_military_junta_effect_tooltip
+        }
+        
+        ai_will_do = {
+            factor = 0.8
+            modifier = {
+                factor = 0
+                NOT = { has_government = { ideology = Fascism majority = yes } }
+            }
+        }
+    }
+ }

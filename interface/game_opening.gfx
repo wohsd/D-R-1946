@@ -1,0 +1,30 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_kai_jv_jie_shao_bian_kuang"
+		texturefile = "gfx/interface/game_opening/背景.png"
+	}
+	
+	textSpriteType = {
+		name = "GFX_main_lobby_button_slot"
+		textureFile = "gfx/interface/main_lobby_button_slot.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_Opening_Introduction_back"
+		texturefile = "gfx/interface/game_opening/Opening_Introduction.png"
+	}
+	
+	spriteType = {
+		name = "GFX_JAP_Country_Introduction"
+		texturefile = "gfx/interface/game_opening/JAP_Country_Introduction.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_Country_Introduction"
+		texturefile = "gfx/interface/game_opening/CHI_Country_Introduction.png"
+		legacy_lazy_load = no
+	}
+}

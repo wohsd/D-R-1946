@@ -246,6 +246,7 @@ ideologies = {
 			Co-Big-tent = {}
 			comprador-conservatism = {}
 			progressive-conservatism = {}
+			Constitutionalism = {}
 		}
 		
 		dynamic_faction_names = {

@@ -13,5 +13,19 @@ characters = {
 			id = -1
 		}
 	}
+	BRM_Aung_San = {
+		name = BRM_Aung_San
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRM/BRM_Aung_San.png"
+			}
+		}
+		country_leader = {
+			ideology = National_Populism
+			desc = BRM_Aung_San_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }
 	

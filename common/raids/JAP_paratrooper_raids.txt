@@ -1,0 +1,241 @@
+types = {
+	JAP_paratrooper_raid = {
+		days_to_prepare = 90
+		category = paratrooper_raids
+		ai_will_do = {
+			base = 0.5 # Don't plan these unless you have nothing better to do
+			modifier = {
+				# Don't target anyone who is not a potential enemy
+				factor = 0 
+			}
+		}
+		command_power = 25 # command power allocation cost
+
+		allowed = {
+			has_dlc = "Gotterdammerung"
+			original_tag = JAP
+		}
+		# Raid Type is visible
+		visible = {
+			#has_tech = paratroopers
+			1113={
+				is_controlled_by=DRV	
+			}
+			
+		}
+		# Specific Target is visible
+		show_target = {
+			#NOT = {
+			#	is_in_faction_with = FROM
+			#}
+		}
+
+		# Can prepare
+		available = {
+			has_country_flag = infiltration_active_ing
+		}
+		launchable = {
+			has_war_with = DRV
+		}
+		unit_requirements = {
+			battalion_types = {
+				paratrooper = { min = 3 }
+			}
+		}
+		essential_equipment = {
+			transport_plane_equipment = 10
+		}
+		additional_equipment = {
+			# list of equipment archetypes and numbers
+			support_equipment = 200
+		}
+
+		target_type = {
+			province = 19091
+		}
+		target_icon = GFX_mine_target_icon
+		launch_sound = raid_launch_paratrooper
+		arrow = {
+		    type = air
+		}
+        unit_model = {
+            equipment = air_transport
+        }
+
+		starting_point = {
+			types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.6
+
+				# Raiding unit modifiers
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 0.5
+				}
+
+				organisation = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 100
+				}
+				strength = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1
+				}
+				recon = {
+					weight = 0.05
+					reference = 10
+				}
+
+				### Target Modifiers
+
+				resistance = {
+					reference = 100
+					start_reference = 20 # Resistance below 20 doesn't help
+					weight = 0.4
+				}
+				air_superiority = {
+					reference = 1
+					weight = 0.25
+					start_weight = -0.25
+				}
+
+
+				anti_air = {
+					reference = 5
+					weight = -0.2
+				}
+				interception = {
+					reference = 500 # More than 500 fighters won't really make any difference
+					weight = -0.2
+				}
+				enemy_units = {
+					reference = 2 # More than 2 DIVs in the target Province shouldn't make any difference
+					weight = -0.5
+				}
+				intel = {
+					weight = 0.2
+					#start_reference = 50
+					reference = 100
+				}
+			}
+
+			critical = {
+				base = 0.15
+			}
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+					DRV = {
+						add_stability=-0.1
+					}
+			    }
+				actor_effects = {
+					# Damage to unit
+					raid_damage_units = {
+						org_damage = 30
+						str_damage = 10
+					}
+
+					# Unit Experience
+					raid_add_unit_experience = 0.05
+                    add_raid_history_entry = yes
+
+				}
+				# Other unit effects
+				division_effects = {
+					add_divisional_commander_xp = 50
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+					}
+			}
+			limited_success = {
+			    victim_effects = {
+					DRV = {
+						add_stability = -0.1
+					}
+			    }
+				actor_effects = {
+					# Damage to unit
+					raid_damage_units = {
+						org_damage = 20
+						str_damage = 5
+					}
+
+					# Unit Experience
+					raid_add_unit_experience = 0.1
+                    add_raid_history_entry = yes
+				}
+				division_effects = {
+					add_divisional_commander_xp = 100
+				}
+				visual_effect = {
+					entity = "air_raids_paradrop_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					DRV = {
+						add_stability=-0.1
+					}
+			    }
+				actor_effects = {
+					# Damage to unit
+					raid_damage_units = {
+						org_damage = 20
+						str_damage = 0.5
+					}
+
+					# Unit Experience
+					raid_add_unit_experience = 0.2
+                    add_raid_history_entry = yes
+				}
+				# Other unit effects
+				division_effects = {
+					add_divisional_commander_xp = 250
+				}
+				visual_effect = {
+					entity = "air_raids_paradrop_success_entity"
+					animation = "attack"
+					}
+			}
+			critical_success = {
+			    victim_effects = {
+					DRV = {
+						add_stability=-0.1
+					}
+			    }
+				actor_effects = {
+					# Damage to unit
+					raid_damage_units = {
+						org_damage = 10
+						str_damage = 0
+					}
+
+
+					# Unit Experience
+					raid_add_unit_experience = 0.35
+                    add_raid_history_entry = yes
+				}
+				# Other unit effects
+				division_effects = {
+					add_divisional_commander_xp = 500
+				}
+				visual_effect = {
+					entity = "air_raids_paradrop_critical_success_entity"
+					animation = "attack"
+					}
+			}
+		}
+	}
+	}

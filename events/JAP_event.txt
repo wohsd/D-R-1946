@@ -1,4 +1,4 @@
-﻿
+
 add_namespace = JAP_countryevent
 
 
@@ -103,5 +103,241 @@ country_event = {
 	option = {
 		name = JAP_countryevent.6.b
 		# 6为最后一个事件，此处无后续country_event触发，可自行添加效果
+	}
+}
+
+
+# ====================================
+# 越南危机事件
+# ====================================
+add_namespace = JAP.vietnam_crisis
+
+# 事件1：加急生产完成
+country_event = {
+	id = JAP.vietnam_crisis.1
+	title = JAP.vietnam_crisis.1.t
+	desc = JAP.vietnam_crisis.1.d
+	picture = GFX_event_japan_pacific_war
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	immediate = {
+		clr_country_flag = urgent_bomber_production_active
+		add_consumer_goods_factor = -0.10
+		add_variable = { bombers_available = 5 }
+		if = {
+			limit = {
+				check_variable = { which = bombers_available value > 100 }
+			}
+			set_variable = { bombers_available = 100 }
+		}
+	}
+	
+	option = {
+		name = JAP.vietnam_crisis.1.a
+	}
+}
+
+# 事件2：越南危机开始
+country_event = {
+	id = JAP.vietnam_crisis.2
+	title = JAP.vietnam_crisis.2.t
+	desc = JAP.vietnam_crisis.2.d
+	picture = GFX_event_japan_pacific_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		set_country_flag = vietnam_crisis_active
+		set_variable = { bombers_available = 100 }
+	}
+	
+	option = {
+		name = JAP.vietnam_crisis.2.a
+	}
+}
+
+# 事件3：大藏省的紧急报告
+country_event = {
+	id = JAP.vietnam_crisis.3
+	title = JAP.vietnam_crisis.3.t
+	desc = JAP.vietnam_crisis.3.d
+	picture = GFX_event_japan_pacific_war
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		has_country_flag = vietnam_crisis_active
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+		modifier = {
+			factor = 0.5
+			has_country_flag = vietnam_crisis_active
+		}
+	}
+	
+	option = {
+		name = JAP.vietnam_crisis.3.a
+		add_political_power = -25
+		add_consumer_goods_factor = -0.10
+		add_military_factory = 2
+		set_country_flag = finance_emergency_a
+	}
+}
+
+# 事件4：众议院危机
+country_event = {
+	id = JAP.vietnam_crisis.4
+	title = JAP.vietnam_crisis.4.t
+	desc = JAP.vietnam_crisis.4.d
+	picture = GFX_event_japan_imperial_diet
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		has_country_flag = vietnam_crisis_active
+	}
+	
+	mean_time_to_happen = {
+		days = 180
+		modifier = {
+			factor = 0.6
+			has_country_flag = finance_emergency_b
+		}
+		modifier = {
+			factor = 0.4
+			has_country_flag = finance_emergency_c
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = finance_emergency_a
+		}
+	}
+	
+	option = {
+		name = JAP.vietnam_crisis.4.a
+		add_political_power = -50
+		add_stability = -0.15
+		add_war_support = 0.10
+		set_country_flag = diet_dissolved
+	}
+}
+
+# ====================================
+# 政党介绍事件
+# ====================================
+add_namespace = JAP.political_parties
+
+# 立宪政友会介绍
+country_event = {
+	id = JAP.political_parties.1
+	title = JAP.political_parties.1.t
+	desc = JAP.political_parties.1.d
+	picture = GFX_event_japan_imperial_diet
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = JAP.political_parties.1.a
+	}
+}
+
+# 立宪民政党介绍
+country_event = {
+	id = JAP.political_parties.2
+	title = JAP.political_parties.2.t
+	desc = JAP.political_parties.2.d
+	picture = GFX_event_japan_imperial_diet
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = JAP.political_parties.2.a
+	}
+}
+
+# 国民协力党介绍
+country_event = {
+	id = JAP.political_parties.3
+	title = JAP.political_parties.3.t
+	desc = JAP.political_parties.3.d
+	picture = GFX_event_japan_imperial_diet
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = JAP.political_parties.3.a
+	}
+}
+
+# 社会大众党介绍
+country_event = {
+	id = JAP.political_parties.4
+	title = JAP.political_parties.4.t
+	desc = JAP.political_parties.4.d
+	picture = GFX_event_japan_imperial_diet
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = JAP.political_parties.4.a
+	}
+}
+
+# 金光与鸠山的会谈
+country_event = {
+	id = JAP.political_parties.5
+	title = JAP.political_parties.5.t
+	desc = JAP.political_parties.5.d
+	picture = GFX_event_japan_imperial_diet
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = JAP.political_parties.5.a
+	}
+}
+
+# 川崎克隐退，大麻唯男登台亮相
+country_event = {
+	id = JAP.political_parties.6
+	title = JAP.political_parties.6.t
+	desc = JAP.political_parties.6.d
+	picture = GFX_event_japan_imperial_diet
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = JAP.political_parties.6.a
+	}
+}
+
+# 南洋特别大本营成立
+country_event = {
+	id = JAP.political_parties.7
+	title = JAP.political_parties.7.t
+	desc = JAP.political_parties.7.d
+	picture = GFX_event_japan_pacific_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = JAP.political_parties.7.a
+	}
+}
+
+# 众议院的胜利
+country_event = {
+	id = JAP.political_parties.8
+	title = JAP.political_parties.8.t
+	desc = JAP.political_parties.8.d
+	picture = GFX_event_japan_imperial_diet
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = JAP.political_parties.8.a
 	}
 }

@@ -23,6 +23,17 @@
 		light_tank_recon = { x = 0 y = 2 }
 	}
 }
+division_template = { 						
+	name = "义烈空挺队"	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+	}
+}
+
 
 division_template = {
 	name = "日本帝国装甲师"
@@ -65,7 +76,12 @@ division_template = {
 }
 
 units = {
-
+	division = {	
+		name = "义烈空挺队"
+		location = 4100
+		division_template = "义烈空挺队"
+		start_experience_factor = 0.5
+	}
 	##### Oberkommando des Heeres #####
 
 	### 1. Armee (Wehrmacht-Gruppenkommando) ###

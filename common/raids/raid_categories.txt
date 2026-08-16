@@ -1,0 +1,37 @@
+categories = {
+
+	air_raids = {
+	    visible = { has_dlc = "Gotterdammerung" }
+	    intel_source = air
+	}
+	
+
+	paratrooper_raids = {
+	    intel_source = air
+	    visible = { has_dlc = "Gotterdammerung" }
+		available = {
+		    has_tech = tech_rangers
+		}
+	}
+
+	nuclear_raids = {
+	    intel_source = air
+	    free_targeting = yes
+
+	    available = {
+			has_country_flag = TFR_sword_of_damocles_flag
+	    }
+	}
+
+	land_infiltration_raids = {
+	    intel_source = army
+	    visible = {
+	    	has_dlc = "No Compromise, No Surrender"
+		    original_tag = PRC
+	    }
+		available = {
+
+		}
+	}
+
+}
