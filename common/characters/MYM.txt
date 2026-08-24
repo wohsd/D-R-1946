@@ -1,4 +1,16 @@
-characters={
-
-	
+characters = {
+	MYM_Aung_San = {
+		name = MYM_Aung_San
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MYM/MYM_Aung_San.png"
+			}
+		}
+		country_leader = {
+			ideology = progressive-sanmin
+			desc = MYM_Aung_San_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }

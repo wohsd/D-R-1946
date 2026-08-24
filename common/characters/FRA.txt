@@ -48,4 +48,19 @@ characters = {
 			id = -1
 		}
 	}
+
+	FRA_Henrid_Orleans = {
+		name = FRA_Henrid_Orleans
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Henrid_Orleans.png"
+			}
+		}
+		country_leader = {
+			ideology = Authoritarian_Conservatism
+			desc = FRA_Henrid_Orleans_desc
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
 }

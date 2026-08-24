@@ -416,12 +416,15 @@ JAP_Nationalism_party_long:0 "国协党"
 ENG_Liberalism_party:0 "英国自由党"
 ENG_Liberalism_party_long:0 "英国自由党"
 
-CHI_sanmin-reformism_party:0 "中国国民党"
-CHI_sanmin-reformism_party_long:0 "国民党中左派"
+CHI_sanmin-reformism:0 "中国国民党"
+CHI_sanmin-reformism_long:0 "国民党中左派"
+
+BRM_Liberalism:0 "缅甸国民党"
+BRM_Liberalism_long:0 "缅甸国民党"
 
 
 USA_Liberalism_party:0 "美国民主党"
 USA_Liberalism_party_long:0 "美国民主党"
 
-USA_Progressive_Liberalism:0 "新政联盟"
-USA_Progressive_Liberalism_long:0 "新政联盟"
+USA_Progressive_Liberalism_party:0 "新政联盟"
+USA_Progressive_Liberalism_party_long:0 "新政联盟"

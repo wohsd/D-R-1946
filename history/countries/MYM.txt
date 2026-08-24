@@ -1,3 +1,4 @@
+
 capital = 998
 #首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
@@ -14,7 +15,7 @@ set_stability = 0.7
 set_war_support = 0.7
 #设置战争支持度
 
-
+recruit_character = MYM_Aung_San
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
