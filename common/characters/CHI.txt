@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = progressive-sanmin
+			ideology = Liao_Thought
 			desc = CHI_TangPingShang_desc
 			expire = "2000.1.1.1"
 			id = -1
