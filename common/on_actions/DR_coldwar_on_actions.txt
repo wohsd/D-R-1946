@@ -1,0 +1,15 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			coldwar_calc_scores = yes
+			coldwar_generate_rankings = yes
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			coldwar_calc_scores = yes
+			coldwar_generate_rankings = yes
+		}
+	}
+}

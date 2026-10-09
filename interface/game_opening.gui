@@ -125,7 +125,7 @@ fixedsize=no
 	}
 	containerWindowType = {
 		name = "lu_xian_jie_shao_win"
-		position = { x = -280 y = 25 }
+		position = { x = -480 y = 5 }
 		size = { width = 710 height = 660 }
 		orientation = UPPER_RIGHT
 		clipping = yes
@@ -135,8 +135,8 @@ fixedsize=no
 			position = { x = 10 y = 125 }
 			font = "dr_font_16"
 			text = "[lx_zhi_nan]" 
-			maxWidth = 400
-			maxHeight = 660
+			maxWidth = 600
+			maxHeight = 543
 			scrollbartype = "standardtext_slider" #滑轮
 		}
 	}

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_DR_coldwar_scoreboard_button"
+		texturefile = "gfx/interface/DR_coldwar_scoreboard_button.png"
+	}
+}

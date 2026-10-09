@@ -1,5 +1,5 @@
 state = {
-	id = 1027
+	id = 1070
 	name = "PRINCESS_ASTRID_COAST"
 	manpower = 1
 	
@@ -11,7 +11,7 @@ state = {
 	}
 
 	provinces={
-		16402 17636 17661 17669 17695 17742 17806
+		16402 17636 17669 17695 17742 17806
 	}
 
 	local_supplies=0.0 

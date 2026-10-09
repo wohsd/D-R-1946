@@ -1,0 +1,322 @@
+guiTypes = {
+	# 入口按钮（挂在政治界面）
+	containerWindowType = {
+		name = "DR_coldwar_scoreboard_button_container"
+		position = { x = 20 y = 435 }
+		size = { width = 70 height = 70 }
+
+		buttonType = {
+			name = "DR_coldwar_scoreboard_open_button"
+			spriteType = "GFX_DR_coldwar_scoreboard_button"
+			position = { x = 0 y = 0 }
+			oversound = ui_menu_over
+			pdx_tooltip = coldwar_scoreboard_button_tt
+		}
+	}
+
+	# 主窗口
+	containerWindowType = {
+		name = "DR_coldwar_scoreboard_window"
+		position = { x = 420 y = 80 }
+		size = { width = 620 height = 720 }
+		moveable = yes
+		fade_time = 300
+		fade_type = linear
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window2_1b_border"
+		}
+
+		# 标题
+		instantTextBoxType = {
+			name = "coldwar_scoreboard_title"
+			position = { x = 210 y = 12 }
+			font = "dr_font_21"
+			text = "coldwar_scoreboard_title_key"
+			maxWidth = 200
+			maxHeight = 25
+			format = center
+		}
+
+		# 关闭按钮
+		buttonType = {
+			name = "DR_coldwar_scoreboard_close_button"
+			quadTextureSprite = "GFX_closebutton"
+			position = { x = 585 y = 12 }
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+			pdx_tooltip = "CLOSE"
+		}
+
+		# ===== 阵营总览条 =====
+		containerWindowType = {
+			name = "cw_bloc_box_democratic"
+			position = { x = 20 y = 48 }
+			size = { width = 135 height = 60 }
+			background = {
+				name = "bg"
+				spriteType = "GFX_generic_box_96"
+			}
+			instantTextBoxType = {
+				name = "cw_bloc_label_democratic"
+				position = { x = 5 y = 4 }
+				font = "dr_font_16"
+				text = "cw_bloc_democratic"
+				maxWidth = 125
+				maxHeight = 20
+				format = center
+			}
+			instantTextBoxType = {
+				name = "cw_bloc_value_democratic"
+				position = { x = 5 y = 30 }
+				font = "hoi_18mbs"
+				text = "[?global.cw_total_democratic]"
+				maxWidth = 125
+				maxHeight = 24
+				format = center
+			}
+		}
+
+		containerWindowType = {
+			name = "cw_bloc_box_communism"
+			position = { x = 170 y = 48 }
+			size = { width = 135 height = 60 }
+			background = {
+				name = "bg"
+				spriteType = "GFX_generic_box_96"
+			}
+			instantTextBoxType = {
+				name = "cw_bloc_label_communism"
+				position = { x = 5 y = 4 }
+				font = "dr_font_16"
+				text = "cw_bloc_communism"
+				maxWidth = 125
+				maxHeight = 20
+				format = center
+			}
+			instantTextBoxType = {
+				name = "cw_bloc_value_communism"
+				position = { x = 5 y = 30 }
+				font = "hoi_18mbs"
+				text = "[?global.cw_total_communism]"
+				maxWidth = 125
+				maxHeight = 24
+				format = center
+			}
+		}
+
+		containerWindowType = {
+			name = "cw_bloc_box_fascism"
+			position = { x = 320 y = 48 }
+			size = { width = 135 height = 60 }
+			background = {
+				name = "bg"
+				spriteType = "GFX_generic_box_96"
+			}
+			instantTextBoxType = {
+				name = "cw_bloc_label_fascism"
+				position = { x = 5 y = 4 }
+				font = "dr_font_16"
+				text = "cw_bloc_fascism"
+				maxWidth = 125
+				maxHeight = 20
+				format = center
+			}
+			instantTextBoxType = {
+				name = "cw_bloc_value_fascism"
+				position = { x = 5 y = 30 }
+				font = "hoi_18mbs"
+				text = "[?global.cw_total_fascism]"
+				maxWidth = 125
+				maxHeight = 24
+				format = center
+			}
+		}
+
+		containerWindowType = {
+			name = "cw_bloc_box_neutrality"
+			position = { x = 470 y = 48 }
+			size = { width = 135 height = 60 }
+			background = {
+				name = "bg"
+				spriteType = "GFX_generic_box_96"
+			}
+			instantTextBoxType = {
+				name = "cw_bloc_label_neutrality"
+				position = { x = 5 y = 4 }
+				font = "dr_font_16"
+				text = "cw_bloc_neutrality"
+				maxWidth = 125
+				maxHeight = 20
+				format = center
+			}
+			instantTextBoxType = {
+				name = "cw_bloc_value_neutrality"
+				position = { x = 5 y = 30 }
+				font = "hoi_18mbs"
+				text = "[?global.cw_total_neutrality]"
+				maxWidth = 125
+				maxHeight = 24
+				format = center
+			}
+		}
+
+		# ===== 表头 =====
+		instantTextBoxType = {
+			name = "cw_header_rank"
+			position = { x = 30 y = 120 }
+			font = "dr_font_16"
+			text = "cw_header_rank"
+			maxWidth = 50
+			maxHeight = 20
+			format = left
+		}
+		instantTextBoxType = {
+			name = "cw_header_country"
+			position = { x = 90 y = 120 }
+			font = "dr_font_16"
+			text = "cw_header_country"
+			maxWidth = 200
+			maxHeight = 20
+			format = left
+		}
+		instantTextBoxType = {
+			name = "cw_header_camp"
+			position = { x = 310 y = 120 }
+			font = "dr_font_16"
+			text = "cw_header_camp"
+			maxWidth = 130
+			maxHeight = 20
+			format = left
+		}
+		instantTextBoxType = {
+			name = "cw_header_score"
+			position = { x = 450 y = 120 }
+			font = "dr_font_16"
+			text = "cw_header_score"
+			maxWidth = 130
+			maxHeight = 20
+			format = right
+		}
+
+		# ===== 排行榜（滚动列表） =====
+		containerWindowType = {
+			name = "DR_coldwar_list_container"
+			position = { x = 20 y = 145 }
+			size = { width = 580 height = 435 }
+			clipping = yes
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 5 left = 0 bottom = 5 right = 0 }
+			background = {
+				name = "list_bg"
+				spriteType = "GFX_tiled_paper_bg2"
+			}
+
+			gridboxtype = {
+				name = "DR_coldwar_score_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 560 height = 420 }
+				slotsize = { width = 560 height = 28 }
+				max_slots_horizontal = 1
+				max_slots_vertical = 200
+				add_horizontal = no
+			}
+		}
+
+		# ===== 本国信息栏 =====
+		containerWindowType = {
+			name = "DR_coldwar_player_panel"
+			position = { x = 20 y = 595 }
+			size = { width = 580 height = 105 }
+			background = {
+				name = "player_bg"
+				quadTextureSprite = "GFX_tiled_window2_1b_border"
+			}
+
+			iconType = {
+				name = "cw_player_flag"
+				quadTextureSprite = "GFX_flag_medium"
+				position = { x = 15 y = 20 }
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "cw_player_name"
+				position = { x = 75 y = 15 }
+				font = "dr_font_21"
+				text = "[?ROOT.GetName]"
+				maxWidth = 300
+				maxHeight = 24
+				format = left
+			}
+			instantTextBoxType = {
+				name = "cw_player_rank"
+				position = { x = 75 y = 48 }
+				font = "dr_font_16"
+				text = "cw_your_rank"
+				maxWidth = 300
+				maxHeight = 22
+				format = left
+			}
+			instantTextBoxType = {
+				name = "cw_player_score"
+				position = { x = 330 y = 48 }
+				font = "dr_font_16"
+				text = "cw_your_score"
+				maxWidth = 230
+				maxHeight = 22
+				format = left
+			}
+		}
+	}
+
+	# ===== 列表条目模板 =====
+	containerWindowType = {
+		name = "DR_coldwar_score_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 560 height = 26 }
+
+		instantTextBoxType = {
+			name = "cw_entry_rank"
+			position = { x = 10 y = 2 }
+			font = "dr_font_16"
+			text = "[?THIS.cw_ranking]"
+			maxWidth = 45
+			maxHeight = 22
+			format = left
+		}
+		iconType = {
+			name = "cw_entry_flag"
+			quadTextureSprite = "GFX_flag_small"
+			position = { x = 52 y = 2 }
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "cw_entry_name"
+			position = { x = 92 y = 2 }
+			font = "dr_font_16"
+			text = "[?THIS.GetName]"
+			maxWidth = 210
+			maxHeight = 22
+			format = left
+		}
+		instantTextBoxType = {
+			name = "cw_entry_camp"
+			position = { x = 310 y = 2 }
+			font = "dr_font_16"
+			text = "[GetColdWarCamp]"
+			maxWidth = 130
+			maxHeight = 22
+			format = left
+		}
+		instantTextBoxType = {
+			name = "cw_entry_score"
+			position = { x = 445 y = 2 }
+			font = "dr_font_16"
+			text = "[?THIS.cw_score]"
+			maxWidth = 110
+			maxHeight = 22
+			format = right
+		}
+	}
+}

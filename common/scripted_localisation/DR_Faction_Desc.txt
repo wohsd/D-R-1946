@@ -86,3 +86,24 @@ text = {
 }
 }
 }
+
+# 冷战积分榜 - 阵营判定
+defined_text = {
+	name = GetColdWarCamp
+	text = {
+		localization_key = cw_camp_democratic
+		trigger = { has_government = democratic }
+	}
+	text = {
+		localization_key = cw_camp_communism
+		trigger = { has_government = communism }
+	}
+	text = {
+		localization_key = cw_camp_fascism
+		trigger = { has_government = fascism }
+	}
+	text = {
+		localization_key = cw_camp_neutrality
+		trigger = { has_government = neutrality }
+	}
+}

@@ -9,3 +9,9 @@ CHI_Agriculture = {
 	}          
 	priority = 2    
 }                         
+
+dr_manpower_category = {
+	icon = GFX_decision_category_antarctica
+	picture=GFX_decision_cat_picture_chi_political_support
+	priority = 2    
+}                         
