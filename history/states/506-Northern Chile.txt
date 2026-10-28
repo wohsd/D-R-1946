@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = BOL
-		add_core_of = BOL
+		owner = PRU
+		add_core_of = PRU
 
 		buildings = {
 			infrastructure = 3
@@ -20,18 +20,26 @@ state = {
 			dockyard = 1
 			air_base = 1
 			12994 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
 		
 		victory_points = {
-			12994 10
+			12994 9
+		}
+		
+		victory_points = {
+			14877 2
+		}
+		victory_points = {
+			13301 2
 		}
 
 	}
 
 	provinces = {
-		5146 5171 8231 12914 12994 13301 13302 13304 14860 14861 14862 14863 14864 14870 14871 14872 14873 14874 14876 14877 14878 17523 
+		5146  8231 12914 12994 13301 13302 13304 14863 14864  14872 14873 14874 14876 14877 14878 17523 
+		 
 	}
 
 	local_supplies = 0.0 

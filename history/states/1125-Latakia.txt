@@ -1,0 +1,31 @@
+state = { #Population Done
+	id = 1125
+	name = "STATE_1125"
+	manpower = 500656
+	state_category = town
+	history = {
+		victory_points = { 1088 10 }
+		
+		victory_points = {
+			10087 2
+		}
+		victory_points = {
+			14683 1
+		}
+		owner = ISR
+		buildings = {
+			infrastructure = 2
+			dockyard = 2
+			1088 = {
+				naval_base = 2
+			}
+		}
+
+		add_core_of = SYR
+
+	}
+
+	provinces = {
+		1088 7140  5528 10087 14683
+	}
+}

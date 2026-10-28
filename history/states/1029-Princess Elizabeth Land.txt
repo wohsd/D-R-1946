@@ -7,17 +7,7 @@ state = {
 
 	history={
 		owner = RUS
-		buildings = {
-			17786 = {
-				naval_base = 1
-			}
-			17808 = {
-				naval_base = 1
-			}
-			17814 = {
-				naval_base = 1
-			}
-		}
+		
 	}
 
 	provinces={

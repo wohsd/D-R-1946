@@ -13,19 +13,23 @@ state={
 
 
 	history={
-		owner = USA
+		owner = NMX
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = USA
-		victory_points = {
-			4975 1
+		add_core_of = NMX
+		victory_points = { # Albuquerque
+			4975 15
+		}
+		victory_points = { # Santa Fe
+			12684 16
 		}
 	}
 
 	provinces={
-		1972 2102 3867 3883 4975 5044 8070 10642 10645 10867 10914 12552 12684 12720 12791 17300 
+		1972  3867 3883 4975 5044 8070 10642 10645 10914 12552 12684  12791 17300 
+		 
 	}
 	
 

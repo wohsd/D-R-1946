@@ -18,16 +18,12 @@ state = {
 			778 1 # Annecy
 		}
 
-		victory_points = {
-			9909 5 # Nice
-		}
+		
 
 		buildings = {
 			infrastructure = 2
 
-			9909 = {
-				naval_base = 2
-			}	
+			
 
 			# Tignes Dam
 			#9745 = { dam = 1 }
@@ -37,7 +33,8 @@ state = {
 	}
 
 	provinces = {
-		778 3764 6609 6975 9603 9745 9909 11573 14639 17994 17995 
+		778  6609  9603 9745  11573  17994
+		
 	}
 	
 	buildings_max_level_factor = 1.000

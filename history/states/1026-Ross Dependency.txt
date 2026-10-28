@@ -7,20 +7,7 @@ state = {
 
 	history={
 		owner = ZZZ
-		buildings = {
-			17791 = {
-				naval_base = 1
-			}
-			17802 = {
-				naval_base = 1
-			}
-			16451 = {
-				naval_base = 1
-			}
-			19947 = {
-				naval_base = 1
-			}
-		}
+		
 
 	}
 

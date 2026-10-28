@@ -12,7 +12,7 @@ state={
 			7290 = {
 				naval_base = 1
 			}
-			#
+			
 			19969 = {
 				naval_base = 1
 			}
@@ -25,7 +25,7 @@ state={
 		}
 	}
 	provinces={
-		7290 19960 19969 19980 
+		7290 19960 19969 19980 13080
 	}
 
 	local_supplies=0.0 

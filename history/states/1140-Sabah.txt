@@ -1,0 +1,38 @@
+state = {
+	id = 1140
+	name = "STATE_1140"
+
+	resources = {
+		rubber = 16
+		oil = 12
+	}
+
+	history = {
+		owner = PHI
+		buildings = {
+			infrastructure = 3
+
+			10212 = {
+				naval_base = 1
+			}
+			10199 = {
+				naval_base = 1
+			}
+		}
+		victory_points = { 10212 5 }
+		victory_points = {
+			10199 1
+		}
+		add_core_of = PHI
+		add_core_of = SAB
+
+	}
+
+	provinces = {
+		19252 10212 19345 7358 10143 10199 12186 19262 4282 19275 1306 10240 19317 12228 12171 19340 1335 4338
+	}
+	manpower = 478815
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

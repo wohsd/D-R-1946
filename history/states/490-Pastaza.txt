@@ -7,7 +7,7 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = PRU #Used to be PRU but should become theirs through the Peruvian-Ecuadorian War
+		owner = COL 
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -18,12 +18,11 @@ state = {
 			13289 2
 		}
 
-		add_core_of = PRU
-		add_core_of = ECU
+		add_core_of = COL
 	}
 
 	provinces = {
-		8149 10942 13289 13290 15456 15464 
+		8149 10942 13289 13290 15456 15464 13291 12869
 	}
 
 	local_supplies = 6.0 

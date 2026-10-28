@@ -6,29 +6,21 @@ state={
 	}
 
 	history={
-		owner = INS
-		add_core_of = INS
+		owner = EIS
+		add_core_of = EIS
 		buildings = {
 			infrastructure = 2
-			1355 = {
-				naval_base = 1
-
-			}
-			10175 = {
-				naval_base = 1
-
-			}
-			12234 = {
-				naval_base = 1
-
-			}
+			
+			
+			
 
 		}
 
 	}
 
 	provinces={
-		1298 1339 1355 4273 4301 4358 7293 7321 10175 10191 10219 12151 12162 12219 12234 19297 19326 19351 
+		   4273   7293   10191   12162   19297 19326  
+		          
 	}
 	manpower=3460200
 	buildings_max_level_factor=1

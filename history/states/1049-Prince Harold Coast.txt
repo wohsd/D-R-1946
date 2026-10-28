@@ -1,6 +1,6 @@
 state={
 	id=1049
-	name="PRINCE_HARALD_COAST"
+	name="East_QUEEN_MAUD_LAND"
 	manpower=1
 	state_category = wasteland
 	
@@ -10,7 +10,7 @@ state={
 	}
 	
 	provinces={
-		16431 17713 17748 17785 17804
+		17712 17760
 	}
 
 	local_supplies=0.0 

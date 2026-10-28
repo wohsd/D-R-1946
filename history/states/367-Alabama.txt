@@ -7,31 +7,26 @@ state={
 	state_category = city
 
 	history={
-		owner = USA
+		owner = AMS
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 3
-			7480 = {
-				naval_base = 3
-			}
+			
 		}
-		add_core_of = USA
+		add_core_of = AMS
+		
 		victory_points = {
-			7480 1 
+			12735 20
 		}
-		victory_points = {
-			12735 1 
+		victory_points = { # Tuscaloosa
+			1587 3
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
+		
 
 	}
 
 	provinces={
-		492 860 1587 4594 4622 4756 5059 7422 7480 7640 10192 10520 11509 11942 12735 12803 17303
+		1587 4594  5059 7422  10192 11509  12735 12803 17303 7464 10753 4510 11717 12328 8110 17304
 	}
 
 	local_supplies=0.0 

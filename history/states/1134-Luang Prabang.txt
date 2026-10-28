@@ -1,0 +1,25 @@
+state = {
+	id = 1134
+	name = "STATE_1134"
+
+	resources = {
+		rubber = 6
+	}
+
+	history = {
+		owner = SIA
+		add_core_of = SIA
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 10496 1 }
+	}
+
+	provinces = {
+		10496 7103 19037 4613 7075 10330 10356 10456 4568 12392 12433 19059 7218
+	}
+	manpower = 500000
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

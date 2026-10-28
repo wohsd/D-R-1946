@@ -7,12 +7,10 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = FRF
+		owner = ALG
 		add_core_of = FRF
 		set_demilitarized_zone = yes
-		victory_points = {
-			12034 1 
-		}
+		
 		buildings = {
 			infrastructure = 1
 		}

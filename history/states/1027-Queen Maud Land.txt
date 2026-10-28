@@ -1,23 +1,13 @@
 state = {
 	id = 1027
-	name = "QUEEN_MAUD_LAND"
+	name = "PRINCESS_ASTRID_COAST"
 	manpower = 10
 	
 	state_category = wasteland
 
 	history={
 		owner = ZZZ
-		buildings = {
-			17804 = {
-				naval_base = 1
-			}
-			17799 = {
-				naval_base = 1
-			}
-			17742 = {
-				naval_base = 1
-			}
-		}
+		
 	}
 
 	provinces={

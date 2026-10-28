@@ -1,0 +1,30 @@
+state = {
+	id = 1121
+	name = "STATE_1121"
+	resources = {
+		tungsten = 2.000
+		oil = 4
+	}
+
+	history = {
+		owner = GER
+		victory_points = {
+			9692 10
+		}
+		
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			synthetic_refinery = 1
+		}
+		add_core_of = GER
+	}
+
+	provinces = {
+		9692
+	}
+	manpower = 194225
+	buildings_max_level_factor = 1.000
+	state_category = city
+	local_supplies = 0.000
+}
