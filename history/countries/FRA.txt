@@ -9,6 +9,7 @@ set_technology = {
 recruit_character = FRA_Michel_Clemenceau
 recruit_character = FRA_Paul_Ramadier
 recruit_character = FRA_Joseph_Laniel
+recruit_character = FRA_Henrid_Orleans
 
 
 set_politics = {

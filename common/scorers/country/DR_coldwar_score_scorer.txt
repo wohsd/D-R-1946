@@ -1,0 +1,11 @@
+coldwar_score_scorer = {
+	targets = {
+		target_array = global.cw_countries
+		score = {
+			base = 0
+			modifier = {
+				add = cw_score
+			}
+		}
+	}
+}

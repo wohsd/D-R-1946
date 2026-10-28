@@ -1,0 +1,46 @@
+scripted_gui = {
+	# 入口按钮（政治界面）
+	DR_coldwar_scoreboard_button = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "DR_coldwar_scoreboard_button_container"
+		visible = {
+		}
+		effects = {
+			DR_coldwar_scoreboard_open_button_click = {
+				coldwar_calc_scores = yes
+				coldwar_generate_rankings = yes
+				set_country_flag = coldwar_scoreboard_open
+			}
+		}
+	}
+
+	# 主窗口
+	DR_coldwar_scoreboard_main = {
+		context_type = player_context
+		window_name = "DR_coldwar_scoreboard_window"
+		visible = {
+			has_country_flag = coldwar_scoreboard_open
+		}
+		properties = {
+			cw_entry_flag = {
+				image = "[This.GetFlag]"
+			}
+			cw_player_flag = {
+				image = "[ROOT.GetFlag]"
+			}
+		}
+		dynamic_lists = {
+			DR_coldwar_score_grid = {
+				array = global.cw_countries
+				change_scope = yes
+				entry_container = DR_coldwar_score_entry
+			}
+		}
+		effects = {
+			DR_coldwar_scoreboard_close_button_click = {
+				clr_country_flag = coldwar_scoreboard_open
+			}
+		}
+	}
+}

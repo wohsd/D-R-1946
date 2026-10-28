@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+  DR_home_gdp_graph_title:0 "本国国内生产总值（GDP）走势图（单位：十亿）"
+  DR_home_gdp_legend:0 "[?ROOT.GetFlag][?ROOT.GetName]  §G[?income|0]§!"
+  DR_home_gdp_ranking_tt:0 "打开GDP/工厂排行榜"
+  DR_home_gdp_open_tt:0 "查看本国GDP走势图"
