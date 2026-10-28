@@ -18,7 +18,7 @@ news_event = {
         elections_allowed = no
    		 }
 		promote_character = {
-			character = BRM_Aung_San
+			character = MYM_Aung_San
 			ideology = National_Populism
 		}
 	}

@@ -1,0 +1,172 @@
+# ====================================
+# 冷战积分榜 - 综合国力积分计算
+# 设计思路：质量优先，避免单纯靠人口与工厂数量碾压
+#   A 军事工业   军工x6 / 船坞x5 / 民工x2(潜力非战力，权重低)
+#   B 现役军力   陆军营/10 / 海军分舰种加权 / 飞机/50
+#   C 科技核武   已研科技x2 / 科研槽x20 / 拥核+150
+#   D 人口潜力   总人口(千)/1500(大幅衰减，仅作基础潜力)
+#   E 国际影响   核心州x1 / 傀儡国x5 / 阵营领袖+50
+# ====================================
+coldwar_calc_scores = {
+	every_country = {
+		set_variable = { cw_score = 0 }
+
+		# ===== A. 军事工业 =====
+		# 军工厂 x6
+		set_variable = { cw_mil_fac = num_of_military_factories }
+		multiply_variable = { cw_mil_fac = 6 }
+		add_to_variable = { cw_score = cw_mil_fac }
+
+		# 海军船坞 x5
+		set_variable = { cw_navy_fac = num_of_naval_factories }
+		multiply_variable = { cw_navy_fac = 5 }
+		add_to_variable = { cw_score = cw_navy_fac }
+
+		# 民用工厂 x2（经济潜力，权重压低）
+		set_variable = { cw_civ_fac = num_of_civilian_factories }
+		multiply_variable = { cw_civ_fac = 2 }
+		add_to_variable = { cw_score = cw_civ_fac }
+
+		# ===== B. 现役武装力量 =====
+		# 陆军营总数 /10
+		set_variable = { cw_army = num_battalions }
+		divide_variable = { cw_army = 10 }
+		add_to_variable = { cw_score = cw_army }
+
+		# 海军（按舰种加权：航母/主力舰高分，辅助舰低分）
+		set_variable = { cw_navy = 0 }
+		add_to_variable = { cw_navy = num_ships_with_type@carrier }
+		multiply_variable = { cw_navy = 2 }
+		set_variable = { cw_navy_tmp = num_ships_with_type@battleship }
+		multiply_variable = { cw_navy_tmp = 1.5 }
+		add_to_variable = { cw_navy = cw_navy_tmp }
+		set_variable = { cw_navy_tmp = num_ships_with_type@battle_cruiser }
+		multiply_variable = { cw_navy_tmp = 1.5 }
+		add_to_variable = { cw_navy = cw_navy_tmp }
+		set_variable = { cw_navy_tmp = num_ships_with_type@heavy_cruiser }
+		multiply_variable = { cw_navy_tmp = 1 }
+		add_to_variable = { cw_navy = cw_navy_tmp }
+		set_variable = { cw_navy_tmp = num_ships_with_type@light_cruiser }
+		multiply_variable = { cw_navy_tmp = 0.7 }
+		add_to_variable = { cw_navy = cw_navy_tmp }
+		set_variable = { cw_navy_tmp = num_ships_with_type@destroyer }
+		multiply_variable = { cw_navy_tmp = 0.3 }
+		add_to_variable = { cw_navy = cw_navy_tmp }
+		set_variable = { cw_navy_tmp = num_ships_with_type@submarine }
+		multiply_variable = { cw_navy_tmp = 0.15 }
+		add_to_variable = { cw_navy = cw_navy_tmp }
+		add_to_variable = { cw_score = cw_navy }
+
+		# 部署的飞机 /50
+		set_variable = { cw_air = num_deployed_planes }
+		divide_variable = { cw_air = 50 }
+		add_to_variable = { cw_score = cw_air }
+
+		# ===== C. 科技与核武（质量代差） =====
+		# 已研究科技 x2
+		set_variable = { cw_tech = num_researched_technologies }
+		multiply_variable = { cw_tech = 2 }
+		add_to_variable = { cw_score = cw_tech }
+
+		# 科研槽 x20（长期研发潜力）
+		set_variable = { cw_slot = num_research_slots }
+		multiply_variable = { cw_slot = 20 }
+		add_to_variable = { cw_score = cw_slot }
+
+		# 拥核国家固定 +150（核威慑）
+		if = {
+			limit = { has_nuclear_bomb = yes }
+			add_to_variable = { cw_score = 150 }
+		}
+
+		# ===== D. 人口潜力（大幅衰减，防止体量大国无脑登顶） =====
+		set_variable = { cw_pop = 0 }
+		every_owned_state = {
+			add_to_variable = { PREV.cw_pop = state_population_k }
+		}
+		divide_variable = { cw_pop = 1500 }
+		add_to_variable = { cw_score = cw_pop }
+
+		# ===== E. 国际影响力 =====
+		# 拥有的核心州 x1
+		set_variable = { cw_cores = 0 }
+		every_owned_state = {
+			if = {
+				limit = { is_core_of = PREV }
+				add_to_variable = { PREV.cw_cores = 1 }
+			}
+		}
+		add_to_variable = { cw_score = cw_cores }
+
+		# 傀儡/附属国 x5
+		set_variable = { cw_subjects = 0 }
+		every_subject = {
+			add_to_variable = { PREV.cw_subjects = 1 }
+		}
+		multiply_variable = { cw_subjects = 5 }
+		add_to_variable = { cw_score = cw_subjects }
+
+		# 阵营领袖 +50
+		if = {
+			limit = { is_faction_leader = yes }
+			add_to_variable = { cw_score = 50 }
+		}
+
+		round_variable = cw_score
+	}
+}
+
+# ====================================
+# 冷战积分榜 - 阵营汇总与名次排序
+# ====================================
+coldwar_generate_rankings = {
+	# 初始化四大阵营总分
+	set_variable = { global.cw_total_democratic = 0 }
+	set_variable = { global.cw_total_communism = 0 }
+	set_variable = { global.cw_total_fascism = 0 }
+	set_variable = { global.cw_total_neutrality = 0 }
+
+	# 按执政党意识形态累加阵营总分
+	every_country = {
+		if = {
+			limit = { has_government = democratic }
+			add_to_variable = { global.cw_total_democratic = cw_score }
+		}
+		if = {
+			limit = { has_government = communism }
+			add_to_variable = { global.cw_total_communism = cw_score }
+		}
+		if = {
+			limit = { has_government = fascism }
+			add_to_variable = { global.cw_total_fascism = cw_score }
+		}
+		if = {
+			limit = { has_government = neutrality }
+			add_to_variable = { global.cw_total_neutrality = cw_score }
+		}
+	}
+
+	# 建立排序用的国家数组
+	clear_array = global.cw_countries
+	every_country = {
+		add_to_array = {
+			global.cw_countries = THIS
+		}
+	}
+	get_sorted_scored_countries = {
+		scorer = coldwar_score_scorer
+		array = global.cw_countries
+	}
+
+	# 写入每个国家的名次
+	for_each_scope_loop = {
+		array = global.cw_countries
+		add_to_variable = {
+			global.cw_countries_index = 1
+		}
+		set_variable = {
+			cw_ranking = global.cw_countries_index
+		}
+	}
+	clear_variable = global.cw_countries_index
+}
