@@ -1,0 +1,26 @@
+state = {
+	id = 1126
+	name = "STATE_1126"
+
+	history = {
+		owner = OMA
+		buildings = {
+			infrastructure = 3
+			7272 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = OMA
+		add_core_of = RAJ
+
+		victory_points = { 7272 1 }
+
+	}
+
+	provinces = {
+		7272
+	}
+	manpower = 7356
+	buildings_max_level_factor = 1.000
+	state_category = enclave
+}

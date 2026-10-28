@@ -13,15 +13,18 @@ state={
 
 
 	history={
-		owner = USA
+		owner = AMS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = USA
+		add_core_of = AMS
+		victory_points = { # Oklahoma City
+			10798 15
+		}
 		victory_points = {
-			1806 1 
+			1806 10
 		}
 
 		1939.1.1 = {
@@ -33,7 +36,7 @@ state={
 	}
 
 	provinces={
-		1618 1806 2043 4919 5103 6803 7762 7904 7945 8025 9822 10702 10798 11743 11802 12624 
+		1618 1806 2043 4919 5103 6803 7762 7904 7945 8025 9822 10702 10798 11743 11802  
 	}
 
 	local_supplies=0.0 

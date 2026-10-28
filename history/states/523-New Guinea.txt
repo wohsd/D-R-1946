@@ -6,7 +6,7 @@ state = {
 	state_category = "rural"
 
 	history = {
-
+		add_core_of = WPA
 		add_core_of = PNG
 		owner = AST
 

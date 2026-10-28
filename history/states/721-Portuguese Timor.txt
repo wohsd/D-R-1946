@@ -7,14 +7,15 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = INS
-		add_core_of = INS
+		owner = JAP
+		add_core_of = TML
 		buildings = {
 			infrastructure = 2
 			12190 ={
-				naval_base = 1
+				naval_base = 4
 			}
 		}
+		victory_points = { 12190 1 }
 	}
 
 	provinces={

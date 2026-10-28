@@ -20,7 +20,7 @@ set_war_support = 0.7
 set_politics = {
 	ruling_party = Liberalism
 	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
-	last_election = 1919.1.1
+	last_election = 1945.1.1
 	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
 	#选举间隔（48为默认）

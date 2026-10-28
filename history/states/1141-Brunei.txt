@@ -1,0 +1,35 @@
+state = {
+	id = 1141
+	name = "STATE_1141"
+
+	resources = {
+		oil = 42
+	}
+
+	history = {
+		owner = BRN
+		add_core_of = BRN
+		
+			victory_points = {
+			7371 5
+		}
+		buildings = {
+			infrastructure = 3
+
+			19234 = {
+				naval_base = 4
+			}
+			7371 = {
+				naval_base = 3
+			}
+		}
+
+	}
+
+	provinces = {
+		7371 7387 10269 19206 10285 8091 19204 19234
+	}
+	manpower = 156211
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

@@ -10066,7 +10066,7 @@
 10065;131;141;44;land;true;plains;6
 10066;131;141;99;land;false;plains;6
 10067;131;141;149;land;false;desert;5
-10068;131;144;9;land;true;urban;6
+10068;131;144;9;land;false;urban;6
 10069;131;144;64;land;true;hills;6
 10070;131;144;214;land;true;plains;5
 10071;131;147;29;land;false;jungle;5
@@ -10267,7 +10267,7 @@
 10266;132;144;19;land;false;jungle;6
 10267;132;144;169;land;true;marsh;6
 10268;132;144;224;land;false;desert;6
-10269;132;147;84;land;false;mountain;6
+10269;132;147;84;land;true;mountain;6
 10270;132;147;134;land;false;plains;6
 10271;132;147;189;land;true;forest;2
 10272;132;150;49;land;true;jungle;6
@@ -13374,9 +13374,9 @@
 13373;61;157;23;land;false;hills;5
 13374;29;68;13;land;true;mountain;7
 13375;82;191;40;land;false;forest;1
-13376;22;39;15;land;true;urban;5
-13377;62;116;41;land;true;mountain;5
-13378;57;99;40;land;true;jungle;5
+13376;22;39;15;land;false;urban;5
+13377;62;116;41;land;false;mountain;5
+13378;57;99;40;land;false;jungle;5
 13379;61;112;41;land;false;mountain;5
 13380;145;160;139;land;false;desert;5
 13381;96;128;84;land;false;desert;5
@@ -14697,7 +14697,7 @@
 14696;96;64;140;land;true;jungle;6
 14697;140;64;96;land;true;jungle;6
 14698;140;64;140;land;false;jungle;6
-14699;140;64;250;land;false;jungle;6
+14699;140;64;250;land;true;jungle;6
 14700;250;64;96;land;true;jungle;6
 14701;250;64;250;land;false;jungle;6
 14702;250;64;140;land;true;plains;6
@@ -14737,7 +14737,7 @@
 14736;20;165;245;land;true;hills;6
 14737;70;110;175;land;true;plains;6
 14738;100;110;175;land;true;plains;6
-14739;180;210;175;land;false;hills;6
+14739;180;210;175;land;true;hills;6
 14740;80;210;175;land;false;forest;6
 14741;175;126;179;land;false;mountain;6
 14742;165;153;200;land;false;mountain;6
@@ -19204,7 +19204,7 @@
 19203;51;217;243;land;true;mountain;6
 19204;192;161;251;land;false;forest;6
 19205;244;211;253;land;true;mountain;6
-19206;198;205;255;land;false;forest;6
+19206;198;205;255;land;true;forest;6
 19207;252;219;190;land;false;mountain;6
 19208;232;254;227;land;true;jungle;6
 19209;140;112;228;land;true;plains;6

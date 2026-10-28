@@ -23,9 +23,7 @@ state = {
 			air_base = 3
 		}
 
-		victory_points = {
-			9692 10 # Bratislava
-		}
+		
 
 		victory_points = {
 			11539 5 # Zilina
@@ -40,7 +38,7 @@ state = {
 	}
 
 	provinces = {
-		541 3484 3537 9539 9551 9692 11522 11539 13129 15669 18151 
+		541 3484 3537 9539 9551  11522 11539 13129 15669 18151 
 	}
 
 	local_supplies = 3.0 

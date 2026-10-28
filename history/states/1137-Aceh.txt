@@ -1,0 +1,35 @@
+state = {
+	id = 1137
+	name = "STATE_1137"
+	resources = {
+		rubber = 6
+		oil = 16
+		steel = 4
+	}
+
+	history = {
+		owner = ACE
+		add_core_of = ACE
+		victory_points = {
+			7658 5
+		}
+		buildings = {
+			synthetic_refinery = 1
+			infrastructure = 5
+			radar_station = 2
+			air_base = 1
+			7658 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces = {
+		7658 12488 19327 19349 10509 19205  19322 19309 8360 19331 19209 15695 15670
+	}
+	manpower = 1628982
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

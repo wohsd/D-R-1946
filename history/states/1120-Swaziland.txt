@@ -1,0 +1,25 @@
+state = {
+	id = 1120
+	name = "STATE_1120"
+
+	history = {
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+		victory_points = {
+			7900 1
+		}
+
+
+	}
+
+	provinces = {
+		7900 17832 17835
+	}
+	manpower = 349000
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

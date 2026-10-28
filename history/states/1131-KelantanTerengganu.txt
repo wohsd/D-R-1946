@@ -1,0 +1,33 @@
+state = {
+	id = 1131
+	name = "STATE_1131"
+	resources = {
+		rubber = 8
+	}
+
+	history = {
+		owner = SIA
+		add_core_of = MAL
+		buildings = {
+			infrastructure = 3
+			12199 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			7329 5
+		}
+		victory_points = {
+			12199 5
+		}
+
+	}
+
+	provinces = {
+		1348 7329 10227 12199 4355 19026
+	}
+	manpower = 900677
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

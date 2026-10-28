@@ -8,12 +8,15 @@ state={
 
 	history={
 		owner = ALG
-		add_core_of = ALG
+		add_core_of = FRF
 		victory_points = {
 			7081 1 
 		}
 		victory_points = {
 			12051 3 
+		}
+		victory_points = {
+			12034 1 
 		}
 		buildings = {
 			infrastructure = 2

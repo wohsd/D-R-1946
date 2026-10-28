@@ -1,0 +1,27 @@
+state = {
+	id = 1127
+	name = "STATE_1127"
+	manpower = 12908
+	state_category = small_island
+
+	history = {
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+
+			radar_station = 4
+			13050 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			13050 1
+		}
+		set_state_flag = GDP_category_rural
+	}
+	provinces = {
+		13050
+	}
+}

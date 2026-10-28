@@ -10,10 +10,10 @@ state={
 
 
 	history= {
-		owner = INS
-		add_core_of = INS
+		owner = EIS
+		add_core_of = EIS
 		victory_points = {
-			10263 3 
+			10263 20
 		}
 
 		buildings = {
@@ -26,7 +26,8 @@ state={
 				naval_base = 1
 			}
 			10263 = {
-				naval_base = 3
+				naval_base = 6
+				bunker = 4
 			}
 		}
 	}

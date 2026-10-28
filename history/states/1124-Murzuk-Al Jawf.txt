@@ -1,0 +1,24 @@
+state = {
+	id = 1124
+	name = "STATE_1124"
+
+	
+
+	history = {
+		owner = EGY
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_core_of = LBA
+		add_core_of = EGY
+
+	}
+
+	provinces = {
+		1060 1140 7076 14359 1057 4191 14337 
+	}
+	manpower = 33082
+	buildings_max_level_factor = 1.000
+	state_category = wasteland
+}

@@ -6,9 +6,9 @@ state = {
 	
 	history = {
 
-		owner = USA
+		owner = CHL
 
-		add_core_of = RAP
+		add_core_of = CHL
 
 		buildings = {
 			infrastructure = 1

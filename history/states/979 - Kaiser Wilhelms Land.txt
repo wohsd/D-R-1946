@@ -7,7 +7,8 @@ state = {
 
 	history = {
 
-		add_core_of = WPG
+		add_core_of = WPA
+		add_core_of = PNG
 		owner = JAP
 
 		buildings = {

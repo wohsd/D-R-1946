@@ -7,25 +7,29 @@ state={
 	state_category = city
 
 	history={
-		owner = USA
+		owner = AMS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 3
 			air_base = 8
-			12381 = {
-				naval_base = 2
-			}
 			1843 = {
 				naval_base = 5
 			}
 			7388 = {
 				naval_base = 3
 			}
-			10352 = {
-				naval_base = 1
+			17299 = {
+				naval_base = 2
 			}
+			
 		}
-		add_core_of = USA
+		add_core_of = AMS
+		victory_points = { # Jacksonville
+			12381 15
+		}
+		victory_points = { # Daytona Beach——st.augustine
+			17299 3
+		}
 		victory_points = {
 			1843 5 
 		}
@@ -33,7 +37,7 @@ state={
 	}
 
 	provinces={
-		866 1556 1572 1584 1843 1913 4272 7388 9834 10352 10380 10407 10489 12353 12381 12439 12752 15277 17301 17299 17288 17289
+		866 1556 1572 1584 1843 1913 4272 7388 9834  10407 10489 12353 12381 12439 12752 15277 17301 17299 17288 17289
 	}
 	
 

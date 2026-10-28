@@ -1,10 +1,12 @@
 state={
 	id=738
 	name="STATE_738"
-
+	resources = {
+		oil = 4
+	}
 	history={
-		owner = INS
-		add_core_of = INS
+		owner = JAP
+		add_core_of = TML
 		buildings = {
 			infrastructure = 1
 
@@ -19,7 +21,7 @@ state={
 	}
 
 	provinces={
-		4579 19231 19353 19354 19280
+		4579 19231 19353 19354 19351
 	}
 	manpower=36146
 	buildings_max_level_factor=1	

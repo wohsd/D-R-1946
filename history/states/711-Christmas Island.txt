@@ -6,8 +6,8 @@ state={
 	
 	history=
 	{
-		owner = INS
-		add_core_of = INS
+		owner = JAP
+		add_core_of = MAL
 		buildings = {
 			infrastructure = 2
 			13005 = {

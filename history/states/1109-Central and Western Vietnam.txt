@@ -18,4 +18,5 @@ state={
 	manpower=231210
 	buildings_max_level_factor=1
 	local_supplies=0
+	state_category = pastoral
 }

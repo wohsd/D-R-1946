@@ -14,21 +14,24 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = CAL
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 2
+			4799 = { dam_mountain = 1 }
 		}
-		add_core_of = USA
+		add_core_of = CAL
 		victory_points = {
-			853 3 
+			853 13 
 		}
-
+		victory_points = {
+			4799 1
+		}
 	}
 
 	provinces={
-		850 853 1793 3834 4796 6897 7747 7821 7920 8115 10573 10783 11814 12765 
+		850 853 1793 3834 4796 6897 7747 7821 7920 8115 10573 10783 11814 12765 4799
 	}
 
 	local_supplies=8.0 

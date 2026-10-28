@@ -5,7 +5,7 @@ state = {
 		tungsten = 120.000
 	}
 	
-	manpower = 158241
+	manpower = 2650819
 	state_category = town
 	
 	history = {
@@ -22,7 +22,7 @@ state = {
 	}
 
 	provinces = {
-		1492 4202 12404 12449 15520 19151 19152 
+		1492 4202 12404 12449 15520 19151 19152 1581 4588 7163 7534 10386 10486 12335 12464 12492 19015 19041 19112 19120 19139 19146 19149 
 	}
 	local_supplies = 0.000
 	buildings_max_level_factor = 1.000

@@ -7,23 +7,43 @@ state={
 	state_category = city
 
 	history={
-		owner = USA
-		victory_points = {
-			4464 1 
+		owner = AMS
+		victory_points = { # Pensacola
+			10352 3
 		}
+		victory_points = { # Biloxi
+			7668 3
+		}
+		victory_points = { # Vicksburg
+			10410 1
+		}
+		victory_points = {
+			7480 10 
+		}
+		victory_points = { # Baton Rouge
+			1453 10
+		}
+		
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 3
 			air_base = 3
-			4464 = {
+			7668 = {
 				naval_base = 4
 			}
+			7480 = {
+				naval_base = 3
+			}
+			10352 = {
+				naval_base = 1
+			}
 		}
-		add_core_of = USA
+		
+		add_core_of = AMS
 	}
 
 	provinces={
-		1615 4464 4510 4565 4650 7464 7668 8110 10410 10449 10753 11717 12328 12429 17304
+		1615 4464  4565 4650  7668 10410 10449    12429  492 860  4622 4756   7480 7640  10520  11942   10380 10352 1453 7524
 	}
 	
 

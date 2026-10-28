@@ -6,7 +6,8 @@ state = {
 
 	history = {
 
-		owner = USA
+		owner = COL
+		add_core_of = COL
 
 
 		buildings = {
