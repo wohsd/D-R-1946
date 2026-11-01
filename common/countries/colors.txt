@@ -138,7 +138,7 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHL = {
-	color = rgb { 155 101 107 }
+	color = rgb { 155 88 51 }
 	color_ui = rgb { 155 101 107 }
 }
 COL = {
